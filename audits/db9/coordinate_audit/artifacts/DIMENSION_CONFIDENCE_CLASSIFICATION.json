@@ -1,0 +1,211 @@
+{
+  "artifact": "DIMENSION_CONFIDENCE_CLASSIFICATION.json",
+  "classes": [
+    "KNOWN SIGN TRANSFORM",
+    "POSSIBLE OFFSET",
+    "VERIFIED NUMERICALLY EQUIVALENT",
+    "VERIFIED SEMANTICALLY, NUMERIC CALIBRATION UNCERTAIN"
+  ],
+  "class_counts": {
+    "VERIFIED SEMANTICALLY, NUMERIC CALIBRATION UNCERTAIN": 7,
+    "KNOWN SIGN TRANSFORM": 1,
+    "VERIFIED NUMERICALLY EQUIVALENT": 4,
+    "POSSIBLE OFFSET": 4
+  },
+  "per_dimension": {
+    "thumb_cmc_flexion": {
+      "class": "VERIFIED SEMANTICALLY, NUMERIC CALIBRATION UNCERTAIN",
+      "basis": "the DB9 channel responds correctly to flexion, but its movement-to-movement profile does not match the same emg2pose dimension (best match is `pinky_dip_flexion`), so the numerical calibration is not demonstrated",
+      "db9_channel_moves_towards_flexion": true,
+      "db9_anchor_change_deg": null,
+      "joint_identity_diagonal": false,
+      "joint_identity_best_match": "pinky_dip_flexion",
+      "median_gap_deg": 4.075191391026589,
+      "support_overlap": 0.8329754742952304,
+      "matched_semantic_max_abs_gap_deg": 10.772229667319571,
+      "db2_minus_db1_gap_deg": -7.941214944577432
+    },
+    "thumb_cmc_ab_adduction": {
+      "class": "KNOWN SIGN TRANSFORM",
+      "basis": "the sign is frozen from documented anatomy plus an FK sweep; zero aligns; the axis identity is explicitly NOT proven and that is why canonical15_noThumbAA exists",
+      "db9_channel_moves_towards_flexion": null,
+      "db9_anchor_change_deg": null,
+      "joint_identity_diagonal": false,
+      "joint_identity_best_match": "pinky_dip_flexion",
+      "median_gap_deg": -1.8554018119839997,
+      "support_overlap": 0.3094243280658431,
+      "matched_semantic_max_abs_gap_deg": 14.090950675160434,
+      "db2_minus_db1_gap_deg": 9.081785631581614
+    },
+    "thumb_mcp_flexion": {
+      "class": "VERIFIED SEMANTICALLY, NUMERIC CALIBRATION UNCERTAIN",
+      "basis": "the DB9 channel responds correctly to flexion, but its movement-to-movement profile does not match the same emg2pose dimension (best match is `thumb_ip_flexion`), so the numerical calibration is not demonstrated",
+      "db9_channel_moves_towards_flexion": true,
+      "db9_anchor_change_deg": null,
+      "joint_identity_diagonal": false,
+      "joint_identity_best_match": "thumb_ip_flexion",
+      "median_gap_deg": 10.560873442552133,
+      "support_overlap": 0.7070956298562887,
+      "matched_semantic_max_abs_gap_deg": 10.569054742179222,
+      "db2_minus_db1_gap_deg": -0.06694160786266723
+    },
+    "thumb_ip_flexion": {
+      "class": "VERIFIED NUMERICALLY EQUIVALENT",
+      "basis": "the DB9 channel responds correctly to flexion AND its movement-to-movement profile matches the same emg2pose dimension",
+      "db9_channel_moves_towards_flexion": true,
+      "db9_anchor_change_deg": null,
+      "joint_identity_diagonal": true,
+      "joint_identity_best_match": "thumb_ip_flexion",
+      "median_gap_deg": 31.232846081391575,
+      "support_overlap": 0.5027075531393351,
+      "matched_semantic_max_abs_gap_deg": 4.400562503459505,
+      "db2_minus_db1_gap_deg": -4.259597564910303
+    },
+    "index_mcp_flexion": {
+      "class": "VERIFIED SEMANTICALLY, NUMERIC CALIBRATION UNCERTAIN",
+      "basis": "the DB9 channel responds correctly to flexion, but its movement-to-movement profile does not match the same emg2pose dimension (best match is `middle_mcp_flexion`), so the numerical calibration is not demonstrated",
+      "db9_channel_moves_towards_flexion": true,
+      "db9_anchor_change_deg": 54.88551120625297,
+      "joint_identity_diagonal": false,
+      "joint_identity_best_match": "middle_mcp_flexion",
+      "median_gap_deg": 14.69154575442455,
+      "support_overlap": 0.7435100455096004,
+      "matched_semantic_max_abs_gap_deg": 7.084061544804193,
+      "db2_minus_db1_gap_deg": -15.535950293753583
+    },
+    "index_pip_flexion": {
+      "class": "VERIFIED NUMERICALLY EQUIVALENT",
+      "basis": "the DB9 channel responds correctly to flexion AND its movement-to-movement profile matches the same emg2pose dimension",
+      "db9_channel_moves_towards_flexion": true,
+      "db9_anchor_change_deg": 106.97722902720155,
+      "joint_identity_diagonal": true,
+      "joint_identity_best_match": "index_pip_flexion",
+      "median_gap_deg": 27.849584624192357,
+      "support_overlap": 0.7999147854699625,
+      "matched_semantic_max_abs_gap_deg": 52.02859433505035,
+      "db2_minus_db1_gap_deg": -29.636636984411023
+    },
+    "index_dip_flexion": {
+      "class": "VERIFIED SEMANTICALLY, NUMERIC CALIBRATION UNCERTAIN",
+      "basis": "the DB9 channel responds correctly to flexion, but its movement-to-movement profile does not match the same emg2pose dimension (best match is `pinky_pip_flexion`), so the numerical calibration is not demonstrated",
+      "db9_channel_moves_towards_flexion": true,
+      "db9_anchor_change_deg": 40.994403730063965,
+      "joint_identity_diagonal": false,
+      "joint_identity_best_match": "pinky_pip_flexion",
+      "median_gap_deg": 10.114708140595294,
+      "support_overlap": 0.5640265228923158,
+      "matched_semantic_max_abs_gap_deg": 41.553307461663714,
+      "db2_minus_db1_gap_deg": -0.4371053048426501
+    },
+    "middle_mcp_flexion": {
+      "class": "VERIFIED SEMANTICALLY, NUMERIC CALIBRATION UNCERTAIN",
+      "basis": "the DB9 channel responds correctly to flexion, but its movement-to-movement profile does not match the same emg2pose dimension (best match is `ring_mcp_flexion`), so the numerical calibration is not demonstrated",
+      "db9_channel_moves_towards_flexion": true,
+      "db9_anchor_change_deg": 96.18257228452558,
+      "joint_identity_diagonal": false,
+      "joint_identity_best_match": "ring_mcp_flexion",
+      "median_gap_deg": 20.685610497254658,
+      "support_overlap": 0.4333578597254438,
+      "matched_semantic_max_abs_gap_deg": 26.94717685629304,
+      "db2_minus_db1_gap_deg": -40.0786573143727
+    },
+    "middle_pip_flexion": {
+      "class": "POSSIBLE OFFSET",
+      "basis": "DB9's MIDDLE PIP channel moves -6.2 deg between the extended and flexed anchors, i.e. NOT towards flexion, while the same finger's MCP channel moves +96.2 deg correctly.  The channel is not measuring the joint.",
+      "db9_channel_moves_towards_flexion": false,
+      "db9_anchor_change_deg": -6.247969386626627,
+      "joint_identity_diagonal": false,
+      "joint_identity_best_match": "pinky_pip_flexion",
+      "median_gap_deg": 38.182312121340765,
+      "support_overlap": 0.459822246348088,
+      "matched_semantic_max_abs_gap_deg": 102.13064178544951,
+      "db2_minus_db1_gap_deg": -1.1406893738259676
+    },
+    "middle_dip_flexion": {
+      "class": "POSSIBLE OFFSET",
+      "basis": "DB9's MIDDLE DIP channel moves -34.5 deg between the extended and flexed anchors, i.e. NOT towards flexion, while the same finger's MCP channel moves +96.2 deg correctly.  The channel is not measuring the joint.",
+      "db9_channel_moves_towards_flexion": false,
+      "db9_anchor_change_deg": -34.45117247072257,
+      "joint_identity_diagonal": false,
+      "joint_identity_best_match": "pinky_dip_flexion",
+      "median_gap_deg": 30.08963598705421,
+      "support_overlap": 0.49784773770081225,
+      "matched_semantic_max_abs_gap_deg": 113.0555808774038,
+      "db2_minus_db1_gap_deg": 11.882244859796455
+    },
+    "ring_mcp_flexion": {
+      "class": "VERIFIED NUMERICALLY EQUIVALENT",
+      "basis": "the DB9 channel responds correctly to flexion AND its movement-to-movement profile matches the same emg2pose dimension",
+      "db9_channel_moves_towards_flexion": true,
+      "db9_anchor_change_deg": 70.00699662222235,
+      "joint_identity_diagonal": true,
+      "joint_identity_best_match": "ring_mcp_flexion",
+      "median_gap_deg": 17.95685747470878,
+      "support_overlap": 0.5985670829074023,
+      "matched_semantic_max_abs_gap_deg": 4.512362488631538,
+      "db2_minus_db1_gap_deg": -13.644944920212673
+    },
+    "ring_pip_flexion": {
+      "class": "VERIFIED SEMANTICALLY, NUMERIC CALIBRATION UNCERTAIN",
+      "basis": "the DB9 channel responds correctly to flexion, but its movement-to-movement profile does not match the same emg2pose dimension (best match is `pinky_pip_flexion`), so the numerical calibration is not demonstrated",
+      "db9_channel_moves_towards_flexion": true,
+      "db9_anchor_change_deg": 31.721048201079263,
+      "joint_identity_diagonal": false,
+      "joint_identity_best_match": "pinky_pip_flexion",
+      "median_gap_deg": 39.44858308681849,
+      "support_overlap": 0.5178059153801441,
+      "matched_semantic_max_abs_gap_deg": 72.857176520164,
+      "db2_minus_db1_gap_deg": 0.7579679186911661
+    },
+    "ring_dip_flexion": {
+      "class": "POSSIBLE OFFSET",
+      "basis": "DB9's RING DIP channel moves -22.0 deg between the extended and flexed anchors, i.e. NOT towards flexion, while the same finger's MCP channel moves +70.0 deg correctly.  The channel is not measuring the joint.",
+      "db9_channel_moves_towards_flexion": false,
+      "db9_anchor_change_deg": -21.975356966538584,
+      "joint_identity_diagonal": false,
+      "joint_identity_best_match": "ring_pip_flexion",
+      "median_gap_deg": 26.50234065771419,
+      "support_overlap": 0.4641737994517053,
+      "matched_semantic_max_abs_gap_deg": 99.3275981154088,
+      "db2_minus_db1_gap_deg": 23.650795414812308
+    },
+    "pinky_mcp_flexion": {
+      "class": "VERIFIED SEMANTICALLY, NUMERIC CALIBRATION UNCERTAIN",
+      "basis": "the DB9 channel responds correctly to flexion, but its movement-to-movement profile does not match the same emg2pose dimension (best match is `ring_mcp_flexion`), so the numerical calibration is not demonstrated",
+      "db9_channel_moves_towards_flexion": true,
+      "db9_anchor_change_deg": 123.79242996144085,
+      "joint_identity_diagonal": false,
+      "joint_identity_best_match": "ring_mcp_flexion",
+      "median_gap_deg": 14.699553331142727,
+      "support_overlap": 0.5453612851444498,
+      "matched_semantic_max_abs_gap_deg": 59.471264422232025,
+      "db2_minus_db1_gap_deg": -52.035880092075516
+    },
+    "pinky_pip_flexion": {
+      "class": "VERIFIED NUMERICALLY EQUIVALENT",
+      "basis": "the DB9 channel responds correctly to flexion AND its movement-to-movement profile matches the same emg2pose dimension",
+      "db9_channel_moves_towards_flexion": true,
+      "db9_anchor_change_deg": 36.11996352102417,
+      "joint_identity_diagonal": true,
+      "joint_identity_best_match": "pinky_pip_flexion",
+      "median_gap_deg": 23.97124463264218,
+      "support_overlap": 0.5331389469525141,
+      "matched_semantic_max_abs_gap_deg": 73.56295044171873,
+      "db2_minus_db1_gap_deg": -4.378214506868971
+    },
+    "pinky_dip_flexion": {
+      "class": "POSSIBLE OFFSET",
+      "basis": "DB9's PINKY DIP channel moves -15.3 deg between the extended and flexed anchors, i.e. NOT towards flexion, while the same finger's MCP channel moves +123.8 deg correctly.  The channel is not measuring the joint.",
+      "db9_channel_moves_towards_flexion": false,
+      "db9_anchor_change_deg": -15.290515262960444,
+      "joint_identity_diagonal": false,
+      "joint_identity_best_match": "ring_pip_flexion",
+      "median_gap_deg": 11.12083612758095,
+      "support_overlap": 0.5449670652487524,
+      "matched_semantic_max_abs_gap_deg": 54.65398526943985,
+      "db2_minus_db1_gap_deg": 7.0707115674484005
+    }
+  },
+  "note": "this is DIAGNOSIS ONLY.  No dimension is removed, redefined or re-weighted in this session.",
+  "plan_sha256": "c59fe01370d48aedeed56ef7a4103506d14a298edb794723be3720531edd62c6"
+}

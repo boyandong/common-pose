@@ -1,0 +1,67 @@
+{
+  "artifact": "KINE_ADL_QUALITY_AUDIT.json",
+  "branch_id": "S6-POSE-API-DATASET-ADMISSION",
+  "plan_sha256": "4d2c8b162e2332a5891a5d89a53166e365b1bbd92c205222492d19957c9683ec",
+  "documentation_audit": "COMPLETE",
+  "empirical_data_qc": "NOT POSSIBLE (bounded-download rule)",
+  "reason": "the KINE-ADL BE-UJI corpus itself was not downloaded.  The audit verified its ACCESS and METADATA from the official Mendeley record and verified its ANGLE PIPELINE from the released BE-UJI code, but did not measure its angle tables.  No quality number below is inferred from KIN-MUS and presented as a KINE-ADL measurement",
+  "verified_from_official_record": {
+    "n_recordings": {
+      "value": 1160,
+      "evidence": "OFFICIAL-DOCUMENTED",
+      "source": "Mendeley DOI 10.17632/8mf4y2srgh.4 description"
+    },
+    "n_subjects": {
+      "value": 20,
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    "dof_per_hand": {
+      "value": 18,
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    "hands": {
+      "value": "both",
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    "sampling_rate_hz": {
+      "value": 100,
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    "n_objects": {
+      "value": 66,
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    "signal_state": {
+      "value": "continuous calibrated recordings, filtered signal",
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    "license": {
+      "value": "CC BY 4.0",
+      "evidence": "OFFICIAL-DOCUMENTED"
+    }
+  },
+  "pipeline_quality_evidence_shared_with_KIN_MUS": {
+    "value": {
+      "statement": "the calibration transform, the channel formulas, the cross-coupling model and the DIP-from-PIP derivation are IDENTICAL because both use the BE-UJI AngleCalculation code",
+      "consequence": "the pipeline-level findings in ANGLE_ORIGIN_AND_CALIBRATION_AUDIT.json transfer to KINE-ADL; the DATA-level quality findings measured on KIN-MUS do NOT, and are not claimed to",
+      "is_this_independent_evidence": false
+    },
+    "evidence": "OFFICIAL-CODE-INFERRED"
+  },
+  "repeatability": {
+    "value": {
+      "within_subject_repeats_available": "UNKNOWN",
+      "why": "the recording structure was not downloaded, so the audit cannot say whether repeated trials of the same task exist"
+    },
+    "evidence": "UNKNOWN"
+  },
+  "documented_quality_controls": {
+    "value": [
+      "2nd-order two-way low-pass Butterworth filter at 5 Hz (guide 3.3)",
+      "manual trimming of static start/end segments",
+      "an outlier-removal procedure using the p50 per elementary task against a previously measured functional range of motion plus 3 SD",
+      "a malfunctioning channel detected and DISCLOSED rather than shipped"
+    ],
+    "evidence": "OFFICIAL-DOCUMENTED"
+  }
+}

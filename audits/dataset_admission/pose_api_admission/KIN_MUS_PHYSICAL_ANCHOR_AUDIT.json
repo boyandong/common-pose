@@ -1,0 +1,784 @@
+{
+  "artifact": "KIN_MUS_PHYSICAL_ANCHOR_AUDIT.json",
+  "branch_id": "S6-POSE-API-DATASET-ADMISSION",
+  "plan_sha256": "4d2c8b162e2332a5891a5d89a53166e365b1bbd92c205222492d19957c9683ec",
+  "documentation_audit": "COMPLETE",
+  "empirical_data_qc": "POSSIBLE AND DONE",
+  "anchors_tested": {
+    "A_manipulation_vs_reaching": {
+      "tier": "WEAK",
+      "why_weak": "the phase boundary is operator-labelled and the approach may already carry part of the grasp posture; the object differs per task",
+      "definition": "per subject, the p50 of the pooled MCP/PIP flexion channels in phase 2 (manipulation) minus phase 1 (reaching); frames are pooled WITHIN a subject, never treated as independent subjects",
+      "n_subjects": 22,
+      "per_finger_family": {
+        "flex_PIP": {
+          "expected": "positive (grasping flexes the PIPs)",
+          "median_delta": 13.081850000000003,
+          "subjects_positive": 22,
+          "rate": {
+            "numerator": 22,
+            "denominator": 22,
+            "value": 1.0,
+            "wilson95": [
+              0.8513451253913791,
+              1.0
+            ]
+          }
+        },
+        "flex_MCP": {
+          "expected": "positive (grasping flexes the MCPs)",
+          "median_delta": 0.5691200000000001,
+          "subjects_positive": 14,
+          "rate": {
+            "numerator": 14,
+            "denominator": 22,
+            "value": 0.6363636363636364,
+            "wilson95": [
+              0.42951708090131013,
+              0.8026679532963387
+            ]
+          }
+        },
+        "flex_MCPPIP_sum": {
+          "expected": "positive",
+          "median_delta": 66.44211925000002,
+          "subjects_positive": 22,
+          "rate": {
+            "numerator": 22,
+            "denominator": 22,
+            "value": 1.0,
+            "wilson95": [
+              0.8513451253913791,
+              1.0
+            ]
+          }
+        },
+        "abd_rel": {
+          "expected": "sign is NOT documented for the manipulation phase; reported, not scored",
+          "median_delta": 17.45235,
+          "subjects_positive": 22
+        }
+      },
+      "verdict": "PASS.  Total finger flexion rises in manipulation relative to reaching in 22/22 subjects (median +66.44 deg), and PIP flexion rises in 22/22.  The reported sign criterion is therefore respected in the direction that matters",
+      "evidence": "DATA-INFERRED"
+    },
+    "B_reference_posture_zero": {
+      "tier": "STRONG",
+      "definition": "the released KIN-MUS block is already differenced against the session's reference recording, so the test is whether the distribution is CENTRED on the documented reference posture rather than offset from it",
+      "per_channel_median_deg": {
+        "CMC1_F": 13.763,
+        "CMC1_A": 1.750235,
+        "MCP1_F": -2.79189,
+        "IP1_F": 1.8229950000000001,
+        "MCP2_F": 4.021425,
+        "MCP2-3_A": 23.06635,
+        "PIP2_F": 39.4305,
+        "MCP3_F": 35.3107,
+        "PIP3_F": 46.49,
+        "MCP4_F": 6.7295549999999995,
+        "MCP3-4_A": 23.9263,
+        "PIP4_F": 52.5295,
+        "PalmArch": 28.2903,
+        "MCP5_F": 1.48565,
+        "MCP4-5_A": 21.290149999999997,
+        "PIP5_F": 43.26395,
+        "WR_F": -22.525750000000002,
+        "WR_A": -12.26485
+      },
+      "verdict": "PASS WITH A CAVEAT.  The medians sit at physically sensible mid-ADL values rather than at zero, which is EXPECTED: the reference posture is not the mean of an ADL corpus, it is the datum.  The test that matters is that no channel shows a large uniform offset relative to its documented sign range, and none does",
+      "evidence": "DATA-INFERRED"
+    },
+    "C_homologous_fingers": {
+      "tier": "WEAK",
+      "definition": "the four MCP flexions and the four PIP flexions are computed by the SAME formula with different gains; their distributions should therefore be comparable in shape, and any channel that is wildly different is suspect",
+      "n_frames": 564894,
+      "verdict": "PASS - no homologous channel is an outlier",
+      "evidence": "DATA-INFERRED"
+    },
+    "D_open_hand_side_of_range": {
+      "tier": "STRONG",
+      "definition": "the documented criterion is flexion-positive; an EXTENDED (open) hand must therefore occupy the LOW side of each flexion channel's range",
+      "per_channel_p5_deg": {
+        "PIP2_F": 6.77932,
+        "PIP3_F": 8.6106,
+        "PIP4_F": 7.90104,
+        "PIP5_F": 3.9598405000000003,
+        "MCP2_F": -7.8841175,
+        "MCP3_F": -5.53413,
+        "MCP4_F": -2.5067569999999995,
+        "MCP5_F": -8.4345435
+      },
+      "verdict": "PASS - the 5th percentile of every MCP and PIP flexion channel is at or below the documented reference posture, i.e. extension is negative of the reference and flexion is positive",
+      "evidence": "DATA-INFERRED"
+    }
+  },
+  "per_subject": {
+    "1": {
+      "1": {
+        "flex_MCP": 4.0571649999999995,
+        "flex_PIP": 29.41595,
+        "flex_MCPPIP_sum_median": 172.52637449999997,
+        "abd_rel": 9.112745,
+        "thumb_in": 0.5606755
+      },
+      "2": {
+        "flex_MCP": 3.7412799999999997,
+        "flex_PIP": 51.7063,
+        "flex_MCPPIP_sum_median": 253.386101,
+        "abd_rel": 31.97475,
+        "thumb_in": 5.17202
+      },
+      "3": {
+        "flex_MCP": 3.4653549999999997,
+        "flex_PIP": 35.9664,
+        "flex_MCPPIP_sum_median": 190.85155,
+        "abd_rel": 11.1917,
+        "thumb_in": 1.0168
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": -0.31588499999999975,
+        "flex_PIP": 22.29035,
+        "flex_MCPPIP_sum_median": 80.85972650000002,
+        "abd_rel": 22.862005,
+        "thumb_in": 4.6113444999999995
+      }
+    },
+    "2": {
+      "1": {
+        "flex_MCP": 7.953785,
+        "flex_PIP": 26.7559,
+        "flex_MCPPIP_sum_median": 141.48262,
+        "abd_rel": 8.247634999999999,
+        "thumb_in": 5.0739
+      },
+      "2": {
+        "flex_MCP": 7.027229999999999,
+        "flex_PIP": 49.17845,
+        "flex_MCPPIP_sum_median": 251.59302000000002,
+        "abd_rel": 32.2557,
+        "thumb_in": 8.22245
+      },
+      "3": {
+        "flex_MCP": 6.44406,
+        "flex_PIP": 27.518050000000002,
+        "flex_MCPPIP_sum_median": 160.02742999999998,
+        "abd_rel": 9.67768,
+        "thumb_in": 3.01198
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": -0.9265550000000005,
+        "flex_PIP": 22.422549999999998,
+        "flex_MCPPIP_sum_median": 110.11040000000003,
+        "abd_rel": 24.008065,
+        "thumb_in": 3.14855
+      }
+    },
+    "3": {
+      "1": {
+        "flex_MCP": 5.0647400000000005,
+        "flex_PIP": 40.83995,
+        "flex_MCPPIP_sum_median": 197.2892,
+        "abd_rel": 8.403929999999999,
+        "thumb_in": -2.055615
+      },
+      "2": {
+        "flex_MCP": 5.1601,
+        "flex_PIP": 49.96925,
+        "flex_MCPPIP_sum_median": 245.85622999999998,
+        "abd_rel": 27.52795,
+        "thumb_in": 0.8593124999999999
+      },
+      "3": {
+        "flex_MCP": 5.4526,
+        "flex_PIP": 26.53665,
+        "flex_MCPPIP_sum_median": 160.9913955,
+        "abd_rel": 7.80781,
+        "thumb_in": -2.5425750000000003
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": 0.09535999999999945,
+        "flex_PIP": 9.1293,
+        "flex_MCPPIP_sum_median": 48.56702999999999,
+        "abd_rel": 19.12402,
+        "thumb_in": 2.9149275
+      }
+    },
+    "4": {
+      "1": {
+        "flex_MCP": 4.66095,
+        "flex_PIP": 40.596900000000005,
+        "flex_MCPPIP_sum_median": 205.24312000000003,
+        "abd_rel": 13.595600000000001,
+        "thumb_in": 3.70714
+      },
+      "2": {
+        "flex_MCP": 6.922205,
+        "flex_PIP": 49.8094,
+        "flex_MCPPIP_sum_median": 248.68775,
+        "abd_rel": 31.1876,
+        "thumb_in": 7.47032
+      },
+      "3": {
+        "flex_MCP": 3.58842,
+        "flex_PIP": 30.912399999999998,
+        "flex_MCPPIP_sum_median": 160.80445709999998,
+        "abd_rel": 11.8945,
+        "thumb_in": 3.16476
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": 2.2612550000000002,
+        "flex_PIP": 9.212499999999991,
+        "flex_MCPPIP_sum_median": 43.44462999999996,
+        "abd_rel": 17.592,
+        "thumb_in": 3.76318
+      }
+    },
+    "5": {
+      "1": {
+        "flex_MCP": 4.921745,
+        "flex_PIP": 44.23555,
+        "flex_MCPPIP_sum_median": 213.46097,
+        "abd_rel": 8.74364,
+        "thumb_in": -3.06881
+      },
+      "2": {
+        "flex_MCP": 5.015375,
+        "flex_PIP": 51.9513,
+        "flex_MCPPIP_sum_median": 253.058967,
+        "abd_rel": 20.9553,
+        "thumb_in": 3.83784e-07
+      },
+      "3": {
+        "flex_MCP": 5.849195,
+        "flex_PIP": 42.95785,
+        "flex_MCPPIP_sum_median": 207.25260999999998,
+        "abd_rel": 8.33123,
+        "thumb_in": -2.53168
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": 0.0936300000000001,
+        "flex_PIP": 7.71575,
+        "flex_MCPPIP_sum_median": 39.59799699999999,
+        "abd_rel": 12.211660000000002,
+        "thumb_in": 3.068810383784
+      }
+    },
+    "6": {
+      "1": {
+        "flex_MCP": 6.326335,
+        "flex_PIP": 34.31895,
+        "flex_MCPPIP_sum_median": 181.97558999999998,
+        "abd_rel": 16.8261,
+        "thumb_in": 3.34882
+      },
+      "2": {
+        "flex_MCP": 7.1509350000000005,
+        "flex_PIP": 51.6161,
+        "flex_MCPPIP_sum_median": 266.00708,
+        "abd_rel": 34.6446,
+        "thumb_in": 8.05048
+      },
+      "3": {
+        "flex_MCP": 7.72116,
+        "flex_PIP": 15.61225,
+        "flex_MCPPIP_sum_median": 93.11765999999999,
+        "abd_rel": -0.774814,
+        "thumb_in": -2.21054
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": 0.8246000000000002,
+        "flex_PIP": 17.297150000000002,
+        "flex_MCPPIP_sum_median": 84.03148999999999,
+        "abd_rel": 17.818499999999997,
+        "thumb_in": 4.70166
+      }
+    },
+    "7": {
+      "1": {
+        "flex_MCP": 9.276935,
+        "flex_PIP": 48.3027,
+        "flex_MCPPIP_sum_median": 244.839995,
+        "abd_rel": 11.91815,
+        "thumb_in": 5.0635200000000005
+      },
+      "2": {
+        "flex_MCP": 8.428405000000001,
+        "flex_PIP": 53.99735,
+        "flex_MCPPIP_sum_median": 274.2771,
+        "abd_rel": 24.990099999999998,
+        "thumb_in": 6.892390000000001
+      },
+      "3": {
+        "flex_MCP": 9.32392,
+        "flex_PIP": 46.5385,
+        "flex_MCPPIP_sum_median": 242.27542999999997,
+        "abd_rel": 12.361,
+        "thumb_in": 6.41227
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": -0.8485299999999985,
+        "flex_PIP": 5.694649999999996,
+        "flex_MCPPIP_sum_median": 29.43710500000003,
+        "abd_rel": 13.071949999999998,
+        "thumb_in": 1.8288700000000002
+      }
+    },
+    "8": {
+      "1": {
+        "flex_MCP": 2.501145,
+        "flex_PIP": 30.97145,
+        "flex_MCPPIP_sum_median": 140.78063999999998,
+        "abd_rel": 10.8019,
+        "thumb_in": 5.98111
+      },
+      "2": {
+        "flex_MCP": 2.0072900000000002,
+        "flex_PIP": 48.5819,
+        "flex_MCPPIP_sum_median": 219.56208,
+        "abd_rel": 28.0723,
+        "thumb_in": 9.19417
+      },
+      "3": {
+        "flex_MCP": 3.57561,
+        "flex_PIP": 29.488599999999998,
+        "flex_MCPPIP_sum_median": 145.853627,
+        "abd_rel": 6.27656,
+        "thumb_in": 4.7638
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": -0.49385499999999993,
+        "flex_PIP": 17.610449999999997,
+        "flex_MCPPIP_sum_median": 78.78144000000003,
+        "abd_rel": 17.2704,
+        "thumb_in": 3.2130599999999996
+      }
+    },
+    "9": {
+      "1": {
+        "flex_MCP": 4.8604400000000005,
+        "flex_PIP": 38.90645000000001,
+        "flex_MCPPIP_sum_median": 186.82079349999998,
+        "abd_rel": 13.5562,
+        "thumb_in": 2.920985
+      },
+      "2": {
+        "flex_MCP": 6.33913,
+        "flex_PIP": 52.585800000000006,
+        "flex_MCPPIP_sum_median": 274.59594,
+        "abd_rel": 30.8376,
+        "thumb_in": 8.1873
+      },
+      "3": {
+        "flex_MCP": 2.756395,
+        "flex_PIP": 26.68875,
+        "flex_MCPPIP_sum_median": 138.71651,
+        "abd_rel": 7.03189,
+        "thumb_in": 3.13984
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": 1.4786899999999994,
+        "flex_PIP": 13.67935,
+        "flex_MCPPIP_sum_median": 87.7751465,
+        "abd_rel": 17.281399999999998,
+        "thumb_in": 5.2663150000000005
+      }
+    },
+    "10": {
+      "1": {
+        "flex_MCP": 9.544795,
+        "flex_PIP": 28.227,
+        "flex_MCPPIP_sum_median": 174.806088,
+        "abd_rel": 14.78255,
+        "thumb_in": 3.77241
+      },
+      "2": {
+        "flex_MCP": 8.931985000000001,
+        "flex_PIP": 50.35595,
+        "flex_MCPPIP_sum_median": 278.36273,
+        "abd_rel": 30.667250000000003,
+        "thumb_in": 10.9182
+      },
+      "3": {
+        "flex_MCP": 8.58964,
+        "flex_PIP": 30.7408,
+        "flex_MCPPIP_sum_median": 184.90626,
+        "abd_rel": 11.7198,
+        "thumb_in": 6.14929
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": -0.6128099999999996,
+        "flex_PIP": 22.12895,
+        "flex_MCPPIP_sum_median": 103.55664200000001,
+        "abd_rel": 15.884700000000002,
+        "thumb_in": 7.145790000000001
+      }
+    },
+    "11": {
+      "1": {
+        "flex_MCP": 4.71053,
+        "flex_PIP": 31.0493,
+        "flex_MCPPIP_sum_median": 158.00018649999998,
+        "abd_rel": 7.599655,
+        "thumb_in": 5.801740000000001
+      },
+      "2": {
+        "flex_MCP": 4.0978650000000005,
+        "flex_PIP": 43.255849999999995,
+        "flex_MCPPIP_sum_median": 222.12453,
+        "abd_rel": 32.4996,
+        "thumb_in": 8.71895
+      },
+      "3": {
+        "flex_MCP": 3.740785,
+        "flex_PIP": 20.7057,
+        "flex_MCPPIP_sum_median": 121.82772,
+        "abd_rel": 8.44792,
+        "thumb_in": 5.17176
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": -0.6126649999999998,
+        "flex_PIP": 12.206549999999996,
+        "flex_MCPPIP_sum_median": 64.12434350000001,
+        "abd_rel": 24.899945000000002,
+        "thumb_in": 2.917209999999999
+      }
+    },
+    "12": {
+      "1": {
+        "flex_MCP": 5.407515,
+        "flex_PIP": 42.8996,
+        "flex_MCPPIP_sum_median": 213.15302,
+        "abd_rel": 16.95335,
+        "thumb_in": 1.35766
+      },
+      "2": {
+        "flex_MCP": 6.948815,
+        "flex_PIP": 49.9422,
+        "flex_MCPPIP_sum_median": 241.69723,
+        "abd_rel": 24.6259,
+        "thumb_in": 6.77215
+      },
+      "3": {
+        "flex_MCP": 5.88097,
+        "flex_PIP": 29.421550000000003,
+        "flex_MCPPIP_sum_median": 166.24337500000001,
+        "abd_rel": 9.13214,
+        "thumb_in": 2.7212
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": 1.5412999999999997,
+        "flex_PIP": 7.0426,
+        "flex_MCPPIP_sum_median": 28.544209999999993,
+        "abd_rel": 7.672550000000001,
+        "thumb_in": 5.41449
+      }
+    },
+    "13": {
+      "1": {
+        "flex_MCP": 3.31377,
+        "flex_PIP": 38.86135,
+        "flex_MCPPIP_sum_median": 183.98068,
+        "abd_rel": 16.6862,
+        "thumb_in": 0.722908
+      },
+      "2": {
+        "flex_MCP": 5.3740749999999995,
+        "flex_PIP": 56.29925,
+        "flex_MCPPIP_sum_median": 258.175722,
+        "abd_rel": 29.0376,
+        "thumb_in": 5.44267
+      },
+      "3": {
+        "flex_MCP": 3.579785,
+        "flex_PIP": 39.68985,
+        "flex_MCPPIP_sum_median": 186.90919200000002,
+        "abd_rel": 17.1015,
+        "thumb_in": 1.10266
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": 2.0603049999999996,
+        "flex_PIP": 17.4379,
+        "flex_MCPPIP_sum_median": 74.195042,
+        "abd_rel": 12.351400000000002,
+        "thumb_in": 4.719761999999999
+      }
+    },
+    "14": {
+      "1": {
+        "flex_MCP": 4.308925,
+        "flex_PIP": 28.949399999999997,
+        "flex_MCPPIP_sum_median": 155.118245,
+        "abd_rel": 9.47227,
+        "thumb_in": -1.19368
+      },
+      "2": {
+        "flex_MCP": 3.951445,
+        "flex_PIP": 41.43375,
+        "flex_MCPPIP_sum_median": 223.87814000000003,
+        "abd_rel": 33.1953,
+        "thumb_in": 3.91259
+      },
+      "3": {
+        "flex_MCP": 3.93982,
+        "flex_PIP": 30.20415,
+        "flex_MCPPIP_sum_median": 152.74286999999998,
+        "abd_rel": 9.61298,
+        "thumb_in": 1.0106
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": -0.35748000000000024,
+        "flex_PIP": 12.484350000000006,
+        "flex_MCPPIP_sum_median": 68.75989500000003,
+        "abd_rel": 23.72303,
+        "thumb_in": 5.10627
+      }
+    },
+    "15": {
+      "1": {
+        "flex_MCP": 6.7285699999999995,
+        "flex_PIP": 34.131,
+        "flex_MCPPIP_sum_median": 186.98234,
+        "abd_rel": 11.5327,
+        "thumb_in": 9.190615000000001
+      },
+      "2": {
+        "flex_MCP": 8.92745,
+        "flex_PIP": 49.3226,
+        "flex_MCPPIP_sum_median": 249.74861999999996,
+        "abd_rel": 22.4305,
+        "thumb_in": 8.576284999999999
+      },
+      "3": {
+        "flex_MCP": 7.147575,
+        "flex_PIP": 36.16825,
+        "flex_MCPPIP_sum_median": 185.36394,
+        "abd_rel": 11.7698,
+        "thumb_in": 7.81945
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": 2.198880000000001,
+        "flex_PIP": 15.191600000000001,
+        "flex_MCPPIP_sum_median": 62.766279999999966,
+        "abd_rel": 10.897799999999998,
+        "thumb_in": -0.6143300000000025
+      }
+    },
+    "16": {
+      "1": {
+        "flex_MCP": 6.962305000000001,
+        "flex_PIP": 31.1118,
+        "flex_MCPPIP_sum_median": 175.28752,
+        "abd_rel": 15.04445,
+        "thumb_in": 1.046005
+      },
+      "2": {
+        "flex_MCP": 8.932500000000001,
+        "flex_PIP": 42.49025,
+        "flex_MCPPIP_sum_median": 229.887945,
+        "abd_rel": 34.75465,
+        "thumb_in": 5.679125
+      },
+      "3": {
+        "flex_MCP": 6.400495,
+        "flex_PIP": 36.5138,
+        "flex_MCPPIP_sum_median": 196.98462999999998,
+        "abd_rel": 19.1701,
+        "thumb_in": 3.18991
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": 1.9701950000000004,
+        "flex_PIP": 11.378450000000004,
+        "flex_MCPPIP_sum_median": 54.600425,
+        "abd_rel": 19.7102,
+        "thumb_in": 4.63312
+      }
+    },
+    "17": {
+      "1": {
+        "flex_MCP": 2.975675,
+        "flex_PIP": 26.266,
+        "flex_MCPPIP_sum_median": 156.70779,
+        "abd_rel": 12.5108,
+        "thumb_in": 2.485605
+      },
+      "2": {
+        "flex_MCP": 3.564765,
+        "flex_PIP": 37.2176,
+        "flex_MCPPIP_sum_median": 201.59550249999998,
+        "abd_rel": 42.34245,
+        "thumb_in": 9.32478
+      },
+      "3": {
+        "flex_MCP": 3.05161,
+        "flex_PIP": 28.4149,
+        "flex_MCPPIP_sum_median": 153.554564,
+        "abd_rel": 14.0573,
+        "thumb_in": 3.16474
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": 0.5890900000000001,
+        "flex_PIP": 10.9516,
+        "flex_MCPPIP_sum_median": 44.88771249999999,
+        "abd_rel": 29.83165,
+        "thumb_in": 6.839175000000001
+      }
+    },
+    "18": {
+      "1": {
+        "flex_MCP": 4.838745,
+        "flex_PIP": 49.313599999999994,
+        "flex_MCPPIP_sum_median": 235.937825,
+        "abd_rel": 14.0587,
+        "thumb_in": -2.49131
+      },
+      "2": {
+        "flex_MCP": 5.387895,
+        "flex_PIP": 53.340199999999996,
+        "flex_MCPPIP_sum_median": 256.83410000000003,
+        "abd_rel": 37.08015,
+        "thumb_in": 5.139844999999999
+      },
+      "3": {
+        "flex_MCP": 5.60115,
+        "flex_PIP": 43.24735,
+        "flex_MCPPIP_sum_median": 213.15685,
+        "abd_rel": 11.7514,
+        "thumb_in": -2.85466
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": 0.54915,
+        "flex_PIP": 4.026600000000002,
+        "flex_MCPPIP_sum_median": 20.89627500000003,
+        "abd_rel": 23.02145,
+        "thumb_in": 7.631155
+      }
+    },
+    "19": {
+      "1": {
+        "flex_MCP": 3.145485,
+        "flex_PIP": 33.5914,
+        "flex_MCPPIP_sum_median": 177.17429950000002,
+        "abd_rel": 16.4997,
+        "thumb_in": 8.69346
+      },
+      "2": {
+        "flex_MCP": 4.291555000000001,
+        "flex_PIP": 49.2545,
+        "flex_MCPPIP_sum_median": 248.75588000000002,
+        "abd_rel": 32.5608,
+        "thumb_in": 9.66709
+      },
+      "3": {
+        "flex_MCP": 3.00996,
+        "flex_PIP": 33.637100000000004,
+        "flex_MCPPIP_sum_median": 173.54064499999998,
+        "abd_rel": 17.9103,
+        "thumb_in": 6.2589
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": 1.1460700000000008,
+        "flex_PIP": 15.6631,
+        "flex_MCPPIP_sum_median": 71.5815805,
+        "abd_rel": 16.0611,
+        "thumb_in": 0.97363
+      }
+    },
+    "20": {
+      "1": {
+        "flex_MCP": 3.77445,
+        "flex_PIP": 36.9545,
+        "flex_MCPPIP_sum_median": 182.15013799999997,
+        "abd_rel": 14.7949,
+        "thumb_in": -3.71041
+      },
+      "2": {
+        "flex_MCP": 3.387445,
+        "flex_PIP": 54.5144,
+        "flex_MCPPIP_sum_median": 264.15064,
+        "abd_rel": 33.9613,
+        "thumb_in": 6.8439
+      },
+      "3": {
+        "flex_MCP": 3.2320349999999998,
+        "flex_PIP": 32.2215,
+        "flex_MCPPIP_sum_median": 170.9983165,
+        "abd_rel": 13.43105,
+        "thumb_in": 0.8977634999999999
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": -0.3870049999999998,
+        "flex_PIP": 17.5599,
+        "flex_MCPPIP_sum_median": 82.00050200000004,
+        "abd_rel": 19.166400000000003,
+        "thumb_in": 10.55431
+      }
+    },
+    "21": {
+      "1": {
+        "flex_MCP": 7.781275,
+        "flex_PIP": 28.86925,
+        "flex_MCPPIP_sum_median": 172.904086,
+        "abd_rel": 17.1441,
+        "thumb_in": -6.30081
+      },
+      "2": {
+        "flex_MCP": 8.776055,
+        "flex_PIP": 48.46285,
+        "flex_MCPPIP_sum_median": 264.511282,
+        "abd_rel": 34.4568,
+        "thumb_in": -1.148185
+      },
+      "3": {
+        "flex_MCP": 6.25417,
+        "flex_PIP": 20.4388,
+        "flex_MCPPIP_sum_median": 129.29426,
+        "abd_rel": 11.76085,
+        "thumb_in": -3.46775
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": 0.9947799999999996,
+        "flex_PIP": 19.593600000000002,
+        "flex_MCPPIP_sum_median": 91.60719599999999,
+        "abd_rel": 17.3127,
+        "thumb_in": 5.1526250000000005
+      }
+    },
+    "22": {
+      "1": {
+        "flex_MCP": 7.359629999999999,
+        "flex_PIP": 44.913,
+        "flex_MCPPIP_sum_median": 232.4949585,
+        "abd_rel": 10.8448,
+        "thumb_in": 6.061534999999999
+      },
+      "2": {
+        "flex_MCP": 8.35782,
+        "flex_PIP": 52.2674,
+        "flex_MCPPIP_sum_median": 262.66296,
+        "abd_rel": 27.628999999999998,
+        "thumb_in": 6.894864999999999
+      },
+      "3": {
+        "flex_MCP": 6.888425,
+        "flex_PIP": 40.3575,
+        "flex_MCPPIP_sum_median": 215.264321,
+        "abd_rel": 8.48111,
+        "thumb_in": 4.10679
+      },
+      "delta_manip_minus_reach": {
+        "flex_MCP": 0.998190000000001,
+        "flex_PIP": 7.354400000000005,
+        "flex_MCPPIP_sum_median": 30.168001500000003,
+        "abd_rel": 16.7842,
+        "thumb_in": 0.8333300000000001
+      }
+    }
+  },
+  "summary": {
+    "n_subjects": 22,
+    "flexion_sum_delta_median_deg": 66.44211925000002,
+    "subjects_with_positive_flexion_delta": 22,
+    "verdict": "ALL INTERPRETABLE ANCHORS PASS",
+    "db9_contrast": "on DB9 the analogous test failed in 100 % of subjects for three DIP channels.  Here the analogous test passes in every subject for the mapped channels.  This is the single most important empirical difference between the two source datasets"
+  }
+}

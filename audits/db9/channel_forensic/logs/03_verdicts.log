@@ -1,0 +1,307 @@
+==============================================================================
+03 EXTENDED ANCHORS, VERDICTS, SENSOR-11, HAND SIZE, TRUSTED FREEZE
+==============================================================================
+VERDICT RULES - fixed before the anchor numbers were read
+
+For channel c on anchor A over the N subjects having both the anchor movement and the
+Exercise B reference movement 11:
+
+  coherence(c,A) = fraction of subjects where delta_raw and delta_angle share a sign
+  agreement(c,A) = fraction of subjects where delta_angle has the sign REQUIRED by the
+                   official DB9 sign criteria
+  opposed(c,A)   = fraction where delta_angle has the opposite sign
+  mag_ratio(c,A) = |median delta_raw(c)| / median over the responsive flexion channels of
+                   |median delta_raw| on the same anchor
+
+  CASE_C_PREVIOUS_QC_WRONG        agreement >= 0.80
+  CASE_A_RELEASED_REPRESENTATION  coherence >= 0.80 AND opposed >= 0.80
+  CASE_B_SENSOR_OR_FIT_LIMIT      mag_ratio < 0.15 OR coherence < 0.60
+  CASE_D_DOCUMENTATION_CONFLICT   released constant differs from the published table
+  CASE_E_INCONCLUSIVE             otherwise
+
+  KEEP          <- CASE_C
+  DROP          <- CASE_A, CASE_B, official exclusion
+  INCONCLUSIVE  <- CASE_D, CASE_E, no anchor
+
+subjects with Exercise B: 37
+==============================================================================
+movement probe - identify the fist from the data, not from the list
+==============================================================================
+    stim  n_subj   median dRaw (4 MCP gauges)   median dAngle (4 MCP channels)
+       1     37                        95.21                        91.60
+       2     37                        44.62                        32.85
+       3     37                        46.05                        33.46
+       4     37                        -1.84                        -1.49
+       5     37                        -2.50                        -2.25
+       6     37                        99.19                        95.30
+       7     37                        73.50                        72.63
+       8     37                        -2.50                        -2.28
+       9     37                         0.03                        -0.42
+      10     37                        -0.13                        -0.45
+      11     37                         0.00                         0.00
+      12     37                         0.00                        -0.15
+      13     37                        -1.18                        -0.08
+      14     37                        -6.00                        -3.86
+      15     37                        89.28                        88.60
+      16     37                        -0.73                        -0.62
+      17     37                        -0.52                        -1.10
+  -> largest flexion response at restimulus 6 (median dRaw 99.2); the frozen anchor uses movement 6, officially 'Fingers flexed together in fist'
+  -> restimulus 17, officially 'Wrist extension with closed hand', shows median dRaw -0.5189251899719238 - NOT a closed hand in the data; reported, not used as an anchor
+  -> restimulus 17/18 are therefore NOT used as a second flexion anchor
+
+  A_FIST  (movements [6])   flexion-magnitude reference = 55.27648013830185
+    channel     n    coh      dRaw     dAngle  agree  oppose    mag
+    CMC1_f     37   0.89     89.00     26.488      -       -   1.61
+    CMC1_a     37   0.00    -58.00     23.725      -       -   1.05
+    MCP1       37   1.00     32.24     18.131   0.92    0.08   0.58
+    IP1        37   1.00     48.56     52.399   1.00    0.00   0.88
+    MCP2_f     37   1.00     70.50     67.476   1.00    0.00   1.28
+    PIP2       37   1.00    128.00    122.657   0.97    0.03   2.32
+    MCP3_f     37   1.00    122.69    110.548   1.00    0.00   2.22
+    PIP3       37   1.00      9.92     17.512   0.54    0.46   0.18
+    MCP4_f     37   1.00     82.00     79.543   1.00    0.00   1.48
+    MCP4_a     37   0.00     68.10    -19.333      -       -   1.23
+    PIP4       37   1.00     49.00     93.103   0.76    0.24   0.89
+    CMC5       37   1.00      1.92      0.548   0.51    0.49   0.03
+    MCP5_f     37   1.00    120.00    134.371   1.00    0.00   2.17
+    MCP5_a     37   0.51     -2.26    -15.348      -       -   0.04
+    PIP5       37   1.00     61.55     71.221   1.00    0.00   1.11
+    DIP2       37   1.00     65.65     96.120   0.76    0.24   1.19
+    DIP3       37   1.00    -32.58    -47.320   0.05    0.95   0.59
+    DIP4       37   1.00     -8.88    -32.000   0.22    0.76   0.16
+    DIP5       37   1.00     -9.12    -25.200   0.14    0.86   0.16
+    WRIST_F    37   1.00      1.92      4.530      -       -   0.03
+    WRIST_A    37   0.41      4.00     -0.718      -       -   0.07
+
+  A_RINGLITTLE  (movements [2, 3])   flexion-magnitude reference = 8.240876278863201
+    channel     n    coh      dRaw     dAngle  agree  oppose    mag
+    CMC1_f     37   0.84     58.60     17.594      -       -   7.11
+    CMC1_a     37   0.00    -34.91     13.206      -       -   4.24
+    MCP1       37   1.00      6.94      3.905      -       -   0.84
+    IP1        37   1.00      6.00      7.145      -       -   0.73
+    MCP2_f     37   1.00      3.00      2.739      -       -   0.36
+    PIP2       37   1.00     -7.48     -7.269      -       -   0.91
+    MCP3_f     37   1.00     -4.00     -3.811      -       -   0.49
+    PIP3       37   1.00      5.00      5.358      -       -   0.61
+    MCP4_f     37   1.00     65.00     63.053   1.00    0.00   7.89
+    MCP4_a     37   0.00     35.00    -53.717      -       -   4.25
+    PIP4       37   1.00    -12.75    -23.012   0.22    0.78   1.55
+    CMC5       37   1.00      2.82      0.570      -       -   0.34
+    MCP5_f     37   1.00    106.00    127.973   1.00    0.00  12.86
+    MCP5_a     37   0.32     19.66    -23.290      -       -   2.39
+    PIP5       37   1.00     14.00     15.148   0.92    0.08   1.70
+    DIP2       37   1.00      9.00     14.040      -       -   1.09
+    DIP3       37   1.00    -56.42    -96.460      -       -   6.85
+    DIP4       37   1.00    -82.41   -190.000   0.00    1.00  10.00
+    DIP5       37   1.00     -1.98     -4.133   0.41    0.57   0.24
+    WRIST_F    37   1.00      2.82      5.195      -       -   0.34
+    WRIST_A    37   0.30      1.00      6.666      -       -   0.12
+
+  A_WRISTFLEX  (movements [13])   flexion-magnitude reference = 4.266782530926562
+    channel     n    coh      dRaw     dAngle  agree  oppose    mag
+    CMC1_f     37   0.81     -2.00      1.235      -       -   0.47
+    CMC1_a     37   0.08     -3.53      0.696      -       -   0.83
+    MCP1       37   1.00     18.32     11.242      -       -   4.29
+    IP1        37   1.00     14.32     17.050      -       -   3.36
+    MCP2_f     37   1.00     33.70     30.761      -       -   7.90
+    PIP2       37   1.00     -1.82     -1.653      -       -   0.43
+    MCP3_f     37   1.00     -5.00     -3.811      -       -   1.17
+    PIP3       37   1.00      0.00      0.000      -       -   0.00
+    MCP4_f     37   1.00     -0.16     -0.155      -       -   0.04
+    MCP4_a     37   0.00     18.98     -5.726      -       -   4.45
+    PIP4       37   1.00     -3.53     -5.578      -       -   0.83
+    CMC5       37   1.00      9.46      2.372      -       -   2.22
+    MCP5_f     37   1.00     -2.00     -2.133      -       -   0.47
+    MCP5_a     37   0.08    -18.94      4.947      -       -   4.44
+    PIP5       37   1.00     -1.13     -1.300      -       -   0.26
+    DIP2       37   1.00     -3.00     -4.889      -       -   0.70
+    DIP3       37   1.00      8.00      9.934      -       -   1.87
+    DIP4       37   1.00     12.06     26.338      -       -   2.83
+    DIP5       37   1.00      8.61     11.340      -       -   2.02
+    WRIST_F    37   1.00      9.46     21.753   1.00    0.00   2.22
+    WRIST_A    37   0.24      2.53      1.251      -       -   0.59
+
+  A_WRISTEXT  (movements [14])   flexion-magnitude reference = 2.6043054866412234
+    channel     n    coh      dRaw     dAngle  agree  oppose    mag
+    CMC1_f     37   0.84      4.22      4.156      -       -   1.62
+    CMC1_a     37   0.05     -0.76     -0.271      -       -   0.29
+    MCP1       37   1.00      8.00      4.498      -       -   3.07
+    IP1        37   1.00     15.59     18.567      -       -   5.99
+    MCP2_f     37   1.00     -9.18     -8.672      -       -   3.52
+    PIP2       37   1.00     -2.39     -2.726      -       -   0.92
+    MCP3_f     37   1.00     -2.04     -1.905      -       -   0.78
+    PIP3       37   1.00      1.00      1.072      -       -   0.38
+    MCP4_f     37   1.00     -7.87     -7.404      -       -   3.02
+    MCP4_a     37   0.05     -9.00      1.876      -       -   3.46
+    PIP4       37   1.00      1.00      1.579      -       -   0.38
+    CMC5       37   1.00    -22.54     -5.534      -       -   8.66
+    MCP5_f     37   1.00     -1.70     -2.133      -       -   0.65
+    MCP5_a     37   0.19      7.48     -2.347      -       -   2.87
+    PIP5       37   1.00     -1.00     -0.891      -       -   0.38
+    DIP2       37   1.00      1.75      2.160      -       -   0.67
+    DIP3       37   1.00      9.00     12.740      -       -   3.46
+    DIP4       37   1.00      2.94      8.000      -       -   1.13
+    DIP5       37   1.00      2.82      6.433      -       -   1.08
+    WRIST_F    37   1.00    -22.54    -48.159   1.00    0.00   8.66
+    WRIST_A    37   0.57     -4.24     -3.065      -       -   1.63
+
+  A_WRISTDEV_RADIAL  (movements [15])   flexion-magnitude reference = 29.831292879502442
+    channel     n    coh      dRaw     dAngle  agree  oppose    mag
+    CMC1_f     37   0.73     27.11      4.587      -       -   0.91
+    CMC1_a     37   0.03    -29.00     11.180      -       -   0.97
+    MCP1       37   1.00     14.69      8.931      -       -   0.49
+    IP1        37   1.00     28.66     32.154      -       -   0.96
+    MCP2_f     37   1.00     58.00     52.947      -       -   1.94
+    PIP2       37   1.00    117.00    113.526      -       -   3.92
+    MCP3_f     37   1.00    118.16    102.106      -       -   3.96
+    PIP3       37   1.00      7.81      8.572      -       -   0.26
+    MCP4_f     37   1.00     74.20     69.843      -       -   2.49
+    MCP4_a     37   0.11     46.08    -16.593      -       -   1.54
+    PIP4       37   1.00     26.00     59.983      -       -   0.87
+    CMC5       37   1.00    -28.00     -7.983      -       -   0.94
+    MCP5_f     37   1.00    127.00    138.201      -       -   4.26
+    MCP5_a     37   0.54    -13.00    -23.938      -       -   0.44
+    PIP5       37   1.00     31.00     40.279      -       -   1.04
+    DIP2       37   1.00     44.17     63.720      -       -   1.48
+    DIP3       37   1.00    -17.00    -24.051      -       -   0.57
+    DIP4       37   1.00     -2.64     -7.452      -       -   0.09
+    DIP5       37   1.00     -2.58     -9.103      -       -   0.09
+    WRIST_F    37   1.00    -28.00    -65.938      -       -   0.94
+    WRIST_A    37   0.38      0.00     -6.755   0.43    0.57   0.00
+
+  A_WRISTDEV_ULNAR  (movements [16])   flexion-magnitude reference = 2.770587682723999
+    channel     n    coh      dRaw     dAngle  agree  oppose    mag
+    CMC1_f     37   0.86      7.00      3.169      -       -   2.53
+    CMC1_a     37   0.00    -12.30      3.655      -       -   4.44
+    MCP1       37   1.00     10.00      5.623      -       -   3.61
+    IP1        37   1.00      7.00      7.575      -       -   2.53
+    MCP2_f     37   1.00     12.37     11.289      -       -   4.46
+    PIP2       37   1.00     -0.72     -0.909      -       -   0.26
+    MCP3_f     37   1.00     -4.00     -3.811      -       -   1.44
+    PIP3       37   1.00      1.00      1.072      -       -   0.36
+    MCP4_f     37   1.00     -3.00     -2.910      -       -   1.08
+    MCP4_a     37   0.16      1.92     -0.488      -       -   0.69
+    PIP4       37   1.00     -0.95     -2.465      -       -   0.34
+    CMC5       37   1.00     -4.00     -1.140      -       -   1.44
+    MCP5_f     37   1.00     -1.00     -1.066      -       -   0.36
+    MCP5_a     37   0.03    -26.61      6.941      -       -   9.61
+    PIP5       37   1.00      0.93      0.827      -       -   0.34
+    DIP2       37   1.00     -3.50     -5.646      -       -   1.26
+    DIP3       37   1.00      6.19      9.861      -       -   2.23
+    DIP4       37   1.00     -2.54     -9.750      -       -   0.92
+    DIP5       37   1.00     -1.98     -4.210      -       -   0.71
+    WRIST_F    37   1.00     -4.00     -9.004      -       -   1.44
+    WRIST_A    37   0.05      0.00     -1.077   0.51    0.49   0.00
+
+  A_ABD  (movements [5])   flexion-magnitude reference = 2.000926437167813
+    channel     n    coh      dRaw     dAngle  agree  oppose    mag
+    CMC1_f     37   0.65      7.96    -11.045      -       -   3.98
+    CMC1_a     37   0.03    -29.00      9.965      -       -  14.49
+    MCP1       37   1.00      2.42      1.362      -       -   1.21
+    IP1        37   1.00    -10.00    -10.718      -       -   5.00
+    MCP2_f     37   1.00     -8.64     -7.884      -       -   4.32
+    PIP2       37   1.00     -1.00     -0.909      -       -   0.50
+    MCP3_f     37   1.00      1.58      1.478      -       -   0.79
+    PIP3       37   1.00     -0.79     -0.844      -       -   0.39
+    MCP4_f     37   1.00      0.24      0.231      -       -   0.12
+    MCP4_a     37   0.05    -14.63      3.719   0.84    0.16   7.31
+    PIP4       37   1.00      0.00      0.000      -       -   0.00
+    CMC5       37   1.00      0.81      0.163      -       -   0.40
+    MCP5_f     37   1.00     -5.14     -6.399      -       -   2.57
+    MCP5_a     37   0.11     20.24     -4.388   0.30    0.70  10.12
+    PIP5       37   1.00      1.54      1.643      -       -   0.77
+    DIP2       37   1.00     -0.02     -0.023      -       -   0.01
+    DIP3       37   1.00    -30.89    -41.511      -       -  15.44
+    DIP4       37   1.00    -36.32    -84.800      -       -  18.15
+    DIP5       37   1.00    -31.60    -57.498      -       -  15.79
+    WRIST_F    37   1.00      0.81      1.597      -       -   0.40
+    WRIST_A    37   0.05     -1.24      1.682      -       -   0.62
+
+  A_ADDUCT  (movements [8])   flexion-magnitude reference = 2.6790856174227784
+    channel     n    coh      dRaw     dAngle  agree  oppose    mag
+    CMC1_f     37   0.84      2.63      7.386      -       -   0.98
+    CMC1_a     37   0.14      7.57     -2.753      -       -   2.82
+    MCP1       37   1.00     14.99      8.997      -       -   5.60
+    IP1        37   1.00     29.36     34.800      -       -  10.96
+    MCP2_f     37   1.00     -1.44     -1.429      -       -   0.54
+    PIP2       37   1.00     -3.60     -3.634      -       -   1.34
+    MCP3_f     37   1.00     -2.74     -2.606      -       -   1.02
+    PIP3       37   1.00      3.00      3.215      -       -   1.12
+    MCP4_f     37   1.00     -2.00     -1.940      -       -   0.75
+    MCP4_a     37   0.00      4.83     -1.702   0.70    0.30   1.80
+    PIP4       37   1.00      5.50     11.050      -       -   2.05
+    CMC5       37   1.00     -2.47     -0.570      -       -   0.92
+    MCP5_f     37   1.00     -2.62     -2.797      -       -   0.98
+    MCP5_a     37   0.11     -1.23      0.721   0.46    0.54   0.46
+    PIP5       37   1.00      2.14      1.905      -       -   0.80
+    DIP2       37   1.00      1.36      2.160      -       -   0.51
+    DIP3       37   1.00      7.00     10.920      -       -   2.61
+    DIP4       37   1.00      1.69      8.250      -       -   0.63
+    DIP5       37   1.00      1.78      3.456      -       -   0.66
+    WRIST_F    37   1.00     -2.47     -5.125      -       -   0.92
+    WRIST_A    37   0.14     -1.00     -0.381      -       -   0.37
+
+  A_NO_ANCHOR  (movements [])   flexion-magnitude reference = None
+    channel     n    coh      dRaw     dAngle  agree  oppose    mag
+==============================================================================
+per-channel verdicts
+==============================================================================
+
+  source-database split of the fist anchor (reported, not scored):
+    MCP2_f   DB1 n= 27 pos=1.00   DB5 n= 10 pos=1.00
+    PIP2     DB1 n= 27 pos=0.96   DB5 n= 10 pos=1.00
+    MCP3_f   DB1 n= 27 pos=1.00   DB5 n= 10 pos=1.00
+    PIP3     DB1 n= 27 pos=0.63   DB5 n= 10 pos=0.30
+    MCP4_f   DB1 n= 27 pos=1.00   DB5 n= 10 pos=1.00
+    PIP4     DB1 n= 27 pos=0.78   DB5 n= 10 pos=0.70
+    MCP5_f   DB1 n= 27 pos=1.00   DB5 n= 10 pos=1.00
+    PIP5     DB1 n= 27 pos=1.00   DB5 n= 10 pos=1.00
+    DIP2     DB1 n= 27 pos=0.85   DB5 n= 10 pos=0.50
+    DIP3     DB1 n= 27 pos=0.04   DB5 n= 10 pos=0.10
+    DIP4     DB1 n= 27 pos=0.22   DB5 n= 10 pos=0.20
+    DIP5     DB1 n= 27 pos=0.11   DB5 n= 10 pos=0.20
+  CASE_A_RELEASED_REPRESENTATION       (2): ['DIP3', 'DIP5']
+  CASE_B_SENSOR_OR_FIT_LIMITATION      (3): ['CMC5', 'MCP5_a', 'WRIST_A']
+  CASE_C_PREVIOUS_QC_WRONG             (8): ['MCP1', 'IP1', 'MCP2_f', 'PIP2', 'MCP3_f', 'MCP4_f', 'MCP5_f', 'PIP5']
+  CASE_D_DOCUMENTATION_CONFLICT        (2): ['MCP4_a', 'WRIST_F']
+  CASE_E_INCONCLUSIVE                  (6): ['CMC1_f', 'CMC1_a', 'PIP3', 'PIP4', 'DIP2', 'DIP4']
+  OFFICIAL_EXCLUSION                   (1): ['MCP2_a']
+
+  KEEP (8): ['MCP1', 'IP1', 'MCP2_f', 'PIP2', 'MCP3_f', 'MCP4_f', 'MCP5_f', 'PIP5']
+  DROP (6): ['MCP2_a', 'CMC5', 'MCP5_a', 'DIP3', 'DIP5', 'WRIST_A']
+  INCONCLUSIVE (8): ['CMC1_f', 'CMC1_a', 'PIP3', 'MCP4_a', 'PIP4', 'DIP2', 'DIP4', 'WRIST_F']
+==============================================================================
+DIP hand-size hypothesis
+==============================================================================
+  metadata columns available for DB9 subjects: ['file', 'subject', 'handedness', 'sex', 'age', 'height_cm', 'weight_kg']
+  HAND_SIZE_HYPOTHESIS_NOT_TESTABLE_FROM_RELEASED_METADATA - the released subject table carries sex, handedness, age, height and weight only; no hand length or width is published.  Height is used as the only available substitute and sex as an explicitly labelled exploratory secondary proxy.
+    DIP2: {'n_with_metadata': 0, 'pearson_r_height_vs_angle_delta': None, 'slope_deg_per_cm': None, 'raw_median': 65.64703941345215, 'positive_subjects': 28, 'negative_subjects': 9}
+    DIP3: {'n_with_metadata': 0, 'pearson_r_height_vs_angle_delta': None, 'slope_deg_per_cm': None, 'raw_median': -32.58176499394631, 'positive_subjects': 2, 'negative_subjects': 35}
+    DIP4: {'n_with_metadata': 0, 'pearson_r_height_vs_angle_delta': None, 'slope_deg_per_cm': None, 'raw_median': -8.880267573802428, 'positive_subjects': 8, 'negative_subjects': 28}
+    DIP5: {'n_with_metadata': 0, 'pearson_r_height_vs_angle_delta': None, 'slope_deg_per_cm': None, 'raw_median': -9.116468057723282, 'positive_subjects': 5, 'negative_subjects': 32}
+==============================================================================
+Sensor 11 / MCP2_a historical impact
+==============================================================================
+  files mentioning MCP2_a / MCP2-3_A / angle column 5: 19
+     MCP2_a   docs\canonical_emg2pose_verification.json
+     MCP2_a   docs\DB9_CANONICAL16_MAPPING.md
+     MCP2_a   docs\DB9_FILE_AUDIT.json
+     MCP2_a   docs\REMEDIATION_REPORT.md
+     MCP2_a   posture_decoder\README.md
+     MCP2_a   posture_decoder\report.md
+     MCP2_a   posture_decoder\db9\canonical.py
+     MCP2_a   posture_decoder\db9\loader.py
+     MCP2_a   posture_decoder\db9\quality.py
+     MCP2_a   pose_coordinate_audit\OFFICIAL_SOURCE_REFERENCES.md
+  DB9_CANONICAL16_MAPPING.md references MCP2_a or MCP2-3_A: True
+  (the Common Pose API decision is about KIN-MUS, not DB9)
+  NO IMPACT - the released DB9 angle column 5 (MCP2_a) is all NaN and no historical representation of this project selects it; canonical16 is built from the emg2pose 20D array and never from a DB9 angle column.
+
+artifacts/VERDICTS.json sha256=eb0f891eea49ce9c3fb20526cb401e36e9f8a9faa2f8136f210bb4fcf5bf6688
+DB9_CHANNEL_LEDGER.csv : 22 rows sha256=223b2f9282e45655637968e0607c7b4b37548c4b002f2fd424340b4f6f7b55a6
+FLAGGED_CHANNEL_FORENSICS.md sha256=3bb7c78b0b9067893481da16f2957484546264f5760413f857dfee3c30ec8417
+SENSOR11_IMPACT.md sha256=9bc24e0aa8da3351ac9ed502b849af7856e9467fc3f70956a7d9692c1e961c8f
+DIP_HANDSIZE_ANALYSIS.md sha256=9f190ff85c97edb83fb99268be78d1a37c07abac219890761c26691968bcda9b
+TRUSTED_DB9_POSE_v1.json sha256=e51dde6e63941fd080c84f3896a98cf50fba9e17d5f9cebe909253d5465782d1   KEEP=8 channels
+  ['MCP1', 'IP1', 'MCP2_f', 'PIP2', 'MCP3_f', 'MCP4_f', 'MCP5_f', 'PIP5']
+log: <PROJECT_ROOT>\db9_channel_forensic_v2\logs\03_verdicts.log

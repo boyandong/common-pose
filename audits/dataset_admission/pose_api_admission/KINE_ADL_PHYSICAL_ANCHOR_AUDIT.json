@@ -1,0 +1,15 @@
+{
+  "artifact": "KINE_ADL_PHYSICAL_ANCHOR_AUDIT.json",
+  "branch_id": "S6-POSE-API-DATASET-ADMISSION",
+  "plan_sha256": "4d2c8b162e2332a5891a5d89a53166e365b1bbd92c205222492d19957c9683ec",
+  "documentation_audit": "COMPLETE",
+  "empirical_data_qc": "NOT POSSIBLE (corpus not downloaded)",
+  "reason": "the KINE-ADL angle tables were not downloaded; anchor tests require the data",
+  "anchors_that_WOULD_be_run": [
+    "A: manipulation vs reaching flexion sum (WEAK) - the corpus is continuous ADL, so an analogous phase comparison needs its own segmentation",
+    "B: reference-posture zero (STRONG) - testable once the per-session reference handling is confirmed for this release",
+    "C: homologous fingers (WEAK)",
+    "D: open-hand side of range (STRONG)"
+  ],
+  "pipeline_level_confidence": "the anchor tests transfer from KIN-MUS at the PIPELINE level (same code, same gains family, same sign criteria), but this audit does NOT report KIN-MUS measurements as KINE-ADL measurements"
+}

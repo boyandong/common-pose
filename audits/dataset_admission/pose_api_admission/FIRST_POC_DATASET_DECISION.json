@@ -1,0 +1,204 @@
+{
+  "statuses": {
+    "HUST": {
+      "status": "REJECT",
+      "criteria_failed": [
+        "1 accessible data - FAIL: no bytes obtainable by any public route (HTTP 500 on the published link, no archive copy, Dryad behind a proof-of-work interstitial)",
+        "2 adequate license - FAIL/UNKNOWN: no licence field retrievable from the Dryad API record and no licence on the dataset page",
+        "3 clear anatomical DOF definitions - FAIL: the dataset publishes a DOF COUNT (16), not a joint-name list",
+        "4 clear units - PARTIAL: the dataset page claims radians, but the underlying publication is RETRACTED so the claim has a provenance defect",
+        "5 clear sign conventions - FAIL: UNKNOWN, no obtainable source",
+        "6 clear physical/reference definition - FAIL: UNKNOWN, no obtainable source",
+        "7 no DB9-like channel failure - UNTESTABLE: no data",
+        "8 sufficient common DOFs - FAIL: 0 of 16 establishable",
+        "9 useful subject count - the claimed 30 would pass, but is not verifiable independently of the retracted paper",
+        "10 pose-observable labels - PLAUSIBLE (grasp taxonomy) but unverifiable without the channel list",
+        "11 no target-fitted mapping - vacuously satisfied"
+      ],
+      "publication_integrity": {
+        "value": "the associated PLOS ONE article was RETRACTED on 4 March 2016; the editors stated the work 'cannot be relied upon'",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "what_would_change_the_verdict": "nothing this audit can do.  Re-admission would require the authors or an archive to publish the data together with a channel list, a sign criterion, a zero definition and a calibration description from a source that is not the retracted article",
+      "documentation_audit": "COMPLETE",
+      "empirical_data_qc": "NOT POSSIBLE"
+    },
+    "KINE_ADL": {
+      "status": "CONDITIONAL",
+      "criteria_passed": [
+        "1 accessible - PASS (Mendeley Data, DOI 10.17632/8mf4y2srgh.4, metadata and licence retrievable)",
+        "2 license - PASS (CC BY 4.0, verified from the record page)",
+        "3 clear anatomical DOF definitions - PASS at the PIPELINE level (BE-UJI code downloaded and read; 18 named angles with a published layout)",
+        "4 clear units - PASS (degrees)",
+        "5 clear sign conventions - PASS (published sign criteria list)",
+        "6 clear physical/reference definition - PASS (recorded reference posture, documented with a figure)",
+        "9 useful subject count - PASS (20 subjects)",
+        "10 pose-observable labels - PASS (continuous ADL; segment kinematics is pose-observable)",
+        "11 no target-fitted mapping - PASS (nothing is fitted to emg2pose)"
+      ],
+      "criteria_outstanding": [
+        "7 no DB9-like channel failure - NOT YET MEASURED on this corpus (the pipeline-level evidence transfers from KIN-MUS; the data-level test does not)",
+        "8 sufficient common DOFs - the mapping is shared with KIN-MUS by pipeline identity, so the count would be 12 (gate 8) IF the columns match, which must be confirmed from the corpus's own angle table"
+      ],
+      "blocking_gaps": [
+        "the corpus itself was not downloaded within the bounded-download rule, so no empirical quality or anchor test was run on it",
+        "no independent physical evidence: the pipeline is KIN-MUS's pipeline"
+      ],
+      "minimum_evidence_or_action_to_promote": [
+        "download KINE-ADL BE-UJI (Mendeley 8mf4y2srgh.4) - the release is the corpus's own angle tables in .mat/.xlsx",
+        "confirm its channel list and column order against the documented 18",
+        "re-run this branch's anchor and quality builders on it, unchanged",
+        "if the anchors pass as they do for KIN-MUS, KINE-ADL is ADMIT - but it adds NO independent physical replication"
+      ],
+      "documentation_audit": "COMPLETE",
+      "empirical_data_qc": "PARTIAL (pipeline yes, corpus no)"
+    },
+    "KIN_MUS": {
+      "status": "ADMIT",
+      "criteria_passed": [
+        "1 accessible raw or sufficiently processed data - PASS (CC-BY-4.0, open, 86 661 263 B downloaded and parsed today)",
+        "2 adequate license for research use - PASS (CC-BY-4.0)",
+        "3 clear anatomical DOF definitions - PASS (18 named angles; the released block is (N,18); the code names every angle in a comment block and in every assignment)",
+        "4 clear units - PASS (degrees; declared and DATA-INFERRED corroborated)",
+        "5 clear sign conventions - PASS (published per-channel sign criteria; corroborated by the anchor tests)",
+        "6 clear physical/reference definition - PASS (hands flat on the table, fingers and thumb together, middle fingers aligned with the forearms; a RECORDED reference posture)",
+        "7 no DB9-like widespread channel failure - PASS (no constant, aliased, non-finite or artefactually saturated channel; all interpretable anchors pass in 22/22 subjects)",
+        "8 sufficient number of common physical DOFs - PASS (12 of 16 at HIGH or MEDIUM, 10 at HIGH; gate is 8 with >=6 HIGH)",
+        "9 useful subject count - PASS (22 subjects)",
+        "10 labels suitable for a pose-observable downstream task - PASS with a caveat: the movement-phase label is pose-observable; the 26 ADL identities are goal/object-defined and NOT pose-sufficient",
+        "11 no necessary mapping fitted against emg2pose outcomes - PASS (only degrees->radians is required)"
+      ],
+      "named_limitations_carried_into_the_admission": [
+        "4 of the 16 API variables have NO released column (all four DIPs); they are NONE, not LOW",
+        "thumb_cmc_ab_adduction and thumb_ip_flexion are MEDIUM, the latter because the code reuses a PIP gain constant for the thumb IP",
+        "the released block is ONE hand and does not label which; handedness is therefore UNKNOWN for this file and must be confirmed before any cross-hand claim",
+        "calibration is per GLOVE UNIT applied across subjects, and the authors themselves link a small-hand subject to an outlier cluster",
+        "the 26 ADL identity labels are not pose-sufficient; only the phase label is"
+      ],
+      "why_it_is_admit_despite_the_limitations": "every mandatory field is sourced, the coverage gate passes with the HIGH set alone meeting the 6-HIGH requirement, the quality and anchor gates pass empirically, and the limitations are NAMED rather than hidden.  The limitations constrain which task the first experiment may use, not whether the dataset is admissible",
+      "documentation_audit": "COMPLETE",
+      "empirical_data_qc": "POSSIBLE AND DONE"
+    }
+  },
+  "ranking": {
+    "priority_order": [
+      "1. physical-coordinate trustworthiness",
+      "2. compatibility with emg2pose",
+      "3. the task is pose-observable",
+      "4. sufficient subjects",
+      "5. external-test feasibility",
+      "6. dataset independence",
+      "7. ease of implementation"
+    ],
+    "ranking": [
+      {
+        "rank": 1,
+        "dataset": "KIN_MUS",
+        "why": "the only candidate that passes every mandatory admission field with measured evidence, has 12 mapped DOFs (10 HIGH), a documented and CODE-VERIFIABLE angle pipeline, an empirically clean channel set, passing anchors in 22/22 subjects, and a pose-observable label (movement phase) whose external test needs no new human annotation"
+      },
+      {
+        "rank": 2,
+        "dataset": "KINE_ADL",
+        "why": "same physical pipeline and therefore the same admitted DOF structure, but the corpus was not measured in this session and it is NOT independent evidence.  It is the right SECOND corpus for a task-generalisation test once its own anchors are run"
+      },
+      {
+        "rank": 3,
+        "dataset": "HUST",
+        "why": "REJECT.  Data unobtainable, channel list absent, sign/zero/calibration UNKNOWN, licence UNKNOWN, and the associated publication retracted"
+      }
+    ],
+    "tradeoff_statement": "KIN-MUS and KINE-ADL are NOT close competitors: they are two task sets over one physical pipeline.  Choosing KIN-MUS over KINE-ADL is a choice of WHICH TASK, made on the ground that KIN-MUS's phase label is pose-observable while KINE-ADL's activity label needs segmentation agreement first",
+    "no_backup_audit_needed": "DLR and UNIPI were NOT audited: the frozen backup rule triggers only if ALL THREE primary candidates are REJECT, and one is ADMIT.  This is recorded so the omission is visibly a rule application, not an oversight"
+  },
+  "decision": {
+    "artifact": "FIRST_POC_DATASET_DECISION.json",
+    "branch_id": "S6-POSE-API-DATASET-ADMISSION",
+    "plan_sha256": "4d2c8b162e2332a5891a5d89a53166e365b1bbd92c205222492d19957c9683ec",
+    "decision": "KIN_MUS",
+    "FIRST_POC_DATASET": {
+      "name": "KIN-MUS UJI Dataset",
+      "doi": "10.5281/zenodo.3469380",
+      "license": "CC-BY-4.0",
+      "file_used": "KIN_MUS_UJI.mat (86 661 263 B)",
+      "n_subjects": 22,
+      "n_adls": 26,
+      "n_phases": 3,
+      "n_usable_frames": 564894,
+      "admission_status": "ADMIT"
+    },
+    "runner_up": {
+      "name": "KINE-ADL BE-UJI",
+      "status": "CONDITIONAL",
+      "role": "the natural second corpus, NOT independent evidence"
+    },
+    "rejected": {
+      "name": "HUST",
+      "status": "REJECT",
+      "primary_reason": "data unobtainable; channel list, signs, zero and calibration UNKNOWN; associated publication retracted"
+    },
+    "the_representation_this_choice_implies": {
+      "name": "shared10_poc_v1",
+      "n_dof": 10,
+      "api_dofs": [
+        "thumb_cmc_flexion",
+        "thumb_mcp_flexion",
+        "index_mcp_flexion",
+        "index_pip_flexion",
+        "middle_mcp_flexion",
+        "middle_pip_flexion",
+        "ring_mcp_flexion",
+        "ring_pip_flexion",
+        "pinky_mcp_flexion",
+        "pinky_pip_flexion"
+      ],
+      "all_HIGH_confidence": true,
+      "excluded_and_why": {
+        "thumb_cmc_ab_adduction": "MEDIUM - the cross-dataset axis correspondence is not proven (the project's own contract flags it)",
+        "thumb_ip_flexion": "MEDIUM - the released code reuses a PIP gain constant for the thumb IP",
+        "index_dip_flexion": "NONE - no released column; derived from PIP",
+        "middle_dip_flexion": "NONE - no released column; derived from PIP",
+        "ring_dip_flexion": "NONE - no released column; derived from PIP",
+        "pinky_dip_flexion": "NONE - no released column; derived from PIP"
+      },
+      "not_chosen": {
+        "shared12_poc_v1": {
+          "would_add": [
+            "thumb_cmc_ab_adduction",
+            "thumb_ip_flexion"
+          ],
+          "why_not": "adding two MEDIUM axes would raise the count from 10 to 12 but would import the thumb-AA axis-identity uncertainty the project already flagged and a thumb-IP channel that reuses a PIP gain.  Physical semantic equivalence outranks dimensional count"
+        },
+        "api16": {
+          "would_add": [
+            "index_dip_flexion",
+            "middle_dip_flexion",
+            "ring_dip_flexion",
+            "pinky_dip_flexion"
+          ],
+          "why_not": "four of the sixteen do not exist in the data"
+        }
+      },
+      "representation_on_the_api_side": {
+        "unit": "radians",
+        "order": [
+          "thumb_cmc_flexion",
+          "thumb_mcp_flexion",
+          "index_mcp_flexion",
+          "index_pip_flexion",
+          "middle_mcp_flexion",
+          "middle_pip_flexion",
+          "ring_mcp_flexion",
+          "ring_pip_flexion",
+          "pinky_mcp_flexion",
+          "pinky_pip_flexion"
+        ],
+        "source": {
+          "value": "P.API_REQUIREMENT.canonical16_names order restricted to the shared set",
+          "evidence": "PROJECT-FROZEN"
+        }
+      }
+    },
+    "decision_rule_applied": "apply the ADMISSION statuses first; among ADMIT candidates rank by the priority order; if two candidates are close, state the tradeoff explicitly instead of hiding it.  If no candidate is ADMIT, select the highest-priority CONDITIONAL and name the minimum evidence needed to promote it.  If none is even CONDITIONAL, audit DLR then UNIPI.",
+    "anti_bias_attestation": "HUST received no priority for having been discussed first; it was rejected on access and provenance.  KINE-ADL received no priority for having 'interesting' labels; it is CONDITIONAL on an unrun measurement.  KIN-MUS received no credit for containing EMG; the EMG channels were NOT downloaded and play no part in the decision"
+  }
+}

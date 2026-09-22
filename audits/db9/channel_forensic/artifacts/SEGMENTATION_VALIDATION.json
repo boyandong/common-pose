@@ -1,0 +1,1406 @@
+{
+  "artifact": "SEGMENTATION_VALIDATION.json",
+  "plan_sha256": "4c618b562903d0d364d03bb8a997ef6b4140bd9e09d0f2475f1b008ad80c8793",
+  "gate_passed": true,
+  "sources": {
+    "released_mat_files": 99,
+    "by_exercise": {
+      "E2": 37,
+      "E3": 22,
+      "E1": 40
+    },
+    "raw_archives": 22,
+    "extracted_root": "<DB9_DATA_ROOT>\\extracted",
+    "zip_inventory": [
+      {
+        "name": "s_10_angles.zip",
+        "bytes": 17785177,
+        "sha256": "0204a4119def3e74406331dbe5daca9b61935b1eef88e3168de212471fa4a06d"
+      },
+      {
+        "name": "s_11_angles.zip",
+        "bytes": 17931199,
+        "sha256": "63eb0290802378413d44f4c9239a4af4437ca61106ae1305049aab8d627df3cb"
+      },
+      {
+        "name": "s_12_angles.zip",
+        "bytes": 18583890,
+        "sha256": "ddbe3699ee82350be57b64b5b36a23ce034ce03865eb5d48a606f6308fcd71f9"
+      },
+      {
+        "name": "s_13_angles.zip",
+        "bytes": 15503483,
+        "sha256": "984c36e85d18046ec5c54dd30b7fe77b519487a3f0d80d59b0733ed77a888cec"
+      },
+      {
+        "name": "s_14_angles.zip",
+        "bytes": 17000950,
+        "sha256": "d530e1bf9f03362ff6f4515afd08c89ac3cb889367e7f49699f78bfc5a066381"
+      },
+      {
+        "name": "s_15_angles.zip",
+        "bytes": 15329259,
+        "sha256": "87dfc2e0291ebe1b33e8e717d92db58e9dedd83d5ea8d67d47d40fa1f85d95da"
+      },
+      {
+        "name": "s_16_angles.zip",
+        "bytes": 18931175,
+        "sha256": "3e6a772941c779ef3d5976b581f0f871ed0d723b8d080a74a5719311367ce81a"
+      },
+      {
+        "name": "s_1_angles.zip",
+        "bytes": 16271436,
+        "sha256": "0250ed6aa5d61aa12b4d31221545b319b177aaf7d10aee5b88eb85cfdecf1679"
+      },
+      {
+        "name": "s_2_angles.zip",
+        "bytes": 19014415,
+        "sha256": "0eac55856562666390d3aafefba0ec75164d3b1aa1335934ec659c58cab7fe08"
+      },
+      {
+        "name": "s_3_angles.zip",
+        "bytes": 19176576,
+        "sha256": "3b234a8dc644307cb40a32781ed952d33fe4159f9557d91742efba1ac6446f18"
+      },
+      {
+        "name": "s_4_angles.zip",
+        "bytes": 16679664,
+        "sha256": "555de2c1cbafa8804f640d1d1976ffb51b12853beacbd571628c305cd4cb7e67"
+      },
+      {
+        "name": "s_5_angles.zip",
+        "bytes": 24491982,
+        "sha256": "f5f4bb5f222f2a4496c26ee2ec1b6d01ef0e8547b7830596900a90f4184d6b47"
+      },
+      {
+        "name": "s_68_angles.zip",
+        "bytes": 17073843,
+        "sha256": "9f5c5fd38586017d93f6e8ed9b19bfdea42b846d4a6a41519c2b8501eed80662"
+      },
+      {
+        "name": "s_69_angles.zip",
+        "bytes": 16002597,
+        "sha256": "366831982d7bbdde7f1c222299d8ac6914db46d001cf0d318dcc31a4db38b932"
+      },
+      {
+        "name": "s_6_angles.zip",
+        "bytes": 16758348,
+        "sha256": "3782ad896ec2e1448026944e97a5c4fc05e061f0aa3788a1bda91c54b1953d94"
+      },
+      {
+        "name": "s_70_angles.zip",
+        "bytes": 20008246,
+        "sha256": "a662fd968c50a48fde85c475e11a66f5e5c974b3cdca4f09883693d7a930e2de"
+      },
+      {
+        "name": "s_71_angles.zip",
+        "bytes": 14431545,
+        "sha256": "bbd2d9c5a4f22972a73db2383dedf8c5cf488cf828d199ddfa282ef3a224f875"
+      },
+      {
+        "name": "s_72_angles.zip",
+        "bytes": 15591528,
+        "sha256": "6e626104cc442fb530ee706dba5b326479aea57dd2dc7b3ac351e11acfca9b23"
+      },
+      {
+        "name": "s_73_angles.zip",
+        "bytes": 16469932,
+        "sha256": "a4a187c8f9b268ec80caf0ad1093d1969db8a78e890e85dfa71164ad2c2d301c"
+      },
+      {
+        "name": "s_7_angles.zip",
+        "bytes": 18521797,
+        "sha256": "3ebd5ad9224e739022ce5e46e1be36ed00b6ccfc63640dc9f71b21c3da59e564"
+      },
+      {
+        "name": "s_8_angles.zip",
+        "bytes": 15512132,
+        "sha256": "9fcfb39cd98fc782622d5000b2c73e842dd2a8ca2b7faa69f296e517494fb92b"
+      },
+      {
+        "name": "s_9_angles.zip",
+        "bytes": 16460343,
+        "sha256": "5c97800469cf221d11f98cd4114f2fda1966f1aeec2f53921bf4cd7cf92eecf0"
+      }
+    ],
+    "docs": {
+      "DB9_instructions.html": {
+        "bytes": 23683,
+        "sha256": "f6c363313fbd6efd1608d32e6bef0874fe5deb7fb21899de7c85db7277aeae75"
+      },
+      "DB9_instructions.txt": {
+        "bytes": 5103,
+        "sha256": "ed854c820150aa1030f556851e2eaca2ae9ea95e40e05b946d4cb980399f3630"
+      },
+      "Robotics2024_13-82.pdf": {
+        "bytes": 405,
+        "sha256": "3b9bc84521e9e01d0b5154f03f96a3166405ebcb970120472debc778e55f52a6"
+      }
+    },
+    "upstream_docs": {
+      "db9_paper_clean.txt": {
+        "bytes": 25693,
+        "sha256": "60dcc9f45299e1ee336efad9dc0cd700b2379f7f17a3f2e62e04f8aa8943c439"
+      },
+      "setup_cyberglove.png": {
+        "bytes": 439477,
+        "sha256": "88fb1ed93b6b752ca292528c97f2dcc0b7eb3650525e74111e2c942f9067dfc1"
+      },
+      "SData_Movements.png": {
+        "bytes": 2270669,
+        "sha256": "f240dfcf247516a632308fc19b62ff0bc08fc87f50bf0cb4d7055b2a74cbc45b"
+      }
+    }
+  },
+  "alignment": {
+    "counts": {
+      "glove==angles": 99,
+      "glove==restimulus": 99,
+      "glove==rerepetition": 99,
+      "glove==stimulus": 75,
+      "glove==repetition": 75,
+      "n": 99
+    },
+    "misaligned_files": [
+      {
+        "file": "S11_E3_A1.mat",
+        "glove": 150379,
+        "stimulus": 150982,
+        "repetition": 150982
+      },
+      {
+        "file": "S13_E2_A1.mat",
+        "glove": 85231,
+        "stimulus": 85600,
+        "repetition": 85600
+      },
+      {
+        "file": "S13_E3_A1.mat",
+        "glove": 135046,
+        "stimulus": 135680,
+        "repetition": 135680
+      },
+      {
+        "file": "S14_E3_A1.mat",
+        "glove": 139962,
+        "stimulus": 140487,
+        "repetition": 140487
+      },
+      {
+        "file": "S15_E2_A1.mat",
+        "glove": 86146,
+        "stimulus": 86288,
+        "repetition": 86288
+      },
+      {
+        "file": "S15_E3_A1.mat",
+        "glove": 154019,
+        "stimulus": 154918,
+        "repetition": 154918
+      },
+      {
+        "file": "S16_E2_A1.mat",
+        "glove": 85180,
+        "stimulus": 85560,
+        "repetition": 85560
+      },
+      {
+        "file": "S18_E2_A1.mat",
+        "glove": 85348,
+        "stimulus": 86005,
+        "repetition": 86005
+      },
+      {
+        "file": "S19_E2_A1.mat",
+        "glove": 85686,
+        "stimulus": 85694,
+        "repetition": 85694
+      },
+      {
+        "file": "S1_E3_A1.mat",
+        "glove": 149838,
+        "stimulus": 149845,
+        "repetition": 149845
+      },
+      {
+        "file": "S20_E2_A1.mat",
+        "glove": 86443,
+        "stimulus": 86454,
+        "repetition": 86454
+      },
+      {
+        "file": "S21_E2_A1.mat",
+        "glove": 86274,
+        "stimulus": 86370,
+        "repetition": 86370
+      },
+      {
+        "file": "S22_E2_A1.mat",
+        "glove": 86313,
+        "stimulus": 86317,
+        "repetition": 86317
+      },
+      {
+        "file": "S24_E2_A1.mat",
+        "glove": 85829,
+        "stimulus": 86181,
+        "repetition": 86181
+      },
+      {
+        "file": "S25_E2_A1.mat",
+        "glove": 86140,
+        "stimulus": 86296,
+        "repetition": 86296
+      },
+      {
+        "file": "S26_E2_A1.mat",
+        "glove": 86100,
+        "stimulus": 86365,
+        "repetition": 86365
+      },
+      {
+        "file": "S3_E2_A1.mat",
+        "glove": 84983,
+        "stimulus": 85410,
+        "repetition": 85410
+      },
+      {
+        "file": "S3_E3_A1.mat",
+        "glove": 146959,
+        "stimulus": 147097,
+        "repetition": 147097
+      },
+      {
+        "file": "S4_E3_A1.mat",
+        "glove": 134515,
+        "stimulus": 134595,
+        "repetition": 134595
+      },
+      {
+        "file": "S7_E2_A1.mat",
+        "glove": 85390,
+        "stimulus": 85767,
+        "repetition": 85767
+      },
+      {
+        "file": "S8_E2_A1.mat",
+        "glove": 85486,
+        "stimulus": 85583,
+        "repetition": 85583
+      },
+      {
+        "file": "S8_E3_A1.mat",
+        "glove": 128543,
+        "stimulus": 128822,
+        "repetition": 128822
+      },
+      {
+        "file": "S9_E2_A1.mat",
+        "glove": 85391,
+        "stimulus": 85650,
+        "repetition": 85650
+      },
+      {
+        "file": "S9_E3_A1.mat",
+        "glove": 139974,
+        "stimulus": 140231,
+        "repetition": 140231
+      }
+    ],
+    "verdict": "restimulus and rerepetition align with glove/angles in every file; stimulus and repetition do NOT and are the pre-relabelling vectors"
+  },
+  "segments_sample": [
+    {
+      "file": "S28_E1_A1.mat",
+      "subject": 1,
+      "exercise": 1,
+      "n_frames": 1808331,
+      "n_segments": 102,
+      "n_rest_frames": 1064608,
+      "n_movement_frames": 743723,
+      "restimulus_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "rerepetition_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "repetitions_per_stimulus": {
+        "1": 17,
+        "2": 17,
+        "3": 17,
+        "4": 17,
+        "5": 17,
+        "6": 17
+      }
+    },
+    {
+      "file": "S34_E1_A1.mat",
+      "subject": 7,
+      "exercise": 1,
+      "n_frames": 1796292,
+      "n_segments": 102,
+      "n_rest_frames": 586478,
+      "n_movement_frames": 1209814,
+      "restimulus_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "rerepetition_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "repetitions_per_stimulus": {
+        "1": 17,
+        "2": 17,
+        "3": 17,
+        "4": 17,
+        "5": 17,
+        "6": 17
+      }
+    },
+    {
+      "file": "S40_E1_A1.mat",
+      "subject": 13,
+      "exercise": 1,
+      "n_frames": 1801392,
+      "n_segments": 102,
+      "n_rest_frames": 1057055,
+      "n_movement_frames": 744337,
+      "restimulus_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "rerepetition_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "repetitions_per_stimulus": {
+        "1": 17,
+        "2": 17,
+        "3": 17,
+        "4": 17,
+        "5": 17,
+        "6": 17
+      }
+    },
+    {
+      "file": "S46_E1_A1.mat",
+      "subject": 19,
+      "exercise": 1,
+      "n_frames": 1797147,
+      "n_segments": 102,
+      "n_rest_frames": 736421,
+      "n_movement_frames": 1060726,
+      "restimulus_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "rerepetition_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "repetitions_per_stimulus": {
+        "1": 17,
+        "2": 17,
+        "3": 17,
+        "4": 17,
+        "5": 17,
+        "6": 17
+      }
+    },
+    {
+      "file": "S52_E1_A1.mat",
+      "subject": 25,
+      "exercise": 1,
+      "n_frames": 1804722,
+      "n_segments": 102,
+      "n_rest_frames": 1040502,
+      "n_movement_frames": 764220,
+      "restimulus_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "rerepetition_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "repetitions_per_stimulus": {
+        "1": 17,
+        "2": 17,
+        "3": 17,
+        "4": 17,
+        "5": 17,
+        "6": 17
+      }
+    },
+    {
+      "file": "S58_E1_A1.mat",
+      "subject": 31,
+      "exercise": 1,
+      "n_frames": 1771088,
+      "n_segments": 102,
+      "n_rest_frames": 635936,
+      "n_movement_frames": 1135152,
+      "restimulus_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "rerepetition_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "repetitions_per_stimulus": {
+        "1": 17,
+        "2": 17,
+        "3": 17,
+        "4": 17,
+        "5": 17,
+        "6": 17
+      }
+    },
+    {
+      "file": "S10_E2_A1.mat",
+      "subject": 10,
+      "exercise": 2,
+      "n_frames": 85810,
+      "n_segments": 102,
+      "n_rest_frames": 47503,
+      "n_movement_frames": 38307,
+      "restimulus_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "rerepetition_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "repetitions_per_stimulus": {
+        "1": 17,
+        "2": 17,
+        "3": 17,
+        "4": 17,
+        "5": 17,
+        "6": 17
+      }
+    },
+    {
+      "file": "S16_E2_A1.mat",
+      "subject": 16,
+      "exercise": 2,
+      "n_frames": 85180,
+      "n_segments": 102,
+      "n_rest_frames": 56370,
+      "n_movement_frames": 28810,
+      "restimulus_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "rerepetition_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "repetitions_per_stimulus": {
+        "1": 17,
+        "2": 17,
+        "3": 17,
+        "4": 17,
+        "5": 17,
+        "6": 17
+      }
+    },
+    {
+      "file": "S21_E2_A1.mat",
+      "subject": 21,
+      "exercise": 2,
+      "n_frames": 86274,
+      "n_segments": 102,
+      "n_rest_frames": 47920,
+      "n_movement_frames": 38354,
+      "restimulus_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "rerepetition_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "repetitions_per_stimulus": {
+        "1": 17,
+        "2": 17,
+        "3": 17,
+        "4": 17,
+        "5": 17,
+        "6": 17
+      }
+    },
+    {
+      "file": "S27_E2_A1.mat",
+      "subject": 27,
+      "exercise": 2,
+      "n_frames": 85973,
+      "n_segments": 102,
+      "n_rest_frames": 48924,
+      "n_movement_frames": 37049,
+      "restimulus_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "rerepetition_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "repetitions_per_stimulus": {
+        "1": 17,
+        "2": 17,
+        "3": 17,
+        "4": 17,
+        "5": 17,
+        "6": 17
+      }
+    },
+    {
+      "file": "S69_E2_A1.mat",
+      "subject": 11,
+      "exercise": 1,
+      "n_frames": 203945,
+      "n_segments": 102,
+      "n_rest_frames": 135383,
+      "n_movement_frames": 68562,
+      "restimulus_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "rerepetition_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "repetitions_per_stimulus": {
+        "1": 17,
+        "2": 17,
+        "3": 17,
+        "4": 17,
+        "5": 17,
+        "6": 17
+      }
+    },
+    {
+      "file": "S74_E2_A1.mat",
+      "subject": 7,
+      "exercise": 1,
+      "n_frames": 209024,
+      "n_segments": 102,
+      "n_rest_frames": 130701,
+      "n_movement_frames": 78323,
+      "restimulus_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "rerepetition_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "repetitions_per_stimulus": {
+        "1": 17,
+        "2": 17,
+        "3": 17,
+        "4": 17,
+        "5": 17,
+        "6": 17
+      }
+    },
+    {
+      "file": "S10_E3_A1.mat",
+      "subject": 10,
+      "exercise": 3,
+      "n_frames": 137062,
+      "n_segments": 138,
+      "n_rest_frames": 80828,
+      "n_movement_frames": 56234,
+      "restimulus_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "rerepetition_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "repetitions_per_stimulus": {
+        "1": 23,
+        "2": 23,
+        "3": 23,
+        "4": 23,
+        "5": 23,
+        "6": 23
+      }
+    },
+    {
+      "file": "S13_E3_A1.mat",
+      "subject": 13,
+      "exercise": 3,
+      "n_frames": 135046,
+      "n_segments": 138,
+      "n_rest_frames": 85810,
+      "n_movement_frames": 49236,
+      "restimulus_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "rerepetition_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "repetitions_per_stimulus": {
+        "1": 23,
+        "2": 23,
+        "3": 23,
+        "4": 23,
+        "5": 23,
+        "6": 23
+      }
+    },
+    {
+      "file": "S16_E3_A1.mat",
+      "subject": 16,
+      "exercise": 3,
+      "n_frames": 135778,
+      "n_segments": 138,
+      "n_rest_frames": 87024,
+      "n_movement_frames": 48754,
+      "restimulus_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "rerepetition_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "repetitions_per_stimulus": {
+        "1": 23,
+        "2": 23,
+        "3": 23,
+        "4": 23,
+        "5": 23,
+        "6": 23
+      }
+    },
+    {
+      "file": "S3_E3_A1.mat",
+      "subject": 3,
+      "exercise": 3,
+      "n_frames": 146959,
+      "n_segments": 138,
+      "n_rest_frames": 90823,
+      "n_movement_frames": 56136,
+      "restimulus_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "rerepetition_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "repetitions_per_stimulus": {
+        "1": 23,
+        "2": 23,
+        "3": 23,
+        "4": 23,
+        "5": 23,
+        "6": 23
+      }
+    },
+    {
+      "file": "S68_E3_A1.mat",
+      "subject": 1,
+      "exercise": 2,
+      "n_frames": 258372,
+      "n_segments": 138,
+      "n_rest_frames": 150557,
+      "n_movement_frames": 107815,
+      "restimulus_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "rerepetition_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "repetitions_per_stimulus": {
+        "1": 23,
+        "2": 23,
+        "3": 23,
+        "4": 23,
+        "5": 23,
+        "6": 23
+      }
+    },
+    {
+      "file": "S70_E3_A1.mat",
+      "subject": 3,
+      "exercise": 2,
+      "n_frames": 260036,
+      "n_segments": 138,
+      "n_rest_frames": 160297,
+      "n_movement_frames": 99739,
+      "restimulus_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "rerepetition_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "repetitions_per_stimulus": {
+        "1": 23,
+        "2": 23,
+        "3": 23,
+        "4": 23,
+        "5": 23,
+        "6": 23
+      }
+    }
+  ],
+  "anomalies": [],
+  "rest_frames_carrying_a_repetition_index": [
+    {
+      "file": "S28_E1_A1.mat",
+      "n_rest_frames_with_rep_index": 1061168
+    },
+    {
+      "file": "S34_E1_A1.mat",
+      "n_rest_frames_with_rep_index": 586448
+    },
+    {
+      "file": "S40_E1_A1.mat",
+      "n_rest_frames_with_rep_index": 1054888
+    },
+    {
+      "file": "S46_E1_A1.mat",
+      "n_rest_frames_with_rep_index": 734763
+    },
+    {
+      "file": "S52_E1_A1.mat",
+      "n_rest_frames_with_rep_index": 1038161
+    },
+    {
+      "file": "S58_E1_A1.mat",
+      "n_rest_frames_with_rep_index": 635904
+    },
+    {
+      "file": "S69_E2_A1.mat",
+      "n_rest_frames_with_rep_index": 135015
+    },
+    {
+      "file": "S74_E2_A1.mat",
+      "n_rest_frames_with_rep_index": 130434
+    },
+    {
+      "file": "S68_E3_A1.mat",
+      "n_rest_frames_with_rep_index": 150540
+    },
+    {
+      "file": "S70_E3_A1.mat",
+      "n_rest_frames_with_rep_index": 160250
+    }
+  ],
+  "reference_identification": {
+    "rule": "minimise mean over channels of |glove - S_ref(implied)|",
+    "ranking": [
+      {
+        "restimulus": 11,
+        "mean_abs_delta": 4.32892079418792
+      },
+      {
+        "restimulus": 12,
+        "mean_abs_delta": 6.8418050790123175
+      },
+      {
+        "restimulus": 9,
+        "mean_abs_delta": 6.915781552574052
+      },
+      {
+        "restimulus": 17,
+        "mean_abs_delta": 7.438155249239017
+      },
+      {
+        "restimulus": 10,
+        "mean_abs_delta": 7.839569772818073
+      },
+      {
+        "restimulus": 16,
+        "mean_abs_delta": 8.345501928110798
+      },
+      {
+        "restimulus": 14,
+        "mean_abs_delta": 10.144618293872584
+      },
+      {
+        "restimulus": 13,
+        "mean_abs_delta": 11.140608142102012
+      },
+      {
+        "restimulus": 8,
+        "mean_abs_delta": 11.889050473237711
+      },
+      {
+        "restimulus": 5,
+        "mean_abs_delta": 15.54383803666648
+      },
+      {
+        "restimulus": 4,
+        "mean_abs_delta": 17.940306189617303
+      },
+      {
+        "restimulus": 3,
+        "mean_abs_delta": 39.03360856013129
+      },
+      {
+        "restimulus": 2,
+        "mean_abs_delta": 43.45555271326396
+      },
+      {
+        "restimulus": 15,
+        "mean_abs_delta": 45.5758696161513
+      },
+      {
+        "restimulus": 7,
+        "mean_abs_delta": 46.464047136114665
+      },
+      {
+        "restimulus": 1,
+        "mean_abs_delta": 50.45839948102869
+      },
+      {
+        "restimulus": 6,
+        "mean_abs_delta": 54.154382353135304
+      }
+    ],
+    "best_restimulus": 11,
+    "official_statement": "the DB9 paper: 'The reference posture was chosen as the central part of movement 11 in exercise B (Fig. 2), corresponding to the hand resting on the table with the fingers closed together and extended.'",
+    "confirmed": true
+  },
+  "exact_affine_forms_on_the_probe_file": {
+    "MCP1": {
+      "glove_col": 1,
+      "slope": 0.562292331000072,
+      "intercept": -64.55719295668398,
+      "max_resid": 1.0325962307433656e-11,
+      "S_ref_implied": 114.81072993093287
+    },
+    "IP1": {
+      "glove_col": 2,
+      "slope": 1.1908773959999293,
+      "intercept": -112.5263127951817,
+      "max_resid": 3.794298208958935e-12,
+      "S_ref_implied": 94.49025833654196
+    },
+    "MCP2_f": {
+      "glove_col": 4,
+      "slope": 0.9128776219999538,
+      "intercept": -102.62009393918947,
+      "max_resid": 1.0672351891116705e-11,
+      "S_ref_implied": 112.41385643167257
+    },
+    "PIP2": {
+      "glove_col": 5,
+      "slope": 0.9085740260000387,
+      "intercept": -43.66080202409175,
+      "max_resid": 1.0373923942097463e-11,
+      "S_ref_implied": 48.054204472811875
+    },
+    "MCP3_f": {
+      "glove_col": 8,
+      "slope": 0.9526497650000166,
+      "intercept": -70.12829340965921,
+      "max_resid": 7.44648787076585e-12,
+      "S_ref_implied": 73.61393030906588
+    },
+    "PIP3": {
+      "glove_col": 9,
+      "slope": 1.0715212699999883,
+      "intercept": -77.50699430240368,
+      "max_resid": 5.4853899200679734e-12,
+      "S_ref_implied": 72.33360314201185
+    },
+    "MCP4_f": {
+      "glove_col": 12,
+      "slope": 0.970039865999927,
+      "intercept": -74.12054321282535,
+      "max_resid": 1.1461054327810416e-11,
+      "S_ref_implied": 76.40979078362015
+    },
+    "PIP4": {
+      "glove_col": 13,
+      "slope": 1.5785050410001853,
+      "intercept": -122.31699581094726,
+      "max_resid": 2.0378365661599673e-11,
+      "S_ref_implied": 77.489138541771
+    },
+    "CMC5": {
+      "glove_col": 20,
+      "slope": 0.28511121899982556,
+      "intercept": -36.561303087111284,
+      "max_resid": 1.7005064023578598e-11,
+      "S_ref_implied": 128.23523120334895
+    },
+    "MCP5_f": {
+      "glove_col": 16,
+      "slope": 1.0664391619999816,
+      "intercept": -67.5658820652713,
+      "max_resid": 7.759126674500294e-12,
+      "S_ref_implied": 63.35652747275279
+    },
+    "PIP5": {
+      "glove_col": 17,
+      "slope": 0.8910603660001252,
+      "intercept": -56.885566357486056,
+      "max_resid": 1.5546675058430992e-11,
+      "S_ref_implied": 63.84030591871041
+    },
+    "DIP2": {
+      "glove_col": 6,
+      "slope": 1.0799999999997913,
+      "intercept": -82.77695608071036,
+      "max_resid": 2.603428583825007e-11,
+      "S_ref_implied": 76.64532970437625
+    },
+    "DIP3": {
+      "glove_col": 10,
+      "slope": 1.8200000000001246,
+      "intercept": -285.9353484580017,
+      "max_resid": 6.45172804070171e-12,
+      "S_ref_implied": 157.1073343175726
+    },
+    "DIP4": {
+      "glove_col": 14,
+      "slope": 2.0000000000005858,
+      "intercept": -324.4399813808357,
+      "max_resid": 8.458300726488233e-11,
+      "S_ref_implied": 162.21999069037034
+    },
+    "DIP5": {
+      "glove_col": 18,
+      "slope": 1.2600000000001905,
+      "intercept": -162.2470409611116,
+      "max_resid": 7.808864666003501e-12,
+      "S_ref_implied": 128.76749282625957
+    }
+  },
+  "verdict": "SEGMENTATION VALIDATED",
+  "evidence": "EMPIRICAL"
+}

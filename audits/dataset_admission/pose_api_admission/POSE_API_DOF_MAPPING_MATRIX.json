@@ -1,0 +1,2450 @@
+{
+  "artifact": "POSE_API_DOF_MAPPING_MATRIX.json",
+  "branch_id": "S6-POSE-API-DATASET-ADMISSION",
+  "plan_sha256": "4d2c8b162e2332a5891a5d89a53166e365b1bbd92c205222492d19957c9683ec",
+  "purpose": "API DOF x dataset mapping with an explicit confidence class and evidence tag per cell",
+  "api_dofs": [
+    "thumb_cmc_flexion",
+    "thumb_cmc_ab_adduction",
+    "thumb_mcp_flexion",
+    "thumb_ip_flexion",
+    "index_mcp_flexion",
+    "index_pip_flexion",
+    "index_dip_flexion",
+    "middle_mcp_flexion",
+    "middle_pip_flexion",
+    "middle_dip_flexion",
+    "ring_mcp_flexion",
+    "ring_pip_flexion",
+    "ring_dip_flexion",
+    "pinky_mcp_flexion",
+    "pinky_pip_flexion",
+    "pinky_dip_flexion"
+  ],
+  "mapping_rules": {
+    "unit_of_mapping": "API DOF x dataset column, decided independently",
+    "confidence": {
+      "HIGH": "the dataset's own documentation or code names the SAME anatomical joint and the SAME anatomical DOF, and the reference posture is documented",
+      "MEDIUM": "the anatomical joint matches but one of {DOF axis, reference posture, handedness} needs a documented adapter, or the dataset's name is anatomical but the value is a sensor-derived approximation of it",
+      "LOW": "only a coarse or ambiguous correspondence exists - e.g. a relative inter-finger spread standing in for a per-finger AA, or a name that does not distinguish which joint",
+      "NONE": "no defensible correspondence"
+    },
+    "hard_rules": [
+      "a coarse name such as 'index flexion' that does not distinguish MCP/PIP/DIP is NONE for each of them - never a one-to-one match",
+      "a derived channel (an angle computed from another channel) is flagged as such and cannot be HIGH confidence for an independent DoF",
+      "no match may be created or upgraded because it would raise the shared-DOF count",
+      "every mapping row records which evidence tag supports it"
+    ],
+    "required_per_row_fields": [
+      "dataset",
+      "api_dof",
+      "dataset_joint_name",
+      "source_index",
+      "anatomical_joint",
+      "anatomical_dof",
+      "unit",
+      "positive_direction",
+      "zero_reference",
+      "range_observed",
+      "handedness",
+      "measurement_origin",
+      "calibration_method",
+      "sampling_rate_hz",
+      "derived_or_measured",
+      "confidence",
+      "evidence"
+    ]
+  },
+  "uji_18_documented_layout": {
+    "names": [
+      "CMC1_F",
+      "CMC1_A",
+      "MCP1_F",
+      "IP1_F",
+      "MCP2_F",
+      "MCP2-3_A",
+      "PIP2_F",
+      "MCP3_F",
+      "PIP3_F",
+      "MCP4_F",
+      "MCP3-4_A",
+      "PIP4_F",
+      "PalmArch",
+      "MCP5_F",
+      "MCP4-5_A",
+      "PIP5_F",
+      "WR_F",
+      "WR_A"
+    ],
+    "n": 18,
+    "source": "MOVMUS-UJI guide v2.1 Table 4 'ANGLES' block",
+    "cross_check": "the released KIN-MUS Kinematic_data array is (N,18), consistent with this layout; the audit did NOT find an explicitly published column index table, so the ORDER is OFFICIAL-DOCUMENTED from the guide's listing sequence and the arithmetic consistency of the per-column ranges is DATA-INFERRED corroboration"
+  },
+  "rows": [
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "api_dof": "thumb_cmc_flexion",
+      "dataset_joint_name": "CMC1_F",
+      "source_index": 0,
+      "anatomical_joint": "thumb CMC flexion/extension",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "degrees",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide: 'Data structure: Joint angles (deg)'"
+      },
+      "positive_direction": {
+        "value": "flexion positive",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 4.3 Sign criteria"
+      },
+      "zero_reference": {
+        "value": "the mean of a recorded REFERENCE posture: hands resting flat on the table, fingers and thumb close together, middle fingers aligned with the forearms (MOVMUS guide Figure 1).  Every angle is computed as the raw gauge difference from that recording, so the zero is a genuine per-session armature datum, not a nominal anatomical zero",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1 and Figure 1"
+      },
+      "handedness": {
+        "value": "the released KIN-MUS kinematic block is ONE hand of 18 columns and does not label which; the MOVMUS release documents BOTH hands as 18 R_* + 18 L_*",
+        "evidence": "DATA-INFERRED",
+        "source": "KIN-MUS block shape (N,18); MOVMUS guide Table 4"
+      },
+      "measurement_origin": {
+        "value": "GLOVE + CALIBRATION TRANSFORM (CyberGlove strain gauge, 0-255 raw, linear/quadratic gain map with documented cross-coupling terms and a per-session reference recording)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1; BE-UJI obtain_angles_RL_abd_rel.m"
+      },
+      "calibration_method": {
+        "value": "the Gracia-Ibanez et al. across-subject calibration protocol; gains are per-GLOVE UNIT, not per subject; the released code ships the lab's own gains as placeholders and states they must be replaced",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo 3357966 record description"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide 'Key data'"
+      },
+      "derived_or_measured": {
+        "value": "measured (channel-level)",
+        "evidence": "OFFICIAL-CODE-INFERRED",
+        "source": "obtain_angles_RL_abd_rel.m lines 147-176"
+      },
+      "confidence": "HIGH",
+      "evidence": {
+        "value": "the dataset names the same joint and the same DOF (CMC1_F = 'Flexion of carpometacarpal 1'); sign criterion documented as Flexion+/Extension-",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "range_observed": {
+        "value": {
+          "p5_p95_deg": [
+            4.32,
+            22.39
+          ]
+        },
+        "evidence": "DATA-INFERRED",
+        "source": "measured from the released KIN-MUS kinematic block"
+      }
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "api_dof": "thumb_cmc_ab_adduction",
+      "dataset_joint_name": "CMC1_A",
+      "source_index": 1,
+      "anatomical_joint": "thumb CMC abduction/adduction",
+      "anatomical_dof": "abduction/adduction",
+      "unit": {
+        "value": "degrees",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide: 'Data structure: Joint angles (deg)'"
+      },
+      "positive_direction": {
+        "value": "abduction positive (CMC1_A); relative separation positive (*_A); ulnar deviation positive (WR_A)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 4.3 Sign criteria"
+      },
+      "zero_reference": {
+        "value": "the mean of a recorded REFERENCE posture: hands resting flat on the table, fingers and thumb close together, middle fingers aligned with the forearms (MOVMUS guide Figure 1).  Every angle is computed as the raw gauge difference from that recording, so the zero is a genuine per-session armature datum, not a nominal anatomical zero",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1 and Figure 1"
+      },
+      "handedness": {
+        "value": "the released KIN-MUS kinematic block is ONE hand of 18 columns and does not label which; the MOVMUS release documents BOTH hands as 18 R_* + 18 L_*",
+        "evidence": "DATA-INFERRED",
+        "source": "KIN-MUS block shape (N,18); MOVMUS guide Table 4"
+      },
+      "measurement_origin": {
+        "value": "GLOVE + CALIBRATION TRANSFORM (CyberGlove strain gauge, 0-255 raw, linear/quadratic gain map with documented cross-coupling terms and a per-session reference recording)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1; BE-UJI obtain_angles_RL_abd_rel.m"
+      },
+      "calibration_method": {
+        "value": "the Gracia-Ibanez et al. across-subject calibration protocol; gains are per-GLOVE UNIT, not per subject; the released code ships the lab's own gains as placeholders and states they must be replaced",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo 3357966 record description"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide 'Key data'"
+      },
+      "derived_or_measured": {
+        "value": "measured (channel-level)",
+        "evidence": "OFFICIAL-CODE-INFERRED",
+        "source": "obtain_angles_RL_abd_rel.m lines 147-176"
+      },
+      "confidence": "MEDIUM",
+      "evidence": {
+        "value": "the dataset names the same joint and the same DOF axis and documents Abduction+/Adduction-, but the cross-dataset AXIS correspondence with emg2pose THUMB_CMC_AA is not proven (the project's own contract flags this axis as the one whose magnitude semantics are approximate), and the channel is a 2-term cross-coupled linear combination rather than an isolated axis",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "range_observed": {
+        "value": {
+          "p5_p95_deg": [
+            -34.97,
+            26.97
+          ]
+        },
+        "evidence": "DATA-INFERRED",
+        "source": "measured from the released KIN-MUS kinematic block"
+      }
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "api_dof": "thumb_mcp_flexion",
+      "dataset_joint_name": "MCP1_F",
+      "source_index": 2,
+      "anatomical_joint": "thumb MCP flexion/extension",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "degrees",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide: 'Data structure: Joint angles (deg)'"
+      },
+      "positive_direction": {
+        "value": "flexion positive",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 4.3 Sign criteria"
+      },
+      "zero_reference": {
+        "value": "the mean of a recorded REFERENCE posture: hands resting flat on the table, fingers and thumb close together, middle fingers aligned with the forearms (MOVMUS guide Figure 1).  Every angle is computed as the raw gauge difference from that recording, so the zero is a genuine per-session armature datum, not a nominal anatomical zero",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1 and Figure 1"
+      },
+      "handedness": {
+        "value": "the released KIN-MUS kinematic block is ONE hand of 18 columns and does not label which; the MOVMUS release documents BOTH hands as 18 R_* + 18 L_*",
+        "evidence": "DATA-INFERRED",
+        "source": "KIN-MUS block shape (N,18); MOVMUS guide Table 4"
+      },
+      "measurement_origin": {
+        "value": "GLOVE + CALIBRATION TRANSFORM (CyberGlove strain gauge, 0-255 raw, linear/quadratic gain map with documented cross-coupling terms and a per-session reference recording)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1; BE-UJI obtain_angles_RL_abd_rel.m"
+      },
+      "calibration_method": {
+        "value": "the Gracia-Ibanez et al. across-subject calibration protocol; gains are per-GLOVE UNIT, not per subject; the released code ships the lab's own gains as placeholders and states they must be replaced",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo 3357966 record description"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide 'Key data'"
+      },
+      "derived_or_measured": {
+        "value": "measured (channel-level)",
+        "evidence": "OFFICIAL-CODE-INFERRED",
+        "source": "obtain_angles_RL_abd_rel.m lines 147-176"
+      },
+      "confidence": "HIGH",
+      "evidence": {
+        "value": "same joint, same DOF, documented sign, single-gain linear channel",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "range_observed": {
+        "value": {
+          "p5_p95_deg": [
+            -20.11,
+            13.33
+          ]
+        },
+        "evidence": "DATA-INFERRED",
+        "source": "measured from the released KIN-MUS kinematic block"
+      }
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "api_dof": "thumb_ip_flexion",
+      "dataset_joint_name": "IP1_F",
+      "source_index": 3,
+      "anatomical_joint": "thumb IP flexion/extension",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "degrees",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide: 'Data structure: Joint angles (deg)'"
+      },
+      "positive_direction": {
+        "value": "flexion positive",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 4.3 Sign criteria"
+      },
+      "zero_reference": {
+        "value": "the mean of a recorded REFERENCE posture: hands resting flat on the table, fingers and thumb close together, middle fingers aligned with the forearms (MOVMUS guide Figure 1).  Every angle is computed as the raw gauge difference from that recording, so the zero is a genuine per-session armature datum, not a nominal anatomical zero",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1 and Figure 1"
+      },
+      "handedness": {
+        "value": "the released KIN-MUS kinematic block is ONE hand of 18 columns and does not label which; the MOVMUS release documents BOTH hands as 18 R_* + 18 L_*",
+        "evidence": "DATA-INFERRED",
+        "source": "KIN-MUS block shape (N,18); MOVMUS guide Table 4"
+      },
+      "measurement_origin": {
+        "value": "GLOVE + CALIBRATION TRANSFORM (CyberGlove strain gauge, 0-255 raw, linear/quadratic gain map with documented cross-coupling terms and a per-session reference recording)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1; BE-UJI obtain_angles_RL_abd_rel.m"
+      },
+      "calibration_method": {
+        "value": "the Gracia-Ibanez et al. across-subject calibration protocol; gains are per-GLOVE UNIT, not per subject; the released code ships the lab's own gains as placeholders and states they must be replaced",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo 3357966 record description"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide 'Key data'"
+      },
+      "derived_or_measured": {
+        "value": "measured (channel-level)",
+        "evidence": "OFFICIAL-CODE-INFERRED",
+        "source": "obtain_angles_RL_abd_rel.m lines 147-176"
+      },
+      "confidence": "MEDIUM",
+      "evidence": {
+        "value": "same joint and DOF, but the released code computes IP1 with the PIP gain vector entry (RG_PIP(1) / LG_PIP(1)), i.e. it reuses a PIP calibration constant for the thumb IP; the guide additionally reports 30 of 55 removed outliers were in IP1_F and attributes them to a poor thumb gauge fit",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "range_observed": {
+        "value": {
+          "p5_p95_deg": [
+            -29.27,
+            33.55
+          ]
+        },
+        "evidence": "DATA-INFERRED",
+        "source": "measured from the released KIN-MUS kinematic block"
+      }
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "api_dof": "index_mcp_flexion",
+      "dataset_joint_name": "MCP2_F",
+      "source_index": 4,
+      "anatomical_joint": "index MCP flexion/extension",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "degrees",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide: 'Data structure: Joint angles (deg)'"
+      },
+      "positive_direction": {
+        "value": "flexion positive",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 4.3 Sign criteria"
+      },
+      "zero_reference": {
+        "value": "the mean of a recorded REFERENCE posture: hands resting flat on the table, fingers and thumb close together, middle fingers aligned with the forearms (MOVMUS guide Figure 1).  Every angle is computed as the raw gauge difference from that recording, so the zero is a genuine per-session armature datum, not a nominal anatomical zero",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1 and Figure 1"
+      },
+      "handedness": {
+        "value": "the released KIN-MUS kinematic block is ONE hand of 18 columns and does not label which; the MOVMUS release documents BOTH hands as 18 R_* + 18 L_*",
+        "evidence": "DATA-INFERRED",
+        "source": "KIN-MUS block shape (N,18); MOVMUS guide Table 4"
+      },
+      "measurement_origin": {
+        "value": "GLOVE + CALIBRATION TRANSFORM (CyberGlove strain gauge, 0-255 raw, linear/quadratic gain map with documented cross-coupling terms and a per-session reference recording)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1; BE-UJI obtain_angles_RL_abd_rel.m"
+      },
+      "calibration_method": {
+        "value": "the Gracia-Ibanez et al. across-subject calibration protocol; gains are per-GLOVE UNIT, not per subject; the released code ships the lab's own gains as placeholders and states they must be replaced",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo 3357966 record description"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide 'Key data'"
+      },
+      "derived_or_measured": {
+        "value": "measured (channel-level)",
+        "evidence": "OFFICIAL-CODE-INFERRED",
+        "source": "obtain_angles_RL_abd_rel.m lines 147-176"
+      },
+      "confidence": "HIGH",
+      "evidence": {
+        "value": "same joint, same DOF, documented sign, single-gain linear channel",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "range_observed": {
+        "value": {
+          "p5_p95_deg": [
+            -7.88,
+            22.4
+          ]
+        },
+        "evidence": "DATA-INFERRED",
+        "source": "measured from the released KIN-MUS kinematic block"
+      }
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "api_dof": "index_pip_flexion",
+      "dataset_joint_name": "PIP2_F",
+      "source_index": 6,
+      "anatomical_joint": "index PIP flexion/extension",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "degrees",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide: 'Data structure: Joint angles (deg)'"
+      },
+      "positive_direction": {
+        "value": "flexion positive",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 4.3 Sign criteria"
+      },
+      "zero_reference": {
+        "value": "the mean of a recorded REFERENCE posture: hands resting flat on the table, fingers and thumb close together, middle fingers aligned with the forearms (MOVMUS guide Figure 1).  Every angle is computed as the raw gauge difference from that recording, so the zero is a genuine per-session armature datum, not a nominal anatomical zero",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1 and Figure 1"
+      },
+      "handedness": {
+        "value": "the released KIN-MUS kinematic block is ONE hand of 18 columns and does not label which; the MOVMUS release documents BOTH hands as 18 R_* + 18 L_*",
+        "evidence": "DATA-INFERRED",
+        "source": "KIN-MUS block shape (N,18); MOVMUS guide Table 4"
+      },
+      "measurement_origin": {
+        "value": "GLOVE + CALIBRATION TRANSFORM (CyberGlove strain gauge, 0-255 raw, linear/quadratic gain map with documented cross-coupling terms and a per-session reference recording)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1; BE-UJI obtain_angles_RL_abd_rel.m"
+      },
+      "calibration_method": {
+        "value": "the Gracia-Ibanez et al. across-subject calibration protocol; gains are per-GLOVE UNIT, not per subject; the released code ships the lab's own gains as placeholders and states they must be replaced",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo 3357966 record description"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide 'Key data'"
+      },
+      "derived_or_measured": {
+        "value": "measured (channel-level)",
+        "evidence": "OFFICIAL-CODE-INFERRED",
+        "source": "obtain_angles_RL_abd_rel.m lines 147-176"
+      },
+      "confidence": "HIGH",
+      "evidence": {
+        "value": "same joint, same DOF, documented sign, single-gain linear channel",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "range_observed": {
+        "value": {
+          "p5_p95_deg": [
+            6.78,
+            78.55
+          ]
+        },
+        "evidence": "DATA-INFERRED",
+        "source": "measured from the released KIN-MUS kinematic block"
+      }
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "api_dof": "index_dip_flexion",
+      "dataset_joint_name": "(none)",
+      "source_index": null,
+      "anatomical_joint": "index DIP flexion/extension",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "degrees",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide: 'Data structure: Joint angles (deg)'"
+      },
+      "positive_direction": {
+        "value": "n/a",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 4.3 Sign criteria"
+      },
+      "zero_reference": {
+        "value": "n/a",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1 and Figure 1"
+      },
+      "handedness": {
+        "value": "the released KIN-MUS kinematic block is ONE hand of 18 columns and does not label which; the MOVMUS release documents BOTH hands as 18 R_* + 18 L_*",
+        "evidence": "DATA-INFERRED",
+        "source": "KIN-MUS block shape (N,18); MOVMUS guide Table 4"
+      },
+      "measurement_origin": {
+        "value": "GLOVE + CALIBRATION TRANSFORM (CyberGlove strain gauge, 0-255 raw, linear/quadratic gain map with documented cross-coupling terms and a per-session reference recording)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1; BE-UJI obtain_angles_RL_abd_rel.m"
+      },
+      "calibration_method": {
+        "value": "the Gracia-Ibanez et al. across-subject calibration protocol; gains are per-GLOVE UNIT, not per subject; the released code ships the lab's own gains as placeholders and states they must be replaced",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo 3357966 record description"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide 'Key data'"
+      },
+      "derived_or_measured": {
+        "value": "DERIVED FROM PIP, NOT MEASURED",
+        "evidence": "OFFICIAL-CODE-INFERRED",
+        "source": "obtain_angles_RL_abd_rel.m lines 147-176"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "NO SUCH COLUMN IS RELEASED.  The KIN-MUS kinematic block has 18 columns and the 18 documented angles contain no DIP.  The authors' code computes DIP2 from PIP2 as a clipped affine map (0.87*PIP2-25.27, zeroed below 25.27) and never measures it; the guide's outlier list and the group's own Sensors paper on DIP measurement problems confirm the DIP channel is unreliable.  A derived, clipped surrogate is not an independent DIP measurement",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no column of this name is released, so no observed range exists"
+      }
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "api_dof": "middle_mcp_flexion",
+      "dataset_joint_name": "MCP3_F",
+      "source_index": 7,
+      "anatomical_joint": "middle MCP flexion/extension",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "degrees",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide: 'Data structure: Joint angles (deg)'"
+      },
+      "positive_direction": {
+        "value": "flexion positive",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 4.3 Sign criteria"
+      },
+      "zero_reference": {
+        "value": "the mean of a recorded REFERENCE posture: hands resting flat on the table, fingers and thumb close together, middle fingers aligned with the forearms (MOVMUS guide Figure 1).  Every angle is computed as the raw gauge difference from that recording, so the zero is a genuine per-session armature datum, not a nominal anatomical zero",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1 and Figure 1"
+      },
+      "handedness": {
+        "value": "the released KIN-MUS kinematic block is ONE hand of 18 columns and does not label which; the MOVMUS release documents BOTH hands as 18 R_* + 18 L_*",
+        "evidence": "DATA-INFERRED",
+        "source": "KIN-MUS block shape (N,18); MOVMUS guide Table 4"
+      },
+      "measurement_origin": {
+        "value": "GLOVE + CALIBRATION TRANSFORM (CyberGlove strain gauge, 0-255 raw, linear/quadratic gain map with documented cross-coupling terms and a per-session reference recording)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1; BE-UJI obtain_angles_RL_abd_rel.m"
+      },
+      "calibration_method": {
+        "value": "the Gracia-Ibanez et al. across-subject calibration protocol; gains are per-GLOVE UNIT, not per subject; the released code ships the lab's own gains as placeholders and states they must be replaced",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo 3357966 record description"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide 'Key data'"
+      },
+      "derived_or_measured": {
+        "value": "measured (channel-level)",
+        "evidence": "OFFICIAL-CODE-INFERRED",
+        "source": "obtain_angles_RL_abd_rel.m lines 147-176"
+      },
+      "confidence": "HIGH",
+      "evidence": {
+        "value": "same joint, same DOF, documented sign, single-gain linear channel",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "range_observed": {
+        "value": {
+          "p5_p95_deg": [
+            -5.53,
+            68.77
+          ]
+        },
+        "evidence": "DATA-INFERRED",
+        "source": "measured from the released KIN-MUS kinematic block"
+      }
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "api_dof": "middle_pip_flexion",
+      "dataset_joint_name": "PIP3_F",
+      "source_index": 8,
+      "anatomical_joint": "middle PIP flexion/extension",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "degrees",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide: 'Data structure: Joint angles (deg)'"
+      },
+      "positive_direction": {
+        "value": "flexion positive",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 4.3 Sign criteria"
+      },
+      "zero_reference": {
+        "value": "the mean of a recorded REFERENCE posture: hands resting flat on the table, fingers and thumb close together, middle fingers aligned with the forearms (MOVMUS guide Figure 1).  Every angle is computed as the raw gauge difference from that recording, so the zero is a genuine per-session armature datum, not a nominal anatomical zero",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1 and Figure 1"
+      },
+      "handedness": {
+        "value": "the released KIN-MUS kinematic block is ONE hand of 18 columns and does not label which; the MOVMUS release documents BOTH hands as 18 R_* + 18 L_*",
+        "evidence": "DATA-INFERRED",
+        "source": "KIN-MUS block shape (N,18); MOVMUS guide Table 4"
+      },
+      "measurement_origin": {
+        "value": "GLOVE + CALIBRATION TRANSFORM (CyberGlove strain gauge, 0-255 raw, linear/quadratic gain map with documented cross-coupling terms and a per-session reference recording)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1; BE-UJI obtain_angles_RL_abd_rel.m"
+      },
+      "calibration_method": {
+        "value": "the Gracia-Ibanez et al. across-subject calibration protocol; gains are per-GLOVE UNIT, not per subject; the released code ships the lab's own gains as placeholders and states they must be replaced",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo 3357966 record description"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide 'Key data'"
+      },
+      "derived_or_measured": {
+        "value": "measured (channel-level)",
+        "evidence": "OFFICIAL-CODE-INFERRED",
+        "source": "obtain_angles_RL_abd_rel.m lines 147-176"
+      },
+      "confidence": "HIGH",
+      "evidence": {
+        "value": "same joint, same DOF, documented sign, single-gain linear channel",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "range_observed": {
+        "value": {
+          "p5_p95_deg": [
+            8.61,
+            75.57
+          ]
+        },
+        "evidence": "DATA-INFERRED",
+        "source": "measured from the released KIN-MUS kinematic block"
+      }
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "api_dof": "middle_dip_flexion",
+      "dataset_joint_name": "(none)",
+      "source_index": null,
+      "anatomical_joint": "middle DIP flexion/extension",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "degrees",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide: 'Data structure: Joint angles (deg)'"
+      },
+      "positive_direction": {
+        "value": "n/a",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 4.3 Sign criteria"
+      },
+      "zero_reference": {
+        "value": "n/a",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1 and Figure 1"
+      },
+      "handedness": {
+        "value": "the released KIN-MUS kinematic block is ONE hand of 18 columns and does not label which; the MOVMUS release documents BOTH hands as 18 R_* + 18 L_*",
+        "evidence": "DATA-INFERRED",
+        "source": "KIN-MUS block shape (N,18); MOVMUS guide Table 4"
+      },
+      "measurement_origin": {
+        "value": "GLOVE + CALIBRATION TRANSFORM (CyberGlove strain gauge, 0-255 raw, linear/quadratic gain map with documented cross-coupling terms and a per-session reference recording)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1; BE-UJI obtain_angles_RL_abd_rel.m"
+      },
+      "calibration_method": {
+        "value": "the Gracia-Ibanez et al. across-subject calibration protocol; gains are per-GLOVE UNIT, not per subject; the released code ships the lab's own gains as placeholders and states they must be replaced",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo 3357966 record description"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide 'Key data'"
+      },
+      "derived_or_measured": {
+        "value": "DERIVED FROM PIP, NOT MEASURED",
+        "evidence": "OFFICIAL-CODE-INFERRED",
+        "source": "obtain_angles_RL_abd_rel.m lines 147-176"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no DIP column released; derived-from-PIP only",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no column of this name is released, so no observed range exists"
+      }
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "api_dof": "ring_mcp_flexion",
+      "dataset_joint_name": "MCP4_F",
+      "source_index": 9,
+      "anatomical_joint": "ring MCP flexion/extension",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "degrees",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide: 'Data structure: Joint angles (deg)'"
+      },
+      "positive_direction": {
+        "value": "flexion positive",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 4.3 Sign criteria"
+      },
+      "zero_reference": {
+        "value": "the mean of a recorded REFERENCE posture: hands resting flat on the table, fingers and thumb close together, middle fingers aligned with the forearms (MOVMUS guide Figure 1).  Every angle is computed as the raw gauge difference from that recording, so the zero is a genuine per-session armature datum, not a nominal anatomical zero",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1 and Figure 1"
+      },
+      "handedness": {
+        "value": "the released KIN-MUS kinematic block is ONE hand of 18 columns and does not label which; the MOVMUS release documents BOTH hands as 18 R_* + 18 L_*",
+        "evidence": "DATA-INFERRED",
+        "source": "KIN-MUS block shape (N,18); MOVMUS guide Table 4"
+      },
+      "measurement_origin": {
+        "value": "GLOVE + CALIBRATION TRANSFORM (CyberGlove strain gauge, 0-255 raw, linear/quadratic gain map with documented cross-coupling terms and a per-session reference recording)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1; BE-UJI obtain_angles_RL_abd_rel.m"
+      },
+      "calibration_method": {
+        "value": "the Gracia-Ibanez et al. across-subject calibration protocol; gains are per-GLOVE UNIT, not per subject; the released code ships the lab's own gains as placeholders and states they must be replaced",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo 3357966 record description"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide 'Key data'"
+      },
+      "derived_or_measured": {
+        "value": "measured (channel-level)",
+        "evidence": "OFFICIAL-CODE-INFERRED",
+        "source": "obtain_angles_RL_abd_rel.m lines 147-176"
+      },
+      "confidence": "HIGH",
+      "evidence": {
+        "value": "same joint, same DOF, documented sign, single-gain linear channel",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "range_observed": {
+        "value": {
+          "p5_p95_deg": [
+            -2.51,
+            16.25
+          ]
+        },
+        "evidence": "DATA-INFERRED",
+        "source": "measured from the released KIN-MUS kinematic block"
+      }
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "api_dof": "ring_pip_flexion",
+      "dataset_joint_name": "PIP4_F",
+      "source_index": 11,
+      "anatomical_joint": "ring PIP flexion/extension",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "degrees",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide: 'Data structure: Joint angles (deg)'"
+      },
+      "positive_direction": {
+        "value": "flexion positive",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 4.3 Sign criteria"
+      },
+      "zero_reference": {
+        "value": "the mean of a recorded REFERENCE posture: hands resting flat on the table, fingers and thumb close together, middle fingers aligned with the forearms (MOVMUS guide Figure 1).  Every angle is computed as the raw gauge difference from that recording, so the zero is a genuine per-session armature datum, not a nominal anatomical zero",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1 and Figure 1"
+      },
+      "handedness": {
+        "value": "the released KIN-MUS kinematic block is ONE hand of 18 columns and does not label which; the MOVMUS release documents BOTH hands as 18 R_* + 18 L_*",
+        "evidence": "DATA-INFERRED",
+        "source": "KIN-MUS block shape (N,18); MOVMUS guide Table 4"
+      },
+      "measurement_origin": {
+        "value": "GLOVE + CALIBRATION TRANSFORM (CyberGlove strain gauge, 0-255 raw, linear/quadratic gain map with documented cross-coupling terms and a per-session reference recording)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1; BE-UJI obtain_angles_RL_abd_rel.m"
+      },
+      "calibration_method": {
+        "value": "the Gracia-Ibanez et al. across-subject calibration protocol; gains are per-GLOVE UNIT, not per subject; the released code ships the lab's own gains as placeholders and states they must be replaced",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo 3357966 record description"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide 'Key data'"
+      },
+      "derived_or_measured": {
+        "value": "measured (channel-level)",
+        "evidence": "OFFICIAL-CODE-INFERRED",
+        "source": "obtain_angles_RL_abd_rel.m lines 147-176"
+      },
+      "confidence": "HIGH",
+      "evidence": {
+        "value": "same joint, same DOF, documented sign, single-gain linear channel",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "range_observed": {
+        "value": {
+          "p5_p95_deg": [
+            7.9,
+            87.4
+          ]
+        },
+        "evidence": "DATA-INFERRED",
+        "source": "measured from the released KIN-MUS kinematic block"
+      }
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "api_dof": "ring_dip_flexion",
+      "dataset_joint_name": "(none)",
+      "source_index": null,
+      "anatomical_joint": "ring DIP flexion/extension",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "degrees",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide: 'Data structure: Joint angles (deg)'"
+      },
+      "positive_direction": {
+        "value": "n/a",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 4.3 Sign criteria"
+      },
+      "zero_reference": {
+        "value": "n/a",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1 and Figure 1"
+      },
+      "handedness": {
+        "value": "the released KIN-MUS kinematic block is ONE hand of 18 columns and does not label which; the MOVMUS release documents BOTH hands as 18 R_* + 18 L_*",
+        "evidence": "DATA-INFERRED",
+        "source": "KIN-MUS block shape (N,18); MOVMUS guide Table 4"
+      },
+      "measurement_origin": {
+        "value": "GLOVE + CALIBRATION TRANSFORM (CyberGlove strain gauge, 0-255 raw, linear/quadratic gain map with documented cross-coupling terms and a per-session reference recording)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1; BE-UJI obtain_angles_RL_abd_rel.m"
+      },
+      "calibration_method": {
+        "value": "the Gracia-Ibanez et al. across-subject calibration protocol; gains are per-GLOVE UNIT, not per subject; the released code ships the lab's own gains as placeholders and states they must be replaced",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo 3357966 record description"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide 'Key data'"
+      },
+      "derived_or_measured": {
+        "value": "DERIVED FROM PIP, NOT MEASURED",
+        "evidence": "OFFICIAL-CODE-INFERRED",
+        "source": "obtain_angles_RL_abd_rel.m lines 147-176"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no DIP column released; derived-from-PIP only",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no column of this name is released, so no observed range exists"
+      }
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "api_dof": "pinky_mcp_flexion",
+      "dataset_joint_name": "MCP5_F",
+      "source_index": 13,
+      "anatomical_joint": "pinky MCP flexion/extension",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "degrees",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide: 'Data structure: Joint angles (deg)'"
+      },
+      "positive_direction": {
+        "value": "flexion positive",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 4.3 Sign criteria"
+      },
+      "zero_reference": {
+        "value": "the mean of a recorded REFERENCE posture: hands resting flat on the table, fingers and thumb close together, middle fingers aligned with the forearms (MOVMUS guide Figure 1).  Every angle is computed as the raw gauge difference from that recording, so the zero is a genuine per-session armature datum, not a nominal anatomical zero",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1 and Figure 1"
+      },
+      "handedness": {
+        "value": "the released KIN-MUS kinematic block is ONE hand of 18 columns and does not label which; the MOVMUS release documents BOTH hands as 18 R_* + 18 L_*",
+        "evidence": "DATA-INFERRED",
+        "source": "KIN-MUS block shape (N,18); MOVMUS guide Table 4"
+      },
+      "measurement_origin": {
+        "value": "GLOVE + CALIBRATION TRANSFORM (CyberGlove strain gauge, 0-255 raw, linear/quadratic gain map with documented cross-coupling terms and a per-session reference recording)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1; BE-UJI obtain_angles_RL_abd_rel.m"
+      },
+      "calibration_method": {
+        "value": "the Gracia-Ibanez et al. across-subject calibration protocol; gains are per-GLOVE UNIT, not per subject; the released code ships the lab's own gains as placeholders and states they must be replaced",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo 3357966 record description"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide 'Key data'"
+      },
+      "derived_or_measured": {
+        "value": "measured (channel-level)",
+        "evidence": "OFFICIAL-CODE-INFERRED",
+        "source": "obtain_angles_RL_abd_rel.m lines 147-176"
+      },
+      "confidence": "HIGH",
+      "evidence": {
+        "value": "same joint, same DOF, documented sign, single-gain linear channel",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "range_observed": {
+        "value": {
+          "p5_p95_deg": [
+            -8.43,
+            10.61
+          ]
+        },
+        "evidence": "DATA-INFERRED",
+        "source": "measured from the released KIN-MUS kinematic block"
+      }
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "api_dof": "pinky_pip_flexion",
+      "dataset_joint_name": "PIP5_F",
+      "source_index": 15,
+      "anatomical_joint": "pinky PIP flexion/extension",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "degrees",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide: 'Data structure: Joint angles (deg)'"
+      },
+      "positive_direction": {
+        "value": "flexion positive",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 4.3 Sign criteria"
+      },
+      "zero_reference": {
+        "value": "the mean of a recorded REFERENCE posture: hands resting flat on the table, fingers and thumb close together, middle fingers aligned with the forearms (MOVMUS guide Figure 1).  Every angle is computed as the raw gauge difference from that recording, so the zero is a genuine per-session armature datum, not a nominal anatomical zero",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1 and Figure 1"
+      },
+      "handedness": {
+        "value": "the released KIN-MUS kinematic block is ONE hand of 18 columns and does not label which; the MOVMUS release documents BOTH hands as 18 R_* + 18 L_*",
+        "evidence": "DATA-INFERRED",
+        "source": "KIN-MUS block shape (N,18); MOVMUS guide Table 4"
+      },
+      "measurement_origin": {
+        "value": "GLOVE + CALIBRATION TRANSFORM (CyberGlove strain gauge, 0-255 raw, linear/quadratic gain map with documented cross-coupling terms and a per-session reference recording)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1; BE-UJI obtain_angles_RL_abd_rel.m"
+      },
+      "calibration_method": {
+        "value": "the Gracia-Ibanez et al. across-subject calibration protocol; gains are per-GLOVE UNIT, not per subject; the released code ships the lab's own gains as placeholders and states they must be replaced",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo 3357966 record description"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide 'Key data'"
+      },
+      "derived_or_measured": {
+        "value": "measured (channel-level)",
+        "evidence": "OFFICIAL-CODE-INFERRED",
+        "source": "obtain_angles_RL_abd_rel.m lines 147-176"
+      },
+      "confidence": "HIGH",
+      "evidence": {
+        "value": "same joint, same DOF, documented sign, single-gain linear channel",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "range_observed": {
+        "value": {
+          "p5_p95_deg": [
+            3.96,
+            78.76
+          ]
+        },
+        "evidence": "DATA-INFERRED",
+        "source": "measured from the released KIN-MUS kinematic block"
+      }
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "api_dof": "pinky_dip_flexion",
+      "dataset_joint_name": "(none)",
+      "source_index": null,
+      "anatomical_joint": "pinky DIP flexion/extension",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "degrees",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide: 'Data structure: Joint angles (deg)'"
+      },
+      "positive_direction": {
+        "value": "n/a",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 4.3 Sign criteria"
+      },
+      "zero_reference": {
+        "value": "n/a",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1 and Figure 1"
+      },
+      "handedness": {
+        "value": "the released KIN-MUS kinematic block is ONE hand of 18 columns and does not label which; the MOVMUS release documents BOTH hands as 18 R_* + 18 L_*",
+        "evidence": "DATA-INFERRED",
+        "source": "KIN-MUS block shape (N,18); MOVMUS guide Table 4"
+      },
+      "measurement_origin": {
+        "value": "GLOVE + CALIBRATION TRANSFORM (CyberGlove strain gauge, 0-255 raw, linear/quadratic gain map with documented cross-coupling terms and a per-session reference recording)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1; BE-UJI obtain_angles_RL_abd_rel.m"
+      },
+      "calibration_method": {
+        "value": "the Gracia-Ibanez et al. across-subject calibration protocol; gains are per-GLOVE UNIT, not per subject; the released code ships the lab's own gains as placeholders and states they must be replaced",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo 3357966 record description"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide 'Key data'"
+      },
+      "derived_or_measured": {
+        "value": "DERIVED FROM PIP, NOT MEASURED",
+        "evidence": "OFFICIAL-CODE-INFERRED",
+        "source": "obtain_angles_RL_abd_rel.m lines 147-176"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no DIP column released; derived-from-PIP only",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no column of this name is released, so no observed range exists"
+      }
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "api_dof": "(release inventory)",
+      "dataset_joint_name": "(18 released columns, see release_column_inventory)",
+      "source_index": null,
+      "anatomical_joint": "n/a",
+      "anatomical_dof": "n/a",
+      "unit": {
+        "value": "degrees",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "positive_direction": {
+        "value": "see the inventory entries",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "zero_reference": {
+        "value": "the mean of a recorded REFERENCE posture: hands resting flat on the table, fingers and thumb close together, middle fingers aligned with the forearms (MOVMUS guide Figure 1).  Every angle is computed as the raw gauge difference from that recording, so the zero is a genuine per-session armature datum, not a nominal anatomical zero",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "handedness": {
+        "value": "the released block is ONE hand of 18 columns and does not label which; the MOVMUS release documents both hands as 18 R_ + 18 L_",
+        "evidence": "DATA-INFERRED"
+      },
+      "measurement_origin": {
+        "value": "GLOVE + CALIBRATION TRANSFORM",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "calibration_method": {
+        "value": "per-glove gains, described above",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "derived_or_measured": {
+        "value": "12 mapped columns measured; 6 columns have no API counterpart, of which 3 are relative inter-finger spreads and 1 is a palmar arch and 2 are wrist",
+        "evidence": "OFFICIAL-CODE-INFERRED"
+      },
+      "range_observed": {
+        "value": {
+          "n_columns_with_measured_range": 18
+        },
+        "evidence": "DATA-INFERRED"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "these six are genuine UJI channels with no canonical16 counterpart.  The three *_A channels are RELATIVE inter-finger spreads, NOT per-finger MCP abduction, so they cannot be mapped to the four dropped MCP-AA axes even though both are 'abduction'.  Mapping them would be exactly the kind of forced correspondence the plan forbids",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      }
+    },
+    {
+      "dataset": "HUST",
+      "api_dof": "thumb_cmc_flexion",
+      "dataset_joint_name": "UNKNOWN",
+      "source_index": null,
+      "anatomical_joint": "thumb cmc flexion",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "radians (page claim)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Data Structure: Joint Angles (rad)'",
+        "note": "NOT VERIFIABLE: no data obtained, and the associated paper is retracted"
+      },
+      "positive_direction": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "no obtainable source states HUST's sign conventions; the handcorpus page does not list them"
+      },
+      "zero_reference": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "the handcorpus page does not define a reference posture and the underlying paper is retracted"
+      },
+      "handedness": {
+        "value": "right hand only (page: subjects 'placed their right arm on the table')",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page"
+      },
+      "measurement_origin": {
+        "value": "INSTRUMENTED GLOVE DIRECT / GLOVE + CALIBRATION TRANSFORM (CyberGlove) - the page names the equipment but no calibration procedure is obtainable",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Equipment: Motion Capture System - Cyberglove'"
+      },
+      "calibration_method": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page '>=100 Hz (100 Hz)'"
+      },
+      "derived_or_measured": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no data obtained, so no observed range"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no channel list is obtainable: the dataset page gives only the DOF COUNT (16), not the joint names, and no data file could be downloaded or recovered from any archive",
+        "evidence": "UNKNOWN"
+      }
+    },
+    {
+      "dataset": "HUST",
+      "api_dof": "thumb_cmc_ab_adduction",
+      "dataset_joint_name": "UNKNOWN",
+      "source_index": null,
+      "anatomical_joint": "thumb cmc ab adduction",
+      "anatomical_dof": "abduction/adduction",
+      "unit": {
+        "value": "radians (page claim)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Data Structure: Joint Angles (rad)'",
+        "note": "NOT VERIFIABLE: no data obtained, and the associated paper is retracted"
+      },
+      "positive_direction": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "no obtainable source states HUST's sign conventions; the handcorpus page does not list them"
+      },
+      "zero_reference": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "the handcorpus page does not define a reference posture and the underlying paper is retracted"
+      },
+      "handedness": {
+        "value": "right hand only (page: subjects 'placed their right arm on the table')",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page"
+      },
+      "measurement_origin": {
+        "value": "INSTRUMENTED GLOVE DIRECT / GLOVE + CALIBRATION TRANSFORM (CyberGlove) - the page names the equipment but no calibration procedure is obtainable",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Equipment: Motion Capture System - Cyberglove'"
+      },
+      "calibration_method": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page '>=100 Hz (100 Hz)'"
+      },
+      "derived_or_measured": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no data obtained, so no observed range"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no channel list is obtainable: the dataset page gives only the DOF COUNT (16), not the joint names, and no data file could be downloaded or recovered from any archive",
+        "evidence": "UNKNOWN"
+      }
+    },
+    {
+      "dataset": "HUST",
+      "api_dof": "thumb_mcp_flexion",
+      "dataset_joint_name": "UNKNOWN",
+      "source_index": null,
+      "anatomical_joint": "thumb mcp flexion",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "radians (page claim)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Data Structure: Joint Angles (rad)'",
+        "note": "NOT VERIFIABLE: no data obtained, and the associated paper is retracted"
+      },
+      "positive_direction": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "no obtainable source states HUST's sign conventions; the handcorpus page does not list them"
+      },
+      "zero_reference": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "the handcorpus page does not define a reference posture and the underlying paper is retracted"
+      },
+      "handedness": {
+        "value": "right hand only (page: subjects 'placed their right arm on the table')",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page"
+      },
+      "measurement_origin": {
+        "value": "INSTRUMENTED GLOVE DIRECT / GLOVE + CALIBRATION TRANSFORM (CyberGlove) - the page names the equipment but no calibration procedure is obtainable",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Equipment: Motion Capture System - Cyberglove'"
+      },
+      "calibration_method": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page '>=100 Hz (100 Hz)'"
+      },
+      "derived_or_measured": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no data obtained, so no observed range"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no channel list is obtainable: the dataset page gives only the DOF COUNT (16), not the joint names, and no data file could be downloaded or recovered from any archive",
+        "evidence": "UNKNOWN"
+      }
+    },
+    {
+      "dataset": "HUST",
+      "api_dof": "thumb_ip_flexion",
+      "dataset_joint_name": "UNKNOWN",
+      "source_index": null,
+      "anatomical_joint": "thumb ip flexion",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "radians (page claim)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Data Structure: Joint Angles (rad)'",
+        "note": "NOT VERIFIABLE: no data obtained, and the associated paper is retracted"
+      },
+      "positive_direction": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "no obtainable source states HUST's sign conventions; the handcorpus page does not list them"
+      },
+      "zero_reference": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "the handcorpus page does not define a reference posture and the underlying paper is retracted"
+      },
+      "handedness": {
+        "value": "right hand only (page: subjects 'placed their right arm on the table')",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page"
+      },
+      "measurement_origin": {
+        "value": "INSTRUMENTED GLOVE DIRECT / GLOVE + CALIBRATION TRANSFORM (CyberGlove) - the page names the equipment but no calibration procedure is obtainable",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Equipment: Motion Capture System - Cyberglove'"
+      },
+      "calibration_method": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page '>=100 Hz (100 Hz)'"
+      },
+      "derived_or_measured": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no data obtained, so no observed range"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no channel list is obtainable: the dataset page gives only the DOF COUNT (16), not the joint names, and no data file could be downloaded or recovered from any archive",
+        "evidence": "UNKNOWN"
+      }
+    },
+    {
+      "dataset": "HUST",
+      "api_dof": "index_mcp_flexion",
+      "dataset_joint_name": "UNKNOWN",
+      "source_index": null,
+      "anatomical_joint": "index mcp flexion",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "radians (page claim)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Data Structure: Joint Angles (rad)'",
+        "note": "NOT VERIFIABLE: no data obtained, and the associated paper is retracted"
+      },
+      "positive_direction": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "no obtainable source states HUST's sign conventions; the handcorpus page does not list them"
+      },
+      "zero_reference": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "the handcorpus page does not define a reference posture and the underlying paper is retracted"
+      },
+      "handedness": {
+        "value": "right hand only (page: subjects 'placed their right arm on the table')",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page"
+      },
+      "measurement_origin": {
+        "value": "INSTRUMENTED GLOVE DIRECT / GLOVE + CALIBRATION TRANSFORM (CyberGlove) - the page names the equipment but no calibration procedure is obtainable",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Equipment: Motion Capture System - Cyberglove'"
+      },
+      "calibration_method": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page '>=100 Hz (100 Hz)'"
+      },
+      "derived_or_measured": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no data obtained, so no observed range"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no channel list is obtainable: the dataset page gives only the DOF COUNT (16), not the joint names, and no data file could be downloaded or recovered from any archive",
+        "evidence": "UNKNOWN"
+      }
+    },
+    {
+      "dataset": "HUST",
+      "api_dof": "index_pip_flexion",
+      "dataset_joint_name": "UNKNOWN",
+      "source_index": null,
+      "anatomical_joint": "index pip flexion",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "radians (page claim)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Data Structure: Joint Angles (rad)'",
+        "note": "NOT VERIFIABLE: no data obtained, and the associated paper is retracted"
+      },
+      "positive_direction": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "no obtainable source states HUST's sign conventions; the handcorpus page does not list them"
+      },
+      "zero_reference": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "the handcorpus page does not define a reference posture and the underlying paper is retracted"
+      },
+      "handedness": {
+        "value": "right hand only (page: subjects 'placed their right arm on the table')",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page"
+      },
+      "measurement_origin": {
+        "value": "INSTRUMENTED GLOVE DIRECT / GLOVE + CALIBRATION TRANSFORM (CyberGlove) - the page names the equipment but no calibration procedure is obtainable",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Equipment: Motion Capture System - Cyberglove'"
+      },
+      "calibration_method": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page '>=100 Hz (100 Hz)'"
+      },
+      "derived_or_measured": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no data obtained, so no observed range"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no channel list is obtainable: the dataset page gives only the DOF COUNT (16), not the joint names, and no data file could be downloaded or recovered from any archive",
+        "evidence": "UNKNOWN"
+      }
+    },
+    {
+      "dataset": "HUST",
+      "api_dof": "index_dip_flexion",
+      "dataset_joint_name": "UNKNOWN",
+      "source_index": null,
+      "anatomical_joint": "index dip flexion",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "radians (page claim)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Data Structure: Joint Angles (rad)'",
+        "note": "NOT VERIFIABLE: no data obtained, and the associated paper is retracted"
+      },
+      "positive_direction": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "no obtainable source states HUST's sign conventions; the handcorpus page does not list them"
+      },
+      "zero_reference": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "the handcorpus page does not define a reference posture and the underlying paper is retracted"
+      },
+      "handedness": {
+        "value": "right hand only (page: subjects 'placed their right arm on the table')",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page"
+      },
+      "measurement_origin": {
+        "value": "INSTRUMENTED GLOVE DIRECT / GLOVE + CALIBRATION TRANSFORM (CyberGlove) - the page names the equipment but no calibration procedure is obtainable",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Equipment: Motion Capture System - Cyberglove'"
+      },
+      "calibration_method": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page '>=100 Hz (100 Hz)'"
+      },
+      "derived_or_measured": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no data obtained, so no observed range"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no channel list is obtainable: the dataset page gives only the DOF COUNT (16), not the joint names, and no data file could be downloaded or recovered from any archive",
+        "evidence": "UNKNOWN"
+      }
+    },
+    {
+      "dataset": "HUST",
+      "api_dof": "middle_mcp_flexion",
+      "dataset_joint_name": "UNKNOWN",
+      "source_index": null,
+      "anatomical_joint": "middle mcp flexion",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "radians (page claim)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Data Structure: Joint Angles (rad)'",
+        "note": "NOT VERIFIABLE: no data obtained, and the associated paper is retracted"
+      },
+      "positive_direction": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "no obtainable source states HUST's sign conventions; the handcorpus page does not list them"
+      },
+      "zero_reference": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "the handcorpus page does not define a reference posture and the underlying paper is retracted"
+      },
+      "handedness": {
+        "value": "right hand only (page: subjects 'placed their right arm on the table')",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page"
+      },
+      "measurement_origin": {
+        "value": "INSTRUMENTED GLOVE DIRECT / GLOVE + CALIBRATION TRANSFORM (CyberGlove) - the page names the equipment but no calibration procedure is obtainable",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Equipment: Motion Capture System - Cyberglove'"
+      },
+      "calibration_method": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page '>=100 Hz (100 Hz)'"
+      },
+      "derived_or_measured": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no data obtained, so no observed range"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no channel list is obtainable: the dataset page gives only the DOF COUNT (16), not the joint names, and no data file could be downloaded or recovered from any archive",
+        "evidence": "UNKNOWN"
+      }
+    },
+    {
+      "dataset": "HUST",
+      "api_dof": "middle_pip_flexion",
+      "dataset_joint_name": "UNKNOWN",
+      "source_index": null,
+      "anatomical_joint": "middle pip flexion",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "radians (page claim)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Data Structure: Joint Angles (rad)'",
+        "note": "NOT VERIFIABLE: no data obtained, and the associated paper is retracted"
+      },
+      "positive_direction": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "no obtainable source states HUST's sign conventions; the handcorpus page does not list them"
+      },
+      "zero_reference": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "the handcorpus page does not define a reference posture and the underlying paper is retracted"
+      },
+      "handedness": {
+        "value": "right hand only (page: subjects 'placed their right arm on the table')",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page"
+      },
+      "measurement_origin": {
+        "value": "INSTRUMENTED GLOVE DIRECT / GLOVE + CALIBRATION TRANSFORM (CyberGlove) - the page names the equipment but no calibration procedure is obtainable",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Equipment: Motion Capture System - Cyberglove'"
+      },
+      "calibration_method": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page '>=100 Hz (100 Hz)'"
+      },
+      "derived_or_measured": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no data obtained, so no observed range"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no channel list is obtainable: the dataset page gives only the DOF COUNT (16), not the joint names, and no data file could be downloaded or recovered from any archive",
+        "evidence": "UNKNOWN"
+      }
+    },
+    {
+      "dataset": "HUST",
+      "api_dof": "middle_dip_flexion",
+      "dataset_joint_name": "UNKNOWN",
+      "source_index": null,
+      "anatomical_joint": "middle dip flexion",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "radians (page claim)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Data Structure: Joint Angles (rad)'",
+        "note": "NOT VERIFIABLE: no data obtained, and the associated paper is retracted"
+      },
+      "positive_direction": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "no obtainable source states HUST's sign conventions; the handcorpus page does not list them"
+      },
+      "zero_reference": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "the handcorpus page does not define a reference posture and the underlying paper is retracted"
+      },
+      "handedness": {
+        "value": "right hand only (page: subjects 'placed their right arm on the table')",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page"
+      },
+      "measurement_origin": {
+        "value": "INSTRUMENTED GLOVE DIRECT / GLOVE + CALIBRATION TRANSFORM (CyberGlove) - the page names the equipment but no calibration procedure is obtainable",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Equipment: Motion Capture System - Cyberglove'"
+      },
+      "calibration_method": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page '>=100 Hz (100 Hz)'"
+      },
+      "derived_or_measured": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no data obtained, so no observed range"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no channel list is obtainable: the dataset page gives only the DOF COUNT (16), not the joint names, and no data file could be downloaded or recovered from any archive",
+        "evidence": "UNKNOWN"
+      }
+    },
+    {
+      "dataset": "HUST",
+      "api_dof": "ring_mcp_flexion",
+      "dataset_joint_name": "UNKNOWN",
+      "source_index": null,
+      "anatomical_joint": "ring mcp flexion",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "radians (page claim)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Data Structure: Joint Angles (rad)'",
+        "note": "NOT VERIFIABLE: no data obtained, and the associated paper is retracted"
+      },
+      "positive_direction": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "no obtainable source states HUST's sign conventions; the handcorpus page does not list them"
+      },
+      "zero_reference": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "the handcorpus page does not define a reference posture and the underlying paper is retracted"
+      },
+      "handedness": {
+        "value": "right hand only (page: subjects 'placed their right arm on the table')",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page"
+      },
+      "measurement_origin": {
+        "value": "INSTRUMENTED GLOVE DIRECT / GLOVE + CALIBRATION TRANSFORM (CyberGlove) - the page names the equipment but no calibration procedure is obtainable",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Equipment: Motion Capture System - Cyberglove'"
+      },
+      "calibration_method": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page '>=100 Hz (100 Hz)'"
+      },
+      "derived_or_measured": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no data obtained, so no observed range"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no channel list is obtainable: the dataset page gives only the DOF COUNT (16), not the joint names, and no data file could be downloaded or recovered from any archive",
+        "evidence": "UNKNOWN"
+      }
+    },
+    {
+      "dataset": "HUST",
+      "api_dof": "ring_pip_flexion",
+      "dataset_joint_name": "UNKNOWN",
+      "source_index": null,
+      "anatomical_joint": "ring pip flexion",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "radians (page claim)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Data Structure: Joint Angles (rad)'",
+        "note": "NOT VERIFIABLE: no data obtained, and the associated paper is retracted"
+      },
+      "positive_direction": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "no obtainable source states HUST's sign conventions; the handcorpus page does not list them"
+      },
+      "zero_reference": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "the handcorpus page does not define a reference posture and the underlying paper is retracted"
+      },
+      "handedness": {
+        "value": "right hand only (page: subjects 'placed their right arm on the table')",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page"
+      },
+      "measurement_origin": {
+        "value": "INSTRUMENTED GLOVE DIRECT / GLOVE + CALIBRATION TRANSFORM (CyberGlove) - the page names the equipment but no calibration procedure is obtainable",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Equipment: Motion Capture System - Cyberglove'"
+      },
+      "calibration_method": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page '>=100 Hz (100 Hz)'"
+      },
+      "derived_or_measured": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no data obtained, so no observed range"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no channel list is obtainable: the dataset page gives only the DOF COUNT (16), not the joint names, and no data file could be downloaded or recovered from any archive",
+        "evidence": "UNKNOWN"
+      }
+    },
+    {
+      "dataset": "HUST",
+      "api_dof": "ring_dip_flexion",
+      "dataset_joint_name": "UNKNOWN",
+      "source_index": null,
+      "anatomical_joint": "ring dip flexion",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "radians (page claim)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Data Structure: Joint Angles (rad)'",
+        "note": "NOT VERIFIABLE: no data obtained, and the associated paper is retracted"
+      },
+      "positive_direction": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "no obtainable source states HUST's sign conventions; the handcorpus page does not list them"
+      },
+      "zero_reference": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "the handcorpus page does not define a reference posture and the underlying paper is retracted"
+      },
+      "handedness": {
+        "value": "right hand only (page: subjects 'placed their right arm on the table')",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page"
+      },
+      "measurement_origin": {
+        "value": "INSTRUMENTED GLOVE DIRECT / GLOVE + CALIBRATION TRANSFORM (CyberGlove) - the page names the equipment but no calibration procedure is obtainable",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Equipment: Motion Capture System - Cyberglove'"
+      },
+      "calibration_method": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page '>=100 Hz (100 Hz)'"
+      },
+      "derived_or_measured": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no data obtained, so no observed range"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no channel list is obtainable: the dataset page gives only the DOF COUNT (16), not the joint names, and no data file could be downloaded or recovered from any archive",
+        "evidence": "UNKNOWN"
+      }
+    },
+    {
+      "dataset": "HUST",
+      "api_dof": "pinky_mcp_flexion",
+      "dataset_joint_name": "UNKNOWN",
+      "source_index": null,
+      "anatomical_joint": "pinky mcp flexion",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "radians (page claim)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Data Structure: Joint Angles (rad)'",
+        "note": "NOT VERIFIABLE: no data obtained, and the associated paper is retracted"
+      },
+      "positive_direction": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "no obtainable source states HUST's sign conventions; the handcorpus page does not list them"
+      },
+      "zero_reference": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "the handcorpus page does not define a reference posture and the underlying paper is retracted"
+      },
+      "handedness": {
+        "value": "right hand only (page: subjects 'placed their right arm on the table')",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page"
+      },
+      "measurement_origin": {
+        "value": "INSTRUMENTED GLOVE DIRECT / GLOVE + CALIBRATION TRANSFORM (CyberGlove) - the page names the equipment but no calibration procedure is obtainable",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Equipment: Motion Capture System - Cyberglove'"
+      },
+      "calibration_method": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page '>=100 Hz (100 Hz)'"
+      },
+      "derived_or_measured": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no data obtained, so no observed range"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no channel list is obtainable: the dataset page gives only the DOF COUNT (16), not the joint names, and no data file could be downloaded or recovered from any archive",
+        "evidence": "UNKNOWN"
+      }
+    },
+    {
+      "dataset": "HUST",
+      "api_dof": "pinky_pip_flexion",
+      "dataset_joint_name": "UNKNOWN",
+      "source_index": null,
+      "anatomical_joint": "pinky pip flexion",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "radians (page claim)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Data Structure: Joint Angles (rad)'",
+        "note": "NOT VERIFIABLE: no data obtained, and the associated paper is retracted"
+      },
+      "positive_direction": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "no obtainable source states HUST's sign conventions; the handcorpus page does not list them"
+      },
+      "zero_reference": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "the handcorpus page does not define a reference posture and the underlying paper is retracted"
+      },
+      "handedness": {
+        "value": "right hand only (page: subjects 'placed their right arm on the table')",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page"
+      },
+      "measurement_origin": {
+        "value": "INSTRUMENTED GLOVE DIRECT / GLOVE + CALIBRATION TRANSFORM (CyberGlove) - the page names the equipment but no calibration procedure is obtainable",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Equipment: Motion Capture System - Cyberglove'"
+      },
+      "calibration_method": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page '>=100 Hz (100 Hz)'"
+      },
+      "derived_or_measured": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no data obtained, so no observed range"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no channel list is obtainable: the dataset page gives only the DOF COUNT (16), not the joint names, and no data file could be downloaded or recovered from any archive",
+        "evidence": "UNKNOWN"
+      }
+    },
+    {
+      "dataset": "HUST",
+      "api_dof": "pinky_dip_flexion",
+      "dataset_joint_name": "UNKNOWN",
+      "source_index": null,
+      "anatomical_joint": "pinky dip flexion",
+      "anatomical_dof": "flexion/extension",
+      "unit": {
+        "value": "radians (page claim)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Data Structure: Joint Angles (rad)'",
+        "note": "NOT VERIFIABLE: no data obtained, and the associated paper is retracted"
+      },
+      "positive_direction": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "no obtainable source states HUST's sign conventions; the handcorpus page does not list them"
+      },
+      "zero_reference": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "the handcorpus page does not define a reference posture and the underlying paper is retracted"
+      },
+      "handedness": {
+        "value": "right hand only (page: subjects 'placed their right arm on the table')",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page"
+      },
+      "measurement_origin": {
+        "value": "INSTRUMENTED GLOVE DIRECT / GLOVE + CALIBRATION TRANSFORM (CyberGlove) - the page names the equipment but no calibration procedure is obtainable",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page: 'Equipment: Motion Capture System - Cyberglove'"
+      },
+      "calibration_method": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "sampling_rate_hz": {
+        "value": 100.0,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page '>=100 Hz (100 Hz)'"
+      },
+      "derived_or_measured": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "range_observed": {
+        "value": null,
+        "evidence": "UNKNOWN",
+        "note": "no data obtained, so no observed range"
+      },
+      "confidence": "NONE",
+      "evidence": {
+        "value": "no channel list is obtainable: the dataset page gives only the DOF COUNT (16), not the joint names, and no data file could be downloaded or recovered from any archive",
+        "evidence": "UNKNOWN"
+      }
+    }
+  ],
+  "release_column_inventory": [
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "release_column": "CMC1_F",
+      "source_index": 0,
+      "documented_meaning": "thumb CMC flexion",
+      "api_dof_owner": "thumb_cmc_flexion",
+      "p5_p95_deg": [
+        4.32,
+        22.39
+      ],
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "release_column": "CMC1_A",
+      "source_index": 1,
+      "documented_meaning": "thumb CMC abduction",
+      "api_dof_owner": "thumb_cmc_ab_adduction",
+      "p5_p95_deg": [
+        -34.97,
+        26.97
+      ],
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "release_column": "MCP1_F",
+      "source_index": 2,
+      "documented_meaning": "thumb MCP flexion",
+      "api_dof_owner": "thumb_mcp_flexion",
+      "p5_p95_deg": [
+        -20.11,
+        13.33
+      ],
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "release_column": "IP1_F",
+      "source_index": 3,
+      "documented_meaning": "thumb IP flexion",
+      "api_dof_owner": "thumb_ip_flexion",
+      "p5_p95_deg": [
+        -29.27,
+        33.55
+      ],
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "release_column": "MCP2_F",
+      "source_index": 4,
+      "documented_meaning": "index MCP flexion",
+      "api_dof_owner": "index_mcp_flexion",
+      "p5_p95_deg": [
+        -7.88,
+        22.4
+      ],
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "release_column": "MCP2-3_A",
+      "source_index": 5,
+      "documented_meaning": "relative abduction between MCP2 and MCP3",
+      "api_dof_owner": null,
+      "p5_p95_deg": [
+        -10.05,
+        51.57
+      ],
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "release_column": "PIP2_F",
+      "source_index": 6,
+      "documented_meaning": "index PIP flexion",
+      "api_dof_owner": "index_pip_flexion",
+      "p5_p95_deg": [
+        6.78,
+        78.55
+      ],
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "release_column": "MCP3_F",
+      "source_index": 7,
+      "documented_meaning": "middle MCP flexion",
+      "api_dof_owner": "middle_mcp_flexion",
+      "p5_p95_deg": [
+        -5.53,
+        68.77
+      ],
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "release_column": "PIP3_F",
+      "source_index": 8,
+      "documented_meaning": "middle PIP flexion",
+      "api_dof_owner": "middle_pip_flexion",
+      "p5_p95_deg": [
+        8.61,
+        75.57
+      ],
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "release_column": "MCP4_F",
+      "source_index": 9,
+      "documented_meaning": "ring MCP flexion",
+      "api_dof_owner": "ring_mcp_flexion",
+      "p5_p95_deg": [
+        -2.51,
+        16.25
+      ],
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "release_column": "MCP3-4_A",
+      "source_index": 10,
+      "documented_meaning": "relative abduction between MCP3 and MCP4",
+      "api_dof_owner": null,
+      "p5_p95_deg": [
+        -9.59,
+        60.83
+      ],
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "release_column": "PIP4_F",
+      "source_index": 11,
+      "documented_meaning": "ring PIP flexion",
+      "api_dof_owner": "ring_pip_flexion",
+      "p5_p95_deg": [
+        7.9,
+        87.4
+      ],
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "release_column": "PalmArch",
+      "source_index": 12,
+      "documented_meaning": "palmar arch",
+      "api_dof_owner": null,
+      "p5_p95_deg": [
+        5.75,
+        54.74
+      ],
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "release_column": "MCP5_F",
+      "source_index": 13,
+      "documented_meaning": "pinky MCP flexion",
+      "api_dof_owner": "pinky_mcp_flexion",
+      "p5_p95_deg": [
+        -8.43,
+        10.61
+      ],
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "release_column": "MCP4-5_A",
+      "source_index": 14,
+      "documented_meaning": "relative abduction between MCP4 and MCP5",
+      "api_dof_owner": null,
+      "p5_p95_deg": [
+        -8.85,
+        67.29
+      ],
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "release_column": "PIP5_F",
+      "source_index": 15,
+      "documented_meaning": "pinky PIP flexion",
+      "api_dof_owner": "pinky_pip_flexion",
+      "p5_p95_deg": [
+        3.96,
+        78.76
+      ],
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "release_column": "WR_F",
+      "source_index": 16,
+      "documented_meaning": "wrist flexion/extension",
+      "api_dof_owner": null,
+      "p5_p95_deg": [
+        -77.58,
+        29.86
+      ],
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    {
+      "dataset": "KIN_MUS (and the KINE-ADL / UJI kinematic family)",
+      "release_column": "WR_A",
+      "source_index": 17,
+      "documented_meaning": "wrist ulnar/radial deviation",
+      "api_dof_owner": null,
+      "p5_p95_deg": [
+        -44.91,
+        7.81
+      ],
+      "evidence": "OFFICIAL-DOCUMENTED"
+    }
+  ],
+  "release_column_inventory_note": "one entry per released column, exactly once, with its API owner (or null).  This is the structure that makes 'every column accounted for' checkable independently of the mapping rows",
+  "counts": {
+    "KIN_MUS_and_UJI_family": {
+      "HIGH": 10,
+      "MEDIUM": 2,
+      "LOW": 0,
+      "NONE": 4,
+      "HIGH_plus_MEDIUM": 12,
+      "high_or_medium_api_names": [
+        "thumb_cmc_flexion",
+        "thumb_cmc_ab_adduction",
+        "thumb_mcp_flexion",
+        "thumb_ip_flexion",
+        "index_mcp_flexion",
+        "index_pip_flexion",
+        "middle_mcp_flexion",
+        "middle_pip_flexion",
+        "ring_mcp_flexion",
+        "ring_pip_flexion",
+        "pinky_mcp_flexion",
+        "pinky_pip_flexion"
+      ],
+      "high_api_names": [
+        "thumb_cmc_flexion",
+        "thumb_mcp_flexion",
+        "index_mcp_flexion",
+        "index_pip_flexion",
+        "middle_mcp_flexion",
+        "middle_pip_flexion",
+        "ring_mcp_flexion",
+        "ring_pip_flexion",
+        "pinky_mcp_flexion",
+        "pinky_pip_flexion"
+      ],
+      "unavailable_api_names": [
+        "index_dip_flexion",
+        "middle_dip_flexion",
+        "ring_dip_flexion",
+        "pinky_dip_flexion"
+      ]
+    },
+    "HUST": {
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "NONE": 16,
+      "HIGH_plus_MEDIUM": 0,
+      "high_or_medium_api_names": [],
+      "high_api_names": [],
+      "unavailable_api_names": [
+        "thumb_cmc_flexion",
+        "thumb_cmc_ab_adduction",
+        "thumb_mcp_flexion",
+        "thumb_ip_flexion",
+        "index_mcp_flexion",
+        "index_pip_flexion",
+        "index_dip_flexion",
+        "middle_mcp_flexion",
+        "middle_pip_flexion",
+        "middle_dip_flexion",
+        "ring_mcp_flexion",
+        "ring_pip_flexion",
+        "ring_dip_flexion",
+        "pinky_mcp_flexion",
+        "pinky_pip_flexion",
+        "pinky_dip_flexion"
+      ]
+    },
+    "KINE_ADL": {
+      "HIGH": 10,
+      "MEDIUM": 2,
+      "LOW": 0,
+      "NONE": 4,
+      "HIGH_plus_MEDIUM": 12,
+      "high_or_medium_api_names": [
+        "thumb_cmc_flexion",
+        "thumb_cmc_ab_adduction",
+        "thumb_mcp_flexion",
+        "thumb_ip_flexion",
+        "index_mcp_flexion",
+        "index_pip_flexion",
+        "middle_mcp_flexion",
+        "middle_pip_flexion",
+        "ring_mcp_flexion",
+        "ring_pip_flexion",
+        "pinky_mcp_flexion",
+        "pinky_pip_flexion"
+      ],
+      "high_api_names": [
+        "thumb_cmc_flexion",
+        "thumb_mcp_flexion",
+        "index_mcp_flexion",
+        "index_pip_flexion",
+        "middle_mcp_flexion",
+        "middle_pip_flexion",
+        "ring_mcp_flexion",
+        "ring_pip_flexion",
+        "pinky_mcp_flexion",
+        "pinky_pip_flexion"
+      ],
+      "unavailable_api_names": [
+        "index_dip_flexion",
+        "middle_dip_flexion",
+        "ring_dip_flexion",
+        "pinky_dip_flexion"
+      ],
+      "note": "identical to the KIN_MUS row set BY CONSTRUCTION OF EVIDENCE, not by assumption: the KINE-ADL BE-UJI record documents the SAME 18 DoF per hand from the SAME CyberGlove and the SAME BE-UJI calibration pipeline, so the mapping matrix is shared.  This identity is itself evidence of NON-INDEPENDENCE and is reported as such"
+    }
+  },
+  "uji_min_common_dof_gate": {
+    "shared_high_plus_medium": 12,
+    "shared_high": 10,
+    "required_high_plus_medium": 8,
+    "required_high": 6,
+    "passes": true
+  },
+  "shared_representation_families": {
+    "shared_HIGH_only": [
+      "thumb_cmc_flexion",
+      "thumb_mcp_flexion",
+      "index_mcp_flexion",
+      "index_pip_flexion",
+      "middle_mcp_flexion",
+      "middle_pip_flexion",
+      "ring_mcp_flexion",
+      "ring_pip_flexion",
+      "pinky_mcp_flexion",
+      "pinky_pip_flexion"
+    ],
+    "shared_HIGH_plus_MEDIUM": [
+      "thumb_cmc_flexion",
+      "thumb_cmc_ab_adduction",
+      "thumb_mcp_flexion",
+      "thumb_ip_flexion",
+      "index_mcp_flexion",
+      "index_pip_flexion",
+      "middle_mcp_flexion",
+      "middle_pip_flexion",
+      "ring_mcp_flexion",
+      "ring_pip_flexion",
+      "pinky_mcp_flexion",
+      "pinky_pip_flexion"
+    ],
+    "shared_data_available_family_C_recommendation": "the HIGH-confidence set is exactly the eight non-thumb MCP and PIP flexion axes.  It is the largest set this audit can defend on physical-coordinate trustworthiness alone",
+    "api16_coverage": {
+      "covered": 12,
+      "missing": 4,
+      "missing_names": [
+        "index_dip_flexion",
+        "middle_dip_flexion",
+        "ring_dip_flexion",
+        "pinky_dip_flexion"
+      ]
+    },
+    "selection_rule": "this audit must decide whether the future API is API-16 or a SMALLER rigorously-shared anatomical subset.  PRINCIPAL RULE: physical semantic equivalence > dimensional count.  A 12-D clean physical mapping beats a 16-D uncertain one.  Dimensional count is never itself a reason to prefer a representation",
+    "do_not_prefer": "API-16 is NOT preferred merely because it has more dimensions; four of its sixteen variables have no released column at all in the leading candidate"
+  },
+  "no_forced_matches": {
+    "rule": [
+      "a coarse name such as 'index flexion' that does not distinguish MCP/PIP/DIP is NONE for each of them - never a one-to-one match",
+      "a derived channel (an angle computed from another channel) is flagged as such and cannot be HIGH confidence for an independent DoF",
+      "no match may be created or upgraded because it would raise the shared-DOF count",
+      "every mapping row records which evidence tag supports it"
+    ],
+    "cases_where_a_match_was_REFUSED": [
+      {
+        "dataset_columns": [
+          "MCP2-3_A",
+          "MCP3-4_A",
+          "MCP4-5_A"
+        ],
+        "would_be_tempting_match": "the four dropped canonical16 MCP abduction axes",
+        "why_refused": "they are RELATIVE inter-finger spreads, not per-finger MCP abduction; matching them would raise the shared-DOF count on a false premise",
+        "assigned_confidence": "NONE"
+      },
+      {
+        "dataset_columns": [
+          "DIP2",
+          "DIP3",
+          "DIP4",
+          "DIP5"
+        ],
+        "would_be_tempting_match": "index/middle/ring/pinky DIP flexion",
+        "why_refused": "no DIP column is released, and the authors' own code derives DIP from PIP by a clipped affine map that is zero over a large range.  A clipped surrogate is not an independent DIP measurement",
+        "assigned_confidence": "NONE"
+      },
+      {
+        "dataset_columns": [
+          "PalmArch"
+        ],
+        "would_be_tempting_match": "no canonical16 axis; recorded as an extra",
+        "why_refused": "no API counterpart",
+        "assigned_confidence": "NONE"
+      }
+    ]
+  }
+}

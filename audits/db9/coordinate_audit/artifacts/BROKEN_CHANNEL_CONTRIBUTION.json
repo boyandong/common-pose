@@ -1,0 +1,36 @@
+{
+  "artifact": "BROKEN_CHANNEL_CONTRIBUTION.json",
+  "plan_sha256": "c59fe01370d48aedeed56ef7a4103506d14a298edb794723be3720531edd62c6",
+  "question": "how much of the previous distributional branch's 0.8057 UNKNOWN rate is attributable to the four dimensions this audit classifies POSSIBLE OFFSET?",
+  "classification": "POST-HOC QUANTITATIVE CHECK, run after the verdict was assigned; it changes no model, no threshold and no frozen artifact.",
+  "method": "re-derive a per-gesture Gaussian/Mahalanobis class model from the FROZEN DB9 representative postures (70/30 split not used; the model is fit on all six-gesture representative postures as a magnitude check) and apply it to the frozen 86 858 paired emg2pose GT frames, once with all 16 dimensions and once excluding the four POSSIBLE OFFSET dimensions.  This is NOT a re-run of the previous branch's fitted models, which used a subject-grouped shrinkage covariance; it is a magnitude check with a plain sample covariance.",
+  "dimensions_excluded": [
+    "middle_pip_flexion",
+    "middle_dip_flexion",
+    "ring_dip_flexion",
+    "pinky_dip_flexion"
+  ],
+  "all_16_dimensions": {
+    "unknown_numerator": 83463,
+    "unknown_denominator": 86858,
+    "unknown_rate": 0.9609132146722237,
+    "subject_to_session_caveat": "within-subject; session-level resampling only",
+    "wilson95_not_used_as_inference": [
+      0.9596038544762919,
+      0.9621818071592434
+    ]
+  },
+  "excluding_the_four_possible_offset_dimensions": {
+    "unknown_numerator": 76963,
+    "unknown_denominator": 86858,
+    "unknown_rate": 0.8860784268576297,
+    "subject_to_session_caveat": "within-subject; session-level resampling only",
+    "wilson95_not_used_as_inference": [
+      0.8839484142276002,
+      0.888174290905188
+    ]
+  },
+  "previous_branch_reported": 0.8057,
+  "reading": "excluding the four dimensions lowers the UNKNOWN rate by about 7.5 percentage points, so the broken channels are a REAL but PARTIAL contributor.  Most of the over-rejection survives their removal, which supports Session 5's independent conclusion that a genuine cross-dataset distribution shift exists.  It also shows the previous branch's 0.8057 was NOT purely an artifact of the broken channels - a claim this audit deliberately does not make.",
+  "what_this_does_not_say": "it does not validate 0.8861 as a corrected figure.  The plain sample covariance over-rejects relative to the frozen pipeline (0.9609 vs 0.8057 on the same 16 dimensions), so only the DIFFERENCE between the two columns is interpretable, not either level."
+}

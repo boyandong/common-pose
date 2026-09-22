@@ -1,0 +1,20 @@
+==============================================================================
+05 OLD RESULTS IMPACT and DECISION
+==============================================================================
+  DIP3: REAL_DB9_PROBLEM   (CASE_A_RELEASED_REPRESENTATION, DROP)
+  DIP4: INCONCLUSIVE   (CASE_E_INCONCLUSIVE, INCONCLUSIVE)
+  DIP5: REAL_DB9_PROBLEM   (CASE_A_RELEASED_REPRESENTATION, DROP)
+  CMC5: REAL_DB9_PROBLEM   (CASE_B_SENSOR_OR_FIT_LIMITATION, DROP)
+  previous QC verdict: PARTIALLY_OVERTURNED - the earlier 'many channels fail' verdict was produced on segmentation keyed to the PRE-relabelling `repetition` vector, which is misaligned with the kinematics in 24 of 99 files. Under correct segmentation six of the suspects pass at >= 0.90 subject-level agreement, while FIVE findings are confirmed or newly established.
+  TRUSTED keep (8): ['MCP1', 'IP1', 'MCP2_f', 'PIP2', 'MCP3_f', 'MCP4_f', 'MCP5_f', 'PIP5']
+  DROP (6): ['MCP2_a', 'CMC5', 'MCP5_a', 'DIP3', 'DIP5', 'WRIST_A']
+  INCONCLUSIVE (8): ['CMC1_f', 'CMC1_a', 'PIP3', 'MCP4_a', 'PIP4', 'DIP2', 'DIP4', 'WRIST_F']
+  arm A  Acc=0.6069 BA=0.6087 F1=0.6067
+  arm B  Acc=0.4849 BA=0.4853 F1=0.4795
+  utility loss: dBA=-0.1233
+
+  DB9 FINAL DECISION: DB9-ADMIT-REDUCED
+  the trusted physical subset is real and the posture task remains usable, but on a reduced channel set and/or with a measurable utility loss. Permitted claims: the Exercise B movement classes recovered by the frozen trusted subset under subject-held-out evaluation. Not permitted: any claim about DIP angles, the palmar arch, or wrist deviation as measured physical quantities.
+artifacts/DECISION.json sha256=1609fad13be49d7588d39d16ce7fb93225e3fa99c5faa50b69517c992ae50172
+DB9_FORENSIC_DECISION.md sha256=b625f5bea7b1765215b4741e4ee65d1a3e72d383fad9e3e5faf5448ead4659dc
+log: <PROJECT_ROOT>\db9_channel_forensic_v2\logs\05_decision.log

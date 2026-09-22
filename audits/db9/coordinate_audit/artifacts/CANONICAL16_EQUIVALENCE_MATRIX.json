@@ -1,0 +1,1393 @@
+{
+  "artifact": "CANONICAL16_EQUIVALENCE_MATRIX.json",
+  "plan_sha256": "c59fe01370d48aedeed56ef7a4103506d14a298edb794723be3720531edd62c6",
+  "csv_artifact": "CANONICAL16_EQUIVALENCE_MATRIX.csv",
+  "csv_sha256": "950bab9a655795bf39cd1d3c7f79fab5aeaad60be6cae1230c1784d1ad7d1bf1",
+  "columns": [
+    "canonical_index",
+    "canonical_name",
+    "anatomical_joint",
+    "dof",
+    "db9_raw_channel",
+    "db9_raw_column",
+    "emg2pose_official_joint",
+    "emg2pose_source_index",
+    "unit_db9",
+    "unit_emg2pose",
+    "positive_db9",
+    "positive_emg2pose",
+    "sign_transform_applied",
+    "zero_db9",
+    "zero_emg2pose",
+    "angle_convention",
+    "range_wrapping",
+    "handedness",
+    "calibration_semantics",
+    "official_emg2pose_limits_deg",
+    "db9_median_deg",
+    "emg2pose_median_deg",
+    "median_difference_deg",
+    "wasserstein_deg",
+    "support_overlap",
+    "joint_identity_diagonal_winner",
+    "joint_identity_best_match",
+    "db2_minus_db1_gap_deg",
+    "empirical_range_compatibility",
+    "A_anatomical_dof",
+    "B_joint_indexing",
+    "C_unit",
+    "D_positive_direction",
+    "E_zero_definition",
+    "F_reference_pose",
+    "G_angle_convention",
+    "H_range_wrapping",
+    "I_handedness",
+    "J_preprocessing_calibration"
+  ],
+  "rows": [
+    {
+      "canonical_index": 0,
+      "canonical_name": "thumb_cmc_flexion",
+      "anatomical_joint": "thumb CMC",
+      "dof": "flexion/extension",
+      "db9_raw_channel": "CMC1_f",
+      "db9_raw_column": 0,
+      "db9_anatomical_name": "CMC1_F",
+      "emg2pose_official_joint": "THUMB_CMC_FE",
+      "emg2pose_source_index": 0,
+      "unit_db9": "degrees (DOCUMENTED: paper + data range; no unit symbol in the paper)",
+      "unit_emg2pose": "radians (DOCUMENTED: joint_angle_definition.md section 2)",
+      "unit_conversion": "explicit pi/180 in the DB9 adapter; none on the emg2pose side",
+      "positive_db9": "flexion (DOCUMENTED: paper Table 6)",
+      "positive_emg2pose": "flexion (DOCUMENTED + VERIFIED-EXEC: 15/15 FE joints move the fingertip toward the palm at +limit)",
+      "sign_transform_applied": 1.0,
+      "zero_db9": "the released calibrated angles are relative to the documented reference posture: hand resting on the table, fingers closed together and extended, taken from the central part of movement 11 (DOCUMENTED)",
+      "zero_emg2pose": "the official 20D zero vector, whose FK pose is a fingers-extended hand; joint limits are minimised at 0 for the PIP/DIP joints (DOCUMENTED + PROJECT-INFERRED from FK)",
+      "reference_pose_equivalence": "the two documented zero configurations are the same physical posture (fingers extended and together).  MEASURED: the DB9 reference posture (movement 11, central phase) has mean |angle| 0.854 deg over 16 dimensions, and movement 11 is the DB9 corpus's own closest-to-zero movement in two of three source databases.  The emg2pose zero is 0 by construction.",
+      "angle_convention": "both are joint rotation magnitudes about a fixed joint-specific axis: emg2pose via so3_exp_map(axis * angle) (CODE-INFERRED), DB9 via a linearly calibrated glove sensor reporting the joint angle in degrees (DOCUMENTED that the values are 'calibrated joint angles', not interior geometric angles)",
+      "range_wrapping": "emg2pose: no wrapping, not clamped to joint_limits (CODE-INFERRED + VERIFIED-EXEC).  DB9: no wrapping; the values are an unbounded linear extrapolation of the sensor and DO exceed physical ranges (MEASURED)",
+      "handedness": "emg2pose releases left and right sessions and flips the EMG sign for left hands; the joint angles are in the model frame.  DB9 has NO side field; the protocol instructed the right hand, and the DB9 page's Handedness column is the participant's own handedness, not the recording side (DOCUMENTED).  The two corpora therefore both hold right-hand poses, but 3 of the emg2pose mini sessions are left-hand recordings whose poses are mirrored into the same model frame.",
+      "calibration_semantics": "DB9: a per-channel linear map from the raw CyberGlove signal to anatomical degrees, whose gains came from a 10-subject calibration protocol and were then applied to all 77 subjects (DOCUMENTED).  emg2pose: no sensor calibration; the values are the output of an IK fit of the generic UmeTrack hand model to motion-capture data (PROJECT-INFERRED from the official pipeline)",
+      "official_emg2pose_limits_deg": [
+        -45.10704397691153,
+        73.75493714854727
+      ],
+      "db9_median_deg": 3.8567017425805172,
+      "emg2pose_median_deg": 7.931893133607106,
+      "median_difference_deg": 4.075191391026589,
+      "wasserstein_deg": 5.319331890179356,
+      "support_overlap": 0.8329754742952304,
+      "emg2pose_offdiagonal_r_mean": 0.4669403437999545,
+      "joint_identity_diagonal_winner": false,
+      "joint_identity_best_match": "pinky_dip_flexion",
+      "db2_minus_db1_gap_deg": -7.941214944577432,
+      "db2_minus_db1_ci95": [
+        -13.255403968342604,
+        -1.3749203274744721
+      ],
+      "criteria": {
+        "A_anatomical_dof": {
+          "verdict": "PASS",
+          "basis": "the two sides select the same named anatomical DOF by name; the DB9 channel vocabulary is read from each file's own order_of_angles and matches the official table in all 77 protocol files (DOCUMENTED + MEASURED)"
+        },
+        "B_joint_indexing": {
+          "verdict": "PASS",
+          "basis": "indexing differs (emg2pose 0-19 interleaved, DB9 0-21 with the DIP block at the end) and is resolved by NAME, never positionally; verified bit-exact (MEASURED)"
+        },
+        "C_unit": {
+          "verdict": "PASS",
+          "basis": "degrees vs radians, converted explicitly; the conversion reproduces the stored corpus to 4.4e-16 rad (MEASURED)"
+        },
+        "D_positive_direction": {
+          "verdict": "PASS",
+          "basis": "15 FE channels agree in sign per the paper's Table 6; the one AA channel is sign-flipped by the frozen transform (DOCUMENTED)"
+        },
+        "E_zero_definition": {
+          "verdict": "PASS",
+          "basis": "both place zero at the extended, fingers-together hand (DOCUMENTED + MEASURED: DB9 reference posture mean |angle| 0.854 deg)"
+        },
+        "F_reference_pose": {
+          "verdict": "PASS",
+          "basis": "the documented reference postures are the same physical configuration; all three DB9 source databases agree on it to within 11.2 deg per-joint and 0.84 deg in median (MEASURED)"
+        },
+        "G_angle_convention": {
+          "verdict": "PASS",
+          "basis": "both are joint rotation magnitudes, not derived interior angles (DOCUMENTED for DB9 'calibrated joint angles'; CODE-INFERRED for emg2pose so3_exp_map)"
+        },
+        "H_range_wrapping": {
+          "verdict": "PASS",
+          "basis": "neither dataset wraps; neither clamps.  DB9 produces out-of-physical-range values by linear extrapolation, which is a calibration property, not a wrapping convention (MEASURED)"
+        },
+        "I_handedness": {
+          "verdict": "UNCERTAIN",
+          "basis": "DB9 is a right-hand protocol; the emg2pose mini corpus contains 15 left and 15 right recordings.  The project's frozen contract treats the 20D vector as model-frame and does not mirror it, and no LEFT-vs-RIGHT handedness transform is applied anywhere.  Whether the UmeTrack model frame is handedness-invariant for the LEFT recordings is NOT established by this audit"
+        },
+        "J_preprocessing_calibration": {
+          "verdict": "FAIL",
+          "basis": "the two numbers are produced by fundamentally different processes: a linear sensor calibration whose gains came from 10 other subjects, versus an IK fit of a generic hand model.  This is the strongest single source of per-dimension numerical disagreement (MEASURED below)"
+        }
+      },
+      "empirical_range_compatibility": "HIGH"
+    },
+    {
+      "canonical_index": 1,
+      "canonical_name": "thumb_cmc_ab_adduction",
+      "anatomical_joint": "thumb CMC",
+      "dof": "abduction/adduction",
+      "db9_raw_channel": "CMC1_a",
+      "db9_raw_column": 1,
+      "db9_anatomical_name": "CMC1_A",
+      "emg2pose_official_joint": "THUMB_CMC_AA",
+      "emg2pose_source_index": 1,
+      "unit_db9": "degrees (DOCUMENTED: paper + data range; no unit symbol in the paper)",
+      "unit_emg2pose": "radians (DOCUMENTED: joint_angle_definition.md section 2)",
+      "unit_conversion": "explicit pi/180 in the DB9 adapter; none on the emg2pose side",
+      "positive_db9": "abduction (DOCUMENTED: paper Table 6)",
+      "positive_emg2pose": "adduction-positive for THUMB_CMC_AA (DOCUMENTED + VERIFIED-EXEC by FK sweep)",
+      "sign_transform_applied": -1.0,
+      "zero_db9": "the released calibrated angles are relative to the documented reference posture: hand resting on the table, fingers closed together and extended, taken from the central part of movement 11 (DOCUMENTED)",
+      "zero_emg2pose": "the official 20D zero vector, whose FK pose is a fingers-extended hand; joint limits are minimised at 0 for the PIP/DIP joints (DOCUMENTED + PROJECT-INFERRED from FK)",
+      "reference_pose_equivalence": "the two documented zero configurations are the same physical posture (fingers extended and together).  MEASURED: the DB9 reference posture (movement 11, central phase) has mean |angle| 0.854 deg over 16 dimensions, and movement 11 is the DB9 corpus's own closest-to-zero movement in two of three source databases.  The emg2pose zero is 0 by construction.",
+      "angle_convention": "both are joint rotation magnitudes about a fixed joint-specific axis: emg2pose via so3_exp_map(axis * angle) (CODE-INFERRED), DB9 via a linearly calibrated glove sensor reporting the joint angle in degrees (DOCUMENTED that the values are 'calibrated joint angles', not interior geometric angles)",
+      "range_wrapping": "emg2pose: no wrapping, not clamped to joint_limits (CODE-INFERRED + VERIFIED-EXEC).  DB9: no wrapping; the values are an unbounded linear extrapolation of the sensor and DO exceed physical ranges (MEASURED)",
+      "handedness": "emg2pose releases left and right sessions and flips the EMG sign for left hands; the joint angles are in the model frame.  DB9 has NO side field; the protocol instructed the right hand, and the DB9 page's Handedness column is the participant's own handedness, not the recording side (DOCUMENTED).  The two corpora therefore both hold right-hand poses, but 3 of the emg2pose mini sessions are left-hand recordings whose poses are mirrored into the same model frame.",
+      "calibration_semantics": "DB9: a per-channel linear map from the raw CyberGlove signal to anatomical degrees, whose gains came from a 10-subject calibration protocol and were then applied to all 77 subjects (DOCUMENTED).  emg2pose: no sensor calibration; the values are the output of an IK fit of the generic UmeTrack hand model to motion-capture data (PROJECT-INFERRED from the official pipeline)",
+      "official_emg2pose_limits_deg": [
+        -35.05352119793509,
+        35.05352119793509
+      ],
+      "db9_median_deg": -4.356978178024292,
+      "emg2pose_median_deg": -6.212379990008292,
+      "median_difference_deg": -1.8554018119839997,
+      "wasserstein_deg": 2.4361304154515926,
+      "support_overlap": 0.3094243280658431,
+      "emg2pose_offdiagonal_r_mean": 0.4669403437999545,
+      "joint_identity_diagonal_winner": false,
+      "joint_identity_best_match": "pinky_dip_flexion",
+      "db2_minus_db1_gap_deg": 9.081785631581614,
+      "db2_minus_db1_ci95": [
+        6.912883258358033,
+        10.610984637744568
+      ],
+      "criteria": {
+        "A_anatomical_dof": {
+          "verdict": "PASS",
+          "basis": "the two sides select the same named anatomical DOF by name; the DB9 channel vocabulary is read from each file's own order_of_angles and matches the official table in all 77 protocol files (DOCUMENTED + MEASURED)"
+        },
+        "B_joint_indexing": {
+          "verdict": "PASS",
+          "basis": "indexing differs (emg2pose 0-19 interleaved, DB9 0-21 with the DIP block at the end) and is resolved by NAME, never positionally; verified bit-exact (MEASURED)"
+        },
+        "C_unit": {
+          "verdict": "PASS",
+          "basis": "degrees vs radians, converted explicitly; the conversion reproduces the stored corpus to 4.4e-16 rad (MEASURED)"
+        },
+        "D_positive_direction": {
+          "verdict": "CORRECTED",
+          "basis": "15 FE channels agree in sign per the paper's Table 6; the one AA channel is sign-flipped by the frozen transform (DOCUMENTED)"
+        },
+        "E_zero_definition": {
+          "verdict": "PASS",
+          "basis": "both place zero at the extended, fingers-together hand (DOCUMENTED + MEASURED: DB9 reference posture mean |angle| 0.854 deg)"
+        },
+        "F_reference_pose": {
+          "verdict": "PASS",
+          "basis": "the documented reference postures are the same physical configuration; all three DB9 source databases agree on it to within 11.2 deg per-joint and 0.84 deg in median (MEASURED)"
+        },
+        "G_angle_convention": {
+          "verdict": "PASS",
+          "basis": "both are joint rotation magnitudes, not derived interior angles (DOCUMENTED for DB9 'calibrated joint angles'; CODE-INFERRED for emg2pose so3_exp_map)"
+        },
+        "H_range_wrapping": {
+          "verdict": "PASS",
+          "basis": "neither dataset wraps; neither clamps.  DB9 produces out-of-physical-range values by linear extrapolation, which is a calibration property, not a wrapping convention (MEASURED)"
+        },
+        "I_handedness": {
+          "verdict": "UNCERTAIN",
+          "basis": "DB9 is a right-hand protocol; the emg2pose mini corpus contains 15 left and 15 right recordings.  The project's frozen contract treats the 20D vector as model-frame and does not mirror it, and no LEFT-vs-RIGHT handedness transform is applied anywhere.  Whether the UmeTrack model frame is handedness-invariant for the LEFT recordings is NOT established by this audit"
+        },
+        "J_preprocessing_calibration": {
+          "verdict": "FAIL",
+          "basis": "the two numbers are produced by fundamentally different processes: a linear sensor calibration whose gains came from 10 other subjects, versus an IK fit of a generic hand model.  This is the strongest single source of per-dimension numerical disagreement (MEASURED below)"
+        }
+      },
+      "empirical_range_compatibility": "HIGH"
+    },
+    {
+      "canonical_index": 2,
+      "canonical_name": "thumb_mcp_flexion",
+      "anatomical_joint": "thumb MCP",
+      "dof": "flexion/extension",
+      "db9_raw_channel": "MCP1",
+      "db9_raw_column": 2,
+      "db9_anatomical_name": "MCP1",
+      "emg2pose_official_joint": "THUMB_MCP_FE",
+      "emg2pose_source_index": 2,
+      "unit_db9": "degrees (DOCUMENTED: paper + data range; no unit symbol in the paper)",
+      "unit_emg2pose": "radians (DOCUMENTED: joint_angle_definition.md section 2)",
+      "unit_conversion": "explicit pi/180 in the DB9 adapter; none on the emg2pose side",
+      "positive_db9": "flexion (DOCUMENTED: paper Table 6)",
+      "positive_emg2pose": "flexion (DOCUMENTED + VERIFIED-EXEC: 15/15 FE joints move the fingertip toward the palm at +limit)",
+      "sign_transform_applied": 1.0,
+      "zero_db9": "the released calibrated angles are relative to the documented reference posture: hand resting on the table, fingers closed together and extended, taken from the central part of movement 11 (DOCUMENTED)",
+      "zero_emg2pose": "the official 20D zero vector, whose FK pose is a fingers-extended hand; joint limits are minimised at 0 for the PIP/DIP joints (DOCUMENTED + PROJECT-INFERRED from FK)",
+      "reference_pose_equivalence": "the two documented zero configurations are the same physical posture (fingers extended and together).  MEASURED: the DB9 reference posture (movement 11, central phase) has mean |angle| 0.854 deg over 16 dimensions, and movement 11 is the DB9 corpus's own closest-to-zero movement in two of three source databases.  The emg2pose zero is 0 by construction.",
+      "angle_convention": "both are joint rotation magnitudes about a fixed joint-specific axis: emg2pose via so3_exp_map(axis * angle) (CODE-INFERRED), DB9 via a linearly calibrated glove sensor reporting the joint angle in degrees (DOCUMENTED that the values are 'calibrated joint angles', not interior geometric angles)",
+      "range_wrapping": "emg2pose: no wrapping, not clamped to joint_limits (CODE-INFERRED + VERIFIED-EXEC).  DB9: no wrapping; the values are an unbounded linear extrapolation of the sensor and DO exceed physical ranges (MEASURED)",
+      "handedness": "emg2pose releases left and right sessions and flips the EMG sign for left hands; the joint angles are in the model frame.  DB9 has NO side field; the protocol instructed the right hand, and the DB9 page's Handedness column is the participant's own handedness, not the recording side (DOCUMENTED).  The two corpora therefore both hold right-hand poses, but 3 of the emg2pose mini sessions are left-hand recordings whose poses are mirrored into the same model frame.",
+      "calibration_semantics": "DB9: a per-channel linear map from the raw CyberGlove signal to anatomical degrees, whose gains came from a 10-subject calibration protocol and were then applied to all 77 subjects (DOCUMENTED).  emg2pose: no sensor calibration; the values are the output of an IK fit of the generic UmeTrack hand model to motion-capture data (PROJECT-INFERRED from the official pipeline)",
+      "official_emg2pose_limits_deg": [
+        0.0,
+        73.75493714854727
+      ],
+      "db9_median_deg": 3.7152801752090454,
+      "emg2pose_median_deg": 14.276153617761178,
+      "median_difference_deg": 10.560873442552133,
+      "wasserstein_deg": 8.28188311407736,
+      "support_overlap": 0.7070956298562887,
+      "emg2pose_offdiagonal_r_mean": 0.4669403437999545,
+      "joint_identity_diagonal_winner": false,
+      "joint_identity_best_match": "thumb_ip_flexion",
+      "db2_minus_db1_gap_deg": -0.06694160786266723,
+      "db2_minus_db1_ci95": [
+        -2.763919237864305,
+        2.383992372654741
+      ],
+      "criteria": {
+        "A_anatomical_dof": {
+          "verdict": "PASS",
+          "basis": "the two sides select the same named anatomical DOF by name; the DB9 channel vocabulary is read from each file's own order_of_angles and matches the official table in all 77 protocol files (DOCUMENTED + MEASURED)"
+        },
+        "B_joint_indexing": {
+          "verdict": "PASS",
+          "basis": "indexing differs (emg2pose 0-19 interleaved, DB9 0-21 with the DIP block at the end) and is resolved by NAME, never positionally; verified bit-exact (MEASURED)"
+        },
+        "C_unit": {
+          "verdict": "PASS",
+          "basis": "degrees vs radians, converted explicitly; the conversion reproduces the stored corpus to 4.4e-16 rad (MEASURED)"
+        },
+        "D_positive_direction": {
+          "verdict": "PASS",
+          "basis": "15 FE channels agree in sign per the paper's Table 6; the one AA channel is sign-flipped by the frozen transform (DOCUMENTED)"
+        },
+        "E_zero_definition": {
+          "verdict": "PASS",
+          "basis": "both place zero at the extended, fingers-together hand (DOCUMENTED + MEASURED: DB9 reference posture mean |angle| 0.854 deg)"
+        },
+        "F_reference_pose": {
+          "verdict": "PASS",
+          "basis": "the documented reference postures are the same physical configuration; all three DB9 source databases agree on it to within 11.2 deg per-joint and 0.84 deg in median (MEASURED)"
+        },
+        "G_angle_convention": {
+          "verdict": "PASS",
+          "basis": "both are joint rotation magnitudes, not derived interior angles (DOCUMENTED for DB9 'calibrated joint angles'; CODE-INFERRED for emg2pose so3_exp_map)"
+        },
+        "H_range_wrapping": {
+          "verdict": "PASS",
+          "basis": "neither dataset wraps; neither clamps.  DB9 produces out-of-physical-range values by linear extrapolation, which is a calibration property, not a wrapping convention (MEASURED)"
+        },
+        "I_handedness": {
+          "verdict": "UNCERTAIN",
+          "basis": "DB9 is a right-hand protocol; the emg2pose mini corpus contains 15 left and 15 right recordings.  The project's frozen contract treats the 20D vector as model-frame and does not mirror it, and no LEFT-vs-RIGHT handedness transform is applied anywhere.  Whether the UmeTrack model frame is handedness-invariant for the LEFT recordings is NOT established by this audit"
+        },
+        "J_preprocessing_calibration": {
+          "verdict": "FAIL",
+          "basis": "the two numbers are produced by fundamentally different processes: a linear sensor calibration whose gains came from 10 other subjects, versus an IK fit of a generic hand model.  This is the strongest single source of per-dimension numerical disagreement (MEASURED below)"
+        }
+      },
+      "empirical_range_compatibility": "HIGH"
+    },
+    {
+      "canonical_index": 3,
+      "canonical_name": "thumb_ip_flexion",
+      "anatomical_joint": "thumb IP",
+      "dof": "flexion/extension",
+      "db9_raw_channel": "IP1",
+      "db9_raw_column": 3,
+      "db9_anatomical_name": "IP1",
+      "emg2pose_official_joint": "THUMB_IP_FE",
+      "emg2pose_source_index": 3,
+      "unit_db9": "degrees (DOCUMENTED: paper + data range; no unit symbol in the paper)",
+      "unit_emg2pose": "radians (DOCUMENTED: joint_angle_definition.md section 2)",
+      "unit_conversion": "explicit pi/180 in the DB9 adapter; none on the emg2pose side",
+      "positive_db9": "flexion (DOCUMENTED: paper Table 6)",
+      "positive_emg2pose": "flexion (DOCUMENTED + VERIFIED-EXEC: 15/15 FE joints move the fingertip toward the palm at +limit)",
+      "sign_transform_applied": 1.0,
+      "zero_db9": "the released calibrated angles are relative to the documented reference posture: hand resting on the table, fingers closed together and extended, taken from the central part of movement 11 (DOCUMENTED)",
+      "zero_emg2pose": "the official 20D zero vector, whose FK pose is a fingers-extended hand; joint limits are minimised at 0 for the PIP/DIP joints (DOCUMENTED + PROJECT-INFERRED from FK)",
+      "reference_pose_equivalence": "the two documented zero configurations are the same physical posture (fingers extended and together).  MEASURED: the DB9 reference posture (movement 11, central phase) has mean |angle| 0.854 deg over 16 dimensions, and movement 11 is the DB9 corpus's own closest-to-zero movement in two of three source databases.  The emg2pose zero is 0 by construction.",
+      "angle_convention": "both are joint rotation magnitudes about a fixed joint-specific axis: emg2pose via so3_exp_map(axis * angle) (CODE-INFERRED), DB9 via a linearly calibrated glove sensor reporting the joint angle in degrees (DOCUMENTED that the values are 'calibrated joint angles', not interior geometric angles)",
+      "range_wrapping": "emg2pose: no wrapping, not clamped to joint_limits (CODE-INFERRED + VERIFIED-EXEC).  DB9: no wrapping; the values are an unbounded linear extrapolation of the sensor and DO exceed physical ranges (MEASURED)",
+      "handedness": "emg2pose releases left and right sessions and flips the EMG sign for left hands; the joint angles are in the model frame.  DB9 has NO side field; the protocol instructed the right hand, and the DB9 page's Handedness column is the participant's own handedness, not the recording side (DOCUMENTED).  The two corpora therefore both hold right-hand poses, but 3 of the emg2pose mini sessions are left-hand recordings whose poses are mirrored into the same model frame.",
+      "calibration_semantics": "DB9: a per-channel linear map from the raw CyberGlove signal to anatomical degrees, whose gains came from a 10-subject calibration protocol and were then applied to all 77 subjects (DOCUMENTED).  emg2pose: no sensor calibration; the values are the output of an IK fit of the generic UmeTrack hand model to motion-capture data (PROJECT-INFERRED from the official pipeline)",
+      "official_emg2pose_limits_deg": [
+        -14.813220356822567,
+        62.29577851385514
+      ],
+      "db9_median_deg": 6.8897181672512,
+      "emg2pose_median_deg": 38.122564248642774,
+      "median_difference_deg": 31.232846081391575,
+      "wasserstein_deg": 21.521895274720464,
+      "support_overlap": 0.5027075531393351,
+      "emg2pose_offdiagonal_r_mean": 0.4669403437999545,
+      "joint_identity_diagonal_winner": true,
+      "joint_identity_best_match": "thumb_ip_flexion",
+      "db2_minus_db1_gap_deg": -4.259597564910303,
+      "db2_minus_db1_ci95": [
+        -12.512690651190077,
+        4.573530392709181
+      ],
+      "criteria": {
+        "A_anatomical_dof": {
+          "verdict": "PASS",
+          "basis": "the two sides select the same named anatomical DOF by name; the DB9 channel vocabulary is read from each file's own order_of_angles and matches the official table in all 77 protocol files (DOCUMENTED + MEASURED)"
+        },
+        "B_joint_indexing": {
+          "verdict": "PASS",
+          "basis": "indexing differs (emg2pose 0-19 interleaved, DB9 0-21 with the DIP block at the end) and is resolved by NAME, never positionally; verified bit-exact (MEASURED)"
+        },
+        "C_unit": {
+          "verdict": "PASS",
+          "basis": "degrees vs radians, converted explicitly; the conversion reproduces the stored corpus to 4.4e-16 rad (MEASURED)"
+        },
+        "D_positive_direction": {
+          "verdict": "PASS",
+          "basis": "15 FE channels agree in sign per the paper's Table 6; the one AA channel is sign-flipped by the frozen transform (DOCUMENTED)"
+        },
+        "E_zero_definition": {
+          "verdict": "PASS",
+          "basis": "both place zero at the extended, fingers-together hand (DOCUMENTED + MEASURED: DB9 reference posture mean |angle| 0.854 deg)"
+        },
+        "F_reference_pose": {
+          "verdict": "PASS",
+          "basis": "the documented reference postures are the same physical configuration; all three DB9 source databases agree on it to within 11.2 deg per-joint and 0.84 deg in median (MEASURED)"
+        },
+        "G_angle_convention": {
+          "verdict": "PASS",
+          "basis": "both are joint rotation magnitudes, not derived interior angles (DOCUMENTED for DB9 'calibrated joint angles'; CODE-INFERRED for emg2pose so3_exp_map)"
+        },
+        "H_range_wrapping": {
+          "verdict": "PASS",
+          "basis": "neither dataset wraps; neither clamps.  DB9 produces out-of-physical-range values by linear extrapolation, which is a calibration property, not a wrapping convention (MEASURED)"
+        },
+        "I_handedness": {
+          "verdict": "UNCERTAIN",
+          "basis": "DB9 is a right-hand protocol; the emg2pose mini corpus contains 15 left and 15 right recordings.  The project's frozen contract treats the 20D vector as model-frame and does not mirror it, and no LEFT-vs-RIGHT handedness transform is applied anywhere.  Whether the UmeTrack model frame is handedness-invariant for the LEFT recordings is NOT established by this audit"
+        },
+        "J_preprocessing_calibration": {
+          "verdict": "FAIL",
+          "basis": "the two numbers are produced by fundamentally different processes: a linear sensor calibration whose gains came from 10 other subjects, versus an IK fit of a generic hand model.  This is the strongest single source of per-dimension numerical disagreement (MEASURED below)"
+        }
+      },
+      "empirical_range_compatibility": "LOW"
+    },
+    {
+      "canonical_index": 4,
+      "canonical_name": "index_mcp_flexion",
+      "anatomical_joint": "index MCP",
+      "dof": "flexion/extension",
+      "db9_raw_channel": "MCP2_f",
+      "db9_raw_column": 4,
+      "db9_anatomical_name": "MCP2",
+      "emg2pose_official_joint": "INDEX_MCP_FE",
+      "emg2pose_source_index": 5,
+      "unit_db9": "degrees (DOCUMENTED: paper + data range; no unit symbol in the paper)",
+      "unit_emg2pose": "radians (DOCUMENTED: joint_angle_definition.md section 2)",
+      "unit_conversion": "explicit pi/180 in the DB9 adapter; none on the emg2pose side",
+      "positive_db9": "flexion (DOCUMENTED: paper Table 6)",
+      "positive_emg2pose": "flexion (DOCUMENTED + VERIFIED-EXEC: 15/15 FE joints move the fingertip toward the palm at +limit)",
+      "sign_transform_applied": 1.0,
+      "zero_db9": "the released calibrated angles are relative to the documented reference posture: hand resting on the table, fingers closed together and extended, taken from the central part of movement 11 (DOCUMENTED)",
+      "zero_emg2pose": "the official 20D zero vector, whose FK pose is a fingers-extended hand; joint limits are minimised at 0 for the PIP/DIP joints (DOCUMENTED + PROJECT-INFERRED from FK)",
+      "reference_pose_equivalence": "the two documented zero configurations are the same physical posture (fingers extended and together).  MEASURED: the DB9 reference posture (movement 11, central phase) has mean |angle| 0.854 deg over 16 dimensions, and movement 11 is the DB9 corpus's own closest-to-zero movement in two of three source databases.  The emg2pose zero is 0 by construction.",
+      "angle_convention": "both are joint rotation magnitudes about a fixed joint-specific axis: emg2pose via so3_exp_map(axis * angle) (CODE-INFERRED), DB9 via a linearly calibrated glove sensor reporting the joint angle in degrees (DOCUMENTED that the values are 'calibrated joint angles', not interior geometric angles)",
+      "range_wrapping": "emg2pose: no wrapping, not clamped to joint_limits (CODE-INFERRED + VERIFIED-EXEC).  DB9: no wrapping; the values are an unbounded linear extrapolation of the sensor and DO exceed physical ranges (MEASURED)",
+      "handedness": "emg2pose releases left and right sessions and flips the EMG sign for left hands; the joint angles are in the model frame.  DB9 has NO side field; the protocol instructed the right hand, and the DB9 page's Handedness column is the participant's own handedness, not the recording side (DOCUMENTED).  The two corpora therefore both hold right-hand poses, but 3 of the emg2pose mini sessions are left-hand recordings whose poses are mirrored into the same model frame.",
+      "calibration_semantics": "DB9: a per-channel linear map from the raw CyberGlove signal to anatomical degrees, whose gains came from a 10-subject calibration protocol and were then applied to all 77 subjects (DOCUMENTED).  emg2pose: no sensor calibration; the values are the output of an IK fit of the generic UmeTrack hand model to motion-capture data (PROJECT-INFERRED from the official pipeline)",
+      "official_emg2pose_limits_deg": [
+        -16.459155927917653,
+        76.61972339212572
+      ],
+      "db9_median_deg": 2.2708747332389225,
+      "emg2pose_median_deg": 16.962420487663472,
+      "median_difference_deg": 14.69154575442455,
+      "wasserstein_deg": 11.03077028169428,
+      "support_overlap": 0.7435100455096004,
+      "emg2pose_offdiagonal_r_mean": 0.4669403437999545,
+      "joint_identity_diagonal_winner": false,
+      "joint_identity_best_match": "middle_mcp_flexion",
+      "db2_minus_db1_gap_deg": -15.535950293753583,
+      "db2_minus_db1_ci95": [
+        -20.343384679782666,
+        -10.01537178131131
+      ],
+      "criteria": {
+        "A_anatomical_dof": {
+          "verdict": "PASS",
+          "basis": "the two sides select the same named anatomical DOF by name; the DB9 channel vocabulary is read from each file's own order_of_angles and matches the official table in all 77 protocol files (DOCUMENTED + MEASURED)"
+        },
+        "B_joint_indexing": {
+          "verdict": "PASS",
+          "basis": "indexing differs (emg2pose 0-19 interleaved, DB9 0-21 with the DIP block at the end) and is resolved by NAME, never positionally; verified bit-exact (MEASURED)"
+        },
+        "C_unit": {
+          "verdict": "PASS",
+          "basis": "degrees vs radians, converted explicitly; the conversion reproduces the stored corpus to 4.4e-16 rad (MEASURED)"
+        },
+        "D_positive_direction": {
+          "verdict": "PASS",
+          "basis": "15 FE channels agree in sign per the paper's Table 6; the one AA channel is sign-flipped by the frozen transform (DOCUMENTED)"
+        },
+        "E_zero_definition": {
+          "verdict": "PASS",
+          "basis": "both place zero at the extended, fingers-together hand (DOCUMENTED + MEASURED: DB9 reference posture mean |angle| 0.854 deg)"
+        },
+        "F_reference_pose": {
+          "verdict": "PASS",
+          "basis": "the documented reference postures are the same physical configuration; all three DB9 source databases agree on it to within 11.2 deg per-joint and 0.84 deg in median (MEASURED)"
+        },
+        "G_angle_convention": {
+          "verdict": "PASS",
+          "basis": "both are joint rotation magnitudes, not derived interior angles (DOCUMENTED for DB9 'calibrated joint angles'; CODE-INFERRED for emg2pose so3_exp_map)"
+        },
+        "H_range_wrapping": {
+          "verdict": "PASS",
+          "basis": "neither dataset wraps; neither clamps.  DB9 produces out-of-physical-range values by linear extrapolation, which is a calibration property, not a wrapping convention (MEASURED)"
+        },
+        "I_handedness": {
+          "verdict": "UNCERTAIN",
+          "basis": "DB9 is a right-hand protocol; the emg2pose mini corpus contains 15 left and 15 right recordings.  The project's frozen contract treats the 20D vector as model-frame and does not mirror it, and no LEFT-vs-RIGHT handedness transform is applied anywhere.  Whether the UmeTrack model frame is handedness-invariant for the LEFT recordings is NOT established by this audit"
+        },
+        "J_preprocessing_calibration": {
+          "verdict": "FAIL",
+          "basis": "the two numbers are produced by fundamentally different processes: a linear sensor calibration whose gains came from 10 other subjects, versus an IK fit of a generic hand model.  This is the strongest single source of per-dimension numerical disagreement (MEASURED below)"
+        }
+      },
+      "empirical_range_compatibility": "HIGH"
+    },
+    {
+      "canonical_index": 5,
+      "canonical_name": "index_pip_flexion",
+      "anatomical_joint": "index PIP",
+      "dof": "flexion/extension",
+      "db9_raw_channel": "PIP2",
+      "db9_raw_column": 6,
+      "db9_anatomical_name": "PIP2",
+      "emg2pose_official_joint": "INDEX_PIP_FE",
+      "emg2pose_source_index": 6,
+      "unit_db9": "degrees (DOCUMENTED: paper + data range; no unit symbol in the paper)",
+      "unit_emg2pose": "radians (DOCUMENTED: joint_angle_definition.md section 2)",
+      "unit_conversion": "explicit pi/180 in the DB9 adapter; none on the emg2pose side",
+      "positive_db9": "flexion (DOCUMENTED: paper Table 6)",
+      "positive_emg2pose": "flexion (DOCUMENTED + VERIFIED-EXEC: 15/15 FE joints move the fingertip toward the palm at +limit)",
+      "sign_transform_applied": 1.0,
+      "zero_db9": "the released calibrated angles are relative to the documented reference posture: hand resting on the table, fingers closed together and extended, taken from the central part of movement 11 (DOCUMENTED)",
+      "zero_emg2pose": "the official 20D zero vector, whose FK pose is a fingers-extended hand; joint limits are minimised at 0 for the PIP/DIP joints (DOCUMENTED + PROJECT-INFERRED from FK)",
+      "reference_pose_equivalence": "the two documented zero configurations are the same physical posture (fingers extended and together).  MEASURED: the DB9 reference posture (movement 11, central phase) has mean |angle| 0.854 deg over 16 dimensions, and movement 11 is the DB9 corpus's own closest-to-zero movement in two of three source databases.  The emg2pose zero is 0 by construction.",
+      "angle_convention": "both are joint rotation magnitudes about a fixed joint-specific axis: emg2pose via so3_exp_map(axis * angle) (CODE-INFERRED), DB9 via a linearly calibrated glove sensor reporting the joint angle in degrees (DOCUMENTED that the values are 'calibrated joint angles', not interior geometric angles)",
+      "range_wrapping": "emg2pose: no wrapping, not clamped to joint_limits (CODE-INFERRED + VERIFIED-EXEC).  DB9: no wrapping; the values are an unbounded linear extrapolation of the sensor and DO exceed physical ranges (MEASURED)",
+      "handedness": "emg2pose releases left and right sessions and flips the EMG sign for left hands; the joint angles are in the model frame.  DB9 has NO side field; the protocol instructed the right hand, and the DB9 page's Handedness column is the participant's own handedness, not the recording side (DOCUMENTED).  The two corpora therefore both hold right-hand poses, but 3 of the emg2pose mini sessions are left-hand recordings whose poses are mirrored into the same model frame.",
+      "calibration_semantics": "DB9: a per-channel linear map from the raw CyberGlove signal to anatomical degrees, whose gains came from a 10-subject calibration protocol and were then applied to all 77 subjects (DOCUMENTED).  emg2pose: no sensor calibration; the values are the output of an IK fit of the generic UmeTrack hand model to motion-capture data (PROJECT-INFERRED from the official pipeline)",
+      "official_emg2pose_limits_deg": [
+        0.0,
+        107.85714276869382
+      ],
+      "db9_median_deg": -1.371715976403241,
+      "emg2pose_median_deg": 26.477868647789116,
+      "median_difference_deg": 27.849584624192357,
+      "wasserstein_deg": 23.368258645349396,
+      "support_overlap": 0.7999147854699625,
+      "emg2pose_offdiagonal_r_mean": 0.4669403437999545,
+      "joint_identity_diagonal_winner": true,
+      "joint_identity_best_match": "index_pip_flexion",
+      "db2_minus_db1_gap_deg": -29.636636984411023,
+      "db2_minus_db1_ci95": [
+        -37.40471203679989,
+        -12.610544261691302
+      ],
+      "criteria": {
+        "A_anatomical_dof": {
+          "verdict": "PASS",
+          "basis": "the two sides select the same named anatomical DOF by name; the DB9 channel vocabulary is read from each file's own order_of_angles and matches the official table in all 77 protocol files (DOCUMENTED + MEASURED)"
+        },
+        "B_joint_indexing": {
+          "verdict": "PASS",
+          "basis": "indexing differs (emg2pose 0-19 interleaved, DB9 0-21 with the DIP block at the end) and is resolved by NAME, never positionally; verified bit-exact (MEASURED)"
+        },
+        "C_unit": {
+          "verdict": "PASS",
+          "basis": "degrees vs radians, converted explicitly; the conversion reproduces the stored corpus to 4.4e-16 rad (MEASURED)"
+        },
+        "D_positive_direction": {
+          "verdict": "PASS",
+          "basis": "15 FE channels agree in sign per the paper's Table 6; the one AA channel is sign-flipped by the frozen transform (DOCUMENTED)"
+        },
+        "E_zero_definition": {
+          "verdict": "PASS",
+          "basis": "both place zero at the extended, fingers-together hand (DOCUMENTED + MEASURED: DB9 reference posture mean |angle| 0.854 deg)"
+        },
+        "F_reference_pose": {
+          "verdict": "PASS",
+          "basis": "the documented reference postures are the same physical configuration; all three DB9 source databases agree on it to within 11.2 deg per-joint and 0.84 deg in median (MEASURED)"
+        },
+        "G_angle_convention": {
+          "verdict": "PASS",
+          "basis": "both are joint rotation magnitudes, not derived interior angles (DOCUMENTED for DB9 'calibrated joint angles'; CODE-INFERRED for emg2pose so3_exp_map)"
+        },
+        "H_range_wrapping": {
+          "verdict": "PASS",
+          "basis": "neither dataset wraps; neither clamps.  DB9 produces out-of-physical-range values by linear extrapolation, which is a calibration property, not a wrapping convention (MEASURED)"
+        },
+        "I_handedness": {
+          "verdict": "UNCERTAIN",
+          "basis": "DB9 is a right-hand protocol; the emg2pose mini corpus contains 15 left and 15 right recordings.  The project's frozen contract treats the 20D vector as model-frame and does not mirror it, and no LEFT-vs-RIGHT handedness transform is applied anywhere.  Whether the UmeTrack model frame is handedness-invariant for the LEFT recordings is NOT established by this audit"
+        },
+        "J_preprocessing_calibration": {
+          "verdict": "FAIL",
+          "basis": "the two numbers are produced by fundamentally different processes: a linear sensor calibration whose gains came from 10 other subjects, versus an IK fit of a generic hand model.  This is the strongest single source of per-dimension numerical disagreement (MEASURED below)"
+        }
+      },
+      "empirical_range_compatibility": "MODERATE"
+    },
+    {
+      "canonical_index": 6,
+      "canonical_name": "index_dip_flexion",
+      "anatomical_joint": "index DIP",
+      "dof": "flexion/extension",
+      "db9_raw_channel": "DIP2",
+      "db9_raw_column": 16,
+      "db9_anatomical_name": "DIP2",
+      "emg2pose_official_joint": "INDEX_DIP_FE",
+      "emg2pose_source_index": 7,
+      "unit_db9": "degrees (DOCUMENTED: paper + data range; no unit symbol in the paper)",
+      "unit_emg2pose": "radians (DOCUMENTED: joint_angle_definition.md section 2)",
+      "unit_conversion": "explicit pi/180 in the DB9 adapter; none on the emg2pose side",
+      "positive_db9": "flexion (DOCUMENTED: paper Table 6)",
+      "positive_emg2pose": "flexion (DOCUMENTED + VERIFIED-EXEC: 15/15 FE joints move the fingertip toward the palm at +limit)",
+      "sign_transform_applied": 1.0,
+      "zero_db9": "the released calibrated angles are relative to the documented reference posture: hand resting on the table, fingers closed together and extended, taken from the central part of movement 11 (DOCUMENTED)",
+      "zero_emg2pose": "the official 20D zero vector, whose FK pose is a fingers-extended hand; joint limits are minimised at 0 for the PIP/DIP joints (DOCUMENTED + PROJECT-INFERRED from FK)",
+      "reference_pose_equivalence": "the two documented zero configurations are the same physical posture (fingers extended and together).  MEASURED: the DB9 reference posture (movement 11, central phase) has mean |angle| 0.854 deg over 16 dimensions, and movement 11 is the DB9 corpus's own closest-to-zero movement in two of three source databases.  The emg2pose zero is 0 by construction.",
+      "angle_convention": "both are joint rotation magnitudes about a fixed joint-specific axis: emg2pose via so3_exp_map(axis * angle) (CODE-INFERRED), DB9 via a linearly calibrated glove sensor reporting the joint angle in degrees (DOCUMENTED that the values are 'calibrated joint angles', not interior geometric angles)",
+      "range_wrapping": "emg2pose: no wrapping, not clamped to joint_limits (CODE-INFERRED + VERIFIED-EXEC).  DB9: no wrapping; the values are an unbounded linear extrapolation of the sensor and DO exceed physical ranges (MEASURED)",
+      "handedness": "emg2pose releases left and right sessions and flips the EMG sign for left hands; the joint angles are in the model frame.  DB9 has NO side field; the protocol instructed the right hand, and the DB9 page's Handedness column is the participant's own handedness, not the recording side (DOCUMENTED).  The two corpora therefore both hold right-hand poses, but 3 of the emg2pose mini sessions are left-hand recordings whose poses are mirrored into the same model frame.",
+      "calibration_semantics": "DB9: a per-channel linear map from the raw CyberGlove signal to anatomical degrees, whose gains came from a 10-subject calibration protocol and were then applied to all 77 subjects (DOCUMENTED).  emg2pose: no sensor calibration; the values are the output of an IK fit of the generic UmeTrack hand model to motion-capture data (PROJECT-INFERRED from the official pipeline)",
+      "official_emg2pose_limits_deg": [
+        0.0,
+        82.14286024180815
+      ],
+      "db9_median_deg": 0.8135966658592224,
+      "emg2pose_median_deg": 10.928304806454516,
+      "median_difference_deg": 10.114708140595294,
+      "wasserstein_deg": 13.398350970323538,
+      "support_overlap": 0.5640265228923158,
+      "emg2pose_offdiagonal_r_mean": 0.4669403437999545,
+      "joint_identity_diagonal_winner": false,
+      "joint_identity_best_match": "pinky_pip_flexion",
+      "db2_minus_db1_gap_deg": -0.4371053048426501,
+      "db2_minus_db1_ci95": [
+        -3.788443850507376,
+        2.515306440381386
+      ],
+      "criteria": {
+        "A_anatomical_dof": {
+          "verdict": "PASS",
+          "basis": "the two sides select the same named anatomical DOF by name; the DB9 channel vocabulary is read from each file's own order_of_angles and matches the official table in all 77 protocol files (DOCUMENTED + MEASURED)"
+        },
+        "B_joint_indexing": {
+          "verdict": "PASS",
+          "basis": "indexing differs (emg2pose 0-19 interleaved, DB9 0-21 with the DIP block at the end) and is resolved by NAME, never positionally; verified bit-exact (MEASURED)"
+        },
+        "C_unit": {
+          "verdict": "PASS",
+          "basis": "degrees vs radians, converted explicitly; the conversion reproduces the stored corpus to 4.4e-16 rad (MEASURED)"
+        },
+        "D_positive_direction": {
+          "verdict": "PASS",
+          "basis": "15 FE channels agree in sign per the paper's Table 6; the one AA channel is sign-flipped by the frozen transform (DOCUMENTED)"
+        },
+        "E_zero_definition": {
+          "verdict": "PASS",
+          "basis": "both place zero at the extended, fingers-together hand (DOCUMENTED + MEASURED: DB9 reference posture mean |angle| 0.854 deg)"
+        },
+        "F_reference_pose": {
+          "verdict": "PASS",
+          "basis": "the documented reference postures are the same physical configuration; all three DB9 source databases agree on it to within 11.2 deg per-joint and 0.84 deg in median (MEASURED)"
+        },
+        "G_angle_convention": {
+          "verdict": "PASS",
+          "basis": "both are joint rotation magnitudes, not derived interior angles (DOCUMENTED for DB9 'calibrated joint angles'; CODE-INFERRED for emg2pose so3_exp_map)"
+        },
+        "H_range_wrapping": {
+          "verdict": "PASS",
+          "basis": "neither dataset wraps; neither clamps.  DB9 produces out-of-physical-range values by linear extrapolation, which is a calibration property, not a wrapping convention (MEASURED)"
+        },
+        "I_handedness": {
+          "verdict": "UNCERTAIN",
+          "basis": "DB9 is a right-hand protocol; the emg2pose mini corpus contains 15 left and 15 right recordings.  The project's frozen contract treats the 20D vector as model-frame and does not mirror it, and no LEFT-vs-RIGHT handedness transform is applied anywhere.  Whether the UmeTrack model frame is handedness-invariant for the LEFT recordings is NOT established by this audit"
+        },
+        "J_preprocessing_calibration": {
+          "verdict": "FAIL",
+          "basis": "the two numbers are produced by fundamentally different processes: a linear sensor calibration whose gains came from 10 other subjects, versus an IK fit of a generic hand model.  This is the strongest single source of per-dimension numerical disagreement (MEASURED below)"
+        }
+      },
+      "empirical_range_compatibility": "MODERATE"
+    },
+    {
+      "canonical_index": 7,
+      "canonical_name": "middle_mcp_flexion",
+      "anatomical_joint": "middle MCP",
+      "dof": "flexion/extension",
+      "db9_raw_channel": "MCP3_f",
+      "db9_raw_column": 7,
+      "db9_anatomical_name": "MCP3",
+      "emg2pose_official_joint": "MIDDLE_MCP_FE",
+      "emg2pose_source_index": 9,
+      "unit_db9": "degrees (DOCUMENTED: paper + data range; no unit symbol in the paper)",
+      "unit_emg2pose": "radians (DOCUMENTED: joint_angle_definition.md section 2)",
+      "unit_conversion": "explicit pi/180 in the DB9 adapter; none on the emg2pose side",
+      "positive_db9": "flexion (DOCUMENTED: paper Table 6)",
+      "positive_emg2pose": "flexion (DOCUMENTED + VERIFIED-EXEC: 15/15 FE joints move the fingertip toward the palm at +limit)",
+      "sign_transform_applied": 1.0,
+      "zero_db9": "the released calibrated angles are relative to the documented reference posture: hand resting on the table, fingers closed together and extended, taken from the central part of movement 11 (DOCUMENTED)",
+      "zero_emg2pose": "the official 20D zero vector, whose FK pose is a fingers-extended hand; joint limits are minimised at 0 for the PIP/DIP joints (DOCUMENTED + PROJECT-INFERRED from FK)",
+      "reference_pose_equivalence": "the two documented zero configurations are the same physical posture (fingers extended and together).  MEASURED: the DB9 reference posture (movement 11, central phase) has mean |angle| 0.854 deg over 16 dimensions, and movement 11 is the DB9 corpus's own closest-to-zero movement in two of three source databases.  The emg2pose zero is 0 by construction.",
+      "angle_convention": "both are joint rotation magnitudes about a fixed joint-specific axis: emg2pose via so3_exp_map(axis * angle) (CODE-INFERRED), DB9 via a linearly calibrated glove sensor reporting the joint angle in degrees (DOCUMENTED that the values are 'calibrated joint angles', not interior geometric angles)",
+      "range_wrapping": "emg2pose: no wrapping, not clamped to joint_limits (CODE-INFERRED + VERIFIED-EXEC).  DB9: no wrapping; the values are an unbounded linear extrapolation of the sensor and DO exceed physical ranges (MEASURED)",
+      "handedness": "emg2pose releases left and right sessions and flips the EMG sign for left hands; the joint angles are in the model frame.  DB9 has NO side field; the protocol instructed the right hand, and the DB9 page's Handedness column is the participant's own handedness, not the recording side (DOCUMENTED).  The two corpora therefore both hold right-hand poses, but 3 of the emg2pose mini sessions are left-hand recordings whose poses are mirrored into the same model frame.",
+      "calibration_semantics": "DB9: a per-channel linear map from the raw CyberGlove signal to anatomical degrees, whose gains came from a 10-subject calibration protocol and were then applied to all 77 subjects (DOCUMENTED).  emg2pose: no sensor calibration; the values are the output of an IK fit of the generic UmeTrack hand model to motion-capture data (PROJECT-INFERRED from the official pipeline)",
+      "official_emg2pose_limits_deg": [
+        -16.459155927917653,
+        82.34930270947179
+      ],
+      "db9_median_deg": -0.015771865844726562,
+      "emg2pose_median_deg": 20.66983863140993,
+      "median_difference_deg": 20.685610497254658,
+      "wasserstein_deg": 18.561729932784644,
+      "support_overlap": 0.4333578597254438,
+      "emg2pose_offdiagonal_r_mean": 0.4669403437999545,
+      "joint_identity_diagonal_winner": false,
+      "joint_identity_best_match": "ring_mcp_flexion",
+      "db2_minus_db1_gap_deg": -40.0786573143727,
+      "db2_minus_db1_ci95": [
+        -45.93303339645579,
+        -30.985198481217417
+      ],
+      "criteria": {
+        "A_anatomical_dof": {
+          "verdict": "PASS",
+          "basis": "the two sides select the same named anatomical DOF by name; the DB9 channel vocabulary is read from each file's own order_of_angles and matches the official table in all 77 protocol files (DOCUMENTED + MEASURED)"
+        },
+        "B_joint_indexing": {
+          "verdict": "PASS",
+          "basis": "indexing differs (emg2pose 0-19 interleaved, DB9 0-21 with the DIP block at the end) and is resolved by NAME, never positionally; verified bit-exact (MEASURED)"
+        },
+        "C_unit": {
+          "verdict": "PASS",
+          "basis": "degrees vs radians, converted explicitly; the conversion reproduces the stored corpus to 4.4e-16 rad (MEASURED)"
+        },
+        "D_positive_direction": {
+          "verdict": "PASS",
+          "basis": "15 FE channels agree in sign per the paper's Table 6; the one AA channel is sign-flipped by the frozen transform (DOCUMENTED)"
+        },
+        "E_zero_definition": {
+          "verdict": "PASS",
+          "basis": "both place zero at the extended, fingers-together hand (DOCUMENTED + MEASURED: DB9 reference posture mean |angle| 0.854 deg)"
+        },
+        "F_reference_pose": {
+          "verdict": "PASS",
+          "basis": "the documented reference postures are the same physical configuration; all three DB9 source databases agree on it to within 11.2 deg per-joint and 0.84 deg in median (MEASURED)"
+        },
+        "G_angle_convention": {
+          "verdict": "PASS",
+          "basis": "both are joint rotation magnitudes, not derived interior angles (DOCUMENTED for DB9 'calibrated joint angles'; CODE-INFERRED for emg2pose so3_exp_map)"
+        },
+        "H_range_wrapping": {
+          "verdict": "PASS",
+          "basis": "neither dataset wraps; neither clamps.  DB9 produces out-of-physical-range values by linear extrapolation, which is a calibration property, not a wrapping convention (MEASURED)"
+        },
+        "I_handedness": {
+          "verdict": "UNCERTAIN",
+          "basis": "DB9 is a right-hand protocol; the emg2pose mini corpus contains 15 left and 15 right recordings.  The project's frozen contract treats the 20D vector as model-frame and does not mirror it, and no LEFT-vs-RIGHT handedness transform is applied anywhere.  Whether the UmeTrack model frame is handedness-invariant for the LEFT recordings is NOT established by this audit"
+        },
+        "J_preprocessing_calibration": {
+          "verdict": "FAIL",
+          "basis": "the two numbers are produced by fundamentally different processes: a linear sensor calibration whose gains came from 10 other subjects, versus an IK fit of a generic hand model.  This is the strongest single source of per-dimension numerical disagreement (MEASURED below)"
+        }
+      },
+      "empirical_range_compatibility": "MODERATE"
+    },
+    {
+      "canonical_index": 8,
+      "canonical_name": "middle_pip_flexion",
+      "anatomical_joint": "middle PIP",
+      "dof": "flexion/extension",
+      "db9_raw_channel": "PIP3",
+      "db9_raw_column": 8,
+      "db9_anatomical_name": "PIP3",
+      "emg2pose_official_joint": "MIDDLE_PIP_FE",
+      "emg2pose_source_index": 10,
+      "unit_db9": "degrees (DOCUMENTED: paper + data range; no unit symbol in the paper)",
+      "unit_emg2pose": "radians (DOCUMENTED: joint_angle_definition.md section 2)",
+      "unit_conversion": "explicit pi/180 in the DB9 adapter; none on the emg2pose side",
+      "positive_db9": "flexion (DOCUMENTED: paper Table 6)",
+      "positive_emg2pose": "flexion (DOCUMENTED + VERIFIED-EXEC: 15/15 FE joints move the fingertip toward the palm at +limit)",
+      "sign_transform_applied": 1.0,
+      "zero_db9": "the released calibrated angles are relative to the documented reference posture: hand resting on the table, fingers closed together and extended, taken from the central part of movement 11 (DOCUMENTED)",
+      "zero_emg2pose": "the official 20D zero vector, whose FK pose is a fingers-extended hand; joint limits are minimised at 0 for the PIP/DIP joints (DOCUMENTED + PROJECT-INFERRED from FK)",
+      "reference_pose_equivalence": "the two documented zero configurations are the same physical posture (fingers extended and together).  MEASURED: the DB9 reference posture (movement 11, central phase) has mean |angle| 0.854 deg over 16 dimensions, and movement 11 is the DB9 corpus's own closest-to-zero movement in two of three source databases.  The emg2pose zero is 0 by construction.",
+      "angle_convention": "both are joint rotation magnitudes about a fixed joint-specific axis: emg2pose via so3_exp_map(axis * angle) (CODE-INFERRED), DB9 via a linearly calibrated glove sensor reporting the joint angle in degrees (DOCUMENTED that the values are 'calibrated joint angles', not interior geometric angles)",
+      "range_wrapping": "emg2pose: no wrapping, not clamped to joint_limits (CODE-INFERRED + VERIFIED-EXEC).  DB9: no wrapping; the values are an unbounded linear extrapolation of the sensor and DO exceed physical ranges (MEASURED)",
+      "handedness": "emg2pose releases left and right sessions and flips the EMG sign for left hands; the joint angles are in the model frame.  DB9 has NO side field; the protocol instructed the right hand, and the DB9 page's Handedness column is the participant's own handedness, not the recording side (DOCUMENTED).  The two corpora therefore both hold right-hand poses, but 3 of the emg2pose mini sessions are left-hand recordings whose poses are mirrored into the same model frame.",
+      "calibration_semantics": "DB9: a per-channel linear map from the raw CyberGlove signal to anatomical degrees, whose gains came from a 10-subject calibration protocol and were then applied to all 77 subjects (DOCUMENTED).  emg2pose: no sensor calibration; the values are the output of an IK fit of the generic UmeTrack hand model to motion-capture data (PROJECT-INFERRED from the official pipeline)",
+      "official_emg2pose_limits_deg": [
+        0.0,
+        107.85714276869382
+      ],
+      "db9_median_deg": 1.1289458070524665,
+      "emg2pose_median_deg": 39.31125792839323,
+      "median_difference_deg": 38.182312121340765,
+      "wasserstein_deg": 39.41622938915938,
+      "support_overlap": 0.459822246348088,
+      "emg2pose_offdiagonal_r_mean": 0.4669403437999545,
+      "joint_identity_diagonal_winner": false,
+      "joint_identity_best_match": "pinky_pip_flexion",
+      "db2_minus_db1_gap_deg": -1.1406893738259676,
+      "db2_minus_db1_ci95": [
+        -3.932902414175355,
+        1.651544300811071
+      ],
+      "criteria": {
+        "A_anatomical_dof": {
+          "verdict": "PASS",
+          "basis": "the two sides select the same named anatomical DOF by name; the DB9 channel vocabulary is read from each file's own order_of_angles and matches the official table in all 77 protocol files (DOCUMENTED + MEASURED)"
+        },
+        "B_joint_indexing": {
+          "verdict": "PASS",
+          "basis": "indexing differs (emg2pose 0-19 interleaved, DB9 0-21 with the DIP block at the end) and is resolved by NAME, never positionally; verified bit-exact (MEASURED)"
+        },
+        "C_unit": {
+          "verdict": "PASS",
+          "basis": "degrees vs radians, converted explicitly; the conversion reproduces the stored corpus to 4.4e-16 rad (MEASURED)"
+        },
+        "D_positive_direction": {
+          "verdict": "PASS",
+          "basis": "15 FE channels agree in sign per the paper's Table 6; the one AA channel is sign-flipped by the frozen transform (DOCUMENTED)"
+        },
+        "E_zero_definition": {
+          "verdict": "PASS",
+          "basis": "both place zero at the extended, fingers-together hand (DOCUMENTED + MEASURED: DB9 reference posture mean |angle| 0.854 deg)"
+        },
+        "F_reference_pose": {
+          "verdict": "PASS",
+          "basis": "the documented reference postures are the same physical configuration; all three DB9 source databases agree on it to within 11.2 deg per-joint and 0.84 deg in median (MEASURED)"
+        },
+        "G_angle_convention": {
+          "verdict": "PASS",
+          "basis": "both are joint rotation magnitudes, not derived interior angles (DOCUMENTED for DB9 'calibrated joint angles'; CODE-INFERRED for emg2pose so3_exp_map)"
+        },
+        "H_range_wrapping": {
+          "verdict": "PASS",
+          "basis": "neither dataset wraps; neither clamps.  DB9 produces out-of-physical-range values by linear extrapolation, which is a calibration property, not a wrapping convention (MEASURED)"
+        },
+        "I_handedness": {
+          "verdict": "UNCERTAIN",
+          "basis": "DB9 is a right-hand protocol; the emg2pose mini corpus contains 15 left and 15 right recordings.  The project's frozen contract treats the 20D vector as model-frame and does not mirror it, and no LEFT-vs-RIGHT handedness transform is applied anywhere.  Whether the UmeTrack model frame is handedness-invariant for the LEFT recordings is NOT established by this audit"
+        },
+        "J_preprocessing_calibration": {
+          "verdict": "FAIL",
+          "basis": "the two numbers are produced by fundamentally different processes: a linear sensor calibration whose gains came from 10 other subjects, versus an IK fit of a generic hand model.  This is the strongest single source of per-dimension numerical disagreement (MEASURED below)"
+        }
+      },
+      "empirical_range_compatibility": "LOW"
+    },
+    {
+      "canonical_index": 9,
+      "canonical_name": "middle_dip_flexion",
+      "anatomical_joint": "middle DIP",
+      "dof": "flexion/extension",
+      "db9_raw_channel": "DIP3",
+      "db9_raw_column": 17,
+      "db9_anatomical_name": "DIP3",
+      "emg2pose_official_joint": "MIDDLE_DIP_FE",
+      "emg2pose_source_index": 11,
+      "unit_db9": "degrees (DOCUMENTED: paper + data range; no unit symbol in the paper)",
+      "unit_emg2pose": "radians (DOCUMENTED: joint_angle_definition.md section 2)",
+      "unit_conversion": "explicit pi/180 in the DB9 adapter; none on the emg2pose side",
+      "positive_db9": "flexion (DOCUMENTED: paper Table 6)",
+      "positive_emg2pose": "flexion (DOCUMENTED + VERIFIED-EXEC: 15/15 FE joints move the fingertip toward the palm at +limit)",
+      "sign_transform_applied": 1.0,
+      "zero_db9": "the released calibrated angles are relative to the documented reference posture: hand resting on the table, fingers closed together and extended, taken from the central part of movement 11 (DOCUMENTED)",
+      "zero_emg2pose": "the official 20D zero vector, whose FK pose is a fingers-extended hand; joint limits are minimised at 0 for the PIP/DIP joints (DOCUMENTED + PROJECT-INFERRED from FK)",
+      "reference_pose_equivalence": "the two documented zero configurations are the same physical posture (fingers extended and together).  MEASURED: the DB9 reference posture (movement 11, central phase) has mean |angle| 0.854 deg over 16 dimensions, and movement 11 is the DB9 corpus's own closest-to-zero movement in two of three source databases.  The emg2pose zero is 0 by construction.",
+      "angle_convention": "both are joint rotation magnitudes about a fixed joint-specific axis: emg2pose via so3_exp_map(axis * angle) (CODE-INFERRED), DB9 via a linearly calibrated glove sensor reporting the joint angle in degrees (DOCUMENTED that the values are 'calibrated joint angles', not interior geometric angles)",
+      "range_wrapping": "emg2pose: no wrapping, not clamped to joint_limits (CODE-INFERRED + VERIFIED-EXEC).  DB9: no wrapping; the values are an unbounded linear extrapolation of the sensor and DO exceed physical ranges (MEASURED)",
+      "handedness": "emg2pose releases left and right sessions and flips the EMG sign for left hands; the joint angles are in the model frame.  DB9 has NO side field; the protocol instructed the right hand, and the DB9 page's Handedness column is the participant's own handedness, not the recording side (DOCUMENTED).  The two corpora therefore both hold right-hand poses, but 3 of the emg2pose mini sessions are left-hand recordings whose poses are mirrored into the same model frame.",
+      "calibration_semantics": "DB9: a per-channel linear map from the raw CyberGlove signal to anatomical degrees, whose gains came from a 10-subject calibration protocol and were then applied to all 77 subjects (DOCUMENTED).  emg2pose: no sensor calibration; the values are the output of an IK fit of the generic UmeTrack hand model to motion-capture data (PROJECT-INFERRED from the official pipeline)",
+      "official_emg2pose_limits_deg": [
+        0.0,
+        82.14286024180815
+      ],
+      "db9_median_deg": -9.283926963806152,
+      "emg2pose_median_deg": 20.805709023248056,
+      "median_difference_deg": 30.08963598705421,
+      "wasserstein_deg": 55.21511626170871,
+      "support_overlap": 0.49784773770081225,
+      "emg2pose_offdiagonal_r_mean": 0.4669403437999545,
+      "joint_identity_diagonal_winner": false,
+      "joint_identity_best_match": "pinky_dip_flexion",
+      "db2_minus_db1_gap_deg": 11.882244859796455,
+      "db2_minus_db1_ci95": [
+        5.924165266054365,
+        16.68008802069438
+      ],
+      "criteria": {
+        "A_anatomical_dof": {
+          "verdict": "PASS",
+          "basis": "the two sides select the same named anatomical DOF by name; the DB9 channel vocabulary is read from each file's own order_of_angles and matches the official table in all 77 protocol files (DOCUMENTED + MEASURED)"
+        },
+        "B_joint_indexing": {
+          "verdict": "PASS",
+          "basis": "indexing differs (emg2pose 0-19 interleaved, DB9 0-21 with the DIP block at the end) and is resolved by NAME, never positionally; verified bit-exact (MEASURED)"
+        },
+        "C_unit": {
+          "verdict": "PASS",
+          "basis": "degrees vs radians, converted explicitly; the conversion reproduces the stored corpus to 4.4e-16 rad (MEASURED)"
+        },
+        "D_positive_direction": {
+          "verdict": "PASS",
+          "basis": "15 FE channels agree in sign per the paper's Table 6; the one AA channel is sign-flipped by the frozen transform (DOCUMENTED)"
+        },
+        "E_zero_definition": {
+          "verdict": "PASS",
+          "basis": "both place zero at the extended, fingers-together hand (DOCUMENTED + MEASURED: DB9 reference posture mean |angle| 0.854 deg)"
+        },
+        "F_reference_pose": {
+          "verdict": "PASS",
+          "basis": "the documented reference postures are the same physical configuration; all three DB9 source databases agree on it to within 11.2 deg per-joint and 0.84 deg in median (MEASURED)"
+        },
+        "G_angle_convention": {
+          "verdict": "PASS",
+          "basis": "both are joint rotation magnitudes, not derived interior angles (DOCUMENTED for DB9 'calibrated joint angles'; CODE-INFERRED for emg2pose so3_exp_map)"
+        },
+        "H_range_wrapping": {
+          "verdict": "PASS",
+          "basis": "neither dataset wraps; neither clamps.  DB9 produces out-of-physical-range values by linear extrapolation, which is a calibration property, not a wrapping convention (MEASURED)"
+        },
+        "I_handedness": {
+          "verdict": "UNCERTAIN",
+          "basis": "DB9 is a right-hand protocol; the emg2pose mini corpus contains 15 left and 15 right recordings.  The project's frozen contract treats the 20D vector as model-frame and does not mirror it, and no LEFT-vs-RIGHT handedness transform is applied anywhere.  Whether the UmeTrack model frame is handedness-invariant for the LEFT recordings is NOT established by this audit"
+        },
+        "J_preprocessing_calibration": {
+          "verdict": "FAIL",
+          "basis": "the two numbers are produced by fundamentally different processes: a linear sensor calibration whose gains came from 10 other subjects, versus an IK fit of a generic hand model.  This is the strongest single source of per-dimension numerical disagreement (MEASURED below)"
+        }
+      },
+      "empirical_range_compatibility": "LOW"
+    },
+    {
+      "canonical_index": 10,
+      "canonical_name": "ring_mcp_flexion",
+      "anatomical_joint": "ring MCP",
+      "dof": "flexion/extension",
+      "db9_raw_channel": "MCP4_f",
+      "db9_raw_column": 9,
+      "db9_anatomical_name": "MCP4",
+      "emg2pose_official_joint": "RING_MCP_FE",
+      "emg2pose_source_index": 13,
+      "unit_db9": "degrees (DOCUMENTED: paper + data range; no unit symbol in the paper)",
+      "unit_emg2pose": "radians (DOCUMENTED: joint_angle_definition.md section 2)",
+      "unit_conversion": "explicit pi/180 in the DB9 adapter; none on the emg2pose side",
+      "positive_db9": "flexion (DOCUMENTED: paper Table 6)",
+      "positive_emg2pose": "flexion (DOCUMENTED + VERIFIED-EXEC: 15/15 FE joints move the fingertip toward the palm at +limit)",
+      "sign_transform_applied": 1.0,
+      "zero_db9": "the released calibrated angles are relative to the documented reference posture: hand resting on the table, fingers closed together and extended, taken from the central part of movement 11 (DOCUMENTED)",
+      "zero_emg2pose": "the official 20D zero vector, whose FK pose is a fingers-extended hand; joint limits are minimised at 0 for the PIP/DIP joints (DOCUMENTED + PROJECT-INFERRED from FK)",
+      "reference_pose_equivalence": "the two documented zero configurations are the same physical posture (fingers extended and together).  MEASURED: the DB9 reference posture (movement 11, central phase) has mean |angle| 0.854 deg over 16 dimensions, and movement 11 is the DB9 corpus's own closest-to-zero movement in two of three source databases.  The emg2pose zero is 0 by construction.",
+      "angle_convention": "both are joint rotation magnitudes about a fixed joint-specific axis: emg2pose via so3_exp_map(axis * angle) (CODE-INFERRED), DB9 via a linearly calibrated glove sensor reporting the joint angle in degrees (DOCUMENTED that the values are 'calibrated joint angles', not interior geometric angles)",
+      "range_wrapping": "emg2pose: no wrapping, not clamped to joint_limits (CODE-INFERRED + VERIFIED-EXEC).  DB9: no wrapping; the values are an unbounded linear extrapolation of the sensor and DO exceed physical ranges (MEASURED)",
+      "handedness": "emg2pose releases left and right sessions and flips the EMG sign for left hands; the joint angles are in the model frame.  DB9 has NO side field; the protocol instructed the right hand, and the DB9 page's Handedness column is the participant's own handedness, not the recording side (DOCUMENTED).  The two corpora therefore both hold right-hand poses, but 3 of the emg2pose mini sessions are left-hand recordings whose poses are mirrored into the same model frame.",
+      "calibration_semantics": "DB9: a per-channel linear map from the raw CyberGlove signal to anatomical degrees, whose gains came from a 10-subject calibration protocol and were then applied to all 77 subjects (DOCUMENTED).  emg2pose: no sensor calibration; the values are the output of an IK fit of the generic UmeTrack hand model to motion-capture data (PROJECT-INFERRED from the official pipeline)",
+      "official_emg2pose_limits_deg": [
+        -16.459155927917653,
+        88.07888202681785
+      ],
+      "db9_median_deg": 1.2455039144665099,
+      "emg2pose_median_deg": 19.20236138917529,
+      "median_difference_deg": 17.95685747470878,
+      "wasserstein_deg": 13.922621223916979,
+      "support_overlap": 0.5985670829074023,
+      "emg2pose_offdiagonal_r_mean": 0.4669403437999545,
+      "joint_identity_diagonal_winner": true,
+      "joint_identity_best_match": "ring_mcp_flexion",
+      "db2_minus_db1_gap_deg": -13.644944920212673,
+      "db2_minus_db1_ci95": [
+        -16.48949212166756,
+        -10.55702983784766
+      ],
+      "criteria": {
+        "A_anatomical_dof": {
+          "verdict": "PASS",
+          "basis": "the two sides select the same named anatomical DOF by name; the DB9 channel vocabulary is read from each file's own order_of_angles and matches the official table in all 77 protocol files (DOCUMENTED + MEASURED)"
+        },
+        "B_joint_indexing": {
+          "verdict": "PASS",
+          "basis": "indexing differs (emg2pose 0-19 interleaved, DB9 0-21 with the DIP block at the end) and is resolved by NAME, never positionally; verified bit-exact (MEASURED)"
+        },
+        "C_unit": {
+          "verdict": "PASS",
+          "basis": "degrees vs radians, converted explicitly; the conversion reproduces the stored corpus to 4.4e-16 rad (MEASURED)"
+        },
+        "D_positive_direction": {
+          "verdict": "PASS",
+          "basis": "15 FE channels agree in sign per the paper's Table 6; the one AA channel is sign-flipped by the frozen transform (DOCUMENTED)"
+        },
+        "E_zero_definition": {
+          "verdict": "PASS",
+          "basis": "both place zero at the extended, fingers-together hand (DOCUMENTED + MEASURED: DB9 reference posture mean |angle| 0.854 deg)"
+        },
+        "F_reference_pose": {
+          "verdict": "PASS",
+          "basis": "the documented reference postures are the same physical configuration; all three DB9 source databases agree on it to within 11.2 deg per-joint and 0.84 deg in median (MEASURED)"
+        },
+        "G_angle_convention": {
+          "verdict": "PASS",
+          "basis": "both are joint rotation magnitudes, not derived interior angles (DOCUMENTED for DB9 'calibrated joint angles'; CODE-INFERRED for emg2pose so3_exp_map)"
+        },
+        "H_range_wrapping": {
+          "verdict": "PASS",
+          "basis": "neither dataset wraps; neither clamps.  DB9 produces out-of-physical-range values by linear extrapolation, which is a calibration property, not a wrapping convention (MEASURED)"
+        },
+        "I_handedness": {
+          "verdict": "UNCERTAIN",
+          "basis": "DB9 is a right-hand protocol; the emg2pose mini corpus contains 15 left and 15 right recordings.  The project's frozen contract treats the 20D vector as model-frame and does not mirror it, and no LEFT-vs-RIGHT handedness transform is applied anywhere.  Whether the UmeTrack model frame is handedness-invariant for the LEFT recordings is NOT established by this audit"
+        },
+        "J_preprocessing_calibration": {
+          "verdict": "FAIL",
+          "basis": "the two numbers are produced by fundamentally different processes: a linear sensor calibration whose gains came from 10 other subjects, versus an IK fit of a generic hand model.  This is the strongest single source of per-dimension numerical disagreement (MEASURED below)"
+        }
+      },
+      "empirical_range_compatibility": "MODERATE"
+    },
+    {
+      "canonical_index": 11,
+      "canonical_name": "ring_pip_flexion",
+      "anatomical_joint": "ring PIP",
+      "dof": "flexion/extension",
+      "db9_raw_channel": "PIP4",
+      "db9_raw_column": 11,
+      "db9_anatomical_name": "PIP4",
+      "emg2pose_official_joint": "RING_PIP_FE",
+      "emg2pose_source_index": 14,
+      "unit_db9": "degrees (DOCUMENTED: paper + data range; no unit symbol in the paper)",
+      "unit_emg2pose": "radians (DOCUMENTED: joint_angle_definition.md section 2)",
+      "unit_conversion": "explicit pi/180 in the DB9 adapter; none on the emg2pose side",
+      "positive_db9": "flexion (DOCUMENTED: paper Table 6)",
+      "positive_emg2pose": "flexion (DOCUMENTED + VERIFIED-EXEC: 15/15 FE joints move the fingertip toward the palm at +limit)",
+      "sign_transform_applied": 1.0,
+      "zero_db9": "the released calibrated angles are relative to the documented reference posture: hand resting on the table, fingers closed together and extended, taken from the central part of movement 11 (DOCUMENTED)",
+      "zero_emg2pose": "the official 20D zero vector, whose FK pose is a fingers-extended hand; joint limits are minimised at 0 for the PIP/DIP joints (DOCUMENTED + PROJECT-INFERRED from FK)",
+      "reference_pose_equivalence": "the two documented zero configurations are the same physical posture (fingers extended and together).  MEASURED: the DB9 reference posture (movement 11, central phase) has mean |angle| 0.854 deg over 16 dimensions, and movement 11 is the DB9 corpus's own closest-to-zero movement in two of three source databases.  The emg2pose zero is 0 by construction.",
+      "angle_convention": "both are joint rotation magnitudes about a fixed joint-specific axis: emg2pose via so3_exp_map(axis * angle) (CODE-INFERRED), DB9 via a linearly calibrated glove sensor reporting the joint angle in degrees (DOCUMENTED that the values are 'calibrated joint angles', not interior geometric angles)",
+      "range_wrapping": "emg2pose: no wrapping, not clamped to joint_limits (CODE-INFERRED + VERIFIED-EXEC).  DB9: no wrapping; the values are an unbounded linear extrapolation of the sensor and DO exceed physical ranges (MEASURED)",
+      "handedness": "emg2pose releases left and right sessions and flips the EMG sign for left hands; the joint angles are in the model frame.  DB9 has NO side field; the protocol instructed the right hand, and the DB9 page's Handedness column is the participant's own handedness, not the recording side (DOCUMENTED).  The two corpora therefore both hold right-hand poses, but 3 of the emg2pose mini sessions are left-hand recordings whose poses are mirrored into the same model frame.",
+      "calibration_semantics": "DB9: a per-channel linear map from the raw CyberGlove signal to anatomical degrees, whose gains came from a 10-subject calibration protocol and were then applied to all 77 subjects (DOCUMENTED).  emg2pose: no sensor calibration; the values are the output of an IK fit of the generic UmeTrack hand model to motion-capture data (PROJECT-INFERRED from the official pipeline)",
+      "official_emg2pose_limits_deg": [
+        0.0,
+        107.85714276869382
+      ],
+      "db9_median_deg": 3.62949001789093,
+      "emg2pose_median_deg": 43.07807310470942,
+      "median_difference_deg": 39.44858308681849,
+      "wasserstein_deg": 34.60032175268762,
+      "support_overlap": 0.5178059153801441,
+      "emg2pose_offdiagonal_r_mean": 0.4669403437999545,
+      "joint_identity_diagonal_winner": false,
+      "joint_identity_best_match": "pinky_pip_flexion",
+      "db2_minus_db1_gap_deg": 0.7579679186911661,
+      "db2_minus_db1_ci95": [
+        -4.549356655347051,
+        7.507924107435272
+      ],
+      "criteria": {
+        "A_anatomical_dof": {
+          "verdict": "PASS",
+          "basis": "the two sides select the same named anatomical DOF by name; the DB9 channel vocabulary is read from each file's own order_of_angles and matches the official table in all 77 protocol files (DOCUMENTED + MEASURED)"
+        },
+        "B_joint_indexing": {
+          "verdict": "PASS",
+          "basis": "indexing differs (emg2pose 0-19 interleaved, DB9 0-21 with the DIP block at the end) and is resolved by NAME, never positionally; verified bit-exact (MEASURED)"
+        },
+        "C_unit": {
+          "verdict": "PASS",
+          "basis": "degrees vs radians, converted explicitly; the conversion reproduces the stored corpus to 4.4e-16 rad (MEASURED)"
+        },
+        "D_positive_direction": {
+          "verdict": "PASS",
+          "basis": "15 FE channels agree in sign per the paper's Table 6; the one AA channel is sign-flipped by the frozen transform (DOCUMENTED)"
+        },
+        "E_zero_definition": {
+          "verdict": "PASS",
+          "basis": "both place zero at the extended, fingers-together hand (DOCUMENTED + MEASURED: DB9 reference posture mean |angle| 0.854 deg)"
+        },
+        "F_reference_pose": {
+          "verdict": "PASS",
+          "basis": "the documented reference postures are the same physical configuration; all three DB9 source databases agree on it to within 11.2 deg per-joint and 0.84 deg in median (MEASURED)"
+        },
+        "G_angle_convention": {
+          "verdict": "PASS",
+          "basis": "both are joint rotation magnitudes, not derived interior angles (DOCUMENTED for DB9 'calibrated joint angles'; CODE-INFERRED for emg2pose so3_exp_map)"
+        },
+        "H_range_wrapping": {
+          "verdict": "PASS",
+          "basis": "neither dataset wraps; neither clamps.  DB9 produces out-of-physical-range values by linear extrapolation, which is a calibration property, not a wrapping convention (MEASURED)"
+        },
+        "I_handedness": {
+          "verdict": "UNCERTAIN",
+          "basis": "DB9 is a right-hand protocol; the emg2pose mini corpus contains 15 left and 15 right recordings.  The project's frozen contract treats the 20D vector as model-frame and does not mirror it, and no LEFT-vs-RIGHT handedness transform is applied anywhere.  Whether the UmeTrack model frame is handedness-invariant for the LEFT recordings is NOT established by this audit"
+        },
+        "J_preprocessing_calibration": {
+          "verdict": "FAIL",
+          "basis": "the two numbers are produced by fundamentally different processes: a linear sensor calibration whose gains came from 10 other subjects, versus an IK fit of a generic hand model.  This is the strongest single source of per-dimension numerical disagreement (MEASURED below)"
+        }
+      },
+      "empirical_range_compatibility": "LOW"
+    },
+    {
+      "canonical_index": 12,
+      "canonical_name": "ring_dip_flexion",
+      "anatomical_joint": "ring DIP",
+      "dof": "flexion/extension",
+      "db9_raw_channel": "DIP4",
+      "db9_raw_column": 18,
+      "db9_anatomical_name": "DIP4",
+      "emg2pose_official_joint": "RING_DIP_FE",
+      "emg2pose_source_index": 15,
+      "unit_db9": "degrees (DOCUMENTED: paper + data range; no unit symbol in the paper)",
+      "unit_emg2pose": "radians (DOCUMENTED: joint_angle_definition.md section 2)",
+      "unit_conversion": "explicit pi/180 in the DB9 adapter; none on the emg2pose side",
+      "positive_db9": "flexion (DOCUMENTED: paper Table 6)",
+      "positive_emg2pose": "flexion (DOCUMENTED + VERIFIED-EXEC: 15/15 FE joints move the fingertip toward the palm at +limit)",
+      "sign_transform_applied": 1.0,
+      "zero_db9": "the released calibrated angles are relative to the documented reference posture: hand resting on the table, fingers closed together and extended, taken from the central part of movement 11 (DOCUMENTED)",
+      "zero_emg2pose": "the official 20D zero vector, whose FK pose is a fingers-extended hand; joint limits are minimised at 0 for the PIP/DIP joints (DOCUMENTED + PROJECT-INFERRED from FK)",
+      "reference_pose_equivalence": "the two documented zero configurations are the same physical posture (fingers extended and together).  MEASURED: the DB9 reference posture (movement 11, central phase) has mean |angle| 0.854 deg over 16 dimensions, and movement 11 is the DB9 corpus's own closest-to-zero movement in two of three source databases.  The emg2pose zero is 0 by construction.",
+      "angle_convention": "both are joint rotation magnitudes about a fixed joint-specific axis: emg2pose via so3_exp_map(axis * angle) (CODE-INFERRED), DB9 via a linearly calibrated glove sensor reporting the joint angle in degrees (DOCUMENTED that the values are 'calibrated joint angles', not interior geometric angles)",
+      "range_wrapping": "emg2pose: no wrapping, not clamped to joint_limits (CODE-INFERRED + VERIFIED-EXEC).  DB9: no wrapping; the values are an unbounded linear extrapolation of the sensor and DO exceed physical ranges (MEASURED)",
+      "handedness": "emg2pose releases left and right sessions and flips the EMG sign for left hands; the joint angles are in the model frame.  DB9 has NO side field; the protocol instructed the right hand, and the DB9 page's Handedness column is the participant's own handedness, not the recording side (DOCUMENTED).  The two corpora therefore both hold right-hand poses, but 3 of the emg2pose mini sessions are left-hand recordings whose poses are mirrored into the same model frame.",
+      "calibration_semantics": "DB9: a per-channel linear map from the raw CyberGlove signal to anatomical degrees, whose gains came from a 10-subject calibration protocol and were then applied to all 77 subjects (DOCUMENTED).  emg2pose: no sensor calibration; the values are the output of an IK fit of the generic UmeTrack hand model to motion-capture data (PROJECT-INFERRED from the official pipeline)",
+      "official_emg2pose_limits_deg": [
+        0.0,
+        82.14286024180815
+      ],
+      "db9_median_deg": -9.666691042367091,
+      "emg2pose_median_deg": 16.835649615347098,
+      "median_difference_deg": 26.50234065771419,
+      "wasserstein_deg": 55.11457199355417,
+      "support_overlap": 0.4641737994517053,
+      "emg2pose_offdiagonal_r_mean": 0.4669403437999545,
+      "joint_identity_diagonal_winner": false,
+      "joint_identity_best_match": "ring_pip_flexion",
+      "db2_minus_db1_gap_deg": 23.650795414812308,
+      "db2_minus_db1_ci95": [
+        16.294785078328164,
+        30.467320011541688
+      ],
+      "criteria": {
+        "A_anatomical_dof": {
+          "verdict": "PASS",
+          "basis": "the two sides select the same named anatomical DOF by name; the DB9 channel vocabulary is read from each file's own order_of_angles and matches the official table in all 77 protocol files (DOCUMENTED + MEASURED)"
+        },
+        "B_joint_indexing": {
+          "verdict": "PASS",
+          "basis": "indexing differs (emg2pose 0-19 interleaved, DB9 0-21 with the DIP block at the end) and is resolved by NAME, never positionally; verified bit-exact (MEASURED)"
+        },
+        "C_unit": {
+          "verdict": "PASS",
+          "basis": "degrees vs radians, converted explicitly; the conversion reproduces the stored corpus to 4.4e-16 rad (MEASURED)"
+        },
+        "D_positive_direction": {
+          "verdict": "PASS",
+          "basis": "15 FE channels agree in sign per the paper's Table 6; the one AA channel is sign-flipped by the frozen transform (DOCUMENTED)"
+        },
+        "E_zero_definition": {
+          "verdict": "PASS",
+          "basis": "both place zero at the extended, fingers-together hand (DOCUMENTED + MEASURED: DB9 reference posture mean |angle| 0.854 deg)"
+        },
+        "F_reference_pose": {
+          "verdict": "PASS",
+          "basis": "the documented reference postures are the same physical configuration; all three DB9 source databases agree on it to within 11.2 deg per-joint and 0.84 deg in median (MEASURED)"
+        },
+        "G_angle_convention": {
+          "verdict": "PASS",
+          "basis": "both are joint rotation magnitudes, not derived interior angles (DOCUMENTED for DB9 'calibrated joint angles'; CODE-INFERRED for emg2pose so3_exp_map)"
+        },
+        "H_range_wrapping": {
+          "verdict": "PASS",
+          "basis": "neither dataset wraps; neither clamps.  DB9 produces out-of-physical-range values by linear extrapolation, which is a calibration property, not a wrapping convention (MEASURED)"
+        },
+        "I_handedness": {
+          "verdict": "UNCERTAIN",
+          "basis": "DB9 is a right-hand protocol; the emg2pose mini corpus contains 15 left and 15 right recordings.  The project's frozen contract treats the 20D vector as model-frame and does not mirror it, and no LEFT-vs-RIGHT handedness transform is applied anywhere.  Whether the UmeTrack model frame is handedness-invariant for the LEFT recordings is NOT established by this audit"
+        },
+        "J_preprocessing_calibration": {
+          "verdict": "FAIL",
+          "basis": "the two numbers are produced by fundamentally different processes: a linear sensor calibration whose gains came from 10 other subjects, versus an IK fit of a generic hand model.  This is the strongest single source of per-dimension numerical disagreement (MEASURED below)"
+        }
+      },
+      "empirical_range_compatibility": "MODERATE"
+    },
+    {
+      "canonical_index": 13,
+      "canonical_name": "pinky_mcp_flexion",
+      "anatomical_joint": "pinky MCP",
+      "dof": "flexion/extension",
+      "db9_raw_channel": "MCP5_f",
+      "db9_raw_column": 13,
+      "db9_anatomical_name": "MCP5",
+      "emg2pose_official_joint": "PINKY_MCP_FE",
+      "emg2pose_source_index": 17,
+      "unit_db9": "degrees (DOCUMENTED: paper + data range; no unit symbol in the paper)",
+      "unit_emg2pose": "radians (DOCUMENTED: joint_angle_definition.md section 2)",
+      "unit_conversion": "explicit pi/180 in the DB9 adapter; none on the emg2pose side",
+      "positive_db9": "flexion (DOCUMENTED: paper Table 6)",
+      "positive_emg2pose": "flexion (DOCUMENTED + VERIFIED-EXEC: 15/15 FE joints move the fingertip toward the palm at +limit)",
+      "sign_transform_applied": 1.0,
+      "zero_db9": "the released calibrated angles are relative to the documented reference posture: hand resting on the table, fingers closed together and extended, taken from the central part of movement 11 (DOCUMENTED)",
+      "zero_emg2pose": "the official 20D zero vector, whose FK pose is a fingers-extended hand; joint limits are minimised at 0 for the PIP/DIP joints (DOCUMENTED + PROJECT-INFERRED from FK)",
+      "reference_pose_equivalence": "the two documented zero configurations are the same physical posture (fingers extended and together).  MEASURED: the DB9 reference posture (movement 11, central phase) has mean |angle| 0.854 deg over 16 dimensions, and movement 11 is the DB9 corpus's own closest-to-zero movement in two of three source databases.  The emg2pose zero is 0 by construction.",
+      "angle_convention": "both are joint rotation magnitudes about a fixed joint-specific axis: emg2pose via so3_exp_map(axis * angle) (CODE-INFERRED), DB9 via a linearly calibrated glove sensor reporting the joint angle in degrees (DOCUMENTED that the values are 'calibrated joint angles', not interior geometric angles)",
+      "range_wrapping": "emg2pose: no wrapping, not clamped to joint_limits (CODE-INFERRED + VERIFIED-EXEC).  DB9: no wrapping; the values are an unbounded linear extrapolation of the sensor and DO exceed physical ranges (MEASURED)",
+      "handedness": "emg2pose releases left and right sessions and flips the EMG sign for left hands; the joint angles are in the model frame.  DB9 has NO side field; the protocol instructed the right hand, and the DB9 page's Handedness column is the participant's own handedness, not the recording side (DOCUMENTED).  The two corpora therefore both hold right-hand poses, but 3 of the emg2pose mini sessions are left-hand recordings whose poses are mirrored into the same model frame.",
+      "calibration_semantics": "DB9: a per-channel linear map from the raw CyberGlove signal to anatomical degrees, whose gains came from a 10-subject calibration protocol and were then applied to all 77 subjects (DOCUMENTED).  emg2pose: no sensor calibration; the values are the output of an IK fit of the generic UmeTrack hand model to motion-capture data (PROJECT-INFERRED from the official pipeline)",
+      "official_emg2pose_limits_deg": [
+        -27.9183111475152,
+        93.80846134416392
+      ],
+      "db9_median_deg": 2.646035646316583,
+      "emg2pose_median_deg": 17.34558897745931,
+      "median_difference_deg": 14.699553331142727,
+      "wasserstein_deg": 28.559471104550923,
+      "support_overlap": 0.5453612851444498,
+      "emg2pose_offdiagonal_r_mean": 0.4669403437999545,
+      "joint_identity_diagonal_winner": false,
+      "joint_identity_best_match": "ring_mcp_flexion",
+      "db2_minus_db1_gap_deg": -52.035880092075516,
+      "db2_minus_db1_ci95": [
+        -61.912839563802194,
+        -41.07305549259726
+      ],
+      "criteria": {
+        "A_anatomical_dof": {
+          "verdict": "PASS",
+          "basis": "the two sides select the same named anatomical DOF by name; the DB9 channel vocabulary is read from each file's own order_of_angles and matches the official table in all 77 protocol files (DOCUMENTED + MEASURED)"
+        },
+        "B_joint_indexing": {
+          "verdict": "PASS",
+          "basis": "indexing differs (emg2pose 0-19 interleaved, DB9 0-21 with the DIP block at the end) and is resolved by NAME, never positionally; verified bit-exact (MEASURED)"
+        },
+        "C_unit": {
+          "verdict": "PASS",
+          "basis": "degrees vs radians, converted explicitly; the conversion reproduces the stored corpus to 4.4e-16 rad (MEASURED)"
+        },
+        "D_positive_direction": {
+          "verdict": "PASS",
+          "basis": "15 FE channels agree in sign per the paper's Table 6; the one AA channel is sign-flipped by the frozen transform (DOCUMENTED)"
+        },
+        "E_zero_definition": {
+          "verdict": "PASS",
+          "basis": "both place zero at the extended, fingers-together hand (DOCUMENTED + MEASURED: DB9 reference posture mean |angle| 0.854 deg)"
+        },
+        "F_reference_pose": {
+          "verdict": "PASS",
+          "basis": "the documented reference postures are the same physical configuration; all three DB9 source databases agree on it to within 11.2 deg per-joint and 0.84 deg in median (MEASURED)"
+        },
+        "G_angle_convention": {
+          "verdict": "PASS",
+          "basis": "both are joint rotation magnitudes, not derived interior angles (DOCUMENTED for DB9 'calibrated joint angles'; CODE-INFERRED for emg2pose so3_exp_map)"
+        },
+        "H_range_wrapping": {
+          "verdict": "PASS",
+          "basis": "neither dataset wraps; neither clamps.  DB9 produces out-of-physical-range values by linear extrapolation, which is a calibration property, not a wrapping convention (MEASURED)"
+        },
+        "I_handedness": {
+          "verdict": "UNCERTAIN",
+          "basis": "DB9 is a right-hand protocol; the emg2pose mini corpus contains 15 left and 15 right recordings.  The project's frozen contract treats the 20D vector as model-frame and does not mirror it, and no LEFT-vs-RIGHT handedness transform is applied anywhere.  Whether the UmeTrack model frame is handedness-invariant for the LEFT recordings is NOT established by this audit"
+        },
+        "J_preprocessing_calibration": {
+          "verdict": "FAIL",
+          "basis": "the two numbers are produced by fundamentally different processes: a linear sensor calibration whose gains came from 10 other subjects, versus an IK fit of a generic hand model.  This is the strongest single source of per-dimension numerical disagreement (MEASURED below)"
+        }
+      },
+      "empirical_range_compatibility": "MODERATE"
+    },
+    {
+      "canonical_index": 14,
+      "canonical_name": "pinky_pip_flexion",
+      "anatomical_joint": "pinky PIP",
+      "dof": "flexion/extension",
+      "db9_raw_channel": "PIP5",
+      "db9_raw_column": 15,
+      "db9_anatomical_name": "PIP5",
+      "emg2pose_official_joint": "PINKY_PIP_FE",
+      "emg2pose_source_index": 18,
+      "unit_db9": "degrees (DOCUMENTED: paper + data range; no unit symbol in the paper)",
+      "unit_emg2pose": "radians (DOCUMENTED: joint_angle_definition.md section 2)",
+      "unit_conversion": "explicit pi/180 in the DB9 adapter; none on the emg2pose side",
+      "positive_db9": "flexion (DOCUMENTED: paper Table 6)",
+      "positive_emg2pose": "flexion (DOCUMENTED + VERIFIED-EXEC: 15/15 FE joints move the fingertip toward the palm at +limit)",
+      "sign_transform_applied": 1.0,
+      "zero_db9": "the released calibrated angles are relative to the documented reference posture: hand resting on the table, fingers closed together and extended, taken from the central part of movement 11 (DOCUMENTED)",
+      "zero_emg2pose": "the official 20D zero vector, whose FK pose is a fingers-extended hand; joint limits are minimised at 0 for the PIP/DIP joints (DOCUMENTED + PROJECT-INFERRED from FK)",
+      "reference_pose_equivalence": "the two documented zero configurations are the same physical posture (fingers extended and together).  MEASURED: the DB9 reference posture (movement 11, central phase) has mean |angle| 0.854 deg over 16 dimensions, and movement 11 is the DB9 corpus's own closest-to-zero movement in two of three source databases.  The emg2pose zero is 0 by construction.",
+      "angle_convention": "both are joint rotation magnitudes about a fixed joint-specific axis: emg2pose via so3_exp_map(axis * angle) (CODE-INFERRED), DB9 via a linearly calibrated glove sensor reporting the joint angle in degrees (DOCUMENTED that the values are 'calibrated joint angles', not interior geometric angles)",
+      "range_wrapping": "emg2pose: no wrapping, not clamped to joint_limits (CODE-INFERRED + VERIFIED-EXEC).  DB9: no wrapping; the values are an unbounded linear extrapolation of the sensor and DO exceed physical ranges (MEASURED)",
+      "handedness": "emg2pose releases left and right sessions and flips the EMG sign for left hands; the joint angles are in the model frame.  DB9 has NO side field; the protocol instructed the right hand, and the DB9 page's Handedness column is the participant's own handedness, not the recording side (DOCUMENTED).  The two corpora therefore both hold right-hand poses, but 3 of the emg2pose mini sessions are left-hand recordings whose poses are mirrored into the same model frame.",
+      "calibration_semantics": "DB9: a per-channel linear map from the raw CyberGlove signal to anatomical degrees, whose gains came from a 10-subject calibration protocol and were then applied to all 77 subjects (DOCUMENTED).  emg2pose: no sensor calibration; the values are the output of an IK fit of the generic UmeTrack hand model to motion-capture data (PROJECT-INFERRED from the official pipeline)",
+      "official_emg2pose_limits_deg": [
+        0.0,
+        107.85714276869382
+      ],
+      "db9_median_deg": 2.955329023802694,
+      "emg2pose_median_deg": 26.926573656444873,
+      "median_difference_deg": 23.97124463264218,
+      "wasserstein_deg": 19.89626123946986,
+      "support_overlap": 0.5331389469525141,
+      "emg2pose_offdiagonal_r_mean": 0.4669403437999545,
+      "joint_identity_diagonal_winner": true,
+      "joint_identity_best_match": "pinky_pip_flexion",
+      "db2_minus_db1_gap_deg": -4.378214506868971,
+      "db2_minus_db1_ci95": [
+        -9.560900583811765,
+        -0.867022988769991
+      ],
+      "criteria": {
+        "A_anatomical_dof": {
+          "verdict": "PASS",
+          "basis": "the two sides select the same named anatomical DOF by name; the DB9 channel vocabulary is read from each file's own order_of_angles and matches the official table in all 77 protocol files (DOCUMENTED + MEASURED)"
+        },
+        "B_joint_indexing": {
+          "verdict": "PASS",
+          "basis": "indexing differs (emg2pose 0-19 interleaved, DB9 0-21 with the DIP block at the end) and is resolved by NAME, never positionally; verified bit-exact (MEASURED)"
+        },
+        "C_unit": {
+          "verdict": "PASS",
+          "basis": "degrees vs radians, converted explicitly; the conversion reproduces the stored corpus to 4.4e-16 rad (MEASURED)"
+        },
+        "D_positive_direction": {
+          "verdict": "PASS",
+          "basis": "15 FE channels agree in sign per the paper's Table 6; the one AA channel is sign-flipped by the frozen transform (DOCUMENTED)"
+        },
+        "E_zero_definition": {
+          "verdict": "PASS",
+          "basis": "both place zero at the extended, fingers-together hand (DOCUMENTED + MEASURED: DB9 reference posture mean |angle| 0.854 deg)"
+        },
+        "F_reference_pose": {
+          "verdict": "PASS",
+          "basis": "the documented reference postures are the same physical configuration; all three DB9 source databases agree on it to within 11.2 deg per-joint and 0.84 deg in median (MEASURED)"
+        },
+        "G_angle_convention": {
+          "verdict": "PASS",
+          "basis": "both are joint rotation magnitudes, not derived interior angles (DOCUMENTED for DB9 'calibrated joint angles'; CODE-INFERRED for emg2pose so3_exp_map)"
+        },
+        "H_range_wrapping": {
+          "verdict": "PASS",
+          "basis": "neither dataset wraps; neither clamps.  DB9 produces out-of-physical-range values by linear extrapolation, which is a calibration property, not a wrapping convention (MEASURED)"
+        },
+        "I_handedness": {
+          "verdict": "UNCERTAIN",
+          "basis": "DB9 is a right-hand protocol; the emg2pose mini corpus contains 15 left and 15 right recordings.  The project's frozen contract treats the 20D vector as model-frame and does not mirror it, and no LEFT-vs-RIGHT handedness transform is applied anywhere.  Whether the UmeTrack model frame is handedness-invariant for the LEFT recordings is NOT established by this audit"
+        },
+        "J_preprocessing_calibration": {
+          "verdict": "FAIL",
+          "basis": "the two numbers are produced by fundamentally different processes: a linear sensor calibration whose gains came from 10 other subjects, versus an IK fit of a generic hand model.  This is the strongest single source of per-dimension numerical disagreement (MEASURED below)"
+        }
+      },
+      "empirical_range_compatibility": "MODERATE"
+    },
+    {
+      "canonical_index": 15,
+      "canonical_name": "pinky_dip_flexion",
+      "anatomical_joint": "pinky DIP",
+      "dof": "flexion/extension",
+      "db9_raw_channel": "DIP5",
+      "db9_raw_column": 19,
+      "db9_anatomical_name": "DIP5",
+      "emg2pose_official_joint": "PINKY_DIP_FE",
+      "emg2pose_source_index": 19,
+      "unit_db9": "degrees (DOCUMENTED: paper + data range; no unit symbol in the paper)",
+      "unit_emg2pose": "radians (DOCUMENTED: joint_angle_definition.md section 2)",
+      "unit_conversion": "explicit pi/180 in the DB9 adapter; none on the emg2pose side",
+      "positive_db9": "flexion (DOCUMENTED: paper Table 6)",
+      "positive_emg2pose": "flexion (DOCUMENTED + VERIFIED-EXEC: 15/15 FE joints move the fingertip toward the palm at +limit)",
+      "sign_transform_applied": 1.0,
+      "zero_db9": "the released calibrated angles are relative to the documented reference posture: hand resting on the table, fingers closed together and extended, taken from the central part of movement 11 (DOCUMENTED)",
+      "zero_emg2pose": "the official 20D zero vector, whose FK pose is a fingers-extended hand; joint limits are minimised at 0 for the PIP/DIP joints (DOCUMENTED + PROJECT-INFERRED from FK)",
+      "reference_pose_equivalence": "the two documented zero configurations are the same physical posture (fingers extended and together).  MEASURED: the DB9 reference posture (movement 11, central phase) has mean |angle| 0.854 deg over 16 dimensions, and movement 11 is the DB9 corpus's own closest-to-zero movement in two of three source databases.  The emg2pose zero is 0 by construction.",
+      "angle_convention": "both are joint rotation magnitudes about a fixed joint-specific axis: emg2pose via so3_exp_map(axis * angle) (CODE-INFERRED), DB9 via a linearly calibrated glove sensor reporting the joint angle in degrees (DOCUMENTED that the values are 'calibrated joint angles', not interior geometric angles)",
+      "range_wrapping": "emg2pose: no wrapping, not clamped to joint_limits (CODE-INFERRED + VERIFIED-EXEC).  DB9: no wrapping; the values are an unbounded linear extrapolation of the sensor and DO exceed physical ranges (MEASURED)",
+      "handedness": "emg2pose releases left and right sessions and flips the EMG sign for left hands; the joint angles are in the model frame.  DB9 has NO side field; the protocol instructed the right hand, and the DB9 page's Handedness column is the participant's own handedness, not the recording side (DOCUMENTED).  The two corpora therefore both hold right-hand poses, but 3 of the emg2pose mini sessions are left-hand recordings whose poses are mirrored into the same model frame.",
+      "calibration_semantics": "DB9: a per-channel linear map from the raw CyberGlove signal to anatomical degrees, whose gains came from a 10-subject calibration protocol and were then applied to all 77 subjects (DOCUMENTED).  emg2pose: no sensor calibration; the values are the output of an IK fit of the generic UmeTrack hand model to motion-capture data (PROJECT-INFERRED from the official pipeline)",
+      "official_emg2pose_limits_deg": [
+        0.0,
+        82.14286024180815
+      ],
+      "db9_median_deg": -5.50553035736084,
+      "emg2pose_median_deg": 5.61530577022011,
+      "median_difference_deg": 11.12083612758095,
+      "wasserstein_deg": 25.577458793725516,
+      "support_overlap": 0.5449670652487524,
+      "emg2pose_offdiagonal_r_mean": 0.4669403437999545,
+      "joint_identity_diagonal_winner": false,
+      "joint_identity_best_match": "ring_pip_flexion",
+      "db2_minus_db1_gap_deg": 7.0707115674484005,
+      "db2_minus_db1_ci95": [
+        2.8272783049877175,
+        11.054207306296655
+      ],
+      "criteria": {
+        "A_anatomical_dof": {
+          "verdict": "PASS",
+          "basis": "the two sides select the same named anatomical DOF by name; the DB9 channel vocabulary is read from each file's own order_of_angles and matches the official table in all 77 protocol files (DOCUMENTED + MEASURED)"
+        },
+        "B_joint_indexing": {
+          "verdict": "PASS",
+          "basis": "indexing differs (emg2pose 0-19 interleaved, DB9 0-21 with the DIP block at the end) and is resolved by NAME, never positionally; verified bit-exact (MEASURED)"
+        },
+        "C_unit": {
+          "verdict": "PASS",
+          "basis": "degrees vs radians, converted explicitly; the conversion reproduces the stored corpus to 4.4e-16 rad (MEASURED)"
+        },
+        "D_positive_direction": {
+          "verdict": "PASS",
+          "basis": "15 FE channels agree in sign per the paper's Table 6; the one AA channel is sign-flipped by the frozen transform (DOCUMENTED)"
+        },
+        "E_zero_definition": {
+          "verdict": "PASS",
+          "basis": "both place zero at the extended, fingers-together hand (DOCUMENTED + MEASURED: DB9 reference posture mean |angle| 0.854 deg)"
+        },
+        "F_reference_pose": {
+          "verdict": "PASS",
+          "basis": "the documented reference postures are the same physical configuration; all three DB9 source databases agree on it to within 11.2 deg per-joint and 0.84 deg in median (MEASURED)"
+        },
+        "G_angle_convention": {
+          "verdict": "PASS",
+          "basis": "both are joint rotation magnitudes, not derived interior angles (DOCUMENTED for DB9 'calibrated joint angles'; CODE-INFERRED for emg2pose so3_exp_map)"
+        },
+        "H_range_wrapping": {
+          "verdict": "PASS",
+          "basis": "neither dataset wraps; neither clamps.  DB9 produces out-of-physical-range values by linear extrapolation, which is a calibration property, not a wrapping convention (MEASURED)"
+        },
+        "I_handedness": {
+          "verdict": "UNCERTAIN",
+          "basis": "DB9 is a right-hand protocol; the emg2pose mini corpus contains 15 left and 15 right recordings.  The project's frozen contract treats the 20D vector as model-frame and does not mirror it, and no LEFT-vs-RIGHT handedness transform is applied anywhere.  Whether the UmeTrack model frame is handedness-invariant for the LEFT recordings is NOT established by this audit"
+        },
+        "J_preprocessing_calibration": {
+          "verdict": "FAIL",
+          "basis": "the two numbers are produced by fundamentally different processes: a linear sensor calibration whose gains came from 10 other subjects, versus an IK fit of a generic hand model.  This is the strongest single source of per-dimension numerical disagreement (MEASURED below)"
+        }
+      },
+      "empirical_range_compatibility": "MODERATE"
+    }
+  ]
+}

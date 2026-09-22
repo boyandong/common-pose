@@ -1,0 +1,128 @@
+{
+  "artifact": "DATASET_INDEPENDENCE_MATRIX.json",
+  "branch_id": "S6-POSE-API-DATASET-ADMISSION",
+  "plan_sha256": "4d2c8b162e2332a5891a5d89a53166e365b1bbd92c205222492d19957c9683ec",
+  "rule": "a second dataset built by the same group with the same glove and the same calibration is USEFUL but is a WEAKER independent replication.  It must not be counted as fully independent physical-source evidence",
+  "dimensions": [
+    "research group",
+    "hardware",
+    "calibration method",
+    "hand model",
+    "subject population",
+    "task ontology",
+    "preprocessing code"
+  ],
+  "pairs": {
+    "KINE_ADL_vs_KIN_MUS": {
+      "overlap": {
+        "research_group": {
+          "value": "IDENTICAL - Biomechanics and Ergonomics Research Group, Universitat Jaume I",
+          "evidence": "OFFICIAL-DOCUMENTED"
+        },
+        "hardware": {
+          "value": "SAME FAMILY - CyberGlove instrumented gloves, 18 DoF per hand in both releases",
+          "evidence": "OFFICIAL-DOCUMENTED"
+        },
+        "calibration_method": {
+          "value": "IDENTICAL - the Gracia-Ibanez et al. across-subject protocol and the same BE-UJI AngleCalculation code",
+          "evidence": "OFFICIAL-DOCUMENTED"
+        },
+        "hand_model": {
+          "value": "IDENTICAL - the same 18-angle model with the same joint nomenclature (_F flexion, _A abduction, IP/PIP/MCP/CMC/PalmArch/WR)",
+          "evidence": "OFFICIAL-DOCUMENTED"
+        },
+        "subject_population": {
+          "value": "DIFFERENT SAMPLES, SAME POPULATION FRAME - healthy adults recruited by the same group at the same institution (20 vs 22 subjects)",
+          "evidence": "OFFICIAL-DOCUMENTED"
+        },
+        "task_ontology": {
+          "value": "DIFFERENT - feeding/cooking ADLs (66 objects, 1160 recordings) vs 26 representative ADLs with a 3-phase structure",
+          "evidence": "OFFICIAL-DOCUMENTED"
+        },
+        "preprocessing_code": {
+          "value": "IDENTICAL - the same released MATLAB pipeline",
+          "evidence": "OFFICIAL-CODE-INFERRED"
+        }
+      },
+      "n_dimensions_shared": 5,
+      "n_dimensions_differing": 2,
+      "independent_verdict": "NOT INDEPENDENT",
+      "quantified_statement": "Of the seven plan dimensions, FIVE are effectively shared (group, hardware family, calibration method, hand model, preprocessing code).  Only the task ontology and the specific subject sample differ.  Treating these as two independent physical-source replications would be wrong: a physical defect in the CyberGlove+B E-UJI pipeline would appear in BOTH",
+      "what_they_DO_give": "two different TASK ONTOLOGIES over one physical pipeline - useful for testing whether a pose representation generalises across tasks, NOT for testing whether the physical coordinates are right"
+    },
+    "HUST_vs_KINE_ADL": {
+      "overlap": {
+        "research_group": {
+          "value": "DIFFERENT - HUST (Wuhan) vs UJI (Castello)",
+          "evidence": "OFFICIAL-DOCUMENTED"
+        },
+        "hardware": {
+          "value": "SAME FAMILY - both CyberGlove",
+          "evidence": "OFFICIAL-DOCUMENTED"
+        },
+        "calibration_method": {
+          "value": "UNKNOWN for HUST; documented for UJI",
+          "evidence": "UNKNOWN"
+        },
+        "hand_model": {
+          "value": "UNKNOWN - HUST publishes a DOF count, not a channel list",
+          "evidence": "UNKNOWN"
+        },
+        "subject_population": {
+          "value": "DIFFERENT - 30 Chinese adults vs 20/22 Spanish adults",
+          "evidence": "OFFICIAL-DOCUMENTED"
+        },
+        "task_ontology": {
+          "value": "DIFFERENT - Feix grasp taxonomy (33 types) vs ADLs",
+          "evidence": "OFFICIAL-DOCUMENTED"
+        },
+        "preprocessing_code": {
+          "value": "UNKNOWN - no code released",
+          "evidence": "UNKNOWN"
+        }
+      },
+      "independent_verdict": "UNRESOLVABLE (HUST data unobtainable)",
+      "quantified_statement": "independent in group and population, but the same strain-gauge glove family, and nothing about HUST's pipeline can be verified"
+    },
+    "HUST_vs_KIN_MUS": {
+      "overlap": {
+        "research_group": {
+          "value": "DIFFERENT",
+          "evidence": "OFFICIAL-DOCUMENTED"
+        },
+        "hardware": {
+          "value": "SAME FAMILY - both CyberGlove",
+          "evidence": "OFFICIAL-DOCUMENTED"
+        },
+        "calibration_method": {
+          "value": "UNKNOWN for HUST",
+          "evidence": "UNKNOWN"
+        },
+        "hand_model": {
+          "value": "UNKNOWN for HUST",
+          "evidence": "UNKNOWN"
+        },
+        "subject_population": {
+          "value": "DIFFERENT",
+          "evidence": "OFFICIAL-DOCUMENTED"
+        },
+        "task_ontology": {
+          "value": "DIFFERENT",
+          "evidence": "OFFICIAL-DOCUMENTED"
+        },
+        "preprocessing_code": {
+          "value": "UNKNOWN for HUST",
+          "evidence": "UNKNOWN"
+        }
+      },
+      "independent_verdict": "UNRESOLVABLE (HUST data unobtainable)",
+      "quantified_statement": "as above"
+    }
+  },
+  "key_finding": "ALL THREE candidates are strain-gauge GLOVE datasets.  Across the whole audited set there is exactly ONE physical pipeline family (CyberGlove + a linear/quadratic gain calibration) and at most two independent instances of it.  There is NO motion-capture-derived candidate in this set, whereas emg2pose itself is inverse-kinematics over motion capture.  That is the central scientific limitation of the current candidate pool and it is a stronger statement than any per-dataset verdict",
+  "implication_for_future_paper_design": [
+    "a second INDEPENDENT physical source must come from a DIFFERENT sensor family (motion capture, IMU-fusion, or vision-based hand pose) if the paper is to claim that the physical coordinates are right rather than that one glove pipeline is self-consistent",
+    "KINE-ADL and KIN-MUS together CAN support a task-generalisation claim within one physical pipeline"
+  ],
+  "evidence_note": "no overlap dimension is asserted from intuition; each is sourced in OFFICIAL_SOURCE_REFERENCES.md"
+}

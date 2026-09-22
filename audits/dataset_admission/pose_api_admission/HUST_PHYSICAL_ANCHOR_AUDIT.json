@@ -1,0 +1,15 @@
+{
+  "artifact": "HUST_PHYSICAL_ANCHOR_AUDIT.json",
+  "branch_id": "S6-POSE-API-DATASET-ADMISSION",
+  "plan_sha256": "4d2c8b162e2332a5891a5d89a53166e365b1bbd92c205222492d19957c9683ec",
+  "documentation_audit": "COMPLETE",
+  "empirical_data_qc": "NOT POSSIBLE",
+  "reason": "no HUST data obtainable; anchors cannot be evaluated",
+  "anchors_that_would_be_run": [
+    "A: Feix grasp families vs an extended/hand-open condition (WEAK - the protocol records grasps, and an open-hand reference is described but no labelled segment is documented)",
+    "B: reference-posture zero (would be STRONG if the reference were documented - it is not, for HUST)",
+    "C: homologous fingers (WEAK)",
+    "D: open-hand side of range (STRONG)"
+  ],
+  "blocking_issue": "the anchor tiers depend on DOCUMENTED conditions; for HUST the sign conventions, zero definition and channel list are all UNKNOWN, so even the tier assignment is not possible"
+}

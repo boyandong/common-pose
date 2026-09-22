@@ -1,0 +1,382 @@
+{
+  "artifact": "SOURCE_FREEZE.json",
+  "branch_id": "S7-DATASET-ADMISSION-COORDINATE-AUDIT",
+  "plan_sha256": "fba2b20623392dd809d5ed28c7850387acc721e9a91ff1611e7fba0d89fc889d",
+  "access_date": "2026-09-21",
+  "commit": "COMMIT PENDING (project root is not a git repository; provenance is content-hash based)",
+  "datasets": {
+    "MyoKi": {
+      "dataset_name": "MyoKi: A database of multimodal myography and hand kinematics during realistic daily life activities",
+      "version": "figshare v1 (10.6084/m9.figshare.28696778.v1), published 2025-08-29",
+      "doi": "10.6084/m9.figshare.28696778",
+      "paper": "Scientific Data 12:1507 (2025), doi:10.1038/s41597-025-05852-6; Andreas D, Werner D, Hou Z, Dwivedi A, Castellini C, Beckerle P",
+      "download_location": "https://doi.org/10.6084/m9.figshare.28696778",
+      "local_root": "<DATA_ROOT>set_admission_audit_v1\\raw\\myoki",
+      "licence": "CC BY 4.0",
+      "access_right": "open, no registration",
+      "corpus_total_bytes": 145463536055,
+      "corpus_file_count": 41,
+      "files_downloaded_here": [
+        {
+          "path": "<DATA_ROOT>set_admission_audit_v1\\raw\\myoki\\Synchronicity_test.mat",
+          "exists": true,
+          "bytes": 48961776,
+          "sha256": "7bc35b0dff5159e4127dec38f182b1af8325e3624246e2a4fc58abff99a8a51b",
+          "label": "Synchronicity_test.mat",
+          "role": "official single-recording synchronisation test; SAME variable set and shapes as a participant file",
+          "evidence": "EMPIRICAL",
+          "note": "MATLAB 5.0, created 2025-03-27 11:45:28"
+        },
+        {
+          "path": "<DATA_ROOT>set_admission_audit_v1\\raw\\myoki\\Glove_calibration.xlsx",
+          "exists": true,
+          "bytes": 12503,
+          "sha256": "9719e26ffa6fff3552ab220ed4f9323b9cc12fae0ceb56a2ad0ffb8f3254493d",
+          "label": "Glove_calibration.xlsx",
+          "role": "official calibration data (male + female sheets, 13 channels each)",
+          "evidence": "DOC",
+          "note": ""
+        },
+        {
+          "path": "<DATA_ROOT>set_admission_audit_v1\\raw\\myoki\\Task_categorization.xlsx",
+          "exists": true,
+          "bytes": 21143,
+          "sha256": "effe2e7c989e88aaf5ee5098773aaf017e61fd988bd90d2db1534775be15b97b",
+          "label": "Task_categorization.xlsx",
+          "role": "official 74-task table and its grasp mapping",
+          "evidence": "DOC",
+          "note": ""
+        },
+        {
+          "path": "<DATA_ROOT>set_admission_audit_v1\\raw\\myoki\\Participant_information.xlsx",
+          "exists": true,
+          "bytes": 12908,
+          "sha256": "94f5dc9b614a3942b596ff3461a8a36ed3acd94732182e5964b6771e793163b9",
+          "label": "Participant_information.xlsx",
+          "role": "official participant metadata incl. acquisition-anomaly notes",
+          "evidence": "DOC",
+          "note": ""
+        },
+        {
+          "path": "<DATA_ROOT>set_admission_audit_v1\\raw\\myoki\\Database_comparison.xlsx",
+          "exists": true,
+          "bytes": 10557,
+          "sha256": "0fe1fe3cdecbff03f77780300c593067f711af4763f013ce70fd6475b8d19c48",
+          "label": "Database_comparison.xlsx",
+          "role": "official per-participant decoder R2 table (used for provenance only)",
+          "evidence": "DOC",
+          "note": ""
+        },
+        {
+          "path": "<DATA_ROOT>set_admission_audit_v1\\raw\\myoki\\Database_comparison.py",
+          "exists": true,
+          "bytes": 3944,
+          "sha256": "7ede8a62a11758835a5a06adf4dd4f73284051716af0746fa23d4a7559bc6b9e",
+          "label": "Database_comparison.py",
+          "role": "official code that produced Database_comparison.xlsx",
+          "evidence": "DOC",
+          "note": ""
+        },
+        {
+          "path": "<DATA_ROOT>set_admission_audit_v1\\raw_meta\\dlr_myography_kinematics_s41597-025-05852-6.pdf",
+          "exists": true,
+          "bytes": 4005665,
+          "sha256": "a765e2c6c801a52ac194ee6ab3cbe137fc6170d20cb214567a80950f19f4daf7",
+          "label": "dlr_myography_kinematics_s41597-025-05852-6.pdf",
+          "role": "the MyoKi dataset's own paper (Sci Data 12:1507)",
+          "evidence": "DOC",
+          "note": "doi:10.1038/s41597-025-05852-6"
+        },
+        {
+          "path": "<DATA_ROOT>set_admission_audit_v1\\raw_meta\\dlr_myography_kinematics_s41597-025-05852-6.txt",
+          "exists": true,
+          "bytes": 63644,
+          "sha256": "e0de9cbed3da2149a8e50b7634e2a73cf518e8f071a78c27882ccb6d89f8db83",
+          "label": "dlr_myography_kinematics_s41597-025-05852-6.txt",
+          "role": "extracted paper text",
+          "evidence": "EMPIRICAL",
+          "note": ""
+        }
+      ],
+      "download_requirement": {
+        "needed_for": "grasp-label audit, physical-anchor audit at scale, cross-subject calibration consistency, per-participant anomaly notes verification",
+        "minimum": "P01.mat .. P35.mat, 3 166 867 904 .. 4 949 415 072 B each, 3 816 461 856 B for P01.mat",
+        "total_if_all": 145463536055,
+        "withheld_reason": "the frozen plan forbids pulling the large body of data without an explicit requirement; the small official metadata/code set plus the 48 961 776 B synchronisation file were downloaded instead"
+      },
+      "documentation": {
+        "paper": "yes (open access)",
+        "readme": "in paper 'Data records'",
+        "data_dictionary": "in paper 'Data records'",
+        "calibration_documentation": "paper Methods + Glove_calibration.xlsx",
+        "calibration_code": "NONE PUBLISHED - only the equation (Eq. 1) and the two calibration tables",
+        "known_issue_documentation": "Participant_information.xlsx 'Notes' column + paper Usage Notes"
+      },
+      "record_file_inventory": [
+        {
+          "filename": "Participant_information.xlsx",
+          "bytes": 12908,
+          "evidence": "DOC",
+          "source": "figshare public API article 28696778, 2026-09-21"
+        },
+        {
+          "filename": "Task_categorization.xlsx",
+          "bytes": 21143,
+          "evidence": "DOC",
+          "source": "figshare public API article 28696778, 2026-09-21"
+        },
+        {
+          "filename": "Glove_calibration.xlsx",
+          "bytes": 12503,
+          "evidence": "DOC",
+          "source": "figshare public API article 28696778, 2026-09-21"
+        },
+        {
+          "filename": "Database_comparison.xlsx",
+          "bytes": 10557,
+          "evidence": "DOC",
+          "source": "figshare public API article 28696778, 2026-09-21"
+        },
+        {
+          "filename": "Database_comparison.py",
+          "bytes": 3944,
+          "evidence": "DOC",
+          "source": "figshare public API article 28696778, 2026-09-21"
+        },
+        {
+          "filename": "Synchronicity_test.mat",
+          "bytes": 48961776,
+          "evidence": "DOC",
+          "source": "figshare public API article 28696778, 2026-09-21"
+        },
+        {
+          "filename": "NinaproDB7_replica.mat",
+          "bytes": 1908493416,
+          "evidence": "DOC",
+          "source": "figshare public API article 28696778, 2026-09-21"
+        },
+        {
+          "filename": "P01.mat",
+          "bytes": 3816461856,
+          "evidence": "DOC",
+          "source": "figshare public API article 28696778, 2026-09-21"
+        },
+        {
+          "filename": "P35.mat",
+          "bytes": 4307345464,
+          "evidence": "DOC",
+          "source": "figshare public API article 28696778, 2026-09-21"
+        }
+      ]
+    },
+    "KIN-MUS": {
+      "dataset_name": "A calibrated database of kinematics and EMG of the forearm and hand during activities of daily living (KIN-MUS UJI)",
+      "version": "Zenodo concept 10.5281/zenodo.3469380, version 10.5281/zenodo.3337890",
+      "doi": "10.5281/zenodo.3469380",
+      "paper": "Scientific Data 6:270 (2019), doi:10.1038/s41597-019-0285-1; Jarque-Bou NJ, Vergara M, Sancho-Bru JL, Gracia-Ibanez V, Roda-Sales A",
+      "download_location": "https://doi.org/10.5281/zenodo.3469380",
+      "local_root": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\kin_mus",
+      "licence": "CC-BY-4.0",
+      "access_right": "open, no registration",
+      "corpus_total_bytes": 86661263,
+      "corpus_file_count": 1,
+      "files_downloaded_here": [
+        {
+          "path": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\kin_mus\\KIN_MUS_UJI.mat",
+          "exists": true,
+          "bytes": 86661263,
+          "sha256": "530a9e51b19574b0f5dee0c9263b1a50eafc7204b14cae67b6b1bb854671c722",
+          "label": "KIN_MUS_UJI.mat",
+          "role": "released kinematic+EMG corpus",
+          "evidence": "EMPIRICAL",
+          "note": "MATLAB 5.0, PCWIN64, created 2019-06-06 15:53:43"
+        },
+        {
+          "path": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\docs\\MOVMUS_UJI_DATASET_GUIDE_v2_1.pdf",
+          "exists": true,
+          "bytes": 4022963,
+          "sha256": "393e38ca7e7f67750b18734095b7bee1d9069e37e5654da98476e776cd94414d",
+          "label": "MOVMUS_UJI_DATASET_GUIDE_v2_1.pdf",
+          "role": "official guide of the larger MOVMUS-UJI descendant",
+          "evidence": "DOC",
+          "note": "NOT the KIN-MUS release's own document"
+        },
+        {
+          "path": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\docs\\MOVMUS_UJI_DATASET_GUIDE_v2_1.txt",
+          "exists": true,
+          "bytes": 102636,
+          "sha256": "e067c3969a8a26898aa7ee40aba8465c889875253397df03a4a2c391d594e65c",
+          "label": "MOVMUS_UJI_DATASET_GUIDE_v2_1.txt",
+          "role": "extracted guide text (upstream lane)",
+          "evidence": "EMPIRICAL",
+          "note": ""
+        },
+        {
+          "path": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\uji_code\\AngleCalculation.zip",
+          "exists": true,
+          "bytes": 322730,
+          "sha256": "332d9ecea74771432c05579e9814ad117af53b3150d07bbbd658a9e9b8a7c72a",
+          "label": "AngleCalculation.zip",
+          "role": "official BE-UJI angle-calculation code, current DOI",
+          "evidence": "DOC",
+          "note": "Zenodo 10.5281/zenodo.8418096, Apache-2.0"
+        },
+        {
+          "path": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\uji_code\\extracted\\AngleCalculation\\guant\\Code\\obtain_angles_RL_abd_rel.m",
+          "exists": true,
+          "bytes": 10957,
+          "sha256": "83ac9e505798fc11ffd9abccd30648f96c62f00380faac587637d586bb95c297",
+          "label": "obtain_angles_RL_abd_rel.m",
+          "role": "official calibration code - column order + cross-coupling model",
+          "evidence": "DOC",
+          "note": "output order documented in-file at lines 110-113"
+        },
+        {
+          "path": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\uji_code\\extracted\\AngleCalculation\\guant\\Code\\gains_identification.m",
+          "exists": true,
+          "bytes": 4714,
+          "sha256": "58d2bdad66768bbcbad07576dd9b9b9d973da9e42c38b561a63d7dc428adb3f0",
+          "label": "gains_identification.m",
+          "role": "official gains; lab's own glove gains as placeholders",
+          "evidence": "DOC",
+          "note": ""
+        },
+        {
+          "path": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\uji_code\\extracted\\AngleCalculation\\guant\\Code\\check_distal_values.m",
+          "exists": true,
+          "bytes": 494,
+          "sha256": "ed1c2eaeb50cc7a871b92b214796643e3ae572278f51c939c42ad2a51ff8b33b",
+          "label": "check_distal_values.m",
+          "role": "18- vs 22-sensor glove identification",
+          "evidence": "DOC",
+          "note": ""
+        },
+        {
+          "path": "<DATA_ROOT>set_admission_audit_v1\\raw\\docs\\KINMUS_2019.pdf",
+          "exists": true,
+          "bytes": 2261144,
+          "sha256": "cacbfdce4b1369ce7d02790d1e931661d11159724f1dfe6fbda1b27f22a74dc0",
+          "label": "KINMUS_2019.pdf",
+          "role": "the KIN-MUS dataset's own paper (Sci Data 6:270)",
+          "evidence": "DOC",
+          "note": "doi:10.1038/s41597-019-0285-1"
+        },
+        {
+          "path": "<DATA_ROOT>set_admission_audit_v1\\raw\\docs\\KINMUS_2019.txt",
+          "exists": true,
+          "bytes": 35849,
+          "sha256": "e38926c0b30ff117bc804dfc90bd975d1d111239f5a1af2d1ff3b19624ac22ad",
+          "label": "KINMUS_2019.txt",
+          "role": "extracted paper text",
+          "evidence": "EMPIRICAL",
+          "note": ""
+        }
+      ],
+      "download_requirement": null,
+      "documentation": {
+        "paper": "yes (open access)",
+        "readme": "paper 'Data Records'",
+        "data_dictionary": "paper 'Data Records' + paper Table 2 (column ORDER)",
+        "calibration_documentation": "paper Methods; guide v2.1 sections 2.1/3.1/4.3",
+        "calibration_code": "BE-UJI AngleCalculation.zip (Zenodo 8418096)",
+        "known_issue_documentation": "paper Usage Notes (ADL#25/subject#22 data lost; WRIST_F cable artifact in ADL#7 and #11)"
+      }
+    },
+    "KINE-ADL": {
+      "dataset_name": "KINE-ADL BE-UJI: Kinematics of human hand dataset for feeding and cooking tasks, v4",
+      "version": "Mendeley Data v4 (5 Aug 2019), DOI 10.17632/8mf4y2srgh.4",
+      "doi": "10.17632/8mf4y2srgh.4",
+      "paper": "Scientific Data 6:167 (2019), doi:10.1038/s41597-019-0175-6; Roda-Sales A, Vergara M, Sancho-Bru JL, Gracia-Ibanez V, Jarque-Bou NJ",
+      "download_location": "https://data.mendeley.com/datasets/8mf4y2srgh/4",
+      "local_root": "<DATA_ROOT>set_admission_audit_v1\\raw\\kine_adl",
+      "licence": "CC BY 4.0",
+      "access_right": "open, no registration",
+      "corpus_total_bytes": 1070355215,
+      "corpus_file_count": 3,
+      "files_downloaded_here": [
+        {
+          "path": "<DATA_ROOT>set_admission_audit_v1\\raw\\kine_adl\\KINE-ADL_BE-UJI_DATASET_Guide.pdf",
+          "exists": true,
+          "bytes": 1815639,
+          "sha256": "f1598d641c31cc7e8805cad076e4c2c84ae76afd3ade768cd30e2486a547654a",
+          "label": "KINE-ADL_BE-UJI_DATASET_Guide.pdf",
+          "role": "official dataset guide / data dictionary",
+          "evidence": "DOC",
+          "note": "Mendeley 10.17632/8mf4y2srgh.4, CC BY 4.0; size and SHA-256 match the hash published by the Mendeley public API exactly"
+        },
+        {
+          "path": "<DATA_ROOT>set_admission_audit_v1\\raw\\kine_adl\\KINE-ADL_GUIDE.txt",
+          "exists": true,
+          "bytes": 48251,
+          "sha256": "1f675b93b71847dadd1f5f1e26af9559d77e09934be3256d9f9b72188e602294",
+          "label": "KINE-ADL_GUIDE.txt",
+          "role": "extracted guide text",
+          "evidence": "EMPIRICAL",
+          "note": ""
+        },
+        {
+          "path": "<DATA_ROOT>set_admission_audit_v1\\raw\\docs\\KINEADL_2019.pdf",
+          "exists": true,
+          "bytes": 1772499,
+          "sha256": "f7dfc65af86d2d084a5dc3ee40d38a097821dc0cea0c55bb1034550ba2255ef7",
+          "label": "KINEADL_2019.pdf",
+          "role": "the KINE-ADL dataset's own paper (Sci Data 6:167)",
+          "evidence": "DOC",
+          "note": "doi:10.1038/s41597-019-0175-6"
+        },
+        {
+          "path": "<DATA_ROOT>set_admission_audit_v1\\raw\\docs\\KINEADL_2019.txt",
+          "exists": true,
+          "bytes": 36121,
+          "sha256": "974765004cdfabceae63887b0a3791173c9661870c3432485293d988e019f111",
+          "label": "KINEADL_2019.txt",
+          "role": "extracted paper text",
+          "evidence": "EMPIRICAL",
+          "note": ""
+        }
+      ],
+      "download_requirement": {
+        "needed_for": "18-column order verification against real values, Experiment A/B subject-overlap resolution (global_person_id), measured/anomaly QC, kinematic trajectory inspection for task observability",
+        "minimum": "BE_UJI_DATASET.mat, 644 185 378 B, sha256 808f0dabb529e5a98af3ba075023e9430e5b80eb26cf296a4874ae3ad7762b61",
+        "total_if_all": 1070355215,
+        "withheld_reason": "the frozen plan forbids pulling the large body of data without an explicit requirement; the 1 815 639 B official guide (the schema document) was downloaded instead and its SHA-256 matches the published hash"
+      },
+      "documentation": {
+        "paper": "yes (open access)",
+        "readme": "guide (downloaded)",
+        "data_dictionary": "guide KINEMATIC_DATA / SUBJECT_DATA sections",
+        "calibration_documentation": "paper Methods; guide section 2",
+        "calibration_code": "BE-UJI AngleCalculation.zip (shared with KIN-MUS)",
+        "known_issue_documentation": "guide: some wrist angles missing for some subjects (improper wrist-sensor fit)"
+      },
+      "record_file_inventory": [
+        {
+          "filename": "BE_UJI_DATASET.mat",
+          "bytes": 644185378,
+          "sha256": "808f0dabb529e5a98af3ba075023e9430e5b80eb26cf296a4874ae3ad7762b61",
+          "evidence": "DOC",
+          "source": "Mendeley public API, 2026-09-21"
+        },
+        {
+          "filename": "CSV DATA.zip",
+          "bytes": 424354198,
+          "sha256": "fe4498b0cc8f646c0f8a2e9546d8ce0060602e2bcbc40351c5c2de881d2082ec",
+          "evidence": "DOC",
+          "source": "Mendeley public API, 2026-09-21"
+        },
+        {
+          "filename": "KINE-ADL BE-UJI DATASET_Guide.pdf",
+          "bytes": 1815639,
+          "sha256": "f1598d641c31cc7e8805cad076e4c2c84ae76afd3ade768cd30e2486a547654a",
+          "evidence": "DOC",
+          "source": "Mendeley public API, 2026-09-21",
+          "note": "downloaded here; local SHA-256 equals this published value"
+        }
+      ]
+    }
+  },
+  "datasets_absent_from_the_project_before_this_audit": [
+    "MyoKi",
+    "KINE-ADL"
+  ]
+}

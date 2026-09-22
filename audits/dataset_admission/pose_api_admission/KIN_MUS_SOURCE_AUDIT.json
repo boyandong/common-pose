@@ -1,0 +1,236 @@
+{
+  "artifact": "KIN_MUS_SOURCE_AUDIT.json",
+  "branch_id": "S6-POSE-API-DATASET-ADMISSION",
+  "plan_sha256": "4d2c8b162e2332a5891a5d89a53166e365b1bbd92c205222492d19957c9683ec",
+  "official_source": {
+    "value": {
+      "KINE_ADL": "https://data.mendeley.com/datasets/8mf4y2srgh/4 (DOI 10.17632/8mf4y2srgh.4)",
+      "KIN_MUS": "https://doi.org/10.5281/zenodo.3469380",
+      "angle_code": "https://doi.org/10.5281/zenodo.8418096",
+      "guide": "https://doi.org/10.5281/zenodo.8418416"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "exact_18_anatomical_angles": {
+    "value": [
+      "CMC1_F",
+      "CMC1_A",
+      "MCP1_F",
+      "IP1_F",
+      "MCP2_F",
+      "MCP2-3_A",
+      "PIP2_F",
+      "MCP3_F",
+      "PIP3_F",
+      "MCP4_F",
+      "MCP3-4_A",
+      "PIP4_F",
+      "PalmArch",
+      "MCP5_F",
+      "MCP4-5_A",
+      "PIP5_F",
+      "WR_F",
+      "WR_A"
+    ],
+    "evidence": "OFFICIAL-DOCUMENTED",
+    "source": "MOVMUS-UJI guide v2.1 Table 4, ANGLES block"
+  },
+  "acquisition_hardware": {
+    "value": "CyberGlove II (right) and CyberGlove III (left) instrumented gloves, 18 strain gauges each",
+    "evidence": "OFFICIAL-DOCUMENTED",
+    "source": "MOVMUS guide section 2.1"
+  },
+  "how_calibration_converts_sensors_to_anatomical_angles": {
+    "value": {
+      "raw": "a 0-255 signal per gauge",
+      "transform": "angle = (raw - raw_at_reference_posture) x gain, with additional modelled cross-coupling terms",
+      "specific_terms_read_from_the_code": {
+        "CMC1_F": "2-term mix of the CMC1 flexion and abduction gauges",
+        "CMC1_A": "the transpose mix of the same two gauges",
+        "MCP2-3_A": "linear + quadratic + interaction in the MCP2 and MCP3 flexion gauges",
+        "MCP3-4_A": "same form, sign-negated",
+        "MCP4-5_A": "same form, sign-negated",
+        "WR_F": "quadratic in one wrist gauge",
+        "WR_A": "linear in two wrist gauges",
+        "DIP2..DIP5": "0.87/0.79/0.73/0.84 x PIP - offset, floored at 0 for the 18-sensor glove; a separate gain column for the 22-sensor glove"
+      },
+      "source_file": "AngleCalculation/guant/Code/obtain_angles_RL_abd_rel.m"
+    },
+    "evidence": "OFFICIAL-CODE-INFERRED"
+  },
+  "per_subject_vs_global_calibration": {
+    "value": {
+      "answer": "GLOBAL PER GLOVE UNIT, not per subject",
+      "evidence": "the calibration protocol is titled 'across-subject calibration'; gains_identification.m hard-codes the UJI group's own glove gains in per-model, per-hand vectors and comments 'Gains values should be completed with own glove gains'"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "exact_zero_reference": {
+    "value": {
+      "definition": "the mean of a recorded REFERENCE posture: hands resting flat on the table, fingers and thumb close together, middle fingers aligned with the forearms",
+      "kind": "RECORDED REFERENCE POSTURE (not a nominal anatomical zero)",
+      "implication": "legitimate, but the zero is session-dependent, so any API record must name the reference posture in words - which the guide does"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED",
+    "source": "MOVMUS guide Figure 1 and section 2.1"
+  },
+  "units_and_sign": {
+    "value": {
+      "units": "degrees",
+      "sign_criteria": "PIP(2-5)_F, IP1_F, CMC1_F, MCP(1-5)_F, WR_F: Flexion+/Extension-;  MCP(2-3, 3-4, 4-5)_A: separated+/together-;  PalmArch: Flexion+/Extension-;  CMC1_A: Abduction+/Adduction-;  WR_A: ulnar deviation+/radial-",
+      "cross_check": "the released KIN-MUS block corroborates every criterion in the direction that matters"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED",
+    "source": "MOVMUS guide section 4.3"
+  },
+  "calibration_quality_metrics": {
+    "value": {
+      "identified": 0,
+      "note": "the cited calibration paper reports them, but the per-recording residuals are not distributed with the data"
+    },
+    "evidence": "UNKNOWN"
+  },
+  "hand_size_dependence_discussed": {
+    "value": "YES - explicitly: removed outliers are attributed to 'a poor fit of these gauges for a specific subject ... who had a small hand length'",
+    "evidence": "OFFICIAL-DOCUMENTED",
+    "source": "MOVMUS guide section 3.4"
+  },
+  "cross_talk_discussed": {
+    "value": "YES, and modelled, not merely acknowledged",
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "dip_directly_measured_or_inferred": {
+    "value": {
+      "answer": "INFERRED - computed from PIP, never measured",
+      "for_the_18_sensor_glove": "DIP = a*PIP - b, floored at 0",
+      "corroborating_source": "the group published a dedicated dataset titled 'Problems Using Data Gloves with Strain Gauges to Measure Distal Interphalangeal Joints' Kinematics' with static-posture controls that vary PIP and DIP independently"
+    },
+    "evidence": "OFFICIAL-CODE-INFERRED"
+  },
+  "exact_record": {
+    "value": {
+      "title": "A calibrated database of kinematics and EMG of the forearm and hand during activities of daily living",
+      "doi": "10.5281/zenodo.3469380",
+      "version_doi": "10.5281/zenodo.3337890",
+      "publication": "Scientific Data 6:270 (2019), doi:10.1038/s41597-019-0285-1",
+      "file": "KIN_MUS_UJI.mat, 86 661 263 bytes"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "n_subjects": {
+    "value": 22,
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "n_recordings": {
+    "value": {
+      "documented": 572,
+      "measured_released_containers": 1716,
+      "relationship": "1716 = 22 subjects x 26 ADLs x 3 phases; the 572 documented 'recordings' are the ADL-level recordings, each split into three phase segments"
+    },
+    "evidence": "DATA-INFERRED"
+  },
+  "adl_labels": {
+    "value": {
+      "n_adls": 26,
+      "ontology": "goal-directed activities of daily living",
+      "measured_adl_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    "evidence": "DATA-INFERRED"
+  },
+  "simultaneous_emg": {
+    "value": {
+      "n_channels": 7,
+      "placement": "seven representative forearm spot areas per hand",
+      "sampling": "1000 Hz, resampled to 100 Hz to match kinematics",
+      "downloaded_by_this_audit": false,
+      "role_in_this_decision": "NONE"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "can_emg_be_completely_ignored_for_task_head_construction": {
+    "value": "YES - the kinematic block is self-contained; the audit parsed it without touching RAW_EMG.mat, and the chosen POC representation uses no EMG",
+    "evidence": "DATA-INFERRED"
+  },
+  "can_its_own_emg_later_provide_an_independent_validation_arm": {
+    "value": "YES - the same corpus carries 7 sEMG spots for the same trials, so a later EMG->pose arm can be run on the same source data with no new data collection",
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "pose_observability_of_labels": {
+    "value": {
+      "movement_phase (1/2/3)": "POSE-SUFFICIENT - the manipulation phase has a higher MCP+PIP flexion sum than reaching in 22/22 subjects (median +66.44 deg)",
+      "ADL identity (26)": "NOT POSE-SUFFICIENT - goal/object/intention defined"
+    },
+    "evidence": "DATA-INFERRED"
+  },
+  "licensing_access": {
+    "value": {
+      "license": "CC-BY-4.0",
+      "access_right": "open",
+      "registration": "none",
+      "downloaded": true,
+      "bytes": 86661263,
+      "sha256_verified": true
+    },
+    "evidence": "DATA-INFERRED"
+  },
+  "measured_structure": {
+    "value": {
+      "trial_containers": 1716,
+      "usable_trials": 1713,
+      "frames": 564894,
+      "channels": 18,
+      "phases": [
+        1,
+        2,
+        3
+      ],
+      "grid_expected_cells": 1716,
+      "grid_present_cells": 1714,
+      "empty_trials": 3,
+      "duplicated_cells": 2
+    },
+    "evidence": "DATA-INFERRED"
+  },
+  "is_it_independent_of_KINE_ADL": {
+    "value": "NO - five of the seven independence dimensions are shared (group, hardware family, calibration method, hand model, preprocessing code)",
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "verdict": "ADMIT",
+  "named_limitations": [
+    "one unlabelled hand in the released block",
+    "4 of 16 API DOFs absent (all DIPs)",
+    "thumb CMC-AA and thumb IP are MEDIUM, not HIGH",
+    "calibration per glove unit, with a documented small-hand outlier risk",
+    "26 ADL identities are not pose-sufficient; only the phase label is",
+    "3 empty trials and 2 duplicated cells at subject 21/22 ADL 25"
+  ],
+  "documentation_audit": "COMPLETE",
+  "empirical_data_qc": "POSSIBLE AND DONE"
+}

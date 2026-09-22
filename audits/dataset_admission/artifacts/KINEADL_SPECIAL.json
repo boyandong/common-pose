@@ -1,0 +1,250 @@
+{
+  "artifact": "KINEADL_SPECIAL.json",
+  "plan_sha256": "fba2b20623392dd809d5ed28c7850387acc721e9a91ff1611e7fba0d89fc889d",
+  "corpus_present": false,
+  "A_schema": {
+    "authoritative_order": [
+      "CMC1_F",
+      "CMC1_A",
+      "MCP1_F",
+      "IP1_F",
+      "MCP2_F",
+      "MCP2-3_A",
+      "PIP2_F",
+      "MCP3_F",
+      "PIP3_F",
+      "MCP4_F",
+      "MCP3-4_A",
+      "PIP4_F",
+      "PalmArch",
+      "MCP5_F",
+      "MCP4-5_A",
+      "PIP5_F",
+      "WR_F",
+      "WR_A"
+    ],
+    "authority": "KINE-ADL BE-UJI DATASET_Guide.pdf, KINEMATIC_DATA -> ANGLES block (SHA-256 equals the Mendeley-published hash)",
+    "hands": "BOTH: 18 R_ columns then 18 L_ columns, 36 in total",
+    "handedness_handling": "explicit in the column names; the guide also carries SUBJECT_DATA.LATERALITY (1 = right handed, 2 = left handed)",
+    "positions_differing_from_kin_mus": 8,
+    "positional_mapping_allowed": false,
+    "semantic_mapping": [
+      {
+        "kine_adl_position": 0,
+        "name": "CMC1_F",
+        "kin_mus_position": 1,
+        "positional_match": false
+      },
+      {
+        "kine_adl_position": 1,
+        "name": "CMC1_A",
+        "kin_mus_position": 0,
+        "positional_match": false
+      },
+      {
+        "kine_adl_position": 2,
+        "name": "MCP1_F",
+        "kin_mus_position": 2,
+        "positional_match": true
+      },
+      {
+        "kine_adl_position": 3,
+        "name": "IP1_F",
+        "kin_mus_position": 3,
+        "positional_match": true
+      },
+      {
+        "kine_adl_position": 4,
+        "name": "MCP2_F",
+        "kin_mus_position": 5,
+        "positional_match": false
+      },
+      {
+        "kine_adl_position": 5,
+        "name": "MCP2-3_A",
+        "kin_mus_position": 4,
+        "positional_match": false
+      },
+      {
+        "kine_adl_position": 6,
+        "name": "PIP2_F",
+        "kin_mus_position": 6,
+        "positional_match": true
+      },
+      {
+        "kine_adl_position": 7,
+        "name": "MCP3_F",
+        "kin_mus_position": 7,
+        "positional_match": true
+      },
+      {
+        "kine_adl_position": 8,
+        "name": "PIP3_F",
+        "kin_mus_position": 8,
+        "positional_match": true
+      },
+      {
+        "kine_adl_position": 9,
+        "name": "MCP4_F",
+        "kin_mus_position": 10,
+        "positional_match": false
+      },
+      {
+        "kine_adl_position": 10,
+        "name": "MCP3-4_A",
+        "kin_mus_position": 9,
+        "positional_match": false
+      },
+      {
+        "kine_adl_position": 11,
+        "name": "PIP4_F",
+        "kin_mus_position": 11,
+        "positional_match": true
+      },
+      {
+        "kine_adl_position": 12,
+        "name": "PalmArch",
+        "kin_mus_position": 12,
+        "positional_match": true
+      },
+      {
+        "kine_adl_position": 13,
+        "name": "MCP5_F",
+        "kin_mus_position": 14,
+        "positional_match": false
+      },
+      {
+        "kine_adl_position": 14,
+        "name": "MCP4-5_A",
+        "kin_mus_position": 13,
+        "positional_match": false
+      },
+      {
+        "kine_adl_position": 15,
+        "name": "PIP5_F",
+        "kin_mus_position": 15,
+        "positional_match": true
+      },
+      {
+        "kine_adl_position": 16,
+        "name": "WR_F",
+        "kin_mus_position": 16,
+        "positional_match": true
+      },
+      {
+        "kine_adl_position": 17,
+        "name": "WR_A",
+        "kin_mus_position": 17,
+        "positional_match": true
+      }
+    ],
+    "note": "8 of 18 positions differ from the KIN-MUS order, so a positional mapping between the two releases would silently swap four adjacent pairs."
+  },
+  "B_subjects": {
+    "experiment_A": {
+      "n_subjects": 20,
+      "records": "101..199",
+      "n_elementary_tasks": 99
+    },
+    "experiment_B": {
+      "n_subjects": 20,
+      "records": "201..279",
+      "n_elementary_tasks": 79
+    },
+    "overlap_documented": 15,
+    "unique_people_documented": 25,
+    "key": "(EXPERIMENT, SUBJECT) - the two experiments use their own subject numbering",
+    "global_person_id_resolvable": false,
+    "why_not": "which 15 of the 40 (experiment, subject) keys are the same people is stored only in SUBJECT_DATA inside BE_UJI_DATASET.mat (644 185 378 B), which was not downloaded",
+    "hazard": "a grouped split by SUBJECT that crosses the two experiments leaks 15 people into both folds while looking correct; a split by RECORD range or by EXPERIMENT is safe",
+    "evidence": "INFERENCE"
+  },
+  "C_calibration": {
+    "units": "degrees; 'Joint angles (deg)' in the guide data-structure header [DOC]",
+    "reference_posture": "hands resting flat on the table, fingers and thumb close together, middle fingers aligned with the forearms; the angle is measured WITH RESPECT TO that posture [DOC]",
+    "zero_definition": "the recorded reference posture of the session - same convention as KIN-MUS and the MOVMUS guide",
+    "positive_direction": "PIP(2-5)_F, IP1_F, CMC1_F, MCP(1-5)_F, WR_F: flexion +; MCP(2-3,3-4,4-5)_A: separated +; PalmArch: flexion +; CMC1_F: flexion +; CMC1_A: abduction +; WR_A: ULNAR + / radial - [DOC]",
+    "wr_a_vs_kin_mus": "OPPOSITE. The KIN-MUS paper says radial + / ulnar -. DOCUMENTATION_CONFLICT across the UJI family.",
+    "gloves": "CyberGlove II on the RIGHT hand and CyberGlove III on the LEFT hand, 18 strain gauges each [DOC]",
+    "instrument_specific_gains": "the official code record states plainly that 'gains in the gains_identification.m function have to be replaced with the gains obtained' for one's own glove, and ships the UJI group's gains as placeholders. The gains actually used to build KINE-ADL are NOT published. [DOC]",
+    "per_side_gains": "the code carries SEPARATE right and left gain vectors of 42 entries each (5 PIP, 5 MCP_f, 18 MCP_a, 1 CMC5, 4 CMC1, 5 WRIST, 4 DIP), so the two gloves are calibrated independently - a shared gain table must never be assumed [DOC]",
+    "missing_wrist_angles": "the guide marks WR_F and WR_A with '*Some wrist angles are missing because of improper fitting of the wrist sensors to some subjects' hands.' [DOC]",
+    "subject_arom_available": "yes - SUBJECT_DATA carries per-DOF max/min AROM for both hands, so an AROM-based sanity check is possible once the corpus is obtained [DOC]",
+    "raw_to_processed_reproducible": false,
+    "flag": "TRANSFORM_NOT_INDEPENDENTLY_REPRODUCIBLE"
+  },
+  "D_segmentation": {
+    "records": "RECORD 101..199 (A) and 201..279 (B); a record is one continuous task performed in a natural, non-directed way",
+    "elementary_tasks": "every record is divided into ELEMENTARY TASKS, 178 in total (99 in A, 79 in B); each elementary task has its own ID [DOC]",
+    "boundary_definition": "the paper: 'the start and the end of each elementary task were identified ... In all other cases, the release was performed on the surface closest to the subject' - the boundary is the object RELEASE / placement event, per the video review [DOC]",
+    "sampling": "100 Hz, filtered with a 2nd-order two-way low-pass Butterworth at 10 Hz [DOC]",
+    "labels_are": "trial-wise continuous segments, not frame-wise annotations of an instantaneous class",
+    "api_appendix": "the guide's Appendix II lists, per record, the elementary-task ID, the object IDs and the scenario ID, so task content is reconstructible without the corpus"
+  },
+  "E_observability": {
+    "method": "documentation-based semantic classification only; no kinematic trajectory was available, so nothing here is an observability measurement",
+    "classes": {
+      "1_likely_pose_observable": [
+        "tasks whose whole content is a hand posture/shape change with no object identity needed, e.g. 'Folding a piece of paper' (A17) start vs end, 'Beating the egg with a fork' (116) vs 'Cleaning the worktop' (210) - wrist oscillation vs flat-hand drag"
+      ],
+      "2_pose_plus_temporal_potentially_observable": [
+        "repeated cyclic actions: 'Beating the egg with a fork' (116), 'Washing the glass, the bowl, the dish, the fork and the knife' (208), 'Beating an egg and salting it' (130), 'Pouring water from the jug into the cup' (A22/122)"
+      ],
+      "3_object_or_context_dependent": [
+        "'Using a toaster' (101), 'Opening the fridge', 'Opening a carton of milk with scissors' (120), 'Taking the pan by the handle' - the identity of the task depends on which object is being held"
+      ],
+      "4_clearly_not_pose_sufficient": [
+        "'Carrying utensils and ingredients to the worktop' (112-114), 'Putting the tray with 3 kg of food into the oven' (129), 'Carrying the carton of eggs ... back to the fridge' (127) - whole-body transport, the hand pose is incidental",
+        "'*****Displacement without manipulation' rows in the appendix"
+      ],
+      "5_uncertain": [
+        "the remaining majority of the 178; deciding needs the trajectories"
+      ]
+    },
+    "n_elementary_tasks": 178,
+    "n_appendix_rows_parsed": 43,
+    "candidate_contrasts": [
+      {
+        "id": "CAND-1",
+        "contrast": "SINGLE-HAND POSTURE: a power-grip segment vs a pinch-grip segment",
+        "why_physical": "a cylindrical grip and a pinch grip differ in the MCP/PIP flexion pattern and in the thumb placement; that is a pure hand-shape difference",
+        "why_not_object_dependent": "the contrast is defined on the SHAPE, not on which object produced it",
+        "n_classes": 2,
+        "subjects": ">=20 per experiment",
+        "verification": "NOT VERIFIED - requires the corpus",
+        "evidence": "INFERENCE"
+      },
+      {
+        "id": "CAND-2",
+        "contrast": "HANDEDNESS / ROLE ASYMMETRY: bimanual tasks where one hand stabilises and the other manipulates",
+        "why_physical": "the two hands' pose distributions differ systematically during the same elementary task",
+        "why_not_object_dependent": "the contrast is defined per hand",
+        "n_classes": 2,
+        "subjects": ">=20",
+        "verification": "NOT VERIFIED - requires the corpus",
+        "evidence": "INFERENCE"
+      },
+      {
+        "id": "CAND-3",
+        "contrast": "CYCLE-PHASE within a repeated action (fork beating, cloth wiping): contact vs recovery half-cycle",
+        "why_physical": "a cyclic action has a hand-shape and velocity signature",
+        "why_not_object_dependent": "the phase is defined by the action itself",
+        "n_classes": 2,
+        "subjects": ">=20",
+        "verification": "NOT VERIFIED - requires the corpus",
+        "evidence": "INFERENCE"
+      }
+    ],
+    "candidate_requirements_met": {
+      "at_least_two_classes": true,
+      "many_subjects": true,
+      "enough_trials": "UNVERIFIED",
+      "physical_reason": true,
+      "not_object_dependent": true,
+      "not_scene_dependent": true,
+      "not_emg_dependent": true
+    },
+    "verdict": "CANDIDATE LIST ONLY.  Every candidate is UNVERIFIED because the corpus was not downloaded; no candidate may be treated as selected."
+  },
+  "evidence": "DOC"
+}

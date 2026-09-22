@@ -1,0 +1,459 @@
+{
+  "artifact": "ARTIFACT_MANIFEST.json",
+  "branch_id": "S7-DATASET-ADMISSION-COORDINATE-AUDIT",
+  "lane": "<DATA_ROOT>set_admission_audit_v1",
+  "plan_sha256": "fba2b20623392dd809d5ed28c7850387acc721e9a91ff1611e7fba0d89fc889d",
+  "plan_file": "AUDIT_PLAN.md",
+  "commit": "COMMIT PENDING - the project root is not a git repository; provenance is content-hash based",
+  "reconstruction_disclosure": "exploratory reconnaissance scripts prefixed `_` live in scripts/ and are excluded from the evidence chain (frozen plan section 17)",
+  "required_deliverables": [
+    {
+      "path": "README.md",
+      "exists": true,
+      "bytes": 4991,
+      "sha256": "3ac0aceee149a1f63f8759d73527c99b4983b949dac63d28add0ace0679f50f8"
+    },
+    {
+      "path": "AUDIT_PLAN.md",
+      "exists": true,
+      "bytes": 18161,
+      "sha256": "fba2b20623392dd809d5ed28c7850387acc721e9a91ff1611e7fba0d89fc889d"
+    },
+    {
+      "path": "PLAN_SHA256.txt",
+      "exists": true,
+      "bytes": 80,
+      "sha256": "4cf71c6b9c7e51847c6c7820ac15c9e1a9372afe0e91dc77314ecfb8524421e7"
+    },
+    {
+      "path": "BUGFIX_LOG.md",
+      "exists": true,
+      "bytes": 7075,
+      "sha256": "9ff3f983605fa8c0ae76d314312f1ea96ae3e33841c5387b0ce9f060339a6daa"
+    },
+    {
+      "path": "DATASET_MANIFEST.csv",
+      "exists": true,
+      "bytes": 3933,
+      "sha256": "befac6871b3457294079511686f718b7bb71e91eae5fd21cf252daff85b8cdd7"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.md",
+      "exists": true,
+      "bytes": 10345,
+      "sha256": "cad73b8768a3c1a6440b9d9ace033faab00b1bfb078665333ed63b8c152a10b6"
+    },
+    {
+      "path": "SCHEMA_AUDIT.md",
+      "exists": true,
+      "bytes": 5327,
+      "sha256": "4a570616974f4c844576a4bcb977c81ad0e12e9b909e22e2c045f818eabd9cb6"
+    },
+    {
+      "path": "COORDINATE_LEDGER.csv",
+      "exists": true,
+      "bytes": 70850,
+      "sha256": "3d738e7fc3e1b3a35ace3e2e9f65ad1ace453297189408ec107387c82dfe9b3b"
+    },
+    {
+      "path": "PHYSICAL_QC.md",
+      "exists": true,
+      "bytes": 5692,
+      "sha256": "bd2c508359f114b3db272d05a31cac8ea44d807406e4dc132e533aa791508f9e"
+    },
+    {
+      "path": "LABEL_AUDIT.md",
+      "exists": true,
+      "bytes": 10933,
+      "sha256": "34912b502732ee6d6541841745448a4272acec747c709a239cd3cde3f0119327"
+    },
+    {
+      "path": "SYNC_AUDIT.md",
+      "exists": true,
+      "bytes": 3953,
+      "sha256": "4b0f7ce5cdbd3a59dbd0bcb4db18ad53e8af747c6c732db81de1914f5b817e0e"
+    },
+    {
+      "path": "SHARED10_PROVENANCE_AUDIT.md",
+      "exists": true,
+      "bytes": 18955,
+      "sha256": "2a0f7b899f9b8745f9d72a9c4bb963a1ea31ee8aec6b2bda9c1bccf1aa9ce1ca"
+    },
+    {
+      "path": "COMMON_API_MAPPING_MATRIX.csv",
+      "exists": true,
+      "bytes": 17574,
+      "sha256": "06c9c811b2bf72203da18bd81f869afc36ce2482c0de79a3780c5399a7c613b6"
+    },
+    {
+      "path": "LABEL_ADMISSION_MATRIX.csv",
+      "exists": true,
+      "bytes": 6164,
+      "sha256": "8a1d851b88a7c69d05b2f7a7b761a1625373cad5c85fcb335d6507a268cc4b57"
+    },
+    {
+      "path": "ADMISSION_DECISION.md",
+      "exists": true,
+      "bytes": 24614,
+      "sha256": "f7eb79763815ebb6d0b02b11c43eae6d4f8d550cf5c25b8e63b6bd8363ff8c73"
+    },
+    {
+      "path": "ARTIFACT_MANIFEST.json",
+      "exists": false
+    }
+  ],
+  "missing_required": [],
+  "artifacts": [
+    {
+      "path": "artifacts/ADMISSION_DECISION.json",
+      "bytes": 19418,
+      "sha256": "cb6c90b6f697b99417a7c5d3a97a7b7084f319d0bb1c77396ba2e228367350ab"
+    },
+    {
+      "path": "artifacts/ARTIFACT_MANIFEST.json",
+      "bytes": 14792,
+      "sha256": "d20d7e4d4a9cd07731127b9f5462a19e85c4a6ec9487479c82f23dad7bc989a8"
+    },
+    {
+      "path": "artifacts/COMMON_API.json",
+      "bytes": 60821,
+      "sha256": "60f41748f58fceb8a6587016fcbaba4b900648db56d6fcc693f6623e37bcce6a"
+    },
+    {
+      "path": "artifacts/COORDINATE_LEDGER.json",
+      "bytes": 127373,
+      "sha256": "5235e48d38166848c598e7ded701e2bcbeda266d7cb2495cf54da5238bca8f14"
+    },
+    {
+      "path": "artifacts/FIGURES.json",
+      "bytes": 1140,
+      "sha256": "f794a633fd879b956d19757b76089e7d92089013f34c6fb47210b86882191e6f"
+    },
+    {
+      "path": "artifacts/KINEADL_SPECIAL.json",
+      "bytes": 10944,
+      "sha256": "aaeaff9934980cac61d3091f0a44411848d6b8803891476dea7598ecdd8e1916"
+    },
+    {
+      "path": "artifacts/KINMUS_SPECIAL.json",
+      "bytes": 21662,
+      "sha256": "79ddf8c63d32926804f4087d28126330ec677f9c7b08fe8c1bf528c6b3b7ca43"
+    },
+    {
+      "path": "artifacts/LABEL_AUDIT.json",
+      "bytes": 8648,
+      "sha256": "c35e86046ba35f47578234b6f4910ca65768a2af948946c425d9f0208d57d3f7"
+    },
+    {
+      "path": "artifacts/MYOKI_SPECIAL.json",
+      "bytes": 34682,
+      "sha256": "364c2bbda5f1ec59f0b41e3ff9d745d2ae4b443c5e14af844928574d0fb9831a"
+    },
+    {
+      "path": "artifacts/SCHEMA_AUDIT.json",
+      "bytes": 19864,
+      "sha256": "72a7d67d569bcec9ba74d7634303b678e5be70040053d2b8d95c7b20147d3756"
+    },
+    {
+      "path": "artifacts/SHARED10_PROVENANCE.json",
+      "bytes": 28363,
+      "sha256": "7c88e4551f7617bbf47a5f42b285371122f704fd4c4ab26957e8fa1bdbc86ab8"
+    },
+    {
+      "path": "artifacts/SOURCE_FREEZE.json",
+      "bytes": 17687,
+      "sha256": "58d7364f9071f638f4be4d6b3eb9d45778fd0ec3081a17fdbed505111e4d387a"
+    },
+    {
+      "path": "artifacts/_kinmus_K.npy",
+      "bytes": 81344864,
+      "sha256": "044366ab1aaf954042a1110130b3696ee8250b7c599e721b88451ac057c96d01"
+    }
+  ],
+  "figures": [
+    {
+      "path": "figures/01_kinmus_order_and_shared10.png",
+      "bytes": 83696,
+      "sha256": "980fe08a1d8819e84813e5d63a75d34f6d8d57710f2082fe8e4ea36509c1cead"
+    },
+    {
+      "path": "figures/02_kinmus_correlation_structure.png",
+      "bytes": 96376,
+      "sha256": "e16ff569197da8d096e3946d94299cf9aee4003943d276772aa322d758d3f95a"
+    },
+    {
+      "path": "figures/03_myoki_calibration_parity.png",
+      "bytes": 51767,
+      "sha256": "cf06e3b7dfd501c5acad61f3e73afe0a51db08f8699b74819f8b83259978c641"
+    },
+    {
+      "path": "figures/04_myoki_sampling_inflation.png",
+      "bytes": 34574,
+      "sha256": "66cd0df096d7798ecc82b3e73115aed0aa8c84ba95301bb9fd71158cf8f46d51"
+    },
+    {
+      "path": "figures/05_kinmus_physical_anchors.png",
+      "bytes": 29590,
+      "sha256": "f5b8c99998b7193e85b2831256301d95dbc9ab8f22204d202770263c41792422"
+    },
+    {
+      "path": "figures/06_kinmus_wrist_envelope.png",
+      "bytes": 30376,
+      "sha256": "15ca53f4c891ef3ab0050f0b0ed78dc1a5b1a539a7c8b19ed2d9e9a2d770f26e"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "scripts/01_source_freeze.py",
+      "bytes": 18736,
+      "sha256": "1cd1553ff733c70ff9f7524f0fee4e1eb0c0f93f7bedfb93e2559b8d3776093d"
+    },
+    {
+      "path": "scripts/02_schema_audit.py",
+      "bytes": 19240,
+      "sha256": "4aa49f44abbce630cfe07d734d57b88d8c5bfb2894be3162f479f89b8dedf816"
+    },
+    {
+      "path": "scripts/03_shared10_provenance.py",
+      "bytes": 30404,
+      "sha256": "2c4a5ea3a50fe82d1c86a27591b59ef55c7aac48c97d39c2ea695aea53e6817e"
+    },
+    {
+      "path": "scripts/04_myoki_special.py",
+      "bytes": 20611,
+      "sha256": "bcbfaa33814759fca6e866a24b530c2533ae2e063ab4a6faf6ccce21c6c0ebc0"
+    },
+    {
+      "path": "scripts/05_kinmus_special.py",
+      "bytes": 21160,
+      "sha256": "a067d36bb2fd0728190ceea1a04f3cd8cc11a263b80c72c4fe388dc1c28e9ba3"
+    },
+    {
+      "path": "scripts/06_kineadl_special.py",
+      "bytes": 14719,
+      "sha256": "2b92a17dc5c7fce53d4c0a489954c536097ecb6950e7a2b529d811d4d23df2f8"
+    },
+    {
+      "path": "scripts/07_coordinate_ledger.py",
+      "bytes": 19234,
+      "sha256": "067242f736503597eee03154aaa2f11b5972ab34e0efa2e031190a4bbbc140ce"
+    },
+    {
+      "path": "scripts/08_common_api_matrix.py",
+      "bytes": 14155,
+      "sha256": "97e4060de4356f9e646d7466cda377e1732519d9c24a196f32747fa34fe7c55c"
+    },
+    {
+      "path": "scripts/09_label_admission.py",
+      "bytes": 15006,
+      "sha256": "c03eee1c63af81ee7d2291fcdd2cb82523932cfd9a7a1ad347c520bda7005c27"
+    },
+    {
+      "path": "scripts/10_sync_physical_qc.py",
+      "bytes": 10635,
+      "sha256": "70e4700ad45e99eb4c3a4e6804a6afa1e96b8d57c5e7f43c0c2385aaa600e8d9"
+    },
+    {
+      "path": "scripts/11_figures.py",
+      "bytes": 10045,
+      "sha256": "7255423f7d9d46940a3fb11295b748f88e41e0802b26921473c42cd422a29cae"
+    },
+    {
+      "path": "scripts/12_decision.py",
+      "bytes": 36182,
+      "sha256": "7c7ce827543fc2c061f138ca11773cc7de8696a09947506766674c4ac90bc278"
+    },
+    {
+      "path": "scripts/13_manifest.py",
+      "bytes": 3445,
+      "sha256": "5da9573a31bf18d622eb8846853f1dac4a1fb2a6e8e6414e505dd9dbcbcff607"
+    },
+    {
+      "path": "scripts/99_fact_check_audit.py",
+      "bytes": 21343,
+      "sha256": "4b68ed5e794f64fa709198e1a25eb39d319b69431fb08c0a2ad991b5ddb6c58a"
+    },
+    {
+      "path": "scripts/_freeze_plan.py",
+      "bytes": 351,
+      "sha256": "e0abb7f20003b52471abeca160a859bb3673b5ef529f21e16dcb2c3f1ab739c1"
+    },
+    {
+      "path": "scripts/_guide_coords.py",
+      "bytes": 775,
+      "sha256": "f0bcc04fcf0854952ef6317581d56fe0e6bb3e8c50f8d20935e5e83829c6005c"
+    },
+    {
+      "path": "scripts/_guide_coords2.py",
+      "bytes": 731,
+      "sha256": "c7d26863783a3f2890544a73e0ea0617c5ea9e9fe3c849acd38c7593faab943c"
+    },
+    {
+      "path": "scripts/_html2txt.py",
+      "bytes": 734,
+      "sha256": "d9ba349aca8d1169325dff36f8e840f8326ab65ec5263d1511b08ab36189a99f"
+    },
+    {
+      "path": "scripts/_pdf2txt.py",
+      "bytes": 539,
+      "sha256": "baabbdb5d427292bf13b307e37281e2f87e6ab8e5c12bb5829b54b6a470a844f"
+    },
+    {
+      "path": "scripts/_pdf2txt_kineadl.py",
+      "bytes": 640,
+      "sha256": "8e37d5fb7a21f7b39a7814316f498be8940fec8d6c9eb17a0bfea00133282560"
+    },
+    {
+      "path": "scripts/_pdf_coords.py",
+      "bytes": 1001,
+      "sha256": "abdbbe3527c78c72aca4fbb0f10885d37c7b08f8bbd326cdabec5c6b55413680"
+    },
+    {
+      "path": "scripts/_pdf_coords2.py",
+      "bytes": 873,
+      "sha256": "11f369223d7f59ff7dba0c9cf155da098e93728f9c940713766e2f8a5916d0eb"
+    },
+    {
+      "path": "scripts/_probe_cal_sheets.py",
+      "bytes": 449,
+      "sha256": "926fb0023dd6fa5e7f69972de1bd5b9c053daff0ed7380acc227464f34d07065"
+    },
+    {
+      "path": "scripts/_probe_kinmus_order.py",
+      "bytes": 3086,
+      "sha256": "1f64005e65842fcdf336788945121380246eed72b04c1a1cbc9497c38cc1f36b"
+    },
+    {
+      "path": "scripts/_probe_magic.py",
+      "bytes": 366,
+      "sha256": "1e53689eb630ed63a8ee9205d26824b97a952537eaa4f33018089a87af269935"
+    },
+    {
+      "path": "scripts/_probe_mendeley.py",
+      "bytes": 750,
+      "sha256": "51d33bb78bd40a6621a3b95e2f4294ca51577633a6e43f22aac79d02b6b6f790"
+    },
+    {
+      "path": "scripts/_probe_mendeley2.py",
+      "bytes": 428,
+      "sha256": "932083ca63dd27355d1a8cf23b54d2f4f36bea0eabbe88a688221159a3413310"
+    },
+    {
+      "path": "scripts/_probe_myoki_data.py",
+      "bytes": 1517,
+      "sha256": "c6f8982f2eae36ae278bad2afa347c0c544d4f68c462dcd164b89c48823dae4e"
+    },
+    {
+      "path": "scripts/_probe_myoki_mat.py",
+      "bytes": 636,
+      "sha256": "70ff44c46dc673a5025ed8c828ad82f158782597bb804384b2fc9acd8b5286e6"
+    },
+    {
+      "path": "scripts/_probe_myoki_parity.py",
+      "bytes": 2944,
+      "sha256": "d3589201c455470cb877b7541cf9daa08b0155812d679533dfbbefa34f50b3cb"
+    },
+    {
+      "path": "scripts/_probe_myoki_xlsx.py",
+      "bytes": 650,
+      "sha256": "f2c636dfcaa0717affdf72cc6de3feefe81b59892514f12832d284c58fa02db7"
+    },
+    {
+      "path": "scripts/_probe_order_discriminate.py",
+      "bytes": 3415,
+      "sha256": "c06a97eaf9473a18baea12ef92f83b90d7068326135f6b102e6f8d22c0dc9f9b"
+    },
+    {
+      "path": "scripts/_read_canon16.py",
+      "bytes": 349,
+      "sha256": "e8db088d9d02a40dbedfce462713f9e82aab14a0d9d6ff4a7de5aee68e7670c8"
+    },
+    {
+      "path": "scripts/aud_common.py",
+      "bytes": 7236,
+      "sha256": "c86643f9247e84dd591e718e61dd734ddb4906b7de83f02e07f62bc736b4318c"
+    }
+  ],
+  "raw_and_meta": [
+    {
+      "path": "raw/docs/KINEADL_2019.pdf",
+      "bytes": 1772499,
+      "sha256": "f7dfc65af86d2d084a5dc3ee40d38a097821dc0cea0c55bb1034550ba2255ef7"
+    },
+    {
+      "path": "raw/docs/KINEADL_2019.txt",
+      "bytes": 36121,
+      "sha256": "974765004cdfabceae63887b0a3791173c9661870c3432485293d988e019f111"
+    },
+    {
+      "path": "raw/docs/KINEADL_paper.txt",
+      "bytes": 35549,
+      "sha256": "6d48a52a025d1212e8c2412d6be367dd5c8059c2306ec464af6aeb192d71577d"
+    },
+    {
+      "path": "raw/docs/KINMUS_2019.pdf",
+      "bytes": 2261144,
+      "sha256": "cacbfdce4b1369ce7d02790d1e931661d11159724f1dfe6fbda1b27f22a74dc0"
+    },
+    {
+      "path": "raw/docs/KINMUS_2019.txt",
+      "bytes": 35849,
+      "sha256": "e38926c0b30ff117bc804dfc90bd975d1d111239f5a1af2d1ff3b19624ac22ad"
+    },
+    {
+      "path": "raw/docs/KINMUS_paper.txt",
+      "bytes": 37571,
+      "sha256": "aae1b1bfac3aa8553e665c482cf128288a9898b518e9870a45f00f7a64291cd9"
+    },
+    {
+      "path": "raw/kine_adl/KINE-ADL_BE-UJI_DATASET_Guide.pdf",
+      "bytes": 1815639,
+      "sha256": "f1598d641c31cc7e8805cad076e4c2c84ae76afd3ade768cd30e2486a547654a"
+    },
+    {
+      "path": "raw/kine_adl/KINE-ADL_GUIDE.txt",
+      "bytes": 48251,
+      "sha256": "1f675b93b71847dadd1f5f1e26af9559d77e09934be3256d9f9b72188e602294"
+    },
+    {
+      "path": "raw/myoki/Database_comparison.py",
+      "bytes": 3944,
+      "sha256": "7ede8a62a11758835a5a06adf4dd4f73284051716af0746fa23d4a7559bc6b9e"
+    },
+    {
+      "path": "raw/myoki/Database_comparison.xlsx",
+      "bytes": 10557,
+      "sha256": "0fe1fe3cdecbff03f77780300c593067f711af4763f013ce70fd6475b8d19c48"
+    },
+    {
+      "path": "raw/myoki/Glove_calibration.xlsx",
+      "bytes": 12503,
+      "sha256": "9719e26ffa6fff3552ab220ed4f9323b9cc12fae0ceb56a2ad0ffb8f3254493d"
+    },
+    {
+      "path": "raw/myoki/Participant_information.xlsx",
+      "bytes": 12908,
+      "sha256": "94f5dc9b614a3942b596ff3461a8a36ed3acd94732182e5964b6771e793163b9"
+    },
+    {
+      "path": "raw/myoki/Synchronicity_test.mat",
+      "bytes": 48961776,
+      "sha256": "7bc35b0dff5159e4127dec38f182b1af8325e3624246e2a4fc58abff99a8a51b"
+    },
+    {
+      "path": "raw/myoki/Task_categorization.xlsx",
+      "bytes": 21143,
+      "sha256": "effe2e7c989e88aaf5ee5098773aaf017e61fd988bd90d2db1534775be15b97b"
+    },
+    {
+      "path": "raw_meta/dlr_myography_kinematics_s41597-025-05852-6.pdf",
+      "bytes": 4005665,
+      "sha256": "a765e2c6c801a52ac194ee6ab3cbe137fc6170d20cb214567a80950f19f4daf7"
+    },
+    {
+      "path": "raw_meta/dlr_myography_kinematics_s41597-025-05852-6.txt",
+      "bytes": 63644,
+      "sha256": "e0de9cbed3da2149a8e50b7634e2a73cf518e8f071a78c27882ccb6d89f8db83"
+    }
+  ]
+}

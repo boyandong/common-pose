@@ -1,0 +1,167 @@
+{
+  "artifact": "ONTOLOGY_FREEZE.json",
+  "lane": "human_semantic_validation/formal_s6",
+  "status": "FROZEN — FINAL HUMAN ANNOTATION ONTOLOGY FOR S6",
+  "frozen_utc": "2026-09-19T12:58:26.263197+00:00",
+  "frozen_local": "2026-09-19T20:58:26.263197+08:00",
+  "frozen_for": "the formal S6 blind human-semantic benchmark (A and C)",
+  "derived_from": "the exact Pilot-3 ontology; semantic wording copied verbatim, nothing authored or reworded at freeze time",
+  "formal_copy_diff_vs_pilot3": {
+    "fields_changed": [
+      "card.marking"
+    ],
+    "reason": "The Pilot-3 file's marking reads “开发版本体（Pilot 3）。正式 S6 基准仍使用旧版说明，直到 Pilot 3 通过为止。” It is rendered to the annotator (addNote(card.marking)). On a formal page that sentence is false, because this IS now the formal wording. The copy served to the formal pages therefore carries a formal marking instead.",
+    "not_changed": "No rule, state, class row, choice text, reminder, decision step or label code is touched. `semantic_content_sha256` is asserted EQUAL between the frozen Pilot-3 file and the formal copy by stage_formal_ac.py.",
+    "added_metadata": "an additive `formal_freeze` block referencing this record",
+    "left_as_is": "`ontology_status` and `card.status` still read DEVELOPMENT. They are provenance fields of the Pilot-3 build, are not rendered, and are superseded for the formal run by this record. Left untouched so the diff against the frozen source stays one line.",
+    "formal_marking": "正式 S6 人类标注规则（已冻结）。语义与 Pilot 3 完全一致，不再修订。拇指判断看拇指根部与虎口；Class 4 仅诊断，不进入五分类主要结果。"
+  },
+  "versions": {
+    "ontology_id": "S6_PILOT3_THUMB_REVISED_ONTOLOGY",
+    "ontology_version": 1,
+    "ontology_status_in_frozen_source": "DEVELOPMENT",
+    "ontology_marking_in_frozen_source": "开发版本体（Pilot 3）。正式 S6 基准仍使用旧版说明，直到 Pilot 3 通过为止。",
+    "ontology_marking_on_formal_pages": "正式 S6 人类标注规则（已冻结）。语义与 Pilot 3 完全一致，不再修订。拇指判断看拇指根部与虎口；Class 4 仅诊断，不进入五分类主要结果。",
+    "ui_version": "6.0.0",
+    "annotation_protocol_version": "s6-formal-human-semantic-v2",
+    "label_codes": [
+      "AMBIGUOUS",
+      "CLASS_1",
+      "CLASS_2",
+      "CLASS_3",
+      "CLASS_4",
+      "CLASS_6",
+      "CLASS_7",
+      "UNJUDGEABLE",
+      "UNKNOWN"
+    ],
+    "primary_classes": [
+      "CLASS_1",
+      "CLASS_2",
+      "CLASS_3",
+      "CLASS_7",
+      "CLASS_6"
+    ],
+    "diagnostic_classes": [
+      "CLASS_4"
+    ],
+    "non_target_codes": [
+      "UNKNOWN",
+      "AMBIGUOUS",
+      "UNJUDGEABLE"
+    ]
+  },
+  "protocol_changelog": "v1 = the built-in Pilot-1-era wording shipped with the formal page (no external ontology, no 拇指根部/虎口 rule, no Class-4 fist exclusion). v2 = the frozen Pilot-3 ontology, served to the formal pages: long-finger distal-phalanx rules unchanged, thumb judged at the thumb base and first web space, CLASS_1 vs CLASS_6 decided by the thumb base, CLASS_4 carrying a hard fist exclusion. The 396-item benchmark, its windows, centres, GT values, blind ids, duplicate structure and presentation orders are UNCHANGED.",
+  "hashes": {
+    "ontology_json": {
+      "role": "machine-readable ontology served to the pages",
+      "path": "human_semantic_validation/pilot3/evaluator/pilot3_ontology.json",
+      "sha256": "07260fb0b4ef9c1bab4916d44d808ca478b197f369ffae1d1f8b111783f85556",
+      "bytes": 19651
+    },
+    "ontology_js": {
+      "role": "reviewable JS copy of the same ontology",
+      "path": "human_semantic_validation/pilot3/annotator_common/pilot3_ontology.js",
+      "sha256": "8a454ffda21d97c5df6edd11c0e6ce49008b457afc35ec9457876f488f319c25",
+      "bytes": 24395
+    },
+    "ontology_markdown": {
+      "role": "normative prose statement of the rules",
+      "path": "human_semantic_validation/pilot3/ONTOLOGY_PILOT3.md",
+      "sha256": "d0afe71d131c01369b26e48d61c7454cc54f13806210265940695d754e31d98a",
+      "bytes": 8630
+    },
+    "semantic_content_sha256": "30e676406fe436d88fe6bb82e0b491a081b78c687d1c9d8cd780ca8dc8c7c22d",
+    "annotation_ui_js": {
+      "role": "shared presentation layer (with the import fix)",
+      "path": "human_semantic_validation/annotator_common/annotation_ui.js",
+      "sha256": "74ea88c9fb2b1c2e1fa3bad22ed897180bc256219702b0f17fb7e58a74ce8dad",
+      "bytes": 52965
+    },
+    "annotation_style_css": {
+      "role": "shared stylesheet",
+      "path": "human_semantic_validation/annotator_common/annotation_style.css",
+      "sha256": "751acb4392d1cb14204d5086731d839aa9b95bb61e18780cd78f77a670b91751",
+      "bytes": 10923
+    },
+    "index_template_html": {
+      "role": "page template",
+      "path": "human_semantic_validation/annotator_common/index.template.html",
+      "sha256": "f8b7793625756efdd97cd174a53db853422a95192be0bc4d05c7fe5d0ecd4ab2",
+      "bytes": 1801
+    }
+  },
+  "frozen_benchmark": {
+    "note": "The freeze is bound to this exact benchmark. These hashes must still hold at the end of the formal run.",
+    "unique_naturalistic_windows": 360,
+    "hidden_duplicates": 36,
+    "displayed_items_per_annotator": 396,
+    "payload_annotator_A": {
+      "role": "formal lane 1 scientific payload",
+      "path": "human_semantic_validation/annotator_A/payload.json",
+      "sha256": "e73acc1ebfe72c289659f122a6becd8404d2362a1a8952ab6df2011864d04a5d",
+      "bytes": 4908765
+    },
+    "payload_annotator_B": {
+      "role": "formal lane 2 scientific payload",
+      "path": "human_semantic_validation/annotator_B/payload.json",
+      "sha256": "4df0d804feff291b524c807d74c03ce219d3080bb6061c8331de7ddbf3e3f69e",
+      "bytes": 4908765
+    },
+    "hidden_sample_manifest": {
+      "role": "evaluator-only",
+      "path": "human_semantic_validation/hidden/hidden_sample_manifest.json",
+      "sha256": "d622187cf5d7da229c1eed69fd8b55480dc372d646f3812dec4eb5531f3c7559",
+      "bytes": 767075
+    },
+    "hidden_duplicate_map": {
+      "role": "evaluator-only",
+      "path": "human_semantic_validation/hidden/hidden_duplicate_map.json",
+      "sha256": "1a2bb3c568ed152c4d2bb210e5c8ad809f28cccc38f3eda67d981f6698e2f442",
+      "bytes": 5644
+    },
+    "hidden_payload_contract": {
+      "role": "evaluator-only",
+      "path": "human_semantic_validation/hidden/hidden_payload_contract.json",
+      "sha256": "7efbc7d1e778dea67ebde55ad38f1a86cbe4c6c17d807fac3d7c5277397885d1",
+      "bytes": 1596
+    },
+    "sampling_spec": {
+      "role": "the frozen formal sampling spec",
+      "path": "human_semantic_validation/NATURALISTIC_SAMPLING_SPEC.json",
+      "sha256": "64f5d95e1f8d5307e16efa8bd236106aec31b2a67a3bcf460419a3c719a2fbf5",
+      "bytes": 6992
+    },
+    "hand_geometry_map": {
+      "role": "rendering-only id -> side map",
+      "path": "human_semantic_validation/annotator_common/hand_geometry_343fc94403306119.json",
+      "sha256": "ad633041fe0ab74dd4bdbc30fee22491940a988172aa64078123860a2e788fbf",
+      "bytes": 11518
+    }
+  },
+  "formal_rater_lanes": {
+    "A": {
+      "presentation_order": "the frozen formal lane-1 (annotator_A) order",
+      "payload": "annotator_A/payload.json, copied byte-identical",
+      "storage_key": "s6_formal_annotation_v1_A",
+      "export_filename": "s6_formal_labels_annotator_A.json"
+    },
+    "C": {
+      "presentation_order": "the frozen formal lane-2 (annotator_B) order",
+      "payload": "annotator_B/payload.json, copied byte-identical",
+      "storage_key": "s6_formal_annotation_v1_C",
+      "export_filename": "s6_formal_labels_annotator_C.json",
+      "note": "C inherits the frozen second-lane ORDER only. The page identity, storage namespace and export filename are C's; the scientific payload is not modified."
+    }
+  },
+  "commitments": {
+    "no_revision_from_formal_disagreement": "No future formal A/C disagreement may be used to revise this ontology. Remaining ambiguity is accepted as genuine annotation uncertainty.",
+    "class4_diagnostic_only": "CLASS_4 stays diagnostic-only, outside the primary five-class semantic endpoint, and is never pooled into it.",
+    "no_post_hoc_adjudication": "A/C disagreements are never adjudicated after model outputs have been seen, and no decoder prediction may influence consensus. Any later adjudication study must be separately designed and model-blind.",
+    "no_forcing_disagreements": "Disagreement items are never forced into a class, and UNKNOWN / AMBIGUOUS / UNJUDGEABLE are never merged into a target class.",
+    "model_blinding": "No decoder output, probability, margin, support/OOD distance, VEMG2Pose prediction or model accuracy is inspected until BOTH annotators have finished all 396 items and their exports are frozen.",
+    "duplicates_excluded_from_semantics": "The 36 hidden duplicates are used only for intra-rater reliability and never enter the downstream semantic accuracy."
+  },
+  "model_output_used": false,
+  "human_labels_read": false
+}

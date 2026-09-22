@@ -1,0 +1,562 @@
+{
+  "artifact": "POSE_COORDINATE_AUDIT_PLAN.json",
+  "branch_id": "S6-POSE-COORDINATE-AUDIT",
+  "branch_classification": "DIAGNOSTIC TEST / REPRESENTATION FORENSICS",
+  "status": "FROZEN - WRITTEN AND HASHED BEFORE ANY NEW CROSS-DATASET NUMERICAL OUTCOME WAS COMPUTED",
+  "scientific_question": {
+    "narrow_question": "Are the two datasets merely using the same anatomical DOF names, or are they also numerically calibrated to the same physical coordinate system?",
+    "must_separate": [
+      "semantic DOF correspondence",
+      "numerical coordinate equivalence"
+    ],
+    "explicitly_not_the_question": "'Were all 16 dimensions mapped to the wrong joints?'  The anatomical mapping has already been audited repeatedly and this branch does not restart from that naive hypothesis.",
+    "why_it_matters": "The distributional open-set branch (db9_distributional_open_set) found ~80.6% of natural emg2pose GT poses outside all six DB9 gesture regions, all ten human-consensus target windows rejected, and a 179.7-degree-norm canonical16 grand-mean offset concentrated on middle_dip_flexion (-103 deg), ring_dip_flexion (-102 deg) and pinky_mcp_flexion (+79 deg).  Before that is called domain shift, numerical-coordinate mismatch must be excluded."
+  },
+  "criteria": {
+    "A_anatomical_dof": "the same physical degree of freedom",
+    "B_joint_indexing": "the same joint identified in both raw layouts",
+    "C_unit": "the same physical unit",
+    "D_positive_direction": "the same physical direction is positive",
+    "E_zero_definition": "the same physical configuration is called zero",
+    "F_reference_pose": "the same neutral/reference posture underlies that zero",
+    "G_angle_convention": "the same mathematical angle convention (joint rotation vs derived interior angle; flexion-from-straight vs joint angle)",
+    "H_range_wrapping": "the same range and wrapping convention",
+    "I_handedness": "the same handedness convention",
+    "J_preprocessing_calibration": "the same calibration semantics (what the number is measured against)"
+  },
+  "hypotheses": {
+    "H0_TRUE_NUMERICAL_EQUIVALENCE": "After the already-frozen thumb CMC-AA sign correction, canonical dimensions are genuinely in the same physical coordinate system.  Large distribution differences therefore reflect real dataset / domain / behaviour differences rather than a mapping or calibration error.",
+    "H1_CONSTANT_ZERO_OFFSET": "Same physical angle and direction, but a different neutral/reference zero: theta_B ~ theta_A + b.",
+    "H2_AFFINE_COORDINATE_MISMATCH": "Same physical DOF, different numerical coordinate: theta_B ~ a*theta_A + b.",
+    "H3_ANGLE_CONVENTION_MISMATCH": "At least one dimension uses a fundamentally different angular parameterization: -theta, pi-theta, theta-pi, |theta|, wrapped theta, interior angle vs flexion-from-straight, complementary convention.",
+    "H4_MIXED_PER_JOINT_CONVENTIONS": "A subset of dimensions is genuinely aligned while another subset is not.",
+    "H5_REAL_DISTRIBUTION_SHIFT": "Coordinate definitions agree, but the two datasets occupy different parts of the same pose space because of task / behaviour / sampling differences.",
+    "H6_BOTH": "Representation mismatch AND substantial genuine distribution shift."
+  },
+  "sources": {
+    "db9_raw": {
+      "kind": "raw source data",
+      "paths": [
+        "data/ninapro_db9/extracted/s_*_angles/*.mat"
+      ],
+      "contents": "MATLAB v5 .mat with variables angles (N,22) float64 in degrees, glove (N,22) raw CyberGlove-II sensor values, stimulus, restimulus, repetition, rerepetition, order_of_angles, subject, exercise, glove",
+      "role": "the only place the raw un-calibrated sensor values and the per-recording movement stream coexist, so the per-channel linear calibration can be recovered and the reference posture can be located"
+    },
+    "db9_canonical16": {
+      "kind": "frozen adapted artifact",
+      "paths": [
+        "data/db9_posture16/representative_postures_77.npz"
+      ],
+      "role": "the 7854 subject x movement x repetition representative postures actually used by DB9 modelling, plus the raw-file fingerprint needed for parity reconstruction"
+    },
+    "db9_trajectories": {
+      "kind": "frozen adapted artifact",
+      "paths": [
+        "data/db9_posture16/repetition_trajectories_77.npz"
+      ],
+      "role": "per-repetition continuous trajectories, for within-repetition shape checks"
+    },
+    "emg2pose_raw": {
+      "kind": "raw source data",
+      "paths": [
+        "data/official/emg2pose_dataset_mini/*.hdf5"
+      ],
+      "role": "official 20D joint_angles (T,20) radians, EMG, attrs including stage / side / session; the source of every emg2pose canonical16 number"
+    },
+    "emg2pose_paired": {
+      "kind": "frozen derived artifact",
+      "paths": [
+        "bridge_audit/results/sessions/*.paired50hz.npz"
+      ],
+      "role": "the frozen GT canonical16 and VEMG2Pose-predicted canonical16 on the frozen 50 Hz grid; the ONLY emg2pose pose source the distributional branch used"
+    },
+    "human_consensus": {
+      "kind": "frozen human reference labels",
+      "paths": [
+        "human_semantic_validation/s6_selective_head/PROSPECTIVE_HUMAN_CONSENSUS.json"
+      ],
+      "role": "matched-semantic comparison: human-consensus CLASS_1 / CLASS_6 windows under the frozen ontology",
+      "usage_policy": "READ-ONLY and DESCRIPTIVE.  These labels are a two-rater consensus under a frozen ontology, NOT ground truth.  They may NOT be used to fit, select or tune any transform.  Any candidate transform is estimated from source-only evidence; the human labels can only OBSERVE the consequence."
+    },
+    "frozen_docs_and_code": {
+      "kind": "documentation and source code",
+      "paths": [
+        "docs/joint_angle_definition.md",
+        "docs/CANONICAL16_CONTRACT.md",
+        "docs/DB9_CANONICAL16_MAPPING.md",
+        "docs/joint_reference_table.md",
+        "representation/canonical_hand.py",
+        "representation/db9_to_canonical16.py",
+        "representation/canonical16_schema.json",
+        "representation/db9_canonical16_schema.json",
+        "baseline/emg2pose/emg2pose/constants.py",
+        "baseline/emg2pose/emg2pose/UmeTrack/dataset/generic_hand_model.json",
+        "posture_decoder/tools/check_zero_pose_compatibility.py",
+        "posture_decoder/tools/thumb_zero_alignment.py",
+        "posture_decoder/tools/resolve_thumb_axis.py",
+        "data/db9_posture16/thumb_web_sign_evidence.json",
+        "data/db9_posture16/thumb_zero_alignment.json",
+        "data/db9_posture16/thumb_axis_resolution.json",
+        "data/ninapro_db9/docs/db9_paper_fulltext.xml",
+        "data/ninapro_db9/docs/atzori2014_fulltext.txt"
+      ],
+      "role": "source-of-truth definitions and every code path that builds canonical16"
+    },
+    "s4_geometry": {
+      "kind": "frozen geometry pipeline",
+      "paths": [
+        "hand_visualizer/tools/hand_kinematics_np.py",
+        "hand_visualizer/tools/build_config.py"
+      ],
+      "role": "independent consistency cross-check: forward-kinematics interior angles vs the stored canonical16 joint angles"
+    }
+  },
+  "transforms": {
+    "T0_identity": {
+      "form": "y = x",
+      "parameters": []
+    },
+    "T1_negate": {
+      "form": "y = -x",
+      "parameters": []
+    },
+    "T2_pi_minus": {
+      "form": "y = pi - x",
+      "parameters": []
+    },
+    "T3_minus_pi": {
+      "form": "y = x - pi",
+      "parameters": []
+    },
+    "T4_pi_minus_x_neg": {
+      "form": "y = -x + pi",
+      "parameters": []
+    },
+    "T5_neg_minus_pi": {
+      "form": "y = -x - pi",
+      "parameters": []
+    },
+    "T6_offset": {
+      "form": "y = x + b",
+      "parameters": [
+        "b"
+      ],
+      "estimation": "SOURCE-ONLY, two estimators both reported"
+    },
+    "T7_affine": {
+      "form": "y = a*x + b",
+      "parameters": [
+        "a",
+        "b"
+      ],
+      "estimation": "SOURCE-ONLY, two estimators both reported"
+    }
+  },
+  "source_only_estimators": {
+    "robust_core_match": "Match the robust core of the two marginal distributions: b = median(EMG2POSE_j) - median(DB9_j) for T6; for T7, b and a are the offset and scale that map DB9's [q05, q95] onto EMG2POSE's [q05, q95].  Uses no human label and no model outcome.",
+    "source_pairing_regression": "Estimate from SOURCE-SIDE evidence only: the per-channel DB9 linear calibration recovered from the raw .mat (angle = a_sensor * glove + b_sensor), inspected against the raw sensor's own reference value.  This is a DB9-internal quantity and touches no emg2pose data."
+  },
+  "transform_applicability_rule": "T2-T5 are evaluated for every dimension but are only INTERPRETED where the dimension's observed range is smaller than a full turn (|range| < 2*pi) AND its official joint limits are a bounded interval.  A transform that 'improves' a full-turn channel is meaningless and is reported as such.",
+  "evidence_rules": {
+    "counts_as_convention_or_coordinate_mismatch": [
+      "an official definition states a different zero, sign, unit or angle convention for one dataset than the other, AND the data are consistent with it",
+      "the raw DB9 per-channel linear calibration implies a reference sensor value that is unreachable (outside the observed sensor range) for that channel, i.e. the calibration's own zero is not attained during the recording",
+      "a non-identity transform maps the two marginal supports onto each other with a large, joint-specific, MONOTONE effect that is stable across subjects AND across movements AND across sessions, while the identity transform does not",
+      "a dimension's DB9 values are physically impossible while the same DOF's emg2pose values are physically plausible over the same physical action, and the DB9 raw sensor channel is not itself pathological",
+      "matched-semantic samples (same human-consensus gesture) preserve a large offset that a whole-dataset composition explanation cannot produce"
+    ],
+    "counts_as_real_distribution_shift_only": [
+      "the marginals overlap substantially at physically comparable anchors",
+      "the difference is explained by which behaviours were sampled (task/vocabulary composition), demonstrated by matching on movement class rather than by comparing grand means",
+      "the difference is stable between DB9 source databases, which cannot be a cross-dataset mapping effect",
+      "the per-subject spread inside a dataset is comparable to or larger than the between-dataset difference",
+      "matched-semantic samples agree in location within their own noise"
+    ],
+    "explicitly_not_evidence": [
+      "a large GRAND-MEAN difference by itself",
+      "a Wasserstein or MMD reduction by itself",
+      "visual plausibility by itself",
+      "a p-value computed over tens of thousands of correlated frames"
+    ],
+    "grand_mean_rule": "A grand-mean difference MUST be decomposed before it is interpreted: (1) task/vocabulary composition, (2) subject differences, (3) session differences, (4) within-gesture differences, and only then (5) any residual coordinate/calibration difference.  The phrase 'a 100 degree mean shift proves a zero mismatch' may not appear in any output of this branch."
+  },
+  "per_joint_metrics": [
+    "min",
+    "p0.1",
+    "p1",
+    "p5",
+    "p25",
+    "median",
+    "mean",
+    "p75",
+    "p95",
+    "p99",
+    "p99.9",
+    "max",
+    "sd",
+    "iqr",
+    "skewness",
+    "n_nan",
+    "n_exact_constants",
+    "n_outside_official_anatomical_limits",
+    "n_outside_physically_plausible_range"
+  ],
+  "distribution_metrics": [
+    "wasserstein_1d",
+    "support_overlap_coefficient",
+    "median_difference",
+    "robust_scale_ratio_iqr",
+    "kolmogorov_smirnov_D_descriptive",
+    "candidate_transform_residual"
+  ],
+  "per_joint_reporting_slices": {
+    "A_global": "all samples of the dataset",
+    "B_by_subject_db9": "per global DB9 archive slot",
+    "C_by_movement_db9": "per exercise-B movement id",
+    "D_by_source_database": "DB1 / DB2 / DB5",
+    "E_by_handedness": "emg2pose left / right (DB9 has no side field: right-hand protocol only, documented)",
+    "F_by_session_emg2pose": "per recording stage",
+    "G_by_stage_emg2pose": "per stage name, for composition accounting only"
+  },
+  "variance_decomposition": {
+    "model": "classical two-way random-effects style decomposition computed by sums of squares on per-(unit, dimension) medians; no deep learning, no model fitting",
+    "levels_reported": [
+      "between_dataset",
+      "between_db9_source_database",
+      "between_subject_within_dataset",
+      "between_movement",
+      "within_movement_residual"
+    ],
+    "estimator": "ANOVA-style variance components from group means and counts",
+    "caveat": "DB9 movement ids and emg2pose stage names are NOT a shared vocabulary; the decomposition is therefore computed within each dataset and only the SUBJECT-level components are compared across datasets."
+  },
+  "anchors": {
+    "db9_documented_reference_posture": {
+      "definition": "the official DB9 calibration reference: the central part of movement 11 in exercise B, hand resting on the table with fingers closed together and extended",
+      "how_located": "by the frozen movement id, from the raw stimulus stream",
+      "expected": "all 15 flexion channels near zero IF the released data honour the documented calibration"
+    },
+    "db9_least_flexed_and_most_flexed": {
+      "definition": "per-dimension empirical extremes over the six gestures",
+      "how_located": "argmin / argmax of the per-dimension median over repetitions"
+    },
+    "emg2pose_rest_pose": {
+      "definition": "the official 20D zero vector, whose FK pose is documented as an extended hand",
+      "how_located": "official joint_limits and forward kinematics"
+    },
+    "emg2pose_stage_name_probe": {
+      "definition": "stage names that plausibly contain an extended or a flexed configuration, e.g. IndividualFingerPointingSnap or a fist-like stage",
+      "status": "DESCRIPTIVE ONLY.  The project has already ruled that emg2pose stage names are not frame-level gesture labels; the 88 human windows are spread over all 30 sessions, so stage names may NOT be used as gesture truth.  They are used only to check that a per-stage median moves in the direction the stage name implies."
+    }
+  },
+  "stop_rules": {
+    "hard_stop": [
+      "a frozen artifact this branch reads has changed hash",
+      "a parity check fails to machine tolerance where exactness is expected",
+      "two code paths construct canonical16 with different numbers"
+    ],
+    "do_not_stop_for": [
+      "the first suspicious joint",
+      "a large grand-mean difference on its own",
+      "a negative result for the coordinate-equivalence hypothesis",
+      "a transform that does not help"
+    ],
+    "completion_rule": "The branch is complete when every canonical16 dimension has all ten criteria assessed, every prespecified transform has been evaluated, the large-offset joints, the DB9 source-database question and the matched-semantic question have all been answered, and the joint-by-joint verdict table is filled in.  A dimension may be left UNRESOLVED only with a stated reason and a stated minimum new evidence that would resolve it.",
+    "anti_rescue": "This session is successful if the answer is 'the coordinates are genuinely equivalent and the shift is real', and successful if the answer is 'the anatomical mapping was correct but one or more numerical angle conventions were not equivalent'.  The only failure is leaving the ambiguity unresolved without exhausting the available evidence."
+  },
+  "prohibitions": {
+    "no_tuning_on_human_labels": true,
+    "no_transform_invented_because_it_improves_external_acceptance": true,
+    "no_rerunning_gaussian_or_simca_until_they_look_good": true,
+    "no_post_hoc_removal_of_bad_joints": true,
+    "no_canonical15_noThumbAA_as_a_rescue": true,
+    "no_new_classifier": true,
+    "no_deep_learning_training_locally": true,
+    "no_vemg2pose_alteration": true,
+    "no_label_or_ontology_changes": true,
+    "no_db9_class_rewrites": true,
+    "no_domain_shift_claim_before_excluding_numerical_mismatch": true,
+    "no_mapping_bug_claim_without_direct_evidence": true,
+    "no_stopping_after_one_suspicious_joint": true,
+    "no_modification_of_any_frozen_artifact": true,
+    "no_writes_outside_the_branch_lane": true,
+    "no_deployed_offset_transform": "The branch may NOT emit 'subtract 103 degrees from emg2pose middle DIP'. It may diagnose a candidate convention relationship, verify a transform implied by official definitions, and demonstrate descriptively what a hypothetical transform would do.  Repair requires a NEW branch with a source-justified transform frozen before any external scoring."
+  },
+  "decision_tree": {
+    "COORD-A": "numeric coordinates verified equivalent; large shifts are real dataset/task/domain differences",
+    "COORD-B": "zero/offset calibration mismatch; same DOFs and directions, different zero/reference definitions",
+    "COORD-C": "angle-convention mismatch; at least one important joint uses a fundamentally different angular parameterization",
+    "COORD-D": "mixed coordinate mismatch; some dimensions equivalent, others not",
+    "COORD-E": "both coordinate mismatch and real distribution shift",
+    "COORD-F": "inconclusive; available source definitions/data cannot distinguish",
+    "rule": "Exactly one primary outcome is assigned.  A stronger outcome is not forced than the evidence supports.  COORD-E requires BOTH a demonstrated coordinate difference AND a demonstrated residual difference after accounting for it."
+  },
+  "required_artifacts": [
+    "POSE_COORDINATE_AUDIT_PLAN.json",
+    "CANONICAL16_CODE_PROVENANCE.md",
+    "CANONICAL16_IMPLEMENTATION_GRAPH.json",
+    "SOURCE_DEFINITION_AUDIT.json",
+    "SOURCE_DEFINITION_AUDIT.md",
+    "CANONICAL16_EQUIVALENCE_MATRIX.csv",
+    "CANONICAL16_EQUIVALENCE_MATRIX.json",
+    "RAW_TO_CANONICAL_PARITY_RESULTS.json",
+    "PER_JOINT_DISTRIBUTION_AUDIT.json",
+    "LARGE_OFFSET_FORENSICS.json",
+    "LARGE_OFFSET_FORENSICS.md",
+    "PHYSICAL_ANCHOR_AUDIT.json",
+    "DB9_SOURCE_CALIBRATION_AUDIT.json",
+    "EMG2POSE_SESSION_CALIBRATION_AUDIT.json",
+    "MATCHED_SEMANTIC_COORDINATE_AUDIT.json",
+    "GEOMETRY_SHAPE_LOCATION_DECOMPOSITION.json",
+    "SYNTHETIC_ROUNDTRIP_RESULTS.json",
+    "S4_UMETRACK_CROSSCHECK.json",
+    "DIMENSION_CONFIDENCE_CLASSIFICATION.json",
+    "COMMON_POSE_API_VERDICT.json",
+    "POSE_COORDINATE_AUDIT_REPORT.md",
+    "POSE_COORDINATE_AUDIT_FULL_LOG.txt",
+    "OFFICIAL_SOURCE_REFERENCES.md",
+    "ARTIFACT_MANIFEST.json",
+    "figures/"
+  ],
+  "runtime": {
+    "python": "<EMG2POSE_VENV>\\Scripts\\python.exe",
+    "why": "sklearn/htfp stack matching the frozen Session-3/5 environment",
+    "project_root_is_a_git_repo": false,
+    "git_state": "baseline/emg2pose HEAD 5f6f62b1a0a08426adffe55900842e75a8adb38c, clean; project root is not a repository -> COMMIT PENDING, content-hash provenance",
+    "local_training_prohibition": "No deep-learning training is performed.  This branch computes descriptive statistics, classical linear algebra and classical variance decompositions only.  No model is fit to any label.",
+    "statistical_rules": {
+      "no_pseudo_replication": "frames are never treated as independent participants; DB9 uncertainty is clustered at subject level, emg2pose at session level",
+      "effect_sizes_over_p_values": true,
+      "descriptive_vs_inferential_labelled": true
+    }
+  },
+  "predicted_reference_frames": {
+    "note": "Recorded from the frozen documentation BEFORE the numeric audit so that the audit tests a prediction rather than rationalising a result.",
+    "emg2pose_zero": "the official 20D zero vector; FK at zero is a fingers-extended hand (inter-finger chain angles 168-179 deg, ~180 = straight)",
+    "emg2pose_positive": "flexion, for all 15 FE dimensions",
+    "emg2pose_units": "radians, raw, never clipped",
+    "emg2pose_thumb_aa": "no global sign; per-finger polarity; the thumb's positive direction is opposite the four non-thumb MCP AA joints",
+    "db9_zero": "sensor signals transformed relative to a reference posture: the central part of movement 11 in exercise B, hand resting on the table with fingers closed together and extended",
+    "db9_positive": "flexion for the 15 FE channels; abduction for CMC1_A",
+    "db9_units": "degrees (inferred with converging evidence)",
+    "frozen_bridge_transform": "one column selection, degrees->radians, and exactly one sign flip on thumb_cmc_ab_adduction"
+  },
+  "pre_registration_statement": "Every rule, transform, evidence criterion, metric and stop rule in this document was written before any new cross-dataset numerical outcome was computed.  Additions after this freeze are recorded as deviations in the report, and the frozen plan is never edited.",
+  "frozen_input_pins": {
+    "db9_canonical16:data/db9_posture16/representative_postures_77.npz": {
+      "path": "data/db9_posture16/representative_postures_77.npz",
+      "exists": true,
+      "sha256": "4fba093dff0ef82925176a77358b934ebcb362bd35b262d21d2ec7611f5e8b9f"
+    },
+    "db9_raw:data/ninapro_db9/extracted/s_*_angles/*.mat": {
+      "glob": "data/ninapro_db9/extracted/s_*_angles/*.mat",
+      "n_matches": 99,
+      "pattern_parent_exists": false
+    },
+    "db9_trajectories:data/db9_posture16/repetition_trajectories_77.npz": {
+      "path": "data/db9_posture16/repetition_trajectories_77.npz",
+      "exists": true,
+      "sha256": "d39526479713f771f45014f52ec1aa9cc3111902917624be7ebac10de538be13"
+    },
+    "emg2pose_paired:bridge_audit/results/sessions/*.paired50hz.npz": {
+      "glob": "bridge_audit/results/sessions/*.paired50hz.npz",
+      "n_matches": 30,
+      "pattern_parent_exists": true
+    },
+    "emg2pose_raw:data/official/emg2pose_dataset_mini/*.hdf5": {
+      "glob": "data/official/emg2pose_dataset_mini/*.hdf5",
+      "n_matches": 30,
+      "pattern_parent_exists": true
+    },
+    "frozen_docs_and_code:docs/joint_angle_definition.md": {
+      "path": "docs/joint_angle_definition.md",
+      "exists": true,
+      "sha256": "87e9f9222fce1a8d44ec8495bf50d47676cb5920a1bed6cf547089815a03befe"
+    },
+    "frozen_docs_and_code:docs/CANONICAL16_CONTRACT.md": {
+      "path": "docs/CANONICAL16_CONTRACT.md",
+      "exists": true,
+      "sha256": "14f6d46dea611a669c776f917bf6f1929c13ecf2c3026c8da403e4853197e6bf"
+    },
+    "frozen_docs_and_code:docs/DB9_CANONICAL16_MAPPING.md": {
+      "path": "docs/DB9_CANONICAL16_MAPPING.md",
+      "exists": true,
+      "sha256": "20ccedae3bfd8264c48c42975c9c60d8a0cc7f8a9d0026084a4396dd242abdf5"
+    },
+    "frozen_docs_and_code:docs/joint_reference_table.md": {
+      "path": "docs/joint_reference_table.md",
+      "exists": true,
+      "sha256": "a98f084be8e99f3af09cfded57d867dab9725d626dfee8ffc4915cc91d15fecd"
+    },
+    "frozen_docs_and_code:representation/canonical_hand.py": {
+      "path": "representation/canonical_hand.py",
+      "exists": true,
+      "sha256": "d9922ff0927760fb5d319b6fd22eb264602e836cf87a7f09291550218c987130"
+    },
+    "frozen_docs_and_code:representation/db9_to_canonical16.py": {
+      "path": "representation/db9_to_canonical16.py",
+      "exists": true,
+      "sha256": "8ec97d0b0b4a61f8e8d958f93c2984fccd3144b2b8ca15adf4ff59e6160ce3cf"
+    },
+    "frozen_docs_and_code:representation/canonical16_schema.json": {
+      "path": "representation/canonical16_schema.json",
+      "exists": true,
+      "sha256": "33449fca98ee2db2b0023438786801c5711cd3be042fdef181b663e8a77878e1"
+    },
+    "frozen_docs_and_code:representation/db9_canonical16_schema.json": {
+      "path": "representation/db9_canonical16_schema.json",
+      "exists": true,
+      "sha256": "0ede53b97908460a0700cc78674789ea30303f7f6572a129922765d683ed0f80"
+    },
+    "frozen_docs_and_code:baseline/emg2pose/emg2pose/constants.py": {
+      "path": "baseline/emg2pose/emg2pose/constants.py",
+      "exists": true,
+      "sha256": "8ae5d6941be9fd4c2600f79d4a81f618af003ffe565c672f018626b1132a8d85"
+    },
+    "frozen_docs_and_code:baseline/emg2pose/emg2pose/UmeTrack/dataset/generic_hand_model.json": {
+      "path": "baseline/emg2pose/emg2pose/UmeTrack/dataset/generic_hand_model.json",
+      "exists": true,
+      "sha256": "96649ddf7d036be3357dadd7c13db325a18638c6713583fbbbdd71446ce07564"
+    },
+    "frozen_docs_and_code:posture_decoder/tools/check_zero_pose_compatibility.py": {
+      "path": "posture_decoder/tools/check_zero_pose_compatibility.py",
+      "exists": true,
+      "sha256": "101db81054356f46fc055d1b660b4148cac5a824d7c6cef3ae7daf33fe290bb6"
+    },
+    "frozen_docs_and_code:posture_decoder/tools/thumb_zero_alignment.py": {
+      "path": "posture_decoder/tools/thumb_zero_alignment.py",
+      "exists": true,
+      "sha256": "fb6d1944d6451254a213b03cffa4df46d8c8a2d55acfebccc3129e65ea5f1470"
+    },
+    "frozen_docs_and_code:posture_decoder/tools/resolve_thumb_axis.py": {
+      "path": "posture_decoder/tools/resolve_thumb_axis.py",
+      "exists": true,
+      "sha256": "a1c16d2c1b725c2afbefe1c45ee0ae964c4056f1cc563136d48bd4894fc57284"
+    },
+    "frozen_docs_and_code:data/db9_posture16/thumb_web_sign_evidence.json": {
+      "path": "data/db9_posture16/thumb_web_sign_evidence.json",
+      "exists": true,
+      "sha256": "e78d89319d7152bfccb3c1bf6f0131b9faeebd2f1a3f568d6922497938af971b"
+    },
+    "frozen_docs_and_code:data/db9_posture16/thumb_zero_alignment.json": {
+      "path": "data/db9_posture16/thumb_zero_alignment.json",
+      "exists": true,
+      "sha256": "4ba8a51247738d57dd8e7ffeea40d529c558cb2fc6064aeb686b1c9362425cb9"
+    },
+    "frozen_docs_and_code:data/db9_posture16/thumb_axis_resolution.json": {
+      "path": "data/db9_posture16/thumb_axis_resolution.json",
+      "exists": true,
+      "sha256": "8233afea1a9a6b71e1467284bd106c5c152d80c36d9f34b2a4488f49a208834d"
+    },
+    "frozen_docs_and_code:data/ninapro_db9/docs/db9_paper_fulltext.xml": {
+      "path": "data/ninapro_db9/docs/db9_paper_fulltext.xml",
+      "exists": true,
+      "sha256": "3bd2c4a4eacd9065ee5e216dca618bcfe2026d58c65a66c60d9e08c31ad0848b"
+    },
+    "frozen_docs_and_code:data/ninapro_db9/docs/atzori2014_fulltext.txt": {
+      "path": "data/ninapro_db9/docs/atzori2014_fulltext.txt",
+      "exists": true,
+      "sha256": "740180604e65815f705281fca1f84fe78c46f2e6c020ab54d6af9965184ccfac"
+    },
+    "human_consensus:human_semantic_validation/s6_selective_head/PROSPECTIVE_HUMAN_CONSENSUS.json": {
+      "path": "human_semantic_validation/s6_selective_head/PROSPECTIVE_HUMAN_CONSENSUS.json",
+      "exists": true,
+      "sha256": "1c91dafa493ec017cc12e0490224a11f2d179df3abe270742ce9e921fe6cbe03"
+    },
+    "s4_geometry:hand_visualizer/tools/hand_kinematics_np.py": {
+      "path": "hand_visualizer/tools/hand_kinematics_np.py",
+      "exists": true,
+      "sha256": "68aee00b0d6c75d491cf1b8f411150c3d8af1f698cdf70c65a795f456bf4ce79"
+    },
+    "s4_geometry:hand_visualizer/tools/build_config.py": {
+      "path": "hand_visualizer/tools/build_config.py",
+      "exists": true,
+      "sha256": "2bc2916f6fd3687355d8ba0988cdfcf1b5fb57489586adacd68d9c479096628d"
+    }
+  },
+  "mapping_verified_at_freeze_time": {
+    "canonical16_names": [
+      "thumb_cmc_flexion",
+      "thumb_cmc_ab_adduction",
+      "thumb_mcp_flexion",
+      "thumb_ip_flexion",
+      "index_mcp_flexion",
+      "index_pip_flexion",
+      "index_dip_flexion",
+      "middle_mcp_flexion",
+      "middle_pip_flexion",
+      "middle_dip_flexion",
+      "ring_mcp_flexion",
+      "ring_pip_flexion",
+      "ring_dip_flexion",
+      "pinky_mcp_flexion",
+      "pinky_pip_flexion",
+      "pinky_dip_flexion"
+    ],
+    "emg2pose_source_indices": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19
+    ],
+    "emg2pose_dropped_indices": [
+      4,
+      8,
+      12,
+      16
+    ],
+    "db9_column_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      16,
+      7,
+      8,
+      17,
+      9,
+      11,
+      18,
+      13,
+      15,
+      19
+    ],
+    "db9_channels": [
+      "CMC1_f",
+      "CMC1_a",
+      "MCP1",
+      "IP1",
+      "MCP2_f",
+      "PIP2",
+      "DIP2",
+      "MCP3_f",
+      "PIP3",
+      "DIP3",
+      "MCP4_f",
+      "PIP4",
+      "DIP4",
+      "MCP5_f",
+      "PIP5",
+      "DIP5"
+    ],
+    "db9_frozen_sign": {
+      "thumb_cmc_ab_adduction": -1.0
+    },
+    "canonical15_dropped_column": 1,
+    "units": "canonical16 radians; DB9 source degrees; emg2pose source radians"
+  }
+}

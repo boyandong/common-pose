@@ -1,0 +1,315 @@
+{
+  "artifact": "ADMISSION_DECISION.json",
+  "plan_sha256": "fba2b20623392dd809d5ed28c7850387acc721e9a91ff1611e7fba0d89fc889d",
+  "terminal_status": "PASS (the audit completed); with one SCIENCE-BLOCKING finding escalated - shared10_poc_v1 is a SHARED10-SEMANTIC-MISMATCH",
+  "shared10_verdict": "SHARED10-SEMANTIC-MISMATCH",
+  "shared10_detail": {
+    "n_correct_of_10": 6,
+    "n_mismatched_of_10": 4,
+    "resolved_order": "H_T2",
+    "correct_indices": [
+      1,
+      2,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      14,
+      15
+    ],
+    "wrong_indices": [
+      0,
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      11,
+      13,
+      15
+    ]
+  },
+  "grades": {
+    "MyoKi": "YELLOW",
+    "KIN-MUS": "YELLOW",
+    "KINE-ADL": "GRAY"
+  },
+  "dataset_decisions": {
+    "MyoKi": {
+      "grade": "YELLOW",
+      "physical_coordinate_admission": "PARTIAL and STRONG where it exists. The channel table is official and names all 18 channels in order, and this audit reproduced the raw->calibrated chain BIT-EXACTLY for channels 1-16 (max abs error 0.000e+00 deg over 83 267 samples) from `glove` + the official calibration workbook. Channels 17-18 are exactly affine but on unpublished per-participant constants. The thumb has no CMC FLEXION channel at all: channel 1 is an abduction/opposition channel and may not be substituted.",
+      "emg_pose_suitability": "GOOD IN PRINCIPLE, NOT MEASURABLE HERE. 12 sEMG channels at 2000 Hz, 27+27 IMU channels, 24 FMG channels (subset 2) and a fully released raw glove stream, all on one time base from a common time server. But the audit holds ONE 41.6 s recording; no subject-level or task-level statement is possible.",
+      "downstream_task_suitability": "RESTRICTED. `grasp` is a task-metadata lookup, constant over a task segment, and is NOT frame-wise ground truth.",
+      "strongest_safe_channels": [
+        "MCP Index/PIP Index (cols 5,6)",
+        "MCP Middle/PIP Middle (cols 7,8)",
+        "MCP Ring/PIP Ring (cols 10,11)",
+        "MCP Little/PIP Little (cols 13,14)",
+        "MCP Thumb (col 2)",
+        "IP Thumb (col 3)",
+        "the three relative abductions (cols 9,12,15) as abduction, not flexion"
+      ],
+      "unsafe_channels": [
+        "col 17 wrist flexion/extension - per-participant constants not published",
+        "col 18 wrist deviation - same, and no polarity is stated anywhere",
+        "col 1 'Abduction Thumb to Palm' - posture wording, no ISB name, no stated polarity, and it is NOT thumb CMC flexion",
+        "col 4 'Abduction Thumb - Index flat on table' - same objection",
+        "col 16 palmar arch - different calibration reference from every other channel"
+      ],
+      "unresolved_blockers": [
+        "the participant corpus (35 x 3.17-4.95 GB, 145 463 536 055 B total) is required for every subject-level claim: nothing about MyoKi generalisation is established by this audit",
+        "participant P20's EMG channels 7 and 8 are documented as detached and unusable; P05 is missing repetition 2 of task 67",
+        "the per-participant wrist calibration constants are not published, so the wrist channels can never be recovered to absolute angles"
+      ],
+      "recommended_role": "a later, SECOND external geometry source and a label-provenance stress test; not the first POC source, because the corpus is 145 GB, its labels are task-derived, and its thumb CMC flexion is absent"
+    },
+    "KIN-MUS": {
+      "grade": "YELLOW",
+      "physical_coordinate_admission": "PARTIAL. The dataset's OWN paper pins the 18-column order (Table 2) and the hand (RIGHT). 12 of the 16 canonical16 DOFs are present; all four DIPs are absent and must stay absent. Four channels are RESTRICT: the two wrists (cable artifact, envelope violation, unpublished gains, and a sign convention that conflicts across the family's own documents), the palmar arch (the group's later guide discloses the right palmar-arch gauge is malfunctioning), and the three relative abductions plus CMC1_A are semantically valid but weakly anchored. The released block is already reference-differenced and the raw gauges are not published, so the transform is TRANSFORM_NOT_INDEPENDENTLY_REPRODUCIBLE.",
+      "emg_pose_suitability": "GOOD. The same containers carry 7 normalised and 7 raw sEMG channels; no new collection is needed for a later EMG->pose arm.",
+      "downstream_task_suitability": "the phase label is the only label that passed; ADL identity is rejected",
+      "strongest_safe_channels": [
+        "MCP2_F, MCP3_F, MCP4_F, MCP5_F (indices 5,7,10,14)",
+        "PIP2_F, PIP3_F, PIP4_F, PIP5_F (indices 6,8,11,15)",
+        "MCP1_F (index 2) and IP1_F (index 3) with a documented 18/22 anchor",
+        "CMC1_F (index 1) with a 22/22 anchor but only two datasets"
+      ],
+      "unsafe_channels": [
+        "WR_F (index 16) - RESTRICT",
+        "WR_A (index 17) - RESTRICT, sign conflict",
+        "PalmArch (index 12) - RESTRICT, malfunctioning right gauge disclosed",
+        "CMC1_A, MCP2-3_A, MCP3-4_A, MCP4-5_A - usable as abduction only, weak anchor"
+      ],
+      "unresolved_blockers": [
+        "the raw CyberGlove streams and the per-glove gains actually used are not published: parity can never be closed on this corpus",
+        "which of the 18 columns is the right palmar arch was never confirmed against the malfunction disclosure"
+      ],
+      "recommended_role": "FIRST POC TASK SOURCE for the phase label, provided the interface carries temporal state and the representation is redefined with the CORRECT index vector [1, 2, 5, 6, 7, 8, 10, 11, 14, 15]"
+    },
+    "KINE-ADL": {
+      "grade": "GRAY",
+      "physical_coordinate_admission": "DOCUMENTED BUT UNCONFIRMED. The official guide names all 36 angle columns (18 right, 18 left) in an order that DIFFERS from KIN-MUS at 8 of 18 positions, so positional mapping between the two is forbidden and an explicit semantic map is mandatory. The guide's SHA-256 equals the publisher's published hash. But the corpus was not downloaded, so no identity was confirmed against real values, and the gains actually used are not published.",
+      "emg_pose_suitability": "NOT APPLICABLE - KINE-ADL carries no EMG.",
+      "downstream_task_suitability": "INCONCLUSIVE. 178 elementary tasks over 2 experiments, but no trajectory was inspected.",
+      "strongest_safe_channels": [
+        "the same 12 non-DIP canonical16 DOFs per hand, at MEDIUM confidence, pending value-level confirmation"
+      ],
+      "unsafe_channels": [
+        "all four DIPs: absent",
+        "WR_F / WR_A: the guide itself warns that wrist angles are missing for some subjects because of improper sensor fitting"
+      ],
+      "unresolved_blockers": [
+        "BE_UJI_DATASET.mat (644 185 378 B, sha256 808f0dab...) is required to confirm the column order against real values AND to resolve which 15 of the 40 (experiment, subject) keys are the same people",
+        "until SUBJECT_DATA is available, NO grouped split that crosses experiments may be constructed: 15 of 20+20 participants are shared and the overlap set is unknown",
+        "gains actually used are not published"
+      ],
+      "recommended_role": "a later second-hand coordination source, and the natural second dataset once the corpus is obtained; not admissible for the first POC today"
+    }
+  },
+  "common_pose_subset_v2_candidate": {
+    "n_dofs_considered": 16,
+    "n_members": 11,
+    "members": [
+      "thumb_cmc_flexion",
+      "thumb_mcp_flexion",
+      "thumb_ip_flexion",
+      "index_mcp_flexion",
+      "index_pip_flexion",
+      "middle_mcp_flexion",
+      "middle_pip_flexion",
+      "ring_mcp_flexion",
+      "ring_pip_flexion",
+      "pinky_mcp_flexion",
+      "pinky_pip_flexion"
+    ],
+    "tier1": {
+      "dofs": [
+        "index_mcp_flexion",
+        "index_pip_flexion",
+        "middle_mcp_flexion",
+        "middle_pip_flexion",
+        "ring_mcp_flexion",
+        "ring_pip_flexion",
+        "pinky_mcp_flexion",
+        "pinky_pip_flexion"
+      ],
+      "n": 8,
+      "why": "available in THREE external datasets (MyoKi, KIN-MUS, KINE-ADL) and the MCP and PIP flexion groups each passed a per-subject physical anchor in 22/22 subjects (median +17.79 deg for MCP, +13.08 deg for PIP, reaching -> manipulation)"
+    },
+    "tier2": {
+      "dofs": [
+        "thumb_cmc_flexion",
+        "thumb_mcp_flexion",
+        "thumb_ip_flexion"
+      ],
+      "n": 3,
+      "why": "the thumb channels: identity and unit are clear, the thumb MCP+IP anchor passed 18/22 subjects (0.818, just above the 0.80 threshold) and the CMC flexion anchor 22/22, but thumb_cmc_flexion exists in only TWO external datasets (MyoKi has no thumb CMC flexion channel at all) and the whole thumb CMC complex carries the nomenclature caveat the KINE-ADL paper itself raises",
+      "recommendation": "admit only if the downstream task genuinely needs the thumb; otherwise ship tier 1 alone"
+    },
+    "rationale": "the frozen plan prefers 8 trustworthy DOFs over 16 semantically confused ones; the pivot here is the four MCP flexions and the four PIP flexions, the only channels in the UJI corpus that passed a per-subject physical anchor in every subject",
+    "excluded_for_missing_data": [
+      "index_dip_flexion",
+      "middle_dip_flexion",
+      "ring_dip_flexion",
+      "pinky_dip_flexion"
+    ],
+    "excluded_for_other_reasons": [
+      "thumb_cmc_ab_adduction"
+    ],
+    "restriction_that_travels_with_every_member": "numeric coordinate equivalence between datasets is UNVERIFIED for every member; only semantic correspondence is established"
+  },
+  "old_result_reclassification": [
+    {
+      "artifact": "kinmus_task_observability/ KINMUS_TASK_OBSERVABILITY_DECISION.json and _REPORT.md (R1_POSE 0.4051, R2 0.4237, R3 0.6172, R4 0.4955, matched frame set; R5_FULL18 0.4238)",
+      "class": "A + B",
+      "summary": "INTERPRETATION_DOWNGRADED",
+      "why": "the ten index positions are unchanged, so every NUMBER is exactly the same computation on exactly the same columns. But four of the ten columns are not the anatomical DOFs they were named as: the representation is six flexion channels plus four relative-abduction channels, not ten flexion channels. Every sentence that names those four as MCP flexion or as thumb CMC flexion must be rewritten.",
+      "what_survives": [
+        "the balanced-accuracy values themselves",
+        "the N1 permutation null and the frame-majority share",
+        "the R3 temporal-window gain and the velocity-negation control",
+        "the boundary-vs-interior stratification",
+        "the statement that single-frame information over these ten columns is not sufficient (OBS-B)"
+      ],
+      "what_must_be_restated": [
+        "'shared10 pose' -> 'the ten frozen columns (6 flexion + 4 abduction)'",
+        "'thumb_cmc_flexion' -> CMC1_A (abduction)",
+        "'index_mcp_flexion' -> MCP2-3_A, 'ring_mcp_flexion' -> MCP3-4_A, 'pinky_mcp_flexion' -> MCP4-5_A",
+        "any claim that the Common Pose SUBSET loses only +0.0342 vs full18: true of these ten columns, not of the intended ten flexion DOFs"
+      ]
+    },
+    {
+      "artifact": "kinmus_task_observability/ KINMUS_FULL18_DIAGNOSTIC.json",
+      "class": "A + B",
+      "summary": "INTERPRETATION_DOWNGRADED",
+      "why": "it uses all 18 columns, so its numbers stand; but it NAMES them in the guide order, which is wrong at the same four swapped pairs",
+      "what_survives": [
+        "the full18 balanced accuracy and its comparison to the ten-column run"
+      ],
+      "what_must_be_restated": [
+        "the per-column names in its `vs_shared10` block"
+      ]
+    },
+    {
+      "artifact": "kinmus_task_observability/ KINMUS_OBSERVABILITY_SOURCE_PROVENANCE.json (the `shared10_mapping` block)",
+      "class": "B",
+      "summary": "INVALIDATED (naming only)",
+      "why": "it asserts api_order == the ten intended DOF names for those indices",
+      "what_survives": [
+        "the file hash and the corpus structure it records"
+      ],
+      "what_must_be_restated": [
+        "the api_order list"
+      ]
+    },
+    {
+      "artifact": "pose_api_dataset_admission/ FIRST_POC_DATASET_DECISION.json, POSE_API_DOF_MAPPING_MATRIX.{csv,json} (the KIN-MUS rows), KIN_MUS_SOURCE_AUDIT.json",
+      "class": "C for the representation, A for the dataset choice",
+      "summary": "NEEDS_RERUN (representation definition only)",
+      "why": "the DATASET verdict (KIN-MUS ADMIT, HUST REJECT, KINE-ADL CONDITIONAL) is not affected: it was decided on corpus properties, not on column indices. What is wrong is the frozen representation `shared10_poc_v1`: its index vector is correct for the guide order and wrong for the real array.",
+      "what_survives": [
+        "the dataset admission verdicts",
+        "the 18-angle name list (the names are right; only the order was taken from the wrong document)"
+      ],
+      "what_must_be_restated": [
+        "`shared10_poc_v1.columns` must become [1, 2, 5, 6, 7, 8, 10, 11, 14, 15]",
+        "the KIN-MUS rows of the DOF mapping matrix for the four swapped pairs"
+      ]
+    },
+    {
+      "artifact": "pose_api_dataset_admission/ KIN_MUS_PHYSICAL_ANCHOR_AUDIT.json",
+      "class": "A + B",
+      "summary": "INTERPRETATION_DOWNGRADED",
+      "why": "its per-channel statistics are correct for the indices it used, and its anchor directions (flexion rises in manipulation) remain TRUE under the corrected naming - indeed this audit reproduced them independently at 22/22 subjects, and additionally at 22/22 for CMC1_F. Only the channel labels change.",
+      "what_survives": [
+        "every number",
+        "the anchor verdicts"
+      ],
+      "what_must_be_restated": [
+        "the channel names in per_channel_median_deg and per_channel_p5_deg"
+      ]
+    },
+    {
+      "artifact": "db9_channel_validity/ (all artifacts)",
+      "class": "unchanged",
+      "summary": "UNCHANGED",
+      "why": "the DB9 lane works on the NinaPro DB9 array and on canonical16; it never touches a UJI column. The shared10 finding does not reach it.",
+      "what_survives": [
+        "everything"
+      ],
+      "what_must_be_restated": []
+    },
+    {
+      "artifact": "pose_coordinate_audit/ (all artifacts)",
+      "class": "unchanged by THIS audit",
+      "summary": "UNCHANGED / its own corrections still outstanding",
+      "why": "the earlier lane's open items (a replication claim that compared the adapter against itself, and a `repetition` grouping error confined to its pca_*.py) are independent of the UJI column-order question. This audit neither fixed nor re-opened them; the PI decision on them is still open.",
+      "what_survives": [
+        "everything not already flagged"
+      ],
+      "what_must_be_restated": []
+    }
+  ],
+  "label_decisions": {
+    "MyoKi `grasp` (0 rest/transition, 1 cylindrical,": "RESTRICT",
+    "MyoKi `task` (1..74) plus 0 = transition": "REJECT",
+    "KIN-MUS `Phase` (1 reaching, 2 manipulation, 3 r": "ADMIT",
+    "KIN-MUS `ADL` (1..26)": "REJECT",
+    "KINE-ADL elementary task (178) / record ID (101.": "INCONCLUSIVE",
+    "KINE-ADL candidate contrasts (CAND-1 power vs pi": "INCONCLUSIVE"
+  },
+  "db9_like_failure_check": {
+    "wrong_column": "YES - 4 of 10 shared10 columns select a different anatomical DOF than they are named",
+    "wrong_sign": "YES, a documentation conflict on the UJI wrist-deviation channel: KIN-MUS paper radial+, KINE-ADL paper and MOVMUS guide ulnar+. Not resolved in one direction.",
+    "wrong_zero": "NO contradiction found. All three families state a reference posture; the UJI family uses a recorded reference posture and MyoKi a calibration posture. They are DIFFERENT zeros, so numeric equivalence is UNVERIFIED, but no zero is wrong.",
+    "wrong_calibration_assumption": "YES, one qualified case: MyoKi channels 17-18 are on per-participant constants that are not published, and the released array does NOT use the published generic rows. Also the UJI gains actually used for KIN-MUS/KINE-ADL are the lab's placeholders in the public code.",
+    "subject_leakage": "YES, latent, not yet realised: KINE-ADL shares 15 of 20+20 participants across experiments A and B and the overlap set lives in an undownloaded file. No split has been run, so nothing is contaminated; the hazard is that a subject-grouped split LOOKS correct and is not.",
+    "label_semantic_mismatch": "YES, one: MyoKi `grasp` is a task-metadata lookup presented as a per-sample array, i.e. task identity relabelled, not frame-wise ground truth.",
+    "fake_sampling_inflation": "YES, severe: MyoKi publishes every modality on one declared 2000 Hz grid while the kinematic stream changes only ~35.5 times per second - a 56.26x inflation with 98.22 % duplicated rows.",
+    "measured_derived_confusion": "NO new case in the released arrays. All four DIPs are absent from KIN-MUS, MyoKi and KINE-ADL, and this audit proved by exact-formula test that no released column is a derived DIP. The UJI pipeline DOES derive DIP from PIP, and that derivation stays excluded from the API."
+  },
+  "blockers": [
+    {
+      "id": "B1",
+      "owner": "PI",
+      "what": "decide the remediation for shared10_poc_v1 and for the artifacts listed in the old-result re-classification"
+    },
+    {
+      "id": "B2",
+      "owner": "PI",
+      "what": "decide whether a corrected ten-column run (same pipeline, index vector [1, 2, 5, 6, 7, 8, 10, 11, 14, 15]) is authorised; it is a model run and was therefore NOT performed here"
+    },
+    {
+      "id": "B3",
+      "owner": "PI/data",
+      "what": "download MyoKi P01.mat (3 816 461 856 B) or the whole corpus (145 463 536 055 B) to lift every MyoKi subject-level statement out of UNRESOLVED"
+    },
+    {
+      "id": "B4",
+      "owner": "PI/data",
+      "what": "download KINE-ADL BE_UJI_DATASET.mat (644 185 378 B, sha256 808f0dab...) to resolve the global_person_id map and confirm the column order against real values"
+    },
+    {
+      "id": "B5",
+      "owner": "external",
+      "what": "the per-glove CyberGlove gains actually used by the UJI group and by the MyoKi authors: without them no raw->processed parity is closable on either corpus"
+    },
+    {
+      "id": "B6",
+      "owner": "PI",
+      "what": "the UJI wrist-deviation sign conflict cannot be resolved from documents; it needs either author confirmation or a raw-glove anchor"
+    }
+  ],
+  "next_experiment": {
+    "one_only": "A CORRECTED KIN-MUS REPRESENTATION RE-RUN, authorised by the PI.",
+    "what": "re-execute the ALREADY FROZEN kinmus_task_observability pipeline unchanged, with the single edit that R1's column vector becomes [1, 2, 5, 6, 7, 8, 10, 11, 14, 15] (the ten intended flexion DOFs) instead of [0, 2, 4, 6, 7, 8, 9, 11, 13, 15]; R5_FULL18 is untouched.",
+    "why_this_one": "it is the cheapest experiment that resolves the largest open uncertainty: whether the OBS-B conclusion survives when the representation really is the ten intended anatomical DOFs. It needs no new data, no new code beyond one index vector, and no GPU.",
+    "cost": "one CPU re-run of an existing pre-registered pipeline",
+    "explicitly_not_started": "no training of any kind was performed or started by this audit",
+    "must_be_frozen_first": "the corrected index vector and its provenance must be pre-registered and hashed before the re-run, exactly as the original run was"
+  },
+  "artifacts_note": "see ARTIFACT_MANIFEST.json for every path and SHA-256"
+}

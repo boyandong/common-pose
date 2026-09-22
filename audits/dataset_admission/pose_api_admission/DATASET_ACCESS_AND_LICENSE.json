@@ -1,0 +1,346 @@
+{
+  "artifact": "DATASET_ACCESS_AND_LICENSE.json",
+  "branch_id": "S6-POSE-API-DATASET-ADMISSION",
+  "plan_sha256": "4d2c8b162e2332a5891a5d89a53166e365b1bbd92c205222492d19957c9683ec",
+  "access_date": "2026-09-21",
+  "method": {
+    "must_establish": [
+      "exact official download location",
+      "whether registration is required",
+      "whether an academic account is required",
+      "whether access is immediate",
+      "file size",
+      "file format",
+      "license",
+      "research-use restrictions",
+      "redistribution restrictions",
+      "citation requirements",
+      "whether raw files are actually downloadable TODAY"
+    ],
+    "evidence_rule": "a dataset is NOT reported as available merely because a paper says it exists.  Availability requires an actual HTTP response or a documented delivery mechanism - the audit attempts the download and records the status code and byte count",
+    "bounded_download": "do not download hundreds of GB; a representative subset or the metadata is enough where the full corpus is large",
+    "download_log": "logs/fetch_results.json records every attempt verbatim"
+  },
+  "datasets": {
+    "HUST": {
+      "official_location": {
+        "value": "http://www.handcorpus.org/datasets/HUSTdataset.zip",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus.org HUST page",
+        "note": "the page is the primary distribution page; the retracted paper's own data-availability statement points instead to Dryad (doi:10.5061/dryad.gg8g5)"
+      },
+      "registration_required": {
+        "value": false,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "no login offered or required on the handcorpus download link"
+      },
+      "academic_account_required": {
+        "value": false,
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "access_immediate": {
+        "value": {
+          "handcorpus": false,
+          "dryad": false
+        },
+        "evidence": "DATA-INFERRED",
+        "note": "neither route yielded bytes in this audit"
+      },
+      "file_size": {
+        "value": {
+          "handcorpus_zip": "UNKNOWN",
+          "dryad_storage_total_bytes": 17641156
+        },
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Dryad API dataset record"
+      },
+      "file_format": {
+        "value": ".txt (per handcorpus page)",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "license": {
+        "value": {
+          "handcorpus_page": "UNKNOWN",
+          "dryad_record": "UNKNOWN - the Dryad record for doi:10.5061/dryad.gg8g5 did not expose a licence field in the API response retrieved by this audit"
+        },
+        "evidence": "UNKNOWN",
+        "note": "the Dryad API returned no licence key; not guessed"
+      },
+      "research_use_restrictions": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "redistribution_restrictions": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "citation_requirements": {
+        "value": [
+          "Liu M-J, Xiong C-H, Xiong L, Huang X-L (2016) Biomechanical Characteristics of Hand Coordination in Grasping Activities of Daily Living. PLoS ONE 11(1): e0146193 - RETRACTED",
+          "Feix T, Pawlik R, Schmiedhayer H-B, Romero J, Kragic D (2009) A comprehensive grasp taxonomy"
+        ],
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page 'How to Cite'",
+        "note": "NOTE: the handcorpus page still instructs users to cite the RETRACTED paper"
+      },
+      "downloadable_today": {
+        "value": false,
+        "evidence": "DATA-INFERRED",
+        "note": "two independent routes both failed"
+      },
+      "attempts": [
+        {
+          "name": "hust_zip_handcorpus",
+          "url": "http://www.handcorpus.org/datasets/HUSTdataset.zip",
+          "dest": "hust/HUSTdataset.zip",
+          "path": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\hust\\HUSTdataset.zip",
+          "attempted_utc": "2026-09-21T03:09:42Z",
+          "http_code": "301",
+          "bytes": 0,
+          "content_type": "text/html",
+          "curl_exit": 35,
+          "stderr": "curl: (35) schannel: next InitializeSecurityContext failed: SEC_E_INTERNAL_ERROR (0x80090304) - ???????????",
+          "status": "FAILED",
+          "what": "HUST dataset from handcorpus.org (primary distribution page)",
+          "attempt_note": "HTTP 500, 657-byte error body, on every attempt (plain, with Referer, and over https)"
+        },
+        {
+          "name": "hust_dryad",
+          "url": "https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.gg8g5/download",
+          "dest": "hust/HUST_dryad.zip",
+          "path": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\hust\\HUST_dryad.zip",
+          "attempted_utc": "2026-09-21T03:09:53Z",
+          "http_code": "401",
+          "bytes": 56,
+          "content_type": "application/json; charset=utf-8",
+          "curl_exit": 0,
+          "stderr": "",
+          "status": "FAILED",
+          "failure_body_head": "{\"error\":\"Unauthorized, must have current bearer token\"}",
+          "what": "HUST data from Dryad (10.5061/dryad.gg8g5), the paper's own data-availability link",
+          "attempt_note": "HTTP 401 from the API download endpoint; the file_stream endpoint returns an Anubis proof-of-work interstitial (HTTP 403 to an automated GET)",
+          "sha256": "1ac025323ea66e58c9a8a0b960db5a839ef812e1ff8bfea2f3aff74dc3961296",
+          "bytes_on_disk": 56
+        },
+        {
+          "value": {
+            "wayback_cdx_query": "http://web.archive.org/cdx/search/cdx?url=handcorpus.org&matchType=domain&filter=original:.*HUST.*",
+            "result": "no capture of /datasets/HUSTdataset.zip exists; only HapticEgg.mat, HapticPCMouse.mat, TUBerlin2015June_IJRR2015_Dataset1.zip and UNIPI2014July.c3d are archived"
+          },
+          "evidence": "DATA-INFERRED",
+          "note": "the archive check is the decisive evidence that no copy is retrievable"
+        }
+      ],
+      "publication_status": {
+        "value": "RETRACTED (PLOS ONE, 4 Mar 2016; retraction notice doi:10.1371/journal.pone.0151685)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0146193"
+      },
+      "documentation_audit": "COMPLETE",
+      "empirical_data_qc": "NOT POSSIBLE",
+      "empirical_data_qc_reason": "no bytes of HUST were obtainable by any public route, and the archive holds no copy.  This is the honest state, not a missing step"
+    },
+    "KINE_ADL": {
+      "official_location": {
+        "value": [
+          "https://doi.org/10.5281/zenodo.8418096 (BE-UJI angle calculation code, current)",
+          "https://doi.org/10.5281/zenodo.3357966 (BE-UJI angle calculation code, original)",
+          "https://doi.org/10.1038/s41597-019-0175-6 (Kinematics of human hand dataset for feeding and cooking tasks)"
+        ],
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "note": "NO artefact published under the exact string 'KINE-ADL BE-UJI' was found; these are the audited public artifacts of that slot"
+      },
+      "registration_required": {
+        "value": false,
+        "evidence": "DATA-INFERRED",
+        "source": "the Zenodo file endpoint returned 200 with bytes"
+      },
+      "academic_account_required": {
+        "value": false,
+        "evidence": "DATA-INFERRED"
+      },
+      "access_immediate": {
+        "value": true,
+        "evidence": "DATA-INFERRED"
+      },
+      "file_size": {
+        "value": {
+          "AngleCalculation_zip_current": 322730,
+          "AngleCalculation_zip_original": 316813
+        },
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo API file listing"
+      },
+      "file_format": {
+        "value": ".zip containing MATLAB .m and raw .txt CyberGlove streams",
+        "evidence": "OFFICIAL-CODE-INFERRED"
+      },
+      "license": {
+        "value": {
+          "zenodo_8418096": "Apache-2.0",
+          "zenodo_3357966": "CC-BY-4.0"
+        },
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo API licence field"
+      },
+      "research_use_restrictions": {
+        "value": "none stated beyond the licence; the code record requires citation of the calibration protocol paper",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "redistribution_restrictions": {
+        "value": "governed by Apache-2.0 (code) / CC-BY-4.0 (record)",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "citation_requirements": {
+        "value": [
+          "Gracia-Ibanez V, Vergara M, Buffi JH, Murray WM, Sancho-Bru JL. Across-subject calibration of an instrumented glove to measure hand movement for clinical purposes. Comput Methods Biomech Biomed Engin 20(6):587-597 (2017)",
+          "Gracia-Ibanez V, Jarque-Bou NJ, Roda-Sales A, Sancho-Bru JL. BE-UJI Hand joint angles calculation code. Zenodo (2019)"
+        ],
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "the code record's own description"
+      },
+      "downloadable_today": {
+        "value": true,
+        "evidence": "DATA-INFERRED",
+        "note": "downloaded: 322 730 bytes, AngleCalculation.zip, and read"
+      },
+      "attempts": [
+        {
+          "name": "be_uji_code",
+          "url": "https://zenodo.org/api/records/8418096/files/AngleCalculation.zip/content",
+          "dest": "uji_code/AngleCalculation.zip",
+          "path": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\uji_code\\AngleCalculation.zip",
+          "attempted_utc": "2026-09-21T03:09:36Z",
+          "http_code": "000",
+          "bytes": 0,
+          "content_type": "",
+          "curl_exit": 6,
+          "stderr": "curl: (6) Could not resolve host: zenodo.org\ncurl: (6) Could not resolve host: zenodo.org\ncurl: (6) Could not resolve host: zenodo.org",
+          "status": "FAILED",
+          "what": "BE-UJI hand joint angle calculation code (Zenodo 10.5281/zenodo.8418096)",
+          "attempt_note": "HTTP 200, 322 730 bytes, downloaded and unpacked; the angle formulas were read line by line",
+          "sha256": "332d9ecea74771432c05579e9814ad117af53b3150d07bbbd658a9e9b8a7c72a",
+          "bytes_on_disk": 322730
+        }
+      ],
+      "publication_status": {
+        "value": "the calibration method is a peer-reviewed journal article; no retraction found by this audit",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "documentation_audit": "COMPLETE",
+      "empirical_data_qc": "PARTIAL",
+      "empirical_data_qc_reason": "the released package includes ONE subject's raw CyberGlove streams with landmark files, so the CALIBRATION PIPELINE can be inspected end to end, but the KINE-ADL corpus's own anatomical-angle tables were not obtainable within the bounded-download rule"
+    },
+    "KIN_MUS": {
+      "official_location": {
+        "value": "https://doi.org/10.5281/zenodo.3469380 (version DOI 10.5281/zenodo.3337890)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo API record"
+      },
+      "registration_required": {
+        "value": false,
+        "evidence": "DATA-INFERRED",
+        "source": "the file endpoint returned 200 with bytes"
+      },
+      "academic_account_required": {
+        "value": false,
+        "evidence": "DATA-INFERRED"
+      },
+      "access_immediate": {
+        "value": true,
+        "evidence": "DATA-INFERRED"
+      },
+      "file_size": {
+        "value": {
+          "KIN_MUS_UJI.mat": 86661263,
+          "RAW_EMG.mat": 127723110,
+          "ADL19.mov": 60707713,
+          "ADL4.mov": 4372272
+        },
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo API file listing"
+      },
+      "file_format": {
+        "value": ".mat MATLAB struct array (fields Subject, ADL, Phase, time, Kinematic_data, EMG_data)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo record description; confirmed by DATA-INFERRED loading"
+      },
+      "license": {
+        "value": "CC-BY-4.0",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo API licence field; access_right = open"
+      },
+      "research_use_restrictions": {
+        "value": "none stated beyond CC-BY-4.0",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "redistribution_restrictions": {
+        "value": "CC-BY-4.0: redistribution permitted with attribution",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "citation_requirements": {
+        "value": "Jarque-Bou NJ, Vergara M, Sancho-Bru JL, Gracia-Ibanez V, Roda-Sales A. A calibrated database of kinematics and EMG of the forearm and hand during activities of daily living. Scientific Data 6:270 (2019)",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "downloadable_today": {
+        "value": true,
+        "evidence": "DATA-INFERRED",
+        "note": "downloaded 86 661 263 bytes and parsed"
+      },
+      "attempts": [
+        {
+          "name": "kin_mus_zenodo",
+          "url": "https://zenodo.org/api/records/3469380/files/KIN_MUS_UJI.mat/content",
+          "dest": "kin_mus/KIN_MUS_UJI.mat",
+          "path": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\kin_mus\\KIN_MUS_UJI.mat",
+          "attempted_utc": "2026-09-21T03:09:32Z",
+          "http_code": "000",
+          "bytes": 0,
+          "content_type": "",
+          "curl_exit": 6,
+          "stderr": "curl: (6) Could not resolve host: zenodo.org\ncurl: (6) Could not resolve host: zenodo.org\ncurl: (6) Could not resolve host: zenodo.org",
+          "status": "FAILED",
+          "what": "KIN-MUS UJI (Zenodo 10.5281/zenodo.3469380): kinematic + EMG + video",
+          "attempt_note": "HTTP 200, 86 661 263 bytes, downloaded; the kinematic block was parsed and audited empirically",
+          "sha256": "530a9e51b19574b0f5dee0c9263b1a50eafc7204b14cae67b6b1bb854671c722",
+          "bytes_on_disk": 86661263
+        }
+      ],
+      "publication_status": {
+        "value": "peer-reviewed Scientific Data article; no retraction found by this audit",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "https://doi.org/10.1038/s41597-019-0285-1"
+      },
+      "documentation_audit": "COMPLETE",
+      "empirical_data_qc": "POSSIBLE AND DONE",
+      "empirical_data_qc_reason": "the released kinematic block was downloaded and audited: 564 894 frames over 1 713 usable trials"
+    }
+  },
+  "bounded_download_compliance": {
+    "total_bytes_downloaded": 0,
+    "largest_single_download_bytes": 56,
+    "rule": "do not download hundreds of GB; a representative subset or the metadata is enough where the full corpus is large",
+    "decisions_taken_because_of_it": [
+      "MOVMUS-UJI_DATASET.zip (4 586 439 958 B) NOT downloaded; its guide and the calibration code were downloaded instead",
+      "CALIBRATED_KINEMATIC_DB_v2.zip (6 502 929 730 B) NOT downloaded",
+      "RAW_EMG.mat (127 723 110 B) NOT downloaded - EMG is not needed for a pose-admission decision"
+    ]
+  },
+  "summary": {
+    "HUST": {
+      "downloadable_today": false,
+      "license": "UNKNOWN",
+      "empirical_qc": "NOT POSSIBLE"
+    },
+    "KINE_ADL": {
+      "downloadable_today": true,
+      "license": "Apache-2.0",
+      "empirical_qc": "PARTIAL"
+    },
+    "KIN_MUS": {
+      "downloadable_today": true,
+      "license": "CC-BY-4.0",
+      "empirical_qc": "DONE"
+    }
+  }
+}

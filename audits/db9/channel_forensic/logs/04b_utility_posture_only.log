@@ -1,0 +1,23 @@
+==============================================================================
+04b POSTURE-ONLY TASK VARIANT
+==============================================================================
+official Exercise B movement ids used as the HAND-SHAPE task: [1, 2, 3, 4, 5, 6, 7, 8, 17]
+wrist-only ids excluded from the target: [9, 10, 11, 12, 13, 14, 15, 16]
+TRUSTED_DB9_POSE_v1 (8): ['MCP1', 'IP1', 'MCP2_f', 'PIP2', 'MCP3_f', 'MCP4_f', 'MCP5_f', 'PIP5']  sha256=e51dde6e63941fd080c84f3896a98cf50fba9e17d5f9cebe909253d5465782d1
+
+  arm A_historical_canonical16: X=(544556, 16) classes=9 subjects=37
+    Acc=0.8555  BA=0.8538  macroF1=0.8560  chance=0.1111
+    per-class recall: {1: 0.955, 2: 0.866, 3: 0.972, 4: 0.71, 5: 0.82, 6: 0.871, 7: 0.925, 8: 0.73, 17: 0.836}
+    worst subject BA=0.5648 median=0.8707
+    classes with recall <0.5: []  collapse=False
+
+  arm B_TRUSTED_DB9_POSE_v1: X=(544556, 8) classes=9 subjects=37
+    Acc=0.7286  BA=0.7254  macroF1=0.7257  chance=0.1111
+    per-class recall: {1: 0.91, 2: 0.748, 3: 0.935, 4: 0.519, 5: 0.652, 6: 0.76, 7: 0.914, 8: 0.433, 17: 0.658}
+    worst subject BA=0.4794 median=0.7347
+    classes with recall <0.5: [8]  collapse=False
+
+  utility loss on the HAND-SHAPE task: dBA=-0.1283 (relative 0.850)
+
+artifacts/POSTURE_UTILITY_POSTURE_ONLY.json sha256=ea68a6bef91437daffa9dcbb7875992827217c0d8119a2069579c0d11fbabe3b
+log: <PROJECT_ROOT>\db9_channel_forensic_v2\logs\04b_utility_posture_only.log

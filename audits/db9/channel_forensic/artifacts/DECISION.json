@@ -1,0 +1,503 @@
+{
+  "artifact": "DECISION.json",
+  "plan_sha256": "4c618b562903d0d364d03bb8a997ef6b4140bd9e09d0f2475f1b008ad80c8793",
+  "answers": {
+    "DIP3": "REAL_DB9_PROBLEM",
+    "DIP4": "INCONCLUSIVE",
+    "DIP5": "REAL_DB9_PROBLEM",
+    "CMC5": "REAL_DB9_PROBLEM",
+    "Sensor11_MCP2_a": "released as an all-NaN column; excluded officially; NO IMPACT on any historical representation of this project"
+  },
+  "previous_qc_verdict": "PARTIALLY_OVERTURNED - the earlier 'many channels fail' verdict was produced on segmentation keyed to the PRE-relabelling `repetition` vector, which is misaligned with the kinematics in 24 of 99 files. Under correct segmentation six of the suspects pass at >= 0.90 subject-level agreement, while FIVE findings are confirmed or newly established.",
+  "trusted": {
+    "n_keep": 8,
+    "keep": [
+      "MCP1",
+      "IP1",
+      "MCP2_f",
+      "PIP2",
+      "MCP3_f",
+      "MCP4_f",
+      "MCP5_f",
+      "PIP5"
+    ],
+    "drop": [
+      "MCP2_a",
+      "CMC5",
+      "MCP5_a",
+      "DIP3",
+      "DIP5",
+      "WRIST_A"
+    ],
+    "inconclusive": [
+      "CMC1_f",
+      "CMC1_a",
+      "PIP3",
+      "MCP4_a",
+      "PIP4",
+      "DIP2",
+      "DIP4",
+      "WRIST_F"
+    ],
+    "sha256": "e51dde6e63941fd080c84f3896a98cf50fba9e17d5f9cebe909253d5465782d1"
+  },
+  "old_results": [
+    {
+      "branch": "S3 posture decoder (`posture_decoder/`)",
+      "class": "NUMERICALLY_VALID_BUT_SEMANTICALLY_DOWNGRADED",
+      "why": "the numbers describe the DB9 released `angles` array, and that array is unchanged. But the historical canonical16 representation includes the four DIP channels, and this audit shows DIP3 and DIP5 are sign-inverted relative to the published sign criteria. Any claim of the form 'the decoder recovers physiological finger pose' is therefore unsupported for the DIP components; the classification numbers themselves stand.",
+      "action": "re-describe as a decoder over the released DB9 representation, not over physiological DIP angles; no rerun required for the numbers"
+    },
+    {
+      "branch": "S5 bridge (`bridge_audit/`)",
+      "class": "NEEDS_REINTERPRETATION",
+      "why": "the bridge compares DB9 against emg2pose. emg2pose supplies genuine DIP flexion; DB9's DIP3/DIP5 are inverted and its CMC5 column is the wrist channel. Any bridge conclusion that leans on those channels must be re-read.",
+      "action": "re-read the per-channel contributions; the aggregate may survive"
+    },
+    {
+      "branch": "DB9 distributional open-set (`db9_distributional_open_set/`)",
+      "class": "UNCHANGED",
+      "why": "the open-set work is about the distribution of the released representation. This audit does not change the release, the frames or the labels it used.",
+      "action": "none"
+    },
+    {
+      "branch": "DB9 channel validity (`db9_channel_validity/`)",
+      "class": "PARTIALLY_OVERTURNED",
+      "why": "its segmentation used `repetition`, which is the PRE-relabelling vector and is misaligned with `glove`/`angles` in 24 of 99 files; and it grouped by a container count in places. Its per-channel statistics are therefore computed on shifted boundaries. This audit re-derives the same questions on `restimulus x rerepetition` and reaches a partly different answer: six of its suspects are exonerated at >= 0.90 subject-level agreement, while DIP3/DIP5/CMC5 are confirmed bad and DIP4/PIP3/PIP4/DIP2 are held INCONCLUSIVE.",
+      "action": "keep the artifacts; do not cite the numbers; supersede with this lane"
+    },
+    {
+      "branch": "coordinate audit (`pose_coordinate_audit/`)",
+      "class": "UNCHANGED by this lane; its own outstanding items remain open",
+      "why": "the earlier finding that part of that lane compared the adapter against itself, and that its PCA scripts grouped by `repetition`, is independent of this audit and is neither fixed nor re-opened here. This audit independently confirms the `repetition`-vs-`rerepetition` defect class: `repetition` is misaligned in 24 of 99 files.",
+      "action": "PI decision still outstanding on the correction branch"
+    },
+    {
+      "branch": "the in-file `subject` field as an identity key (anywhere)",
+      "class": "INVALID",
+      "why": "the in-file `subject` field is source-database-local. `S68_E2_A1.mat` reports `subject == 1`, colliding with `S1_E2_A1.mat`; 10 such collisions exist among the 37 Exercise B files. Any grouping by that field merges distinct people.",
+      "action": "use the archive slot / filename as the identity; the historical lane `data/ninapro_db9/dataset.meta.json` already records this correctly, so this is a warning, not a live defect"
+    }
+  ],
+  "decision": {
+    "code": "DB9-ADMIT-REDUCED",
+    "assessed_task": "Exercise B HAND-SHAPE movements only (official ids 1-8, 17)",
+    "meaning": "the trusted physical subset is real and the posture task remains usable, but on a reduced channel set and/or with a measurable utility loss. Permitted claims: the Exercise B movement classes recovered by the frozen trusted subset under subject-held-out evaluation. Not permitted: any claim about DIP angles, the palmar arch, or wrist deviation as measured physical quantities."
+  },
+  "posture_only_variant": {
+    "artifact": "POSTURE_UTILITY_POSTURE_ONLY.json",
+    "plan_sha256": "4c618b562903d0d364d03bb8a997ef6b4140bd9e09d0f2475f1b008ad80c8793",
+    "task": "Exercise B HAND-SHAPE movements only (official ids 1-8, 17)",
+    "excluded_wrist_ids": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "rationale": "TRUSTED_DB9_POSE_v1 contains no wrist channel by construction (WRIST_F INCONCLUSIVE, WRIST_A DROP), so the mixed 17-class task penalises it for a target it was never designed to carry",
+    "trusted_subset_sha256": "e51dde6e63941fd080c84f3896a98cf50fba9e17d5f9cebe909253d5465782d1",
+    "protocol": "identical to driver 04: subject-held-out, train-fold-only standardisation, one shared LinearDiscriminantAnalysis per fold, radians, central 60 % of every segment",
+    "arms": {
+      "A_historical_canonical16": {
+        "arm": "A_historical_canonical16",
+        "n_frames": 544556,
+        "n_subjects": 37,
+        "n_classes": 9,
+        "accuracy": 0.8554785917334489,
+        "balanced_accuracy": 0.8537944617929629,
+        "macro_f1": 0.855988044051196,
+        "chance_balanced_accuracy": 0.1111111111111111,
+        "per_class_recall": {
+          "1": 0.9546481932662108,
+          "2": 0.866223316912972,
+          "3": 0.9716790851961128,
+          "4": 0.7096604196172721,
+          "5": 0.8201735952489722,
+          "6": 0.8711328896365099,
+          "7": 0.9248324341997711,
+          "8": 0.729816187671372,
+          "17": 0.8359840343874732
+        },
+        "confusion_matrix": [
+          [
+            65044,
+            0,
+            0,
+            106,
+            0,
+            1502,
+            1331,
+            0,
+            151
+          ],
+          [
+            1215,
+            52753,
+            2590,
+            1091,
+            0,
+            2258,
+            914,
+            0,
+            79
+          ],
+          [
+            308,
+            1108,
+            58292,
+            0,
+            0,
+            72,
+            61,
+            0,
+            150
+          ],
+          [
+            426,
+            29,
+            13,
+            43092,
+            10356,
+            6,
+            15,
+            468,
+            6317
+          ],
+          [
+            515,
+            7,
+            0,
+            2049,
+            44884,
+            41,
+            0,
+            358,
+            6871
+          ],
+          [
+            5962,
+            0,
+            0,
+            35,
+            0,
+            47644,
+            979,
+            0,
+            72
+          ],
+          [
+            1128,
+            494,
+            0,
+            977,
+            81,
+            1405,
+            56572,
+            382,
+            131
+          ],
+          [
+            2075,
+            0,
+            0,
+            154,
+            26,
+            381,
+            43,
+            43119,
+            13284
+          ],
+          [
+            24,
+            0,
+            0,
+            25,
+            2136,
+            0,
+            0,
+            8499,
+            54456
+          ]
+        ],
+        "confusion_labels": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          17
+        ],
+        "per_subject_balanced_accuracy": {
+          "1": 0.71642650601417,
+          "2": 0.928351173597661,
+          "3": 0.8497269867030816,
+          "4": 0.9196316864543996,
+          "5": 0.7603503769560198,
+          "6": 0.870701145679425,
+          "7": 0.957073025220878,
+          "8": 0.8916408950510917,
+          "9": 0.8793837311017608,
+          "10": 0.7865217331236884,
+          "11": 0.8927119253200453,
+          "12": 0.8069879452014976,
+          "13": 0.934995376128989,
+          "14": 0.7479685431896121,
+          "15": 0.850044053843039,
+          "16": 0.8947053963964924,
+          "17": 0.6832064049578231,
+          "18": 0.8738188967561231,
+          "19": 0.8192902039866493,
+          "20": 0.8901128058772867,
+          "21": 0.8920066909755148,
+          "22": 0.8394636174162132,
+          "23": 0.8741241638699808,
+          "24": 0.8154889425623464,
+          "25": 0.9401127357230364,
+          "26": 0.5647617572799044,
+          "27": 0.8499918735001633,
+          "68": 0.9078589998234499,
+          "69": 0.9205708543537242,
+          "70": 0.8554825384301389,
+          "71": 0.7998715687994886,
+          "72": 0.915495235617676,
+          "73": 0.7686998668681141,
+          "74": 0.9138981415872425,
+          "75": 0.8532804943712868,
+          "76": 0.868170332249922,
+          "77": 0.9235379513727648
+        },
+        "worst_subject_balanced_accuracy": 0.5647617572799044,
+        "best_subject_balanced_accuracy": 0.957073025220878,
+        "median_subject_balanced_accuracy": 0.870701145679425,
+        "classes_with_recall_below_0_5": [],
+        "classes_with_recall_below_0_2": [],
+        "class_collapse": false,
+        "top5_subject_share_of_correct": null,
+        "columns": [
+          "CMC1_f",
+          "CMC1_a",
+          "MCP1",
+          "IP1",
+          "MCP2_f",
+          "PIP2",
+          "DIP2",
+          "MCP3_f",
+          "PIP3",
+          "DIP3",
+          "MCP4_f",
+          "PIP4",
+          "DIP4",
+          "MCP5_f",
+          "PIP5",
+          "DIP5"
+        ]
+      },
+      "B_TRUSTED_DB9_POSE_v1": {
+        "arm": "B_TRUSTED_DB9_POSE_v1",
+        "n_frames": 544556,
+        "n_subjects": 37,
+        "n_classes": 9,
+        "accuracy": 0.7285843880151903,
+        "balanced_accuracy": 0.7254456066785173,
+        "macro_f1": 0.7256736065614833,
+        "chance_balanced_accuracy": 0.1111111111111111,
+        "per_class_recall": {
+          "1": 0.9095899257345819,
+          "2": 0.7480788177339901,
+          "3": 0.9349569102031972,
+          "4": 0.5194328250057639,
+          "5": 0.6523709456372773,
+          "6": 0.7599283258977547,
+          "7": 0.9137158737943436,
+          "8": 0.4334145763515115,
+          "17": 0.6575222597482345
+        },
+        "confusion_matrix": [
+          [
+            61974,
+            0,
+            0,
+            135,
+            7,
+            4582,
+            1333,
+            7,
+            96
+          ],
+          [
+            2292,
+            45558,
+            8526,
+            333,
+            147,
+            2071,
+            942,
+            570,
+            461
+          ],
+          [
+            194,
+            3328,
+            56089,
+            0,
+            38,
+            104,
+            134,
+            31,
+            73
+          ],
+          [
+            365,
+            41,
+            28,
+            31541,
+            12617,
+            89,
+            0,
+            8629,
+            7412
+          ],
+          [
+            475,
+            16,
+            2,
+            2303,
+            35701,
+            96,
+            0,
+            311,
+            15821
+          ],
+          [
+            12066,
+            3,
+            0,
+            0,
+            3,
+            41562,
+            979,
+            79,
+            0
+          ],
+          [
+            1951,
+            723,
+            0,
+            51,
+            211,
+            958,
+            55892,
+            1122,
+            262
+          ],
+          [
+            1354,
+            31,
+            0,
+            10621,
+            1619,
+            1132,
+            49,
+            25607,
+            18669
+          ],
+          [
+            19,
+            8,
+            0,
+            6332,
+            9291,
+            0,
+            0,
+            6659,
+            42831
+          ]
+        ],
+        "confusion_labels": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          17
+        ],
+        "per_subject_balanced_accuracy": {
+          "1": 0.7789382919877653,
+          "2": 0.6487739763689064,
+          "3": 0.7341507390196053,
+          "4": 0.7346817034262487,
+          "5": 0.6853679270847434,
+          "6": 0.5658416159300148,
+          "7": 0.7763800706275127,
+          "8": 0.8728205847791658,
+          "9": 0.7981262816131992,
+          "10": 0.5950228948435909,
+          "11": 0.7499817912280888,
+          "12": 0.7622574126917719,
+          "13": 0.8802698828126441,
+          "14": 0.6799169074968908,
+          "15": 0.5937572120936846,
+          "16": 0.7414472269044121,
+          "17": 0.6949758666734169,
+          "18": 0.7735347800500676,
+          "19": 0.6561715461386208,
+          "20": 0.7841786016820314,
+          "21": 0.788119456702421,
+          "22": 0.7070206881420047,
+          "23": 0.764096211681944,
+          "24": 0.7650108839303797,
+          "25": 0.723614254728607,
+          "26": 0.5842886087151804,
+          "27": 0.7089614207496572,
+          "68": 0.687182458922997,
+          "69": 0.7336692643891681,
+          "70": 0.8091259415143904,
+          "71": 0.47942322289171785,
+          "72": 0.8659002432006022,
+          "73": 0.6866530011166909,
+          "74": 0.7307690069416023,
+          "75": 0.7720535596595097,
+          "76": 0.8354943430994621,
+          "77": 0.7650117327310427
+        },
+        "worst_subject_balanced_accuracy": 0.47942322289171785,
+        "best_subject_balanced_accuracy": 0.8802698828126441,
+        "median_subject_balanced_accuracy": 0.7346817034262487,
+        "classes_with_recall_below_0_5": [
+          8
+        ],
+        "classes_with_recall_below_0_2": [],
+        "class_collapse": false,
+        "top5_subject_share_of_correct": null,
+        "columns": [
+          "MCP1",
+          "IP1",
+          "MCP2_f",
+          "PIP2",
+          "MCP3_f",
+          "MCP4_f",
+          "MCP5_f",
+          "PIP5"
+        ]
+      }
+    },
+    "utility_loss": {
+      "delta_accuracy": -0.12689420371825855,
+      "delta_balanced_accuracy": -0.1283488551144456,
+      "delta_macro_f1": -0.13031443748971272,
+      "relative_balanced_accuracy": 0.849672420169002
+    },
+    "evidence": "EMPIRICAL"
+  },
+  "terminal_status": "PASS"
+}

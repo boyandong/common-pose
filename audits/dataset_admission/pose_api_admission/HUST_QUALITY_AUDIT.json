@@ -1,0 +1,81 @@
+{
+  "artifact": "HUST_QUALITY_AUDIT.json",
+  "branch_id": "S6-POSE-API-DATASET-ADMISSION",
+  "plan_sha256": "4d2c8b162e2332a5891a5d89a53166e365b1bbd92c205222492d19957c9683ec",
+  "documentation_audit": "COMPLETE",
+  "empirical_data_qc": "NOT POSSIBLE",
+  "reason": "no bytes of HUST could be obtained by any public route; the Wayback Machine holds no copy of the dataset archive; the published download URL returns HTTP 500; the Dryad download endpoint is behind a proof-of-work interstitial.  This is the honest state of the evidence and it is itself an admission finding",
+  "accessible_metadata": {
+    "n_subjects_claimed": {
+      "value": 30,
+      "evidence": "OFFICIAL-DOCUMENTED",
+      "source": "handcorpus HUST page"
+    },
+    "n_actions_claimed": {
+      "value": 33,
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    "dof_claimed": {
+      "value": 16,
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    "sampling_rate_claimed_hz": {
+      "value": 100,
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    "unit_claimed": {
+      "value": "radians",
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    "equipment": {
+      "value": "CyberGlove",
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    "hand": {
+      "value": "right only",
+      "evidence": "OFFICIAL-DOCUMENTED"
+    }
+  },
+  "channel_list": {
+    "value": "UNAVAILABLE - the dataset page publishes a DOF COUNT (16), not a joint-name list, and no data file could be obtained",
+    "evidence": "UNKNOWN"
+  },
+  "nans": {
+    "value": "NOT TESTABLE",
+    "evidence": "UNKNOWN"
+  },
+  "constant_channels": {
+    "value": "NOT TESTABLE",
+    "evidence": "UNKNOWN"
+  },
+  "clipping": {
+    "value": "NOT TESTABLE",
+    "evidence": "UNKNOWN"
+  },
+  "discontinuities": {
+    "value": "NOT TESTABLE",
+    "evidence": "UNKNOWN"
+  },
+  "unit_consistency": {
+    "value": "NOT TESTABLE",
+    "evidence": "UNKNOWN"
+  },
+  "repeatability": {
+    "value": "NOT TESTABLE",
+    "evidence": "UNKNOWN"
+  },
+  "documented_quality_controls": {
+    "value": "UNKNOWN - the associated paper is RETRACTED, so its methods section cannot carry a quality claim, and no README or metadata file is obtainable",
+    "evidence": "UNKNOWN"
+  },
+  "publication_integrity": {
+    "value": {
+      "status": "RETRACTED",
+      "notice": "PLOS ONE, 4 March 2016, doi:10.1371/journal.pone.0151685",
+      "stated_reason": "the editors 'consider that the work cannot be relied upon'; the evaluation 'confirmed concerns with the scientific rationale, presentation and language, which were not adequately addressed during peer review'",
+      "consequence_for_this_audit": "no HUST claim about units, signs, zero, calibration or subject structure can rest on the paper"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "verdict": "EMPIRICAL DATA QC NOT POSSIBLE.  Combined with the retraction and the missing channel list, HUST fails multiple admission criteria without any measurement being needed"
+}

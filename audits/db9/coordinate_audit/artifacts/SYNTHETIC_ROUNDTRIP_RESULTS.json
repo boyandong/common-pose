@@ -1,0 +1,251 @@
+{
+  "path": "emg2pose official 20D -> canonical16 -> 20D (MCP-AA = 0)",
+  "n_samples": 3559584,
+  "kept_dimensions_are_exact": true,
+  "max_abs_error_on_kept_dimensions": 0.0,
+  "per_dimension_max_abs_error": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "dropped_dimensions": [
+    "INDEX_MCP_AA",
+    "MIDDLE_MCP_AA",
+    "RING_MCP_AA",
+    "PINKY_MCP_AA"
+  ],
+  "dropped_dimension_recovery": "IMPOSSIBLE by construction (set to 0.0)",
+  "landmark_cost_of_the_dropped_dof": {
+    "n_sessions_measured": 30,
+    "max_landmark_displacement_model_units": 21.835194961469863,
+    "median_session_mean_displacement": 0.13024588832446593,
+    "interpretation": "this is the geometry cost of the frozen S4/S5 embedding convention on REAL poses, so it bounds how much of any GT-vs-PRED comparison can be attributed to that convention"
+  },
+  "per_session": [
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-10_left",
+      "n": 402,
+      "max_landmark_displacement": 0.6442431751807113,
+      "mean_landmark_displacement": 0.14680756247237398,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-10_right",
+      "n": 401,
+      "max_landmark_displacement": 21.592020431843004,
+      "mean_landmark_displacement": 5.233114664540641,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-11_left",
+      "n": 401,
+      "max_landmark_displacement": 0.6002446715599449,
+      "mean_landmark_displacement": 0.0912003732653229,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-11_right",
+      "n": 401,
+      "max_landmark_displacement": 0.24759297486097406,
+      "mean_landmark_displacement": 0.07407389123231646,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-12_left",
+      "n": 401,
+      "max_landmark_displacement": 0.18838202994504455,
+      "mean_landmark_displacement": 0.04407064825165234,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-12_right",
+      "n": 401,
+      "max_landmark_displacement": 19.734103006422913,
+      "mean_landmark_displacement": 5.823484511244855,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-13_left",
+      "n": 401,
+      "max_landmark_displacement": 0.3650587677059442,
+      "mean_landmark_displacement": 0.1136842141765579,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-13_right",
+      "n": 401,
+      "max_landmark_displacement": 0.7116853721134312,
+      "mean_landmark_displacement": 0.1980243128157763,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-14_left",
+      "n": 402,
+      "max_landmark_displacement": 0.08963113145624249,
+      "mean_landmark_displacement": 0.01708631301708661,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-14_right",
+      "n": 402,
+      "max_landmark_displacement": 16.361589531533994,
+      "mean_landmark_displacement": 4.757821967189036,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-15_left",
+      "n": 403,
+      "max_landmark_displacement": 16.373006624456924,
+      "mean_landmark_displacement": 5.172300231064253,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-15_right",
+      "n": 403,
+      "max_landmark_displacement": 0.33713689618503534,
+      "mean_landmark_displacement": 0.07608573125095117,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-1_left",
+      "n": 401,
+      "max_landmark_displacement": 0.14698648771320857,
+      "mean_landmark_displacement": 0.05567119486911777,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-1_right",
+      "n": 401,
+      "max_landmark_displacement": 0.5534070238360161,
+      "mean_landmark_displacement": 0.1880268713616438,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-2_left",
+      "n": 400,
+      "max_landmark_displacement": 0.1442594963204033,
+      "mean_landmark_displacement": 0.03545593376214187,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-2_right",
+      "n": 401,
+      "max_landmark_displacement": 0.5929621308213507,
+      "mean_landmark_displacement": 0.16314232634742235,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-3_left",
+      "n": 401,
+      "max_landmark_displacement": 0.10025015134278904,
+      "mean_landmark_displacement": 0.02003043265900824,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-3_right",
+      "n": 401,
+      "max_landmark_displacement": 0.26906054180389366,
+      "mean_landmark_displacement": 0.04324738035789997,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-4_left",
+      "n": 401,
+      "max_landmark_displacement": 9.220772192940204,
+      "mean_landmark_displacement": 2.264603626281811,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-4_right",
+      "n": 402,
+      "max_landmark_displacement": 19.218442738646786,
+      "mean_landmark_displacement": 5.532680439028384,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-5_left",
+      "n": 401,
+      "max_landmark_displacement": 9.471742852959096,
+      "mean_landmark_displacement": 2.129221787483048,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-5_right",
+      "n": 401,
+      "max_landmark_displacement": 0.3970369549203883,
+      "mean_landmark_displacement": 0.09406356687718538,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-6_left",
+      "n": 402,
+      "max_landmark_displacement": 14.242625726439035,
+      "mean_landmark_displacement": 2.9165531773759503,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-6_right",
+      "n": 402,
+      "max_landmark_displacement": 0.1857561537636069,
+      "mean_landmark_displacement": 0.0584262754326838,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-7_left",
+      "n": 401,
+      "max_landmark_displacement": 9.457508097995403,
+      "mean_landmark_displacement": 3.2684876244671535,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-7_right",
+      "n": 402,
+      "max_landmark_displacement": 0.18403411787429283,
+      "mean_landmark_displacement": 0.05137616849643397,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-8_left",
+      "n": 401,
+      "max_landmark_displacement": 0.11890680176497574,
+      "mean_landmark_displacement": 0.026615185660183383,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-8_right",
+      "n": 401,
+      "max_landmark_displacement": 21.835194961469863,
+      "mean_landmark_displacement": 6.517479695676859,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-9_left",
+      "n": 401,
+      "max_landmark_displacement": 0.4026049329059734,
+      "mean_landmark_displacement": 0.06517432864834964,
+      "n_dropped_dof_nonzero": 4
+    },
+    {
+      "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-9_right",
+      "n": 402,
+      "max_landmark_displacement": 6.488203970276218,
+      "mean_landmark_displacement": 2.351861091010856,
+      "n_dropped_dof_nonzero": 4
+    }
+  ],
+  "no_inverse_fabricated": "DB9 -> canonical16 has no inverse at all: DB9's CMC5, MCP4_a, MCP5_a, WRIST_F, WRIST_A are not canonical16 inputs and MCP2_a is officially dead.  No DB9 inverse is constructed here.",
+  "plan_sha256": "c59fe01370d48aedeed56ef7a4103506d14a298edb794723be3720531edd62c6"
+}

@@ -1,0 +1,1299 @@
+{
+  "artifact": "DB9_SOURCE_CALIBRATION_AUDIT.json",
+  "plan_sha256": "c59fe01370d48aedeed56ef7a4103506d14a298edb794723be3720531edd62c6",
+  "canonical16_names": [
+    "thumb_cmc_flexion",
+    "thumb_cmc_ab_adduction",
+    "thumb_mcp_flexion",
+    "thumb_ip_flexion",
+    "index_mcp_flexion",
+    "index_pip_flexion",
+    "index_dip_flexion",
+    "middle_mcp_flexion",
+    "middle_pip_flexion",
+    "middle_dip_flexion",
+    "ring_mcp_flexion",
+    "ring_pip_flexion",
+    "ring_dip_flexion",
+    "pinky_mcp_flexion",
+    "pinky_pip_flexion",
+    "pinky_dip_flexion"
+  ],
+  "unit": "subject x movement x repetition, central phase",
+  "per_dimension": {
+    "thumb_cmc_flexion": {
+      "DB1": {
+        "n_units": 5470,
+        "n_subjects": 27,
+        "median_deg": 14.19195308849833,
+        "mean_deg": 14.601537222988021,
+        "iqr_deg": 31.39817936459762,
+        "p5_deg": -23.919874476703214,
+        "p95_deg": 51.13709816479749,
+        "min_deg": -78.23560529267196,
+        "max_deg": 78.48590390263603
+      },
+      "DB2": {
+        "n_units": 4525,
+        "n_subjects": 40,
+        "median_deg": 6.250738143920898,
+        "mean_deg": 9.860976175258955,
+        "iqr_deg": 24.235602378845215,
+        "p5_deg": -16.532698822021484,
+        "p95_deg": 47.649971008300795,
+        "min_deg": -166.6094970703125,
+        "max_deg": 80.49599838256836
+      },
+      "DB5": {
+        "n_units": 1892,
+        "n_subjects": 10,
+        "median_deg": 4.885843515396118,
+        "mean_deg": 5.229130950762278,
+        "iqr_deg": 28.00871777534485,
+        "p5_deg": -28.14555902481079,
+        "p95_deg": 41.263488006591786,
+        "min_deg": -63.58402633666992,
+        "max_deg": 62.712791442871094
+      },
+      "DB2_minus_DB1_gap": {
+        "value": -7.941214944577432,
+        "ci95": [
+          -13.255403968342604,
+          -1.3749203274744721
+        ],
+        "n_boot": 2000,
+        "resample_unit": "subject",
+        "n_subjects_a": 27,
+        "n_subjects_b": 40
+      },
+      "DB5_note": "DB5 contributes only 10 subjects (3 in the frozen outcome-unseen cohort); its statistics are reported but carry much wider uncertainty"
+    },
+    "thumb_cmc_ab_adduction": {
+      "DB1": {
+        "n_units": 5470,
+        "n_subjects": 27,
+        "median_deg": -13.142167282506296,
+        "mean_deg": -12.105216363830786,
+        "iqr_deg": 15.545413442726364,
+        "p5_deg": -25.335074568019675,
+        "p95_deg": 2.7074229559137515,
+        "min_deg": -33.07515725388562,
+        "max_deg": 12.760325068093191
+      },
+      "DB2": {
+        "n_units": 4525,
+        "n_subjects": 40,
+        "median_deg": -4.060381650924683,
+        "mean_deg": -5.657362666992028,
+        "iqr_deg": 11.76332938671112,
+        "p5_deg": -22.668298721313477,
+        "p95_deg": 6.921716403961182,
+        "min_deg": -36.73833084106445,
+        "max_deg": 14.905991554260254
+      },
+      "DB5": {
+        "n_units": 1892,
+        "n_subjects": 10,
+        "median_deg": -13.802271604537964,
+        "mean_deg": -12.96455002099622,
+        "iqr_deg": 16.599022090435028,
+        "p5_deg": -27.953156566619874,
+        "p95_deg": 3.0324882507324142,
+        "min_deg": -36.304452896118164,
+        "max_deg": 15.437372207641602
+      },
+      "DB2_minus_DB1_gap": {
+        "value": 9.081785631581614,
+        "ci95": [
+          6.912883258358033,
+          10.610984637744568
+        ],
+        "n_boot": 2000,
+        "resample_unit": "subject",
+        "n_subjects_a": 27,
+        "n_subjects_b": 40
+      },
+      "DB5_note": "DB5 contributes only 10 subjects (3 in the frozen outcome-unseen cohort); its statistics are reported but carry much wider uncertainty"
+    },
+    "thumb_mcp_flexion": {
+      "DB1": {
+        "n_units": 5470,
+        "n_subjects": 27,
+        "median_deg": 3.6866341718732873,
+        "mean_deg": 4.805332984467317,
+        "iqr_deg": 13.508675556379462,
+        "p5_deg": -12.645976670229423,
+        "p95_deg": 25.757466120700094,
+        "min_deg": -45.94886533480248,
+        "max_deg": 65.97985491605594
+      },
+      "DB2": {
+        "n_units": 4525,
+        "n_subjects": 40,
+        "median_deg": 3.61969256401062,
+        "mean_deg": 5.9033345307666005,
+        "iqr_deg": 15.402385473251343,
+        "p5_deg": -10.983816528320311,
+        "p95_deg": 28.968083572387727,
+        "min_deg": -54.73397445678711,
+        "max_deg": 86.96022033691406
+      },
+      "DB5": {
+        "n_units": 1892,
+        "n_subjects": 10,
+        "median_deg": 0.5425263941287994,
+        "mean_deg": 1.1547598698713972,
+        "iqr_deg": 15.397594809532166,
+        "p5_deg": -18.754823207855225,
+        "p95_deg": 23.615339279174805,
+        "min_deg": -40.47029113769531,
+        "max_deg": 69.16101837158203
+      },
+      "DB2_minus_DB1_gap": {
+        "value": -0.06694160786266723,
+        "ci95": [
+          -2.763919237864305,
+          2.383992372654741
+        ],
+        "n_boot": 2000,
+        "resample_unit": "subject",
+        "n_subjects_a": 27,
+        "n_subjects_b": 40
+      },
+      "DB5_note": "DB5 contributes only 10 subjects (3 in the frozen outcome-unseen cohort); its statistics are reported but carry much wider uncertainty"
+    },
+    "thumb_ip_flexion": {
+      "DB1": {
+        "n_units": 5470,
+        "n_subjects": 27,
+        "median_deg": 11.386872078154932,
+        "mean_deg": 17.404293172652327,
+        "iqr_deg": 39.015645922581804,
+        "p5_deg": -25.607403955946662,
+        "p95_deg": 76.51048926224215,
+        "min_deg": -90.85865286327235,
+        "max_deg": 117.3033798345083
+      },
+      "DB2": {
+        "n_units": 4525,
+        "n_subjects": 40,
+        "median_deg": 7.127274513244629,
+        "mean_deg": 17.500698055933483,
+        "iqr_deg": 37.2626748085022,
+        "p5_deg": -13.939630508422852,
+        "p95_deg": 75.29786376953126,
+        "min_deg": -139.830078125,
+        "max_deg": 110.62261199951172
+      },
+      "DB5": {
+        "n_units": 1892,
+        "n_subjects": 10,
+        "median_deg": 5.862685203552246,
+        "mean_deg": 10.962752127927388,
+        "iqr_deg": 37.26477015018463,
+        "p5_deg": -31.698727130889893,
+        "p95_deg": 62.63718795776367,
+        "min_deg": -73.27708435058594,
+        "max_deg": 89.55894470214844
+      },
+      "DB2_minus_DB1_gap": {
+        "value": -4.259597564910303,
+        "ci95": [
+          -12.512690651190077,
+          4.573530392709181
+        ],
+        "n_boot": 2000,
+        "resample_unit": "subject",
+        "n_subjects_a": 27,
+        "n_subjects_b": 40
+      },
+      "DB5_note": "DB5 contributes only 10 subjects (3 in the frozen outcome-unseen cohort); its statistics are reported but carry much wider uncertainty"
+    },
+    "index_mcp_flexion": {
+      "DB1": {
+        "n_units": 5470,
+        "n_subjects": 27,
+        "median_deg": 19.64631616136833,
+        "mean_deg": 21.87697067149546,
+        "iqr_deg": 41.57186695521662,
+        "p5_deg": -18.124485197531463,
+        "p95_deg": 68.87346237422534,
+        "min_deg": -50.20750630968148,
+        "max_deg": 101.75383012270521
+      },
+      "DB2": {
+        "n_units": 4525,
+        "n_subjects": 40,
+        "median_deg": 4.110365867614746,
+        "mean_deg": 11.608892699297652,
+        "iqr_deg": 33.80339741706848,
+        "p5_deg": -23.078786659240723,
+        "p95_deg": 66.41551818847657,
+        "min_deg": -71.59822845458984,
+        "max_deg": 98.3294906616211
+      },
+      "DB5": {
+        "n_units": 1892,
+        "n_subjects": 10,
+        "median_deg": 16.41899585723877,
+        "mean_deg": 22.07156663782743,
+        "iqr_deg": 50.468625664711,
+        "p5_deg": -19.689144229888917,
+        "p95_deg": 75.16950988769531,
+        "min_deg": -52.56816482543945,
+        "max_deg": 98.90432739257812
+      },
+      "DB2_minus_DB1_gap": {
+        "value": -15.535950293753583,
+        "ci95": [
+          -20.343384679782666,
+          -10.01537178131131
+        ],
+        "n_boot": 2000,
+        "resample_unit": "subject",
+        "n_subjects_a": 27,
+        "n_subjects_b": 40
+      },
+      "DB5_note": "DB5 contributes only 10 subjects (3 in the frozen outcome-unseen cohort); its statistics are reported but carry much wider uncertainty"
+    },
+    "index_pip_flexion": {
+      "DB1": {
+        "n_units": 5470,
+        "n_subjects": 27,
+        "median_deg": 28.793610704007886,
+        "mean_deg": 34.87179550389808,
+        "iqr_deg": 65.93014986028983,
+        "p5_deg": -14.678835506950463,
+        "p95_deg": 115.28054219425896,
+        "min_deg": -38.93231466730706,
+        "max_deg": 149.21254049146415
+      },
+      "DB2": {
+        "n_units": 4525,
+        "n_subjects": 40,
+        "median_deg": -0.8430262804031372,
+        "mean_deg": 17.75189750197987,
+        "iqr_deg": 25.38878107070923,
+        "p5_deg": -21.211877059936523,
+        "p95_deg": 120.04493713378908,
+        "min_deg": -60.44635200500488,
+        "max_deg": 148.30902862548828
+      },
+      "DB5": {
+        "n_units": 1892,
+        "n_subjects": 10,
+        "median_deg": 29.300132751464844,
+        "mean_deg": 37.38137987410023,
+        "iqr_deg": 73.61095666885376,
+        "p5_deg": -11.87611198425293,
+        "p95_deg": 118.08018493652344,
+        "min_deg": -23.9268741607666,
+        "max_deg": 151.3194122314453
+      },
+      "DB2_minus_DB1_gap": {
+        "value": -29.636636984411023,
+        "ci95": [
+          -37.40471203679989,
+          -12.610544261691302
+        ],
+        "n_boot": 2000,
+        "resample_unit": "subject",
+        "n_subjects_a": 27,
+        "n_subjects_b": 40
+      },
+      "DB5_note": "DB5 contributes only 10 subjects (3 in the frozen outcome-unseen cohort); its statistics are reported but carry much wider uncertainty"
+    },
+    "index_dip_flexion": {
+      "DB1": {
+        "n_units": 5470,
+        "n_subjects": 27,
+        "median_deg": 1.846934086924254,
+        "mean_deg": 11.40598182442091,
+        "iqr_deg": 24.675114671091013,
+        "p5_deg": -19.894227046591954,
+        "p95_deg": 81.53573548665742,
+        "min_deg": -103.28764682738903,
+        "max_deg": 181.1446047488524
+      },
+      "DB2": {
+        "n_units": 4525,
+        "n_subjects": 40,
+        "median_deg": 1.409828782081604,
+        "mean_deg": 11.085847525241828,
+        "iqr_deg": 17.700807571411133,
+        "p5_deg": -18.385786819458005,
+        "p95_deg": 88.4555892944336,
+        "min_deg": -79.84501647949219,
+        "max_deg": 208.33558654785156
+      },
+      "DB5": {
+        "n_units": 1892,
+        "n_subjects": 10,
+        "median_deg": 0.9204826354980469,
+        "mean_deg": 10.74727699602105,
+        "iqr_deg": 30.67704486846924,
+        "p5_deg": -29.877599716186523,
+        "p95_deg": 79.7802734375,
+        "min_deg": -61.5789680480957,
+        "max_deg": 200.90126037597656
+      },
+      "DB2_minus_DB1_gap": {
+        "value": -0.4371053048426501,
+        "ci95": [
+          -3.788443850507376,
+          2.515306440381386
+        ],
+        "n_boot": 2000,
+        "resample_unit": "subject",
+        "n_subjects_a": 27,
+        "n_subjects_b": 40
+      },
+      "DB5_note": "DB5 contributes only 10 subjects (3 in the frozen outcome-unseen cohort); its statistics are reported but carry much wider uncertainty"
+    },
+    "middle_mcp_flexion": {
+      "DB1": {
+        "n_units": 5470,
+        "n_subjects": 27,
+        "median_deg": 40.44080697019164,
+        "mean_deg": 40.30403828360764,
+        "iqr_deg": 68.95485729179074,
+        "p5_deg": -8.889697556272695,
+        "p95_deg": 110.20160214135613,
+        "min_deg": -36.36812231404387,
+        "max_deg": 148.28249848428814
+      },
+      "DB2": {
+        "n_units": 4525,
+        "n_subjects": 40,
+        "median_deg": 0.3621496558189392,
+        "mean_deg": 22.23160456564617,
+        "iqr_deg": 48.317166328430176,
+        "p5_deg": -14.57771644592285,
+        "p95_deg": 113.02205047607426,
+        "min_deg": -61.91647720336914,
+        "max_deg": 148.77093505859375
+      },
+      "DB5": {
+        "n_units": 1892,
+        "n_subjects": 10,
+        "median_deg": 44.38741874694824,
+        "mean_deg": 42.02681354042458,
+        "iqr_deg": 78.27772161364555,
+        "p5_deg": -9.882011413574219,
+        "p95_deg": 112.9439468383789,
+        "min_deg": -25.836788177490234,
+        "max_deg": 129.36529541015625
+      },
+      "DB2_minus_DB1_gap": {
+        "value": -40.0786573143727,
+        "ci95": [
+          -45.93303339645579,
+          -30.985198481217417
+        ],
+        "n_boot": 2000,
+        "resample_unit": "subject",
+        "n_subjects_a": 27,
+        "n_subjects_b": 40
+      },
+      "DB5_note": "DB5 contributes only 10 subjects (3 in the frozen outcome-unseen cohort); its statistics are reported but carry much wider uncertainty"
+    },
+    "middle_pip_flexion": {
+      "DB1": {
+        "n_units": 5470,
+        "n_subjects": 27,
+        "median_deg": 1.6662209638108614,
+        "mean_deg": 4.504075358829162,
+        "iqr_deg": 17.171259865222606,
+        "p5_deg": -29.678136877740023,
+        "p95_deg": 55.7648378578896,
+        "min_deg": -106.52462389003668,
+        "max_deg": 116.05338153696987
+      },
+      "DB2": {
+        "n_units": 4525,
+        "n_subjects": 40,
+        "median_deg": 0.5255315899848938,
+        "mean_deg": -0.054054805072415515,
+        "iqr_deg": 10.37901782989502,
+        "p5_deg": -38.7703929901123,
+        "p95_deg": 31.697300720214855,
+        "min_deg": -65.62696075439453,
+        "max_deg": 115.58757019042969
+      },
+      "DB5": {
+        "n_units": 1892,
+        "n_subjects": 10,
+        "median_deg": 0.46573105454444885,
+        "mean_deg": 5.685864430445002,
+        "iqr_deg": 19.289371728897095,
+        "p5_deg": -24.55417823791504,
+        "p95_deg": 63.70194568634014,
+        "min_deg": -29.911788940429688,
+        "max_deg": 117.05406188964844
+      },
+      "DB2_minus_DB1_gap": {
+        "value": -1.1406893738259676,
+        "ci95": [
+          -3.932902414175355,
+          1.651544300811071
+        ],
+        "n_boot": 2000,
+        "resample_unit": "subject",
+        "n_subjects_a": 27,
+        "n_subjects_b": 40
+      },
+      "DB5_note": "DB5 contributes only 10 subjects (3 in the frozen outcome-unseen cohort); its statistics are reported but carry much wider uncertainty"
+    },
+    "middle_dip_flexion": {
+      "DB1": {
+        "n_units": 5470,
+        "n_subjects": 27,
+        "median_deg": -21.246430193048408,
+        "mean_deg": -29.442477262460105,
+        "iqr_deg": 49.6795171737322,
+        "p5_deg": -111.78374833379733,
+        "p95_deg": 21.46440459230938,
+        "min_deg": -212.18014141761842,
+        "max_deg": 88.22875989347816
+      },
+      "DB2": {
+        "n_units": 4525,
+        "n_subjects": 40,
+        "median_deg": -9.364185333251953,
+        "mean_deg": -24.759487865350483,
+        "iqr_deg": 58.219614028930664,
+        "p5_deg": -123.24445495605468,
+        "p95_deg": 27.044950485229492,
+        "min_deg": -268.217529296875,
+        "max_deg": 63.0224723815918
+      },
+      "DB5": {
+        "n_units": 1892,
+        "n_subjects": 10,
+        "median_deg": -35.362281799316406,
+        "mean_deg": -43.625310591138486,
+        "iqr_deg": 74.88687878847122,
+        "p5_deg": -144.26320114135743,
+        "p95_deg": 22.815956115722656,
+        "min_deg": -220.5022430419922,
+        "max_deg": 51.68271255493164
+      },
+      "DB2_minus_DB1_gap": {
+        "value": 11.882244859796455,
+        "ci95": [
+          5.924165266054365,
+          16.68008802069438
+        ],
+        "n_boot": 2000,
+        "resample_unit": "subject",
+        "n_subjects_a": 27,
+        "n_subjects_b": 40
+      },
+      "DB5_note": "DB5 contributes only 10 subjects (3 in the frozen outcome-unseen cohort); its statistics are reported but carry much wider uncertainty"
+    },
+    "ring_mcp_flexion": {
+      "DB1": {
+        "n_units": 5470,
+        "n_subjects": 27,
+        "median_deg": 16.110811962754177,
+        "mean_deg": 20.80344076044165,
+        "iqr_deg": 34.49157638642696,
+        "p5_deg": -7.510957767223043,
+        "p95_deg": 70.7310164456723,
+        "min_deg": -38.92160405505378,
+        "max_deg": 138.21241607878716
+      },
+      "DB2": {
+        "n_units": 4525,
+        "n_subjects": 40,
+        "median_deg": 2.465867042541504,
+        "mean_deg": 28.9035648496878,
+        "iqr_deg": 77.07334637641907,
+        "p5_deg": -11.938993453979492,
+        "p95_deg": 103.0076904296875,
+        "min_deg": -63.097633361816406,
+        "max_deg": 119.79566192626953
+      },
+      "DB5": {
+        "n_units": 1892,
+        "n_subjects": 10,
+        "median_deg": 47.882789611816406,
+        "mean_deg": 45.358433557058,
+        "iqr_deg": 81.26270842552185,
+        "p5_deg": -6.943102490901947,
+        "p95_deg": 107.80217742919922,
+        "min_deg": -17.476999282836914,
+        "max_deg": 132.0190887451172
+      },
+      "DB2_minus_DB1_gap": {
+        "value": -13.644944920212673,
+        "ci95": [
+          -16.48949212166756,
+          -10.55702983784766
+        ],
+        "n_boot": 2000,
+        "resample_unit": "subject",
+        "n_subjects_a": 27,
+        "n_subjects_b": 40
+      },
+      "DB5_note": "DB5 contributes only 10 subjects (3 in the frozen outcome-unseen cohort); its statistics are reported but carry much wider uncertainty"
+    },
+    "ring_pip_flexion": {
+      "DB1": {
+        "n_units": 5470,
+        "n_subjects": 27,
+        "median_deg": 2.1556704346566122,
+        "mean_deg": 7.378895781500869,
+        "iqr_deg": 39.146354064720455,
+        "p5_deg": -51.980556409517085,
+        "p95_deg": 99.24200848237662,
+        "min_deg": -155.5560983411006,
+        "max_deg": 189.2819030686989
+      },
+      "DB2": {
+        "n_units": 4525,
+        "n_subjects": 40,
+        "median_deg": 2.9136383533477783,
+        "mean_deg": 15.051919818127127,
+        "iqr_deg": 26.83405590057373,
+        "p5_deg": -42.73455810546875,
+        "p95_deg": 120.53622283935553,
+        "min_deg": -78.22154998779297,
+        "max_deg": 296.9421081542969
+      },
+      "DB5": {
+        "n_units": 1892,
+        "n_subjects": 10,
+        "median_deg": 2.3782951831817627,
+        "mean_deg": 13.262798340542215,
+        "iqr_deg": 51.14791393280029,
+        "p5_deg": -52.43162155151367,
+        "p95_deg": 110.67217445373535,
+        "min_deg": -58.21273422241211,
+        "max_deg": 230.89476013183594
+      },
+      "DB2_minus_DB1_gap": {
+        "value": 0.7579679186911661,
+        "ci95": [
+          -4.549356655347051,
+          7.507924107435272
+        ],
+        "n_boot": 2000,
+        "resample_unit": "subject",
+        "n_subjects_a": 27,
+        "n_subjects_b": 40
+      },
+      "DB5_note": "DB5 contributes only 10 subjects (3 in the frozen outcome-unseen cohort); its statistics are reported but carry much wider uncertainty"
+    },
+    "ring_dip_flexion": {
+      "DB1": {
+        "n_units": 5470,
+        "n_subjects": 27,
+        "median_deg": -29.667671635515433,
+        "mean_deg": -46.6331165820225,
+        "iqr_deg": 63.61250503024087,
+        "p5_deg": -194.0724462038379,
+        "p95_deg": 26.436867873818073,
+        "min_deg": -324.5605644335096,
+        "max_deg": 94.83444477160424
+      },
+      "DB2": {
+        "n_units": 4525,
+        "n_subjects": 40,
+        "median_deg": -6.016876220703125,
+        "mean_deg": -25.266836869887886,
+        "iqr_deg": 59.26007080078125,
+        "p5_deg": -175.64825439453125,
+        "p95_deg": 52.12760620117192,
+        "min_deg": -306.8903503417969,
+        "max_deg": 129.2189483642578
+      },
+      "DB5": {
+        "n_units": 1892,
+        "n_subjects": 10,
+        "median_deg": -29.252517700195312,
+        "mean_deg": -50.977654938970005,
+        "iqr_deg": 76.20986366271973,
+        "p5_deg": -205.32799224853514,
+        "p95_deg": 23.133776855468714,
+        "min_deg": -316.2848815917969,
+        "max_deg": 65.99893188476562
+      },
+      "DB2_minus_DB1_gap": {
+        "value": 23.650795414812308,
+        "ci95": [
+          16.294785078328164,
+          30.467320011541688
+        ],
+        "n_boot": 2000,
+        "resample_unit": "subject",
+        "n_subjects_a": 27,
+        "n_subjects_b": 40
+      },
+      "DB5_note": "DB5 contributes only 10 subjects (3 in the frozen outcome-unseen cohort); its statistics are reported but carry much wider uncertainty"
+    },
+    "pinky_mcp_flexion": {
+      "DB1": {
+        "n_units": 5470,
+        "n_subjects": 27,
+        "median_deg": 56.22419977515047,
+        "mean_deg": 58.7554148634025,
+        "iqr_deg": 102.14555766619374,
+        "p5_deg": -12.852945680986233,
+        "p95_deg": 145.64748248707554,
+        "min_deg": -43.76210589130181,
+        "max_deg": 184.4226068294445
+      },
+      "DB2": {
+        "n_units": 4525,
+        "n_subjects": 40,
+        "median_deg": 4.188319683074951,
+        "mean_deg": 42.188551284278674,
+        "iqr_deg": 109.79090690612793,
+        "p5_deg": -17.37486877441406,
+        "p95_deg": 146.43600158691407,
+        "min_deg": -78.26686096191406,
+        "max_deg": 178.02700805664062
+      },
+      "DB5": {
+        "n_units": 1892,
+        "n_subjects": 10,
+        "median_deg": 54.12349510192871,
+        "mean_deg": 56.503590277656045,
+        "iqr_deg": 106.61950796842575,
+        "p5_deg": -11.287716579437253,
+        "p95_deg": 141.56387329101562,
+        "min_deg": -35.5038948059082,
+        "max_deg": 160.5102996826172
+      },
+      "DB2_minus_DB1_gap": {
+        "value": -52.035880092075516,
+        "ci95": [
+          -61.912839563802194,
+          -41.07305549259726
+        ],
+        "n_boot": 2000,
+        "resample_unit": "subject",
+        "n_subjects_a": 27,
+        "n_subjects_b": 40
+      },
+      "DB5_note": "DB5 contributes only 10 subjects (3 in the frozen outcome-unseen cohort); its statistics are reported but carry much wider uncertainty"
+    },
+    "pinky_pip_flexion": {
+      "DB1": {
+        "n_units": 5470,
+        "n_subjects": 27,
+        "median_deg": 7.537426380877149,
+        "mean_deg": 18.155169631390436,
+        "iqr_deg": 28.123924432540967,
+        "p5_deg": -5.828479109122852,
+        "p95_deg": 76.92297260830676,
+        "min_deg": -37.77709040375504,
+        "max_deg": 141.3149320110318
+      },
+      "DB2": {
+        "n_units": 4525,
+        "n_subjects": 40,
+        "median_deg": 3.1592118740081787,
+        "mean_deg": 12.695852419621213,
+        "iqr_deg": 15.793941497802734,
+        "p5_deg": -7.470380592346191,
+        "p95_deg": 70.59737091064453,
+        "min_deg": -77.0898208618164,
+        "max_deg": 150.0344696044922
+      },
+      "DB5": {
+        "n_units": 1892,
+        "n_subjects": 10,
+        "median_deg": 6.081246376037598,
+        "mean_deg": 16.639644215218173,
+        "iqr_deg": 25.43652631342411,
+        "p5_deg": -6.850503945350645,
+        "p95_deg": 75.62725830078125,
+        "min_deg": -73.22312927246094,
+        "max_deg": 134.43724060058594
+      },
+      "DB2_minus_DB1_gap": {
+        "value": -4.378214506868971,
+        "ci95": [
+          -9.560900583811765,
+          -0.867022988769991
+        ],
+        "n_boot": 2000,
+        "resample_unit": "subject",
+        "n_subjects_a": 27,
+        "n_subjects_b": 40
+      },
+      "DB5_note": "DB5 contributes only 10 subjects (3 in the frozen outcome-unseen cohort); its statistics are reported but carry much wider uncertainty"
+    },
+    "pinky_dip_flexion": {
+      "DB1": {
+        "n_units": 5470,
+        "n_subjects": 27,
+        "median_deg": -11.375996544407629,
+        "mean_deg": -14.781904077867996,
+        "iqr_deg": 24.277576969765967,
+        "p5_deg": -60.16646155292114,
+        "p95_deg": 14.538425764172404,
+        "min_deg": -131.35478818021875,
+        "max_deg": 51.545267977023315
+      },
+      "DB2": {
+        "n_units": 4525,
+        "n_subjects": 40,
+        "median_deg": -4.3052849769592285,
+        "mean_deg": -9.392503353467633,
+        "iqr_deg": 27.003530979156494,
+        "p5_deg": -63.418449783325194,
+        "p95_deg": 23.30388870239261,
+        "min_deg": -141.19448852539062,
+        "max_deg": 53.40654373168945
+      },
+      "DB5": {
+        "n_units": 1892,
+        "n_subjects": 10,
+        "median_deg": -16.887962341308594,
+        "mean_deg": -20.74511044971885,
+        "iqr_deg": 33.70281979441643,
+        "p5_deg": -71.99651336669922,
+        "p95_deg": 15.165257024765,
+        "min_deg": -124.4150619506836,
+        "max_deg": 36.996986389160156
+      },
+      "DB2_minus_DB1_gap": {
+        "value": 7.0707115674484005,
+        "ci95": [
+          2.8272783049877175,
+          11.054207306296655
+        ],
+        "n_boot": 2000,
+        "resample_unit": "subject",
+        "n_subjects_a": 27,
+        "n_subjects_b": 40
+      },
+      "DB5_note": "DB5 contributes only 10 subjects (3 in the frozen outcome-unseen cohort); its statistics are reported but carry much wider uncertainty"
+    }
+  },
+  "per_dimension_gestures_only": {
+    "thumb_cmc_flexion": {
+      "DB1": {
+        "n_units": 1694,
+        "median_deg": 20.45437485995459
+      },
+      "DB2": {
+        "n_units": 1627,
+        "median_deg": 24.332866668701172
+      },
+      "DB5": {
+        "n_units": 593,
+        "median_deg": 8.967851638793945
+      }
+    },
+    "thumb_cmc_ab_adduction": {
+      "DB1": {
+        "n_units": 1694,
+        "median_deg": -18.091938198847018
+      },
+      "DB2": {
+        "n_units": 1627,
+        "median_deg": -14.026432037353516
+      },
+      "DB5": {
+        "n_units": 593,
+        "median_deg": -19.194793701171875
+      }
+    },
+    "thumb_mcp_flexion": {
+      "DB1": {
+        "n_units": 1694,
+        "median_deg": 5.54002292007371
+      },
+      "DB2": {
+        "n_units": 1627,
+        "median_deg": 7.964155197143555
+      },
+      "DB5": {
+        "n_units": 593,
+        "median_deg": 0.5613528490066528
+      }
+    },
+    "thumb_ip_flexion": {
+      "DB1": {
+        "n_units": 1694,
+        "median_deg": 16.32227439780247
+      },
+      "DB2": {
+        "n_units": 1627,
+        "median_deg": 18.047300338745117
+      },
+      "DB5": {
+        "n_units": 593,
+        "median_deg": 14.256175994873047
+      }
+    },
+    "index_mcp_flexion": {
+      "DB1": {
+        "n_units": 1694,
+        "median_deg": 21.858912490303034
+      },
+      "DB2": {
+        "n_units": 1627,
+        "median_deg": 16.456758499145508
+      },
+      "DB5": {
+        "n_units": 593,
+        "median_deg": 21.819597244262695
+      }
+    },
+    "index_pip_flexion": {
+      "DB1": {
+        "n_units": 1694,
+        "median_deg": 42.511831509857046
+      },
+      "DB2": {
+        "n_units": 1627,
+        "median_deg": 2.513270616531372
+      },
+      "DB5": {
+        "n_units": 593,
+        "median_deg": 52.39334487915039
+      }
+    },
+    "index_dip_flexion": {
+      "DB1": {
+        "n_units": 1694,
+        "median_deg": 14.197351071515731
+      },
+      "DB2": {
+        "n_units": 1627,
+        "median_deg": 12.589916229248047
+      },
+      "DB5": {
+        "n_units": 593,
+        "median_deg": 11.387104988098145
+      }
+    },
+    "middle_mcp_flexion": {
+      "DB1": {
+        "n_units": 1694,
+        "median_deg": 61.381991599070076
+      },
+      "DB2": {
+        "n_units": 1627,
+        "median_deg": 42.942562103271484
+      },
+      "DB5": {
+        "n_units": 593,
+        "median_deg": 71.23828125
+      }
+    },
+    "middle_pip_flexion": {
+      "DB1": {
+        "n_units": 1694,
+        "median_deg": 6.285245812333567
+      },
+      "DB2": {
+        "n_units": 1627,
+        "median_deg": 2.065293550491333
+      },
+      "DB5": {
+        "n_units": 593,
+        "median_deg": 0.9047889113426208
+      }
+    },
+    "middle_dip_flexion": {
+      "DB1": {
+        "n_units": 1694,
+        "median_deg": -45.06204119241173
+      },
+      "DB2": {
+        "n_units": 1627,
+        "median_deg": -59.92289352416992
+      },
+      "DB5": {
+        "n_units": 593,
+        "median_deg": -70.4516830444336
+      }
+    },
+    "ring_mcp_flexion": {
+      "DB1": {
+        "n_units": 1694,
+        "median_deg": 36.82694264817353
+      },
+      "DB2": {
+        "n_units": 1627,
+        "median_deg": 78.18384552001953
+      },
+      "DB5": {
+        "n_units": 593,
+        "median_deg": 82.58113861083984
+      }
+    },
+    "ring_pip_flexion": {
+      "DB1": {
+        "n_units": 1694,
+        "median_deg": 7.689064660697926
+      },
+      "DB2": {
+        "n_units": 1627,
+        "median_deg": 13.713618278503418
+      },
+      "DB5": {
+        "n_units": 593,
+        "median_deg": 12.017024993896484
+      }
+    },
+    "ring_dip_flexion": {
+      "DB1": {
+        "n_units": 1694,
+        "median_deg": -43.3277975791392
+      },
+      "DB2": {
+        "n_units": 1627,
+        "median_deg": -43.119354248046875
+      },
+      "DB5": {
+        "n_units": 593,
+        "median_deg": -49.186798095703125
+      }
+    },
+    "pinky_mcp_flexion": {
+      "DB1": {
+        "n_units": 1694,
+        "median_deg": 99.8730563658554
+      },
+      "DB2": {
+        "n_units": 1627,
+        "median_deg": 111.6731948852539
+      },
+      "DB5": {
+        "n_units": 593,
+        "median_deg": 102.10562896728516
+      }
+    },
+    "pinky_pip_flexion": {
+      "DB1": {
+        "n_units": 1694,
+        "median_deg": 19.030919551682743
+      },
+      "DB2": {
+        "n_units": 1627,
+        "median_deg": 18.012815475463867
+      },
+      "DB5": {
+        "n_units": 593,
+        "median_deg": 16.41919708251953
+      }
+    },
+    "pinky_dip_flexion": {
+      "DB1": {
+        "n_units": 1694,
+        "median_deg": -13.38193085913053
+      },
+      "DB2": {
+        "n_units": 1627,
+        "median_deg": -8.005449295043945
+      },
+      "DB5": {
+        "n_units": 593,
+        "median_deg": -20.342243194580078
+      }
+    }
+  },
+  "reference_posture_per_source": {
+    "DB1": {
+      "n_units": 281,
+      "n_subjects": 27,
+      "mean_abs_deg": 18.001369645094872,
+      "per_joint_median_deg": [
+        4.06917292658057,
+        -2.5422877943608673,
+        -0.13422356188110862,
+        1.1003292543677419,
+        3.214518965368328,
+        4.201511518988008,
+        0.7222213763999906,
+        3.3921027904799748,
+        0.5623262088811869,
+        -4.867959016956545,
+        1.4367949727871636,
+        -0.11456090308940504,
+        -9.104547108949475,
+        4.959854424914745,
+        1.4831312502969747,
+        -3.9668933551624446
+      ],
+      "max_abs_joint_median_deg": 9.104547108949475
+    },
+    "DB2": {
+      "n_units": 273,
+      "n_subjects": 40,
+      "mean_abs_deg": 5.910625352175333,
+      "per_joint_median_deg": [
+        0.3655049800872803,
+        0.05824798345565796,
+        0.2583107650279999,
+        -0.16942055523395538,
+        -0.1558491736650467,
+        -0.7479522228240967,
+        0.19961608946323395,
+        -0.46140703558921814,
+        -0.06410063058137894,
+        0.8274368047714233,
+        -0.3868480920791626,
+        5.457001407194184e-06,
+        2.076995849609375,
+        -0.3133690357208252,
+        0.4324299395084381,
+        0.4442088305950165
+      ],
+      "max_abs_joint_median_deg": 2.076995849609375
+    },
+    "DB5": {
+      "n_units": 100,
+      "n_subjects": 10,
+      "mean_abs_deg": 21.268398422619146,
+      "per_joint_median_deg": [
+        0.9108693599700928,
+        -2.047550916671753,
+        -2.285279929637909,
+        2.3062119483947754,
+        3.205020785331726,
+        2.5006173849105835,
+        -0.43650466203689575,
+        2.253577947616577,
+        -0.24630378186702728,
+        -4.786900639533997,
+        2.108864665031433,
+        0.0,
+        -4.1554412841796875,
+        3.323548436164856,
+        0.3570985347032547,
+        -4.602275133132935
+      ],
+      "max_abs_joint_median_deg": 4.786900639533997
+    }
+  },
+  "db9_internal_anchor_per_source": {
+    "index_mcp_flexion": {
+      "DB1": {
+        "extended_anchor_deg": 8.816024013657623,
+        "flexed_anchor_deg": 53.68496931568748,
+        "signed_movement_deg": 44.86894530202986
+      },
+      "DB2": {
+        "extended_anchor_deg": -3.9344759359955788,
+        "flexed_anchor_deg": 60.06163024902344,
+        "signed_movement_deg": 63.996106185019016
+      },
+      "DB5": {
+        "extended_anchor_deg": 2.158871814608574,
+        "flexed_anchor_deg": 48.89535903930664,
+        "signed_movement_deg": 46.73648722469807
+      }
+    },
+    "index_pip_flexion": {
+      "DB1": {
+        "extended_anchor_deg": 8.017312235216377,
+        "flexed_anchor_deg": 102.05916781259808,
+        "signed_movement_deg": 94.0418555773817
+      },
+      "DB2": {
+        "extended_anchor_deg": -2.5672067403793335,
+        "flexed_anchor_deg": 109.37438201904297,
+        "signed_movement_deg": 111.9415887594223
+      },
+      "DB5": {
+        "extended_anchor_deg": 2.1147726327180862,
+        "flexed_anchor_deg": 107.63158416748047,
+        "signed_movement_deg": 105.51681153476238
+      }
+    },
+    "index_dip_flexion": {
+      "DB1": {
+        "extended_anchor_deg": 3.374420537464268,
+        "flexed_anchor_deg": 44.801361045520295,
+        "signed_movement_deg": 41.42694050805603
+      },
+      "DB2": {
+        "extended_anchor_deg": 0.6950030103325844,
+        "flexed_anchor_deg": 43.273879528045654,
+        "signed_movement_deg": 42.57887651771307
+      },
+      "DB5": {
+        "extended_anchor_deg": 3.638026088476181,
+        "flexed_anchor_deg": 28.33989667892456,
+        "signed_movement_deg": 24.70187059044838
+      }
+    },
+    "middle_mcp_flexion": {
+      "DB1": {
+        "extended_anchor_deg": 7.154350701710857,
+        "flexed_anchor_deg": 92.3968808157054,
+        "signed_movement_deg": 85.24253011399455
+      },
+      "DB2": {
+        "extended_anchor_deg": -1.7864745110273361,
+        "flexed_anchor_deg": 99.29626274108887,
+        "signed_movement_deg": 101.0827372521162
+      },
+      "DB5": {
+        "extended_anchor_deg": 1.981363371014595,
+        "flexed_anchor_deg": 96.12144470214844,
+        "signed_movement_deg": 94.14008133113384
+      }
+    },
+    "middle_pip_flexion": {
+      "DB1": {
+        "extended_anchor_deg": 3.114603312046304,
+        "flexed_anchor_deg": 4.396827438632753,
+        "signed_movement_deg": 1.2822241265864491
+      },
+      "DB2": {
+        "extended_anchor_deg": 2.0051283203065395,
+        "flexed_anchor_deg": -14.348869562149048,
+        "signed_movement_deg": -16.353997882455587
+      },
+      "DB5": {
+        "extended_anchor_deg": 2.3932380750775337,
+        "flexed_anchor_deg": -7.766535997390747,
+        "signed_movement_deg": -10.15977407246828
+      }
+    },
+    "middle_dip_flexion": {
+      "DB1": {
+        "extended_anchor_deg": -2.494472218939116,
+        "flexed_anchor_deg": -30.121424716201425,
+        "signed_movement_deg": -27.62695249726231
+      },
+      "DB2": {
+        "extended_anchor_deg": 8.056574285030365,
+        "flexed_anchor_deg": -32.321714878082275,
+        "signed_movement_deg": -40.37828916311264
+      },
+      "DB5": {
+        "extended_anchor_deg": 0.5626611113548279,
+        "flexed_anchor_deg": -38.27626323699951,
+        "signed_movement_deg": -38.83892434835434
+      }
+    },
+    "ring_mcp_flexion": {
+      "DB1": {
+        "extended_anchor_deg": 4.95931434121366,
+        "flexed_anchor_deg": 43.45836992442314,
+        "signed_movement_deg": 38.499055583209476
+      },
+      "DB2": {
+        "extended_anchor_deg": -1.205417275428772,
+        "flexed_anchor_deg": 83.76875686645508,
+        "signed_movement_deg": 84.97417414188385
+      },
+      "DB5": {
+        "extended_anchor_deg": 0.9057304933667183,
+        "flexed_anchor_deg": 84.56074523925781,
+        "signed_movement_deg": 83.6550147458911
+      }
+    },
+    "ring_pip_flexion": {
+      "DB1": {
+        "extended_anchor_deg": 7.517560058181537,
+        "flexed_anchor_deg": 16.12387173646393,
+        "signed_movement_deg": 8.606311678282392
+      },
+      "DB2": {
+        "extended_anchor_deg": 7.147264586487154,
+        "flexed_anchor_deg": 75.11971378326416,
+        "signed_movement_deg": 67.972449196777
+      },
+      "DB5": {
+        "extended_anchor_deg": 8.215472221374512,
+        "flexed_anchor_deg": 13.117053985595703,
+        "signed_movement_deg": 4.901581764221191
+      }
+    },
+    "ring_dip_flexion": {
+      "DB1": {
+        "extended_anchor_deg": -8.556273943448119,
+        "flexed_anchor_deg": -24.22702335846541,
+        "signed_movement_deg": -15.67074941501729
+      },
+      "DB2": {
+        "extended_anchor_deg": 12.810577392578125,
+        "flexed_anchor_deg": -7.5716094970703125,
+        "signed_movement_deg": -20.382186889648438
+      },
+      "DB5": {
+        "extended_anchor_deg": 0.09029388427734375,
+        "flexed_anchor_deg": -22.522613525390625,
+        "signed_movement_deg": -22.61290740966797
+      }
+    },
+    "pinky_mcp_flexion": {
+      "DB1": {
+        "extended_anchor_deg": 17.026779692795433,
+        "flexed_anchor_deg": 123.46375988505362,
+        "signed_movement_deg": 106.43698019225819
+      },
+      "DB2": {
+        "extended_anchor_deg": -1.2759454846382141,
+        "flexed_anchor_deg": 127.22272300720215,
+        "signed_movement_deg": 128.49866849184036
+      },
+      "DB5": {
+        "extended_anchor_deg": 3.041130781173706,
+        "flexed_anchor_deg": 117.19727325439453,
+        "signed_movement_deg": 114.15614247322083
+      }
+    },
+    "pinky_pip_flexion": {
+      "DB1": {
+        "extended_anchor_deg": 4.9635905329271495,
+        "flexed_anchor_deg": 32.652124196967506,
+        "signed_movement_deg": 27.688533664040357
+      },
+      "DB2": {
+        "extended_anchor_deg": 1.7860773354768753,
+        "flexed_anchor_deg": 47.18842935562134,
+        "signed_movement_deg": 45.40235202014446
+      },
+      "DB5": {
+        "extended_anchor_deg": 3.639117456972599,
+        "flexed_anchor_deg": 29.175853729248047,
+        "signed_movement_deg": 25.536736272275448
+      }
+    },
+    "pinky_dip_flexion": {
+      "DB1": {
+        "extended_anchor_deg": -3.752218551759166,
+        "flexed_anchor_deg": -15.810462850452913,
+        "signed_movement_deg": -12.058244298693747
+      },
+      "DB2": {
+        "extended_anchor_deg": 4.6959396451711655,
+        "flexed_anchor_deg": -8.944361914880574,
+        "signed_movement_deg": -13.64030156005174
+      },
+      "DB5": {
+        "extended_anchor_deg": -2.7036570608615875,
+        "flexed_anchor_deg": -24.624018669128418,
+        "signed_movement_deg": -21.92036160826683
+      }
+    }
+  },
+  "frozen_cohort_composition": {
+    "development_exposed": {
+      "DB1": 27,
+      "DB5": 7
+    },
+    "outcome_unseen": {
+      "DB2": 40,
+      "DB5": 3
+    },
+    "note": "re-derived in the previous branch's provenance audit and re-verified here; not one DB2 subject is in the development cohort"
+  },
+  "interpretation_rules": [
+    "a NaN-free DB2-minus-DB1 gap whose subject-level CI excludes 0 means the two source databases have genuinely different locations for that dimension",
+    "a per-source gap comparable in size to the DB9-versus-emg2pose gap means part of the 'cross-dataset' difference is internal to DB9",
+    "a reference-posture mean|angle| that is small in every source database means the documented calibration zero IS attained everywhere and is therefore not a source-specific artefact"
+  ]
+}

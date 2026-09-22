@@ -1,0 +1,124 @@
+{
+  "artifact": "HUST_SOURCE_AUDIT.json",
+  "branch_id": "S6-POSE-API-DATASET-ADMISSION",
+  "plan_sha256": "4d2c8b162e2332a5891a5d89a53166e365b1bbd92c205222492d19957c9683ec",
+  "official_source": {
+    "value": "http://www.handcorpus.org/datasets/HUSTdataset.zip (distribution page https://www.handcorpus.org/?p=1596); the retracted paper's own data-availability statement points to Dryad doi:10.5061/dryad.gg8g5",
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "exact_title_version": {
+    "value": "HUST Dataset (March 2016) - 'Joint angles of human hand while executing the grasping tasks of Feix taxonom.'",
+    "evidence": "OFFICIAL-DOCUMENTED",
+    "source": "handcorpus HUST page"
+  },
+  "claimed_16_dof_structure": {
+    "value": {
+      "claim": "Kin. Model #DOFs: > 15 & <=20 (16)",
+      "what_is_VERIFIED": "the DOF COUNT, and nothing else",
+      "what_is_NOT": "no joint-name list is published anywhere this audit could reach, so the 16 variables cannot be enumerated"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED",
+    "source": "handcorpus HUST page"
+  },
+  "exact_joint_list": {
+    "value": "UNAVAILABLE",
+    "evidence": "UNKNOWN"
+  },
+  "whether_angles_are_anatomical_or_glove_derived": {
+    "value": {
+      "equipment": "Cyberglove (Cyberglove Systems)",
+      "classification": "glove-derived by equipment class; whether a calibration transform was applied, and of what form, is UNKNOWN",
+      "why_unknown": "the only description of the acquisition is in a RETRACTED article, and the dataset page itself publishes no method"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "exact_units": {
+    "value": {
+      "declared": "rad",
+      "declared_by": "handcorpus HUST page",
+      "verification": "IMPOSSIBLE - no data was obtained, and the declaring page is not the authors' repository"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "zero_convention": {
+    "value": "UNKNOWN",
+    "evidence": "UNKNOWN",
+    "note": "no obtainable source defines it"
+  },
+  "hand_laterality": {
+    "value": "right hand only - 'subjects ... placed their right arm on the table'",
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "subject_count": {
+    "value": {
+      "claimed": 30,
+      "independent_verification": "NONE - the paper is retracted and the data is unobtainable"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "feix_grasp_taxonomy_mapping": {
+    "value": {
+      "n_task_types": 33,
+      "objects": "three objects of different sizes/shapes per task type, chosen from common daily objects (cylinders, disks, spheres, cards)",
+      "repetitions": "each test repeated three times per object",
+      "what_is_NOT_published": "the mapping from each of the 33 task types to a file, segment or column"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "continuous_transition_samples": {
+    "value": {
+      "protocol": "'the subjects extended their right hand in a natural full extension. Upon hearing the go command, the subjects started to grasp the object at a self-paced speed' - so a reach-to-grasp transition exists in the recording",
+      "whether_the_release_separates_it": "UNKNOWN"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "pose_comparability_to_emg2pose_dofs": {
+    "value": {
+      "n_tasking_requested": "16",
+      "n_establishable": 0,
+      "reason": "the mapping matrix can assign no confidence without a channel list, a sign convention and a zero definition"
+    },
+    "evidence": "UNKNOWN"
+  },
+  "data_access": {
+    "value": {
+      "handcorpus_url": "HTTP 500 'The server can not find the requested resource' on every attempt",
+      "dryad": "landing page HTTP 200; file_stream behind an Anubis proof-of-work interstitial (HTTP 403 to an automated GET)",
+      "wayback": "no capture of /datasets/HUSTdataset.zip exists"
+    },
+    "evidence": "DATA-INFERRED"
+  },
+  "license": {
+    "value": "UNKNOWN",
+    "evidence": "UNKNOWN",
+    "note": "no licence field was retrievable from the Dryad API record and the dataset page states none"
+  },
+  "publication_integrity": {
+    "value": {
+      "status": "RETRACTED",
+      "date": "4 March 2016",
+      "notice_doi": "10.1371/journal.pone.0151685",
+      "publisher_statement": "'the PLOS ONE editors consider that the work cannot be relied upon and retract this publication'"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "tasking_questions_answered": {
+    "exact_dataset_title_version": "yes - see exact_title_version",
+    "official_source": "yes",
+    "claimed_16_dof_structure": "yes, as a COUNT only",
+    "exact_joint_list": "NO - unavailable",
+    "anatomical_or_glove_derived": "glove by equipment; transform UNKNOWN",
+    "exact_units": "declared radians, unverifiable",
+    "zero_convention": "NO - UNKNOWN",
+    "hand_laterality": "yes - right",
+    "subject_count": "yes - 30 claimed",
+    "feix_taxonomy_mapping": "partially - 33 types, no file mapping",
+    "continuous_transition_samples": "protocol implies yes; release UNKNOWN",
+    "pose_value_comparability": "NO - 0 of 16 establishable",
+    "data_access_license": "inaccessible; licence UNKNOWN"
+  },
+  "tasking_instruction_honoured": "the tasking asked to 'explicitly verify the previously assumed facts rather than trusting them'.  Two previously assumed facts did NOT survive: the dataset is not obtainable, and its associated publication is retracted",
+  "verdict": "REJECT",
+  "documentation_audit": "COMPLETE",
+  "empirical_data_qc": "NOT POSSIBLE"
+}

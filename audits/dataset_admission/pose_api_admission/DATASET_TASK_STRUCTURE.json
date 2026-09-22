@@ -1,0 +1,162 @@
+{
+  "artifact": "DATASET_TASK_STRUCTURE.json",
+  "branch_id": "S6-POSE-API-DATASET-ADMISSION",
+  "plan_sha256": "4d2c8b162e2332a5891a5d89a53166e365b1bbd92c205222492d19957c9683ec",
+  "ontology_separation_rule": "grasp type, object identity, activity label and action primitive are NOT collapsed into the generic word 'gesture'.  Any label ontology is described in its own terms and classified with its own name",
+  "datasets": {
+    "HUST": {
+      "label_ontology": "GRASP TYPE, from the Feix comprehensive grasp taxonomy (33 task types)",
+      "ontology_class": "grasp taxonomy",
+      "n_label_classes": {
+        "value": 33,
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "n_subjects": {
+        "value": 30,
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "n_sessions": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "repetitions": {
+        "value": "each of three object sizes/shapes per task type; every trial repeated three times per object (page description)",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "continuous_or_isolated": {
+        "value": "trial-based reach-and-grasp: 'the subjects extended their right hand in a natural full extension ... started to grasp the object at a self-paced speed', so BOTH a transition segment and a static grasp exist, but whether the released files separate them is UNKNOWN",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "task_duration": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "n_usable_pose_frames": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "official_train_test_split": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "no_collapse_note": "the 33 labels are GRASP TYPES.  Object identity is a separate axis (three objects per task type) and must not be collapsed into the same word"
+    },
+    "KINE_ADL": {
+      "label_ontology": "ACTIVITIES OF DAILY LIVING with a task/object structure: feeding and cooking activities, 66 objects, natural non-directed execution",
+      "ontology_class": "ADL activity + object",
+      "n_label_classes": {
+        "value": {
+          "activities": "UNKNOWN at activity granularity",
+          "n_objects": 66
+        },
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Mendeley record description"
+      },
+      "n_subjects": {
+        "value": 20,
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "n_recordings": {
+        "value": 1160,
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "n_sessions": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "repetitions": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "not determinable without the corpus"
+      },
+      "continuous_or_isolated": {
+        "value": "CONTINUOUS - '1160 continuous calibrated recordings taken at 100Hz'",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "task_duration": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "n_usable_pose_frames": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "official_train_test_split": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "no_collapse_note": "activity, task, action and object are distinct axes in this family and are reported separately; the released artifacts audited here do not expose the full TASK_DATA schema"
+    },
+    "KIN_MUS": {
+      "label_ontology": "ADL identity (26 representative activities of daily living) plus a MOVEMENT-PHASE label (1 reaching, 2 manipulation, 3 release)",
+      "ontology_class": "ADL activity + movement phase",
+      "n_adls": 26,
+      "n_phases": 3,
+      "n_subjects": 22,
+      "n_recordings": {
+        "value": 572,
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo description",
+        "note": "the released struct carries 1716 trial rows = 22 x 26 x 3 phases, i.e. 572 activity recordings each split into 3 phase segments"
+      },
+      "released_trial_count_measured": 1716,
+      "repetitions": {
+        "value": "ONE trial per subject x ADL x phase; no repeated trials",
+        "evidence": "DATA-INFERRED"
+      },
+      "continuous_or_isolated": {
+        "value": "CONTINUOUS within each phase segment; each segment is a variable-length sequence (minimum 12 frames, median 101)",
+        "evidence": "DATA-INFERRED"
+      },
+      "task_duration": {
+        "value": {
+          "per_trial_frames_min": 8,
+          "per_trial_frames_median": 160,
+          "per_trial_frames_max": 2721,
+          "seconds_at_100Hz": {
+            "min": 0.08,
+            "median": 1.6,
+            "max": 27.21
+          }
+        },
+        "evidence": "DATA-INFERRED"
+      },
+      "n_usable_pose_frames": 564894,
+      "official_train_test_split": {
+        "value": "NONE PUBLISHED",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "the Zenodo record describes the data but defines no split"
+      },
+      "no_collapse_note": "the 26 labels are ADLs (goal-directed activities such as using cutlery or opening a container) and the 3 labels are MOVEMENT PHASES.  Neither is a 'gesture'.  Object identity is not carried in the audited release",
+      "phase_frame_counts": {
+        "1": 54177,
+        "2": 417634,
+        "3": 93083
+      },
+      "per_subject_frame_counts": {
+        "1": 23225,
+        "2": 30450,
+        "3": 28006,
+        "4": 24395,
+        "5": 28489,
+        "6": 22777,
+        "7": 27131,
+        "8": 22567,
+        "9": 22958,
+        "10": 27073,
+        "11": 26370,
+        "12": 25327,
+        "13": 23688,
+        "14": 21597,
+        "15": 27607,
+        "16": 24841,
+        "17": 30865,
+        "18": 26743,
+        "19": 22780,
+        "20": 24373,
+        "21": 23917,
+        "22": 29715
+      }
+    }
+  }
+}

@@ -1,0 +1,761 @@
+{
+  "artifact": "MYOKI_SPECIAL.json",
+  "plan_sha256": "fba2b20623392dd809d5ed28c7850387acc721e9a91ff1611e7fba0d89fc889d",
+  "source_file": "<DATA_ROOT>set_admission_audit_v1\\raw\\myoki\\Synchronicity_test.mat",
+  "source_sha256": "7bc35b0dff5159e4127dec38f182b1af8325e3624246e2a4fc58abff99a8a51b",
+  "source_role": "official synchronisation test, full participant schema",
+  "A_raw_to_calibrated_parity": {
+    "equation": "angle = angle1 + (sensor_value - sensor_value1) * gain, gain = (angle2 - angle1)/(sensor_value2 - sensor_value1)",
+    "equation_source": "MyoKi paper, Methods, equation (1) [DOC]",
+    "workbook_covers_all_18_channels": true,
+    "sheets": {
+      "male": {
+        "n_channels": 18,
+        "max_abs_err_deg_over_ch1_16": 19.10683331812791,
+        "per_channel": [
+          {
+            "channel": 1,
+            "joint": "Abduction Thumb to Palm",
+            "gain": 0.9278350515463918,
+            "max_abs_err_deg": 19.10683331812791,
+            "median_abs_err_deg": 12.669464464921084,
+            "fraction_bit_exact": 0.0
+          },
+          {
+            "channel": 2,
+            "joint": "MCP Thumb",
+            "gain": 0.569620253164557,
+            "max_abs_err_deg": 5.467116125481563,
+            "median_abs_err_deg": 2.89144193725922,
+            "fraction_bit_exact": 0.0
+          },
+          {
+            "channel": 3,
+            "joint": "IP Thumb",
+            "gain": 1.0714285714285714,
+            "max_abs_err_deg": 2.762478485370046,
+            "median_abs_err_deg": 2.259036144578312,
+            "fraction_bit_exact": 0.0
+          },
+          {
+            "channel": 4,
+            "joint": "Abduction Thumb - Index flat on table",
+            "gain": -1.1111111111111112,
+            "max_abs_err_deg": 6.4836601307189525,
+            "median_abs_err_deg": 4.287581699346404,
+            "fraction_bit_exact": 0.0
+          },
+          {
+            "channel": 5,
+            "joint": "MCP Index",
+            "gain": 0.8256880733944955,
+            "max_abs_err_deg": 3.606543188506145,
+            "median_abs_err_deg": 2.578327851826206,
+            "fraction_bit_exact": 0.0
+          },
+          {
+            "channel": 6,
+            "joint": "PIP Index",
+            "gain": 0.967741935483871,
+            "max_abs_err_deg": 3.4469010511054705,
+            "median_abs_err_deg": 2.3812975715839073,
+            "fraction_bit_exact": 0.0
+          },
+          {
+            "channel": 7,
+            "joint": "MCP Middle",
+            "gain": 0.8737864077669902,
+            "max_abs_err_deg": 4.945631067961166,
+            "median_abs_err_deg": 3.1106796116504825,
+            "fraction_bit_exact": 0.0
+          },
+          {
+            "channel": 8,
+            "joint": "PIP Middle",
+            "gain": 0.9183673469387755,
+            "max_abs_err_deg": 6.648979591836735,
+            "median_abs_err_deg": 5.271428571428565,
+            "fraction_bit_exact": 0.0
+          },
+          {
+            "channel": 9,
+            "joint": "Abduction Index - Middle",
+            "gain": -0.3333333333333333,
+            "max_abs_err_deg": 3.458333333333333,
+            "median_abs_err_deg": 2.666666666666666,
+            "fraction_bit_exact": 0.0
+          },
+          {
+            "channel": 10,
+            "joint": "MCP Ring",
+            "gain": 0.8256880733944955,
+            "max_abs_err_deg": 1.5443425076452684,
+            "median_abs_err_deg": 1.1926605504587116,
+            "fraction_bit_exact": 0.0
+          },
+          {
+            "channel": 11,
+            "joint": "PIP Ring",
+            "gain": 0.9375,
+            "max_abs_err_deg": 1.0657894736842053,
+            "median_abs_err_deg": 0.5427631578947327,
+            "fraction_bit_exact": 0.001873491299074063
+          },
+          {
+            "channel": 12,
+            "joint": "Abduction Middle - Ring",
+            "gain": -0.37037037037037035,
+            "max_abs_err_deg": 0.41928721174004213,
+            "median_abs_err_deg": 0.32844164919636576,
+            "fraction_bit_exact": 0.0
+          },
+          {
+            "channel": 13,
+            "joint": "MCP Little",
+            "gain": 0.8035714285714286,
+            "max_abs_err_deg": 9.405000000000001,
+            "median_abs_err_deg": 2.886428571428567,
+            "fraction_bit_exact": 0.0
+          },
+          {
+            "channel": 14,
+            "joint": "PIP Little",
+            "gain": 0.8490566037735849,
+            "max_abs_err_deg": 0.7681940700808632,
+            "median_abs_err_deg": 0.2911051212938105,
+            "fraction_bit_exact": 0.0
+          },
+          {
+            "channel": 15,
+            "joint": "Abduction Ring - Little",
+            "gain": -0.42857142857142855,
+            "max_abs_err_deg": 4.051948051948052,
+            "median_abs_err_deg": 3.1558441558441572,
+            "fraction_bit_exact": 0.0
+          },
+          {
+            "channel": 16,
+            "joint": "Palmar Arch Angle",
+            "gain": 0.7272727272727273,
+            "max_abs_err_deg": 8.580338266384778,
+            "median_abs_err_deg": 7.013742071881609,
+            "fraction_bit_exact": 0.0
+          },
+          {
+            "channel": 17,
+            "joint": "Wrist Extension/Flexion",
+            "gain": 2.5,
+            "max_abs_err_deg": 46.5,
+            "median_abs_err_deg": 35.04761904761905,
+            "fraction_bit_exact": 0.0
+          },
+          {
+            "channel": 18,
+            "joint": "Radial/Ulnar Deviation",
+            "gain": 0.8928571428571429,
+            "max_abs_err_deg": 4.57285714285714,
+            "median_abs_err_deg": 2.139999999999997,
+            "fraction_bit_exact": 0.0
+          }
+        ]
+      },
+      "female": {
+        "n_channels": 18,
+        "max_abs_err_deg_over_ch1_16": 0.0,
+        "per_channel": [
+          {
+            "channel": 1,
+            "joint": "Abduction Thumb to Palm",
+            "gain": 0.7964601769911505,
+            "max_abs_err_deg": 0.0,
+            "median_abs_err_deg": 0.0,
+            "fraction_bit_exact": 1.0
+          },
+          {
+            "channel": 2,
+            "joint": "MCP Thumb",
+            "gain": 0.4891304347826087,
+            "max_abs_err_deg": 0.0,
+            "median_abs_err_deg": 0.0,
+            "fraction_bit_exact": 1.0
+          },
+          {
+            "channel": 3,
+            "joint": "IP Thumb",
+            "gain": 1.0843373493975903,
+            "max_abs_err_deg": 0.0,
+            "median_abs_err_deg": 0.0,
+            "fraction_bit_exact": 1.0
+          },
+          {
+            "channel": 4,
+            "joint": "Abduction Thumb - Index flat on table",
+            "gain": -1.0588235294117647,
+            "max_abs_err_deg": 0.0,
+            "median_abs_err_deg": 0.0,
+            "fraction_bit_exact": 1.0
+          },
+          {
+            "channel": 5,
+            "joint": "MCP Index",
+            "gain": 0.8490566037735849,
+            "max_abs_err_deg": 0.0,
+            "median_abs_err_deg": 0.0,
+            "fraction_bit_exact": 1.0
+          },
+          {
+            "channel": 6,
+            "joint": "PIP Index",
+            "gain": 1.0112359550561798,
+            "max_abs_err_deg": 0.0,
+            "median_abs_err_deg": 0.0,
+            "fraction_bit_exact": 1.0
+          },
+          {
+            "channel": 7,
+            "joint": "MCP Middle",
+            "gain": 0.9,
+            "max_abs_err_deg": 0.0,
+            "median_abs_err_deg": 0.0,
+            "fraction_bit_exact": 1.0
+          },
+          {
+            "channel": 8,
+            "joint": "PIP Middle",
+            "gain": 0.9,
+            "max_abs_err_deg": 0.0,
+            "median_abs_err_deg": 0.0,
+            "fraction_bit_exact": 1.0
+          },
+          {
+            "channel": 9,
+            "joint": "Abduction Index - Middle",
+            "gain": -0.375,
+            "max_abs_err_deg": 0.0,
+            "median_abs_err_deg": 0.0,
+            "fraction_bit_exact": 1.0
+          },
+          {
+            "channel": 10,
+            "joint": "MCP Ring",
+            "gain": 0.8333333333333334,
+            "max_abs_err_deg": 0.0,
+            "median_abs_err_deg": 0.0,
+            "fraction_bit_exact": 1.0
+          },
+          {
+            "channel": 11,
+            "joint": "PIP Ring",
+            "gain": 0.9473684210526315,
+            "max_abs_err_deg": 0.0,
+            "median_abs_err_deg": 0.0,
+            "fraction_bit_exact": 1.0
+          },
+          {
+            "channel": 12,
+            "joint": "Abduction Middle - Ring",
+            "gain": -0.37735849056603776,
+            "max_abs_err_deg": 0.0,
+            "median_abs_err_deg": 0.0,
+            "fraction_bit_exact": 1.0
+          },
+          {
+            "channel": 13,
+            "joint": "MCP Little",
+            "gain": 0.72,
+            "max_abs_err_deg": 0.0,
+            "median_abs_err_deg": 0.0,
+            "fraction_bit_exact": 1.0
+          },
+          {
+            "channel": 14,
+            "joint": "PIP Little",
+            "gain": 0.8571428571428571,
+            "max_abs_err_deg": 0.0,
+            "median_abs_err_deg": 0.0,
+            "fraction_bit_exact": 1.0
+          },
+          {
+            "channel": 15,
+            "joint": "Abduction Ring - Little",
+            "gain": -0.38961038961038963,
+            "max_abs_err_deg": 0.0,
+            "median_abs_err_deg": 0.0,
+            "fraction_bit_exact": 1.0
+          },
+          {
+            "channel": 16,
+            "joint": "Palmar Arch Angle",
+            "gain": 0.686046511627907,
+            "max_abs_err_deg": 0.0,
+            "median_abs_err_deg": 0.0,
+            "fraction_bit_exact": 1.0
+          },
+          {
+            "channel": 17,
+            "joint": "Wrist Extension/Flexion",
+            "gain": 2.142857142857143,
+            "max_abs_err_deg": 34.0,
+            "median_abs_err_deg": 17.904761904761912,
+            "fraction_bit_exact": 0.0
+          },
+          {
+            "channel": 18,
+            "joint": "Radial/Ulnar Deviation",
+            "gain": 1.0,
+            "max_abs_err_deg": 7.679999999999998,
+            "median_abs_err_deg": 6.639999999999997,
+            "fraction_bit_exact": 0.0
+          }
+        ]
+      }
+    },
+    "matching_sheet_for_ch1_16": "female",
+    "max_abs_err_over_ch1_16_for_that_sheet": 0.0,
+    "channels_reproduced_bit_exactly": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "channels_not_reproduced": [
+      17,
+      18
+    ],
+    "verdict": "TRANSFORM_INDEPENDENTLY_REPRODUCIBLE for channels 1-16 and TRANSFORM_NOT_INDEPENDENTLY_REPRODUCIBLE for the two wrist channels 17-18",
+    "columns_not_covered_by_the_workbook": [],
+    "all_18_columns_exactly_affine_in_glove": true,
+    "uncovered_columns_note": "columns 14-18 are exact affine functions of `glove` too, so the SAME equation was used, but the workbook publishes no calibration row for them. Their gains are therefore NOT independently reproducible from public files, and the paper states that the two wrist sensors (17, 18) were calibrated INDIVIDUALLY PER PARTICIPANT using that participant's own min/max over task 73 (radial/ulnar deviation) and task 74 (wrist flexion/extension) mapped to goniometer values from Nizamis et al. (+79 flexion, -63 extension, -19 radial, +35 ulnar)."
+  },
+  "B_calibration_provenance": [
+    {
+      "column": 1,
+      "joint": "Abduction Thumb to Palm",
+      "calibration_kind": "GROUP-LEVEL: one reference participant per sex, chosen to match the average hand size (female 180 mm / 77 mm, male 195 mm / 87 mm)",
+      "published_gain_deg_per_unit": 0.7964601769911505,
+      "zero": "joint fully extended = 0 deg (angle_min = 0 for channels 1-16)",
+      "cross_coupling_correction": "NONE PUBLISHED.  Unlike the UJI pipeline, MyoKi applies equation (1) channel by channel with no modelled cross-coupling terms.  Only the palmar arch follows a different reference (Gracia-Ibanez et al.).  [DOC]",
+      "reproduced_by_this_audit": true,
+      "source": "Glove_calibration.xlsx sheet 'female' + MyoKi paper Methods",
+      "evidence": "DOC"
+    },
+    {
+      "column": 2,
+      "joint": "MCP Thumb",
+      "calibration_kind": "GROUP-LEVEL: one reference participant per sex, chosen to match the average hand size (female 180 mm / 77 mm, male 195 mm / 87 mm)",
+      "published_gain_deg_per_unit": 0.4891304347826087,
+      "zero": "joint fully extended = 0 deg (angle_min = 0 for channels 1-16)",
+      "cross_coupling_correction": "NONE PUBLISHED.  Unlike the UJI pipeline, MyoKi applies equation (1) channel by channel with no modelled cross-coupling terms.  Only the palmar arch follows a different reference (Gracia-Ibanez et al.).  [DOC]",
+      "reproduced_by_this_audit": true,
+      "source": "Glove_calibration.xlsx sheet 'female' + MyoKi paper Methods",
+      "evidence": "DOC"
+    },
+    {
+      "column": 3,
+      "joint": "IP Thumb",
+      "calibration_kind": "GROUP-LEVEL: one reference participant per sex, chosen to match the average hand size (female 180 mm / 77 mm, male 195 mm / 87 mm)",
+      "published_gain_deg_per_unit": 1.0843373493975903,
+      "zero": "joint fully extended = 0 deg (angle_min = 0 for channels 1-16)",
+      "cross_coupling_correction": "NONE PUBLISHED.  Unlike the UJI pipeline, MyoKi applies equation (1) channel by channel with no modelled cross-coupling terms.  Only the palmar arch follows a different reference (Gracia-Ibanez et al.).  [DOC]",
+      "reproduced_by_this_audit": true,
+      "source": "Glove_calibration.xlsx sheet 'female' + MyoKi paper Methods",
+      "evidence": "DOC"
+    },
+    {
+      "column": 4,
+      "joint": "Abduction Thumb - Index flat on table",
+      "calibration_kind": "GROUP-LEVEL: one reference participant per sex, chosen to match the average hand size (female 180 mm / 77 mm, male 195 mm / 87 mm)",
+      "published_gain_deg_per_unit": -1.0588235294117647,
+      "zero": "joint fully extended = 0 deg (angle_min = 0 for channels 1-16)",
+      "cross_coupling_correction": "NONE PUBLISHED.  Unlike the UJI pipeline, MyoKi applies equation (1) channel by channel with no modelled cross-coupling terms.  Only the palmar arch follows a different reference (Gracia-Ibanez et al.).  [DOC]",
+      "reproduced_by_this_audit": true,
+      "source": "Glove_calibration.xlsx sheet 'female' + MyoKi paper Methods",
+      "evidence": "DOC"
+    },
+    {
+      "column": 5,
+      "joint": "MCP Index",
+      "calibration_kind": "GROUP-LEVEL: one reference participant per sex, chosen to match the average hand size (female 180 mm / 77 mm, male 195 mm / 87 mm)",
+      "published_gain_deg_per_unit": 0.8490566037735849,
+      "zero": "joint fully extended = 0 deg (angle_min = 0 for channels 1-16)",
+      "cross_coupling_correction": "NONE PUBLISHED.  Unlike the UJI pipeline, MyoKi applies equation (1) channel by channel with no modelled cross-coupling terms.  Only the palmar arch follows a different reference (Gracia-Ibanez et al.).  [DOC]",
+      "reproduced_by_this_audit": true,
+      "source": "Glove_calibration.xlsx sheet 'female' + MyoKi paper Methods",
+      "evidence": "DOC"
+    },
+    {
+      "column": 6,
+      "joint": "PIP Index",
+      "calibration_kind": "GROUP-LEVEL: one reference participant per sex, chosen to match the average hand size (female 180 mm / 77 mm, male 195 mm / 87 mm)",
+      "published_gain_deg_per_unit": 1.0112359550561798,
+      "zero": "joint fully extended = 0 deg (angle_min = 0 for channels 1-16)",
+      "cross_coupling_correction": "NONE PUBLISHED.  Unlike the UJI pipeline, MyoKi applies equation (1) channel by channel with no modelled cross-coupling terms.  Only the palmar arch follows a different reference (Gracia-Ibanez et al.).  [DOC]",
+      "reproduced_by_this_audit": true,
+      "source": "Glove_calibration.xlsx sheet 'female' + MyoKi paper Methods",
+      "evidence": "DOC"
+    },
+    {
+      "column": 7,
+      "joint": "MCP Middle",
+      "calibration_kind": "GROUP-LEVEL: one reference participant per sex, chosen to match the average hand size (female 180 mm / 77 mm, male 195 mm / 87 mm)",
+      "published_gain_deg_per_unit": 0.9,
+      "zero": "joint fully extended = 0 deg (angle_min = 0 for channels 1-16)",
+      "cross_coupling_correction": "NONE PUBLISHED.  Unlike the UJI pipeline, MyoKi applies equation (1) channel by channel with no modelled cross-coupling terms.  Only the palmar arch follows a different reference (Gracia-Ibanez et al.).  [DOC]",
+      "reproduced_by_this_audit": true,
+      "source": "Glove_calibration.xlsx sheet 'female' + MyoKi paper Methods",
+      "evidence": "DOC"
+    },
+    {
+      "column": 8,
+      "joint": "PIP Middle",
+      "calibration_kind": "GROUP-LEVEL: one reference participant per sex, chosen to match the average hand size (female 180 mm / 77 mm, male 195 mm / 87 mm)",
+      "published_gain_deg_per_unit": 0.9,
+      "zero": "joint fully extended = 0 deg (angle_min = 0 for channels 1-16)",
+      "cross_coupling_correction": "NONE PUBLISHED.  Unlike the UJI pipeline, MyoKi applies equation (1) channel by channel with no modelled cross-coupling terms.  Only the palmar arch follows a different reference (Gracia-Ibanez et al.).  [DOC]",
+      "reproduced_by_this_audit": true,
+      "source": "Glove_calibration.xlsx sheet 'female' + MyoKi paper Methods",
+      "evidence": "DOC"
+    },
+    {
+      "column": 9,
+      "joint": "Abduction Index - Middle",
+      "calibration_kind": "GROUP-LEVEL: one reference participant per sex, chosen to match the average hand size (female 180 mm / 77 mm, male 195 mm / 87 mm)",
+      "published_gain_deg_per_unit": -0.375,
+      "zero": "joint fully extended = 0 deg (angle_min = 0 for channels 1-16)",
+      "cross_coupling_correction": "NONE PUBLISHED.  Unlike the UJI pipeline, MyoKi applies equation (1) channel by channel with no modelled cross-coupling terms.  Only the palmar arch follows a different reference (Gracia-Ibanez et al.).  [DOC]",
+      "reproduced_by_this_audit": true,
+      "source": "Glove_calibration.xlsx sheet 'female' + MyoKi paper Methods",
+      "evidence": "DOC"
+    },
+    {
+      "column": 10,
+      "joint": "MCP Ring",
+      "calibration_kind": "GROUP-LEVEL: one reference participant per sex, chosen to match the average hand size (female 180 mm / 77 mm, male 195 mm / 87 mm)",
+      "published_gain_deg_per_unit": 0.8333333333333334,
+      "zero": "joint fully extended = 0 deg (angle_min = 0 for channels 1-16)",
+      "cross_coupling_correction": "NONE PUBLISHED.  Unlike the UJI pipeline, MyoKi applies equation (1) channel by channel with no modelled cross-coupling terms.  Only the palmar arch follows a different reference (Gracia-Ibanez et al.).  [DOC]",
+      "reproduced_by_this_audit": true,
+      "source": "Glove_calibration.xlsx sheet 'female' + MyoKi paper Methods",
+      "evidence": "DOC"
+    },
+    {
+      "column": 11,
+      "joint": "PIP Ring",
+      "calibration_kind": "GROUP-LEVEL: one reference participant per sex, chosen to match the average hand size (female 180 mm / 77 mm, male 195 mm / 87 mm)",
+      "published_gain_deg_per_unit": 0.9473684210526315,
+      "zero": "joint fully extended = 0 deg (angle_min = 0 for channels 1-16)",
+      "cross_coupling_correction": "NONE PUBLISHED.  Unlike the UJI pipeline, MyoKi applies equation (1) channel by channel with no modelled cross-coupling terms.  Only the palmar arch follows a different reference (Gracia-Ibanez et al.).  [DOC]",
+      "reproduced_by_this_audit": true,
+      "source": "Glove_calibration.xlsx sheet 'female' + MyoKi paper Methods",
+      "evidence": "DOC"
+    },
+    {
+      "column": 12,
+      "joint": "Abduction Middle - Ring",
+      "calibration_kind": "GROUP-LEVEL: one reference participant per sex, chosen to match the average hand size (female 180 mm / 77 mm, male 195 mm / 87 mm)",
+      "published_gain_deg_per_unit": -0.37735849056603776,
+      "zero": "joint fully extended = 0 deg (angle_min = 0 for channels 1-16)",
+      "cross_coupling_correction": "NONE PUBLISHED.  Unlike the UJI pipeline, MyoKi applies equation (1) channel by channel with no modelled cross-coupling terms.  Only the palmar arch follows a different reference (Gracia-Ibanez et al.).  [DOC]",
+      "reproduced_by_this_audit": true,
+      "source": "Glove_calibration.xlsx sheet 'female' + MyoKi paper Methods",
+      "evidence": "DOC"
+    },
+    {
+      "column": 13,
+      "joint": "MCP Little",
+      "calibration_kind": "GROUP-LEVEL: one reference participant per sex, chosen to match the average hand size (female 180 mm / 77 mm, male 195 mm / 87 mm)",
+      "published_gain_deg_per_unit": 0.72,
+      "zero": "joint fully extended = 0 deg (angle_min = 0 for channels 1-16)",
+      "cross_coupling_correction": "NONE PUBLISHED.  Unlike the UJI pipeline, MyoKi applies equation (1) channel by channel with no modelled cross-coupling terms.  Only the palmar arch follows a different reference (Gracia-Ibanez et al.).  [DOC]",
+      "reproduced_by_this_audit": true,
+      "source": "Glove_calibration.xlsx sheet 'female' + MyoKi paper Methods",
+      "evidence": "DOC"
+    },
+    {
+      "column": 14,
+      "joint": "PIP Little",
+      "calibration_kind": "GROUP-LEVEL: one reference participant per sex, chosen to match the average hand size (female 180 mm / 77 mm, male 195 mm / 87 mm)",
+      "published_gain_deg_per_unit": 0.8571428571428571,
+      "zero": "joint fully extended = 0 deg (angle_min = 0 for channels 1-16)",
+      "cross_coupling_correction": "NONE PUBLISHED.  Unlike the UJI pipeline, MyoKi applies equation (1) channel by channel with no modelled cross-coupling terms.  Only the palmar arch follows a different reference (Gracia-Ibanez et al.).  [DOC]",
+      "reproduced_by_this_audit": true,
+      "source": "Glove_calibration.xlsx sheet 'female' + MyoKi paper Methods",
+      "evidence": "DOC"
+    },
+    {
+      "column": 15,
+      "joint": "Abduction Ring - Little",
+      "calibration_kind": "GROUP-LEVEL: one reference participant per sex, chosen to match the average hand size (female 180 mm / 77 mm, male 195 mm / 87 mm)",
+      "published_gain_deg_per_unit": -0.38961038961038963,
+      "zero": "joint fully extended = 0 deg (angle_min = 0 for channels 1-16)",
+      "cross_coupling_correction": "NONE PUBLISHED.  Unlike the UJI pipeline, MyoKi applies equation (1) channel by channel with no modelled cross-coupling terms.  Only the palmar arch follows a different reference (Gracia-Ibanez et al.).  [DOC]",
+      "reproduced_by_this_audit": true,
+      "source": "Glove_calibration.xlsx sheet 'female' + MyoKi paper Methods",
+      "evidence": "DOC"
+    },
+    {
+      "column": 16,
+      "joint": "Palmar Arch Angle",
+      "calibration_kind": "GROUP-LEVEL: one reference participant per sex, chosen to match the average hand size (female 180 mm / 77 mm, male 195 mm / 87 mm)",
+      "published_gain_deg_per_unit": 0.686046511627907,
+      "zero": "joint fully extended = 0 deg (angle_min = 0 for channels 1-16)",
+      "cross_coupling_correction": "NONE PUBLISHED.  Unlike the UJI pipeline, MyoKi applies equation (1) channel by channel with no modelled cross-coupling terms.  Only the palmar arch follows a different reference (Gracia-Ibanez et al.).  [DOC]",
+      "reproduced_by_this_audit": true,
+      "source": "Glove_calibration.xlsx sheet 'female' + MyoKi paper Methods",
+      "evidence": "DOC"
+    },
+    {
+      "column": 17,
+      "joint": "Wrist Extension/Flexion",
+      "calibration_kind": "SUBJECT-SPECIFIC IN APPLICATION.  The workbook does publish a generic row and this audit reproduces it with the general affine form, but the paper states the wrist sensors were calibrated INDIVIDUALLY PER PARTICIPANT from that participant's own min/max over task 73 (radial/ulnar deviation) and task 74 (wrist flexion/extension), mapped to the goniometer values of Nizamis et al. (+79 flexion, -63 extension, -19 radial, +35 ulnar).  The constants actually used for this recording are NOT the published ones.",
+      "published_gain_deg_per_unit": 2.142857142857143,
+      "zero": "own recorded extremes mapped to goniometer extremes",
+      "cross_coupling_correction": "NONE PUBLISHED.  Unlike the UJI pipeline, MyoKi applies equation (1) channel by channel with no modelled cross-coupling terms.  Only the palmar arch follows a different reference (Gracia-Ibanez et al.).  [DOC]",
+      "reproduced_by_this_audit": false,
+      "source": "Glove_calibration.xlsx sheet 'female' + MyoKi paper Methods",
+      "evidence": "DOC"
+    },
+    {
+      "column": 18,
+      "joint": "Radial/Ulnar Deviation",
+      "calibration_kind": "SUBJECT-SPECIFIC IN APPLICATION.  The workbook does publish a generic row and this audit reproduces it with the general affine form, but the paper states the wrist sensors were calibrated INDIVIDUALLY PER PARTICIPANT from that participant's own min/max over task 73 (radial/ulnar deviation) and task 74 (wrist flexion/extension), mapped to the goniometer values of Nizamis et al. (+79 flexion, -63 extension, -19 radial, +35 ulnar).  The constants actually used for this recording are NOT the published ones.",
+      "published_gain_deg_per_unit": 1.0,
+      "zero": "own recorded extremes mapped to goniometer extremes",
+      "cross_coupling_correction": "NONE PUBLISHED.  Unlike the UJI pipeline, MyoKi applies equation (1) channel by channel with no modelled cross-coupling terms.  Only the palmar arch follows a different reference (Gracia-Ibanez et al.).  [DOC]",
+      "reproduced_by_this_audit": false,
+      "source": "Glove_calibration.xlsx sheet 'female' + MyoKi paper Methods",
+      "evidence": "DOC"
+    }
+  ],
+  "C_rate_and_zoh": {
+    "declared_frequency_field_hz": 2000,
+    "rows": 83267,
+    "duration_s": 41.63345718383789,
+    "grid_rate_hz": 2000.0020568151197,
+    "streams": {
+      "glove": {
+        "rows": 83267,
+        "distinguishable_row_changes": 1480,
+        "distinguishable_rate_hz": 35.548333002106205,
+        "representation_inflation_factor": 56.26148648648649,
+        "duplicate_row_fraction": 0.9822256383157592
+      },
+      "glove_calibrated": {
+        "rows": 83267,
+        "distinguishable_row_changes": 1480,
+        "distinguishable_rate_hz": 35.548333002106205,
+        "representation_inflation_factor": 56.26148648648649,
+        "duplicate_row_fraction": 0.9822256383157592
+      },
+      "emg": {
+        "rows": 83267,
+        "distinguishable_row_changes": 83266,
+        "distinguishable_rate_hz": 1999.9780376711992,
+        "representation_inflation_factor": 1.0000120097038407,
+        "duplicate_row_fraction": 0.0
+      },
+      "acc": {
+        "rows": 83267,
+        "distinguishable_row_changes": 6163,
+        "distinguishable_rate_hz": 148.02998398106791,
+        "representation_inflation_factor": 13.510790199578128,
+        "duplicate_row_fraction": 0.9259841952297456
+      },
+      "gyro": {
+        "rows": 83267,
+        "distinguishable_row_changes": 6163,
+        "distinguishable_rate_hz": 148.02998398106791,
+        "representation_inflation_factor": 13.510790199578128,
+        "duplicate_row_fraction": 0.9259841952297456
+      },
+      "fmg": {
+        "rows": 83267,
+        "distinguishable_row_changes": 3589,
+        "distinguishable_rate_hz": 86.20470753010754,
+        "representation_inflation_factor": 23.200612984118138,
+        "duplicate_row_fraction": 0.9568971729157159
+      },
+      "task": {
+        "rows": 83267,
+        "distinguishable_row_changes": 1,
+        "distinguishable_rate_hz": 0.024019143920342028,
+        "representation_inflation_factor": 83267.0,
+        "duplicate_row_fraction": 0.9999879902961593
+      },
+      "timestamp": {
+        "rows": 83267,
+        "distinguishable_row_changes": 83266,
+        "distinguishable_rate_hz": 1999.9780376711992,
+        "representation_inflation_factor": 1.0000120097038407,
+        "duplicate_row_fraction": 0.0
+      }
+    },
+    "interpretation": "The file is on ONE declared 2000 Hz grid. Only the EMG stream actually changes at that rate. The kinematic stream changes ~56x less often, so ~98% of its rows are exact copies of the preceding row. Any statistic that treats kinematic rows as independent inflates its sample size by roughly two orders of magnitude and makes every interval spuriously narrow.",
+    "lower_bound_caveat": "the distinguishable-state count is a LOWER bound on the true update rate: two consecutive acquisitions may carry identical values and be merged. The paper reports a glove acquisition rate of 80.85 +/- 0.16 Hz across participants, which is consistent with an effective independent-sample count between the distinguishable-state rate and that figure - and NOT with 2000 Hz either way.",
+    "evidence": "EMPIRICAL"
+  },
+  "D_physical_anchor": {
+    "anchor_definition": "rest (task 0) -> fist (task 1) within the official synchronisation recording, in which the participant was instructed to move from a resting hand position to a fist and back [DOC]",
+    "closed_set_2000hz_deltas": [
+      {
+        "channel": "MCP Index (col 5)",
+        "column": 5,
+        "expected": "positive (a fist flexes this joint)",
+        "median_delta_fist_minus_rest_deg": 64.52830188679246,
+        "direction_ok": true
+      },
+      {
+        "channel": "PIP Index (col 6)",
+        "column": 6,
+        "expected": "positive (a fist flexes this joint)",
+        "median_delta_fist_minus_rest_deg": 111.23595505617978,
+        "direction_ok": true
+      },
+      {
+        "channel": "MCP Middle (col 7)",
+        "column": 7,
+        "expected": "positive (a fist flexes this joint)",
+        "median_delta_fist_minus_rest_deg": 66.60000000000001,
+        "direction_ok": true
+      },
+      {
+        "channel": "PIP Middle (col 8)",
+        "column": 8,
+        "expected": "positive (a fist flexes this joint)",
+        "median_delta_fist_minus_rest_deg": 79.2,
+        "direction_ok": true
+      },
+      {
+        "channel": "MCP Ring (col 10)",
+        "column": 10,
+        "expected": "positive (a fist flexes this joint)",
+        "median_delta_fist_minus_rest_deg": 58.33333333333334,
+        "direction_ok": true
+      },
+      {
+        "channel": "PIP Ring (col 11)",
+        "column": 11,
+        "expected": "positive (a fist flexes this joint)",
+        "median_delta_fist_minus_rest_deg": 68.21052631578947,
+        "direction_ok": true
+      },
+      {
+        "channel": "MCP Little (col 13)",
+        "column": 13,
+        "expected": "positive (a fist flexes this joint)",
+        "median_delta_fist_minus_rest_deg": 59.75999999999999,
+        "direction_ok": true
+      },
+      {
+        "channel": "PIP Little (col 14)",
+        "column": 14,
+        "expected": "positive (a fist flexes this joint)",
+        "median_delta_fist_minus_rest_deg": 62.57142857142856,
+        "direction_ok": true
+      }
+    ],
+    "n_channels_in_expected_direction": 8,
+    "n_channels": 8,
+    "edge_deltas": [
+      {
+        "channel": "MCP Index (col 5)",
+        "rise_edge_delta_deg": 0.0,
+        "fall_edge_delta_deg": 0.0
+      },
+      {
+        "channel": "PIP Index (col 6)",
+        "rise_edge_delta_deg": 0.0,
+        "fall_edge_delta_deg": -1.0112359550561791
+      },
+      {
+        "channel": "MCP Middle (col 7)",
+        "rise_edge_delta_deg": 0.0,
+        "fall_edge_delta_deg": 0.0
+      },
+      {
+        "channel": "PIP Middle (col 8)",
+        "rise_edge_delta_deg": 0.0,
+        "fall_edge_delta_deg": 0.0
+      },
+      {
+        "channel": "MCP Ring (col 10)",
+        "rise_edge_delta_deg": 0.0,
+        "fall_edge_delta_deg": 0.0
+      },
+      {
+        "channel": "PIP Ring (col 11)",
+        "rise_edge_delta_deg": 0.0,
+        "fall_edge_delta_deg": 0.0
+      },
+      {
+        "channel": "MCP Little (col 13)",
+        "rise_edge_delta_deg": 0.0,
+        "fall_edge_delta_deg": -0.7199999999999989
+      },
+      {
+        "channel": "PIP Little (col 14)",
+        "rise_edge_delta_deg": 0.0,
+        "fall_edge_delta_deg": 0.0
+      }
+    ],
+    "subject_level_consistency": "NOT COMPUTABLE: this file is ONE recording. The frozen plan's anchor protocol counts SUBJECTS, not frames, so no sign-consistency rate can be produced from it. n = 1 recording is reported and nothing is scored.",
+    "degeneracy_guard": "the deltas are reported in full so that a reader can see the magnitudes, not only the signs; a channel that never moved would show delta = 0 and is visible as such",
+    "verdict": "NOMINAL PASS at n = 1 recording; NOT a scored anchor",
+    "blocker": "a scored anchor needs the participant corpus (35 x ~3.8 GB)",
+    "evidence": "EMPIRICAL"
+  },
+  "E_grasp_label": {
+    "source": "Task_categorization.xlsx, the official 74-task table",
+    "published_field_semantics": "paper Data records: 'grasp: Task labels translated into grasps (0: Rest/Transition, 1: Cylindrical, 2: Spherical, 3: Hook, 4: Tripod, 5: Pinch, 6: Lumbrical, 7: Complex) using the information from Task_categorization.xlsx' [DOC]",
+    "n_task_rows": 75,
+    "task_id_range": [
+      0,
+      74
+    ],
+    "n_tasks_with_exactly_one_grasp": 74,
+    "n_grasp_marks_distribution": {
+      "0": 1,
+      "1": 74
+    },
+    "grasp_class_distribution_over_tasks": {
+      "cylindrical": 22,
+      "complex": 20,
+      "tripod": 7,
+      "pinch": 7,
+      "spherical": 6,
+      "lumbrical": 6,
+      "hook": 6
+    },
+    "provenance": "TASK-METADATA LOOKUP.  The field is a deterministic function of the task ID; it is not annotated per frame and not per trial.",
+    "framewise_or_trialwise": "TRIAL-WISE (constant for the whole task segment)",
+    "warning": "LABEL_NOT_FRAMEWISE_GROUND_TRUTH",
+    "class_balance_over_tasks": "see grasp_class_distribution_over_tasks",
+    "same_grasp_across_objects": "the 74 tasks use many different objects; a grasp class therefore aggregates several objects, and its posture family can only be tested against the kinematic corpus",
+    "blocker": "the posture-family / kinematic-stability test of section 7E of the brief needs the participant corpus",
+    "evidence": "DOC"
+  },
+  "participant_anomaly_notes": [
+    {
+      "participant": "P05",
+      "note": "Repetition 2 missing of task 67"
+    },
+    {
+      "participant": "P20",
+      "note": "EMG sensors 7 and 8 detached and are not usable"
+    }
+  ],
+  "scope_limit": "This audit holds ONE MyoKi recording (48 961 776 B). Every subject-level statement about MyoKi is therefore out of reach; what is established here is the SCHEMA, the PARITY of the published calibration chain, the REAL update rate, and the PROVENANCE of the labels.",
+  "evidence": "EMPIRICAL"
+}

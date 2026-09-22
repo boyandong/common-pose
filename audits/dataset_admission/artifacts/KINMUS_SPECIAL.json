@@ -1,0 +1,631 @@
+{
+  "artifact": "KINMUS_SPECIAL.json",
+  "plan_sha256": "fba2b20623392dd809d5ed28c7850387acc721e9a91ff1611e7fba0d89fc889d",
+  "source_file": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\kin_mus\\KIN_MUS_UJI.mat",
+  "source_sha256": "530a9e51b19574b0f5dee0c9263b1a50eafc7204b14cae67b6b1bb854671c722",
+  "A_schema": {
+    "authoritative_order": [
+      "CMC1_A",
+      "CMC1_F",
+      "MCP1_F",
+      "IP1_F",
+      "MCP2-3_A",
+      "MCP2_F",
+      "PIP2_F",
+      "MCP3_F",
+      "PIP3_F",
+      "MCP3-4_A",
+      "MCP4_F",
+      "PIP4_F",
+      "PalmArch",
+      "MCP4-5_A",
+      "MCP5_F",
+      "PIP5_F",
+      "WR_F",
+      "WR_A"
+    ],
+    "authority": "KIN-MUS 2019 paper (Sci Data 6:270) Table 2 + Data Records",
+    "hand": "RIGHT hand. Paper Methods: 'The kinematic data of the right hand were acquired using a CyberGlove (CyberGlove Systems LLC) instrumented glove (Fig. 1) connected to a laptop at 100 Hz. This glove has 18 strain gauges'",
+    "hand_resolved": true,
+    "loader_used_by_the_project": "obs_common.UJI18 (MOVMUS guide order) - WRONG SOURCE",
+    "shared10_mapping_used_by_the_project": [
+      0,
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      11,
+      13,
+      15
+    ],
+    "shared10_mapping_correct_for_this_order": [
+      1,
+      2,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      14,
+      15
+    ],
+    "kineadl_order": [
+      "CMC1_F",
+      "CMC1_A",
+      "MCP1_F",
+      "IP1_F",
+      "MCP2_F",
+      "MCP2-3_A",
+      "PIP2_F",
+      "MCP3_F",
+      "PIP3_F",
+      "MCP4_F",
+      "MCP3-4_A",
+      "PIP4_F",
+      "PalmArch",
+      "MCP5_F",
+      "MCP4-5_A",
+      "PIP5_F",
+      "WR_F",
+      "WR_A"
+    ],
+    "kineadl_equals_kinmus": false,
+    "positions_differing": 8,
+    "unit": "degrees (paper Abstract + Data Records 'anatomical angles')",
+    "rate_hz": 100.0
+  },
+  "B_calibration": {
+    "units": "degrees [DOC]",
+    "zero_reference": "the mean of a RECORDED reference posture: hands resting flat on the table, fingers and thumb close together, middle fingers aligned with the forearms.  NOT a nominal anatomical zero, and session-dependent. [DOC]",
+    "positive_direction": "PIP(2-5)_F, IP1_F, CMC1_F, MCP(1-5)_F, WR_F: flexion +; MCP(2-3,3-4,4-5)_A: fingers separated +; PalmArch: flexion +; CMC1_A: abduction +; WR_A: CONFLICT (paper says radial +, the guide and KINE-ADL say ulnar +) [DOC]",
+    "cross_coupling": "MODELLED, not merely acknowledged: CMC1_F/CMC1_A are a 2-term mix of the same two gauges; MCP2-3_A, MCP3-4_A, MCP4-5_A use linear + quadratic + interaction terms in the neighbouring MCP flexion gauges; WR_F is quadratic in one gauge; WR_A is linear in two. [DOC, official code]",
+    "subject_specific_elements": "NONE for channels 1-16: the protocol is an ACROSS-SUBJECT calibration. The code ships the UJI group's own glove gains as placeholders and says so: 'Gains values should be completed with own glove gains.' [DOC]",
+    "known_hand_size_dependence": "the guide attributes removed outliers to 'a poor fit of these gauges for a specific subject ... who had a small hand length'. [DOC]",
+    "raw_glove_published": false,
+    "raw_to_processed_reproducible": false,
+    "flag": "TRANSFORM_NOT_INDEPENDENTLY_REPRODUCIBLE",
+    "why": "RAW_EMG.mat is released but the RAW CYBERGLOVE streams for KIN-MUS are not. The released block is already calibrated and differenced against the session's own reference recording. Without the raw gauge values and the per-glove gains actually used, equation (1) cannot be re-executed on this corpus. The official code is readable and its FORM is verified, but a numeric parity test on KIN-MUS itself is impossible from public files.",
+    "paper_reported_validation_is_not_our_evidence": "the paper's AROM/ANOVA validation is [DOC]; it does not establish per-channel parity for this file",
+    "evidence": "DOC"
+  },
+  "C_measured_vs_derived": {
+    "dip_columns_present": false,
+    "best_max_abs_err": 3.920002000000001,
+    "per_dip": {
+      "DIP2": {
+        "best_median_abs_err": 3.982665,
+        "from_column": 0,
+        "to_column": 13
+      },
+      "DIP3": {
+        "best_median_abs_err": 3.982345,
+        "from_column": 0,
+        "to_column": 13
+      },
+      "DIP4": {
+        "best_median_abs_err": 3.9824450000000002,
+        "from_column": 0,
+        "to_column": 13
+      },
+      "DIP5": {
+        "best_median_abs_err": 3.920002000000001,
+        "from_column": 4,
+        "to_column": 13
+      }
+    },
+    "formula": "DIP = max(0, a*PIP - b) for the 18-sensor glove branch",
+    "formula_source": "official obtain_angles_RL_abd_rel.m lines 147-170",
+    "conclusion": "no released column is the derived DIP of any other column, so the 18-column block is the 22-angle pipeline with the four DIPs REMOVED (and the two wrists kept), not the first 18 angles",
+    "common_api_dip": "MISSING in KIN-MUS",
+    "evidence": "EMPIRICAL"
+  },
+  "D_anchors": {
+    "A1_pip_reaching_to_manipulation": {
+      "label": "PIP flexion rises from REACHING (1) to MANIPULATION (2)",
+      "expected": "positive",
+      "n_subjects": 22,
+      "n_in_expected_direction": 22,
+      "fraction": 1.0,
+      "wilson95": [
+        0.8513451253913791,
+        1.0
+      ],
+      "median_delta_deg": 13.081850000000003,
+      "min_delta_deg": 4.026600000000002,
+      "max_delta_deg": 22.422549999999998,
+      "per_subject_delta_deg": {
+        "1": 22.29035,
+        "2": 22.422549999999998,
+        "3": 9.1293,
+        "4": 9.212499999999991,
+        "5": 7.71575,
+        "6": 17.297150000000002,
+        "7": 5.694649999999996,
+        "8": 17.610449999999997,
+        "9": 13.67935,
+        "10": 22.12895,
+        "11": 12.206549999999996,
+        "12": 7.0426,
+        "13": 17.4379,
+        "14": 12.484350000000006,
+        "15": 15.191600000000001,
+        "16": 11.378450000000004,
+        "17": 10.9516,
+        "18": 4.026600000000002,
+        "19": 15.6631,
+        "20": 17.5599,
+        "21": 19.593600000000002,
+        "22": 7.354400000000005
+      },
+      "verdict": "PASS",
+      "evidence": "EMPIRICAL"
+    },
+    "A2_mcp_reaching_to_manipulation": {
+      "label": "MCP flexion rises from REACHING (1) to MANIPULATION (2)",
+      "expected": "positive",
+      "n_subjects": 22,
+      "n_in_expected_direction": 22,
+      "fraction": 1.0,
+      "wilson95": [
+        0.8513451253913791,
+        1.0
+      ],
+      "median_delta_deg": 17.792425,
+      "min_delta_deg": 9.0262,
+      "max_delta_deg": 27.036999999999995,
+      "per_subject_delta_deg": {
+        "1": 23.594699999999996,
+        "2": 25.741949999999996,
+        "3": 22.571199999999997,
+        "4": 18.4873,
+        "5": 11.50655,
+        "6": 17.67695,
+        "7": 13.325800000000001,
+        "8": 16.5148,
+        "9": 19.80235,
+        "10": 15.64425,
+        "11": 25.856150000000003,
+        "12": 9.0262,
+        "13": 11.56485,
+        "14": 24.13505,
+        "15": 11.82385,
+        "16": 17.9079,
+        "17": 27.036999999999995,
+        "18": 21.829250000000005,
+        "19": 15.480749999999997,
+        "20": 18.94605,
+        "21": 16.358399999999996,
+        "22": 15.884199999999998
+      },
+      "verdict": "PASS",
+      "evidence": "EMPIRICAL"
+    },
+    "A2b_mcp_pip_sum": {
+      "label": "MCP+PIP flexion sum rises from REACHING to MANIPULATION",
+      "expected": "positive",
+      "n_subjects": 22,
+      "n_in_expected_direction": 22,
+      "fraction": 1.0,
+      "wilson95": [
+        0.8513451253913791,
+        1.0
+      ],
+      "median_delta_deg": 17.999924999999998,
+      "min_delta_deg": 9.892649999999996,
+      "max_delta_deg": 24.944650000000003,
+      "per_subject_delta_deg": {
+        "1": 23.1948,
+        "2": 24.944650000000003,
+        "3": 20.78505,
+        "4": 18.694899999999997,
+        "5": 14.440800000000003,
+        "6": 18.245849999999997,
+        "7": 9.930449999999997,
+        "8": 18.7155,
+        "9": 19.645050000000005,
+        "10": 17.652800000000003,
+        "11": 18.849249999999994,
+        "12": 9.892649999999996,
+        "13": 16.075650000000003,
+        "14": 17.753999999999998,
+        "15": 15.849249999999998,
+        "16": 16.05565,
+        "17": 16.536949999999997,
+        "18": 19.748700000000007,
+        "19": 14.587050000000005,
+        "20": 19.205799999999996,
+        "21": 18.626699999999996,
+        "22": 12.709199999999996
+      },
+      "verdict": "PASS",
+      "evidence": "EMPIRICAL"
+    },
+    "A3_abduction_reaching_to_manipulation": {
+      "label": "relative abduction FALLS from REACHING to MANIPULATION (fingers come together to grasp)",
+      "expected": "negative",
+      "n_subjects": 22,
+      "n_in_expected_direction": 14,
+      "fraction": 0.6363636363636364,
+      "wilson95": [
+        0.42951708090131013,
+        0.8026679532963387
+      ],
+      "median_delta_deg": -0.5901175000000003,
+      "min_delta_deg": -2.3263750000000005,
+      "max_delta_deg": 1.5686500000000003,
+      "per_subject_delta_deg": {
+        "1": -1.063225,
+        "2": -2.3263750000000005,
+        "3": -0.7287699999999999,
+        "4": 0.9346750000000004,
+        "5": -0.9028900000000002,
+        "6": 0.21932999999999936,
+        "7": -0.45146500000000067,
+        "8": -1.585585,
+        "9": 0.4424549999999998,
+        "10": -1.1305550000000002,
+        "11": -1.6164049999999999,
+        "12": 0.9075950000000006,
+        "13": 1.5686500000000003,
+        "14": -1.661775,
+        "15": 1.2856750000000003,
+        "16": 0.7266049999999993,
+        "17": -0.8144754999999999,
+        "18": -1.3736300000000004,
+        "19": -0.18176500000000018,
+        "20": -1.635145,
+        "21": -0.19453999999999994,
+        "22": 0.321435000000001
+      },
+      "verdict": "WEAK",
+      "evidence": "EMPIRICAL"
+    },
+    "A4_thumb_mcp_ip_reaching_to_manipulation": {
+      "label": "thumb MCP + IP flexion rises from REACHING to MANIPULATION",
+      "expected": "positive",
+      "n_subjects": 22,
+      "n_in_expected_direction": 18,
+      "fraction": 0.8181818181818182,
+      "wilson95": [
+        0.6148339256287345,
+        0.9269311541657794
+      ],
+      "median_delta_deg": 1.9623325000000005,
+      "min_delta_deg": -2.160985,
+      "max_delta_deg": 6.257527,
+      "per_subject_delta_deg": {
+        "1": 2.8838549999999996,
+        "2": -0.6102799999999999,
+        "3": 0.04581999999999997,
+        "4": 0.5959719499999999,
+        "5": 0.34413999999999945,
+        "6": 3.125839,
+        "7": -2.160985,
+        "8": 2.6543569999999996,
+        "9": 2.0681315,
+        "10": 5.231405,
+        "11": 2.0639450000000004,
+        "12": 4.228225,
+        "13": 4.011769999999999,
+        "14": 2.2144250000000003,
+        "15": -1.4193399999999996,
+        "16": 0.8296349999999999,
+        "17": 1.4802344785,
+        "18": 0.47306000000000026,
+        "19": 2.3404264999999995,
+        "20": 6.257527,
+        "21": 1.8607200000000006,
+        "22": -1.0087735000000002
+      },
+      "verdict": "PASS",
+      "evidence": "EMPIRICAL"
+    },
+    "A5_thumb_cmc_flexion": {
+      "label": "thumb CMC flexion rises from REACHING to MANIPULATION",
+      "expected": "positive",
+      "n_subjects": 22,
+      "n_in_expected_direction": 22,
+      "fraction": 1.0,
+      "wilson95": [
+        0.8513451253913791,
+        1.0
+      ],
+      "median_delta_deg": 6.86672215,
+      "min_delta_deg": 0.2458999999999989,
+      "max_delta_deg": 12.612798,
+      "per_subject_delta_deg": {
+        "1": 0.93215,
+        "2": 7.6927,
+        "3": 5.764785,
+        "4": 10.201740000000001,
+        "5": 10.04112,
+        "6": 7.6990300000000005,
+        "7": 5.04398,
+        "8": 9.04053,
+        "9": 1.2939499999999988,
+        "10": 9.147015,
+        "11": 12.612798,
+        "12": 6.1672793,
+        "13": 0.2458999999999989,
+        "14": 7.566165000000001,
+        "15": 8.0027,
+        "16": 5.872077999999999,
+        "17": 0.8164499999999997,
+        "18": 7.568065,
+        "19": 5.569786000000001,
+        "20": 12.219800000000001,
+        "21": 1.1042500000000004,
+        "22": 5.941846
+      },
+      "verdict": "PASS",
+      "evidence": "EMPIRICAL"
+    },
+    "A6_thumb_cmc_abduction_reported_not_scored": {
+      "label": "thumb CMC abduction rises from REACHING to MANIPULATION (REPORTED, NOT SCORED: the direction is not pre-declared as one-signed)",
+      "expected": "positive",
+      "n_subjects": 22,
+      "n_in_expected_direction": 22,
+      "fraction": 1.0,
+      "wilson95": [
+        0.8513451253913791,
+        1.0
+      ],
+      "median_delta_deg": 2.0647899999999995,
+      "min_delta_deg": 0.7660999999999998,
+      "max_delta_deg": 4.636900000000001,
+      "per_subject_delta_deg": {
+        "1": 1.3542500000000004,
+        "2": 2.696900000000001,
+        "3": 2.075849999999999,
+        "4": 4.636900000000001,
+        "5": 0.7660999999999998,
+        "6": 2.211599999999999,
+        "7": 2.0448999999999984,
+        "8": 2.67699,
+        "9": 1.9723999999999986,
+        "10": 3.2056499999999986,
+        "11": 1.0620499999999993,
+        "12": 0.9093999999999998,
+        "13": 4.43685,
+        "14": 2.05373,
+        "15": 2.013399999999999,
+        "16": 2.0305500000000016,
+        "17": 3.941749999999999,
+        "18": 2.1590500000000006,
+        "19": 1.9186499999999995,
+        "20": 2.4651499999999995,
+        "21": 4.2283500000000025,
+        "22": 1.321299999999999
+      },
+      "verdict": "PASS",
+      "evidence": "EMPIRICAL",
+      "scored": false
+    },
+    "per_channel_range": {
+      "CMC1_A": {
+        "min": -6.60671,
+        "max": 30.784,
+        "span": 37.39071,
+        "sd": 5.215332934479026
+      },
+      "CMC1_F": {
+        "min": -70.6205,
+        "max": 55.7618,
+        "span": 126.38230000000001,
+        "sd": 18.326353585857735
+      },
+      "MCP1_F": {
+        "min": -56.6302,
+        "max": 35.3087,
+        "span": 91.9389,
+        "sd": 9.925428406311912
+      },
+      "IP1_F": {
+        "min": -75.5707,
+        "max": 87.2557,
+        "span": 162.8264,
+        "sd": 18.709376484842974
+      },
+      "MCP2-3_A": {
+        "min": -25.7095,
+        "max": 46.9177,
+        "span": 72.6272,
+        "sd": 8.746709402531339
+      },
+      "MCP2_F": {
+        "min": -53.3377,
+        "max": 75.7626,
+        "span": 129.1003,
+        "sd": 19.160978411205626
+      },
+      "PIP2_F": {
+        "min": -40.4423,
+        "max": 113.899,
+        "span": 154.3413,
+        "sd": 21.880429788002385
+      },
+      "MCP3_F": {
+        "min": -44.9903,
+        "max": 87.9901,
+        "span": 132.9804,
+        "sd": 23.49607649244021
+      },
+      "PIP3_F": {
+        "min": -12.5974,
+        "max": 114.194,
+        "span": 126.79140000000001,
+        "sd": 19.54839673957176
+      },
+      "MCP3-4_A": {
+        "min": -26.0609,
+        "max": 42.9954,
+        "span": 69.0563,
+        "sd": 6.167832573069403
+      },
+      "MCP4_F": {
+        "min": -57.8997,
+        "max": 76.3178,
+        "span": 134.2175,
+        "sd": 23.04697032300618
+      },
+      "PIP4_F": {
+        "min": -8.7957,
+        "max": 115.172,
+        "span": 123.9677,
+        "sd": 23.055443369538118
+      },
+      "PalmArch": {
+        "min": -20.2469,
+        "max": 69.3372,
+        "span": 89.58409999999999,
+        "sd": 15.52893059183733
+      },
+      "MCP4-5_A": {
+        "min": -31.422,
+        "max": 28.1119,
+        "span": 59.5339,
+        "sd": 5.652999973844898
+      },
+      "MCP5_F": {
+        "min": -54.0524,
+        "max": 83.4864,
+        "span": 137.5388,
+        "sd": 25.08302880465263
+      },
+      "PIP5_F": {
+        "min": -19.5846,
+        "max": 122.423,
+        "span": 142.0076,
+        "sd": 22.927482638157496
+      },
+      "WR_F": {
+        "min": -156.531,
+        "max": 115.745,
+        "span": 272.276,
+        "sd": 33.95526805251199
+      },
+      "WR_A": {
+        "min": -90.6618,
+        "max": 25.6752,
+        "span": 116.337,
+        "sd": 16.827264164721687
+      }
+    },
+    "wrist_envelope_flag": {
+      "WR_F": {
+        "min": -156.531,
+        "max": 115.745,
+        "span": 272.276,
+        "sd": 33.95526805251199
+      },
+      "WR_A": {
+        "min": -90.6618,
+        "max": 25.6752,
+        "span": 116.337,
+        "sd": 16.827264164721687
+      },
+      "normative": {
+        "wrist_flexion_max": 79.0,
+        "wrist_extension_max": -63.0,
+        "wrist_radial_dev_max": -19.0,
+        "wrist_ulnar_dev_max": 35.0,
+        "source": "Nizamis et al., goniometer, 20 participants; cited by the MyoKi paper (Sci Data 12:1507) [DOC, external corpus]"
+      },
+      "flag": "REPORTED, NOT SCORED.  WR_F reaches -156.53 deg of extension and +115.75 deg of flexion; WR_A reaches -90.66 deg.  The commonly cited goniometer maxima are +79 flexion / -63 extension / -19 radial / +35 ulnar.  The wrist channels therefore leave the physiological envelope by a factor of ~1.5-2.5.  The dataset's own Usage Notes attribute extreme WRIST_F values to 'cables underneath the glove', and the release's wrist gains are not published.  This is a flag on the wrist channels, not a measurement of them.",
+      "evidence": "INFERENCE"
+    }
+  },
+  "E_artifacts_and_exclusions": {
+    "documented": [
+      {
+        "scope": "subject 22, ADL 25 (all phases)",
+        "nature": "all data lost; the paper says a NaN was presented, the file actually stores an EMPTY container",
+        "action": "EXCLUDE the cell",
+        "evidence": "EMPIRICAL"
+      },
+      {
+        "scope": "ADL 7 and ADL 11, WRIST_F",
+        "nature": "extremes caused by the cables underneath the glove, per the dataset's own Usage Notes",
+        "action": "RESTRICT: never use WRIST_F extremes from these ADLs without winsorising",
+        "evidence": "DOC"
+      },
+      {
+        "scope": "the released right PALMAR ARCH channel",
+        "nature": "the same group's later MOVMUS guide discloses that the right palmar-arch gauge is malfunctioning and that 'right palmar arch data is not available', and the guide's figure 23 notes it does not appear in the plots",
+        "action": "the KIN-MUS PalmArch channel cannot be assumed sound; mark RESTRICT/quarantine rather than KEEP",
+        "evidence": "INFERENCE"
+      }
+    ],
+    "detected_here": [
+      {
+        "check": "duplicate (subject, ADL, phase) cells",
+        "result": "2 duplicate cells exist in the container grid (1716 containers, 1714 unique cells). Any regrouping must be done on (subject, ADL, phase), not on a count of containers.",
+        "evidence": "EMPIRICAL"
+      }
+    ],
+    "not_detected": {
+      "nan": 0,
+      "inf": 0,
+      "constant_columns": [],
+      "identical_column_pairs": [],
+      "note": "no NaN, no Inf, no constant column and no bit-identical column pair in the released 564 894 x 18 matrix"
+    },
+    "cmc1_a_zero_inflation_note": {
+      "n_exact_zero": 0,
+      "fraction": 0.0,
+      "note": "CMC1_A is the reference-posture-differenced thumb abduction channel; its zero mass is a property of the differencing, not a dead channel. Reported so that a later reader does not mistake it for one."
+    }
+  },
+  "F_phase_and_role": {
+    "phase": {
+      "labels": {
+        "1": "reaching",
+        "2": "manipulation",
+        "3": "release"
+      },
+      "provenance": "OPERATOR SEGMENTATION.  The paper: 'the angle of rotation of the door handle (A9) or the amount of water to be poured (A21) ... when any part of the hand came into contact with the object and when the hand released the object, to separate reaching/releasing periods from manipulation' - i.e. the boundary is a hand-object CONTACT event, not a kinematic event. [DOC]",
+      "framewise_or_trialwise": "FRAME-WISE (every 100 Hz sample carries a phase label)",
+      "boundary_reliability": "operator/contact-defined; the paper reports a manual double check of every label. The boundary is therefore reliable as a CONTACT label but is not a kinematic landmark. [DOC]",
+      "n_containers": {
+        "1": 572,
+        "2": 572,
+        "3": 572
+      },
+      "n_frames": {
+        "1": 54177,
+        "2": 417634,
+        "3": 93083
+      },
+      "class_balance_frames": {
+        "1": 0.09590648865096815,
+        "2": 0.7393139243822735,
+        "3": 0.16477958696675837
+      },
+      "subject_coverage": "22/22 subjects",
+      "temporal_context_required": "YES for the observation lane's own reasons: the frozen observability diagnostic measured single-frame pose at 0.4051 balanced accuracy against a 0.3333 chance level, and a 500 ms window at 0.6172",
+      "this_audit_does_not_reoptimise_phase": true
+    },
+    "role": {
+      "TASK_SOURCE": {
+        "granted": true,
+        "why": "26 ADLs x 22 subjects x 3 operator-segmented phases = 1716 containers; phase is frame-wise; the release carries its own labels"
+      },
+      "UPSTREAM_EMG_POSE_SOURCE": {
+        "granted": true,
+        "why": "the same containers carry 7 normalised sEMG channels AND the raw unfiltered sEMG, so an EMG->pose arm needs no new collection"
+      },
+      "EXTERNAL_GEOMETRY_SOURCE": {
+        "granted": "RESTRICTED",
+        "why": "the geometry is glove-derived anatomical ANGLES, not motion capture; the zero is a session-specific recorded posture; the raw gauges and the per-glove gains are not published, so the transform is not independently reproducible; and the wrist channels leave the physiological envelope. Usable as a semantic hand-state reference, not as an absolute-angle ground truth."
+      },
+      "STRESS_TEST_SOURCE": {
+        "granted": true,
+        "why": "22 subjects x 26 ADLs with a documented hand-size outlier and a documented cable artifact makes it a good adversarial corpus for robustness claims"
+      }
+    }
+  },
+  "evidence": "EMPIRICAL"
+}

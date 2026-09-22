@@ -1,0 +1,612 @@
+{
+  "artifact": "DATASET_ADMISSION_PLAN.json",
+  "branch_id": "S6-POSE-API-DATASET-ADMISSION",
+  "branch_classification": "DATASET-SELECTION / REPRESENTATION-COMPATIBILITY AUDIT",
+  "status": "FROZEN",
+  "lane": "pose_api_dataset_admission",
+  "scientific_question": {
+    "branch_question": "Which external kinematic dataset is technically qualified to become the first serious source dataset for the Common Pose API?",
+    "context": "Long-term architecture: wearable EMG -> frozen EMG->continuous hand state -> Common Physical Pose API -> a downstream task model learned from an INDEPENDENT kinematic dataset, so that a task can be defined from pose/kinematics + labels without task-specific EMG.  That architecture has NOT yet been demonstrated and this session does not attempt it.",
+    "explicitly_not": [
+      "not a Gate/architecture session",
+      "not a model-training session",
+      "not a DB9 rescue",
+      "not domain adaptation",
+      "not cross-dataset performance comparison",
+      "not a Common Pose API redesign",
+      "not an accuracy leaderboard"
+    ],
+    "prior_branch_context_only": "DB9 reached a frozen decision DB9-DROP: not sufficiently reliable as a physical task-source dataset; source-only channel QC left too few trustworthy channels (5 of 16) and did not selectively rescue external human targets.  DB9 may appear here only as historical context and as a LESSON (semantic names do not guarantee a trustworthy physical interface)."
+  },
+  "candidates": {
+    "HUST": {
+      "label": "A",
+      "name": "HUST hand kinematics dataset",
+      "primary": true,
+      "role": "primary candidate"
+    },
+    "KINE_ADL": {
+      "label": "B",
+      "name": "KINE-ADL BE-UJI",
+      "primary": true,
+      "role": "primary candidate",
+      "naming_note": "the audited public artifacts for this slot are (i) the BE-UJI hand joint angle calculation code, Zenodo 10.5281/zenodo.8418096 / 3357966, and (ii) the JBU/UJI ADL kinematic family that shares that calibration pipeline.  The audit reports exactly which public artifact each claim comes from and does not invent a separate 'KINE-ADL' release if none is found."
+    },
+    "KIN_MUS": {
+      "label": "C",
+      "name": "KIN-MUS UJI",
+      "primary": true,
+      "role": "primary candidate"
+    },
+    "DLR": {
+      "label": "D",
+      "name": "DLR hand kinematics dataset",
+      "primary": false,
+      "role": "BACKUP ONLY"
+    },
+    "UNIPI": {
+      "label": "E",
+      "name": "UNIPI hand kinematics datasets",
+      "primary": false,
+      "role": "BACKUP ONLY"
+    }
+  },
+  "backup_rule": "backup candidates are audited ONLY if all three primary candidates are REJECT; the candidate list is not expanded otherwise",
+  "source_of_truth": {
+    "order": [
+      "1. official dataset repository / site",
+      "2. official publication / supplementary material",
+      "3. official code",
+      "4. dataset README / metadata distributed with the files",
+      "5. reputable secondary descriptions"
+    ],
+    "rule": "do not infer undocumented details",
+    "tags": [
+      "OFFICIAL-DOCUMENTED",
+      "OFFICIAL-CODE-INFERRED",
+      "DATA-INFERRED",
+      "PROJECT-FROZEN",
+      "UNKNOWN"
+    ],
+    "tag_rules": {
+      "OFFICIAL-DOCUMENTED": "a primary source states it; the URL is recorded",
+      "OFFICIAL-CODE-INFERRED": "read out of the authors' own released code; the file and line are recorded",
+      "DATA-INFERRED": "measured by this audit from the released data; the measurement is recorded",
+      "PROJECT-FROZEN": "recovered from this project's own frozen artifacts",
+      "UNKNOWN": "not established.  UNKNOWN is a permitted and expected value for units, signs, zero, handedness, calibration and licensing; it is never silently filled in"
+    },
+    "unknown_policy": "a field that cannot be sourced is recorded as UNKNOWN.  An UNKNOWN in a mandatory admission field blocks ADMIT for that dataset; it does not block CONDITIONAL if the audit names the exact evidence needed.",
+    "url_recording": "OFFICIAL_SOURCE_REFERENCES.md must record, for every source: title, URL, publisher/host, access date, what it establishes, and its evidence tag"
+  },
+  "api_requirement": {
+    "basis": "the project's CURRENT frozen cross-dataset representation, recovered from the frozen adapter and schema - never reconstructed from memory",
+    "recovered_from": [
+      "representation/canonical_hand.py",
+      "representation/canonical16_schema.json",
+      "docs/CANONICAL16_CONTRACT.md",
+      "docs/joint_angle_definition.md"
+    ],
+    "canonical16_names": [
+      "thumb_cmc_flexion",
+      "thumb_cmc_ab_adduction",
+      "thumb_mcp_flexion",
+      "thumb_ip_flexion",
+      "index_mcp_flexion",
+      "index_pip_flexion",
+      "index_dip_flexion",
+      "middle_mcp_flexion",
+      "middle_pip_flexion",
+      "middle_dip_flexion",
+      "ring_mcp_flexion",
+      "ring_pip_flexion",
+      "ring_dip_flexion",
+      "pinky_mcp_flexion",
+      "pinky_pip_flexion",
+      "pinky_dip_flexion"
+    ],
+    "unit": "radians on the API side",
+    "drop_decision_rule": "this audit must decide whether the future API is API-16 or a SMALLER rigorously-shared anatomical subset.  PRINCIPAL RULE: physical semantic equivalence > dimensional count.  A 12-D clean physical mapping beats a 16-D uncertain one.  Dimensional count is never itself a reason to prefer a representation",
+    "forbidden": [
+      "declaring that future datasets must have exactly these 16 dimensions",
+      "treating a dataset's angle COUNT as compatibility",
+      "accepting 'index flexion' as a match for MCP or PIP or DIP when the dataset does not distinguish them"
+    ]
+  },
+  "mapping_rules": {
+    "unit_of_mapping": "API DOF x dataset column, decided independently",
+    "confidence": {
+      "HIGH": "the dataset's own documentation or code names the SAME anatomical joint and the SAME anatomical DOF, and the reference posture is documented",
+      "MEDIUM": "the anatomical joint matches but one of {DOF axis, reference posture, handedness} needs a documented adapter, or the dataset's name is anatomical but the value is a sensor-derived approximation of it",
+      "LOW": "only a coarse or ambiguous correspondence exists - e.g. a relative inter-finger spread standing in for a per-finger AA, or a name that does not distinguish which joint",
+      "NONE": "no defensible correspondence"
+    },
+    "hard_rules": [
+      "a coarse name such as 'index flexion' that does not distinguish MCP/PIP/DIP is NONE for each of them - never a one-to-one match",
+      "a derived channel (an angle computed from another channel) is flagged as such and cannot be HIGH confidence for an independent DoF",
+      "no match may be created or upgraded because it would raise the shared-DOF count",
+      "every mapping row records which evidence tag supports it"
+    ],
+    "required_per_row_fields": [
+      "dataset",
+      "api_dof",
+      "dataset_joint_name",
+      "source_index",
+      "anatomical_joint",
+      "anatomical_dof",
+      "unit",
+      "positive_direction",
+      "zero_reference",
+      "range_observed",
+      "handedness",
+      "measurement_origin",
+      "calibration_method",
+      "sampling_rate_hz",
+      "derived_or_measured",
+      "confidence",
+      "evidence"
+    ]
+  },
+  "numerical_compatibility": {
+    "classes": [
+      "DIRECT",
+      "DOCUMENTED_TRANSFORM",
+      "CALIBRATION_REQUIRED",
+      "NOT_COMPATIBLE",
+      "UNKNOWN"
+    ],
+    "allowed_transforms": [
+      "degrees -> radians",
+      "documented sign reversal",
+      "documented axis reorder",
+      "left/right anatomical mirroring",
+      "explicitly documented neutral-zero transform"
+    ],
+    "forbidden": [
+      "fitting an offset because it makes emg2pose distributions line up",
+      "fitting an affine transform using target outcomes",
+      "choosing a sign based on downstream classification",
+      "manually shifting distributions",
+      "using human labels to choose a coordinate transform"
+    ],
+    "definition": {
+      "DIRECT": "same joint, same DOF, same unit, same documented sign, same documented zero - a pure unit conversion if anything",
+      "DOCUMENTED_TRANSFORM": "a transform is needed and is documented by the dataset's own material",
+      "CALIBRATION_REQUIRED": "conversion needs a calibration or adapter that the dataset does not itself supply",
+      "NOT_COMPATIBLE": "no physically justified conversion exists",
+      "UNKNOWN": "not determinable from the available evidence"
+    }
+  },
+  "admission": {
+    "statuses": [
+      "ADMIT",
+      "CONDITIONAL",
+      "REJECT"
+    ],
+    "ADMIT_requires_all": [
+      "1. accessible raw or sufficiently processed data (actually downloadable today, or verifiably delivered)",
+      "2. adequate license for research use",
+      "3. clear anatomical DOF definitions",
+      "4. clear units",
+      "5. clear sign conventions, or a documented transform",
+      "6. clear physical/reference definition",
+      "7. no DB9-like widespread channel-quality failure",
+      "8. sufficient number of common physical DOFs (see MIN_COMMON_DOFS)",
+      "9. useful subject count (see MIN_SUBJECTS)",
+      "10. labels suitable for a pose-observable downstream task",
+      "11. no necessary mapping fitted against emg2pose outcomes"
+    ],
+    "CONDITIONAL": "promising but one or more SOLVABLE issues require explicit work; the audit must name the issue and the exact evidence or action that would promote it to ADMIT",
+    "REJECT_any_of": [
+      "physical angle definitions unavailable",
+      "calibration provenance inadequate",
+      "too few common DOFs",
+      "severe channel-quality defects",
+      "labels fundamentally not inferable from hand state",
+      "data inaccessible",
+      "mapping would require target-driven fitting"
+    ],
+    "MIN_COMMON_DOFS": {
+      "value": 8,
+      "meaning": "at least 8 API DOFs at HIGH or MEDIUM confidence, of which at least 6 must be HIGH",
+      "why_8": "the DB9 branch showed a 5-channel surviving set destroys the internal task (closed-set balanced accuracy 0.978 -> 0.769, correct singleton 0.593 -> 0.330, ambiguity 0.324 -> 0.594). 8 is the smallest count this audit will accept as a task-defining representation and is an a-priori round number, not a fitted one",
+      "counts_for_admit": "HIGH and MEDIUM both count; LOW does not",
+      "sensitivity": "the shared-DOF count is reported at every confidence cut (HIGH only, HIGH+MEDIUM, HIGH+MEDIUM+LOW) so a reader can re-judge, but the DECISION uses HIGH+MEDIUM"
+    },
+    "MIN_SUBJECTS": {
+      "value": 15,
+      "why": "emg2pose's own cross-subject structure requires a held-out-user axis; below 15 subjects a subject-level split is not credible",
+      "counts_for_admit": "usable subjects with pose data, not merely enrolled"
+    },
+    "QUALITY_GATES": {
+      "widespread_channel_failure": "the DB9 failure mode is defined operationally here as: a channel whose documented direction of flexion is violated in the majority of subjects, or a channel that is constant/saturated/aliased.  ANY such channel in a mapped DOF blocks ADMIT for that DOF",
+      "max_fraction_nonfinite_frames": 0.01,
+      "max_fraction_constant_channels": 0.0,
+      "saturation_rule": "a mapped channel with more than 1 % of frames pinned at a plausibility bound is reported; if the pinning is an artefact of the released data (not of a genuine end-range posture) it blocks ADMIT"
+    }
+  },
+  "anchor_checks": {
+    "principle": "where raw data and labels permit, test simple anatomical consistency.  This exists specifically to prevent another DB9-type failure, where the channel names were right and the numbers were not",
+    "tiers": {
+      "STRONG": "the dataset's own documentation names the joint action for the compared conditions and the comparison isolates it",
+      "WEAK": "the conditions imply the action but are multi-joint, or the condition boundary is operator-labelled",
+      "NON-INTERPRETABLE": "no defensible comparison exists in this dataset"
+    },
+    "required_tests": [
+      "extended -> flexed moves flexion DOFs in the documented direction",
+      "open hand occupies the expected side of the flexion range",
+      "fist-like or grasp-like postures increase the relevant flexion DOFs",
+      "homologous fingers behave plausibly",
+      "reference/neutral trials satisfy the documented zero semantics"
+    ],
+    "per_subject": "every anchor statistic is computed per subject where the structure allows; frames are never pseudo-replicated as independent subjects",
+    "not_required": "not every task is expected to give clean isolated anatomy",
+    "failure_meaning": "a mapped DOF whose anchor test fails in the majority of subjects is a quality failure for that DOF and blocks ADMIT for it"
+  },
+  "quality_checks": {
+    "where_repeats_exist": [
+      "within-subject repeatability",
+      "across-trial variation",
+      "agreement of repeated trials of the same labelled condition"
+    ],
+    "always": [
+      "missing channels",
+      "impossible values",
+      "clipping / saturation at plausibility bounds",
+      "constant channels",
+      "discontinuities",
+      "NaNs",
+      "unit inconsistencies",
+      "subject-specific failures",
+      "temporal continuity of continuous sequences"
+    ],
+    "pseudo_replication_guard": "frames are NEVER treated as independent subjects; the unit of any repeatability statement is subject x condition x trial",
+    "cross_dataset_comparison": "quality statistics are reported per dataset and NOT ranked against each other into a single score.  What matters is whether a mapped DOF is trustworthy, not which dataset's spread is smaller"
+  },
+  "label_suitability": {
+    "classes": [
+      "POSE-SUFFICIENT",
+      "POSE-MOSTLY-SUFFICIENT",
+      "TEMPORAL-POSE-REQUIRED",
+      "NOT-POSE-SUFFICIENT",
+      "UNCERTAIN"
+    ],
+    "questions_per_label_family": [
+      "A. are the labels primarily determined by hand kinematics?",
+      "B. can the task reasonably be inferred from pose alone?",
+      "C. does the label require force / object identity / contact / intention / arm pose / temporal context / environment context?"
+    ],
+    "ontology_separation_rule": "grasp type, object identity, activity label and action primitive are NOT collapsed into the generic word 'gesture'.  Any label ontology is described in its own terms and classified with its own name",
+    "hard_rule": "do not choose a dataset whose headline task cannot in principle be decoded from hand pose alone",
+    "static_vs_temporal": {
+      "options": [
+        "single-frame pose",
+        "short pose trajectory",
+        "velocity",
+        "acceleration",
+        "temporal phase"
+      ],
+      "policy": "requiring temporal information is NOT automatically a fail; it is recorded, and a future API of HandState_t = pose + optional short temporal context is a legitimate outcome.  For the FIRST proof-of-concept the audit PREFERS a task evaluable with single-frame or short local kinematics",
+      "preference_not_gate": true
+    }
+  },
+  "independence": {
+    "dimensions": [
+      "research group",
+      "hardware",
+      "calibration method",
+      "hand model",
+      "subject population",
+      "task ontology",
+      "preprocessing code"
+    ],
+    "rule": "a second dataset built by the same group with the same glove and the same calibration is USEFUL but is a WEAKER independent replication.  It must not be counted as fully independent physical-source evidence",
+    "output": "a pairwise overlap report per dimension plus an independence verdict"
+  },
+  "selection": {
+    "priority_order": [
+      "1. physical-coordinate trustworthiness",
+      "2. compatibility with emg2pose",
+      "3. the task is pose-observable",
+      "4. sufficient subjects",
+      "5. external-test feasibility",
+      "6. dataset independence",
+      "7. ease of implementation"
+    ],
+    "not_a_criterion": "which dataset sounds coolest, or contains EMG, or has more subjects, or has more DOFs",
+    "procedure": "apply the ADMISSION statuses first; among ADMIT candidates rank by the priority order; if two candidates are close, state the tradeoff explicitly instead of hiding it.  If no candidate is ADMIT, select the highest-priority CONDITIONAL and name the minimum evidence needed to promote it.  If none is even CONDITIONAL, audit DLR then UNIPI.",
+    "anti_bias_rule": "HUST gets NO priority because earlier discussion liked it; KINE-ADL gets NO priority because its labels sound more interesting; KIN-MUS gets NO priority because it includes EMG.  All three are evaluated under exactly the same criteria, in the same table, with the same evidence tags",
+    "tie_rule": "if two candidates are within one priority level of each other, the physical-coordinate trustworthiness dimension decides; if THAT ties, the one whose mapped DOFs are fewer but HIGH-confidence wins over the one with more but MEDIUM-confidence DOFs"
+  },
+  "access_criteria": {
+    "must_establish": [
+      "exact official download location",
+      "whether registration is required",
+      "whether an academic account is required",
+      "whether access is immediate",
+      "file size",
+      "file format",
+      "license",
+      "research-use restrictions",
+      "redistribution restrictions",
+      "citation requirements",
+      "whether raw files are actually downloadable TODAY"
+    ],
+    "evidence_rule": "a dataset is NOT reported as available merely because a paper says it exists.  Availability requires an actual HTTP response or a documented delivery mechanism - the audit attempts the download and records the status code and byte count",
+    "bounded_download": "do not download hundreds of GB; a representative subset or the metadata is enough where the full corpus is large",
+    "download_log": "logs/fetch_results.json records every attempt verbatim"
+  },
+  "prohibitions": [
+    "train any model (classifier, Gate, AutoML, Gaussian/SIMCA/GMM/OCSVM)",
+    "compare accuracies",
+    "use human-reference outcomes",
+    "run VEMG2Pose inference",
+    "perform cross-dataset domain adaptation",
+    "fit affine transforms to emg2pose",
+    "optimise any mapping based on external performance",
+    "compare Mahalanobis / SIMCA / kNN gate / conformal / selective nets / OpenMax / PROSER / energy methods / prototype OSR",
+    "rescue, retune, repair or rerun DB9",
+    "modify any frozen artifact of the project",
+    "write outside pose_api_dataset_admission/",
+    "invent a mapping to raise the shared-DOF count",
+    "report a dataset as available without an access attempt"
+  ],
+  "interpretation_boundary": {
+    "may_claim": "which dataset is the best current candidate to be the first serious task-source for the Common Pose API, and on what evidence",
+    "may_not_claim": [
+      "'the Common Pose API works'",
+      "'the architecture is validated'",
+      "'this dataset will transfer to emg2pose'",
+      "that a documentation audit substitutes for an empirical one"
+    ],
+    "documentation_vs_empirical": "for every dataset the audit must clearly separate DOCUMENTATION AUDIT COMPLETE from EMPIRICAL DATA QC POSSIBLE / NOT POSSIBLE"
+  },
+  "runtime": {
+    "python": "<EMG2POSE_VENV>\\Scripts\\python.exe",
+    "libraries": "numpy 1.26.4, scipy 1.13.1, scikit-learn 1.5.2, pypdf 6.19.0",
+    "local_training_prohibition": "no deep-learning training is run on this machine; nothing in this branch trains anything at all",
+    "project_root_is_a_git_repo": false,
+    "provenance": "content-hash based throughout; COMMIT PENDING",
+    "network_note": "the host resolver blackholes zenodo.org (0.0.0.0); the audit resolves it via an explicit public resolver and passes --resolve to curl.  This is recorded because a reader reproducing the fetch must know it"
+  },
+  "required_artifacts": [
+    "DATASET_ADMISSION_PLAN.json",
+    "DATASET_ADMISSION_PLAN.sha256",
+    "OFFICIAL_SOURCE_REFERENCES.md",
+    "DATASET_ACCESS_AND_LICENSE.json",
+    "COMMON_POSE_API_REQUIREMENTS.json",
+    "POSE_API_DOF_MAPPING_MATRIX.csv",
+    "POSE_API_DOF_MAPPING_MATRIX.json",
+    "ANGLE_ORIGIN_AND_CALIBRATION_AUDIT.json",
+    "DATASET_TASK_STRUCTURE.json",
+    "EXTERNAL_TEST_FEASIBILITY.json",
+    "DATASET_INDEPENDENCE_MATRIX.json",
+    "HUST_SOURCE_AUDIT.json",
+    "HUST_PHYSICAL_ANCHOR_AUDIT.json",
+    "HUST_QUALITY_AUDIT.json",
+    "KINE_ADL_SOURCE_AUDIT.json",
+    "KINE_ADL_PHYSICAL_ANCHOR_AUDIT.json",
+    "KINE_ADL_QUALITY_AUDIT.json",
+    "KIN_MUS_SOURCE_AUDIT.json",
+    "KIN_MUS_PHYSICAL_ANCHOR_AUDIT.json",
+    "KIN_MUS_QUALITY_AUDIT.json",
+    "COMMON_POSE_API_ADMISSION_CONTRACT_V0.md",
+    "FIRST_POC_DATASET_DECISION.json",
+    "NEXT_POC_EXPERIMENT_PLAN.md",
+    "DATASET_ADMISSION_REPORT.md",
+    "DATASET_ADMISSION_HANDOVER.md",
+    "DATASET_ADMISSION_FULL_LOG.txt",
+    "ARTIFACT_MANIFEST.json"
+  ],
+  "pre_registration_statement": "This plan was written and hashed BEFORE any candidate dataset was compared, before any shared-DOF count was computed, and before any admission status was assigned.  The criteria - evidence tags, confidence categories, the MIN_COMMON_DOFS and MIN_SUBJECTS gates, the quality gates, the anchor tiers, the label-suitability classes and the selection priority order - are frozen as a unit by the SHA-256 of the raw bytes of this document.  No criterion may be changed after seeing which dataset looks favourable.  The sidecar .sha256 file is a convenience copy; the raw-byte hash is the authority.",
+  "frozen_input_pins": {
+    "representation/canonical_hand.py": {
+      "exists": true,
+      "sha256": "d9922ff0927760fb5d319b6fd22eb264602e836cf87a7f09291550218c987130"
+    },
+    "representation/canonical16_schema.json": {
+      "exists": true,
+      "sha256": "33449fca98ee2db2b0023438786801c5711cd3be042fdef181b663e8a77878e1"
+    },
+    "representation/db9_to_canonical16.py": {
+      "exists": true,
+      "sha256": "8ec97d0b0b4a61f8e8d958f93c2984fccd3144b2b8ca15adf4ff59e6160ce3cf"
+    },
+    "docs/CANONICAL16_CONTRACT.md": {
+      "exists": true,
+      "sha256": "14f6d46dea611a669c776f917bf6f1929c13ecf2c3026c8da403e4853197e6bf"
+    },
+    "docs/joint_angle_definition.md": {
+      "exists": true,
+      "sha256": "87e9f9222fce1a8d44ec8495bf50d47676cb5920a1bed6cf547089815a03befe"
+    },
+    "docs/joint_reference_table.json": {
+      "exists": true,
+      "sha256": "b9c945155f1aaa30d1483e9916a329f22b100aaecf29c913ad72f82830a8c214"
+    },
+    "docs/EMG2POSE_DATASET_REFERENCE.md": {
+      "exists": true,
+      "sha256": "042b84a6c35dbc7cef35b78e77e237931a2af47377e9fad3c503473f51c39072"
+    },
+    "docs/DATASET_ACCESS_DECISION.md": {
+      "exists": true,
+      "sha256": "f70f23b77315768b25df470b8fe65eea2f0987ca13b19122351c0428ca1bf1a2"
+    },
+    "baseline/emg2pose/emg2pose/constants.py": {
+      "exists": true,
+      "sha256": "8ae5d6941be9fd4c2600f79d4a81f618af003ffe565c672f018626b1132a8d85"
+    },
+    "baseline/emg2pose/emg2pose/UmeTrack/dataset/generic_hand_model.json": {
+      "exists": true,
+      "sha256": "96649ddf7d036be3357dadd7c13db325a18638c6713583fbbbdd71446ce07564"
+    },
+    "db9_channel_validity/DB9_CHANNEL_VALIDITY_HANDOVER.md": {
+      "exists": true,
+      "sha256": "991aa3427e00c8037de4cf215ec76f99ec67705f6d4704fd63ff95f16340bbc5"
+    },
+    "db9_channel_validity/DB9_GLOBAL_CHANNEL_ELIGIBILITY.json": {
+      "exists": true,
+      "sha256": "e2accc4676b152673a4905f888191f19978fa33f283cf11a0777498279241e0f"
+    }
+  },
+  "downloaded_evidence": {
+    "kin_mus_zenodo": {
+      "name": "kin_mus_zenodo",
+      "url": "https://zenodo.org/api/records/3469380/files/KIN_MUS_UJI.mat/content",
+      "dest": "kin_mus/KIN_MUS_UJI.mat",
+      "path": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\kin_mus\\KIN_MUS_UJI.mat",
+      "attempted_utc": "2026-09-21T03:09:32Z",
+      "http_code": "000",
+      "bytes": 0,
+      "content_type": "",
+      "curl_exit": 6,
+      "stderr": "curl: (6) Could not resolve host: zenodo.org\ncurl: (6) Could not resolve host: zenodo.org\ncurl: (6) Could not resolve host: zenodo.org",
+      "status": "FAILED",
+      "what": "KIN-MUS UJI (Zenodo 10.5281/zenodo.3469380): kinematic + EMG + video"
+    },
+    "be_uji_code": {
+      "name": "be_uji_code",
+      "url": "https://zenodo.org/api/records/8418096/files/AngleCalculation.zip/content",
+      "dest": "uji_code/AngleCalculation.zip",
+      "path": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\uji_code\\AngleCalculation.zip",
+      "attempted_utc": "2026-09-21T03:09:36Z",
+      "http_code": "000",
+      "bytes": 0,
+      "content_type": "",
+      "curl_exit": 6,
+      "stderr": "curl: (6) Could not resolve host: zenodo.org\ncurl: (6) Could not resolve host: zenodo.org\ncurl: (6) Could not resolve host: zenodo.org",
+      "status": "FAILED",
+      "what": "BE-UJI hand joint angle calculation code (Zenodo 10.5281/zenodo.8418096)"
+    },
+    "kineadl_guide": {
+      "name": "kineadl_guide",
+      "url": "https://zenodo.org/api/records/8418416/files/MOVMUS-UJI%20DATASET%20GUIDE%20v2_1.pdf/content",
+      "dest": "docs/MOVMUS_UJI_DATASET_GUIDE_v2_1.pdf",
+      "path": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\docs\\MOVMUS_UJI_DATASET_GUIDE_v2_1.pdf",
+      "attempted_utc": "2026-09-21T03:09:39Z",
+      "http_code": "000",
+      "bytes": 0,
+      "content_type": "",
+      "curl_exit": 6,
+      "stderr": "curl: (6) Could not resolve host: zenodo.org\ncurl: (6) Could not resolve host: zenodo.org\ncurl: (6) Could not resolve host: zenodo.org",
+      "status": "FAILED",
+      "what": "MOVMUS-UJI dataset guide (describes the UJI kinematic/EMG family)"
+    },
+    "hust_zip_handcorpus": {
+      "name": "hust_zip_handcorpus",
+      "url": "http://www.handcorpus.org/datasets/HUSTdataset.zip",
+      "dest": "hust/HUSTdataset.zip",
+      "path": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\hust\\HUSTdataset.zip",
+      "attempted_utc": "2026-09-21T03:09:42Z",
+      "http_code": "301",
+      "bytes": 0,
+      "content_type": "text/html",
+      "curl_exit": 35,
+      "stderr": "curl: (35) schannel: next InitializeSecurityContext failed: SEC_E_INTERNAL_ERROR (0x80090304) - ???????????",
+      "status": "FAILED",
+      "what": "HUST dataset from handcorpus.org (primary distribution page)"
+    },
+    "hust_dryad": {
+      "name": "hust_dryad",
+      "url": "https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.gg8g5/download",
+      "dest": "hust/HUST_dryad.zip",
+      "path": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\hust\\HUST_dryad.zip",
+      "attempted_utc": "2026-09-21T03:09:53Z",
+      "http_code": "401",
+      "bytes": 56,
+      "content_type": "application/json; charset=utf-8",
+      "curl_exit": 0,
+      "stderr": "",
+      "status": "FAILED",
+      "failure_body_head": "{\"error\":\"Unauthorized, must have current bearer token\"}",
+      "what": "HUST data from Dryad (10.5061/dryad.gg8g5), the paper's own data-availability link"
+    }
+  },
+  "api_requirement_verified_at_freeze_time": {
+    "canonical16_names": [
+      "thumb_cmc_flexion",
+      "thumb_cmc_ab_adduction",
+      "thumb_mcp_flexion",
+      "thumb_ip_flexion",
+      "index_mcp_flexion",
+      "index_pip_flexion",
+      "index_dip_flexion",
+      "middle_mcp_flexion",
+      "middle_pip_flexion",
+      "middle_dip_flexion",
+      "ring_mcp_flexion",
+      "ring_pip_flexion",
+      "ring_dip_flexion",
+      "pinky_mcp_flexion",
+      "pinky_pip_flexion",
+      "pinky_dip_flexion"
+    ],
+    "source_joint_names": [
+      "THUMB_CMC_FE",
+      "THUMB_CMC_AA",
+      "THUMB_MCP_FE",
+      "THUMB_IP_FE",
+      "INDEX_MCP_FE",
+      "INDEX_PIP_FE",
+      "INDEX_DIP_FE",
+      "MIDDLE_MCP_FE",
+      "MIDDLE_PIP_FE",
+      "MIDDLE_DIP_FE",
+      "RING_MCP_FE",
+      "RING_PIP_FE",
+      "RING_DIP_FE",
+      "PINKY_MCP_FE",
+      "PINKY_PIP_FE",
+      "PINKY_DIP_FE"
+    ],
+    "source_indices": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19
+    ],
+    "dropped_indices": [
+      4,
+      8,
+      12,
+      16
+    ],
+    "adapter_sha256": "d9922ff0927760fb5d319b6fd22eb264602e836cf87a7f09291550218c987130",
+    "schema_sha256": "33449fca98ee2db2b0023438786801c5711cd3be042fdef181b663e8a77878e1",
+    "official_20_joint_names": [
+      "THUMB_CMC_FE",
+      "THUMB_CMC_AA",
+      "THUMB_MCP_FE",
+      "THUMB_IP_FE",
+      "INDEX_MCP_AA",
+      "INDEX_MCP_FE",
+      "INDEX_PIP_FE",
+      "INDEX_DIP_FE",
+      "MIDDLE_MCP_AA",
+      "MIDDLE_MCP_FE",
+      "MIDDLE_PIP_FE",
+      "MIDDLE_DIP_FE",
+      "RING_MCP_AA",
+      "RING_MCP_FE",
+      "RING_PIP_FE",
+      "RING_DIP_FE",
+      "PINKY_MCP_AA",
+      "PINKY_MCP_FE",
+      "PINKY_PIP_FE",
+      "PINKY_DIP_FE"
+    ],
+    "units": "radians",
+    "lossy": "canonical16 drops INDEX_MCP_AA, MIDDLE_MCP_AA, RING_MCP_AA, PINKY_MCP_AA; it is not a complete hand pose"
+  }
+}

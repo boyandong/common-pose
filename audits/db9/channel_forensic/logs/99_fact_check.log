@@ -1,0 +1,162 @@
+==============================================================================
+99 FACT CHECK
+==============================================================================
+
+[1] frozen plan
+  ok   FORENSIC_PLAN.md raw-byte sha256 equals PLAN_SHA256.txt
+  ok   SEGMENTATION_VALIDATION.json carries the frozen plan hash
+  ok   FORENSIC_CORE.json carries the frozen plan hash
+  ok   VERDICTS.json carries the frozen plan hash
+  ok   DECISION.json carries the frozen plan hash
+
+[2] segmentation gate
+  ok   segmentation gate passed
+  ok   99 released .mat files
+  ok   restimulus aligns with glove in all 99 files
+  ok   rerepetition aligns with glove in all 99 files
+  ok   stimulus is misaligned in 24 of 99 files
+  ok   repetition is misaligned in 24 of 99 files
+  ok   no segmentation anomalies
+  ok   the reference posture is empirically movement 11
+  ok   the reference identification is confirmed against the paper
+
+[3] transform recovery, re-derived from the raw data
+  ok   DIP2 recovered as an exact affine form
+  ok   DIP2 is an exact affine function of glove column 6
+  ok   DIP2 slope == 1.08
+  ok   DIP3 recovered as an exact affine form
+  ok   DIP3 is an exact affine function of glove column 10
+  ok   DIP3 slope == 1.82
+  ok   DIP4 recovered as an exact affine form
+  ok   DIP4 is an exact affine function of glove column 14
+  ok   DIP4 slope == 2.0
+  ok   DIP5 recovered as an exact affine form
+  ok   DIP5 is an exact affine function of glove column 18
+  ok   DIP5 slope == 1.26
+  ok   MCP2_f recovered as an exact affine form
+  ok   MCP2_f is an exact affine function of glove column 4
+  ok   PIP2 recovered as an exact affine form
+  ok   PIP2 is an exact affine function of glove column 5
+  ok   CMC5 recovered as an exact affine form
+  ok   CMC5 is an exact affine function of glove column 20
+  ok   CMC5 slope == 0.28511122
+  ok   WRIST_F recovered as an exact quadratic
+  ok   MCP2_a has no transform: the column is all NaN
+  ok   CMC5 and WRIST_F are fed by the SAME raw glove column
+
+[4] independent re-derivation of the DIP sign inversion
+  ok   37 subjects carry Exercise B
+  ok   DIP3: 35 of 37 subjects show a NEGATIVE fist response
+  ok   DIP4: 28 of 37 subjects show a NEGATIVE fist response
+  ok   DIP5: 32 of 37 subjects show a NEGATIVE fist response
+  ok   MCP2_f: 0 of 37 subjects show a NEGATIVE fist response
+  ok   PIP2: 1 of 37 subjects show a NEGATIVE fist response
+
+[5] CMC5 / WRIST_F collision, re-derived
+  ok   CMC5 and WRIST_F share raw column 20: identical anchor deltas on every anchor
+  ok   subject 1's CMC5 raw delta equals the VERDICTS value (shared column)
+
+[6] subject identity
+  ok   10 in-file `subject` collisions among the 37 Exercise B files
+
+[7] verdicts and trusted subset
+  ok   DIP3 verdict
+  ok   DIP3 dropped
+  ok   DIP5 verdict
+  ok   DIP5 dropped
+  ok   DIP4 inconclusive
+  ok   CMC5 dropped
+  ok   MCP2_a dropped (official exclusion)
+  ok   MCP2_a case
+  ok   the eight KEEP channels
+  ok   six DROP channels
+  ok   eight INCONCLUSIVE channels
+  ok   TRUSTED_DB9_POSE_v1 has 8 channels
+  ok   the trusted subset declares it was frozen before any classifier
+  ok   the trusted subset equals the KEEP list
+  ok   TRUSTED_SUBSET_SHA256.txt matches the frozen file
+  ok   DIP4 released-vs-published conflict recorded
+  ok   material conflicts are the four >2 % ones
+
+[8] movement probe
+  ok   the fist is movement 6 by the largest flexion response
+  ok   movement 17 produces no hand-shape change in the data
+
+[9] hand size and sensor 11
+  ok   no hand length or width is published
+  ok   hand-size hypothesis declared not testable
+  ok   Sensor 11 released status recorded
+  ok   the canonical16 mapping names all sixteen DB9 channels
+  ok   the mapping carries 16 canonical16 correspondence rows
+  ok   no canonical16 correspondence row selects DB9 column 5 (the officially dead MCP2_a)
+
+[7] verdicts and trusted subset
+  ok   DIP3 verdict
+  ok   DIP3 dropped
+  ok   DIP5 verdict
+  ok   DIP5 dropped
+  ok   DIP4 inconclusive
+  ok   CMC5 dropped
+  ok   MCP2_a dropped (official exclusion)
+  ok   MCP2_a case
+  ok   the eight KEEP channels
+  ok   six DROP channels
+  ok   eight INCONCLUSIVE channels
+  ok   TRUSTED_DB9_POSE_v1 has 8 channels
+  ok   the trusted subset declares it was frozen before any classifier
+  ok   the trusted subset equals the KEEP list
+  ok   TRUSTED_SUBSET_SHA256.txt matches the frozen file
+  ok   DIP4 released-vs-published conflict recorded
+  ok   material conflicts are the four >2 % ones
+
+[8] movement probe
+  ok   the fist is movement 6 by the largest flexion response
+  ok   movement 17 produces no hand-shape change in the data
+
+[9] hand size and sensor 11
+  ok   no hand length or width is published
+  ok   hand-size hypothesis declared not testable
+  ok   Sensor 11 released status recorded
+  ok   the canonical16 mapping names all sixteen DB9 channels
+
+[7] verdicts and trusted subset
+  ok   DIP3 verdict
+  ok   DIP3 dropped
+  ok   DIP5 verdict
+  ok   DIP5 dropped
+  ok   DIP4 inconclusive
+  ok   CMC5 dropped
+  ok   MCP2_a dropped (official exclusion)
+  ok   MCP2_a case
+  ok   the eight KEEP channels
+  ok   six DROP channels
+  ok   eight INCONCLUSIVE channels
+  ok   TRUSTED_DB9_POSE_v1 has 8 channels
+  ok   the trusted subset declares it was frozen before any classifier
+  ok   the trusted subset equals the KEEP list
+  ok   TRUSTED_SUBSET_SHA256.txt matches the frozen file
+  ok   DIP4 released-vs-published conflict recorded
+  ok   material conflicts are the four >2 % ones
+
+[8] movement probe
+  ok   the fist is movement 6 by the largest flexion response
+  ok   movement 17 produces no hand-shape change in the data
+
+[9] hand size and sensor 11
+  ok   no hand length or width is published
+  ok   hand-size hypothesis declared not testable
+  ok   Sensor 11 released status recorded
+
+[10] utility test
+  ok   the utility test ran against the frozen trusted subset
+  ok   trusted-subset BA is above chance
+  ok   both arms ran on the same subject set
+
+[11] no classifier before the freeze, no writes outside the lane
+  ok   no deep-learning symbol in any pre-freeze driver
+  ok   the verdict driver imports no classifier library
+
+==============================================================================
+FACT CHECK: 120 assertions, 0 failed
+==============================================================================
+log: <PROJECT_ROOT>\db9_channel_forensic_v2\logs\99_fact_check.log

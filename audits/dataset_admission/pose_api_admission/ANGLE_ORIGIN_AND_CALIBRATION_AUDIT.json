@@ -1,0 +1,202 @@
+{
+  "artifact": "ANGLE_ORIGIN_AND_CALIBRATION_AUDIT.json",
+  "branch_id": "S6-POSE-API-DATASET-ADMISSION",
+  "plan_sha256": "4d2c8b162e2332a5891a5d89a53166e365b1bbd92c205222492d19957c9683ec",
+  "why_this_artifact_decides": "DB9 failed because channel NAMES were right and the numbers were not. This artifact asks, for every mapped DOF, WHERE THE NUMBER PHYSICALLY COMES FROM",
+  "origin_categories": [
+    "MOTION-CAPTURE DERIVED",
+    "GEOMETRICALLY DERIVED",
+    "KINEMATIC-MODEL DERIVED",
+    "INSTRUMENTED GLOVE DIRECT",
+    "GLOVE + CALIBRATION TRANSFORM",
+    "VISION/MANO DERIVED",
+    "UNKNOWN"
+  ],
+  "datasets": {
+    "HUST": {
+      "category": {
+        "value": "INSTRUMENTED GLOVE DIRECT or GLOVE + CALIBRATION TRANSFORM",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "handcorpus HUST page names a CyberGlove; no calibration procedure is obtainable"
+      },
+      "equipment": {
+        "value": "CyberGlove (Cyberglove Systems)",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "calibration_documented": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "the associated paper is RETRACTED and its methods cannot carry a calibration claim; no data was obtainable to measure the pipeline"
+      },
+      "per_subject_calibration": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "universal_coefficients": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "hand_size_dependence_discussed": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "cross_talk_discussed": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "dip_directly_measured_or_inferred": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN",
+        "note": "the page gives only a DOF count (16), not a channel list, so even whether DIP channels exist is unknown"
+      },
+      "calibration_quality_metrics": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "verdict": "ANGLE ORIGIN INDETERMINATE.  This is the DB9 situation with the additional defect that the associated publication was RETRACTED and the raw data cannot be obtained, so the indeterminacy cannot be reduced"
+    },
+    "KINE_ADL": {
+      "category": {
+        "value": "GLOVE + CALIBRATION TRANSFORM",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Mendeley record: CyberGlove instrumented gloves, both hands, 18 DoF each, 'calibrated recordings'; the calibration pipeline is the BE-UJI code, which this audit downloaded and read"
+      },
+      "equipment": {
+        "value": "CyberGlove instrumented gloves, both hands, 18 DoF per hand",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Mendeley DOI 10.17632/8mf4y2srgh.4 description"
+      },
+      "calibration_documented": {
+        "value": "YES - a full published protocol plus released code",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Gracia-Ibanez et al. 2017; BE-UJI AngleCalculation.zip"
+      },
+      "per_subject_calibration": {
+        "value": "NO - gains are per GLOVE UNIT, applied across subjects.  The protocol is literally called 'across-subject calibration'",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo 3357966 description"
+      },
+      "universal_coefficients": {
+        "value": "the released gains_identification.m hard-codes the UJI group's own glove gains, with per-model (CyberGlove 18 vs 22) and per-hand (R/L) sets, and states in a comment 'Gains values should be completed with own glove gains'",
+        "evidence": "OFFICIAL-CODE-INFERRED",
+        "source": "gains_identification.m lines 7, 23-29, 66-72, 83-89"
+      },
+      "hand_size_dependence_discussed": {
+        "value": "YES, and unusually explicitly: the guide attributes a removed-outlier cluster to 'a poor fit of these gauges for a specific subject ... who had a small hand length'",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 3.4"
+      },
+      "cross_talk_discussed": {
+        "value": "YES - documented and MODELLED, not merely acknowledged: the protocol 'includes the determination of gains and also some corrections because of cross-coupling effects for specific anatomical angles', and the code implements explicit cross-coupling terms",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "MOVMUS guide section 2.1; obtain_angles_RL_abd_rel.m lines 120-121 (CMC1_F/CMC1_A 2x2 mix), 128-129 / 136-137 / 143-144 (MCP2_a / MCP4_a / MCP5_a quadratics in the neighbouring MCP flexion), 177-178 (wrist quadratic + cross term)"
+      },
+      "dip_directly_measured_or_inferred": {
+        "value": "INFERRED, and the group published a dedicated paper on the problem: for the 18-sensor glove the code computes DIP2..DIP5 from PIP2..PIP5 as a clipped affine map (0.87*PIP-25.27 and analogues, zero below a threshold).  A separate UJI dataset is titled 'Problems Using Data Gloves with Strain Gauges to Measure Distal Interphalangeal Joints' Kinematics'",
+        "evidence": "OFFICIAL-CODE-INFERRED",
+        "source": "obtain_angles_RL_abd_rel.m lines 147-176; Zenodo 6548190"
+      },
+      "calibration_quality_metrics": {
+        "value": "PARTIAL - the cited calibration paper provides them and the guide reports an outlier-removal procedure, but the per-recording residuals were not obtainable within the bounded-download rule",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "measured_channel_class_behaviour": {
+        "value": {
+          "note": "from the released KIN-MUS block, which shares the pipeline",
+          "single_gain_linear_channels": [
+            "MCP1_F",
+            "IP1_F",
+            "MCP2_F",
+            "MCP3_F",
+            "MCP4_F",
+            "MCP5_F",
+            "PIP2_F",
+            "PIP3_F",
+            "PIP4_F",
+            "PIP5_F"
+          ],
+          "multi_term_cross_coupled_channels": [
+            "CMC1_F",
+            "CMC1_A",
+            "MCP2-3_A",
+            "MCP3-4_A",
+            "MCP4-5_A",
+            "WR_F",
+            "WR_A"
+          ],
+          "constant_surrogate_risk": "PalmArch is a single-gain channel (dataR(:,22))"
+        },
+        "evidence": "OFFICIAL-CODE-INFERRED"
+      },
+      "verdict": "PROVENANCE IS DOCUMENTED AND AUDITABLE, with two concrete limitations: (i) calibration is per GLOVE UNIT and applied across subjects, which the group itself links to a small-hand outlier cluster; (ii) DIP is a clipped affine function of PIP, so DIP carries no independent information"
+    },
+    "KIN_MUS": {
+      "category": {
+        "value": "GLOVE + CALIBRATION TRANSFORM (identical pipeline to KINE_ADL)",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Scientific Data 2019 abstract: 'Eighteen hand anatomical angles were obtained from the glove sensors by a validated calibration procedure'"
+      },
+      "equipment": {
+        "value": "CyberGlove instrumented glove + surface EMG; 18 angles; 7 forearm sEMG areas",
+        "evidence": "OFFICIAL-DOCUMENTED",
+        "source": "Zenodo 3469380 description"
+      },
+      "shares_pipeline_with_KINE_ADL": {
+        "value": "YES - same research group (Biomechanics and Ergonomics, Universitat Jaume I), same glove family, same BE-UJI angle calculation code, same published calibration protocol",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "calibration_documented": {
+        "value": "YES, same as KINE_ADL",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "per_subject_calibration": {
+        "value": "NO - per glove unit",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "cross_talk_discussed": {
+        "value": "YES, modelled",
+        "evidence": "OFFICIAL-DOCUMENTED"
+      },
+      "dip_directly_measured_or_inferred": {
+        "value": "INFERRED, and the KIN-MUS released angles do not include DIP at all",
+        "evidence": "OFFICIAL-CODE-INFERRED"
+      },
+      "measured_channel_class_behaviour": {
+        "value": "as KINE_ADL - same code, same channel classes",
+        "evidence": "OFFICIAL-CODE-INFERRED"
+      },
+      "verdict": "PROVENANCE IS DOCUMENTED AND AUDITABLE.  Identical to KINE-ADL, which is exactly why the two are NOT independent sources of physical evidence"
+    }
+  },
+  "cross_dataset_origin_comparison": {
+    "motion_capture_derived": [],
+    "geometrically_derived": [],
+    "kinematic_model_derived": [],
+    "glove_plus_calibration": [
+      "KINE_ADL",
+      "KIN_MUS",
+      "HUST (by equipment class, procedure UNKNOWN)"
+    ],
+    "none_of_the_audited_candidates_uses_motion_capture": "all three audited candidates are strain-gauge glove datasets.  emg2pose, by contrast, is an inverse-kinematics fit of a generic hand model to motion capture.  THAT is the fundamental metrological difference this audit is measuring, and it is the same difference that broke DB9",
+    "what_makes_the_UJI_family_better_than_DB9": [
+      "the calibration protocol is published and the code is released, so the transform is auditable rather than proprietary",
+      "cross-coupling is explicitly modelled for named channels",
+      "the reference posture is documented with a figure",
+      "the sign criteria for every channel are published",
+      "the outlier-removal procedure and its counts are disclosed",
+      "a malfunctioning channel was detected and DISCLOSED"
+    ],
+    "what_remains_weak_in_the_UJI_family": [
+      "the gain transform is linear/quadratic in the raw gauge value and calibrated on ONE glove unit, not per subject",
+      "DIP is a clipped affine function of PIP and carries no independent information",
+      "the thumb IP channel reuses a PIP gain constant",
+      "a small-hand subject was identified as an outlier source, the same failure axis DB9 documented",
+      "whether the released KIN-MUS block is the right or the left hand is not labelled"
+    ]
+  },
+  "db9_contrast": {
+    "db9_outcome": "DB9-DROP; 11 of 16 channels failed a DB9-only directional/repeatability screen",
+    "relevance": "DB9 is cited here ONLY as the reason the admission criteria and this artifact exist.  No DB9 measurement is used as evidence about the three candidates",
+    "evidence": "PROJECT-FROZEN"
+  }
+}

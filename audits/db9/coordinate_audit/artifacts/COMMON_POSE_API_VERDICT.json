@@ -1,0 +1,72 @@
+{
+  "artifact": "COMMON_POSE_API_VERDICT.json",
+  "A_is_canonical16_valid_as_a_cross_dataset_physical_api": "PARTIALLY, and not as a drop-in one.  The DOF identities, units, positive directions, zero definitions and angle conventions all check out, and the reference posture is numerically attained in DB9.  But the two numbers are produced by different metrological processes, and that shows up as per-dimension numerical disagreement of 2-40 deg in the medians and up to 450 deg in the ranges.",
+  "B_dimensions_already_trustworthy": [
+    "thumb_ip_flexion",
+    "index_pip_flexion",
+    "ring_mcp_flexion",
+    "pinky_pip_flexion"
+  ],
+  "C_dimensions_requiring_an_explicit_convention_transform": [
+    "thumb_cmc_ab_adduction"
+  ],
+  "D_dimensions_semantically_matched_but_numerically_dataset_specific": [
+    "middle_pip_flexion",
+    "middle_dip_flexion",
+    "ring_dip_flexion",
+    "pinky_dip_flexion",
+    "thumb_cmc_flexion",
+    "thumb_mcp_flexion",
+    "index_mcp_flexion",
+    "index_dip_flexion",
+    "middle_mcp_flexion",
+    "ring_pip_flexion",
+    "pinky_mcp_flexion"
+  ],
+  "E_would_a_common_pose_api_need": {
+    "explicit_neutral_pose_normalisation": "YES, but it is NOT the main fix: both datasets already place zero at the extended hand, and the DB9 reference posture is attained to 0.854 deg mean |angle|.  A neutral-pose normalisation would remove little.",
+    "per_dataset_calibration_metadata": "YES, and this is the load-bearing requirement.  The DB9 numbers come from a per-channel linear sensor calibration whose gains came from 10 subjects and were applied to 77; the official DB9 page itself warns that DIP sensors give partial results on small hands. A shared API must carry the per-channel calibration provenance, not just the anatomical name.",
+    "per_subject_calibration": "POSSIBLY.  The three DB9 source databases disagree by up to 52 deg in per-dimension medians, and 11 of 16 dimensions have a subject-level CI for the DB2-minus-DB1 gap that excludes zero.  Repeatability of the reference posture within the frozen repeated-measures design has NOT been estimated by this audit, so the split between 'subject' and 'measurement noise' is unresolved.",
+    "standardised_anatomical_zero_definitions": "YES.  Both datasets already describe their zero as the extended, fingers-together hand, but only DB9 documents the exact movement it was taken from; emg2pose's zero is a model-construction artefact.  A shared API needs the zero defined by an explicit physical configuration, not by a model's parameter origin.",
+    "reduced_shared_dof_subset": "YES, on the DB9 side specifically: the MIDDLE and RING DIP channels do not measure their joint, so a shared API should not advertise them.  But the failure is a DB9 CALIBRATION defect, not a mismatch between two good measurements, so dropping the DOF concedes a data defect rather than resolving a convention question."
+  },
+  "F_does_this_weaken_or_strengthen_the_pose_as_interface_hypothesis": {
+    "verdict": "NEITHER, in the sense the brief warns about.  It RELOCATES the problem.  The previous branch read a 179.7 deg grand-mean offset as a possible coordinate mismatch between two datasets that describe the same hand.  This audit finds that the offset is dominated by DB9's own broken DIP calibration, and that the genuinely cross-dataset part of the disagreement is much smaller and has a different shape.",
+    "what_it_does_not_say": "it does NOT show that the pose-interface idea fails.  It shows that DB9's DIP channels are not a usable numerical measurement, which is a property of ONE dataset's sensor calibration.",
+    "what_it_does_say": "an explicit physical pose API is only as good as the weakest channel's calibration provenance.  canonical16 as currently consumed silently mixes a well-calibrated subset (thumb, index, all MCP and PIP channels) with a subset that is not measuring what it claims (middle and ring DIP).  That is a fixable, and previously unfixed, interface defect - and it means every cross-dataset result the project has produced with canonical16 has been carrying it."
+  },
+  "evidence_anchors": {
+    "wrist_and_extended_prototypes_found_in_emg2pose_deg": {
+      "9": 21.08386551244472,
+      "11": 7.7772110712982245,
+      "12": 11.271090596556762,
+      "14": 14.561836976179652,
+      "16": 24.2927138679327,
+      "17": 12.220304171033531
+    },
+    "hand_configuration_prototypes_found_in_emg2pose_deg": {
+      "1": 104.32338280191216,
+      "2": 169.55433167562967,
+      "3": 193.9192394418852,
+      "4": 105.59669852635882,
+      "6": 122.87879418032368,
+      "7": 127.18903642566002
+    },
+    "reading": "the extended and wrist movements DO exist in the natural emg2pose stream (7.8-34 deg best match), which means the two datasets share those poses; the FLEXED hand configurations do NOT (100-200 deg), which is what DB9's broken DIP channels predict.",
+    "structural_agreement_spearman_rho": 0.05894105894105894,
+    "joint_identity_diagonal_winners": 4,
+    "session_spread_vs_cross_dataset_gap_ratio": 3.739045730618668,
+    "matched_semantic_ratios": {
+      "CLASS_1": 2.0374162547595747,
+      "CLASS_6": 1.4943343551827053
+    },
+    "db9_dip_channels_moving_towards_flexion": {
+      "index": true,
+      "middle": false,
+      "ring": false,
+      "pinky": false
+    }
+  },
+  "scope": "DIAGNOSIS ONLY.  No deployed transform is emitted.  Any repair requires a NEW branch with a source-justified transform frozen before any external scoring.",
+  "plan_sha256": "c59fe01370d48aedeed56ef7a4103506d14a298edb794723be3720531edd62c6"
+}

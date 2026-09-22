@@ -1,0 +1,436 @@
+{
+  "artifact": "COMMON_POSE_API_REQUIREMENTS.json",
+  "branch_id": "S6-POSE-API-DATASET-ADMISSION",
+  "plan_sha256": "4d2c8b162e2332a5891a5d89a53166e365b1bbd92c205222492d19957c9683ec",
+  "purpose": "recover the CURRENT intended common physical representation from frozen project artifacts so no name is reconstructed from memory",
+  "recovered_from": [
+    "representation/canonical_hand.py",
+    "representation/canonical16_schema.json",
+    "docs/CANONICAL16_CONTRACT.md",
+    "docs/joint_angle_definition.md"
+  ],
+  "source_hashes": {
+    "representation/canonical_hand.py": "d9922ff0927760fb5d319b6fd22eb264602e836cf87a7f09291550218c987130",
+    "representation/canonical16_schema.json": "33449fca98ee2db2b0023438786801c5711cd3be042fdef181b663e8a77878e1",
+    "docs/CANONICAL16_CONTRACT.md": "14f6d46dea611a669c776f917bf6f1929c13ecf2c3026c8da403e4853197e6bf"
+  },
+  "historical_candidate_representation": {
+    "name": "canonical16",
+    "n_dof": 16,
+    "block_structure": "thumb (4: CMC-FE, CMC-AA, MCP-FE, IP-FE), then index / middle / ring / pinky at 3 each, each block ordered proximal -> distal MCP, PIP, DIP",
+    "order": [
+      "thumb_cmc_flexion",
+      "thumb_cmc_ab_adduction",
+      "thumb_mcp_flexion",
+      "thumb_ip_flexion",
+      "index_mcp_flexion",
+      "index_pip_flexion",
+      "index_dip_flexion",
+      "middle_mcp_flexion",
+      "middle_pip_flexion",
+      "middle_dip_flexion",
+      "ring_mcp_flexion",
+      "ring_pip_flexion",
+      "ring_dip_flexion",
+      "pinky_mcp_flexion",
+      "pinky_pip_flexion",
+      "pinky_dip_flexion"
+    ],
+    "per_dof": [
+      {
+        "api_index": 0,
+        "api_name": "thumb_cmc_flexion",
+        "emg2pose_joint": "THUMB_CMC_FE",
+        "emg2pose_source_index": 0,
+        "unit": "radians",
+        "anatomical_dof": "flexion/extension",
+        "sign_rule": {
+          "value": "positive = flexion",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/CANONICAL16_CONTRACT.md section 3"
+        },
+        "zero_definition": {
+          "value": "emg2pose rest pose: the official 20-D zero vector, whose FK pose is the extended hand",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/joint_angle_definition.md"
+        },
+        "evidence": "PROJECT-FROZEN"
+      },
+      {
+        "api_index": 1,
+        "api_name": "thumb_cmc_ab_adduction",
+        "emg2pose_joint": "THUMB_CMC_AA",
+        "emg2pose_source_index": 1,
+        "unit": "radians",
+        "anatomical_dof": "abduction/adduction",
+        "sign_rule": {
+          "value": "NO globally meaningful sign rule; emg2pose per-finger AA polarity, thumb opposite to the four non-thumb MCP AA",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/CANONICAL16_CONTRACT.md section 3"
+        },
+        "zero_definition": {
+          "value": "emg2pose rest pose: the official 20-D zero vector, whose FK pose is the extended hand",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/joint_angle_definition.md"
+        },
+        "evidence": "PROJECT-FROZEN"
+      },
+      {
+        "api_index": 2,
+        "api_name": "thumb_mcp_flexion",
+        "emg2pose_joint": "THUMB_MCP_FE",
+        "emg2pose_source_index": 2,
+        "unit": "radians",
+        "anatomical_dof": "flexion/extension",
+        "sign_rule": {
+          "value": "positive = flexion",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/CANONICAL16_CONTRACT.md section 3"
+        },
+        "zero_definition": {
+          "value": "emg2pose rest pose: the official 20-D zero vector, whose FK pose is the extended hand",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/joint_angle_definition.md"
+        },
+        "evidence": "PROJECT-FROZEN"
+      },
+      {
+        "api_index": 3,
+        "api_name": "thumb_ip_flexion",
+        "emg2pose_joint": "THUMB_IP_FE",
+        "emg2pose_source_index": 3,
+        "unit": "radians",
+        "anatomical_dof": "flexion/extension",
+        "sign_rule": {
+          "value": "positive = flexion",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/CANONICAL16_CONTRACT.md section 3"
+        },
+        "zero_definition": {
+          "value": "emg2pose rest pose: the official 20-D zero vector, whose FK pose is the extended hand",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/joint_angle_definition.md"
+        },
+        "evidence": "PROJECT-FROZEN"
+      },
+      {
+        "api_index": 4,
+        "api_name": "index_mcp_flexion",
+        "emg2pose_joint": "INDEX_MCP_FE",
+        "emg2pose_source_index": 5,
+        "unit": "radians",
+        "anatomical_dof": "flexion/extension",
+        "sign_rule": {
+          "value": "positive = flexion",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/CANONICAL16_CONTRACT.md section 3"
+        },
+        "zero_definition": {
+          "value": "emg2pose rest pose: the official 20-D zero vector, whose FK pose is the extended hand",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/joint_angle_definition.md"
+        },
+        "evidence": "PROJECT-FROZEN"
+      },
+      {
+        "api_index": 5,
+        "api_name": "index_pip_flexion",
+        "emg2pose_joint": "INDEX_PIP_FE",
+        "emg2pose_source_index": 6,
+        "unit": "radians",
+        "anatomical_dof": "flexion/extension",
+        "sign_rule": {
+          "value": "positive = flexion",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/CANONICAL16_CONTRACT.md section 3"
+        },
+        "zero_definition": {
+          "value": "emg2pose rest pose: the official 20-D zero vector, whose FK pose is the extended hand",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/joint_angle_definition.md"
+        },
+        "evidence": "PROJECT-FROZEN"
+      },
+      {
+        "api_index": 6,
+        "api_name": "index_dip_flexion",
+        "emg2pose_joint": "INDEX_DIP_FE",
+        "emg2pose_source_index": 7,
+        "unit": "radians",
+        "anatomical_dof": "flexion/extension",
+        "sign_rule": {
+          "value": "positive = flexion",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/CANONICAL16_CONTRACT.md section 3"
+        },
+        "zero_definition": {
+          "value": "emg2pose rest pose: the official 20-D zero vector, whose FK pose is the extended hand",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/joint_angle_definition.md"
+        },
+        "evidence": "PROJECT-FROZEN"
+      },
+      {
+        "api_index": 7,
+        "api_name": "middle_mcp_flexion",
+        "emg2pose_joint": "MIDDLE_MCP_FE",
+        "emg2pose_source_index": 9,
+        "unit": "radians",
+        "anatomical_dof": "flexion/extension",
+        "sign_rule": {
+          "value": "positive = flexion",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/CANONICAL16_CONTRACT.md section 3"
+        },
+        "zero_definition": {
+          "value": "emg2pose rest pose: the official 20-D zero vector, whose FK pose is the extended hand",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/joint_angle_definition.md"
+        },
+        "evidence": "PROJECT-FROZEN"
+      },
+      {
+        "api_index": 8,
+        "api_name": "middle_pip_flexion",
+        "emg2pose_joint": "MIDDLE_PIP_FE",
+        "emg2pose_source_index": 10,
+        "unit": "radians",
+        "anatomical_dof": "flexion/extension",
+        "sign_rule": {
+          "value": "positive = flexion",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/CANONICAL16_CONTRACT.md section 3"
+        },
+        "zero_definition": {
+          "value": "emg2pose rest pose: the official 20-D zero vector, whose FK pose is the extended hand",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/joint_angle_definition.md"
+        },
+        "evidence": "PROJECT-FROZEN"
+      },
+      {
+        "api_index": 9,
+        "api_name": "middle_dip_flexion",
+        "emg2pose_joint": "MIDDLE_DIP_FE",
+        "emg2pose_source_index": 11,
+        "unit": "radians",
+        "anatomical_dof": "flexion/extension",
+        "sign_rule": {
+          "value": "positive = flexion",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/CANONICAL16_CONTRACT.md section 3"
+        },
+        "zero_definition": {
+          "value": "emg2pose rest pose: the official 20-D zero vector, whose FK pose is the extended hand",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/joint_angle_definition.md"
+        },
+        "evidence": "PROJECT-FROZEN"
+      },
+      {
+        "api_index": 10,
+        "api_name": "ring_mcp_flexion",
+        "emg2pose_joint": "RING_MCP_FE",
+        "emg2pose_source_index": 13,
+        "unit": "radians",
+        "anatomical_dof": "flexion/extension",
+        "sign_rule": {
+          "value": "positive = flexion",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/CANONICAL16_CONTRACT.md section 3"
+        },
+        "zero_definition": {
+          "value": "emg2pose rest pose: the official 20-D zero vector, whose FK pose is the extended hand",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/joint_angle_definition.md"
+        },
+        "evidence": "PROJECT-FROZEN"
+      },
+      {
+        "api_index": 11,
+        "api_name": "ring_pip_flexion",
+        "emg2pose_joint": "RING_PIP_FE",
+        "emg2pose_source_index": 14,
+        "unit": "radians",
+        "anatomical_dof": "flexion/extension",
+        "sign_rule": {
+          "value": "positive = flexion",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/CANONICAL16_CONTRACT.md section 3"
+        },
+        "zero_definition": {
+          "value": "emg2pose rest pose: the official 20-D zero vector, whose FK pose is the extended hand",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/joint_angle_definition.md"
+        },
+        "evidence": "PROJECT-FROZEN"
+      },
+      {
+        "api_index": 12,
+        "api_name": "ring_dip_flexion",
+        "emg2pose_joint": "RING_DIP_FE",
+        "emg2pose_source_index": 15,
+        "unit": "radians",
+        "anatomical_dof": "flexion/extension",
+        "sign_rule": {
+          "value": "positive = flexion",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/CANONICAL16_CONTRACT.md section 3"
+        },
+        "zero_definition": {
+          "value": "emg2pose rest pose: the official 20-D zero vector, whose FK pose is the extended hand",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/joint_angle_definition.md"
+        },
+        "evidence": "PROJECT-FROZEN"
+      },
+      {
+        "api_index": 13,
+        "api_name": "pinky_mcp_flexion",
+        "emg2pose_joint": "PINKY_MCP_FE",
+        "emg2pose_source_index": 17,
+        "unit": "radians",
+        "anatomical_dof": "flexion/extension",
+        "sign_rule": {
+          "value": "positive = flexion",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/CANONICAL16_CONTRACT.md section 3"
+        },
+        "zero_definition": {
+          "value": "emg2pose rest pose: the official 20-D zero vector, whose FK pose is the extended hand",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/joint_angle_definition.md"
+        },
+        "evidence": "PROJECT-FROZEN"
+      },
+      {
+        "api_index": 14,
+        "api_name": "pinky_pip_flexion",
+        "emg2pose_joint": "PINKY_PIP_FE",
+        "emg2pose_source_index": 18,
+        "unit": "radians",
+        "anatomical_dof": "flexion/extension",
+        "sign_rule": {
+          "value": "positive = flexion",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/CANONICAL16_CONTRACT.md section 3"
+        },
+        "zero_definition": {
+          "value": "emg2pose rest pose: the official 20-D zero vector, whose FK pose is the extended hand",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/joint_angle_definition.md"
+        },
+        "evidence": "PROJECT-FROZEN"
+      },
+      {
+        "api_index": 15,
+        "api_name": "pinky_dip_flexion",
+        "emg2pose_joint": "PINKY_DIP_FE",
+        "emg2pose_source_index": 19,
+        "unit": "radians",
+        "anatomical_dof": "flexion/extension",
+        "sign_rule": {
+          "value": "positive = flexion",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/CANONICAL16_CONTRACT.md section 3"
+        },
+        "zero_definition": {
+          "value": "emg2pose rest pose: the official 20-D zero vector, whose FK pose is the extended hand",
+          "evidence": "PROJECT-FROZEN",
+          "source": "docs/joint_angle_definition.md"
+        },
+        "evidence": "PROJECT-FROZEN"
+      }
+    ],
+    "unit": "radians",
+    "evidence": "PROJECT-FROZEN"
+  },
+  "emg2pose_official_20": {
+    "names": [
+      "THUMB_CMC_FE",
+      "THUMB_CMC_AA",
+      "THUMB_MCP_FE",
+      "THUMB_IP_FE",
+      "INDEX_MCP_AA",
+      "INDEX_MCP_FE",
+      "INDEX_PIP_FE",
+      "INDEX_DIP_FE",
+      "MIDDLE_MCP_AA",
+      "MIDDLE_MCP_FE",
+      "MIDDLE_PIP_FE",
+      "MIDDLE_DIP_FE",
+      "RING_MCP_AA",
+      "RING_MCP_FE",
+      "RING_PIP_FE",
+      "RING_DIP_FE",
+      "PINKY_MCP_AA",
+      "PINKY_MCP_FE",
+      "PINKY_PIP_FE",
+      "PINKY_DIP_FE"
+    ],
+    "n": 20,
+    "evidence": "PROJECT-FROZEN (read from the vendored official baseline constants)"
+  },
+  "canonical16_is_lossy": {
+    "dropped_api_names": [
+      "index_mcp_ab_adduction (INDEX_MCP_AA)",
+      "middle_mcp_ab_adduction (MIDDLE_MCP_AA)",
+      "ring_mcp_ab_adduction (RING_MCP_AA)",
+      "pinky_mcp_ab_adduction (PINKY_MCP_AA)"
+    ],
+    "dropped_source_indices": [
+      4,
+      8,
+      12,
+      16
+    ],
+    "consequence": "canonical16 is NOT a complete hand pose; two poses differing only in those four DOF map to the same vector.  Nothing downstream may describe it as a complete hand pose",
+    "evidence": "PROJECT-FROZEN",
+    "quote": "'canonical16 is the first cross-dataset hand representation: the 16 kinematic variables we currently intend to match reliably between emg2pose and NinaPro DB9' - docs/CANONICAL16_CONTRACT.md section 0"
+  },
+  "reserved_but_disabled": {
+    "canonical18_extra": [
+      "middle_ring_spread",
+      "ring_pinky_spread"
+    ],
+    "status": "RESERVED_DISABLED; no spread formula exists anywhere in the repository and to_canonical18 does not exist",
+    "enabling_requires": [
+      "the DB9 <-> emg2pose spread mapping to be independently validated",
+      "an explicit research decision to unfreeze",
+      "the spread definition specified from official sources, not invented"
+    ],
+    "evidence": "PROJECT-FROZEN"
+  },
+  "validity_contract": {
+    "emg2pose": "an IK failure is an all-zero joint_angles row, NOT NaN; the validity mask must be applied before any pose statistic",
+    "measured_ik_failure_rate_mini": 0.15625,
+    "composition": "two datasets' masks compose by logical AND",
+    "evidence": "PROJECT-FROZEN"
+  },
+  "the_decision_this_audit_must_make": {
+    "options": [
+      "API-16 (all sixteen)",
+      "a smaller rigorously shared anatomical subset"
+    ],
+    "principal_rule": "this audit must decide whether the future API is API-16 or a SMALLER rigorously-shared anatomical subset.  PRINCIPAL RULE: physical semantic equivalence > dimensional count.  A 12-D clean physical mapping beats a 16-D uncertain one.  Dimensional count is never itself a reason to prefer a representation",
+    "explicitly_not_allowed": [
+      "declaring that future datasets must have exactly these 16 dimensions",
+      "treating a dataset's angle COUNT as compatibility",
+      "accepting 'index flexion' as a match for MCP or PIP or DIP when the dataset does not distinguish them"
+    ]
+  },
+  "subset_families_this_audit_will_report": {
+    "shared16": "every API DOF covered at HIGH or MEDIUM",
+    "shared15": "API-16 minus thumb_cmc_ab_adduction (the one AA axis whose cross-dataset correspondence the project itself flags as unproven in magnitude)",
+    "shared12_noDIP": "API-16 minus the four DIPs (the project's own pre-registered control representation)",
+    "shared_available": "whatever the data actually supports, reported as an explicit name list rather than a number",
+    "reporting_rule": "all families are reported; the audit does NOT pick the largest, and a smaller clean family may be recommended over a larger uncertain one"
+  },
+  "evidence_legend": {
+    "OFFICIAL-DOCUMENTED": "a primary dataset source states it",
+    "OFFICIAL-CODE-INFERRED": "read from the authors' released code",
+    "DATA-INFERRED": "measured by this audit from released data",
+    "PROJECT-FROZEN": "recovered from this project's own frozen artifacts",
+    "UNKNOWN": "not established"
+  }
+}

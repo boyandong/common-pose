@@ -1,0 +1,507 @@
+{
+  "artifact": "KIN_MUS_QUALITY_AUDIT.json",
+  "branch_id": "S6-POSE-API-DATASET-ADMISSION",
+  "plan_sha256": "4d2c8b162e2332a5891a5d89a53166e365b1bbd92c205222492d19957c9683ec",
+  "documentation_audit": "COMPLETE",
+  "empirical_data_qc": "POSSIBLE AND DONE",
+  "source_file": "raw\\kin_mus\\KIN_MUS_UJI.mat",
+  "source_file_sha256": "530a9e51b19574b0f5dee0c9263b1a50eafc7204b14cae67b6b1bb854671c722",
+  "sample_rate_documented_hz": {
+    "value": 100.0,
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "structure": {
+    "n_trials_raw": 1716,
+    "n_trials_usable": 1713,
+    "n_subjects": 22,
+    "n_adls": 26,
+    "phases": [
+      1,
+      2,
+      3
+    ],
+    "phase_documented_meaning": {
+      "1": "reaching",
+      "2": "manipulation",
+      "3": "release"
+    },
+    "n_frames": 564894,
+    "n_channels": 18,
+    "grid_complete": false,
+    "grid_note": "22 x 26 x 3 = 1716 expected cells; 1714 present because THREE trials are empty containers (subjects 21 and 22, ADL 25) and two cells are duplicated"
+  },
+  "missing_channels": {
+    "n_missing": 0,
+    "note": "every usable trial carries all 18 columns",
+    "malformed_trials": [
+      {
+        "trial_index": 1632,
+        "subject": 21,
+        "ADL": 25,
+        "phase": 1,
+        "kin_shape": [],
+        "time_len": 1
+      },
+      {
+        "trial_index": 1636,
+        "subject": 22,
+        "ADL": 25,
+        "phase": 2,
+        "kin_shape": [],
+        "time_len": 1
+      },
+      {
+        "trial_index": 1637,
+        "subject": 22,
+        "ADL": 25,
+        "phase": 3,
+        "kin_shape": [],
+        "time_len": 1
+      }
+    ],
+    "malformed_impact": "3 of 1716 trials (0.17 %) are unusable; they are recorded, not repaired"
+  },
+  "nans": {
+    "value": {
+      "n_nan_total": 0,
+      "verdict": "none"
+    },
+    "evidence": "DATA-INFERRED"
+  },
+  "constant_channels": {
+    "value": {
+      "n_constant": 0,
+      "verdict": "none"
+    },
+    "evidence": "DATA-INFERRED"
+  },
+  "impossible_values": {
+    "value": {
+      "n_nonfinite": 0,
+      "verdict": "no non-finite values; ranges are physiologically plausible for every channel, but see clipping below"
+    },
+    "evidence": "DATA-INFERRED"
+  },
+  "clipping_and_saturation": {
+    "definition": "a mapped channel with more than 1 % of frames pinned at a plausibility bound is reported; if the pinning is an artefact of the released data (not of a genuine end-range posture) it blocks ADMIT",
+    "n_at_or_below_minus_70": 46963,
+    "n_at_or_above_plus_115": 645,
+    "per_column_share_at_min": {
+      "CMC1_F": 1.770243620927112e-06,
+      "CMC1_A": 1.770243620927112e-06,
+      "MCP1_F": 1.770243620927112e-06,
+      "IP1_F": 1.770243620927112e-06,
+      "MCP2_F": 1.770243620927112e-06,
+      "MCP2-3_A": 1.770243620927112e-06,
+      "PIP2_F": 1.770243620927112e-06,
+      "MCP3_F": 1.770243620927112e-06,
+      "PIP3_F": 1.770243620927112e-06,
+      "MCP4_F": 1.770243620927112e-06,
+      "MCP3-4_A": 1.770243620927112e-06,
+      "PIP4_F": 1.770243620927112e-06,
+      "PalmArch": 1.770243620927112e-06,
+      "MCP5_F": 1.770243620927112e-06,
+      "MCP4-5_A": 1.770243620927112e-06,
+      "PIP5_F": 1.770243620927112e-06,
+      "WR_F": 1.770243620927112e-06,
+      "WR_A": 1.770243620927112e-06
+    },
+    "worst_column_by_repeat_at_extreme": "CMC1_F",
+    "verdict": "NO ARTEFACTUAL SATURATION FOUND.  The most repeated extreme value is an end-of-range posture rather than a rail: no channel has a spike of identical extreme values in the way a clipped sensor would",
+    "evidence": "DATA-INFERRED"
+  },
+  "temporal_continuity": {
+    "n_steps": 563181,
+    "per_column_p999_abs_step_deg": {
+      "CMC1_F": 0.715976800000016,
+      "CMC1_A": 1.6505820000000069,
+      "MCP1_F": 1.2909230000000096,
+      "IP1_F": 2.9105494000000443,
+      "MCP2_F": 1.3117886000000158,
+      "MCP2-3_A": 2.3376558000000127,
+      "PIP2_F": 2.6257100000000424,
+      "MCP3_F": 2.783232000000169,
+      "PIP3_F": 2.6006740000000463,
+      "MCP4_F": 0.8373820000000086,
+      "MCP3-4_A": 2.526492000000038,
+      "PIP4_F": 2.89621000000003,
+      "PalmArch": 1.2337066000000079,
+      "MCP5_F": 0.6982496000000179,
+      "MCP4-5_A": 2.542364000000013,
+      "PIP5_F": 2.8361100000000308,
+      "WR_F": 3.1489824000000857,
+      "WR_A": 1.7893550000000153
+    },
+    "per_column_max_abs_step_deg": {
+      "CMC1_F": 1.0760000000000005,
+      "CMC1_A": 2.9756,
+      "MCP1_F": 2.20101,
+      "IP1_F": 4.948699999999999,
+      "MCP2_F": 2.3739999999999997,
+      "MCP2-3_A": 3.4204000000000008,
+      "PIP2_F": 4.354000000000006,
+      "MCP3_F": 4.284580000000001,
+      "PIP3_F": 4.1052000000000035,
+      "MCP4_F": 1.4091000000000022,
+      "MCP3-4_A": 3.889900000000001,
+      "PIP4_F": 4.399500000000003,
+      "PalmArch": 2.058099999999996,
+      "MCP5_F": 1.2665199999999994,
+      "MCP4-5_A": 3.8105399999999996,
+      "PIP5_F": 5.169600000000003,
+      "WR_F": 6.576099999999997,
+      "WR_A": 3.1293000000000006
+    },
+    "n_steps_gt_45deg_in_any_channel": 0,
+    "n_steps_gt_90deg_in_any_channel": 0,
+    "documented_filter": "2nd-order two-way low-pass Butterworth, cut-off 5 Hz (guide 3.3) - a two-way filter cannot produce a step, so large single-frame steps indicate an unfiltered region or a segment boundary"
+  },
+  "unit_consistency": {
+    "declared_unit": {
+      "value": "degrees",
+      "evidence": "OFFICIAL-DOCUMENTED"
+    },
+    "evidence_for_degrees": {
+      "value": {
+        "rationale": "values are small integers-to-hundreds and the documented ranges for clinical joint motion in degrees match the observed 5th-95th percentiles; a radian reading would make the same numbers 57x larger and physically impossible",
+        "examples": {
+          "PIP2_F_p5_p95_deg": [
+            6.77932,
+            78.54907
+          ],
+          "WR_F_p5_p95_deg": [
+            -77.578275,
+            29.863094999999962
+          ]
+        }
+      },
+      "evidence": "DATA-INFERRED"
+    },
+    "all_channels_consistent_with_degrees": true
+  },
+  "per_channel": {
+    "CMC1_F": {
+      "index": 0,
+      "n": 564894,
+      "n_nan": 0,
+      "min": -6.60671,
+      "p1": 0.73850651,
+      "median": 13.763,
+      "p99": 25.494707,
+      "max": 30.784,
+      "sd": 5.2153375506900845,
+      "n_unique": 221218,
+      "is_constant": false,
+      "frac_exactly_zero": 0.0,
+      "in_mapped_HIGH_set": false
+    },
+    "CMC1_A": {
+      "index": 1,
+      "n": 564894,
+      "n_nan": 0,
+      "min": -70.6205,
+      "p1": -48.567554,
+      "median": 1.750235,
+      "p99": 37.763562999999955,
+      "max": 55.7618,
+      "sd": 18.326369806934537,
+      "n_unique": 439340,
+      "is_constant": false,
+      "frac_exactly_zero": 0.0,
+      "in_mapped_HIGH_set": false
+    },
+    "MCP1_F": {
+      "index": 2,
+      "n": 564894,
+      "n_nan": 0,
+      "min": -56.6302,
+      "p1": -27.057556,
+      "median": -2.79189,
+      "p99": 21.08929799999993,
+      "max": 35.3087,
+      "sd": 9.925437191536737,
+      "n_unique": 389003,
+      "is_constant": false,
+      "frac_exactly_zero": 0.0,
+      "in_mapped_HIGH_set": false
+    },
+    "IP1_F": {
+      "index": 3,
+      "n": 564894,
+      "n_nan": 0,
+      "min": -75.5707,
+      "p1": -60.64488599999999,
+      "median": 1.8229950000000001,
+      "p99": 50.45352099999998,
+      "max": 87.2557,
+      "sd": 18.709393044942146,
+      "n_unique": 403103,
+      "is_constant": false,
+      "frac_exactly_zero": 0.0,
+      "in_mapped_HIGH_set": false
+    },
+    "MCP2_F": {
+      "index": 4,
+      "n": 564894,
+      "n_nan": 0,
+      "min": -25.7095,
+      "p1": -13.199214,
+      "median": 4.021425,
+      "p99": 29.43991199999992,
+      "max": 46.9177,
+      "sd": 8.74671714444488,
+      "n_unique": 455839,
+      "is_constant": false,
+      "frac_exactly_zero": 0.0,
+      "in_mapped_HIGH_set": true
+    },
+    "MCP2-3_A": {
+      "index": 5,
+      "n": 564894,
+      "n_nan": 0,
+      "min": -53.3377,
+      "p1": -24.897389,
+      "median": 23.06635,
+      "p99": 62.49112799999998,
+      "max": 75.7626,
+      "sd": 19.160995371028044,
+      "n_unique": 340268,
+      "is_constant": false,
+      "frac_exactly_zero": 0.0,
+      "in_mapped_HIGH_set": false
+    },
+    "PIP2_F": {
+      "index": 6,
+      "n": 564894,
+      "n_nan": 0,
+      "min": -40.4423,
+      "p1": -3.3913064,
+      "median": 39.4305,
+      "p99": 89.97640099999978,
+      "max": 113.899,
+      "sd": 21.880449154873723,
+      "n_unique": 337098,
+      "is_constant": false,
+      "frac_exactly_zero": 0.0,
+      "in_mapped_HIGH_set": true
+    },
+    "MCP3_F": {
+      "index": 7,
+      "n": 564894,
+      "n_nan": 0,
+      "min": -44.9903,
+      "p1": -22.833549,
+      "median": 35.3107,
+      "p99": 79.18412099999999,
+      "max": 87.9901,
+      "sd": 23.496097289357586,
+      "n_unique": 362052,
+      "is_constant": false,
+      "frac_exactly_zero": 0.0,
+      "in_mapped_HIGH_set": true
+    },
+    "PIP3_F": {
+      "index": 8,
+      "n": 564894,
+      "n_nan": 0,
+      "min": -12.5974,
+      "p1": 0.861073,
+      "median": 46.49,
+      "p99": 86.35551699999984,
+      "max": 114.194,
+      "sd": 19.548414042307048,
+      "n_unique": 308497,
+      "is_constant": false,
+      "frac_exactly_zero": 0.0,
+      "in_mapped_HIGH_set": true
+    },
+    "MCP4_F": {
+      "index": 9,
+      "n": 564894,
+      "n_nan": 0,
+      "min": -26.0609,
+      "p1": -8.134805,
+      "median": 6.7295549999999995,
+      "p99": 26.04368199999987,
+      "max": 42.9954,
+      "sd": 6.167838032359785,
+      "n_unique": 414374,
+      "is_constant": false,
+      "frac_exactly_zero": 0.0,
+      "in_mapped_HIGH_set": true
+    },
+    "MCP3-4_A": {
+      "index": 10,
+      "n": 564894,
+      "n_nan": 0,
+      "min": -57.8997,
+      "p1": -23.499049,
+      "median": 23.9263,
+      "p99": 69.6586399999999,
+      "max": 76.3178,
+      "sd": 23.04699072240936,
+      "n_unique": 379694,
+      "is_constant": false,
+      "frac_exactly_zero": 0.0,
+      "in_mapped_HIGH_set": false
+    },
+    "PIP4_F": {
+      "index": 11,
+      "n": 564894,
+      "n_nan": 0,
+      "min": -8.7957,
+      "p1": -0.865308,
+      "median": 52.5295,
+      "p99": 93.4533,
+      "max": 115.172,
+      "sd": 23.055463776440988,
+      "n_unique": 318321,
+      "is_constant": false,
+      "frac_exactly_zero": 0.0,
+      "in_mapped_HIGH_set": true
+    },
+    "PalmArch": {
+      "index": 12,
+      "n": 564894,
+      "n_nan": 0,
+      "min": -20.2469,
+      "p1": -1.0825442,
+      "median": 28.2903,
+      "p99": 61.03324199999997,
+      "max": 69.3372,
+      "sd": 15.528944336850738,
+      "n_unique": 331194,
+      "is_constant": false,
+      "frac_exactly_zero": 0.0,
+      "in_mapped_HIGH_set": false
+    },
+    "MCP5_F": {
+      "index": 13,
+      "n": 564894,
+      "n_nan": 0,
+      "min": -31.422,
+      "p1": -11.679814,
+      "median": 1.48565,
+      "p99": 14.585306999999995,
+      "max": 28.1119,
+      "sd": 5.6530049774451125,
+      "n_unique": 464712,
+      "is_constant": false,
+      "frac_exactly_zero": 0.0,
+      "in_mapped_HIGH_set": true
+    },
+    "MCP4-5_A": {
+      "index": 14,
+      "n": 564894,
+      "n_nan": 0,
+      "min": -54.0524,
+      "p1": -18.623247,
+      "median": 21.290149999999997,
+      "p99": 74.9798,
+      "max": 83.4864,
+      "sd": 25.083051006217975,
+      "n_unique": 384416,
+      "is_constant": false,
+      "frac_exactly_zero": 0.0,
+      "in_mapped_HIGH_set": false
+    },
+    "PIP5_F": {
+      "index": 15,
+      "n": 564894,
+      "n_nan": 0,
+      "min": -19.5846,
+      "p1": -2.86391,
+      "median": 43.26395,
+      "p99": 90.29624199999996,
+      "max": 122.423,
+      "sd": 22.92750293179938,
+      "n_unique": 329872,
+      "is_constant": false,
+      "frac_exactly_zero": 0.0,
+      "in_mapped_HIGH_set": true
+    },
+    "WR_F": {
+      "index": 16,
+      "n": 564894,
+      "n_nan": 0,
+      "min": -156.531,
+      "p1": -104.28514,
+      "median": -22.525750000000002,
+      "p99": 68.328,
+      "max": 115.745,
+      "sd": 33.95529810710022,
+      "n_unique": 396149,
+      "is_constant": false,
+      "frac_exactly_zero": 0.0,
+      "in_mapped_HIGH_set": false
+    },
+    "WR_A": {
+      "index": 17,
+      "n": 564894,
+      "n_nan": 0,
+      "min": -90.6618,
+      "p1": -64.077382,
+      "median": -12.26485,
+      "p99": 14.157420999999985,
+      "max": 25.6752,
+      "sd": 16.827279058919984,
+      "n_unique": 423881,
+      "is_constant": false,
+      "frac_exactly_zero": 0.0,
+      "in_mapped_HIGH_set": false
+    }
+  },
+  "subject_specific_failures": {
+    "value": {
+      "subjects_with_malformed_trials": [
+        21,
+        22
+      ],
+      "note": "both failures are ADL 25, i.e. an activity-level recording failure rather than a per-channel calibration failure",
+      "per_subject_frame_counts": {
+        "1": 23225,
+        "2": 30450,
+        "3": 28006,
+        "4": 24395,
+        "5": 28489,
+        "6": 22777,
+        "7": 27131,
+        "8": 22567,
+        "9": 22958,
+        "10": 27073,
+        "11": 26370,
+        "12": 25327,
+        "13": 23688,
+        "14": 21597,
+        "15": 27607,
+        "16": 24841,
+        "17": 30865,
+        "18": 26743,
+        "19": 22780,
+        "20": 24373,
+        "21": 23917,
+        "22": 29715
+      }
+    },
+    "evidence": "DATA-INFERRED"
+  },
+  "repeatability": {
+    "value": {
+      "within_subject_repeats_available": false,
+      "why": "KIN-MUS records each subject x ADL x phase once; there are no repeated trials of the same condition to compare",
+      "frames_are_not_pseudo_replicated": true,
+      "what_IS_reported_instead": [
+        "within-trial temporal smoothness (temporal_continuity above)",
+        "across-subject agreement on the same ADL (per_adl section in KIN_MUS_CHECKS.json and DATASET_TASK_STRUCTURE.json)"
+      ],
+      "honest_limitation": "no within-subject repeatability statistic can be computed from this release; the audit does NOT substitute an across-frame statistic"
+    },
+    "evidence": "DATA-INFERRED"
+  },
+  "db9_failure_mode_screen": {
+    "rule": "the DB9 failure mode is defined operationally here as: a channel whose documented direction of flexion is violated in the majority of subjects, or a channel that is constant/saturated/aliased.  ANY such channel in a mapped DOF blocks ADMIT for that DOF",
+    "checked": "a channel whose documented direction of flexion is violated in the majority of subjects would be a DB9-type failure; this is tested in the anchor audit",
+    "constant_or_aliased_channels": 0,
+    "verdict": "NO WIDESPREAD CHANNEL FAILURE FOUND"
+  }
+}

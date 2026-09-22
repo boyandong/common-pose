@@ -1,0 +1,221 @@
+{
+  "source": "<DB9_DATA_ROOT>\\extracted\\s_1_angles\\S1_E2_A1.mat",
+  "angle_order": [
+    "CMC1_f",
+    "CMC1_a",
+    "MCP1",
+    "IP1",
+    "MCP2_f",
+    "MCP2_a",
+    "PIP2",
+    "MCP3_f",
+    "PIP3",
+    "MCP4_f",
+    "MCP4_a",
+    "PIP4",
+    "CMC5",
+    "MCP5_f",
+    "MCP5_a",
+    "PIP5",
+    "DIP2",
+    "DIP3",
+    "DIP4",
+    "DIP5",
+    "WRIST_F",
+    "WRIST_A"
+  ],
+  "n_finite_angle_columns": 21,
+  "nan_angle_columns": [
+    {
+      "col": 5,
+      "name": "MCP2_a"
+    }
+  ],
+  "exact_linear_hits": [
+    {
+      "angle_col": 2,
+      "angle": "MCP1",
+      "glove_col": 1,
+      "slope": 0.5622923310001302,
+      "intercept": -64.5571929566781,
+      "published_gain": 0.562
+    },
+    {
+      "angle_col": 3,
+      "angle": "IP1",
+      "glove_col": 2,
+      "slope": 1.1908773959996832,
+      "intercept": -112.52631279516869,
+      "published_gain": 1.19
+    },
+    {
+      "angle_col": 4,
+      "angle": "MCP2_f",
+      "glove_col": 4,
+      "slope": 0.9128776220000012,
+      "intercept": -102.6200939391923,
+      "published_gain": 0.91
+    },
+    {
+      "angle_col": 6,
+      "angle": "PIP2",
+      "glove_col": 5,
+      "slope": 0.9085740259999855,
+      "intercept": -43.6608020240933,
+      "published_gain": 0.91
+    },
+    {
+      "angle_col": 7,
+      "angle": "MCP3_f",
+      "glove_col": 8,
+      "slope": 0.9526497649999032,
+      "intercept": -70.12829340965611,
+      "published_gain": 0.95
+    },
+    {
+      "angle_col": 8,
+      "angle": "PIP3",
+      "glove_col": 9,
+      "slope": 1.071521269999758,
+      "intercept": -77.50699430238755,
+      "published_gain": 1.07
+    },
+    {
+      "angle_col": 9,
+      "angle": "MCP4_f",
+      "glove_col": 12,
+      "slope": 0.9700398659998979,
+      "intercept": -74.12054321281845,
+      "published_gain": 0.97
+    },
+    {
+      "angle_col": 11,
+      "angle": "PIP4",
+      "glove_col": 13,
+      "slope": 1.5785050410000103,
+      "intercept": -122.3169958109402,
+      "published_gain": 1.57
+    },
+    {
+      "angle_col": 12,
+      "angle": "CMC5",
+      "glove_col": 20,
+      "slope": 0.2851112190001213,
+      "intercept": -36.56130308714117,
+      "published_gain": 0.285
+    },
+    {
+      "angle_col": 13,
+      "angle": "MCP5_f",
+      "glove_col": 16,
+      "slope": 1.066439161999983,
+      "intercept": -67.56588206526709,
+      "published_gain": 1.06
+    },
+    {
+      "angle_col": 15,
+      "angle": "PIP5",
+      "glove_col": 17,
+      "slope": 0.8910603660000762,
+      "intercept": -56.88556635747856,
+      "published_gain": 0.89
+    },
+    {
+      "angle_col": 16,
+      "angle": "DIP2",
+      "glove_col": 6,
+      "slope": 1.0799999999997936,
+      "intercept": -82.7769560807174,
+      "published_gain": 1.08
+    },
+    {
+      "angle_col": 17,
+      "angle": "DIP3",
+      "glove_col": 10,
+      "slope": 1.820000000000119,
+      "intercept": -285.9353484579992,
+      "published_gain": 1.82
+    },
+    {
+      "angle_col": 18,
+      "angle": "DIP4",
+      "glove_col": 14,
+      "slope": 2.0000000000005365,
+      "intercept": -324.43998138083396,
+      "published_gain": 2.08
+    },
+    {
+      "angle_col": 19,
+      "angle": "DIP5",
+      "glove_col": 18,
+      "slope": 1.260000000000091,
+      "intercept": -162.24704096110108,
+      "published_gain": 1.26
+    }
+  ],
+  "near_linear": [
+    {
+      "angle_col": 0,
+      "angle": "CMC1_f",
+      "glove_col": 0,
+      "max_resid": 21.619135519814826,
+      "slope": 0.46162058521409954,
+      "published": [
+        "composite"
+      ]
+    },
+    {
+      "angle_col": 1,
+      "angle": "CMC1_a",
+      "glove_col": 3,
+      "max_resid": 2.9848181188103116,
+      "slope": -0.36484178805308476,
+      "published": [
+        "composite"
+      ]
+    },
+    {
+      "angle_col": 10,
+      "angle": "MCP4_a",
+      "glove_col": 14,
+      "max_resid": 45.49957615330527,
+      "slope": 0.3559477293169856,
+      "published": [
+        "composite"
+      ]
+    },
+    {
+      "angle_col": 14,
+      "angle": "MCP5_a",
+      "glove_col": 16,
+      "max_resid": 53.30413532780888,
+      "slope": -0.42372126916681313,
+      "published": [
+        "composite"
+      ]
+    },
+    {
+      "angle_col": 20,
+      "angle": "WRIST_F",
+      "glove_col": 20,
+      "max_resid": 8.496161199209084,
+      "slope": 2.4322676835466117,
+      "published": [
+        "quadratic",
+        0.008,
+        -190.451
+      ]
+    },
+    {
+      "angle_col": 21,
+      "angle": "WRIST_A",
+      "glove_col": 21,
+      "max_resid": 15.826716613713884,
+      "slope": -0.9548793057521665,
+      "published": [
+        "composite"
+      ]
+    }
+  ],
+  "note": "max |resid| is the maximum absolute residual of the best affine fit of one released angle column on one raw glove column; a value at machine precision identifies an exact dependency"
+}

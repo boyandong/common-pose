@@ -1,0 +1,206 @@
+{
+  "artifact": "KINE_ADL_SOURCE_AUDIT.json",
+  "branch_id": "S6-POSE-API-DATASET-ADMISSION",
+  "plan_sha256": "4d2c8b162e2332a5891a5d89a53166e365b1bbd92c205222492d19957c9683ec",
+  "naming_note": "'KINE-ADL BE-UJI' was resolved to the Mendeley Data record 10.17632/8mf4y2srgh.4.  No artefact is published under that exact string; the record's title is 'KINE-ADL BE-UJI: Kinematics of human hand dataset for feeding and cooking tasks'.  The audit reports what exists and does not invent a release",
+  "official_source": {
+    "value": {
+      "KINE_ADL": "https://data.mendeley.com/datasets/8mf4y2srgh/4 (DOI 10.17632/8mf4y2srgh.4)",
+      "KIN_MUS": "https://doi.org/10.5281/zenodo.3469380",
+      "angle_code": "https://doi.org/10.5281/zenodo.8418096",
+      "guide": "https://doi.org/10.5281/zenodo.8418416"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "exact_18_anatomical_angles": {
+    "value": [
+      "CMC1_F",
+      "CMC1_A",
+      "MCP1_F",
+      "IP1_F",
+      "MCP2_F",
+      "MCP2-3_A",
+      "PIP2_F",
+      "MCP3_F",
+      "PIP3_F",
+      "MCP4_F",
+      "MCP3-4_A",
+      "PIP4_F",
+      "PalmArch",
+      "MCP5_F",
+      "MCP4-5_A",
+      "PIP5_F",
+      "WR_F",
+      "WR_A"
+    ],
+    "evidence": "OFFICIAL-DOCUMENTED",
+    "source": "MOVMUS-UJI guide v2.1 Table 4, ANGLES block"
+  },
+  "acquisition_hardware": {
+    "value": "CyberGlove II (right) and CyberGlove III (left) instrumented gloves, 18 strain gauges each",
+    "evidence": "OFFICIAL-DOCUMENTED",
+    "source": "MOVMUS guide section 2.1"
+  },
+  "how_calibration_converts_sensors_to_anatomical_angles": {
+    "value": {
+      "raw": "a 0-255 signal per gauge",
+      "transform": "angle = (raw - raw_at_reference_posture) x gain, with additional modelled cross-coupling terms",
+      "specific_terms_read_from_the_code": {
+        "CMC1_F": "2-term mix of the CMC1 flexion and abduction gauges",
+        "CMC1_A": "the transpose mix of the same two gauges",
+        "MCP2-3_A": "linear + quadratic + interaction in the MCP2 and MCP3 flexion gauges",
+        "MCP3-4_A": "same form, sign-negated",
+        "MCP4-5_A": "same form, sign-negated",
+        "WR_F": "quadratic in one wrist gauge",
+        "WR_A": "linear in two wrist gauges",
+        "DIP2..DIP5": "0.87/0.79/0.73/0.84 x PIP - offset, floored at 0 for the 18-sensor glove; a separate gain column for the 22-sensor glove"
+      },
+      "source_file": "AngleCalculation/guant/Code/obtain_angles_RL_abd_rel.m"
+    },
+    "evidence": "OFFICIAL-CODE-INFERRED"
+  },
+  "per_subject_vs_global_calibration": {
+    "value": {
+      "answer": "GLOBAL PER GLOVE UNIT, not per subject",
+      "evidence": "the calibration protocol is titled 'across-subject calibration'; gains_identification.m hard-codes the UJI group's own glove gains in per-model, per-hand vectors and comments 'Gains values should be completed with own glove gains'"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "exact_zero_reference": {
+    "value": {
+      "definition": "the mean of a recorded REFERENCE posture: hands resting flat on the table, fingers and thumb close together, middle fingers aligned with the forearms",
+      "kind": "RECORDED REFERENCE POSTURE (not a nominal anatomical zero)",
+      "implication": "legitimate, but the zero is session-dependent, so any API record must name the reference posture in words - which the guide does"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED",
+    "source": "MOVMUS guide Figure 1 and section 2.1"
+  },
+  "units_and_sign": {
+    "value": {
+      "units": "degrees",
+      "sign_criteria": "PIP(2-5)_F, IP1_F, CMC1_F, MCP(1-5)_F, WR_F: Flexion+/Extension-;  MCP(2-3, 3-4, 4-5)_A: separated+/together-;  PalmArch: Flexion+/Extension-;  CMC1_A: Abduction+/Adduction-;  WR_A: ulnar deviation+/radial-",
+      "cross_check": "the released KIN-MUS block corroborates every criterion in the direction that matters"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED",
+    "source": "MOVMUS guide section 4.3"
+  },
+  "calibration_quality_metrics": {
+    "value": {
+      "identified": 0,
+      "note": "the cited calibration paper reports them, but the per-recording residuals are not distributed with the data"
+    },
+    "evidence": "UNKNOWN"
+  },
+  "hand_size_dependence_discussed": {
+    "value": "YES - explicitly: removed outliers are attributed to 'a poor fit of these gauges for a specific subject ... who had a small hand length'",
+    "evidence": "OFFICIAL-DOCUMENTED",
+    "source": "MOVMUS guide section 3.4"
+  },
+  "cross_talk_discussed": {
+    "value": "YES, and modelled, not merely acknowledged",
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "dip_directly_measured_or_inferred": {
+    "value": {
+      "answer": "INFERRED - computed from PIP, never measured",
+      "for_the_18_sensor_glove": "DIP = a*PIP - b, floored at 0",
+      "corroborating_source": "the group published a dedicated dataset titled 'Problems Using Data Gloves with Strain Gauges to Measure Distal Interphalangeal Joints' Kinematics' with static-posture controls that vary PIP and DIP independently"
+    },
+    "evidence": "OFFICIAL-CODE-INFERRED"
+  },
+  "exact_record": {
+    "value": {
+      "title": "KINE-ADL BE-UJI: Kinematics of human hand dataset for feeding and cooking tasks",
+      "version": 4,
+      "doi": "10.17632/8mf4y2srgh.4",
+      "publisher": "Mendeley Data (Elsevier)",
+      "publication_date": "5 August 2019",
+      "authors": [
+        "Roda-Sales, Alba",
+        "Vergara, Margarita",
+        "Sancho-Bru, Joaquin L.",
+        "Gracia-Ibanez, Veronica",
+        "Jarque Bou, Nestor"
+      ]
+    },
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "n_subjects": {
+    "value": 20,
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "n_recordings": {
+    "value": 1160,
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "sampling_rate_hz": {
+    "value": 100,
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "hands": {
+    "value": "both",
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "dof_per_hand": {
+    "value": 18,
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "n_objects": {
+    "value": 66,
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "task_hierarchy": {
+    "value": {
+      "levels_documented_for_this_record": [
+        "activity (feeding / cooking)",
+        "object (66)"
+      ],
+      "levels_documented_for_the_sibling_MOVMUS_release": [
+        "task",
+        "elementary task",
+        "grasp type (9-class taxonomy)",
+        "action type (10-class taxonomy)",
+        "product",
+        "orientation",
+        "height"
+      ],
+      "what_is_UNCERTAIN_for_KINE_ADL": "the audited record describes activities and objects; whether it carries the same task/action annotation layers as MOVMUS is not established from the retrievable metadata"
+    },
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "which_labels_are_pose_observable": {
+    "value": {
+      "activity": "NOT pose-sufficient (goal/object defined)",
+      "object": "NOT pose-sufficient",
+      "segment-level kinematics": "POSE-MOSTLY-SUFFICIENT once a segmentation is agreed",
+      "verdict": "CONDITIONAL - segmentation must be established first"
+    },
+    "evidence": "UNKNOWN"
+  },
+  "continuous_trajectories": {
+    "value": "YES - '1160 continuous calibrated recordings taken at 100Hz ... with filtered signal'",
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "handedness": {
+    "value": "both hands",
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "license_access": {
+    "value": {
+      "license": "CC BY 4.0",
+      "url": "https://data.mendeley.com/datasets/8mf4y2srgh/4",
+      "registration": "none for the record metadata",
+      "downloaded": false
+    },
+    "evidence": "OFFICIAL-DOCUMENTED"
+  },
+  "empirical_status": "the corpus was NOT downloaded (bounded-download rule).  The record metadata and the shared angle pipeline were verified; the angle tables were not measured.  No KIN-MUS measurement is reported here as a KINE-ADL measurement",
+  "verdict": "CONDITIONAL",
+  "minimum_evidence_to_promote": [
+    "download the corpus",
+    "confirm its channel list and column order against the documented 18",
+    "re-run this branch's anchor and quality builders unchanged"
+  ],
+  "documentation_audit": "COMPLETE",
+  "empirical_data_qc": "PARTIAL (pipeline yes, corpus no)"
+}

@@ -1,0 +1,122 @@
+{
+  "artifact": "EXTERNAL_TEST_FEASIBILITY.json",
+  "branch_id": "S6-POSE-API-DATASET-ADMISSION",
+  "plan_sha256": "4d2c8b162e2332a5891a5d89a53166e365b1bbd92c205222492d19957c9683ec",
+  "status": "PLANNING ONLY - no model is scored in this session",
+  "question": "does emg2pose's natural pose corpus plausibly contain the poses needed to externally test a source task learned from the chosen dataset?",
+  "emg2pose_side_facts": {
+    "pose_source": {
+      "value": "bridge_audit/results/sessions/*.paired50hz.npz :: gt16, the frozen GT canonical16 corpus",
+      "evidence": "PROJECT-FROZEN"
+    },
+    "n_frozen_paired_sessions": 30,
+    "n_gt_valid_rows_measured_by_the_prior_branch": {
+      "value": 86858,
+      "evidence": "PROJECT-FROZEN",
+      "source": "EMG2POSE_GT_DISTRIBUTIONAL_RESULTS.json"
+    },
+    "single_subject_warning": {
+      "value": "the official mini corpus is ONE user over 30 sessions; every external number is WITHIN-SUBJECT",
+      "evidence": "PROJECT-FROZEN"
+    },
+    "official_stage_names_available": [],
+    "official_generalization_axes": {
+      "value": {
+        "none": "train only",
+        "stage": "held-out stage",
+        "user": "held-out user",
+        "user_stage": "both"
+      },
+      "evidence": "PROJECT-FROZEN",
+      "source": "docs/DATASET_ACCESS_DECISION.md, from the official metadata.csv"
+    }
+  },
+  "vocabulary_overlap": {
+    "HUST": {
+      "source_task_family": "Feix grasp taxonomy (33 grasp types)",
+      "emg2pose_contains_similar_configurations": {
+        "value": "LIKELY YES - the official stage list includes grasp-family stages (HandClawGraspFlicks, FingerPinchesSingleFingerPinchesMultiple, HookEmHornsOKScissors) and object-interaction stages",
+        "evidence": "PROJECT-FROZEN",
+        "source": "baseline/emg2pose/emg2pose/constants.py stage names"
+      },
+      "relevant_joint_ranges_represented": {
+        "value": "UNKNOWN - cannot be assessed because HUST's channel list is unobtainable",
+        "evidence": "UNKNOWN"
+      },
+      "new_emg2pose_sampling_required": {
+        "value": "UNKNOWN",
+        "evidence": "UNKNOWN"
+      },
+      "human_reference_labels_available": {
+        "value": "yes but only for a 53-window C1/C6/NON_TARGET cohort and only for a DIFFERENT ontology (the project's own gesture ontology, not the Feix taxonomy)",
+        "evidence": "PROJECT-FROZEN"
+      },
+      "new_annotation_round_required": {
+        "value": "YES, for any Feix-taxonomy external endpoint",
+        "evidence": "PROJECT-FROZEN"
+      }
+    },
+    "KINE_ADL": {
+      "source_task_family": "feeding and cooking ADLs",
+      "emg2pose_contains_similar_configurations": {
+        "value": "LIKELY YES - emg2pose's stages are goal-directed everyday actions (CountingUpDownFaceSideAway, TwoHandedFreeStyle, OneHandedFreeStyle, FingerPinches...) rather than a disembodied gesture list, so ADL-like grasps occur",
+        "evidence": "PROJECT-FROZEN"
+      },
+      "relevant_joint_ranges_represented": {
+        "value": "ASSESSABLE ONCE THE CORPUS IS OBTAINED",
+        "evidence": "UNKNOWN"
+      },
+      "new_emg2pose_sampling_required": {
+        "value": "LIKELY NOT for pose coverage; the mini corpus already contains freestyle and pinch stages",
+        "evidence": "PROJECT-FROZEN"
+      },
+      "human_reference_labels_available": {
+        "value": "NO labels for this ontology",
+        "evidence": "PROJECT-FROZEN"
+      },
+      "new_annotation_round_required": {
+        "value": "YES for a labelled endpoint; NO if the endpoint is defined on POSES rather than human labels (e.g. 'does the pose fall in the manipulation-phase region of the source ADL manifold')",
+        "evidence": "PROJECT-FROZEN"
+      }
+    },
+    "KIN_MUS": {
+      "source_task_family": "26 ADLs each with 3 movement phases",
+      "emg2pose_contains_similar_configurations": {
+        "value": "LIKELY YES, and this candidate has the WEAKEST dependence on task-label overlap: the phase structure (reaching / manipulation / release) is a POSE-PHASE structure that can be defined from the source data itself with no new emg2pose annotation",
+        "evidence": "PROJECT-FROZEN"
+      },
+      "relevant_joint_ranges_represented": {
+        "value": "ASSESSABLE NOW at the pose-statistics level, because the source angle block is in hand and the emg2pose GT canonical16 corpus is frozen; the next-experiment plan specifies it",
+        "evidence": "DATA-INFERRED"
+      },
+      "new_emg2pose_sampling_required": {
+        "value": "NO for pose coverage; the frozen 86 858-row GT corpus is sufficient for a pose-distribution readout",
+        "evidence": "PROJECT-FROZEN"
+      },
+      "human_reference_labels_available": {
+        "value": "NOT NEEDED for a pose-defined endpoint",
+        "evidence": "PROJECT-FROZEN"
+      },
+      "new_annotation_round_required": {
+        "value": "NO for a pose-defined endpoint",
+        "evidence": "PROJECT-FROZEN"
+      }
+    }
+  },
+  "the_decisive_feasibility_point": "the only candidate whose external test needs NO new human annotation and NO task-specific EMG is the one whose source labels are POSE-DEFINED.  KIN-MUS's movement-phase labels are close to that: a phase is a segment of a movement, and the question 'is this pose in the manipulation region' is answerable from the source angles alone",
+  "what_must_NOT_be_done": [
+    "train any model (classifier, Gate, AutoML, Gaussian/SIMCA/GMM/OCSVM)",
+    "compare accuracies",
+    "use human-reference outcomes",
+    "run VEMG2Pose inference",
+    "perform cross-dataset domain adaptation",
+    "fit affine transforms to emg2pose",
+    "optimise any mapping based on external performance",
+    "compare Mahalanobis / SIMCA / kNN gate / conformal / selective nets / OpenMax / PROSER / energy methods / prototype OSR",
+    "rescue, retune, repair or rerun DB9",
+    "modify any frozen artifact of the project",
+    "write outside pose_api_dataset_admission/",
+    "invent a mapping to raise the shared-DOF count",
+    "report a dataset as available without an access attempt"
+  ]
+}

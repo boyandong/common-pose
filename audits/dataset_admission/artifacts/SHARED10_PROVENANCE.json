@@ -1,0 +1,898 @@
+{
+  "artifact": "SHARED10_PROVENANCE.json",
+  "plan_sha256": "fba2b20623392dd809d5ed28c7850387acc721e9a91ff1611e7fba0d89fc889d",
+  "references_in_project": [
+    {
+      "path": "kinmus_task_observability\\tools\\kinmus_task_observability_fact_check.py",
+      "matches": 33,
+      "sha256": "6e9de0de3139db05f1f62d0415f3ec7b8b4894fc052ad7614b977371d9ed783a"
+    },
+    {
+      "path": "kinmus_task_observability\\tools\\build_report.py",
+      "matches": 19,
+      "sha256": "0be3710f66a51163896bbf06aab60129beec1e7d21f4966fbb46b9fd9370e003"
+    },
+    {
+      "path": "kinmus_task_observability\\tools\\obs_plan.py",
+      "matches": 14,
+      "sha256": "2c1ba643eba494f51905cb785cbceb44fab502eb24687f8a7be3558ddbe814da"
+    },
+    {
+      "path": "kinmus_task_observability\\KINMUS_TASK_OBSERVABILITY_REPORT.md",
+      "matches": 13,
+      "sha256": "808043373d7bfdec85d1f59298a3c841f040e9b1b1e34d2be668b3d86404615b"
+    },
+    {
+      "path": "kinmus_task_observability\\KINMUS_TASK_OBSERVABILITY_PLAN.json",
+      "matches": 12,
+      "sha256": "19da16a52d11ad1591a456ac19d8863faa1c185e84ae7ed3521236a7faab3141"
+    },
+    {
+      "path": "kinmus_task_observability\\tools\\build_features.py",
+      "matches": 12,
+      "sha256": "832f812acd6394b1817e709ccf8320afdf653a2d5cbbd6a204a6e92162807a56"
+    },
+    {
+      "path": "kinmus_task_observability\\tools\\build_figures.py",
+      "matches": 12,
+      "sha256": "0038c2957ecd22e8be02d771f9bb47fc38a2233cc1a9e4983bf95b618c13fe60"
+    },
+    {
+      "path": "kinmus_task_observability\\tools\\freeze_plan.py",
+      "matches": 12,
+      "sha256": "9ff42bb9f342cc658dc0cfaee7629f96d7572775863027774ddde1f56cb5a0e2"
+    },
+    {
+      "path": "kinmus_task_observability\\KINMUS_TASK_OBSERVABILITY_HANDOVER.md",
+      "matches": 8,
+      "sha256": "bbf89e738bacb608e98eab7c347e784a8df5eeade32f5552e3d293470f139536"
+    },
+    {
+      "path": "kinmus_task_observability\\tools\\build_provenance.py",
+      "matches": 7,
+      "sha256": "3a4363195a83799f6d494fee883da0998045fa3f05c5cdf2672c1eb068766d21"
+    },
+    {
+      "path": "kinmus_task_observability\\tools\\build_cv.py",
+      "matches": 6,
+      "sha256": "78e9761ee9e983aeb60ba38121c067c133c7cc47963e3c750306539bd70c8f1a"
+    },
+    {
+      "path": "kinmus_task_observability\\tools\\build_geometry.py",
+      "matches": 6,
+      "sha256": "8de17a9aabeb96fdd35a553aed11610bff3151b62f12453a3fb5fc89ce0a0b6e"
+    },
+    {
+      "path": "kinmus_task_observability\\KINMUS_FULL18_DIAGNOSTIC.json",
+      "matches": 5,
+      "sha256": "c9b1ee8f310d2c4deb142c07a338a4028ec4cc8ad43b6bcbd861283f9d4cf93a"
+    },
+    {
+      "path": "kinmus_task_observability\\tools\\obs_common.py",
+      "matches": 5,
+      "sha256": "d2a41b0c073ef6e896b3ae5a90063886345fcf3b06d133a2a0b8f58c017ff634"
+    },
+    {
+      "path": "kinmus_task_observability\\KINMUS_TASK_OBSERVABILITY_FULL_LOG.txt",
+      "matches": 4,
+      "sha256": "099a2d2f69d83a143252da01e07172903da808c453a32f2ee8ef1abf3ac04ffb"
+    },
+    {
+      "path": "kinmus_task_observability\\KINMUS_TASK_OBSERVABILITY_DECISION.json",
+      "matches": 3,
+      "sha256": "2f0a21d81183c00265c8abeeaa7b2dce7e7143fe351ba4d3dbba9e4876168f88"
+    },
+    {
+      "path": "kinmus_task_observability\\tools\\assemble_log.py",
+      "matches": 3,
+      "sha256": "6e621f55876a63820da4f178aefad59cf56fa334f24553104fb678a0c396e535"
+    },
+    {
+      "path": "kinmus_task_observability\\tools\\build_decision.py",
+      "matches": 3,
+      "sha256": "0d30ec878eb72e41dea5e69c3909258d0e69163f597973c720fbf1fd8598647f"
+    },
+    {
+      "path": "pose_api_dataset_admission\\DATASET_ADMISSION_HANDOVER.md",
+      "matches": 3,
+      "sha256": "5947582a55ede61959bcbb748d24ffcd1b838315332ce81faf6c05c21e9b7bb2"
+    },
+    {
+      "path": "pose_api_dataset_admission\\DATASET_ADMISSION_REPORT.md",
+      "matches": 3,
+      "sha256": "3b5f020f38d0396f4b4cbbb818f2e40c96613cca8bdb14a979e01c58be5bc1a1"
+    },
+    {
+      "path": "pose_api_dataset_admission\\NEXT_POC_EXPERIMENT_PLAN.md",
+      "matches": 3,
+      "sha256": "276fba2598e1d71b14214ac75d46f6790a4284789c122a55a2958498dd796644"
+    },
+    {
+      "path": "kinmus_task_observability\\KINMUS_OBSERVABILITY_SOURCE_PROVENANCE.json",
+      "matches": 2,
+      "sha256": "de50d96e5a4a3111c628d8ce3f53bb16d8581309dc6f84c127c63d2c50496ff1"
+    },
+    {
+      "path": "kinmus_task_observability\\KINMUS_PHASE_POSE_GEOMETRY.json",
+      "matches": 2,
+      "sha256": "46553cdb74dca3ce5ec301c86a4c4e3630451a6b3356144856702f8083b819dd"
+    },
+    {
+      "path": "pose_api_dataset_admission\\DATASET_ADMISSION_FULL_LOG.txt",
+      "matches": 2,
+      "sha256": "c4c3341e3d0755f9f46520f9e41b8266e089d4dc2e9d1a069df41b1d4c656be8"
+    },
+    {
+      "path": "pose_api_dataset_admission\\tools\\build_next_experiment.py",
+      "matches": 2,
+      "sha256": "42b552bf8eda5f5b3594f2d8fcfb9e54bd2061c987d3da317503269ebc0da159"
+    },
+    {
+      "path": "kinmus_task_observability\\ARTIFACT_MANIFEST.json",
+      "matches": 1,
+      "sha256": "793915a6b0bb712c9316500a44681cb3f7896b3f558cd08aa63747d12c370647"
+    },
+    {
+      "path": "kinmus_task_observability\\KINMUS_PHASE_VELOCITY_GEOMETRY.json",
+      "matches": 1,
+      "sha256": "d0588c83bcbcc01550f0b3086ed23cc0d695c143c5715f2cca184ad9198e4335"
+    },
+    {
+      "path": "pose_api_dataset_admission\\FIRST_POC_DATASET_DECISION.json",
+      "matches": 1,
+      "sha256": "4daba251326b7857e4b0cfb92f68f748eee97f3e6d2f18035f3cf34c36817a68"
+    },
+    {
+      "path": "pose_api_dataset_admission\\tools\\build_decision.py",
+      "matches": 1,
+      "sha256": "124005586cfc151a430428166dc8806a7074e2be29d0d3f77afb34e747afa96c"
+    }
+  ],
+  "source_array_chain": {
+    "filename": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\kin_mus\\KIN_MUS_UJI.mat",
+    "sha256": "530a9e51b19574b0f5dee0c9263b1a50eafc7204b14cae67b6b1bb854671c722",
+    "bytes": 86661263,
+    "loader": "scipy.io.loadmat(..., squeeze_me=True, struct_as_record=False)",
+    "variable": "EMG_KIN_v4",
+    "variable_shape": "1 x 1716 struct array",
+    "element_field": "Kinematic_data",
+    "element_shape": "(N_i, 18)",
+    "stacked_shape": [
+      564894,
+      18
+    ],
+    "source_schema": "each row is one 100 Hz sample; the 18 columns are a bare numeric matrix with NO stored column labels anywhere in the file",
+    "evidence": "EMPIRICAL"
+  },
+  "order_hypotheses": {
+    "H_GUIDE": {
+      "order": [
+        "CMC1_F",
+        "CMC1_A",
+        "MCP1_F",
+        "IP1_F",
+        "MCP2_F",
+        "MCP2-3_A",
+        "PIP2_F",
+        "MCP3_F",
+        "PIP3_F",
+        "MCP4_F",
+        "MCP3-4_A",
+        "PIP4_F",
+        "PalmArch",
+        "MCP5_F",
+        "MCP4-5_A",
+        "PIP5_F",
+        "WR_F",
+        "WR_A"
+      ],
+      "authority": "MOVMUS-UJI guide v2.1 (2023) Table 4 ANGLES block, right hand - page 19, x=200.9, monotone y; identical to the official calibration code's own output order (obtain_angles_RL_abd_rel.m lines 110-113) and to the KINE-ADL BE-UJI guide's ANGLES block"
+    },
+    "H_T2": {
+      "order": [
+        "CMC1_A",
+        "CMC1_F",
+        "MCP1_F",
+        "IP1_F",
+        "MCP2-3_A",
+        "MCP2_F",
+        "PIP2_F",
+        "MCP3_F",
+        "PIP3_F",
+        "MCP3-4_A",
+        "MCP4_F",
+        "PIP4_F",
+        "PalmArch",
+        "MCP4-5_A",
+        "MCP5_F",
+        "PIP5_F",
+        "WR_F",
+        "WR_A"
+      ],
+      "authority": "KIN-MUS 2019 paper (Sci Data 6:270) Table 2, 'Anatomical angles order (from top to bottom)', page 7, x=158.9, monotone decreasing y, 18 rows - the table the paper attaches to the released 'Angles (18 columns)' field"
+    }
+  },
+  "order_discrimination_tests": {
+    "D1_thumb_cmc_amplitude": {
+      "rationale": "the official calibration code gives CMC1_A a structurally smaller gain (0.267) than CMC1_F (0.802) on the dominant gauge, so the low-amplitude member of the first two columns is CMC1_A",
+      "sd_col0": 5.215332934479026,
+      "sd_col1": 18.326353585857735,
+      "low_amplitude_column": 0,
+      "H_GUIDE": "CMC1_F",
+      "H_T2": "CMC1_A",
+      "verdict": "H_T2",
+      "evidence": "EMPIRICAL"
+    },
+    "D2_same_finger_MCP_PIP": {
+      "rationale": "the MCP-flexion column of finger k must correlate more strongly with the PIP-flexion column of the SAME finger than a competing relative-abduction column does; a same-finger MCP/PIP pair must co-flex positively",
+      "per_finger": {
+        "finger2": {
+          "pip_col": 6,
+          "corr_colA": -0.132843664190627,
+          "corr_colB": 0.19324351574363144,
+          "colA": 4,
+          "colB": 5,
+          "stronger_col": 5,
+          "H_GUIDE_names_colA_as_MCP": true,
+          "H_T2_names_colB_as_MCP": true
+        },
+        "finger4": {
+          "pip_col": 11,
+          "corr_colA": 0.02567297553249332,
+          "corr_colB": 0.48736089151962375,
+          "colA": 9,
+          "colB": 10,
+          "stronger_col": 10,
+          "H_GUIDE_names_colA_as_MCP": true,
+          "H_T2_names_colB_as_MCP": true
+        },
+        "finger5": {
+          "pip_col": 15,
+          "corr_colA": -0.43096758816999786,
+          "corr_colB": 0.5574320755545149,
+          "colA": 13,
+          "colB": 14,
+          "stronger_col": 14,
+          "H_GUIDE_names_colA_as_MCP": true,
+          "H_T2_names_colB_as_MCP": true
+        }
+      },
+      "n_fingers_testable": 3,
+      "H_T2_matches": 3,
+      "H_GUIDE_matches": 0,
+      "verdict": "H_T2",
+      "evidence": "EMPIRICAL"
+    },
+    "D3_paper_positive_median_largest_FROM": {
+      "rationale": "the dataset's own Technical Validation states that MCP and PIP FLEXION present a positive median with the largest functional range",
+      "per_hypothesis": {
+        "H_GUIDE": {
+          "cols": [
+            2,
+            4,
+            7,
+            9,
+            13
+          ],
+          "medians": [
+            -2.79189,
+            4.021425,
+            35.3107,
+            6.7295549999999995,
+            1.48565
+          ],
+          "sd": [
+            9.925428406311912,
+            8.746709402531339,
+            23.49607649244021,
+            6.167832573069403,
+            5.652999973844898
+          ],
+          "all_positive_median": false,
+          "min_sd": 5.652999973844898,
+          "max_sd_of_18": 33.95526805251199
+        },
+        "H_T2": {
+          "cols": [
+            2,
+            5,
+            7,
+            10,
+            14
+          ],
+          "medians": [
+            -2.79189,
+            23.06635,
+            35.3107,
+            23.9263,
+            21.290149999999997
+          ],
+          "sd": [
+            9.925428406311912,
+            19.160978411205626,
+            23.49607649244021,
+            23.04697032300618,
+            25.08302880465263
+          ],
+          "all_positive_median": false,
+          "min_sd": 9.925428406311912,
+          "max_sd_of_18": 33.95526805251199
+        }
+      },
+      "verdict": "H_T2",
+      "evidence": "EMPIRICAL"
+    },
+    "D4_abduction_sign_pattern": {
+      "rationale": "relative-abduction channels of adjacent metacarpals must be negatively coupled to the MCP flexion of the metacarpals they span, and all four same-finger MCP/PIP flexion pairs must co-flex positively; a naming that requires a negative same-finger MCP-PIP correlation is anatomically indefensible",
+      "per_hypothesis": {
+        "H_GUIDE": {
+          "abduction_to_spanned_MCP_flexion": [
+            {
+              "abduction": "MCP2-3_A",
+              "abd_col": 5,
+              "partner": "MCP2_F",
+              "col": 4,
+              "r": -0.6004158904645663
+            },
+            {
+              "abduction": "MCP2-3_A",
+              "abd_col": 5,
+              "partner": "MCP3_F",
+              "col": 7,
+              "r": 0.8197895281112113
+            },
+            {
+              "abduction": "MCP3-4_A",
+              "abd_col": 10,
+              "partner": "MCP3_F",
+              "col": 7,
+              "r": 0.8896616447391864
+            },
+            {
+              "abduction": "MCP3-4_A",
+              "abd_col": 10,
+              "partner": "MCP4_F",
+              "col": 9,
+              "r": -0.46612424447702977
+            },
+            {
+              "abduction": "MCP4-5_A",
+              "abd_col": 14,
+              "partner": "MCP4_F",
+              "col": 9,
+              "r": -0.21857707077559455
+            },
+            {
+              "abduction": "MCP4-5_A",
+              "abd_col": 14,
+              "partner": "MCP5_F",
+              "col": 13,
+              "r": -0.7952631300893104
+            }
+          ],
+          "n_negative": 4,
+          "n_pairs": 6,
+          "same_finger_MCP_PIP": [
+            {
+              "finger": 2,
+              "r": -0.132843664190627
+            },
+            {
+              "finger": 3,
+              "r": 0.3154105436006948
+            },
+            {
+              "finger": 4,
+              "r": 0.02567297553249332
+            },
+            {
+              "finger": 5,
+              "r": -0.43096758816999786
+            }
+          ],
+          "n_positive_of_4": 2,
+          "min_same_finger_r": -0.43096758816999786
+        },
+        "H_T2": {
+          "abduction_to_spanned_MCP_flexion": [
+            {
+              "abduction": "MCP2-3_A",
+              "abd_col": 4,
+              "partner": "MCP2_F",
+              "col": 5,
+              "r": -0.6004158904645663
+            },
+            {
+              "abduction": "MCP2-3_A",
+              "abd_col": 4,
+              "partner": "MCP3_F",
+              "col": 7,
+              "r": -0.4861091050186132
+            },
+            {
+              "abduction": "MCP3-4_A",
+              "abd_col": 9,
+              "partner": "MCP3_F",
+              "col": 7,
+              "r": -0.47737022109758226
+            },
+            {
+              "abduction": "MCP3-4_A",
+              "abd_col": 9,
+              "partner": "MCP4_F",
+              "col": 10,
+              "r": -0.46612424447702977
+            },
+            {
+              "abduction": "MCP4-5_A",
+              "abd_col": 13,
+              "partner": "MCP4_F",
+              "col": 10,
+              "r": -0.6380544274397039
+            },
+            {
+              "abduction": "MCP4-5_A",
+              "abd_col": 13,
+              "partner": "MCP5_F",
+              "col": 14,
+              "r": -0.7952631300893104
+            }
+          ],
+          "n_negative": 6,
+          "n_pairs": 6,
+          "same_finger_MCP_PIP": [
+            {
+              "finger": 2,
+              "r": 0.19324351574363144
+            },
+            {
+              "finger": 3,
+              "r": 0.3154105436006948
+            },
+            {
+              "finger": 4,
+              "r": 0.48736089151962375
+            },
+            {
+              "finger": 5,
+              "r": 0.5574320755545149
+            }
+          ],
+          "n_positive_of_4": 4,
+          "min_same_finger_r": 0.19324351574363144
+        }
+      },
+      "verdict": "H_T2",
+      "evidence": "EMPIRICAL"
+    }
+  },
+  "resolved_order": "H_T2",
+  "resolved_order_names": [
+    "CMC1_A",
+    "CMC1_F",
+    "MCP1_F",
+    "IP1_F",
+    "MCP2-3_A",
+    "MCP2_F",
+    "PIP2_F",
+    "MCP3_F",
+    "PIP3_F",
+    "MCP3-4_A",
+    "MCP4_F",
+    "PIP4_F",
+    "PalmArch",
+    "MCP4-5_A",
+    "MCP5_F",
+    "PIP5_F",
+    "WR_F",
+    "WR_A"
+  ],
+  "per_index_table": [
+    {
+      "shared10_position": 1,
+      "index": 0,
+      "intended_anatomical_dof": "thumb_cmc_flexion",
+      "intended_uji_name": "CMC1_F",
+      "column_name_if_GUIDE_order": "CMC1_F",
+      "column_name_if_T2_order": "CMC1_A",
+      "actual_dof_under_resolved_order": "CMC1_A",
+      "match": false,
+      "unit": "deg",
+      "joint": "thumb CMC",
+      "motion": "abduction",
+      "digit": "1",
+      "sign": "abduction + / adduction -",
+      "measured_or_derived": "measured (transpose mix of the same two gauges)",
+      "zero": "mean of the recorded reference posture",
+      "confidence": "NONE",
+      "evidence": "EMPIRICAL",
+      "evidence_location": "KIN-MUS 2019 paper Table 2 (p.7, x=158.9, monotone y) + scripts/03_shared10_provenance.py"
+    },
+    {
+      "shared10_position": 2,
+      "index": 2,
+      "intended_anatomical_dof": "thumb_mcp_flexion",
+      "intended_uji_name": "MCP1_F",
+      "column_name_if_GUIDE_order": "MCP1_F",
+      "column_name_if_T2_order": "MCP1_F",
+      "actual_dof_under_resolved_order": "MCP1_F",
+      "match": true,
+      "unit": "deg",
+      "joint": "thumb MCP",
+      "motion": "flexion",
+      "digit": "1",
+      "sign": "flexion + / extension -",
+      "measured_or_derived": "measured",
+      "zero": "reference posture",
+      "confidence": "HIGH",
+      "evidence": "INFERENCE",
+      "evidence_location": "KIN-MUS 2019 paper Table 2 (p.7, x=158.9, monotone y) + scripts/03_shared10_provenance.py"
+    },
+    {
+      "shared10_position": 3,
+      "index": 4,
+      "intended_anatomical_dof": "index_mcp_flexion",
+      "intended_uji_name": "MCP2_F",
+      "column_name_if_GUIDE_order": "MCP2_F",
+      "column_name_if_T2_order": "MCP2-3_A",
+      "actual_dof_under_resolved_order": "MCP2-3_A",
+      "match": false,
+      "unit": "deg",
+      "joint": "index-middle metacarpals",
+      "motion": "relative abduction",
+      "digit": "2-3",
+      "sign": "separated + / together -",
+      "measured_or_derived": "measured (linear + quadratic + interaction model in the MCP2 and MCP3 flexion gauges)",
+      "zero": "reference posture",
+      "confidence": "NONE",
+      "evidence": "EMPIRICAL",
+      "evidence_location": "KIN-MUS 2019 paper Table 2 (p.7, x=158.9, monotone y) + scripts/03_shared10_provenance.py"
+    },
+    {
+      "shared10_position": 4,
+      "index": 6,
+      "intended_anatomical_dof": "index_pip_flexion",
+      "intended_uji_name": "PIP2_F",
+      "column_name_if_GUIDE_order": "PIP2_F",
+      "column_name_if_T2_order": "PIP2_F",
+      "actual_dof_under_resolved_order": "PIP2_F",
+      "match": true,
+      "unit": "deg",
+      "joint": "index PIP",
+      "motion": "flexion",
+      "digit": "2",
+      "sign": "flexion + / extension -",
+      "measured_or_derived": "measured",
+      "zero": "reference posture",
+      "confidence": "HIGH",
+      "evidence": "INFERENCE",
+      "evidence_location": "KIN-MUS 2019 paper Table 2 (p.7, x=158.9, monotone y) + scripts/03_shared10_provenance.py"
+    },
+    {
+      "shared10_position": 5,
+      "index": 7,
+      "intended_anatomical_dof": "middle_mcp_flexion",
+      "intended_uji_name": "MCP3_F",
+      "column_name_if_GUIDE_order": "MCP3_F",
+      "column_name_if_T2_order": "MCP3_F",
+      "actual_dof_under_resolved_order": "MCP3_F",
+      "match": true,
+      "unit": "deg",
+      "joint": "middle MCP",
+      "motion": "flexion",
+      "digit": "3",
+      "sign": "flexion + / extension -",
+      "measured_or_derived": "measured",
+      "zero": "reference posture",
+      "confidence": "HIGH",
+      "evidence": "INFERENCE",
+      "evidence_location": "KIN-MUS 2019 paper Table 2 (p.7, x=158.9, monotone y) + scripts/03_shared10_provenance.py"
+    },
+    {
+      "shared10_position": 6,
+      "index": 8,
+      "intended_anatomical_dof": "middle_pip_flexion",
+      "intended_uji_name": "PIP3_F",
+      "column_name_if_GUIDE_order": "PIP3_F",
+      "column_name_if_T2_order": "PIP3_F",
+      "actual_dof_under_resolved_order": "PIP3_F",
+      "match": true,
+      "unit": "deg",
+      "joint": "middle PIP",
+      "motion": "flexion",
+      "digit": "3",
+      "sign": "flexion + / extension -",
+      "measured_or_derived": "measured",
+      "zero": "reference posture",
+      "confidence": "HIGH",
+      "evidence": "INFERENCE",
+      "evidence_location": "KIN-MUS 2019 paper Table 2 (p.7, x=158.9, monotone y) + scripts/03_shared10_provenance.py"
+    },
+    {
+      "shared10_position": 7,
+      "index": 9,
+      "intended_anatomical_dof": "ring_mcp_flexion",
+      "intended_uji_name": "MCP4_F",
+      "column_name_if_GUIDE_order": "MCP4_F",
+      "column_name_if_T2_order": "MCP3-4_A",
+      "actual_dof_under_resolved_order": "MCP3-4_A",
+      "match": false,
+      "unit": "deg",
+      "joint": "middle-ring metacarpals",
+      "motion": "relative abduction",
+      "digit": "3-4",
+      "sign": "separated + / together -",
+      "measured_or_derived": "measured (same model form, sign-negated)",
+      "zero": "reference posture",
+      "confidence": "NONE",
+      "evidence": "EMPIRICAL",
+      "evidence_location": "KIN-MUS 2019 paper Table 2 (p.7, x=158.9, monotone y) + scripts/03_shared10_provenance.py"
+    },
+    {
+      "shared10_position": 8,
+      "index": 11,
+      "intended_anatomical_dof": "ring_pip_flexion",
+      "intended_uji_name": "PIP4_F",
+      "column_name_if_GUIDE_order": "PIP4_F",
+      "column_name_if_T2_order": "PIP4_F",
+      "actual_dof_under_resolved_order": "PIP4_F",
+      "match": true,
+      "unit": "deg",
+      "joint": "ring PIP",
+      "motion": "flexion",
+      "digit": "4",
+      "sign": "flexion + / extension -",
+      "measured_or_derived": "measured",
+      "zero": "reference posture",
+      "confidence": "HIGH",
+      "evidence": "INFERENCE",
+      "evidence_location": "KIN-MUS 2019 paper Table 2 (p.7, x=158.9, monotone y) + scripts/03_shared10_provenance.py"
+    },
+    {
+      "shared10_position": 9,
+      "index": 13,
+      "intended_anatomical_dof": "pinky_mcp_flexion",
+      "intended_uji_name": "MCP5_F",
+      "column_name_if_GUIDE_order": "MCP5_F",
+      "column_name_if_T2_order": "MCP4-5_A",
+      "actual_dof_under_resolved_order": "MCP4-5_A",
+      "match": false,
+      "unit": "deg",
+      "joint": "ring-little metacarpals",
+      "motion": "relative abduction",
+      "digit": "4-5",
+      "sign": "separated + / together -",
+      "measured_or_derived": "measured (same model form, sign-negated)",
+      "zero": "reference posture",
+      "confidence": "NONE",
+      "evidence": "EMPIRICAL",
+      "evidence_location": "KIN-MUS 2019 paper Table 2 (p.7, x=158.9, monotone y) + scripts/03_shared10_provenance.py"
+    },
+    {
+      "shared10_position": 10,
+      "index": 15,
+      "intended_anatomical_dof": "pinky_pip_flexion",
+      "intended_uji_name": "PIP5_F",
+      "column_name_if_GUIDE_order": "PIP5_F",
+      "column_name_if_T2_order": "PIP5_F",
+      "actual_dof_under_resolved_order": "PIP5_F",
+      "match": true,
+      "unit": "deg",
+      "joint": "little PIP",
+      "motion": "flexion",
+      "digit": "5",
+      "sign": "flexion + / extension -",
+      "measured_or_derived": "measured",
+      "zero": "reference posture",
+      "confidence": "HIGH",
+      "evidence": "INFERENCE",
+      "evidence_location": "KIN-MUS 2019 paper Table 2 (p.7, x=158.9, monotone y) + scripts/03_shared10_provenance.py"
+    }
+  ],
+  "n_mismatched_of_10": 4,
+  "correct_indices_for_the_intended_10_dofs": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    14,
+    15
+  ],
+  "side_by_side_18": [
+    {
+      "position": 0,
+      "KIN_MUS_2019_Table2": "CMC1_A",
+      "KINE_ADL_guide": "CMC1_F",
+      "MOVMUS_guide_v2_1": "CMC1_F",
+      "same": false
+    },
+    {
+      "position": 1,
+      "KIN_MUS_2019_Table2": "CMC1_F",
+      "KINE_ADL_guide": "CMC1_A",
+      "MOVMUS_guide_v2_1": "CMC1_A",
+      "same": false
+    },
+    {
+      "position": 2,
+      "KIN_MUS_2019_Table2": "MCP1_F",
+      "KINE_ADL_guide": "MCP1_F",
+      "MOVMUS_guide_v2_1": "MCP1_F",
+      "same": true
+    },
+    {
+      "position": 3,
+      "KIN_MUS_2019_Table2": "IP1_F",
+      "KINE_ADL_guide": "IP1_F",
+      "MOVMUS_guide_v2_1": "IP1_F",
+      "same": true
+    },
+    {
+      "position": 4,
+      "KIN_MUS_2019_Table2": "MCP2-3_A",
+      "KINE_ADL_guide": "MCP2_F",
+      "MOVMUS_guide_v2_1": "MCP2_F",
+      "same": false
+    },
+    {
+      "position": 5,
+      "KIN_MUS_2019_Table2": "MCP2_F",
+      "KINE_ADL_guide": "MCP2-3_A",
+      "MOVMUS_guide_v2_1": "MCP2-3_A",
+      "same": false
+    },
+    {
+      "position": 6,
+      "KIN_MUS_2019_Table2": "PIP2_F",
+      "KINE_ADL_guide": "PIP2_F",
+      "MOVMUS_guide_v2_1": "PIP2_F",
+      "same": true
+    },
+    {
+      "position": 7,
+      "KIN_MUS_2019_Table2": "MCP3_F",
+      "KINE_ADL_guide": "MCP3_F",
+      "MOVMUS_guide_v2_1": "MCP3_F",
+      "same": true
+    },
+    {
+      "position": 8,
+      "KIN_MUS_2019_Table2": "PIP3_F",
+      "KINE_ADL_guide": "PIP3_F",
+      "MOVMUS_guide_v2_1": "PIP3_F",
+      "same": true
+    },
+    {
+      "position": 9,
+      "KIN_MUS_2019_Table2": "MCP3-4_A",
+      "KINE_ADL_guide": "MCP4_F",
+      "MOVMUS_guide_v2_1": "MCP4_F",
+      "same": false
+    },
+    {
+      "position": 10,
+      "KIN_MUS_2019_Table2": "MCP4_F",
+      "KINE_ADL_guide": "MCP3-4_A",
+      "MOVMUS_guide_v2_1": "MCP3-4_A",
+      "same": false
+    },
+    {
+      "position": 11,
+      "KIN_MUS_2019_Table2": "PIP4_F",
+      "KINE_ADL_guide": "PIP4_F",
+      "MOVMUS_guide_v2_1": "PIP4_F",
+      "same": true
+    },
+    {
+      "position": 12,
+      "KIN_MUS_2019_Table2": "PalmArch",
+      "KINE_ADL_guide": "PalmArch",
+      "MOVMUS_guide_v2_1": "PalmArch",
+      "same": true
+    },
+    {
+      "position": 13,
+      "KIN_MUS_2019_Table2": "MCP4-5_A",
+      "KINE_ADL_guide": "MCP5_F",
+      "MOVMUS_guide_v2_1": "MCP5_F",
+      "same": false
+    },
+    {
+      "position": 14,
+      "KIN_MUS_2019_Table2": "MCP5_F",
+      "KINE_ADL_guide": "MCP4-5_A",
+      "MOVMUS_guide_v2_1": "MCP4-5_A",
+      "same": false
+    },
+    {
+      "position": 15,
+      "KIN_MUS_2019_Table2": "PIP5_F",
+      "KINE_ADL_guide": "PIP5_F",
+      "MOVMUS_guide_v2_1": "PIP5_F",
+      "same": true
+    },
+    {
+      "position": 16,
+      "KIN_MUS_2019_Table2": "WR_F",
+      "KINE_ADL_guide": "WR_F",
+      "MOVMUS_guide_v2_1": "WR_F",
+      "same": true
+    },
+    {
+      "position": 17,
+      "KIN_MUS_2019_Table2": "WR_A",
+      "KINE_ADL_guide": "WR_A",
+      "MOVMUS_guide_v2_1": "WR_A",
+      "same": true
+    }
+  ],
+  "n_positions_differing": 8,
+  "wrist_sign_conflict": {
+    "KIN_MUS_2019_table3": "WR_A: Radial deviation + / Ulnar deviation -",
+    "KINE_ADL_2019_sign_criteria": "WR_A: Ulnar deviation + / Radial deviation -",
+    "MOVMUS_guide_v2_1_section_4_3": "WR_A: Ulnar deviation + / Radial deviation -",
+    "votes": {
+      "radial_plus": [
+        "KIN-MUS 2019 paper Table 3"
+      ],
+      "ulnar_plus": [
+        "KINE-ADL 2019 paper sign criteria",
+        "MOVMUS-UJI guide v2.1 section 4.3"
+      ]
+    },
+    "KIN_MUS_self_consistency": "the KIN-MUS paper's own Technical Validation says the wrist shows 'a negative median value (ulnar deviation)', which is only consistent with radial+/ulnar- ; the measured median of column 17 is -12.26 deg",
+    "verdict": "DOCUMENTATION_CONFLICT unresolved in one direction. Two of the three official documents, and the sibling KINE-ADL release published the same year, say ulnar+; the KIN-MUS paper says radial+ and its own result text agrees with radial+. The two datasets must therefore NOT be numerically merged on the wrist-deviation channel without an independent anchor.",
+    "evidence": "DOC"
+  },
+  "calibration_code_output_order_22": [
+    "CMC1_f",
+    "CMC1_a",
+    "MCP1",
+    "IP1",
+    "MCP2_f",
+    "MCP2_a",
+    "PIP2",
+    "MCP3_f",
+    "PIP3",
+    "MCP4_f",
+    "MCP4_a",
+    "PIP4",
+    "CMC5",
+    "MCP5_f",
+    "MCP5_a",
+    "PIP5",
+    "DIP2",
+    "DIP3",
+    "DIP4",
+    "DIP5",
+    "WRIST_F",
+    "WRIST_A"
+  ],
+  "calibration_code_to_uji18": {
+    "CMC1_f": "CMC1_F",
+    "CMC1_a": "CMC1_A",
+    "MCP1": "MCP1_F",
+    "IP1": "IP1_F",
+    "MCP2_f": "MCP2_F",
+    "MCP2_a": "MCP2-3_A",
+    "PIP2": "PIP2_F",
+    "MCP3_f": "MCP3_F",
+    "PIP3": "PIP3_F",
+    "MCP4_f": "MCP4_F",
+    "MCP4_a": "MCP3-4_A",
+    "PIP4": "PIP4_F",
+    "CMC5": "PalmArch",
+    "MCP5_f": "MCP5_F",
+    "MCP5_a": "MCP4-5_A",
+    "PIP5": "PIP5_F",
+    "WRIST_F": "WR_F",
+    "WRIST_A": "WR_A"
+  },
+  "why_the_error_happened": "The upstream admission lane named the KIN-MUS release's 18 columns from the MOVMUS-UJI guide v2.1 Table 4. That guide documents the LARGER, LATER MOVMUS-UJI dataset (2023), not the 2019 KIN-MUS release, and its column order differs from the KIN-MUS paper's own Table 2 at 4 of 18 positions. The shared10 indices are correct positions for the guide order and were then applied to an array stored in Table 2 order.",
+  "verdict": "SHARED10-SEMANTIC-MISMATCH",
+  "evidence": "INFERENCE"
+}

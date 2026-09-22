@@ -1,0 +1,2150 @@
+{
+  "artifact": "LARGE_OFFSET_FORENSICS.json",
+  "plan_sha256": "c59fe01370d48aedeed56ef7a4103506d14a298edb794723be3720531edd62c6",
+  "focus_dimensions": [
+    "middle_dip_flexion",
+    "ring_dip_flexion",
+    "pinky_mcp_flexion"
+  ],
+  "channels_analysed": [
+    "index_mcp_flexion",
+    "index_pip_flexion",
+    "index_dip_flexion",
+    "middle_mcp_flexion",
+    "middle_pip_flexion",
+    "middle_dip_flexion",
+    "ring_mcp_flexion",
+    "ring_pip_flexion",
+    "ring_dip_flexion",
+    "pinky_mcp_flexion",
+    "pinky_pip_flexion",
+    "pinky_dip_flexion"
+  ],
+  "db9_channel_of_dimension": {
+    "index_mcp_flexion": "MCP2_f",
+    "index_pip_flexion": "PIP2",
+    "index_dip_flexion": "DIP2",
+    "middle_mcp_flexion": "MCP3_f",
+    "middle_pip_flexion": "PIP3",
+    "middle_dip_flexion": "DIP3",
+    "ring_mcp_flexion": "MCP4_f",
+    "ring_pip_flexion": "PIP4",
+    "ring_dip_flexion": "DIP4",
+    "pinky_mcp_flexion": "MCP5_f",
+    "pinky_pip_flexion": "PIP5",
+    "pinky_dip_flexion": "DIP5"
+  },
+  "db9_reference_movement": {
+    "id": 11,
+    "name": "Wrist supination (axis: little finger)",
+    "documented_role": "the official DB9 calibration reference posture: hand resting on the table, fingers closed together and extended"
+  },
+  "Q_reference_to_fist_channel_test": {
+    "MCP2_f": {
+      "n_extended_anchor_units": 154,
+      "n_flexed_anchor_units": 154,
+      "extended_anchor_median_deg": 8.71401572227478,
+      "flexed_anchor_median_deg": 43.121070861816406,
+      "signed_movement_deg": 34.407055139541626,
+      "per_source": {
+        "DB1": {
+          "signed_movement_deg": 15.325962993431286
+        },
+        "DB2": {
+          "signed_movement_deg": 43.18016767501831
+        },
+        "DB5": {
+          "signed_movement_deg": 22.469416618347168
+        }
+      }
+    },
+    "PIP2": {
+      "n_extended_anchor_units": 154,
+      "n_flexed_anchor_units": 154,
+      "extended_anchor_median_deg": 7.878362655639648,
+      "flexed_anchor_median_deg": 93.94605183715873,
+      "signed_movement_deg": 86.06768918151909,
+      "per_source": {
+        "DB1": {
+          "signed_movement_deg": 24.6661611866125
+        },
+        "DB2": {
+          "signed_movement_deg": 98.48879611492157
+        },
+        "DB5": {
+          "signed_movement_deg": 21.78050136566162
+        }
+      }
+    },
+    "DIP2": {
+      "n_extended_anchor_units": 154,
+      "n_flexed_anchor_units": 154,
+      "extended_anchor_median_deg": 0.34233878552913666,
+      "flexed_anchor_median_deg": 23.791928848502693,
+      "signed_movement_deg": 23.449590062973556,
+      "per_source": {
+        "DB1": {
+          "signed_movement_deg": 8.237828971654563
+        },
+        "DB2": {
+          "signed_movement_deg": 33.29316955571994
+        },
+        "DB5": {
+          "signed_movement_deg": -5.428584739565849
+        }
+      }
+    },
+    "MCP3_f": {
+      "n_extended_anchor_units": 154,
+      "n_flexed_anchor_units": 154,
+      "extended_anchor_median_deg": 6.076037635670362,
+      "flexed_anchor_median_deg": 89.7380313873291,
+      "signed_movement_deg": 83.66199375165874,
+      "per_source": {
+        "DB1": {
+          "signed_movement_deg": 15.071497968815862
+        },
+        "DB2": {
+          "signed_movement_deg": 93.61940681934357
+        },
+        "DB5": {
+          "signed_movement_deg": 5.839072227478027
+        }
+      }
+    },
+    "PIP3": {
+      "n_extended_anchor_units": 154,
+      "n_flexed_anchor_units": 154,
+      "extended_anchor_median_deg": 0.08183486484177088,
+      "flexed_anchor_median_deg": -4.249818882836163,
+      "signed_movement_deg": -4.331653747677934,
+      "per_source": {
+        "DB1": {
+          "signed_movement_deg": -4.413034321469599
+        },
+        "DB2": {
+          "signed_movement_deg": -3.711484879255295
+        },
+        "DB5": {
+          "signed_movement_deg": -7.06916144490242
+        }
+      }
+    },
+    "DIP3": {
+      "n_extended_anchor_units": 154,
+      "n_flexed_anchor_units": 154,
+      "extended_anchor_median_deg": -4.310766521606518,
+      "flexed_anchor_median_deg": -26.24198007583618,
+      "signed_movement_deg": -21.931213554229664,
+      "per_source": {
+        "DB1": {
+          "signed_movement_deg": -3.4497564065185706
+        },
+        "DB2": {
+          "signed_movement_deg": -22.424926280975342
+        },
+        "DB5": {
+          "signed_movement_deg": -10.446809768676758
+        }
+      }
+    },
+    "MCP4_f": {
+      "n_extended_anchor_units": 154,
+      "n_flexed_anchor_units": 154,
+      "extended_anchor_median_deg": 5.762786758709577,
+      "flexed_anchor_median_deg": 75.2636151012855,
+      "signed_movement_deg": 69.50082834257591,
+      "per_source": {
+        "DB1": {
+          "signed_movement_deg": -0.7580565525244936
+        },
+        "DB2": {
+          "signed_movement_deg": 76.45649671554565
+        },
+        "DB5": {
+          "signed_movement_deg": 1.184584617614746
+        }
+      }
+    },
+    "PIP4": {
+      "n_extended_anchor_units": 154,
+      "n_flexed_anchor_units": 154,
+      "extended_anchor_median_deg": 0.5105051100254059,
+      "flexed_anchor_median_deg": 15.342674970626831,
+      "signed_movement_deg": 14.832169860601425,
+      "per_source": {
+        "DB1": {
+          "signed_movement_deg": -9.208364481301192
+        },
+        "DB2": {
+          "signed_movement_deg": 54.288920257706195
+        },
+        "DB5": {
+          "signed_movement_deg": -8.506968438625336
+        }
+      }
+    },
+    "DIP4": {
+      "n_extended_anchor_units": 154,
+      "n_flexed_anchor_units": 154,
+      "extended_anchor_median_deg": -1.6666910423670913,
+      "flexed_anchor_median_deg": -18.703445434570312,
+      "signed_movement_deg": -17.03675439220322,
+      "per_source": {
+        "DB1": {
+          "signed_movement_deg": -2.810688061318814
+        },
+        "DB2": {
+          "signed_movement_deg": -14.661087036132812
+        },
+        "DB5": {
+          "signed_movement_deg": -16.4835205078125
+        }
+      }
+    },
+    "MCP5_f": {
+      "n_extended_anchor_units": 154,
+      "n_flexed_anchor_units": 154,
+      "extended_anchor_median_deg": 8.750308275222778,
+      "flexed_anchor_median_deg": 114.97748947143555,
+      "signed_movement_deg": 106.22718119621277,
+      "per_source": {
+        "DB1": {
+          "signed_movement_deg": -2.6233410148984717
+        },
+        "DB2": {
+          "signed_movement_deg": 116.04832565784454
+        },
+        "DB5": {
+          "signed_movement_deg": -17.926515579223633
+        }
+      }
+    },
+    "PIP5": {
+      "n_extended_anchor_units": 154,
+      "n_flexed_anchor_units": 154,
+      "extended_anchor_median_deg": 2.560887575149536,
+      "flexed_anchor_median_deg": 27.17547109523641,
+      "signed_movement_deg": 24.614583520086875,
+      "per_source": {
+        "DB1": {
+          "signed_movement_deg": 6.5113906059948
+        },
+        "DB2": {
+          "signed_movement_deg": 36.51868039369583
+        },
+        "DB5": {
+          "signed_movement_deg": 1.6225366592407227
+        }
+      }
+    },
+    "DIP5": {
+      "n_extended_anchor_units": 154,
+      "n_flexed_anchor_units": 154,
+      "extended_anchor_median_deg": -2.242117421932132,
+      "flexed_anchor_median_deg": -14.530787944793701,
+      "signed_movement_deg": -12.288670522861569,
+      "per_source": {
+        "DB1": {
+          "signed_movement_deg": -8.768781768911902
+        },
+        "DB2": {
+          "signed_movement_deg": -7.85206800699234
+        },
+        "DB5": {
+          "signed_movement_deg": -12.577164649963379
+        }
+      }
+    }
+  },
+  "K_same_issue_inside_db9_source_subsets": {
+    "index_mcp_flexion": {
+      "DB1": {
+        "n": 5470,
+        "median_deg": 19.64631616136833,
+        "p5_deg": -18.124485197531463,
+        "p95_deg": 68.87346237422534,
+        "min_deg": -50.20750630968148
+      },
+      "DB2": {
+        "n": 4525,
+        "median_deg": 4.110365867614746,
+        "p5_deg": -23.078786659240723,
+        "p95_deg": 66.41551818847657,
+        "min_deg": -71.59822845458984
+      },
+      "DB5": {
+        "n": 1892,
+        "median_deg": 16.41899585723877,
+        "p5_deg": -19.689144229888917,
+        "p95_deg": 75.16950988769531,
+        "min_deg": -52.56816482543945
+      },
+      "db1_vs_db2_median_gap_deg": -15.535950293753583
+    },
+    "index_pip_flexion": {
+      "DB1": {
+        "n": 5470,
+        "median_deg": 28.793610704007886,
+        "p5_deg": -14.678835506950463,
+        "p95_deg": 115.28054219425896,
+        "min_deg": -38.93231466730706
+      },
+      "DB2": {
+        "n": 4525,
+        "median_deg": -0.8430262804031372,
+        "p5_deg": -21.211877059936523,
+        "p95_deg": 120.04493713378908,
+        "min_deg": -60.44635200500488
+      },
+      "DB5": {
+        "n": 1892,
+        "median_deg": 29.300132751464844,
+        "p5_deg": -11.87611198425293,
+        "p95_deg": 118.08018493652344,
+        "min_deg": -23.9268741607666
+      },
+      "db1_vs_db2_median_gap_deg": -29.636636984411023
+    },
+    "index_dip_flexion": {
+      "DB1": {
+        "n": 5470,
+        "median_deg": 1.846934086924254,
+        "p5_deg": -19.894227046591954,
+        "p95_deg": 81.53573548665742,
+        "min_deg": -103.28764682738903
+      },
+      "DB2": {
+        "n": 4525,
+        "median_deg": 1.409828782081604,
+        "p5_deg": -18.385786819458005,
+        "p95_deg": 88.4555892944336,
+        "min_deg": -79.84501647949219
+      },
+      "DB5": {
+        "n": 1892,
+        "median_deg": 0.9204826354980469,
+        "p5_deg": -29.877599716186523,
+        "p95_deg": 79.7802734375,
+        "min_deg": -61.5789680480957
+      },
+      "db1_vs_db2_median_gap_deg": -0.4371053048426501
+    },
+    "middle_mcp_flexion": {
+      "DB1": {
+        "n": 5470,
+        "median_deg": 40.44080697019164,
+        "p5_deg": -8.889697556272695,
+        "p95_deg": 110.20160214135613,
+        "min_deg": -36.36812231404387
+      },
+      "DB2": {
+        "n": 4525,
+        "median_deg": 0.3621496558189392,
+        "p5_deg": -14.57771644592285,
+        "p95_deg": 113.02205047607426,
+        "min_deg": -61.91647720336914
+      },
+      "DB5": {
+        "n": 1892,
+        "median_deg": 44.38741874694824,
+        "p5_deg": -9.882011413574219,
+        "p95_deg": 112.9439468383789,
+        "min_deg": -25.836788177490234
+      },
+      "db1_vs_db2_median_gap_deg": -40.0786573143727
+    },
+    "middle_pip_flexion": {
+      "DB1": {
+        "n": 5470,
+        "median_deg": 1.6662209638108614,
+        "p5_deg": -29.678136877740023,
+        "p95_deg": 55.7648378578896,
+        "min_deg": -106.52462389003668
+      },
+      "DB2": {
+        "n": 4525,
+        "median_deg": 0.5255315899848938,
+        "p5_deg": -38.7703929901123,
+        "p95_deg": 31.697300720214855,
+        "min_deg": -65.62696075439453
+      },
+      "DB5": {
+        "n": 1892,
+        "median_deg": 0.46573105454444885,
+        "p5_deg": -24.55417823791504,
+        "p95_deg": 63.70194568634014,
+        "min_deg": -29.911788940429688
+      },
+      "db1_vs_db2_median_gap_deg": -1.1406893738259676
+    },
+    "middle_dip_flexion": {
+      "DB1": {
+        "n": 5470,
+        "median_deg": -21.246430193048408,
+        "p5_deg": -111.78374833379733,
+        "p95_deg": 21.46440459230938,
+        "min_deg": -212.18014141761842
+      },
+      "DB2": {
+        "n": 4525,
+        "median_deg": -9.364185333251953,
+        "p5_deg": -123.24445495605468,
+        "p95_deg": 27.044950485229492,
+        "min_deg": -268.217529296875
+      },
+      "DB5": {
+        "n": 1892,
+        "median_deg": -35.362281799316406,
+        "p5_deg": -144.26320114135743,
+        "p95_deg": 22.815956115722656,
+        "min_deg": -220.5022430419922
+      },
+      "db1_vs_db2_median_gap_deg": 11.882244859796455
+    },
+    "ring_mcp_flexion": {
+      "DB1": {
+        "n": 5470,
+        "median_deg": 16.110811962754177,
+        "p5_deg": -7.510957767223043,
+        "p95_deg": 70.7310164456723,
+        "min_deg": -38.92160405505378
+      },
+      "DB2": {
+        "n": 4525,
+        "median_deg": 2.465867042541504,
+        "p5_deg": -11.938993453979492,
+        "p95_deg": 103.0076904296875,
+        "min_deg": -63.097633361816406
+      },
+      "DB5": {
+        "n": 1892,
+        "median_deg": 47.882789611816406,
+        "p5_deg": -6.943102490901947,
+        "p95_deg": 107.80217742919922,
+        "min_deg": -17.476999282836914
+      },
+      "db1_vs_db2_median_gap_deg": -13.644944920212673
+    },
+    "ring_pip_flexion": {
+      "DB1": {
+        "n": 5470,
+        "median_deg": 2.1556704346566122,
+        "p5_deg": -51.980556409517085,
+        "p95_deg": 99.24200848237662,
+        "min_deg": -155.5560983411006
+      },
+      "DB2": {
+        "n": 4525,
+        "median_deg": 2.9136383533477783,
+        "p5_deg": -42.73455810546875,
+        "p95_deg": 120.53622283935553,
+        "min_deg": -78.22154998779297
+      },
+      "DB5": {
+        "n": 1892,
+        "median_deg": 2.3782951831817627,
+        "p5_deg": -52.43162155151367,
+        "p95_deg": 110.67217445373535,
+        "min_deg": -58.21273422241211
+      },
+      "db1_vs_db2_median_gap_deg": 0.7579679186911661
+    },
+    "ring_dip_flexion": {
+      "DB1": {
+        "n": 5470,
+        "median_deg": -29.667671635515433,
+        "p5_deg": -194.0724462038379,
+        "p95_deg": 26.436867873818073,
+        "min_deg": -324.5605644335096
+      },
+      "DB2": {
+        "n": 4525,
+        "median_deg": -6.016876220703125,
+        "p5_deg": -175.64825439453125,
+        "p95_deg": 52.12760620117192,
+        "min_deg": -306.8903503417969
+      },
+      "DB5": {
+        "n": 1892,
+        "median_deg": -29.252517700195312,
+        "p5_deg": -205.32799224853514,
+        "p95_deg": 23.133776855468714,
+        "min_deg": -316.2848815917969
+      },
+      "db1_vs_db2_median_gap_deg": 23.650795414812308
+    },
+    "pinky_mcp_flexion": {
+      "DB1": {
+        "n": 5470,
+        "median_deg": 56.22419977515047,
+        "p5_deg": -12.852945680986233,
+        "p95_deg": 145.64748248707554,
+        "min_deg": -43.76210589130181
+      },
+      "DB2": {
+        "n": 4525,
+        "median_deg": 4.188319683074951,
+        "p5_deg": -17.37486877441406,
+        "p95_deg": 146.43600158691407,
+        "min_deg": -78.26686096191406
+      },
+      "DB5": {
+        "n": 1892,
+        "median_deg": 54.12349510192871,
+        "p5_deg": -11.287716579437253,
+        "p95_deg": 141.56387329101562,
+        "min_deg": -35.5038948059082
+      },
+      "db1_vs_db2_median_gap_deg": -52.035880092075516
+    },
+    "pinky_pip_flexion": {
+      "DB1": {
+        "n": 5470,
+        "median_deg": 7.537426380877149,
+        "p5_deg": -5.828479109122852,
+        "p95_deg": 76.92297260830676,
+        "min_deg": -37.77709040375504
+      },
+      "DB2": {
+        "n": 4525,
+        "median_deg": 3.1592118740081787,
+        "p5_deg": -7.470380592346191,
+        "p95_deg": 70.59737091064453,
+        "min_deg": -77.0898208618164
+      },
+      "DB5": {
+        "n": 1892,
+        "median_deg": 6.081246376037598,
+        "p5_deg": -6.850503945350645,
+        "p95_deg": 75.62725830078125,
+        "min_deg": -73.22312927246094
+      },
+      "db1_vs_db2_median_gap_deg": -4.378214506868971
+    },
+    "pinky_dip_flexion": {
+      "DB1": {
+        "n": 5470,
+        "median_deg": -11.375996544407629,
+        "p5_deg": -60.16646155292114,
+        "p95_deg": 14.538425764172404,
+        "min_deg": -131.35478818021875
+      },
+      "DB2": {
+        "n": 4525,
+        "median_deg": -4.3052849769592285,
+        "p5_deg": -63.418449783325194,
+        "p95_deg": 23.30388870239261,
+        "min_deg": -141.19448852539062
+      },
+      "DB5": {
+        "n": 1892,
+        "median_deg": -16.887962341308594,
+        "p5_deg": -71.99651336669922,
+        "p95_deg": 15.165257024765,
+        "min_deg": -124.4150619506836
+      },
+      "db1_vs_db2_median_gap_deg": 7.0707115674484005
+    }
+  },
+  "A_B_J_complement_and_constancy": {
+    "index_mcp_flexion": {
+      "quantile_levels": [
+        5,
+        25,
+        50,
+        75,
+        95
+      ],
+      "db9_quantiles_deg": [
+        -20.45514709242708,
+        -3.9676933208839547,
+        12.426104294593319,
+        38.70537559139067,
+        69.4263877868652
+      ],
+      "emg2pose_quantiles_deg": [
+        -15.991940765101704,
+        0.24273625863376502,
+        16.962420487663472,
+        38.247237399110304,
+        64.17832105855484
+      ],
+      "quantile_differences_deg": [
+        4.463206327325375,
+        4.21042957951772,
+        4.536316193070153,
+        -0.4581381922803658,
+        -5.248066728310363
+      ],
+      "difference_range_deg": 9.784382921380516,
+      "offset_is_constant_across_quantiles": true,
+      "iqr_qq_slope_emg_over_db9": 0.8905968590776653,
+      "complement_tests": {
+        "db9_to_pi_minus_median_deg": 167.57389570540667,
+        "emg_median_deg": 16.962420487663472,
+        "distance_to_pi_complement_deg": 150.6114752177432,
+        "db9_to_pi_over_2_minus_median_deg": 77.57389570540668,
+        "distance_to_pi_over_2_complement_deg": 60.61147521774321,
+        "db9_median_minus_pi_over_2_deg": -77.57389570540668,
+        "distance_to_negative_pi_over_2_deg": 94.53631619307015
+      }
+    },
+    "index_pip_flexion": {
+      "quantile_levels": [
+        5,
+        25,
+        50,
+        75,
+        95
+      ],
+      "db9_quantiles_deg": [
+        -16.59748531794275,
+        -4.130224391301617,
+        4.768233857786375,
+        59.78458878915772,
+        118.15333727363468
+      ],
+      "emg2pose_quantiles_deg": [
+        -4.99999985454646,
+        2.6325514341441107,
+        26.477868647789116,
+        55.906957021782254,
+        112.85692320341319
+      ],
+      "quantile_differences_deg": [
+        11.59748546339629,
+        6.762775825445727,
+        21.70963479000274,
+        -3.877631767375469,
+        -5.296414070221488
+      ],
+      "difference_range_deg": 27.00604886022423,
+      "offset_is_constant_across_quantiles": false,
+      "iqr_qq_slope_emg_over_db9": 0.8335220418656518,
+      "complement_tests": {
+        "db9_to_pi_minus_median_deg": 175.23176614221362,
+        "emg_median_deg": 26.477868647789116,
+        "distance_to_pi_complement_deg": 148.7538974944245,
+        "db9_to_pi_over_2_minus_median_deg": 85.23176614221363,
+        "distance_to_pi_over_2_complement_deg": 58.753897494424514,
+        "db9_median_minus_pi_over_2_deg": -85.23176614221363,
+        "distance_to_negative_pi_over_2_deg": 111.70963479000275
+      }
+    },
+    "index_dip_flexion": {
+      "quantile_levels": [
+        5,
+        25,
+        50,
+        75,
+        95
+      ],
+      "db9_quantiles_deg": [
+        -21.618160247802734,
+        -5.548158449072574,
+        1.4835333228111267,
+        16.9639530228324,
+        83.0004041064011
+      ],
+      "emg2pose_quantiles_deg": [
+        -4.999989182375883,
+        3.3953661705581752,
+        10.928304806454516,
+        21.3592591432108,
+        54.377236607150714
+      ],
+      "quantile_differences_deg": [
+        16.61817106542685,
+        8.943524619630749,
+        9.44477148364339,
+        4.3953061203784,
+        -28.623167499250393
+      ],
+      "difference_range_deg": 45.24133856467724,
+      "offset_is_constant_across_quantiles": false,
+      "iqr_qq_slope_emg_over_db9": 0.7979657081509876,
+      "complement_tests": {
+        "db9_to_pi_minus_median_deg": 178.51646667718887,
+        "emg_median_deg": 10.928304806454516,
+        "distance_to_pi_complement_deg": 167.58816187073435,
+        "db9_to_pi_over_2_minus_median_deg": 88.51646667718887,
+        "distance_to_pi_over_2_complement_deg": 77.58816187073435,
+        "db9_median_minus_pi_over_2_deg": -88.51646667718887,
+        "distance_to_negative_pi_over_2_deg": 99.4447714836434
+      }
+    },
+    "middle_mcp_flexion": {
+      "quantile_levels": [
+        5,
+        25,
+        50,
+        75,
+        95
+      ],
+      "db9_quantiles_deg": [
+        -11.54704475402832,
+        -2.328523413111129,
+        13.294962882995605,
+        68.78842549118934,
+        111.57155380249017
+      ],
+      "emg2pose_quantiles_deg": [
+        -19.019768149168684,
+        -2.4050392736340145,
+        20.66983863140993,
+        50.36983450600058,
+        74.24396878934589
+      ],
+      "quantile_differences_deg": [
+        -7.472723395140363,
+        -0.0765158605228855,
+        7.3748757484143255,
+        -18.418590985188764,
+        -37.32758501314429
+      ],
+      "difference_range_deg": 44.70246076155861,
+      "offset_is_constant_across_quantiles": false,
+      "iqr_qq_slope_emg_over_db9": 0.7420857417639197,
+      "complement_tests": {
+        "db9_to_pi_minus_median_deg": 166.7050371170044,
+        "emg_median_deg": 20.66983863140993,
+        "distance_to_pi_complement_deg": 146.03519848559446,
+        "db9_to_pi_over_2_minus_median_deg": 76.7050371170044,
+        "distance_to_pi_over_2_complement_deg": 56.035198485594464,
+        "db9_median_minus_pi_over_2_deg": -76.7050371170044,
+        "distance_to_negative_pi_over_2_deg": 97.37487574841433
+      }
+    },
+    "middle_pip_flexion": {
+      "quantile_levels": [
+        5,
+        25,
+        50,
+        75,
+        95
+      ],
+      "db9_quantiles_deg": [
+        -30.15137901306152,
+        -5.526736259460449,
+        1.0216737985610962,
+        8.674968537575221,
+        50.91542757658064
+      ],
+      "emg2pose_quantiles_deg": [
+        -2.1976196086713906,
+        10.319878812265774,
+        39.31125792839323,
+        68.05127498400682,
+        99.22760070901536
+      ],
+      "quantile_differences_deg": [
+        27.953759404390127,
+        15.846615071726223,
+        38.289584129832136,
+        59.3763064464316,
+        48.31217313243472
+      ],
+      "difference_range_deg": 43.52969137470538,
+      "offset_is_constant_across_quantiles": false,
+      "iqr_qq_slope_emg_over_db9": 4.06510323914009,
+      "complement_tests": {
+        "db9_to_pi_minus_median_deg": 178.9783262014389,
+        "emg_median_deg": 39.31125792839323,
+        "distance_to_pi_complement_deg": 139.6670682730457,
+        "db9_to_pi_over_2_minus_median_deg": 88.9783262014389,
+        "distance_to_pi_over_2_complement_deg": 49.66706827304567,
+        "db9_median_minus_pi_over_2_deg": -88.9783262014389,
+        "distance_to_negative_pi_over_2_deg": 128.28958412983212
+      }
+    },
+    "middle_dip_flexion": {
+      "quantile_levels": [
+        5,
+        25,
+        50,
+        75,
+        95
+      ],
+      "db9_quantiles_deg": [
+        -122.66197966729243,
+        -53.75599671059064,
+        -19.267545700073242,
+        4.4439563923358545,
+        24.654924392700195
+      ],
+      "emg2pose_quantiles_deg": [
+        1.6723159227842193,
+        9.287368080058233,
+        20.805709023248056,
+        39.44710526834291,
+        87.01160349730083
+      ],
+      "quantile_differences_deg": [
+        124.33429559007665,
+        63.043364790648866,
+        40.0732547233213,
+        35.00314887600705,
+        62.35667910460063
+      ],
+      "difference_range_deg": 89.3311467140696,
+      "offset_is_constant_across_quantiles": false,
+      "iqr_qq_slope_emg_over_db9": 0.5182089603224808,
+      "complement_tests": {
+        "db9_to_pi_minus_median_deg": 199.26754570007324,
+        "emg_median_deg": 20.805709023248056,
+        "distance_to_pi_complement_deg": 178.4618366768252,
+        "db9_to_pi_over_2_minus_median_deg": 109.26754570007324,
+        "distance_to_pi_over_2_complement_deg": 88.46183667682519,
+        "db9_median_minus_pi_over_2_deg": -109.26754570007324,
+        "distance_to_negative_pi_over_2_deg": 130.0732547233213
+      }
+    },
+    "ring_mcp_flexion": {
+      "quantile_levels": [
+        5,
+        25,
+        50,
+        75,
+        95
+      ],
+      "db9_quantiles_deg": [
+        -9.463076274255688,
+        -1.2464600859779402,
+        14.106969777016497,
+        50.745331086289866,
+        99.70631747010576
+      ],
+      "emg2pose_quantiles_deg": [
+        -21.329206310862745,
+        -2.8803003245870444,
+        19.20236138917529,
+        48.56159144211119,
+        72.45573544764896
+      ],
+      "quantile_differences_deg": [
+        -11.866130036607057,
+        -1.6338402386091042,
+        5.095391612158794,
+        -2.1837396441786794,
+        -27.250582022456797
+      ],
+      "difference_range_deg": 32.34597363461559,
+      "offset_is_constant_across_quantiles": false,
+      "iqr_qq_slope_emg_over_db9": 0.9894233417781749,
+      "complement_tests": {
+        "db9_to_pi_minus_median_deg": 165.8930302229835,
+        "emg_median_deg": 19.20236138917529,
+        "distance_to_pi_complement_deg": 146.69066883380822,
+        "db9_to_pi_over_2_minus_median_deg": 75.8930302229835,
+        "distance_to_pi_over_2_complement_deg": 56.6906688338082,
+        "db9_median_minus_pi_over_2_deg": -75.8930302229835,
+        "distance_to_negative_pi_over_2_deg": 95.09539161215879
+      }
+    },
+    "ring_pip_flexion": {
+      "quantile_levels": [
+        5,
+        25,
+        50,
+        75,
+        95
+      ],
+      "db9_quantiles_deg": [
+        -49.78732465347751,
+        -12.629117965698242,
+        2.4558869043711278,
+        22.265719265801085,
+        108.64009557740545
+      ],
+      "emg2pose_quantiles_deg": [
+        -4.99999985454646,
+        7.502627483659442,
+        43.07807310470942,
+        74.14090260080823,
+        101.1385520595299
+      ],
+      "quantile_differences_deg": [
+        44.78732479893105,
+        20.131745449357684,
+        40.62218620033829,
+        51.87518333500715,
+        -7.501543517875547
+      ],
+      "difference_range_deg": 59.3767268528827,
+      "offset_is_constant_across_quantiles": false,
+      "iqr_qq_slope_emg_over_db9": 1.909688664688623,
+      "complement_tests": {
+        "db9_to_pi_minus_median_deg": 177.54411309562886,
+        "emg_median_deg": 43.07807310470942,
+        "distance_to_pi_complement_deg": 134.46603999091946,
+        "db9_to_pi_over_2_minus_median_deg": 87.54411309562887,
+        "distance_to_pi_over_2_complement_deg": 44.466039990919455,
+        "db9_median_minus_pi_over_2_deg": -87.54411309562887,
+        "distance_to_negative_pi_over_2_deg": 130.6221862003383
+      }
+    },
+    "ring_dip_flexion": {
+      "quantile_levels": [
+        5,
+        25,
+        50,
+        75,
+        95
+      ],
+      "db9_quantiles_deg": [
+        -189.18006591796873,
+        -62.20929718017578,
+        -19.868573288576044,
+        4.319418010178083,
+        37.33021101979233
+      ],
+      "emg2pose_quantiles_deg": [
+        -4.828489108732386,
+        4.142507703900323,
+        16.835649615347098,
+        31.05706140134474,
+        78.27262609768367
+      ],
+      "quantile_differences_deg": [
+        184.35157680923635,
+        66.3518048840761,
+        36.70422290392314,
+        26.737643391166657,
+        40.94241507789134
+      ],
+      "difference_range_deg": 157.61393341806968,
+      "offset_is_constant_across_quantiles": false,
+      "iqr_qq_slope_emg_over_db9": 0.40455544076622746,
+      "complement_tests": {
+        "db9_to_pi_minus_median_deg": 199.86857328857604,
+        "emg_median_deg": 16.835649615347098,
+        "distance_to_pi_complement_deg": 183.03292367322894,
+        "db9_to_pi_over_2_minus_median_deg": 109.86857328857604,
+        "distance_to_pi_over_2_complement_deg": 93.03292367322895,
+        "db9_median_minus_pi_over_2_deg": -109.86857328857604,
+        "distance_to_negative_pi_over_2_deg": 126.70422290392314
+      }
+    },
+    "pinky_mcp_flexion": {
+      "quantile_levels": [
+        5,
+        25,
+        50,
+        75,
+        95
+      ],
+      "db9_quantiles_deg": [
+        -15.016029655817066,
+        -0.8929084539413452,
+        40.94264821937131,
+        106.19243807456331,
+        145.36301471626564
+      ],
+      "emg2pose_quantiles_deg": [
+        -29.875833801376018,
+        -5.686624897986091,
+        17.34558897745931,
+        54.185737398107996,
+        75.49949416257762
+      ],
+      "quantile_differences_deg": [
+        -14.859804145558952,
+        -4.793716444044746,
+        -23.597059241911996,
+        -52.00670067645532,
+        -69.86352055368802
+      ],
+      "difference_range_deg": 65.06980410964327,
+      "offset_is_constant_across_quantiles": false,
+      "iqr_qq_slope_emg_over_db9": 0.559108825222477,
+      "complement_tests": {
+        "db9_to_pi_minus_median_deg": 139.0573517806287,
+        "emg_median_deg": 17.34558897745931,
+        "distance_to_pi_complement_deg": 121.71176280316938,
+        "db9_to_pi_over_2_minus_median_deg": 49.05735178062869,
+        "distance_to_pi_over_2_complement_deg": 31.711762803169382,
+        "db9_median_minus_pi_over_2_deg": -49.05735178062869,
+        "distance_to_negative_pi_over_2_deg": 66.40294075808801
+      }
+    },
+    "pinky_pip_flexion": {
+      "quantile_levels": [
+        5,
+        25,
+        50,
+        75,
+        95
+      ],
+      "db9_quantiles_deg": [
+        -6.61239239621283,
+        -0.3363434672355652,
+        5.082352161407471,
+        23.83817195892334,
+        75.1595784528697
+      ],
+      "emg2pose_quantiles_deg": [
+        0.9420405437494686,
+        13.115470330353528,
+        26.926573656444873,
+        46.65445065413459,
+        98.09137415190261
+      ],
+      "quantile_differences_deg": [
+        7.5544329399622985,
+        13.451813797589093,
+        21.844221495037402,
+        22.816278695211253,
+        22.931795699032918
+      ],
+      "difference_range_deg": 15.37736275907062,
+      "offset_is_constant_across_quantiles": false,
+      "iqr_qq_slope_emg_over_db9": 1.38736929086442,
+      "complement_tests": {
+        "db9_to_pi_minus_median_deg": 174.91764783859253,
+        "emg_median_deg": 26.926573656444873,
+        "distance_to_pi_complement_deg": 147.99107418214766,
+        "db9_to_pi_over_2_minus_median_deg": 84.91764783859253,
+        "distance_to_pi_over_2_complement_deg": 57.991074182147656,
+        "db9_median_minus_pi_over_2_deg": -84.91764783859253,
+        "distance_to_negative_pi_over_2_deg": 111.8442214950374
+      }
+    },
+    "pinky_dip_flexion": {
+      "quantile_levels": [
+        5,
+        25,
+        50,
+        75,
+        95
+      ],
+      "db9_quantiles_deg": [
+        -64.4351821899414,
+        -25.13239097595215,
+        -9.557300567626953,
+        2.473190293946359,
+        18.63312339782715
+      ],
+      "emg2pose_quantiles_deg": [
+        -5.0007029371441485,
+        -3.1861179892495457,
+        5.61530577022011,
+        24.514885940705796,
+        81.06570696629852
+      ],
+      "quantile_differences_deg": [
+        59.43447925279725,
+        21.946272986702603,
+        15.172606337847064,
+        22.041695646759436,
+        62.43258356847137
+      ],
+      "difference_range_deg": 47.25997723062431,
+      "offset_is_constant_across_quantiles": false,
+      "iqr_qq_slope_emg_over_db9": 1.0034566437534458,
+      "complement_tests": {
+        "db9_to_pi_minus_median_deg": 189.55730056762695,
+        "emg_median_deg": 5.61530577022011,
+        "distance_to_pi_complement_deg": 183.94199479740684,
+        "db9_to_pi_over_2_minus_median_deg": 99.55730056762695,
+        "distance_to_pi_over_2_complement_deg": 93.94199479740685,
+        "db9_median_minus_pi_over_2_deg": -99.55730056762695,
+        "distance_to_negative_pi_over_2_deg": 105.17260633784706
+      }
+    }
+  },
+  "F_wrapping": {
+    "index_mcp_flexion": {
+      "span_deg": 173.35205857729505,
+      "exceeds_one_turn": false,
+      "has_values_beyond_pm_180": false,
+      "n_beyond_pm_180": 0,
+      "n_beyond_pm_360": 0,
+      "min_deg": -71.59822845458984,
+      "max_deg": 101.75383012270521
+    },
+    "index_pip_flexion": {
+      "span_deg": 211.7657642364502,
+      "exceeds_one_turn": false,
+      "has_values_beyond_pm_180": false,
+      "n_beyond_pm_180": 0,
+      "n_beyond_pm_360": 0,
+      "min_deg": -60.44635200500488,
+      "max_deg": 151.3194122314453
+    },
+    "index_dip_flexion": {
+      "span_deg": 311.6232333752406,
+      "exceeds_one_turn": false,
+      "has_values_beyond_pm_180": true,
+      "n_beyond_pm_180": 22,
+      "n_beyond_pm_360": 0,
+      "min_deg": -103.28764682738903,
+      "max_deg": 208.33558654785156
+    },
+    "middle_mcp_flexion": {
+      "span_deg": 210.6874122619629,
+      "exceeds_one_turn": false,
+      "has_values_beyond_pm_180": false,
+      "n_beyond_pm_180": 0,
+      "n_beyond_pm_360": 0,
+      "min_deg": -61.91647720336914,
+      "max_deg": 148.77093505859375
+    },
+    "middle_pip_flexion": {
+      "span_deg": 223.57868577968512,
+      "exceeds_one_turn": false,
+      "has_values_beyond_pm_180": false,
+      "n_beyond_pm_180": 0,
+      "n_beyond_pm_360": 0,
+      "min_deg": -106.52462389003668,
+      "max_deg": 117.05406188964844
+    },
+    "middle_dip_flexion": {
+      "span_deg": 356.4462891903531,
+      "exceeds_one_turn": false,
+      "has_values_beyond_pm_180": true,
+      "n_beyond_pm_180": 38,
+      "n_beyond_pm_360": 0,
+      "min_deg": -268.217529296875,
+      "max_deg": 88.22875989347816
+    },
+    "ring_mcp_flexion": {
+      "span_deg": 201.31004944060356,
+      "exceeds_one_turn": false,
+      "has_values_beyond_pm_180": false,
+      "n_beyond_pm_180": 0,
+      "n_beyond_pm_360": 0,
+      "min_deg": -63.097633361816406,
+      "max_deg": 138.21241607878716
+    },
+    "ring_pip_flexion": {
+      "span_deg": 452.4982064953975,
+      "exceeds_one_turn": true,
+      "has_values_beyond_pm_180": true,
+      "n_beyond_pm_180": 52,
+      "n_beyond_pm_360": 0,
+      "min_deg": -155.5560983411006,
+      "max_deg": 296.9421081542969
+    },
+    "ring_dip_flexion": {
+      "span_deg": 453.77951279776744,
+      "exceeds_one_turn": true,
+      "has_values_beyond_pm_180": true,
+      "n_beyond_pm_180": 696,
+      "n_beyond_pm_360": 0,
+      "min_deg": -324.5605644335096,
+      "max_deg": 129.2189483642578
+    },
+    "pinky_mcp_flexion": {
+      "span_deg": 262.68946779135854,
+      "exceeds_one_turn": false,
+      "has_values_beyond_pm_180": true,
+      "n_beyond_pm_180": 3,
+      "n_beyond_pm_360": 0,
+      "min_deg": -78.26686096191406,
+      "max_deg": 184.4226068294445
+    },
+    "pinky_pip_flexion": {
+      "span_deg": 227.1242904663086,
+      "exceeds_one_turn": false,
+      "has_values_beyond_pm_180": false,
+      "n_beyond_pm_180": 0,
+      "n_beyond_pm_360": 0,
+      "min_deg": -77.0898208618164,
+      "max_deg": 150.0344696044922
+    },
+    "pinky_dip_flexion": {
+      "span_deg": 194.60103225708008,
+      "exceeds_one_turn": false,
+      "has_values_beyond_pm_180": false,
+      "n_beyond_pm_180": 0,
+      "n_beyond_pm_360": 0,
+      "min_deg": -141.19448852539062,
+      "max_deg": 53.40654373168945
+    }
+  },
+  "G_H_between_subject_stability": {
+    "index_mcp_flexion": {
+      "n_subjects": 77,
+      "between_subject_median_deg": 6.976252473225332,
+      "between_subject_iqr_deg": 15.154888466399562,
+      "between_subject_p5_p95_deg": [
+        -3.9070146562948143,
+        35.63308681571356
+      ],
+      "n_subjects_far_negative_lt_minus_90": 0
+    },
+    "index_pip_flexion": {
+      "n_subjects": 77,
+      "between_subject_median_deg": 0.6537078727643597,
+      "between_subject_iqr_deg": 34.73782521102152,
+      "between_subject_p5_p95_deg": [
+        -8.265982151031494,
+        51.15740070655071
+      ],
+      "n_subjects_far_negative_lt_minus_90": 0
+    },
+    "index_dip_flexion": {
+      "n_subjects": 77,
+      "between_subject_median_deg": 1.4198895692825317,
+      "between_subject_iqr_deg": 6.376891911029816,
+      "between_subject_p5_p95_deg": [
+        -8.7634690284729,
+        13.97657070159913
+      ],
+      "n_subjects_far_negative_lt_minus_90": 0
+    },
+    "middle_mcp_flexion": {
+      "n_subjects": 77,
+      "between_subject_median_deg": 2.0829038619995117,
+      "between_subject_iqr_deg": 36.9839272074207,
+      "between_subject_p5_p95_deg": [
+        -5.148790025711059,
+        58.996253967285156
+      ],
+      "n_subjects_far_negative_lt_minus_90": 0
+    },
+    "middle_pip_flexion": {
+      "n_subjects": 77,
+      "between_subject_median_deg": 0.8073647022247314,
+      "between_subject_iqr_deg": 5.638843655586243,
+      "between_subject_p5_p95_deg": [
+        -12.250040817260741,
+        10.97414358018128
+      ],
+      "n_subjects_far_negative_lt_minus_90": 0
+    },
+    "middle_dip_flexion": {
+      "n_subjects": 77,
+      "between_subject_median_deg": -14.790971279144287,
+      "between_subject_iqr_deg": 18.05850648880005,
+      "between_subject_p5_p95_deg": [
+        -38.19211581764295,
+        1.618915772438056
+      ],
+      "n_subjects_far_negative_lt_minus_90": 0
+    },
+    "ring_mcp_flexion": {
+      "n_subjects": 77,
+      "between_subject_median_deg": 3.183805465698242,
+      "between_subject_iqr_deg": 12.6296692542081,
+      "between_subject_p5_p95_deg": [
+        -2.0727489948272706,
+        50.038636779785165
+      ],
+      "n_subjects_far_negative_lt_minus_90": 0
+    },
+    "ring_pip_flexion": {
+      "n_subjects": 77,
+      "between_subject_median_deg": 4.578695666660777,
+      "between_subject_iqr_deg": 11.772596704948432,
+      "between_subject_p5_p95_deg": [
+        -25.92621778882025,
+        19.81551782765005
+      ],
+      "n_subjects_far_negative_lt_minus_90": 0
+    },
+    "ring_dip_flexion": {
+      "n_subjects": 77,
+      "between_subject_median_deg": -14.083282470703125,
+      "between_subject_iqr_deg": 21.33251953125,
+      "between_subject_p5_p95_deg": [
+        -48.71776302079381,
+        18.017053222656262
+      ],
+      "n_subjects_far_negative_lt_minus_90": 0
+    },
+    "pinky_mcp_flexion": {
+      "n_subjects": 77,
+      "between_subject_median_deg": 5.63676118850708,
+      "between_subject_iqr_deg": 37.12991054469327,
+      "between_subject_p5_p95_deg": [
+        -2.7053191542625425,
+        74.24699722172845
+      ],
+      "n_subjects_far_negative_lt_minus_90": 0
+    },
+    "pinky_pip_flexion": {
+      "n_subjects": 77,
+      "between_subject_median_deg": 3.9208574295043945,
+      "between_subject_iqr_deg": 4.564512133598328,
+      "between_subject_p5_p95_deg": [
+        -0.4684612237385252,
+        23.973443933066473
+      ],
+      "n_subjects_far_negative_lt_minus_90": 0
+    },
+    "pinky_dip_flexion": {
+      "n_subjects": 77,
+      "between_subject_median_deg": -7.241436759436473,
+      "between_subject_iqr_deg": 13.222208261489868,
+      "between_subject_p5_p95_deg": [
+        -24.130416624541752,
+        8.274542713165285
+      ],
+      "n_subjects_far_negative_lt_minus_90": 0
+    }
+  },
+  "D_E_raw_sensor_and_calibration": {
+    "DIP2": {
+      "n_recordings": 77,
+      "implied_slope_median": 0.34468931785786877,
+      "implied_slope_iqr": 0.34115513304398615,
+      "implied_slope_positive_fraction": 0.974025974025974,
+      "implied_zero_glove_value_median": 28.55697233220259,
+      "glove_change_ext_to_fist_median": 71.54902601242065,
+      "angle_change_ext_to_fist_median": 19.37678027153015,
+      "glove_and_angle_agree_in_sign": true
+    },
+    "DIP3": {
+      "n_recordings": 77,
+      "implied_slope_median": -0.649102353535869,
+      "implied_slope_iqr": 0.7908216352885911,
+      "implied_slope_positive_fraction": 0.11688311688311688,
+      "implied_zero_glove_value_median": -1.4175162106722572,
+      "glove_change_ext_to_fist_median": 14.117650508880615,
+      "angle_change_ext_to_fist_median": -14.559999823570251,
+      "glove_and_angle_agree_in_sign": false
+    },
+    "DIP4": {
+      "n_recordings": 77,
+      "implied_slope_median": 8.166822116195368,
+      "implied_slope_iqr": 11.820904598471722,
+      "implied_slope_positive_fraction": 1.0,
+      "implied_zero_glove_value_median": 17.327930002904285,
+      "glove_change_ext_to_fist_median": -0.42352867126464844,
+      "angle_change_ext_to_fist_median": -1.5922088623046875,
+      "glove_and_angle_agree_in_sign": true
+    },
+    "DIP5": {
+      "n_recordings": 77,
+      "implied_slope_median": -0.057876142523544206,
+      "implied_slope_iqr": 0.19314239213879852,
+      "implied_slope_positive_fraction": 0.35064935064935066,
+      "implied_zero_glove_value_median": 12.721288272430899,
+      "glove_change_ext_to_fist_median": -2.245342254638672,
+      "angle_change_ext_to_fist_median": -3.336088180541992,
+      "glove_and_angle_agree_in_sign": true
+    },
+    "PIP2": {
+      "n_recordings": 77,
+      "implied_slope_median": 1.4014190250063487,
+      "implied_slope_iqr": 1.4500536640955255,
+      "implied_slope_positive_fraction": 0.935064935064935,
+      "implied_zero_glove_value_median": -4.287360491641663,
+      "glove_change_ext_to_fist_median": 7.852026700973511,
+      "angle_change_ext_to_fist_median": 87.2231068611145,
+      "glove_and_angle_agree_in_sign": true
+    },
+    "PIP3": {
+      "n_recordings": 77,
+      "implied_slope_median": 0.08393832774444963,
+      "implied_slope_iqr": 0.5308296429529985,
+      "implied_slope_positive_fraction": 0.5714285714285714,
+      "implied_zero_glove_value_median": 15.434520873505882,
+      "glove_change_ext_to_fist_median": 107.0,
+      "angle_change_ext_to_fist_median": -5.605634944734721,
+      "glove_and_angle_agree_in_sign": false
+    },
+    "PIP4": {
+      "n_recordings": 77,
+      "implied_slope_median": 0.2677146201269059,
+      "implied_slope_iqr": 0.6234438213618668,
+      "implied_slope_positive_fraction": 0.7012987012987013,
+      "implied_zero_glove_value_median": 17.493609396270614,
+      "glove_change_ext_to_fist_median": 31.84351944178465,
+      "angle_change_ext_to_fist_median": 13.712431907653809,
+      "glove_and_angle_agree_in_sign": true
+    },
+    "PIP5": {
+      "n_recordings": 77,
+      "implied_slope_median": 0.30607862416223175,
+      "implied_slope_iqr": 0.4946910099516653,
+      "implied_slope_positive_fraction": 0.948051948051948,
+      "implied_zero_glove_value_median": 18.45420854820634,
+      "glove_change_ext_to_fist_median": 21.12004852294922,
+      "angle_change_ext_to_fist_median": 20.494388418000003,
+      "glove_and_angle_agree_in_sign": true
+    },
+    "MCP2_f": {
+      "n_recordings": 77,
+      "implied_slope_median": 0.9948002019769919,
+      "implied_slope_iqr": 0.08192258330551927,
+      "implied_slope_positive_fraction": 1.0,
+      "implied_zero_glove_value_median": 8.960040193280136,
+      "glove_change_ext_to_fist_median": 29.597325325012207,
+      "angle_change_ext_to_fist_median": 29.443431854248047,
+      "glove_and_angle_agree_in_sign": true
+    },
+    "MCP3_f": {
+      "n_recordings": 77,
+      "implied_slope_median": 0.9219098217611972,
+      "implied_slope_iqr": 0.7425229790545491,
+      "implied_slope_positive_fraction": 0.987012987012987,
+      "implied_zero_glove_value_median": 6.657796315963288,
+      "glove_change_ext_to_fist_median": 32.07537078857422,
+      "angle_change_ext_to_fist_median": 83.41740322113037,
+      "glove_and_angle_agree_in_sign": true
+    },
+    "MCP4_f": {
+      "n_recordings": 77,
+      "implied_slope_median": 0.3913384925455604,
+      "implied_slope_iqr": 2.627969677682803,
+      "implied_slope_positive_fraction": 0.5844155844155844,
+      "implied_zero_glove_value_median": 1.2713040507789468,
+      "glove_change_ext_to_fist_median": -4.551048167049885,
+      "angle_change_ext_to_fist_median": 66.47613430023193,
+      "glove_and_angle_agree_in_sign": false
+    },
+    "MCP5_f": {
+      "n_recordings": 77,
+      "implied_slope_median": 0.9946216913148913,
+      "implied_slope_iqr": 1.342436518077026,
+      "implied_slope_positive_fraction": 0.8051948051948052,
+      "implied_zero_glove_value_median": -31.887476619490993,
+      "glove_change_ext_to_fist_median": 5.273518085479736,
+      "angle_change_ext_to_fist_median": 103.93770980834961,
+      "glove_and_angle_agree_in_sign": true
+    }
+  },
+  "candidate_transform_effects": {
+    "index_mcp_flexion": {
+      "T0_identity": {
+        "wasserstein_1d_deg": 3.8136805629611015,
+        "median_after_minus_emg_median_deg": -4.536316193070153,
+        "support_overlap": -9.186723044005873e+298,
+        "wasserstein_reduction_fraction": 0.0
+      },
+      "T1_negate": {
+        "wasserstein_1d_deg": 38.285368530443684,
+        "median_after_minus_emg_median_deg": -29.38852478225679,
+        "support_overlap": 0.6286178514341538,
+        "wasserstein_reduction_fraction": -9.038955255528093
+      },
+      "T2_pi_minus": {
+        "wasserstein_1d_deg": 141.71462706506907,
+        "median_after_minus_emg_median_deg": 150.6114752177432,
+        "support_overlap": 0.10723784289354742,
+        "wasserstein_reduction_fraction": -36.159543051774605
+      },
+      "T3_minus_pi": {
+        "wasserstein_1d_deg": 182.2869429195766,
+        "median_after_minus_emg_median_deg": -184.53631619307015,
+        "support_overlap": 0.10553216331911827,
+        "wasserstein_reduction_fraction": -46.79816765199689
+      },
+      "T4_pi_minus_x_neg": {
+        "wasserstein_1d_deg": 141.71462706506907,
+        "median_after_minus_emg_median_deg": 150.6114752177432,
+        "support_overlap": -0.10770333004283028,
+        "wasserstein_reduction_fraction": -36.159543051774605
+      },
+      "T5_neg_minus_pi": {
+        "wasserstein_1d_deg": 218.2853736617607,
+        "median_after_minus_emg_median_deg": -209.3885247822568,
+        "support_overlap": 0.10550611033655471,
+        "wasserstein_reduction_fraction": -56.23745606325108
+      },
+      "T6_offset": {
+        "wasserstein_1d_deg": 2.929916650725868,
+        "median_after_minus_emg_median_deg": -2.2831913810919158,
+        "support_overlap": 0.8802717402973699,
+        "parameters": {
+          "b": 2.253124811978237
+        },
+        "wasserstein_reduction_fraction": 0.23173516964646934
+      },
+      "T7_affine": {
+        "wasserstein_1d_deg": 2.4082299464032366,
+        "median_after_minus_emg_median_deg": -3.625772946756806,
+        "support_overlap": 0.8832380340481238,
+        "parameters": {
+          "a_scale": 0.8919547483398271,
+          "a_offset": 2.253124811978237,
+          "quantiles_used": [
+            5.0,
+            95.0
+          ]
+        },
+        "wasserstein_reduction_fraction": 0.36852866760990965
+      }
+    },
+    "index_pip_flexion": {
+      "T0_identity": {
+        "wasserstein_1d_deg": 9.724140631349448,
+        "median_after_minus_emg_median_deg": -21.70963479000274,
+        "support_overlap": 0.7821141104239295,
+        "wasserstein_reduction_fraction": 0.0
+      },
+      "T1_negate": {
+        "wasserstein_1d_deg": 63.62024783587906,
+        "median_after_minus_emg_median_deg": -31.24610250557549,
+        "support_overlap": 0.5189044385651037,
+        "wasserstein_reduction_fraction": -5.542505939370633
+      },
+      "T2_pi_minus": {
+        "wasserstein_1d_deg": 116.37975891927181,
+        "median_after_minus_emg_median_deg": 148.7538974944245,
+        "support_overlap": 0.26794862380827583,
+        "wasserstein_reduction_fraction": -10.968127912926064
+      },
+      "T3_minus_pi": {
+        "wasserstein_1d_deg": 186.11177775994142,
+        "median_after_minus_emg_median_deg": -201.70963479000272,
+        "support_overlap": 0.15175750792139353,
+        "wasserstein_reduction_fraction": -18.139149135702507
+      },
+      "T4_pi_minus_x_neg": {
+        "wasserstein_1d_deg": 116.37975891927181,
+        "median_after_minus_emg_median_deg": 148.7538974944245,
+        "support_overlap": 0.229352751929761,
+        "wasserstein_reduction_fraction": -10.968127912926064
+      },
+      "T5_neg_minus_pi": {
+        "wasserstein_1d_deg": 243.62025396496855,
+        "median_after_minus_emg_median_deg": -211.2461025055755,
+        "support_overlap": 0.1132061386310585,
+        "wasserstein_reduction_fraction": -24.05313972728515
+      },
+      "T6_offset": {
+        "wasserstein_1d_deg": 8.33681297349134,
+        "median_after_minus_emg_median_deg": -12.192999328701706,
+        "support_overlap": 0.7328264384965408,
+        "parameters": {
+          "b": 9.516635461301036
+        },
+        "wasserstein_reduction_fraction": 0.14266840746682874
+      },
+      "T7_affine": {
+        "wasserstein_1d_deg": 5.012582896638372,
+        "median_after_minus_emg_median_deg": -12.790799491973381,
+        "support_overlap": 0.7787776446149681,
+        "parameters": {
+          "a_scale": 0.8746285981138514,
+          "a_offset": 9.516635461301036,
+          "quantiles_used": [
+            5.0,
+            95.0
+          ]
+        },
+        "wasserstein_reduction_fraction": 0.48452176015653114
+      }
+    },
+    "index_dip_flexion": {
+      "T0_identity": {
+        "wasserstein_1d_deg": 11.996246623438802,
+        "median_after_minus_emg_median_deg": -9.44477148364339,
+        "support_overlap": 0.6893777717801652,
+        "wasserstein_reduction_fraction": 0.0
+      },
+      "T1_negate": {
+        "wasserstein_1d_deg": 26.51299270259615,
+        "median_after_minus_emg_median_deg": -12.411838129265643,
+        "support_overlap": 0.6183875031482492,
+        "wasserstein_reduction_fraction": -1.210107338973332
+      },
+      "T2_pi_minus": {
+        "wasserstein_1d_deg": 153.5595805891014,
+        "median_after_minus_emg_median_deg": 167.58816187073435,
+        "support_overlap": 0.15089206061539315,
+        "wasserstein_reduction_fraction": -11.80063551620136
+      },
+      "T3_minus_pi": {
+        "wasserstein_1d_deg": 184.106981257647,
+        "median_after_minus_emg_median_deg": -189.4447714836434,
+        "support_overlap": 0.32067943744228844,
+        "wasserstein_reduction_fraction": -14.347048709212975
+      },
+      "T4_pi_minus_x_neg": {
+        "wasserstein_1d_deg": 153.5595805891014,
+        "median_after_minus_emg_median_deg": 167.58816187073435,
+        "support_overlap": 0.1508928747975842,
+        "wasserstein_reduction_fraction": -11.80063551620136
+      },
+      "T5_neg_minus_pi": {
+        "wasserstein_1d_deg": 206.4655296885721,
+        "median_after_minus_emg_median_deg": -192.41183812926565,
+        "support_overlap": 0.11580653164812611,
+        "wasserstein_reduction_fraction": -16.210844038932187
+      },
+      "T6_offset": {
+        "wasserstein_1d_deg": 8.204248683736411,
+        "median_after_minus_emg_median_deg": -2.1751755296565047,
+        "support_overlap": 0.8061580751949934,
+        "parameters": {
+          "b": 7.269595953986885
+        },
+        "wasserstein_reduction_fraction": 0.3160986980955707
+      },
+      "T7_affine": {
+        "wasserstein_1d_deg": 2.9408525545691666,
+        "median_after_minus_emg_median_deg": -2.816715907729776,
+        "support_overlap": 0.720746199703781,
+        "parameters": {
+          "a_scale": 0.5675591722755338,
+          "a_offset": 7.269595953986885,
+          "quantiles_used": [
+            5.0,
+            95.0
+          ]
+        },
+        "wasserstein_reduction_fraction": 0.7548522761425063
+      }
+    },
+    "middle_mcp_flexion": {
+      "T0_identity": {
+        "wasserstein_1d_deg": 12.710669403573268,
+        "median_after_minus_emg_median_deg": -7.3748757484143255,
+        "support_overlap": 0.7368497089781468,
+        "wasserstein_reduction_fraction": 0.0
+      },
+      "T1_negate": {
+        "wasserstein_1d_deg": 57.870498786562415,
+        "median_after_minus_emg_median_deg": -33.964801514405536,
+        "support_overlap": 0.43691768621247684,
+        "wasserstein_reduction_fraction": -3.5529072426581765
+      },
+      "T2_pi_minus": {
+        "wasserstein_1d_deg": 122.12950368343996,
+        "median_after_minus_emg_median_deg": 146.03519848559446,
+        "support_overlap": 0.2262091968572143,
+        "wasserstein_reduction_fraction": -8.608424214786554
+      },
+      "T3_minus_pi": {
+        "wasserstein_1d_deg": 170.47320514578746,
+        "median_after_minus_emg_median_deg": -187.37487574841433,
+        "support_overlap": 0.04796648505467405,
+        "wasserstein_reduction_fraction": -12.411819608640236
+      },
+      "T4_pi_minus_x_neg": {
+        "wasserstein_1d_deg": 122.12950368343996,
+        "median_after_minus_emg_median_deg": 146.03519848559446,
+        "support_overlap": 0.22621035039714152,
+        "wasserstein_reduction_fraction": -8.608424214786554
+      },
+      "T5_neg_minus_pi": {
+        "wasserstein_1d_deg": 237.87050156866388,
+        "median_after_minus_emg_median_deg": -213.96480151440554,
+        "support_overlap": 0.24440852638678195,
+        "wasserstein_reduction_fraction": -17.71423872465701
+      },
+      "T6_offset": {
+        "wasserstein_1d_deg": 11.660151569012166,
+        "median_after_minus_emg_median_deg": -17.64762633091875,
+        "support_overlap": 0.6312636090519526,
+        "parameters": {
+          "b": -10.272750582504425
+        },
+        "wasserstein_reduction_fraction": 0.08264850585019357
+      },
+      "T7_affine": {
+        "wasserstein_1d_deg": 9.281878277566088,
+        "median_after_minus_emg_median_deg": -20.871503809560807,
+        "support_overlap": 0.742165877306213,
+        "parameters": {
+          "a_scale": 0.7575113592257239,
+          "a_offset": -10.272750582504425,
+          "quantiles_used": [
+            5.0,
+            95.0
+          ]
+        },
+        "wasserstein_reduction_fraction": 0.26975692759684755
+      }
+    },
+    "middle_pip_flexion": {
+      "T0_identity": {
+        "wasserstein_1d_deg": 38.567906958898845,
+        "median_after_minus_emg_median_deg": -38.289584129832136,
+        "support_overlap": 0.48793774991247824,
+        "wasserstein_reduction_fraction": 0.0
+      },
+      "T1_negate": {
+        "wasserstein_1d_deg": 44.480331808052114,
+        "median_after_minus_emg_median_deg": -40.33293172695433,
+        "support_overlap": 0.4450032714875452,
+        "wasserstein_reduction_fraction": -0.15329908505156986
+      },
+      "T2_pi_minus": {
+        "wasserstein_1d_deg": 135.51966148366503,
+        "median_after_minus_emg_median_deg": 139.6670682730457,
+        "support_overlap": 0.05800021874726434,
+        "wasserstein_reduction_fraction": -2.5137935182245177
+      },
+      "T3_minus_pi": {
+        "wasserstein_1d_deg": 218.56625703787626,
+        "median_after_minus_emg_median_deg": -218.28958412983212,
+        "support_overlap": 0.34156372150731173,
+        "wasserstein_reduction_fraction": -4.66704999757437
+      },
+      "T4_pi_minus_x_neg": {
+        "wasserstein_1d_deg": 135.51966148366503,
+        "median_after_minus_emg_median_deg": 139.6670682730457,
+        "support_overlap": 0.058015740982867034,
+        "wasserstein_reduction_fraction": -2.5137935182245177
+      },
+      "T5_neg_minus_pi": {
+        "wasserstein_1d_deg": 224.48033960239957,
+        "median_after_minus_emg_median_deg": -220.3329317269543,
+        "support_overlap": 0.032338006678210976,
+        "wasserstein_reduction_fraction": -4.820392064356108
+      },
+      "T6_offset": {
+        "wasserstein_1d_deg": 15.39828543339944,
+        "median_after_minus_emg_median_deg": -2.7638692699101455,
+        "support_overlap": -0.08064414957007904,
+        "parameters": {
+          "b": 35.52571485992199
+        },
+        "wasserstein_reduction_fraction": 0.6007487404019842
+      },
+      "T7_affine": {
+        "wasserstein_1d_deg": 14.13194874387476,
+        "median_after_minus_emg_median_deg": -2.507294985548647,
+        "support_overlap": 0.5759740710739585,
+        "parameters": {
+          "a_scale": 1.2511313148314611,
+          "a_offset": 35.52571485992199,
+          "quantiles_used": [
+            5.0,
+            95.0
+          ]
+        },
+        "wasserstein_reduction_fraction": 0.633582689386413
+      }
+    },
+    "middle_dip_flexion": {
+      "T0_identity": {
+        "wasserstein_1d_deg": 58.07596728326951,
+        "median_after_minus_emg_median_deg": -40.0732547233213,
+        "support_overlap": 0.3396091975386517,
+        "wasserstein_reduction_fraction": 0.0
+      },
+      "T1_negate": {
+        "wasserstein_1d_deg": 16.539242969968843,
+        "median_after_minus_emg_median_deg": -1.538163323174814,
+        "support_overlap": 0.6644920358198492,
+        "wasserstein_reduction_fraction": 0.7152136461318406
+      },
+      "T2_pi_minus": {
+        "wasserstein_1d_deg": 181.758485145296,
+        "median_after_minus_emg_median_deg": 178.4618366768252,
+        "support_overlap": 0.16748849924609427,
+        "wasserstein_reduction_fraction": -2.1296678066291435
+      },
+      "T3_minus_pi": {
+        "wasserstein_1d_deg": 238.0759744843532,
+        "median_after_minus_emg_median_deg": -220.0732547233213,
+        "support_overlap": 0.05888962852352629,
+        "wasserstein_reduction_fraction": -3.0993888801390304
+      },
+      "T4_pi_minus_x_neg": {
+        "wasserstein_1d_deg": 181.758485145296,
+        "median_after_minus_emg_median_deg": 178.4618366768252,
+        "support_overlap": 0.16748698446010518,
+        "wasserstein_reduction_fraction": -2.1296678066291435
+      },
+      "T5_neg_minus_pi": {
+        "wasserstein_1d_deg": 178.24151247597786,
+        "median_after_minus_emg_median_deg": -181.5381633231748,
+        "support_overlap": 0.17243346112476876,
+        "wasserstein_reduction_fraction": -2.0691096647016254
+      },
+      "T6_offset": {
+        "wasserstein_1d_deg": 28.85032578735497,
+        "median_after_minus_emg_median_deg": 32.65598453138202,
+        "support_overlap": 0.4443997695856223,
+        "parameters": {
+          "b": 72.72923925470332
+        },
+        "wasserstein_reduction_fraction": 0.5032312480197614
+      },
+      "T7_affine": {
+        "wasserstein_1d_deg": 28.261032866652982,
+        "median_after_minus_emg_median_deg": 40.7620234522734,
+        "support_overlap": 0.43365845393285796,
+        "parameters": {
+          "a_scale": 0.5792905309750702,
+          "a_offset": 72.72923925470332,
+          "quantiles_used": [
+            5.0,
+            95.0
+          ]
+        },
+        "wasserstein_reduction_fraction": 0.5133781805336473
+      }
+    },
+    "ring_mcp_flexion": {
+      "T0_identity": {
+        "wasserstein_1d_deg": 7.95556084682055,
+        "median_after_minus_emg_median_deg": -5.095391612158794,
+        "support_overlap": 0.7328565560532572,
+        "wasserstein_reduction_fraction": 0.0
+      },
+      "T1_negate": {
+        "wasserstein_1d_deg": 50.754509145089244,
+        "median_after_minus_emg_median_deg": -33.30933116619179,
+        "support_overlap": 0.4165154087926543,
+        "wasserstein_reduction_fraction": -5.379752492921143
+      },
+      "T2_pi_minus": {
+        "wasserstein_1d_deg": 129.2454977434002,
+        "median_after_minus_emg_median_deg": 146.69066883380822,
+        "support_overlap": 0.16518657317303942,
+        "wasserstein_reduction_fraction": -15.245931648559175
+      },
+      "T3_minus_pi": {
+        "wasserstein_1d_deg": 175.16410143792285,
+        "median_after_minus_emg_median_deg": -185.09539161215878,
+        "support_overlap": 0.11194593684962398,
+        "wasserstein_reduction_fraction": -21.01781933550636
+      },
+      "T4_pi_minus_x_neg": {
+        "wasserstein_1d_deg": 129.2454977434002,
+        "median_after_minus_emg_median_deg": 146.69066883380822,
+        "support_overlap": 0.16518846374738733,
+        "wasserstein_reduction_fraction": -15.245931648559175
+      },
+      "T5_neg_minus_pi": {
+        "wasserstein_1d_deg": 230.7545125078996,
+        "median_after_minus_emg_median_deg": -213.30933116619178,
+        "support_overlap": 0.11192441143895704,
+        "wasserstein_reduction_fraction": -28.0054361912298
+      },
+      "T6_offset": {
+        "wasserstein_1d_deg": 11.695395177860325,
+        "median_after_minus_emg_median_deg": -18.295084450448442,
+        "support_overlap": 0.7542625925225891,
+        "parameters": {
+          "b": -13.199692838289646
+        },
+        "wasserstein_reduction_fraction": -0.47009059487420113
+      },
+      "T7_affine": {
+        "wasserstein_1d_deg": 12.614226644931618,
+        "median_after_minus_emg_median_deg": -20.283077529429455,
+        "support_overlap": 0.7873021904729878,
+        "parameters": {
+          "a_scale": 0.859077242639315,
+          "a_offset": -13.199692838289646,
+          "quantiles_used": [
+            5.0,
+            95.0
+          ]
+        },
+        "wasserstein_reduction_fraction": -0.5855860935276374
+      }
+    },
+    "ring_pip_flexion": {
+      "T0_identity": {
+        "wasserstein_1d_deg": 35.98845717134289,
+        "median_after_minus_emg_median_deg": -40.62218620033829,
+        "support_overlap": 0.5426959107520419,
+        "wasserstein_reduction_fraction": 0.0
+      },
+      "T1_negate": {
+        "wasserstein_1d_deg": 54.79222408754324,
+        "median_after_minus_emg_median_deg": -45.533960009080545,
+        "support_overlap": 0.5549121403735829,
+        "wasserstein_reduction_fraction": -0.5224943883166386
+      },
+      "T2_pi_minus": {
+        "wasserstein_1d_deg": 125.58300728357118,
+        "median_after_minus_emg_median_deg": 134.46603999091946,
+        "support_overlap": 0.18114210859258997,
+        "wasserstein_reduction_fraction": -2.489535733239801
+      },
+      "T3_minus_pi": {
+        "wasserstein_1d_deg": 212.1918640942545,
+        "median_after_minus_emg_median_deg": -220.62218620033826,
+        "support_overlap": 0.007870938185364093,
+        "wasserstein_reduction_fraction": -4.896108940819501
+      },
+      "T4_pi_minus_x_neg": {
+        "wasserstein_1d_deg": 125.58300728357118,
+        "median_after_minus_emg_median_deg": 134.46603999091946,
+        "support_overlap": 0.11973124800796682,
+        "wasserstein_reduction_fraction": -2.489535733239801
+      },
+      "T5_neg_minus_pi": {
+        "wasserstein_1d_deg": 234.66385358859839,
+        "median_after_minus_emg_median_deg": -225.53396000908054,
+        "support_overlap": 0.2533068282620462,
+        "wasserstein_reduction_fraction": -5.520531082267622
+      },
+      "T6_offset": {
+        "wasserstein_1d_deg": 15.557538991983435,
+        "median_after_minus_emg_median_deg": -12.267135933542214,
+        "support_overlap": 0.5781275975110239,
+        "parameters": {
+          "b": 28.355050266796077
+        },
+        "wasserstein_reduction_fraction": 0.5677075313922685
+      },
+      "T7_affine": {
+        "wasserstein_1d_deg": 15.212148207578862,
+        "median_after_minus_emg_median_deg": -13.077699829340595,
+        "support_overlap": 0.5989773346668954,
+        "parameters": {
+          "a_scale": 0.6699506421261937,
+          "a_offset": 28.355050266796077,
+          "quantiles_used": [
+            5.0,
+            95.0
+          ]
+        },
+        "wasserstein_reduction_fraction": 0.5773047970588724
+      }
+    },
+    "ring_dip_flexion": {
+      "T0_identity": {
+        "wasserstein_1d_deg": 61.31153728097633,
+        "median_after_minus_emg_median_deg": -36.70422290392314,
+        "support_overlap": 0.39058905251752307,
+        "wasserstein_reduction_fraction": 0.0
+      },
+      "T1_negate": {
+        "wasserstein_1d_deg": 30.68894618998297,
+        "median_after_minus_emg_median_deg": 3.0329236732289466,
+        "support_overlap": 0.6620892889899186,
+        "wasserstein_reduction_fraction": 0.4994588693912083
+      },
+      "T2_pi_minus": {
+        "wasserstein_1d_deg": 197.1287362712912,
+        "median_after_minus_emg_median_deg": 183.03292367322894,
+        "support_overlap": 0.20707322348972856,
+        "wasserstein_reduction_fraction": -2.215198068968596
+      },
+      "T3_minus_pi": {
+        "wasserstein_1d_deg": 241.25358433249355,
+        "median_after_minus_emg_median_deg": -216.70422290392315,
+        "support_overlap": 0.39899632333250495,
+        "wasserstein_reduction_fraction": -2.934880693447388
+      },
+      "T4_pi_minus_x_neg": {
+        "wasserstein_1d_deg": 197.1287362712912,
+        "median_after_minus_emg_median_deg": 183.03292367322894,
+        "support_overlap": -0.08900091320692288,
+        "wasserstein_reduction_fraction": -2.215198068968596
+      },
+      "T5_neg_minus_pi": {
+        "wasserstein_1d_deg": 163.3167803142993,
+        "median_after_minus_emg_median_deg": -176.96707632677106,
+        "support_overlap": 0.252016010625573,
+        "wasserstein_reduction_fraction": -1.6637201994439805
+      },
+      "T6_offset": {
+        "wasserstein_1d_deg": 38.31761124940017,
+        "median_after_minus_emg_median_deg": 27.872856092875647,
+        "support_overlap": 0.43012501658563074,
+        "parameters": {
+          "b": 64.57707899679879
+        },
+        "wasserstein_reduction_fraction": 0.3750342439825055
+      },
+      "T7_affine": {
+        "wasserstein_1d_deg": 29.89349474005123,
+        "median_after_minus_emg_median_deg": 40.452132753666646,
+        "support_overlap": 0.30983993919260533,
+        "parameters": {
+          "a_scale": 0.36687569469198966,
+          "a_offset": 64.57707899679879,
+          "quantiles_used": [
+            5.0,
+            95.0
+          ]
+        },
+        "wasserstein_reduction_fraction": 0.5124327970597705
+      }
+    },
+    "pinky_mcp_flexion": {
+      "T0_identity": {
+        "wasserstein_1d_deg": 30.195195382192214,
+        "median_after_minus_emg_median_deg": 23.597059241911996,
+        "support_overlap": 0.655169323951091,
+        "wasserstein_reduction_fraction": 0.0
+      },
+      "T1_negate": {
+        "wasserstein_1d_deg": 74.21511020717865,
+        "median_after_minus_emg_median_deg": -58.28823719683062,
+        "support_overlap": 0.4686907572741818,
+        "wasserstein_reduction_fraction": -1.457845007055243
+      },
+      "T2_pi_minus": {
+        "wasserstein_1d_deg": 105.78489844277554,
+        "median_after_minus_emg_median_deg": 121.71176280316938,
+        "support_overlap": 0.4064329059028251,
+        "wasserstein_reduction_fraction": -2.503368569198356
+      },
+      "T3_minus_pi": {
+        "wasserstein_1d_deg": 150.03405577385158,
+        "median_after_minus_emg_median_deg": -156.402940758088,
+        "support_overlap": 0.20490941231431462,
+        "wasserstein_reduction_fraction": -3.9688055955529604
+      },
+      "T4_pi_minus_x_neg": {
+        "wasserstein_1d_deg": 105.78489844277554,
+        "median_after_minus_emg_median_deg": 121.71176280316938,
+        "support_overlap": 0.40643341774474384,
+        "wasserstein_reduction_fraction": -2.503368569198356
+      },
+      "T5_neg_minus_pi": {
+        "wasserstein_1d_deg": 254.21511565797803,
+        "median_after_minus_emg_median_deg": -238.2882371968306,
+        "support_overlap": 0.14923021260207173,
+        "wasserstein_reduction_fraction": -7.419058477359707
+      },
+      "T6_offset": {
+        "wasserstein_1d_deg": 21.98974501429215,
+        "median_after_minus_emg_median_deg": 3.5873463910210326,
+        "support_overlap": 0.5889393531561673,
+        "parameters": {
+          "b": -20.009712850890963
+        },
+        "wasserstein_reduction_fraction": 0.2717468876766823
+      },
+      "T7_affine": {
+        "wasserstein_1d_deg": 8.037122356502186,
+        "median_after_minus_emg_median_deg": -10.454374710841932,
+        "support_overlap": 0.7814903579478802,
+        "parameters": {
+          "a_scale": 0.6570392558237265,
+          "a_offset": -20.009712850890963,
+          "quantiles_used": [
+            5.0,
+            95.0
+          ]
+        },
+        "wasserstein_reduction_fraction": 0.7338277744265856
+      }
+    },
+    "pinky_pip_flexion": {
+      "T0_identity": {
+        "wasserstein_1d_deg": 18.001986979799824,
+        "median_after_minus_emg_median_deg": -21.844221495037402,
+        "support_overlap": 0.6022554444498566,
+        "wasserstein_reduction_fraction": 0.0
+      },
+      "T1_negate": {
+        "wasserstein_1d_deg": 49.5891984343006,
+        "median_after_minus_emg_median_deg": -32.008925817852344,
+        "support_overlap": 0.3395852879708219,
+        "wasserstein_reduction_fraction": -1.7546513887575323
+      },
+      "T2_pi_minus": {
+        "wasserstein_1d_deg": 130.41080183222738,
+        "median_after_minus_emg_median_deg": 147.99107418214766,
+        "support_overlap": 0.13550840026818084,
+        "wasserstein_reduction_fraction": -6.244244870222515
+      },
+      "T3_minus_pi": {
+        "wasserstein_1d_deg": 197.91768221573852,
+        "median_after_minus_emg_median_deg": -201.8442214950374,
+        "support_overlap": 0.07002291545399356,
+        "wasserstein_reduction_fraction": -9.994213163126025
+      },
+      "T4_pi_minus_x_neg": {
+        "wasserstein_1d_deg": 130.41080183222738,
+        "median_after_minus_emg_median_deg": 147.99107418214766,
+        "support_overlap": -0.2198453271399553,
+        "wasserstein_reduction_fraction": -6.244244870222515
+      },
+      "T5_neg_minus_pi": {
+        "wasserstein_1d_deg": 229.5892085786029,
+        "median_after_minus_emg_median_deg": -212.00892581785234,
+        "support_overlap": 0.20979866681048862,
+        "wasserstein_reduction_fraction": -11.75354819644225
+      },
+      "T6_offset": {
+        "wasserstein_1d_deg": 9.471976140727653,
+        "median_after_minus_emg_median_deg": -13.046316549618043,
+        "support_overlap": 0.7520531980785031,
+        "parameters": {
+          "b": 8.79790494541936
+        },
+        "wasserstein_reduction_fraction": 0.47383718523092844
+      },
+      "T7_affine": {
+        "wasserstein_1d_deg": 7.371877932145755,
+        "median_after_minus_emg_median_deg": -12.090571297989609,
+        "support_overlap": 0.7753376443847213,
+        "parameters": {
+          "a_scale": 1.1880517566031388,
+          "a_offset": 8.79790494541936,
+          "quantiles_used": [
+            5.0,
+            95.0
+          ]
+        },
+        "wasserstein_reduction_fraction": 0.5904964301764133
+      }
+    },
+    "pinky_dip_flexion": {
+      "T0_identity": {
+        "wasserstein_1d_deg": 29.07419307392878,
+        "median_after_minus_emg_median_deg": -15.172606337847064,
+        "support_overlap": 0.5730902137203142,
+        "wasserstein_reduction_fraction": 0.0
+      },
+      "T1_negate": {
+        "wasserstein_1d_deg": 4.869894530484726,
+        "median_after_minus_emg_median_deg": 3.941994797406843,
+        "support_overlap": 0.752716481058472,
+        "wasserstein_reduction_fraction": 0.8325011284715026
+      },
+      "T2_pi_minus": {
+        "wasserstein_1d_deg": 178.28464748400395,
+        "median_after_minus_emg_median_deg": 183.94199479740684,
+        "support_overlap": 1.2154055927343739e-05,
+        "wasserstein_reduction_fraction": -5.132058318202276
+      },
+      "T3_minus_pi": {
+        "wasserstein_1d_deg": 209.07420094554567,
+        "median_after_minus_emg_median_deg": -195.17260633784707,
+        "support_overlap": 0.09424385134571411,
+        "wasserstein_reduction_fraction": -6.191057733362352
+      },
+      "T4_pi_minus_x_neg": {
+        "wasserstein_1d_deg": 178.28464748400395,
+        "median_after_minus_emg_median_deg": 183.94199479740684,
+        "support_overlap": 0.09431716790910018,
+        "wasserstein_reduction_fraction": -5.132058318202276
+      },
+      "T5_neg_minus_pi": {
+        "wasserstein_1d_deg": 181.71526396375933,
+        "median_after_minus_emg_median_deg": -176.05800520259316,
+        "support_overlap": 2.9590000600386317e-06,
+        "wasserstein_reduction_fraction": -5.250053561304367
+      },
+      "T6_offset": {
+        "wasserstein_1d_deg": 34.372618747745776,
+        "median_after_minus_emg_median_deg": 46.5874698611982,
+        "support_overlap": 0.3887544111416905,
+        "parameters": {
+          "b": 61.760076199045265
+        },
+        "wasserstein_reduction_fraction": -0.18223809893345466
+      },
+      "T7_affine": {
+        "wasserstein_1d_deg": 34.12472202751731,
+        "median_after_minus_emg_median_deg": 46.24252742045319,
+        "support_overlap": 0.38217565556498473,
+        "parameters": {
+          "a_scale": 1.0360920364808257,
+          "a_offset": 61.760076199045265,
+          "quantiles_used": [
+            5.0,
+            95.0
+          ]
+        },
+        "wasserstein_reduction_fraction": -0.17371174982384652
+      }
+    }
+  },
+  "sources": {
+    "db9_raw": "data/ninapro_db9/extracted/*.mat (protocol file per slot)",
+    "db9_representative": "data/db9_posture16/representative_postures_77.npz",
+    "emg2pose": "data/official/emg2pose_dataset_mini/*.hdf5, full rate, IK-masked"
+  },
+  "method_note": "this pass reads the cached DB9 movement medians and performs ONE bounded pass over the raw files; it never materialises an (n_frames x n_prototypes x n_dims) broadcast"
+}

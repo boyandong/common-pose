@@ -1,0 +1,22 @@
+dataset,label,role,bytes,sha256,exists,evidence,note
+MyoKi,Synchronicity_test.mat,official single-recording synchronisation test; SAME variable set and shapes as a participant file,48961776,7bc35b0dff5159e4127dec38f182b1af8325e3624246e2a4fc58abff99a8a51b,True,EMPIRICAL,"MATLAB 5.0, created 2025-03-27 11:45:28"
+MyoKi,Glove_calibration.xlsx,"official calibration data (male + female sheets, 13 channels each)",12503,9719e26ffa6fff3552ab220ed4f9323b9cc12fae0ceb56a2ad0ffb8f3254493d,True,DOC,
+MyoKi,Task_categorization.xlsx,official 74-task table and its grasp mapping,21143,effe2e7c989e88aaf5ee5098773aaf017e61fd988bd90d2db1534775be15b97b,True,DOC,
+MyoKi,Participant_information.xlsx,official participant metadata incl. acquisition-anomaly notes,12908,94f5dc9b614a3942b596ff3461a8a36ed3acd94732182e5964b6771e793163b9,True,DOC,
+MyoKi,Database_comparison.xlsx,official per-participant decoder R2 table (used for provenance only),10557,0fe1fe3cdecbff03f77780300c593067f711af4763f013ce70fd6475b8d19c48,True,DOC,
+MyoKi,Database_comparison.py,official code that produced Database_comparison.xlsx,3944,7ede8a62a11758835a5a06adf4dd4f73284051716af0746fa23d4a7559bc6b9e,True,DOC,
+MyoKi,dlr_myography_kinematics_s41597-025-05852-6.pdf,the MyoKi dataset's own paper (Sci Data 12:1507),4005665,a765e2c6c801a52ac194ee6ab3cbe137fc6170d20cb214567a80950f19f4daf7,True,DOC,doi:10.1038/s41597-025-05852-6
+MyoKi,dlr_myography_kinematics_s41597-025-05852-6.txt,extracted paper text,63644,e0de9cbed3da2149a8e50b7634e2a73cf518e8f071a78c27882ccb6d89f8db83,True,EMPIRICAL,
+KIN-MUS,KIN_MUS_UJI.mat,released kinematic+EMG corpus,86661263,530a9e51b19574b0f5dee0c9263b1a50eafc7204b14cae67b6b1bb854671c722,True,EMPIRICAL,"MATLAB 5.0, PCWIN64, created 2019-06-06 15:53:43"
+KIN-MUS,MOVMUS_UJI_DATASET_GUIDE_v2_1.pdf,official guide of the larger MOVMUS-UJI descendant,4022963,393e38ca7e7f67750b18734095b7bee1d9069e37e5654da98476e776cd94414d,True,DOC,NOT the KIN-MUS release's own document
+KIN-MUS,MOVMUS_UJI_DATASET_GUIDE_v2_1.txt,extracted guide text (upstream lane),102636,e067c3969a8a26898aa7ee40aba8465c889875253397df03a4a2c391d594e65c,True,EMPIRICAL,
+KIN-MUS,AngleCalculation.zip,"official BE-UJI angle-calculation code, current DOI",322730,332d9ecea74771432c05579e9814ad117af53b3150d07bbbd658a9e9b8a7c72a,True,DOC,"Zenodo 10.5281/zenodo.8418096, Apache-2.0"
+KIN-MUS,obtain_angles_RL_abd_rel.m,official calibration code - column order + cross-coupling model,10957,83ac9e505798fc11ffd9abccd30648f96c62f00380faac587637d586bb95c297,True,DOC,output order documented in-file at lines 110-113
+KIN-MUS,gains_identification.m,official gains; lab's own glove gains as placeholders,4714,58d2bdad66768bbcbad07576dd9b9b9d973da9e42c38b561a63d7dc428adb3f0,True,DOC,
+KIN-MUS,check_distal_values.m,18- vs 22-sensor glove identification,494,ed1c2eaeb50cc7a871b92b214796643e3ae572278f51c939c42ad2a51ff8b33b,True,DOC,
+KIN-MUS,KINMUS_2019.pdf,the KIN-MUS dataset's own paper (Sci Data 6:270),2261144,cacbfdce4b1369ce7d02790d1e931661d11159724f1dfe6fbda1b27f22a74dc0,True,DOC,doi:10.1038/s41597-019-0285-1
+KIN-MUS,KINMUS_2019.txt,extracted paper text,35849,e38926c0b30ff117bc804dfc90bd975d1d111239f5a1af2d1ff3b19624ac22ad,True,EMPIRICAL,
+KINE-ADL,KINE-ADL_BE-UJI_DATASET_Guide.pdf,official dataset guide / data dictionary,1815639,f1598d641c31cc7e8805cad076e4c2c84ae76afd3ade768cd30e2486a547654a,True,DOC,"Mendeley 10.17632/8mf4y2srgh.4, CC BY 4.0; size and SHA-256 match the hash published by the Mendeley public API exactly"
+KINE-ADL,KINE-ADL_GUIDE.txt,extracted guide text,48251,1f675b93b71847dadd1f5f1e26af9559d77e09934be3256d9f9b72188e602294,True,EMPIRICAL,
+KINE-ADL,KINEADL_2019.pdf,the KINE-ADL dataset's own paper (Sci Data 6:167),1772499,f7dfc65af86d2d084a5dc3ee40d38a097821dc0cea0c55bb1034550ba2255ef7,True,DOC,doi:10.1038/s41597-019-0175-6
+KINE-ADL,KINEADL_2019.txt,extracted paper text,36121,974765004cdfabceae63887b0a3791173c9661870c3432485293d988e019f111,True,EMPIRICAL,
