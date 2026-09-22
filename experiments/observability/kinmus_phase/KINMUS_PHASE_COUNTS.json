@@ -1,0 +1,418 @@
+{
+  "artifact": "KINMUS_PHASE_COUNTS.json",
+  "branch_id": "S6-KINMUS-TASK-OBSERVABILITY",
+  "plan_sha256": "19da16a52d11ad1591a456ac19d8863faa1c185e84ae7ed3521236a7faab3141",
+  "task": "phase",
+  "classes": {
+    "1": "REACHING",
+    "2": "MANIPULATION",
+    "3": "RELEASING"
+  },
+  "no_collapsing": "the three phases are never merged in the primary analysis",
+  "never_predict": [
+    "ADL identity",
+    "object",
+    "subject",
+    "grasp class"
+  ],
+  "by_frame": {
+    "total": 564894,
+    "counts": {
+      "REACHING": 54177,
+      "MANIPULATION": 417634,
+      "RELEASING": 93083
+    },
+    "shares": {
+      "REACHING": 0.09590648865096815,
+      "MANIPULATION": 0.7393139243822735,
+      "RELEASING": 0.16477958696675837
+    }
+  },
+  "by_frame_interior": {
+    "margin_frames": 20,
+    "total": 496699,
+    "counts": {
+      "REACHING": 31547,
+      "MANIPULATION": 394799,
+      "RELEASING": 70353
+    },
+    "shares": {
+      "REACHING": 0.06351331490500282,
+      "MANIPULATION": 0.7948455704561516,
+      "RELEASING": 0.14164111463884566
+    }
+  },
+  "by_frame_boundary": {
+    "total": 68195,
+    "counts": {
+      "REACHING": 22630,
+      "MANIPULATION": 22835,
+      "RELEASING": 22730
+    },
+    "shares": {
+      "REACHING": 0.3318425104479801,
+      "MANIPULATION": 0.3348485959381186,
+      "RELEASING": 0.3333088936139013
+    }
+  },
+  "by_trial": {
+    "total": 1713,
+    "counts": {
+      "REACHING": 571,
+      "MANIPULATION": 571,
+      "RELEASING": 571
+    },
+    "shares": {
+      "REACHING": 0.3333333333333333,
+      "MANIPULATION": 0.3333333333333333,
+      "RELEASING": 0.3333333333333333
+    }
+  },
+  "by_subject": {
+    "1": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 23225,
+      "frames_by_phase": {
+        "REACHING": 2352,
+        "MANIPULATION": 17874,
+        "RELEASING": 2999
+      }
+    },
+    "2": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 30450,
+      "frames_by_phase": {
+        "REACHING": 3198,
+        "MANIPULATION": 22891,
+        "RELEASING": 4361
+      }
+    },
+    "3": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 28006,
+      "frames_by_phase": {
+        "REACHING": 2990,
+        "MANIPULATION": 20168,
+        "RELEASING": 4848
+      }
+    },
+    "4": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 24395,
+      "frames_by_phase": {
+        "REACHING": 2314,
+        "MANIPULATION": 17625,
+        "RELEASING": 4456
+      }
+    },
+    "5": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 28489,
+      "frames_by_phase": {
+        "REACHING": 2461,
+        "MANIPULATION": 20951,
+        "RELEASING": 5077
+      }
+    },
+    "6": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 22777,
+      "frames_by_phase": {
+        "REACHING": 2013,
+        "MANIPULATION": 16305,
+        "RELEASING": 4459
+      }
+    },
+    "7": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 27131,
+      "frames_by_phase": {
+        "REACHING": 2656,
+        "MANIPULATION": 19406,
+        "RELEASING": 5069
+      }
+    },
+    "8": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 22567,
+      "frames_by_phase": {
+        "REACHING": 2241,
+        "MANIPULATION": 16281,
+        "RELEASING": 4045
+      }
+    },
+    "9": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 22958,
+      "frames_by_phase": {
+        "REACHING": 2176,
+        "MANIPULATION": 16727,
+        "RELEASING": 4055
+      }
+    },
+    "10": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 27073,
+      "frames_by_phase": {
+        "REACHING": 2592,
+        "MANIPULATION": 19500,
+        "RELEASING": 4981
+      }
+    },
+    "11": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 26370,
+      "frames_by_phase": {
+        "REACHING": 2666,
+        "MANIPULATION": 18743,
+        "RELEASING": 4961
+      }
+    },
+    "12": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 25327,
+      "frames_by_phase": {
+        "REACHING": 2400,
+        "MANIPULATION": 19031,
+        "RELEASING": 3896
+      }
+    },
+    "13": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 23688,
+      "frames_by_phase": {
+        "REACHING": 2139,
+        "MANIPULATION": 17364,
+        "RELEASING": 4185
+      }
+    },
+    "14": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 21597,
+      "frames_by_phase": {
+        "REACHING": 2354,
+        "MANIPULATION": 16172,
+        "RELEASING": 3071
+      }
+    },
+    "15": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 27607,
+      "frames_by_phase": {
+        "REACHING": 2502,
+        "MANIPULATION": 21564,
+        "RELEASING": 3541
+      }
+    },
+    "16": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 24841,
+      "frames_by_phase": {
+        "REACHING": 2242,
+        "MANIPULATION": 19274,
+        "RELEASING": 3325
+      }
+    },
+    "17": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 30865,
+      "frames_by_phase": {
+        "REACHING": 2808,
+        "MANIPULATION": 23692,
+        "RELEASING": 4365
+      }
+    },
+    "18": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 26743,
+      "frames_by_phase": {
+        "REACHING": 2686,
+        "MANIPULATION": 19474,
+        "RELEASING": 4583
+      }
+    },
+    "19": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 22780,
+      "frames_by_phase": {
+        "REACHING": 2256,
+        "MANIPULATION": 16753,
+        "RELEASING": 3771
+      }
+    },
+    "20": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 24373,
+      "frames_by_phase": {
+        "REACHING": 2344,
+        "MANIPULATION": 17613,
+        "RELEASING": 4416
+      }
+    },
+    "21": {
+      "trials_total": 75,
+      "trials_by_phase": {
+        "REACHING": 25,
+        "MANIPULATION": 25,
+        "RELEASING": 25
+      },
+      "frames_total": 23917,
+      "frames_by_phase": {
+        "REACHING": 2245,
+        "MANIPULATION": 17676,
+        "RELEASING": 3996
+      }
+    },
+    "22": {
+      "trials_total": 78,
+      "trials_by_phase": {
+        "REACHING": 26,
+        "MANIPULATION": 26,
+        "RELEASING": 26
+      },
+      "frames_total": 29715,
+      "frames_by_phase": {
+        "REACHING": 2542,
+        "MANIPULATION": 22550,
+        "RELEASING": 4623
+      }
+    }
+  },
+  "imbalance": {
+    "majority_class_frame_share": 0.7393139243822735,
+    "minority_class_frame_share": 0.09590648865096815,
+    "max_over_min_frame_ratio": 7.708695571921664,
+    "trial_counts_equal_by_construction": true,
+    "why_balanced_accuracy_is_primary": "even a modest frame-share skew makes raw accuracy partly a prior predictor; balanced accuracy removes that",
+    "majority_baseline_accuracy_expected": 0.7393139243822735,
+    "balanced_random_expected": 0.3333333333333333,
+    "per_subject_trial_counts_uniform": false
+  },
+  "excluded_containers": [
+    {
+      "trial_index": 1632,
+      "subject": 21,
+      "ADL": 25,
+      "phase": 1,
+      "kin_shape": [],
+      "time_len": 1
+    },
+    {
+      "trial_index": 1636,
+      "subject": 22,
+      "ADL": 25,
+      "phase": 2,
+      "kin_shape": [],
+      "time_len": 1
+    },
+    {
+      "trial_index": 1637,
+      "subject": 22,
+      "ADL": 25,
+      "phase": 3,
+      "kin_shape": [],
+      "time_len": 1
+    }
+  ],
+  "excluded_container_note": "three containers are empty and contribute no frames to any count"
+}

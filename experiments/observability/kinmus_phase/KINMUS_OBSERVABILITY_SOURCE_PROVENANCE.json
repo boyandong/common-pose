@@ -1,0 +1,205 @@
+{
+  "artifact": "KINMUS_OBSERVABILITY_SOURCE_PROVENANCE.json",
+  "branch_id": "S6-KINMUS-TASK-OBSERVABILITY",
+  "plan_sha256": "19da16a52d11ad1591a456ac19d8863faa1c185e84ae7ed3521236a7faab3141",
+  "purpose": "re-verify the KIN-MUS source from the file rather than from memory before any model is fitted",
+  "source_file": "<PROJECT_ROOT>\\pose_api_dataset_admission\\raw\\kin_mus\\KIN_MUS_UJI.mat",
+  "source_file_sha256": "530a9e51b19574b0f5dee0c9263b1a50eafc7204b14cae67b6b1bb854671c722",
+  "source_file_bytes": 86661263,
+  "upstream_lane": "pose_api_dataset_admission",
+  "read_only": true,
+  "mat_variable": "EMG_KIN_v4",
+  "container_fields": [
+    "ADL",
+    "EMG_data",
+    "Kinematic_data",
+    "Phase",
+    "Subject",
+    "time"
+  ],
+  "measured": {
+    "n_containers": 1716,
+    "n_usable_trials": 1713,
+    "n_empty_containers": 3,
+    "n_frames": 564894,
+    "n_channels": 18,
+    "n_subjects": 22,
+    "n_adls": 26,
+    "n_phases": 3
+  },
+  "expected_from_upstream": {
+    "n_containers": 1716,
+    "n_usable_trials": 1713,
+    "n_empty_containers": 3,
+    "n_frames": 564894,
+    "n_channels": 18,
+    "n_subjects": 22,
+    "n_adls": 26,
+    "n_phases": 3
+  },
+  "mismatches": {},
+  "all_expected_counts_confirmed": true,
+  "trials": {
+    "n_usable": 1713,
+    "n_containers": 1716,
+    "empty_containers": [
+      {
+        "trial_index": 1632,
+        "subject": 21,
+        "ADL": 25,
+        "phase": 1,
+        "kin_shape": [],
+        "time_len": 1
+      },
+      {
+        "trial_index": 1636,
+        "subject": 22,
+        "ADL": 25,
+        "phase": 2,
+        "kin_shape": [],
+        "time_len": 1
+      },
+      {
+        "trial_index": 1637,
+        "subject": 22,
+        "ADL": 25,
+        "phase": 3,
+        "kin_shape": [],
+        "time_len": 1
+      }
+    ],
+    "empty_container_note": "three containers carry a 1-sample time vector and an empty Kinematic_data array; they are EXCLUDED and never repaired",
+    "duplicated_cells": {},
+    "duplicated_cell_note": "subject 22 / ADL 25 / phases 2 and 3 each appear twice; BOTH copies are kept because the audit cannot tell which is authoritative, and the duplication is reported",
+    "grid_expected_cells": 1716,
+    "grid_present_cells": 1713,
+    "frames_per_trial": {
+      "min": 8,
+      "median": 160,
+      "max": 2721
+    },
+    "adl_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "subject_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "trial_index_note": "the container index in EMG_KIN_v4 is carried as trial_index so any frame can be traced back"
+  },
+  "sampling_rate": {
+    "documented_hz": 100.0,
+    "re_derived_dt_median_s": 0.009999999999999787,
+    "re_derived_rate_median_hz": 99.99999999999999,
+    "re_derived_rate_min_hz": 99.81851179673326,
+    "re_derived_rate_max_hz": 100.06671114076052,
+    "note": "the frozen velocity rule uses the trial's own time stamps, so a small deviation from exactly 100 Hz cannot corrupt it"
+  },
+  "shared10_mapping": {
+    "name": "shared10_poc_v1",
+    "api_order": [
+      "thumb_cmc_flexion",
+      "thumb_mcp_flexion",
+      "index_mcp_flexion",
+      "index_pip_flexion",
+      "middle_mcp_flexion",
+      "middle_pip_flexion",
+      "ring_mcp_flexion",
+      "ring_pip_flexion",
+      "pinky_mcp_flexion",
+      "pinky_pip_flexion"
+    ],
+    "released_columns": [
+      "CMC1_F",
+      "MCP1_F",
+      "MCP2_F",
+      "PIP2_F",
+      "MCP3_F",
+      "PIP3_F",
+      "MCP4_F",
+      "PIP4_F",
+      "MCP5_F",
+      "PIP5_F"
+    ],
+    "released_column_indices": [
+      0,
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      11,
+      13,
+      15
+    ],
+    "verified_against": "pose_api_dataset_admission/FIRST_POC_DATASET_DECISION.json and POSE_API_DOF_MAPPING_MATRIX.json",
+    "unit": "degrees as released"
+  },
+  "forbidden_inputs_audit": {
+    "emg_channels_read": false,
+    "emg_evidence": "Kinematic_data and time are the only arrays read; EMG_data is never indexed and RAW_EMG.mat is never opened",
+    "emg_columns_available": 7,
+    "emg_columns_used": 0,
+    "emg_downloaded": false,
+    "arm_kinematics_used": false,
+    "object_identity_fields_available": [
+      "ADL"
+    ],
+    "object_identity_fields_used_as_feature": [],
+    "note": "the ADL id is read only as a bookkeeping key for the handedness probe and the phase-count report; it is NEVER a model feature",
+    "subject_id_used_as_feature": false
+  },
+  "handedness": {
+    "single_hand_block": true,
+    "which_hand": "NOT DECIDED - see logs/handedness_probe.json",
+    "mirroring_applied": false,
+    "subjects_excluded_for_handedness": [],
+    "policy": "handedness is NOT used to include or exclude any subject and NO mirroring is applied.  If the block is a single hand, phase observability is a within-block question and the ambiguity is a recorded limitation only.  If the block were found to be MIXED hands, the primary analysis would be restricted to the larger single-hand cluster, frozen BEFORE scoring"
+  }
+}

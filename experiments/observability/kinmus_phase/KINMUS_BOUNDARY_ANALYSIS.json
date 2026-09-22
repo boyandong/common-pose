@@ -1,0 +1,438 @@
+{
+  "artifact": "KINMUS_BOUNDARY_ANALYSIS.json",
+  "branch_id": "S6-KINMUS-TASK-OBSERVABILITY",
+  "plan_sha256": "19da16a52d11ad1591a456ac19d8863faa1c185e84ae7ed3521236a7faab3141",
+  "margin_frames": 20,
+  "margin_ms": 200,
+  "definition": "a frame is INTERIOR iff its index within its trial is >= 20 and < n_frames - 20.  Everything else is BOUNDARY",
+  "primary_stratum": "INTERIOR",
+  "strata_counts": {
+    "interior": 496699,
+    "boundary": 68195,
+    "interior_by_phase": {
+      "REACHING": 31547,
+      "MANIPULATION": 394799,
+      "RELEASING": 70353
+    },
+    "boundary_by_phase": {
+      "REACHING": 22630,
+      "MANIPULATION": 22835,
+      "RELEASING": 22730
+    }
+  },
+  "boundary_samples_are_deleted": false,
+  "by_representation": {
+    "R1_POSE": {
+      "n_features": 10,
+      "interior": {
+        "n": 496699,
+        "balanced_accuracy": 0.4273417448874985,
+        "accuracy": 0.8052945546497979,
+        "macro_f1": 0.4313003181444994,
+        "per_phase_recall": {
+          "REACHING": 0.001806827907566488,
+          "MANIPULATION": 0.9550581435110018,
+          "RELEASING": 0.32516026324392705
+        },
+        "directional_error": {
+          "reaching_as_releasing": {
+            "numerator": 3317,
+            "denominator": 31547,
+            "value": 0.10514470472628142,
+            "wilson95": [
+              0.10180779684133857,
+              0.10857776347673485
+            ]
+          },
+          "releasing_as_reaching": {
+            "numerator": 0,
+            "denominator": 70353,
+            "value": 0.0,
+            "wilson95": [
+              0.0,
+              5.4599648606205566e-05
+            ]
+          },
+          "def": "P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING)"
+        }
+      },
+      "boundary": {
+        "n": 68195,
+        "balanced_accuracy": 0.46167721851610405,
+        "accuracy": 0.4623066207199941,
+        "macro_f1": 0.4443403414781979,
+        "per_phase_recall": {
+          "REACHING": 0.23181617322138753,
+          "MANIPULATION": 0.6515436829428509,
+          "RELEASING": 0.5016717993840739
+        },
+        "directional_error": {
+          "reaching_as_releasing": {
+            "numerator": 9093,
+            "denominator": 22630,
+            "value": 0.4018117543084401,
+            "wilson95": [
+              0.39544136349606035,
+              0.4082154745141698
+            ]
+          },
+          "releasing_as_reaching": {
+            "numerator": 4105,
+            "denominator": 22730,
+            "value": 0.18059832820061592,
+            "wilson95": [
+              0.17565146729935627,
+              0.18565313112053533
+            ]
+          },
+          "def": "P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING)"
+        }
+      },
+      "interior_minus_boundary_balanced_accuracy": -0.03433547362860556
+    },
+    "R2_POSE_VELOCITY": {
+      "n_features": 20,
+      "interior": {
+        "n": 496699,
+        "balanced_accuracy": 0.4901380738739823,
+        "accuracy": 0.8066877525422842,
+        "macro_f1": 0.5264989578111008,
+        "per_phase_recall": {
+          "REACHING": 0.17595967920879957,
+          "MANIPULATION": 0.937170560209119,
+          "RELEASING": 0.35728398220402824
+        },
+        "directional_error": {
+          "reaching_as_releasing": {
+            "numerator": 1650,
+            "denominator": 31547,
+            "value": 0.05230291311376676,
+            "wilson95": [
+              0.04990018433595811,
+              0.05481466021526499
+            ]
+          },
+          "releasing_as_reaching": {
+            "numerator": 107,
+            "denominator": 70353,
+            "value": 0.0015209017383764729,
+            "wilson95": [
+              0.0012588865094979758,
+              0.0018373505344602154
+            ]
+          },
+          "def": "P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING)"
+        }
+      },
+      "boundary": {
+        "n": 68195,
+        "balanced_accuracy": 0.5581073617644361,
+        "accuracy": 0.5582374074345626,
+        "macro_f1": 0.5599429956706802,
+        "per_phase_recall": {
+          "REACHING": 0.5015466195315952,
+          "MANIPULATION": 0.5887015546310488,
+          "RELEASING": 0.5840739111306643
+        },
+        "directional_error": {
+          "reaching_as_releasing": {
+            "numerator": 5037,
+            "denominator": 22630,
+            "value": 0.22258064516129034,
+            "wilson95": [
+              0.21720826050743128,
+              0.22804719810113086
+            ]
+          },
+          "releasing_as_reaching": {
+            "numerator": 1302,
+            "denominator": 22730,
+            "value": 0.05728112626484822,
+            "wilson95": [
+              0.054334301999056714,
+              0.06037756768405203
+            ]
+          },
+          "def": "P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING)"
+        }
+      },
+      "interior_minus_boundary_balanced_accuracy": -0.06796928789045381
+    },
+    "R3_TRAJECTORY": {
+      "n_features": 40,
+      "interior": {
+        "n": 405657,
+        "balanced_accuracy": 0.6171510193700035,
+        "accuracy": 0.8964790451046081,
+        "macro_f1": 0.6075800745091157,
+        "per_phase_recall": {
+          "REACHING": 0.4556141672946496,
+          "MANIPULATION": 0.9525666395064603,
+          "RELEASING": 0.4432722513089005
+        },
+        "directional_error": {
+          "reaching_as_releasing": {
+            "numerator": 66,
+            "denominator": 6635,
+            "value": 0.009947249434815373,
+            "wilson95": [
+              0.007826862102697247,
+              0.012634759049621191
+            ]
+          },
+          "releasing_as_reaching": {
+            "numerator": 144,
+            "denominator": 38200,
+            "value": 0.003769633507853403,
+            "wilson95": [
+              0.0032030048114901825,
+              0.004436055756156276
+            ]
+          },
+          "def": "P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING)"
+        }
+      },
+      "boundary": {
+        "n": 0,
+        "balanced_accuracy": NaN,
+        "accuracy": null,
+        "macro_f1": NaN,
+        "per_phase_recall": {
+          "REACHING": null,
+          "MANIPULATION": null,
+          "RELEASING": null
+        },
+        "directional_error": {
+          "reaching_as_releasing": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null,
+            "wilson95": [
+              null,
+              null
+            ]
+          },
+          "releasing_as_reaching": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null,
+            "wilson95": [
+              null,
+              null
+            ]
+          },
+          "def": "P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING)"
+        }
+      },
+      "interior_minus_boundary_balanced_accuracy": NaN
+    },
+    "R4_POSE_PAST_ONLY": {
+      "n_features": 30,
+      "interior": {
+        "n": 448458,
+        "balanced_accuracy": 0.5328812679671963,
+        "accuracy": 0.8510317577119819,
+        "macro_f1": 0.57537936385649,
+        "per_phase_recall": {
+          "REACHING": 0.2861101285225799,
+          "MANIPULATION": 0.9452376098967282,
+          "RELEASING": 0.3672960654822807
+        },
+        "directional_error": {
+          "reaching_as_releasing": {
+            "numerator": 385,
+            "denominator": 16962,
+            "value": 0.022697795071335927,
+            "wilson95": [
+              0.02056213508666906,
+              0.025049599568458644
+            ]
+          },
+          "releasing_as_reaching": {
+            "numerator": 121,
+            "denominator": 53755,
+            "value": 0.0022509533996837505,
+            "wilson95": [
+              0.001884339698394602,
+              0.0026887026542574514
+            ]
+          },
+          "def": "P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING)"
+        }
+      },
+      "boundary": {
+        "n": 31656,
+        "balanced_accuracy": 0.7196133252796777,
+        "accuracy": 0.7230224917867071,
+        "macro_f1": 0.725084817959671,
+        "per_phase_recall": {
+          "REACHING": 0.6642327928701814,
+          "MANIPULATION": 0.7606973058637084,
+          "RELEASING": 0.7339098771051433
+        },
+        "directional_error": {
+          "reaching_as_releasing": {
+            "numerator": 1002,
+            "denominator": 9313,
+            "value": 0.10759153870933104,
+            "wilson95": [
+              0.10145931313424765,
+              0.11404735483848848
+            ]
+          },
+          "releasing_as_reaching": {
+            "numerator": 274,
+            "denominator": 10985,
+            "value": 0.024943104233045063,
+            "wilson95": [
+              0.022188617251831997,
+              0.028029730231717637
+            ]
+          },
+          "def": "P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING)"
+        }
+      },
+      "interior_minus_boundary_balanced_accuracy": -0.18673205731248144
+    },
+    "R5_FULL18": {
+      "n_features": 18,
+      "interior": {
+        "n": 496699,
+        "balanced_accuracy": 0.4615284957892649,
+        "accuracy": 0.7995164073211342,
+        "macro_f1": 0.48011146464999915,
+        "per_phase_recall": {
+          "REACHING": 0.08349446857070403,
+          "MANIPULATION": 0.9337434998568892,
+          "RELEASING": 0.36734751894020157
+        },
+        "directional_error": {
+          "reaching_as_releasing": {
+            "numerator": 4828,
+            "denominator": 31547,
+            "value": 0.1530414936444036,
+            "wilson95": [
+              0.14911088131939013,
+              0.1570565935300036
+            ]
+          },
+          "releasing_as_reaching": {
+            "numerator": 1617,
+            "denominator": 70353,
+            "value": 0.022984094494904267,
+            "wilson95": [
+              0.021902548072222718,
+              0.024117730719226117
+            ]
+          },
+          "def": "P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING)"
+        }
+      },
+      "boundary": {
+        "n": 68195,
+        "balanced_accuracy": 0.4852672968609029,
+        "accuracy": 0.485548793899846,
+        "macro_f1": 0.4827102973243542,
+        "per_phase_recall": {
+          "REACHING": 0.39381352187361907,
+          "MANIPULATION": 0.5809940880227721,
+          "RELEASING": 0.48099428068631767
+        },
+        "directional_error": {
+          "reaching_as_releasing": {
+            "numerator": 7302,
+            "denominator": 22630,
+            "value": 0.3226690234202386,
+            "wilson95": [
+              0.3166086145150677,
+              0.3287896262297809
+            ]
+          },
+          "releasing_as_reaching": {
+            "numerator": 5781,
+            "denominator": 22730,
+            "value": 0.25433347998240213,
+            "wilson95": [
+              0.248713935676254,
+              0.26003604746102904
+            ]
+          },
+          "def": "P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING)"
+        }
+      },
+      "interior_minus_boundary_balanced_accuracy": -0.023738801071638005
+    },
+    "R6_FULL18_VELOCITY": {
+      "n_features": 36,
+      "interior": {
+        "n": 496699,
+        "balanced_accuracy": 0.5483465616459232,
+        "accuracy": 0.8135752236263813,
+        "macro_f1": 0.5851791267092966,
+        "per_phase_recall": {
+          "REACHING": 0.305322217643516,
+          "MANIPULATION": 0.9253214927089481,
+          "RELEASING": 0.4143959745853055
+        },
+        "directional_error": {
+          "reaching_as_releasing": {
+            "numerator": 2319,
+            "denominator": 31547,
+            "value": 0.07350936697625765,
+            "wilson95": [
+              0.07068121067857389,
+              0.07644137763271092
+            ]
+          },
+          "releasing_as_reaching": {
+            "numerator": 311,
+            "denominator": 70353,
+            "value": 0.00442056486574844,
+            "wilson95": [
+              0.00395667883546438,
+              0.004938567822062085
+            ]
+          },
+          "def": "P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING)"
+        }
+      },
+      "boundary": {
+        "n": 68195,
+        "balanced_accuracy": 0.5731329529974993,
+        "accuracy": 0.573165188063641,
+        "macro_f1": 0.5737434244114386,
+        "per_phase_recall": {
+          "REACHING": 0.5431727794962439,
+          "MANIPULATION": 0.5655353623823078,
+          "RELEASING": 0.6106907171139463
+        },
+        "directional_error": {
+          "reaching_as_releasing": {
+            "numerator": 4753,
+            "denominator": 22630,
+            "value": 0.2100309323906319,
+            "wilson95": [
+              0.2047733271264632,
+              0.21538696586324438
+            ]
+          },
+          "releasing_as_reaching": {
+            "numerator": 2575,
+            "denominator": 22730,
+            "value": 0.11328640563132424,
+            "wilson95": [
+              0.10923127954026243,
+              0.11747222185241626
+            ]
+          },
+          "def": "P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING)"
+        }
+      },
+      "interior_minus_boundary_balanced_accuracy": -0.02478639135157612
+    }
+  },
+  "interpretation": {
+    "why_it_matters": "if interior performance is much better than boundary performance, the residual difficulty is largely an ANNOTATION-TRANSITION problem; if both are equally weak, the limitation is more fundamental",
+    "reading_rule": "a large positive interior-minus-boundary gap means the phase labels are least reliable exactly where two phases meet, which is a labelling property, not necessarily a pose-information property"
+  }
+}

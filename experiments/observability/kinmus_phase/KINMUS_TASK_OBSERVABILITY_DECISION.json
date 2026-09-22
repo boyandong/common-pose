@@ -1,0 +1,729 @@
+{
+  "artifact": "KINMUS_TASK_OBSERVABILITY_DECISION.json",
+  "branch_id": "S6-KINMUS-TASK-OBSERVABILITY",
+  "plan_sha256": "19da16a52d11ad1591a456ac19d8863faa1c185e84ae7ed3521236a7faab3141",
+  "decision": "OBS-B",
+  "phase_suitable_for_first_poc": "ONLY WITH TEMPORAL STATE",
+  "frozen_thresholds": {
+    "CHANCE": 0.3333333333333333,
+    "GOOD_ABSOLUTE": 0.6,
+    "STRONG_ABSOLUTE": 0.75,
+    "MIN_PER_PHASE_RECALL": 0.5,
+    "DIRECTIONAL_FAILURE_MIN_ERROR": 0.25,
+    "MODEST_TEMPORAL_GAIN": 0.05,
+    "MATERIAL_TEMPORAL_GAIN": 0.1,
+    "SUBJECT_CONSISTENCY_MIN_SUBJECTS": 16,
+    "SUBJECT_CONSISTENCY_MIN_BA": 0.5,
+    "SEVERE_INSTABILITY_MIN_SUBJECTS_BELOW": 6,
+    "SEVERE_INSTABILITY_MIN_BA_BELOW": 0.45,
+    "SEVERE_INSTABILITY_MAX_SD": 0.15,
+    "DIRECTIONAL_IMPROVEMENT_MIN": 0.1,
+    "PER_SUBJECT_CONSISTENT_MIN": 0.05
+  },
+  "gates": {
+    "BASIS": {
+      "cross_representation_comparison": "MATCHED SUBSET (405657 frames) - the only basis on which the effect of adding temporal information is identified",
+      "single_representation_usability": "full INTERIOR stratum",
+      "why": "R3's 500 ms centred window is defined only on frames at least 50 frames inside a trial, so the naive R3-vs-R1 comparison uses DIFFERENT FRAME SETS.  This block restricts every representation to the exact frame set where all of them are defined, which removes the confound.  It is the overlap set, not a post-hoc selection",
+      "matched_numbers": {
+        "R1": 0.4050594239430206,
+        "R2": 0.42372584690827725,
+        "R3": 0.6171510193700035,
+        "R4": 0.4954721335703344,
+        "R5": 0.42376159002315505
+      },
+      "full_interior_numbers": {
+        "R1": 0.4273417448874985,
+        "R2": 0.4901380738739823,
+        "R3": 0.6171510193700035,
+        "R4": 0.5328812679671963
+      },
+      "thresholds_unchanged": true
+    },
+    "ABOVE_NULL": {
+      "definition": "balanced accuracy above the N1 null's 97.5th percentile",
+      "R1": {
+        "real_ba": 0.4050594239430206,
+        "null_mean_ba": 0.32391088180095573,
+        "null_p97_5": 0.35028140141377007,
+        "pass": true
+      },
+      "R2": {
+        "real_ba": 0.42372584690827725,
+        "null_mean_ba": 0.33371736617111203,
+        "pass": true
+      },
+      "R3": {
+        "real_ba": 0.6171510193700035,
+        "null_mean_ba": 0.3240315045185849,
+        "pass": true
+      }
+    },
+    "GOOD_ABSOLUTE": {
+      "threshold": 0.6,
+      "R1_matched": {
+        "value": 0.4050594239430206,
+        "pass": false
+      },
+      "R1_full_interior_reported": {
+        "value": 0.4273417448874985,
+        "pass": false
+      },
+      "best_temporal_matched": {
+        "name": "R3_TRAJECTORY",
+        "value": 0.6171510193700035,
+        "pass": true
+      },
+      "best_temporal_full_interior": {
+        "name": "R3_TRAJECTORY",
+        "value": 0.6171510193700035,
+        "pass": true
+      }
+    },
+    "STRONG_ABSOLUTE": {
+      "threshold": 0.75,
+      "R1_matched": {
+        "value": 0.4050594239430206,
+        "pass": false
+      },
+      "best_temporal_matched": {
+        "name": "R3_TRAJECTORY",
+        "value": 0.6171510193700035,
+        "pass": false
+      }
+    },
+    "BALANCED_ACROSS_PHASES_R1": {
+      "definition": "every per-phase recall >= 0.50",
+      "per_phase_recall": {
+        "REACHING": 0.001806827907566488,
+        "MANIPULATION": 0.9550581435110018,
+        "RELEASING": 0.32516026324392705
+      },
+      "pass": false
+    },
+    "DIRECTIONAL_FAILURE": {
+      "definition": "the smaller of P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING) >= 0.25",
+      "R1": {
+        "max_directional_error": 0.10514470472628142,
+        "pass_means_NOT_failed": true
+      },
+      "R2": {
+        "max_directional_error": 0.05230291311376676,
+        "pass_means_NOT_failed": true
+      },
+      "R3": {
+        "max_directional_error": 0.009947249434815373,
+        "pass_means_NOT_failed": true
+      }
+    },
+    "TEMPORAL_GAIN": {
+      "MODEST_threshold": 0.05,
+      "MATERIAL_threshold": 0.1,
+      "best_temporal_name": "R3_TRAJECTORY",
+      "r1_ba": 0.4050594239430206,
+      "best_temporal_ba": 0.6171510193700035,
+      "delta": 0.21209159542698292,
+      "modest": false,
+      "material": true
+    },
+    "SUBJECT_CONSISTENCY": {
+      "definition": "at least 16 of 22 subjects (>= 72.7 %) have per-subject BA >= 0.50",
+      "R1": {
+        "n_subjects_ba_ge_0.50": 1,
+        "n_subjects": 22,
+        "pass": false
+      },
+      "R3": {
+        "n_subjects_ba_ge_0.50": 21,
+        "n_subjects": 22,
+        "pass": true
+      }
+    },
+    "SEVERE_SUBJECT_INSTABILITY": {
+      "definition": "6 or more of 22 subjects have per-subject BA < 0.45, or the across-subject SD of BA >= 0.15",
+      "R1": {
+        "n_subjects_ba_lt_0.45": 17,
+        "sd_subject_ba": 0.04668169346039225,
+        "severe": true
+      },
+      "R3": {
+        "n_subjects_ba_lt_0.45": 1,
+        "sd_subject_ba": 0.11319684754879267,
+        "severe": false
+      }
+    },
+    "TEMPORAL_GAIN_MATCHED": {
+      "basis": "matched subset",
+      "MODEST_threshold": 0.05,
+      "MATERIAL_threshold": 0.1,
+      "best_temporal_name": "R3_TRAJECTORY",
+      "r1_matched_ba": 0.4050594239430206,
+      "best_temporal_matched_ba": 0.6171510193700035,
+      "delta_matched": 0.21209159542698292,
+      "modest": false,
+      "material": true,
+      "full_interior_for_reference": {
+        "r1_full_ba": 0.4273417448874985,
+        "best_temporal_full_ba": 0.6171510193700035,
+        "delta_full": 0.189809274482505
+      }
+    }
+  },
+  "temporal_shuffle_control": {
+    "R2_POSE_VELOCITY": {
+      "shuffled_ba": 0.4901380738739823,
+      "real_ba": 0.42372584690827725,
+      "real_minus_shuffled": -0.06641222696570503,
+      "shuffled_closer_to_r1_than_to_real": false,
+      "shuffle_destroys_the_gain": false
+    },
+    "R3_TRAJECTORY": {
+      "shuffled_ba": 0.6147241733892509,
+      "real_ba": 0.6171510193700035,
+      "real_minus_shuffled": 0.002426845980752601,
+      "shuffled_closer_to_r1_than_to_real": true,
+      "shuffle_destroys_the_gain": true
+    }
+  },
+  "requirement_evaluation": {
+    "OBS_A": {
+      "R1_GOOD": false,
+      "R1_ABOVE_NULL": true,
+      "BALANCED_ACROSS_PHASES": false,
+      "NOT_DIRECTIONAL_FAILURE": true,
+      "SUBJECT_CONSISTENCY": false,
+      "MODEST_TEMPORAL_GAIN": false,
+      "R1_STRONG_ENOUGH_FOR_A": false
+    },
+    "OBS_B": {
+      "R1_below_GOOD": true,
+      "MATERIAL_TEMPORAL_GAIN": true,
+      "TEMPORAL_ABOVE_NULL": true,
+      "TEMPORAL_GOOD": true,
+      "DIRECTIONAL_ERROR_IMPROVES_GATE": true,
+      "DIRECTIONAL_GAIN_VALUE": 0.2536139660770861,
+      "DIRECTIONAL_GAIN_GATE": 0.1,
+      "THREE_CLASS_DIRECTIONAL_STATISTIC_DEGENERATE_FOR": [
+        "REACHING",
+        "RELEASING"
+      ],
+      "SHUFFLE_SURVIVED": true,
+      "PER_SUBJECT_IMPROVEMENT_CONSISTENT": true
+    },
+    "OBS_C": {
+      "R1_very_low_and_temporal_not_good": false,
+      "TEMPORAL_NOT_ABOVE_NULL": false,
+      "SEVERE_INSTABILITY_EVERYWHERE": false,
+      "DIRECTIONAL_FAILURE_PERSISTS": false,
+      "INTERFACE_INFORMATION_LOSS": false
+    }
+  },
+  "headline_numbers": {
+    "chance_balanced_accuracy": 0.3333333333333333,
+    "majority_class_frame_share": 0.7393139243822735,
+    "R1_pose_shared10_ba": 0.4050594239430206,
+    "R2_pose_velocity_shared10_ba": 0.42372584690827725,
+    "R3_trajectory_shared10_ba": 0.6171510193700035,
+    "R4_causal_ba": 0.4954721335703344,
+    "R5_full18_ba": 0.4615284957892649,
+    "R6_full18_velocity_ba": 0.5483465616459232,
+    "null_R1_ba": 0.32391088180095573,
+    "null_R2_ba": 0.33371736617111203,
+    "null_R3_ba": 0.3240315045185849,
+    "directional_error_R1": 0.10514470472628142,
+    "directional_error_R3": 0.009947249434815373,
+    "best_temporal_representation": "R3_TRAJECTORY",
+    "best_temporal_delta_over_pose": 0.21209159542698292
+  },
+  "restricted_two_class_directional_test": {
+    "epistemic_status": "POST-HOC DERIVED METRIC.  The frozen plan did not predeclare a restricted two-class test.  It is added because the three-class confusion matrix cannot answer the directional question when a class is collapsed entirely.  It replaces no predeclared gate, it changes no representation, and no threshold is derived from it",
+    "why_needed": "with R1 (pose only) the model predicts REACHING for 57 of 31 547 reaching frames and for ZERO releasing frames, so the predeclared 'releasing_as_reaching' rate is exactly 0 by construction and the 'smaller of the two' statistic is degenerate",
+    "headline": {
+      "R1_two_class_matched_ba": 0.5703143432613816,
+      "R3_two_class_matched_ba": 0.8239283093384677,
+      "gain_R3_over_R1": 0.2536139660770861,
+      "R4_causal_two_class_matched_ba": 0.692910089285362,
+      "reading": "this is the cleanest available answer to 'can reaching and releasing be told apart at all': the question is answered on its own two classes, without the dominant MANIPULATION class or a collapsed label diluting it"
+    },
+    "by_representation": {
+      "R1_POSE": {
+        "matched": {
+          "n_frames": 44835,
+          "n_reaching": 6635,
+          "n_releasing": 38200,
+          "two_class_balanced_accuracy": 0.5703143432613816,
+          "reaching_recall": 0.16955538809344387,
+          "releasing_recall": 0.9710732984293193,
+          "reaching_as_releasing": 0.8304446119065562,
+          "releasing_as_reaching": 0.028926701570680627,
+          "per_subject_two_class_ba": {
+            "1": 0.5,
+            "2": 0.6037004934617105,
+            "3": 0.6381106656097177,
+            "4": 0.6769193223327875,
+            "5": 0.5,
+            "6": 0.5944055944055944,
+            "7": 0.4623212039820085,
+            "8": 0.5,
+            "9": 0.5994574562387193,
+            "10": 0.5547935841585787,
+            "11": 0.5217391304347826,
+            "12": 0.5812721420198056,
+            "13": 0.685409450766947,
+            "14": 0.4987228607918263,
+            "15": 0.4870024770590553,
+            "16": 0.6281654604095616,
+            "17": 0.5,
+            "18": 0.6159859788016333,
+            "19": 0.6862281603288798,
+            "20": 0.5560144395496818,
+            "21": 0.7233363111911936,
+            "22": 0.5188470066518847
+          },
+          "across_subject_mean": 0.5742014426451987,
+          "across_subject_sd": 0.07646449923449569,
+          "n_subjects_ge_0.60": 8
+        },
+        "interior": {
+          "n_frames": 101900,
+          "n_reaching": 31547,
+          "n_releasing": 70353,
+          "two_class_balanced_accuracy": 0.5750580132744776,
+          "reaching_recall": 0.2610707832757473,
+          "releasing_recall": 0.889045243273208,
+          "reaching_as_releasing": 0.7389292167242527,
+          "releasing_as_reaching": 0.11095475672679203,
+          "per_subject_two_class_ba": {
+            "1": 0.5011355034065103,
+            "2": 0.5457579048038447,
+            "3": 0.5908616130501281,
+            "4": 0.6342071466344338,
+            "5": 0.5256010752083841,
+            "6": 0.5689692082163107,
+            "7": 0.44332080964984066,
+            "8": 0.5386457594228516,
+            "9": 0.6481661193671144,
+            "10": 0.5656546169400722,
+            "11": 0.5177914110429448,
+            "12": 0.5601680672268907,
+            "13": 0.6763976551881197,
+            "14": 0.5798743039903332,
+            "15": 0.519460202267216,
+            "16": 0.594781494685198,
+            "17": 0.5915831952763264,
+            "18": 0.5709435441472567,
+            "19": 0.6561855617940073,
+            "20": 0.5883771631167038,
+            "21": 0.7722033801783104,
+            "22": 0.5819743365716119
+          }
+        }
+      },
+      "R2_POSE_VELOCITY": {
+        "matched": {
+          "n_frames": 44835,
+          "n_reaching": 6635,
+          "n_releasing": 38200,
+          "two_class_balanced_accuracy": 0.6635481067794538,
+          "reaching_recall": 0.35026375282592315,
+          "releasing_recall": 0.9768324607329842,
+          "reaching_as_releasing": 0.6497362471740769,
+          "releasing_as_reaching": 0.023167539267015706,
+          "per_subject_two_class_ba": {
+            "1": 0.5277777777777778,
+            "2": 0.742855131282093,
+            "3": 0.7331139015582336,
+            "4": 0.6840754503086031,
+            "5": 0.5787037037037037,
+            "6": 0.6880546354230564,
+            "7": 0.48631077998763617,
+            "8": 0.583666194218958,
+            "9": 0.7401129943502824,
+            "10": 0.6409941182638086,
+            "11": 0.6217097408203376,
+            "12": 0.6968877576354212,
+            "13": 0.8241155368629391,
+            "14": 0.5426602619088465,
+            "15": 0.6004158925857118,
+            "16": 0.8686131386861313,
+            "17": 0.5697674418604651,
+            "18": 0.6668005751532803,
+            "19": 0.9446492805755395,
+            "20": 0.583343530755425,
+            "21": 0.9519419166300744,
+            "22": 0.5637924033733495
+          },
+          "across_subject_mean": 0.6745619165328034,
+          "across_subject_sd": 0.13019267554140015,
+          "n_subjects_ge_0.60": 14
+        },
+        "interior": {
+          "n_frames": 101900,
+          "n_reaching": 31547,
+          "n_releasing": 70353,
+          "two_class_balanced_accuracy": 0.7460816301631916,
+          "reaching_recall": 0.539766063334073,
+          "releasing_recall": 0.9523971969923102,
+          "reaching_as_releasing": 0.46023393666592705,
+          "releasing_as_reaching": 0.04760280300768979,
+          "per_subject_two_class_ba": {
+            "1": 0.6625616820180451,
+            "2": 0.779866320957515,
+            "3": 0.7596202591466035,
+            "4": 0.7958767721789932,
+            "5": 0.6656068793630903,
+            "6": 0.7466997266633073,
+            "7": 0.6292280870864451,
+            "8": 0.7500345088471279,
+            "9": 0.8294472787081679,
+            "10": 0.7058146808466113,
+            "11": 0.640401456370683,
+            "12": 0.7656582633053222,
+            "13": 0.8385051896331295,
+            "14": 0.6953877123956811,
+            "15": 0.7067792678150583,
+            "16": 0.8438600289138879,
+            "17": 0.7912429378531074,
+            "18": 0.7245882816526967,
+            "19": 0.8408731987065927,
+            "20": 0.7235328031087143,
+            "21": 0.9453842616906798,
+            "22": 0.6715823687311699
+          }
+        }
+      },
+      "R3_TRAJECTORY": {
+        "matched": {
+          "n_frames": 44835,
+          "n_reaching": 6635,
+          "n_releasing": 38200,
+          "two_class_balanced_accuracy": 0.8239283093384677,
+          "reaching_recall": 0.6589299171062547,
+          "releasing_recall": 0.9889267015706806,
+          "reaching_as_releasing": 0.3410700828937453,
+          "releasing_as_reaching": 0.011073298429319372,
+          "per_subject_two_class_ba": {
+            "1": 0.9201388888888888,
+            "2": 0.8284023668639053,
+            "3": 0.8177892918825561,
+            "4": 0.8529411764705883,
+            "5": 0.7337962962962963,
+            "6": 0.9020979020979021,
+            "7": 0.6607266952313956,
+            "8": 0.9642376907548922,
+            "9": 0.9096045197740112,
+            "10": 0.8136208140684715,
+            "11": 0.7234299516908212,
+            "12": 0.8003003003003003,
+            "13": 0.9691303809995052,
+            "14": 0.9477611940298507,
+            "15": 0.8956433316444294,
+            "16": 0.9646378913905649,
+            "17": 0.8662790697674418,
+            "18": 0.7866004962779156,
+            "19": 0.8459917780061665,
+            "20": 0.8425925925925926,
+            "21": 0.9579319534242842,
+            "22": 0.7017738359201774
+          },
+          "across_subject_mean": 0.85024674628968,
+          "across_subject_sd": 0.09045895442741757,
+          "n_subjects_ge_0.60": 22
+        },
+        "interior": {
+          "n_frames": 44835,
+          "n_reaching": 6635,
+          "n_releasing": 38200,
+          "two_class_balanced_accuracy": 0.8239283093384677,
+          "reaching_recall": 0.6589299171062547,
+          "releasing_recall": 0.9889267015706806,
+          "reaching_as_releasing": 0.3410700828937453,
+          "releasing_as_reaching": 0.011073298429319372,
+          "per_subject_two_class_ba": {
+            "1": 0.9201388888888888,
+            "2": 0.8284023668639053,
+            "3": 0.8177892918825561,
+            "4": 0.8529411764705883,
+            "5": 0.7337962962962963,
+            "6": 0.9020979020979021,
+            "7": 0.6607266952313956,
+            "8": 0.9642376907548922,
+            "9": 0.9096045197740112,
+            "10": 0.8136208140684715,
+            "11": 0.7234299516908212,
+            "12": 0.8003003003003003,
+            "13": 0.9691303809995052,
+            "14": 0.9477611940298507,
+            "15": 0.8956433316444294,
+            "16": 0.9646378913905649,
+            "17": 0.8662790697674418,
+            "18": 0.7866004962779156,
+            "19": 0.8459917780061665,
+            "20": 0.8425925925925926,
+            "21": 0.9579319534242842,
+            "22": 0.7017738359201774
+          }
+        }
+      },
+      "R4_POSE_PAST_ONLY": {
+        "matched": {
+          "n_frames": 44835,
+          "n_reaching": 6635,
+          "n_releasing": 38200,
+          "two_class_balanced_accuracy": 0.692910089285362,
+          "reaching_recall": 0.40165787490580257,
+          "releasing_recall": 0.9841623036649214,
+          "reaching_as_releasing": 0.5983421250941975,
+          "releasing_as_reaching": 0.015837696335078533,
+          "per_subject_two_class_ba": {
+            "1": 0.8041456782011973,
+            "2": 0.6786853954734197,
+            "3": 0.7104396677504222,
+            "4": 0.7150735294117647,
+            "5": 0.6134259259259259,
+            "6": 0.7937062937062938,
+            "7": 0.5392669096800324,
+            "8": 0.6062561327346793,
+            "9": 0.8408627300203988,
+            "10": 0.6418349536718193,
+            "11": 0.6784133281901508,
+            "12": 0.7173809323342033,
+            "13": 0.8307582879762494,
+            "14": 0.787113284153943,
+            "15": 0.6286874401846535,
+            "16": 0.8532854431258776,
+            "17": 0.6872093023255814,
+            "18": 0.6486702642324716,
+            "19": 0.9144141829393628,
+            "20": 0.7365699951052374,
+            "21": 0.9003679420983299,
+            "22": 0.5942350332594235
+          },
+          "across_subject_mean": 0.7236728478409743,
+          "across_subject_sd": 0.10440569790975751,
+          "n_subjects_ge_0.60": 20
+        },
+        "interior": {
+          "n_frames": 70717,
+          "n_reaching": 16962,
+          "n_releasing": 53755,
+          "two_class_balanced_accuracy": 0.7731665778141954,
+          "reaching_recall": 0.5667963683527886,
+          "releasing_recall": 0.9795367872756022,
+          "reaching_as_releasing": 0.43320363164721143,
+          "releasing_as_reaching": 0.02046321272439773,
+          "per_subject_two_class_ba": {
+            "1": 0.6972301467499434,
+            "2": 0.803913940001705,
+            "3": 0.7833241817998546,
+            "4": 0.8004330046678354,
+            "5": 0.7008141112618724,
+            "6": 0.7975369458128079,
+            "7": 0.6571410446566396,
+            "8": 0.7719872896782787,
+            "9": 0.8590528072663135,
+            "10": 0.7117888552447236,
+            "11": 0.6854857392106676,
+            "12": 0.7841053222575254,
+            "13": 0.8935211519034076,
+            "14": 0.7970394626732675,
+            "15": 0.7742172745514636,
+            "16": 0.8848582978114089,
+            "17": 0.8188405797101449,
+            "18": 0.7240337401019976,
+            "19": 0.9018507685174352,
+            "20": 0.7468044011371775,
+            "21": 0.9712064574087595,
+            "22": 0.6398411106716545
+          }
+        }
+      },
+      "R5_FULL18": {
+        "matched": {
+          "n_frames": 44835,
+          "n_reaching": 6635,
+          "n_releasing": 38200,
+          "two_class_balanced_accuracy": 0.6316718812264013,
+          "reaching_recall": 0.29706103993971367,
+          "releasing_recall": 0.966282722513089,
+          "reaching_as_releasing": 0.7029389600602863,
+          "releasing_as_reaching": 0.033717277486910995,
+          "per_subject_two_class_ba": {
+            "1": 0.8000757409840853,
+            "2": 0.6277465039943175,
+            "3": 0.6834591332253408,
+            "4": 0.6521641579544023,
+            "5": 0.5447764118411035,
+            "6": 0.6363636363636364,
+            "7": 0.4953422438234103,
+            "8": 0.5,
+            "9": 0.7852252945008704,
+            "10": 0.6424604406470937,
+            "11": 0.6195652173913043,
+            "12": 0.8125940462389061,
+            "13": 0.8177511133102424,
+            "14": 0.5921446407807704,
+            "15": 0.5323495468107865,
+            "16": 0.7157065477384608,
+            "17": 0.5406976744186046,
+            "18": 0.6465434463635272,
+            "19": 0.8507515416238438,
+            "20": 0.5464390602055801,
+            "21": 0.7191829565586058,
+            "22": 0.508869179600887
+          },
+          "across_subject_mean": 0.6486458424716264,
+          "across_subject_sd": 0.11229647101921081,
+          "n_subjects_ge_0.60": 14
+        },
+        "interior": {
+          "n_frames": 101900,
+          "n_reaching": 31547,
+          "n_releasing": 70353,
+          "two_class_balanced_accuracy": 0.6590506308957328,
+          "reaching_recall": 0.43826671315814497,
+          "releasing_recall": 0.8798345486333206,
+          "reaching_as_releasing": 0.561733286841855,
+          "releasing_as_reaching": 0.12016545136667946,
+          "per_subject_two_class_ba": {
+            "1": 0.652498942702445,
+            "2": 0.7112537426476109,
+            "3": 0.7583735564778058,
+            "4": 0.6587737025005665,
+            "5": 0.6251848274608333,
+            "6": 0.5876264637373713,
+            "7": 0.5261483729348363,
+            "8": 0.5089774177977131,
+            "9": 0.7195378821272811,
+            "10": 0.6372306599664641,
+            "11": 0.5911042944785276,
+            "12": 0.7828291316526611,
+            "13": 0.701414843460601,
+            "14": 0.626815454237502,
+            "15": 0.6265744896580616,
+            "16": 0.5943801696371473,
+            "17": 0.6558557410475341,
+            "18": 0.5916522371050476,
+            "19": 0.7414676672000304,
+            "20": 0.6751058860380237,
+            "21": 0.8134136721526544,
+            "22": 0.5426130124017359
+          }
+        }
+      }
+    },
+    "three_class_collapse_indicators": {
+      "R1_POSE": {
+        "REACHING": {
+          "true_count": 31547,
+          "predicted_count": 108,
+          "recall": 0.001806827907566488,
+          "share_of_all_predictions": 0.00021743550923194934,
+          "never_predicted": false
+        },
+        "MANIPULATION": {
+          "true_count": 394799,
+          "predicted_count": 452706,
+          "recall": 0.9550581435110018,
+          "share_of_all_predictions": 0.9114292559477671,
+          "never_predicted": false
+        },
+        "RELEASING": {
+          "true_count": 70353,
+          "predicted_count": 43885,
+          "recall": 0.32516026324392705,
+          "share_of_all_predictions": 0.08835330854300089,
+          "never_predicted": false
+        },
+        "n_predicted_classes": 3
+      },
+      "R2_POSE_VELOCITY": {
+        "REACHING": {
+          "true_count": 31547,
+          "predicted_count": 10834,
+          "recall": 0.17595967920879957,
+          "share_of_all_predictions": 0.021812002842767953,
+          "never_predicted": false
+        },
+        "MANIPULATION": {
+          "true_count": 394799,
+          "predicted_count": 439450,
+          "recall": 0.937170560209119,
+          "share_of_all_predictions": 0.8847410604812975,
+          "never_predicted": false
+        },
+        "RELEASING": {
+          "true_count": 70353,
+          "predicted_count": 46415,
+          "recall": 0.35728398220402824,
+          "share_of_all_predictions": 0.09344693667593452,
+          "never_predicted": false
+        },
+        "n_predicted_classes": 3
+      },
+      "R3_TRAJECTORY": {
+        "REACHING": {
+          "true_count": 6635,
+          "predicted_count": 10043,
+          "recall": 0.4556141672946496,
+          "share_of_all_predictions": 0.02475736891018767,
+          "never_predicted": false
+        },
+        "MANIPULATION": {
+          "true_count": 360822,
+          "predicted_count": 368376,
+          "recall": 0.9525666395064603,
+          "share_of_all_predictions": 0.9080972348560483,
+          "never_predicted": false
+        },
+        "RELEASING": {
+          "true_count": 38200,
+          "predicted_count": 27238,
+          "recall": 0.4432722513089005,
+          "share_of_all_predictions": 0.06714539623376399,
+          "never_predicted": false
+        },
+        "n_predicted_classes": 3
+      }
+    }
+  },
+  "supporting_geometry": {
+    "reaching_vs_releasing_mahalanobis": 0.6880159653768542,
+    "reaching_vs_releasing_verdict": "REACHING and RELEASING centroids are within ~1 pooled SD: instantaneous pose alone is expected to be weak on this pair",
+    "velocity_within_minus_cross_sign_agreement": 0.141065,
+    "nn_same_phase_rate": {
+      "REACHING": 0.252075175724687,
+      "MANIPULATION": 0.8326399297506074,
+      "RELEASING": 0.4383481383345204
+    }
+  },
+  "stratum_used": "INTERIOR",
+  "boundary_comparison": {
+    "R1_POSE": {
+      "interior_ba": 0.4273417448874985,
+      "boundary_ba": 0.46167721851610405
+    },
+    "R2_POSE_VELOCITY": {
+      "interior_ba": 0.4901380738739823,
+      "boundary_ba": 0.5581073617644361
+    },
+    "R3_TRAJECTORY": {
+      "interior_ba": 0.6171510193700035,
+      "boundary_ba": NaN
+    }
+  },
+  "handedness_limitation": {
+    "single_hand_block": true,
+    "which_hand": "NOT DECIDED",
+    "mirroring_applied": false,
+    "subjects_excluded": 0
+  },
+  "anti_rescue_attestation": "no feature beyond the frozen representations was added; no neural network or Transformer was used; no ADL, object, EMG, subject id or future label entered any model; no phase was merged post-hoc; no temporal window was re-selected after seeing results; the two sensitivity windows were reported and the headline window was NOT changed",
+  "reading_order_applied": [
+    "1. Is R1 above null at all?  If not, the single-frame hypothesis is dead.",
+    "2. Is R1 good in absolute terms and balanced across phases?",
+    "3. If R1 is weak, does a predeclared temporal representation give a material, reproducible, control-surviving gain, specifically on the reaching/releasing confusion?",
+    "4. Is the result stable across subjects?",
+    "5. Only then assign A, B, C or D."
+  ]
+}

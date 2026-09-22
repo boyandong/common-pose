@@ -1,0 +1,2736 @@
+{
+  "artifact": "KINMUS_PHASE_POSE_GEOMETRY.json",
+  "branch_id": "S6-KINMUS-TASK-OBSERVABILITY",
+  "plan_sha256": "19da16a52d11ad1591a456ac19d8863faa1c185e84ae7ed3521236a7faab3141",
+  "purpose": "ask, before interpreting any classifier score, whether the three phases are separable in INSTANTANEOUS shared10 pose space",
+  "space": {
+    "name": "shared10_poc_v1",
+    "n_features": 10,
+    "features": [
+      "thumb_cmc_flexion",
+      "thumb_mcp_flexion",
+      "index_mcp_flexion",
+      "index_pip_flexion",
+      "middle_mcp_flexion",
+      "middle_pip_flexion",
+      "ring_mcp_flexion",
+      "ring_pip_flexion",
+      "pinky_mcp_flexion",
+      "pinky_pip_flexion"
+    ],
+    "unit": "degrees"
+  },
+  "stratum": {
+    "name": "INTERIOR",
+    "margin_frames": 20,
+    "n_frames": 496699
+  },
+  "per_phase": {
+    "REACHING": {
+      "n_frames": 31547,
+      "centroid_deg": [
+        13.039193671372262,
+        -5.544814349653598,
+        4.663576864885351,
+        34.92754431052682,
+        24.550526877047915,
+        38.65566892395527,
+        6.728695260692595,
+        43.787831979649084,
+        2.1799490300363202,
+        36.175358981725815
+      ],
+      "median_deg": [
+        12.8477,
+        -5.31965,
+        4.26653,
+        32.4288,
+        25.1188,
+        38.3483,
+        6.69528,
+        43.0088,
+        2.56849,
+        34.3954
+      ],
+      "feature_names": [
+        "thumb_cmc_flexion",
+        "thumb_mcp_flexion",
+        "index_mcp_flexion",
+        "index_pip_flexion",
+        "middle_mcp_flexion",
+        "middle_pip_flexion",
+        "ring_mcp_flexion",
+        "ring_pip_flexion",
+        "pinky_mcp_flexion",
+        "pinky_pip_flexion"
+      ],
+      "covariance_trace": 1729.8678036647607,
+      "covariance_eigenvalues_desc": [
+        1143.1847354142988,
+        243.19433043242987,
+        153.4772449889403,
+        57.82524811125994,
+        49.949668821869714,
+        32.99271233431609,
+        19.86555559612449,
+        10.932741065354774,
+        10.198583790452899,
+        8.246983109714682
+      ],
+      "covariance_condition_number": 138.61853725244856,
+      "per_channel_sd": [
+        3.8551987880422085,
+        8.112706615951824,
+        5.715481488515583,
+        16.785365907139916,
+        16.810109666499198,
+        17.15663982200607,
+        4.533867857834756,
+        19.298441686361905,
+        4.121771975031633,
+        18.65124954475281
+      ],
+      "centroid_zscored_within_phase": null
+    },
+    "MANIPULATION": {
+      "n_frames": 394799,
+      "centroid_deg": [
+        14.782628939760388,
+        -2.5522406137216906,
+        5.348159795351099,
+        43.553829029734,
+        37.6768403804545,
+        48.83030095988398,
+        7.028786892727911,
+        56.08776564758803,
+        0.5700445701598315,
+        47.198411097416724
+      ],
+      "median_deg": [
+        14.7347,
+        -2.29849,
+        4.19322,
+        43.3482,
+        41.9081,
+        49.788,
+        7.07809,
+        56.557,
+        0.331145,
+        48.0827
+      ],
+      "feature_names": [
+        "thumb_cmc_flexion",
+        "thumb_mcp_flexion",
+        "index_mcp_flexion",
+        "index_pip_flexion",
+        "middle_mcp_flexion",
+        "middle_pip_flexion",
+        "ring_mcp_flexion",
+        "ring_pip_flexion",
+        "pinky_mcp_flexion",
+        "pinky_pip_flexion"
+      ],
+      "covariance_trace": 2667.5498707616375,
+      "covariance_eigenvalues_desc": [
+        1308.3208153310538,
+        547.7756191654352,
+        418.5791201273462,
+        122.10485099944842,
+        101.25815484100406,
+        68.26931571465593,
+        33.699527908045305,
+        26.172570861976006,
+        24.484474131951554,
+        16.885421680721418
+      ],
+      "covariance_condition_number": 77.4822708055199,
+      "per_channel_sd": [
+        4.9949450484217754,
+        10.639124164071482,
+        9.723875718272545,
+        22.48582843763841,
+        24.185558270517845,
+        17.836845900953033,
+        6.75414985215662,
+        21.098582879353426,
+        6.04198121798494,
+        22.335501223461
+      ],
+      "centroid_zscored_within_phase": null
+    },
+    "RELEASING": {
+      "n_frames": 70353,
+      "centroid_deg": [
+        10.094006637665785,
+        -2.7715679388304437,
+        3.743437244948459,
+        30.113302697216955,
+        21.13318645966872,
+        31.447801111475812,
+        6.133566858036431,
+        35.176842753725914,
+        3.5899019946493684,
+        29.958698953225877
+      ],
+      "median_deg": [
+        10.8593,
+        -2.81334,
+        3.69707,
+        28.9265,
+        21.2894,
+        32.2953,
+        5.92464,
+        36.5986,
+        3.79726,
+        31.3576
+      ],
+      "feature_names": [
+        "thumb_cmc_flexion",
+        "thumb_mcp_flexion",
+        "index_mcp_flexion",
+        "index_pip_flexion",
+        "middle_mcp_flexion",
+        "middle_pip_flexion",
+        "ring_mcp_flexion",
+        "ring_pip_flexion",
+        "pinky_mcp_flexion",
+        "pinky_pip_flexion"
+      ],
+      "covariance_trace": 2050.3060780021488,
+      "covariance_eigenvalues_desc": [
+        1642.6203771597604,
+        158.14622897580622,
+        99.35396880871343,
+        47.288982623573304,
+        36.24806264571035,
+        26.76195697737944,
+        14.219263508578717,
+        10.690103053733797,
+        9.222833427577523,
+        5.754300821315358
+      ],
+      "covariance_condition_number": 285.45959416565205,
+      "per_channel_sd": [
+        4.902741672401975,
+        7.334867451566298,
+        5.132593690111653,
+        16.78605503076928,
+        16.694262278256822,
+        19.540886227805164,
+        3.909020034706898,
+        23.26285394032205,
+        3.7791892317928566,
+        20.810719597519313
+      ],
+      "centroid_zscored_within_phase": null
+    }
+  },
+  "pairwise_separation": {
+    "REACHING_vs_MANIPULATION": {
+      "euclidean_centroid_distance_deg": 25.26217810760398,
+      "mahalanobis_centroid_distance": 0.8277736377990863,
+      "pooled_sd_along_the_separating_direction_deg": 38.396199813200134,
+      "centroid_separation_in_pooled_sd_units": 0.8277736377990863,
+      "per_channel_centroid_difference_deg": {
+        "thumb_cmc_flexion": -1.7434352683881258,
+        "thumb_mcp_flexion": -2.9925737359319076,
+        "index_mcp_flexion": -0.6845829304657478,
+        "index_pip_flexion": -8.626284719207177,
+        "middle_mcp_flexion": -13.126313503406585,
+        "middle_pip_flexion": -10.17463203592871,
+        "ring_mcp_flexion": -0.30009163203531664,
+        "ring_pip_flexion": -12.299933667938944,
+        "pinky_mcp_flexion": 1.6099044598764887,
+        "pinky_pip_flexion": -11.02305211569091
+      }
+    },
+    "REACHING_vs_RELEASING": {
+      "euclidean_centroid_distance_deg": 14.803996690676879,
+      "mahalanobis_centroid_distance": 0.6880159653768542,
+      "pooled_sd_along_the_separating_direction_deg": 37.29002786562922,
+      "centroid_separation_in_pooled_sd_units": 0.6880159653768542,
+      "per_channel_centroid_difference_deg": {
+        "thumb_cmc_flexion": 2.9451870337064765,
+        "thumb_mcp_flexion": -2.7732464108231545,
+        "index_mcp_flexion": 0.9201396199368919,
+        "index_pip_flexion": 4.814241613309864,
+        "middle_mcp_flexion": 3.4173404173791937,
+        "middle_pip_flexion": 7.207867812479456,
+        "ring_mcp_flexion": 0.5951284026561634,
+        "ring_pip_flexion": 8.61098922592317,
+        "pinky_mcp_flexion": -1.4099529646130482,
+        "pinky_pip_flexion": 6.216660028499938
+      }
+    },
+    "MANIPULATION_vs_RELEASING": {
+      "euclidean_centroid_distance_deg": 39.05756368514426,
+      "mahalanobis_centroid_distance": 1.2490016275139637,
+      "pooled_sd_along_the_separating_direction_deg": 38.7699953886415,
+      "centroid_separation_in_pooled_sd_units": 1.2490016275139637,
+      "per_channel_centroid_difference_deg": {
+        "thumb_cmc_flexion": 4.688622302094602,
+        "thumb_mcp_flexion": 0.21932732510875308,
+        "index_mcp_flexion": 1.6047225504026397,
+        "index_pip_flexion": 13.440526332517042,
+        "middle_mcp_flexion": 16.54365392078578,
+        "middle_pip_flexion": 17.382499848408166,
+        "ring_mcp_flexion": 0.89522003469148,
+        "ring_pip_flexion": 20.910922893862114,
+        "pinky_mcp_flexion": -3.019857424489537,
+        "pinky_pip_flexion": 17.239712144190847
+      }
+    }
+  },
+  "pca_visualisation": {
+    "note": "PCA is fitted on ALL interior frames for VISUALISATION ONLY.  It is never a model input and no classifier in this branch uses it",
+    "explained_variance_ratio_first8": [
+      0.5639951825640515,
+      0.173991672398751,
+      0.1316643604429147,
+      0.040222913272342974,
+      0.03327422951488158,
+      0.02331041241252939,
+      0.011018726201494985,
+      0.008783984249276556
+    ],
+    "per_phase_projection": {
+      "REACHING": {
+        "n": 31547,
+        "pc1_mean": -17.619036677292687,
+        "pc2_mean": -2.908327279639927,
+        "pc1_p5_p95": [
+          -72.42232415174169,
+          38.38186896260554
+        ],
+        "pc2_p5_p95": [
+          -31.223041656422197,
+          20.29207378316136
+        ]
+      },
+      "MANIPULATION": {
+        "n": 394799,
+        "pc1_mean": 7.031624593511426,
+        "pc2_mean": 0.21485962520636673,
+        "pc1_p5_p95": [
+          -54.24356296086315,
+          63.14502165873192
+        ],
+        "pc2_p5_p95": [
+          -39.83801995995781,
+          35.361849822310816
+        ]
+      },
+      "RELEASING": {
+        "n": 70353,
+        "pc1_mean": -31.558719711099858,
+        "pc2_mean": 0.09839858316322501,
+        "pc1_p5_p95": [
+          -92.47068107691231,
+          31.188040094586643
+        ],
+        "pc2_p5_p95": [
+          -20.84584083845614,
+          17.463050853089637
+        ]
+      }
+    },
+    "pca2d_nearest_centroid_balanced_accuracy_visual_aid_only": 0.4668969008969805,
+    "components": {
+      "PC1": [
+        0.03652803842771475,
+        -0.0046555819869353865,
+        -0.043824759605207986,
+        0.35108157846987126,
+        0.3866736086692726,
+        0.413355292502875,
+        -0.02250550448095895,
+        0.532561194544595,
+        -0.07529071305638228,
+        0.5131173852530571
+      ],
+      "PC2": [
+        0.0070823152650851115,
+        0.09813940558714875,
+        -0.24325730992024308,
+        0.18883946531845977,
+        0.7934312340287671,
+        -0.322571237457631,
+        -0.17013297301258065,
+        -0.3130155653033806,
+        -0.05595529406193499,
+        -0.17844814782137694
+      ],
+      "PC3": [
+        0.017107225685913895,
+        -0.16878141191754947,
+        0.06181340932646386,
+        0.8652433252315572,
+        -0.24257502330446853,
+        0.11824850500052253,
+        0.037423159573994925,
+        -0.13831558279169803,
+        0.023013083109345966,
+        -0.35336471557641436
+      ]
+    }
+  },
+  "nearest_neighbour_phase_mixing": {
+    "method": "for each interior frame of a held-out subject, the nearest neighbour among ALL interior frames of the OTHER subjects; repeated per subject; deterministic subsampling",
+    "anchors_per_subject": 5000,
+    "reference_pool_per_subject": 10000,
+    "per_subject": {
+      "1": {
+        "REACHING": {
+          "n": 342,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 64,
+              "denominator": 342,
+              "value": 0.1871345029239766,
+              "wilson95": [
+                0.14935792578757984,
+                0.2318614319790348
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 158,
+              "denominator": 342,
+              "value": 0.4619883040935672,
+              "wilson95": [
+                0.40986509378142005,
+                0.5149559496855517
+              ]
+            },
+            "RELEASING": {
+              "numerator": 120,
+              "denominator": 342,
+              "value": 0.3508771929824561,
+              "wilson95": [
+                0.3022083360468459,
+                0.4028588344774284
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.1871345029239766,
+          "median_nn_distance_deg": 11.556980759092182
+        },
+        "MANIPULATION": {
+          "n": 4159,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 156,
+              "denominator": 4159,
+              "value": 0.03750901659052657,
+              "wilson95": [
+                0.0321481378169934,
+                0.043723466217182344
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3786,
+              "denominator": 4159,
+              "value": 0.9103149795623948,
+              "wilson95": [
+                0.9012483025373283,
+                0.91862438148434
+              ]
+            },
+            "RELEASING": {
+              "numerator": 217,
+              "denominator": 4159,
+              "value": 0.05217600384707863,
+              "wilson95": [
+                0.045821205601111505,
+                0.059357303633955964
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.9103149795623948,
+          "median_nn_distance_deg": 14.846419443836444
+        },
+        "RELEASING": {
+          "n": 499,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 46,
+              "denominator": 499,
+              "value": 0.09218436873747494,
+              "wilson95": [
+                0.06982383029064768,
+                0.12077592464099526
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 235,
+              "denominator": 499,
+              "value": 0.4709418837675351,
+              "wilson95": [
+                0.42753504771773004,
+                0.5147926989481609
+              ]
+            },
+            "RELEASING": {
+              "numerator": 218,
+              "denominator": 499,
+              "value": 0.43687374749499,
+              "wilson95": [
+                0.3940008917044245,
+                0.4807111096732008
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.43687374749499,
+          "median_nn_distance_deg": 10.56876341666805
+        }
+      },
+      "2": {
+        "REACHING": {
+          "n": 387,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 120,
+              "denominator": 387,
+              "value": 0.31007751937984496,
+              "wilson95": [
+                0.2660516119311552,
+                0.3578368045036043
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 164,
+              "denominator": 387,
+              "value": 0.42377260981912146,
+              "wilson95": [
+                0.37552567581289376,
+                0.47351797432078513
+              ]
+            },
+            "RELEASING": {
+              "numerator": 103,
+              "denominator": 387,
+              "value": 0.2661498708010336,
+              "wilson95": [
+                0.2245738948208946,
+                0.3123227267756459
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.31007751937984496,
+          "median_nn_distance_deg": 10.113264112881113
+        },
+        "MANIPULATION": {
+          "n": 4004,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 225,
+              "denominator": 4004,
+              "value": 0.05619380619380619,
+              "wilson95": [
+                0.049476691447836896,
+                0.06376168474138413
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3513,
+              "denominator": 4004,
+              "value": 0.8773726273726273,
+              "wilson95": [
+                0.8668495129912529,
+                0.8871723292023806
+              ]
+            },
+            "RELEASING": {
+              "numerator": 266,
+              "denominator": 4004,
+              "value": 0.06643356643356643,
+              "wilson95": [
+                0.05912785642765349,
+                0.0745704109130824
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.8773726273726273,
+          "median_nn_distance_deg": 12.886064113161297
+        },
+        "RELEASING": {
+          "n": 609,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 123,
+              "denominator": 609,
+              "value": 0.2019704433497537,
+              "wilson95": [
+                0.17199834292459865,
+                0.2356788062380416
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 316,
+              "denominator": 609,
+              "value": 0.5188834154351396,
+              "wilson95": [
+                0.4792068942300533,
+                0.5583232037568868
+              ]
+            },
+            "RELEASING": {
+              "numerator": 170,
+              "denominator": 609,
+              "value": 0.2791461412151067,
+              "wilson95": [
+                0.24498840949753686,
+                0.3160726183943371
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.2791461412151067,
+          "median_nn_distance_deg": 9.080649762137067
+        }
+      },
+      "3": {
+        "REACHING": {
+          "n": 393,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 63,
+              "denominator": 393,
+              "value": 0.16030534351145037,
+              "wilson95": [
+                0.12734689119583276,
+                0.19984034172722914
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 207,
+              "denominator": 393,
+              "value": 0.5267175572519084,
+              "wilson95": [
+                0.47733482011133915,
+                0.5755830379733637
+              ]
+            },
+            "RELEASING": {
+              "numerator": 123,
+              "denominator": 393,
+              "value": 0.31297709923664124,
+              "wilson95": [
+                0.2691288408220402,
+                0.3604461525850389
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.16030534351145037,
+          "median_nn_distance_deg": 10.840076646489914
+        },
+        "MANIPULATION": {
+          "n": 3849,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 306,
+              "denominator": 3849,
+              "value": 0.07950116913484022,
+              "wilson95": [
+                0.07136821496544195,
+                0.08847263636540816
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3158,
+              "denominator": 3849,
+              "value": 0.8204728500909327,
+              "wilson95": [
+                0.808030449697414,
+                0.8322761983615274
+              ]
+            },
+            "RELEASING": {
+              "numerator": 385,
+              "denominator": 3849,
+              "value": 0.10002598077422707,
+              "wilson95": [
+                0.09094248087193949,
+                0.10990706538931708
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.8204728500909327,
+          "median_nn_distance_deg": 13.411647125877716
+        },
+        "RELEASING": {
+          "n": 758,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 213,
+              "denominator": 758,
+              "value": 0.28100263852242746,
+              "wilson95": [
+                0.2501698760755873,
+                0.3140439164975745
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 222,
+              "denominator": 758,
+              "value": 0.2928759894459103,
+              "wilson95": [
+                0.26158840831955726,
+                0.326252347306867
+              ]
+            },
+            "RELEASING": {
+              "numerator": 323,
+              "denominator": 758,
+              "value": 0.4261213720316623,
+              "wilson95": [
+                0.39137693292347137,
+                0.4616108525228965
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.4261213720316623,
+          "median_nn_distance_deg": 8.626255208410814
+        }
+      },
+      "4": {
+        "REACHING": {
+          "n": 297,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 95,
+              "denominator": 297,
+              "value": 0.31986531986531985,
+              "wilson95": [
+                0.2694092737914261,
+                0.37492166244507996
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 139,
+              "denominator": 297,
+              "value": 0.468013468013468,
+              "wilson95": [
+                0.41203605494872253,
+                0.5248077561586943
+              ]
+            },
+            "RELEASING": {
+              "numerator": 63,
+              "denominator": 297,
+              "value": 0.21212121212121213,
+              "wilson95": [
+                0.16945548610778988,
+                0.26213881385896276
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.31986531986531985,
+          "median_nn_distance_deg": 10.316123413254614
+        },
+        "MANIPULATION": {
+          "n": 3913,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 167,
+              "denominator": 3913,
+              "value": 0.042678251980577564,
+              "wilson95": [
+                0.03678077598708627,
+                0.04947276844981658
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3310,
+              "denominator": 3913,
+              "value": 0.8458982877587529,
+              "wilson95": [
+                0.8342470755226924,
+                0.856871017578538
+              ]
+            },
+            "RELEASING": {
+              "numerator": 436,
+              "denominator": 3913,
+              "value": 0.11142346026066956,
+              "wilson95": [
+                0.10194311738227377,
+                0.12166599930747796
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.8458982877587529,
+          "median_nn_distance_deg": 13.080429278284182
+        },
+        "RELEASING": {
+          "n": 790,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 113,
+              "denominator": 790,
+              "value": 0.14303797468354432,
+              "wilson95": [
+                0.12034918753702194,
+                0.16918149427208815
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 231,
+              "denominator": 790,
+              "value": 0.29240506329113924,
+              "wilson95": [
+                0.2617515370215006,
+                0.32506772473982587
+              ]
+            },
+            "RELEASING": {
+              "numerator": 446,
+              "denominator": 790,
+              "value": 0.5645569620253165,
+              "wilson95": [
+                0.5297525502743197,
+                0.5987365817389265
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.5645569620253165,
+          "median_nn_distance_deg": 8.606003645372542
+        }
+      },
+      "5": {
+        "REACHING": {
+          "n": 281,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 87,
+              "denominator": 281,
+              "value": 0.3096085409252669,
+              "wilson95": [
+                0.2584239586092839,
+                0.36592847785483407
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 104,
+              "denominator": 281,
+              "value": 0.3701067615658363,
+              "wilson95": [
+                0.31575951599815205,
+                0.42795756682316205
+              ]
+            },
+            "RELEASING": {
+              "numerator": 90,
+              "denominator": 281,
+              "value": 0.3202846975088968,
+              "wilson95": [
+                0.2684693348085042,
+                0.37694745101276605
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.3096085409252669,
+          "median_nn_distance_deg": 9.687780989457806
+        },
+        "MANIPULATION": {
+          "n": 3905,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 538,
+              "denominator": 3905,
+              "value": 0.1377720870678617,
+              "wilson95": [
+                0.127317433188731,
+                0.14893870822726918
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 2924,
+              "denominator": 3905,
+              "value": 0.7487836107554418,
+              "wilson95": [
+                0.7349404463266332,
+                0.7621377852847885
+              ]
+            },
+            "RELEASING": {
+              "numerator": 443,
+              "denominator": 3905,
+              "value": 0.11344430217669654,
+              "wilson95": [
+                0.10387506101357953,
+                0.1237733274399039
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.7487836107554418,
+          "median_nn_distance_deg": 12.685294392520024
+        },
+        "RELEASING": {
+          "n": 814,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 319,
+              "denominator": 814,
+              "value": 0.3918918918918919,
+              "wilson95": [
+                0.3589388246542906,
+                0.4258605418955693
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 167,
+              "denominator": 814,
+              "value": 0.20515970515970516,
+              "wilson95": [
+                0.178834206312437,
+                0.23425497518718105
+              ]
+            },
+            "RELEASING": {
+              "numerator": 328,
+              "denominator": 814,
+              "value": 0.40294840294840295,
+              "wilson95": [
+                0.3697853138421686,
+                0.4370232084014557
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.40294840294840295,
+          "median_nn_distance_deg": 8.52749855139183
+        }
+      },
+      "6": {
+        "REACHING": {
+          "n": 271,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 82,
+              "denominator": 271,
+              "value": 0.3025830258302583,
+              "wilson95": [
+                0.25096280951828165,
+                0.35972183588011686
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 142,
+              "denominator": 271,
+              "value": 0.5239852398523985,
+              "wilson95": [
+                0.4646049195649912,
+                0.5826950767884744
+              ]
+            },
+            "RELEASING": {
+              "numerator": 47,
+              "denominator": 271,
+              "value": 0.17343173431734318,
+              "wilson95": [
+                0.13300194293672588,
+                0.22299041440455006
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.3025830258302583,
+          "median_nn_distance_deg": 11.69084588802281
+        },
+        "MANIPULATION": {
+          "n": 3842,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 187,
+              "denominator": 3842,
+              "value": 0.048672566371681415,
+              "wilson95": [
+                0.04230766135510393,
+                0.055939097609462723
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3278,
+              "denominator": 3842,
+              "value": 0.8532014575741801,
+              "wilson95": [
+                0.8416580166914325,
+                0.8640393005433329
+              ]
+            },
+            "RELEASING": {
+              "numerator": 377,
+              "denominator": 3842,
+              "value": 0.09812597605413848,
+              "wilson95": [
+                0.08911688977880781,
+                0.10793789444338996
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.8532014575741801,
+          "median_nn_distance_deg": 13.859577982713997
+        },
+        "RELEASING": {
+          "n": 887,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 84,
+              "denominator": 887,
+              "value": 0.09470124013528748,
+              "wilson95": [
+                0.07714223978592033,
+                0.11575567388794455
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 353,
+              "denominator": 887,
+              "value": 0.3979706877113867,
+              "wilson95": [
+                0.36626495269124404,
+                0.43055635798326164
+              ]
+            },
+            "RELEASING": {
+              "numerator": 450,
+              "denominator": 887,
+              "value": 0.5073280721533259,
+              "wilson95": [
+                0.47446643032973146,
+                0.5401265142074589
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.5073280721533259,
+          "median_nn_distance_deg": 11.748621782387923
+        }
+      },
+      "7": {
+        "REACHING": {
+          "n": 340,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 92,
+              "denominator": 340,
+              "value": 0.27058823529411763,
+              "wilson95": [
+                0.22612334682902935,
+                0.3201791830199072
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 140,
+              "denominator": 340,
+              "value": 0.4117647058823529,
+              "wilson95": [
+                0.3607213001821368,
+                0.464779672836685
+              ]
+            },
+            "RELEASING": {
+              "numerator": 108,
+              "denominator": 340,
+              "value": 0.3176470588235294,
+              "wilson95": [
+                0.2704330278749746,
+                0.368935649697257
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.27058823529411763,
+          "median_nn_distance_deg": 11.189052231003735
+        },
+        "MANIPULATION": {
+          "n": 3824,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 493,
+              "denominator": 3824,
+              "value": 0.12892259414225943,
+              "wilson95": [
+                0.11867238620675652,
+                0.13991759706952345
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 2937,
+              "denominator": 3824,
+              "value": 0.7680439330543933,
+              "wilson95": [
+                0.7544011336263767,
+                0.781148737509503
+              ]
+            },
+            "RELEASING": {
+              "numerator": 394,
+              "denominator": 3824,
+              "value": 0.10303347280334728,
+              "wilson95": [
+                0.09379312479018134,
+                0.11307057824955993
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.7680439330543933,
+          "median_nn_distance_deg": 15.491992880494209
+        },
+        "RELEASING": {
+          "n": 836,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 350,
+              "denominator": 836,
+              "value": 0.41866028708133973,
+              "wilson95": [
+                0.38566494136952634,
+                0.4523997331334789
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 356,
+              "denominator": 836,
+              "value": 0.4258373205741627,
+              "wilson95": [
+                0.39273308925759576,
+                0.4596199963186738
+              ]
+            },
+            "RELEASING": {
+              "numerator": 130,
+              "denominator": 836,
+              "value": 0.15550239234449761,
+              "wilson95": [
+                0.1325190058100567,
+                0.18163726267325975
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.15550239234449761,
+          "median_nn_distance_deg": 12.023039688585014
+        }
+      },
+      "8": {
+        "REACHING": {
+          "n": 298,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 59,
+              "denominator": 298,
+              "value": 0.19798657718120805,
+              "wilson95": [
+                0.1567123079114888,
+                0.24694814117570177
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 111,
+              "denominator": 298,
+              "value": 0.3724832214765101,
+              "wilson95": [
+                0.31954075772455975,
+                0.4286714318900318
+              ]
+            },
+            "RELEASING": {
+              "numerator": 128,
+              "denominator": 298,
+              "value": 0.42953020134228187,
+              "wilson95": [
+                0.3745764543573099,
+                0.48627765042970117
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.19798657718120805,
+          "median_nn_distance_deg": 11.822961105865435
+        },
+        "MANIPULATION": {
+          "n": 3880,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 214,
+              "denominator": 3880,
+              "value": 0.05515463917525773,
+              "wilson95": [
+                0.04840175065225892,
+                0.06278750961992023
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3032,
+              "denominator": 3880,
+              "value": 0.7814432989690722,
+              "wilson95": [
+                0.7681647958369353,
+                0.7941650580348958
+              ]
+            },
+            "RELEASING": {
+              "numerator": 634,
+              "denominator": 3880,
+              "value": 0.1634020618556701,
+              "wilson95": [
+                0.15210223544579068,
+                0.1753677378540158
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.7814432989690722,
+          "median_nn_distance_deg": 14.235191988841063
+        },
+        "RELEASING": {
+          "n": 822,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 99,
+              "denominator": 822,
+              "value": 0.12043795620437957,
+              "wilson95": [
+                0.09993537018293186,
+                0.1444716605671649
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 198,
+              "denominator": 822,
+              "value": 0.24087591240875914,
+              "wilson95": [
+                0.21289196410999958,
+                0.27127052803670115
+              ]
+            },
+            "RELEASING": {
+              "numerator": 525,
+              "denominator": 822,
+              "value": 0.6386861313868614,
+              "wilson95": [
+                0.6052715107498408,
+                0.6708105357068548
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.6386861313868614,
+          "median_nn_distance_deg": 11.497527556452924
+        }
+      },
+      "9": {
+        "REACHING": {
+          "n": 282,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 61,
+              "denominator": 282,
+              "value": 0.21631205673758866,
+              "wilson95": [
+                0.1722418939979362,
+                0.2680072543932122
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 167,
+              "denominator": 282,
+              "value": 0.5921985815602837,
+              "wilson95": [
+                0.5339763933270365,
+                0.6479426334458402
+              ]
+            },
+            "RELEASING": {
+              "numerator": 54,
+              "denominator": 282,
+              "value": 0.19148936170212766,
+              "wilson95": [
+                0.149833166917613,
+                0.2414377819577609
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.21631205673758866,
+          "median_nn_distance_deg": 13.07939662634871
+        },
+        "MANIPULATION": {
+          "n": 3926,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 230,
+              "denominator": 3926,
+              "value": 0.05858380030565461,
+              "wilson95": [
+                0.05166018522840175,
+                0.06637039276847455
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3297,
+              "denominator": 3926,
+              "value": 0.8397860417727967,
+              "wilson95": [
+                0.8279808935414515,
+                0.8509269015838611
+              ]
+            },
+            "RELEASING": {
+              "numerator": 399,
+              "denominator": 3926,
+              "value": 0.10163015792154866,
+              "wilson95": [
+                0.09256442545233076,
+                0.11147471129730258
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.8397860417727967,
+          "median_nn_distance_deg": 14.592502879631464
+        },
+        "RELEASING": {
+          "n": 792,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 90,
+              "denominator": 792,
+              "value": 0.11363636363636363,
+              "wilson95": [
+                0.09337304495883149,
+                0.1376295709304146
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 109,
+              "denominator": 792,
+              "value": 0.13762626262626262,
+              "wilson95": [
+                0.11537659290880525,
+                0.16337422656901707
+              ]
+            },
+            "RELEASING": {
+              "numerator": 593,
+              "denominator": 792,
+              "value": 0.7487373737373737,
+              "wilson95": [
+                0.7173783639681015,
+                0.7776951153450307
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.7487373737373737,
+          "median_nn_distance_deg": 9.118213197328307
+        }
+      },
+      "10": {
+        "REACHING": {
+          "n": 335,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 51,
+              "denominator": 335,
+              "value": 0.15223880597014924,
+              "wilson95": [
+                0.11772717385073077,
+                0.19463560250215522
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 215,
+              "denominator": 335,
+              "value": 0.6417910447761194,
+              "wilson95": [
+                0.5891060053410893,
+                0.6912611030128841
+              ]
+            },
+            "RELEASING": {
+              "numerator": 69,
+              "denominator": 335,
+              "value": 0.20597014925373133,
+              "wilson95": [
+                0.16611510434036716,
+                0.2524920499150772
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.15223880597014924,
+          "median_nn_distance_deg": 12.650558898313548
+        },
+        "MANIPULATION": {
+          "n": 3863,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 293,
+              "denominator": 3863,
+              "value": 0.07584778669427905,
+              "wilson95": [
+                0.06791377705734505,
+                0.08462453233602307
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3249,
+              "denominator": 3863,
+              "value": 0.8410561739580636,
+              "wilson95": [
+                0.8291883505292698,
+                0.8522463625462487
+              ]
+            },
+            "RELEASING": {
+              "numerator": 321,
+              "denominator": 3863,
+              "value": 0.08309603934765726,
+              "wilson95": [
+                0.07480029908439619,
+                0.09222011426807218
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.8410561739580636,
+          "median_nn_distance_deg": 15.970350936739116
+        },
+        "RELEASING": {
+          "n": 802,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 161,
+              "denominator": 802,
+              "value": 0.20074812967581046,
+              "wilson95": [
+                0.17448180521482143,
+                0.22986753081654338
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 371,
+              "denominator": 802,
+              "value": 0.4625935162094763,
+              "wilson95": [
+                0.42834632727599525,
+                0.4971973397279254
+              ]
+            },
+            "RELEASING": {
+              "numerator": 270,
+              "denominator": 802,
+              "value": 0.33665835411471323,
+              "wilson95": [
+                0.3048000046558928,
+                0.37007400792789386
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.33665835411471323,
+          "median_nn_distance_deg": 10.869231190269158
+        }
+      },
+      "11": {
+        "REACHING": {
+          "n": 353,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 69,
+              "denominator": 353,
+              "value": 0.1954674220963173,
+              "wilson95": [
+                0.15747014296381212,
+                0.24002139092201558
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 183,
+              "denominator": 353,
+              "value": 0.5184135977337111,
+              "wilson95": [
+                0.4663725169279401,
+                0.5700582275347773
+              ]
+            },
+            "RELEASING": {
+              "numerator": 101,
+              "denominator": 353,
+              "value": 0.28611898016997167,
+              "wilson95": [
+                0.24147317530273898,
+                0.3353697159380051
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.1954674220963173,
+          "median_nn_distance_deg": 11.681141209916092
+        },
+        "MANIPULATION": {
+          "n": 3756,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 194,
+              "denominator": 3756,
+              "value": 0.0516506922257721,
+              "wilson95": [
+                0.045019624594723036,
+                0.05919792370147522
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3244,
+              "denominator": 3756,
+              "value": 0.8636847710330139,
+              "wilson95": [
+                0.8523392599030413,
+                0.8742871231298528
+              ]
+            },
+            "RELEASING": {
+              "numerator": 318,
+              "denominator": 3756,
+              "value": 0.08466453674121406,
+              "wilson95": [
+                0.07618053288647382,
+                0.09399724344492126
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.8636847710330139,
+          "median_nn_distance_deg": 15.134227868512085
+        },
+        "RELEASING": {
+          "n": 891,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 158,
+              "denominator": 891,
+              "value": 0.17732884399551066,
+              "wilson95": [
+                0.15365051162804377,
+                0.2037775619909536
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 203,
+              "denominator": 891,
+              "value": 0.22783389450056116,
+              "wilson95": [
+                0.20149600301391868,
+                0.2565085460386269
+              ]
+            },
+            "RELEASING": {
+              "numerator": 530,
+              "denominator": 891,
+              "value": 0.5948372615039281,
+              "wilson95": [
+                0.5622621649179269,
+                0.6265981056184025
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.5948372615039281,
+          "median_nn_distance_deg": 10.470218058382976
+        }
+      },
+      "12": {
+        "REACHING": {
+          "n": 334,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 80,
+              "denominator": 334,
+              "value": 0.23952095808383234,
+              "wilson95": [
+                0.19687646689523938,
+                0.2880890533005851
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 194,
+              "denominator": 334,
+              "value": 0.5808383233532934,
+              "wilson95": [
+                0.5272960592588811,
+                0.6325422275768975
+              ]
+            },
+            "RELEASING": {
+              "numerator": 60,
+              "denominator": 334,
+              "value": 0.17964071856287425,
+              "wilson95": [
+                0.14218652039789847,
+                0.22438026880846035
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.23952095808383234,
+          "median_nn_distance_deg": 12.887387989628479
+        },
+        "MANIPULATION": {
+          "n": 4025,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 320,
+              "denominator": 4025,
+              "value": 0.07950310559006211,
+              "wilson95": [
+                0.07154106827986205,
+                0.08826702181290542
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3264,
+              "denominator": 4025,
+              "value": 0.8109316770186336,
+              "wilson95": [
+                0.7985406478570997,
+                0.8227297658793268
+              ]
+            },
+            "RELEASING": {
+              "numerator": 441,
+              "denominator": 4025,
+              "value": 0.10956521739130434,
+              "wilson95": [
+                0.10028546243396784,
+                0.11958952343355596
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.8109316770186336,
+          "median_nn_distance_deg": 14.464732723455349
+        },
+        "RELEASING": {
+          "n": 641,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 90,
+              "denominator": 641,
+              "value": 0.14040561622464898,
+              "wilson95": [
+                0.11564842274829945,
+                0.16944717137945564
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 223,
+              "denominator": 641,
+              "value": 0.34789391575663026,
+              "wilson95": [
+                0.31202645322542866,
+                0.3855736353969407
+              ]
+            },
+            "RELEASING": {
+              "numerator": 328,
+              "denominator": 641,
+              "value": 0.5117004680187207,
+              "wilson95": [
+                0.47304977427567185,
+                0.5502117573687613
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.5117004680187207,
+          "median_nn_distance_deg": 9.808911595820678
+        }
+      },
+      "13": {
+        "REACHING": {
+          "n": 269,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 79,
+              "denominator": 269,
+              "value": 0.2936802973977695,
+              "wilson95": [
+                0.2424652055270533,
+                0.35070512687119504
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 85,
+              "denominator": 269,
+              "value": 0.3159851301115242,
+              "wilson95": [
+                0.2633507393189794,
+                0.3738011787659448
+              ]
+            },
+            "RELEASING": {
+              "numerator": 105,
+              "denominator": 269,
+              "value": 0.3903345724907063,
+              "wilson95": [
+                0.33397418981017446,
+                0.4497830138970025
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.2936802973977695,
+          "median_nn_distance_deg": 12.614833691087647
+        },
+        "MANIPULATION": {
+          "n": 3968,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 368,
+              "denominator": 3968,
+              "value": 0.09274193548387097,
+              "wilson95": [
+                0.08410620962499091,
+                0.10216543955618396
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3092,
+              "denominator": 3968,
+              "value": 0.7792338709677419,
+              "wilson95": [
+                0.7660620885360585,
+                0.7918655183372447
+              ]
+            },
+            "RELEASING": {
+              "numerator": 508,
+              "denominator": 3968,
+              "value": 0.1280241935483871,
+              "wilson95": [
+                0.11798689895899306,
+                0.13878101823866418
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.7792338709677419,
+          "median_nn_distance_deg": 15.477758915214887
+        },
+        "RELEASING": {
+          "n": 763,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 266,
+              "denominator": 763,
+              "value": 0.3486238532110092,
+              "wilson95": [
+                0.3156457052001136,
+                0.3831186256235628
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 189,
+              "denominator": 763,
+              "value": 0.24770642201834864,
+              "wilson95": [
+                0.21839088309293608,
+                0.2795496682798579
+              ]
+            },
+            "RELEASING": {
+              "numerator": 308,
+              "denominator": 763,
+              "value": 0.4036697247706422,
+              "wilson95": [
+                0.36942316967814787,
+                0.4388814044823734
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.4036697247706422,
+          "median_nn_distance_deg": 9.550347877759274
+        }
+      },
+      "14": {
+        "REACHING": {
+          "n": 359,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 91,
+              "denominator": 359,
+              "value": 0.25348189415041783,
+              "wilson95": [
+                0.2112564917222513,
+                0.3009271474481879
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 116,
+              "denominator": 359,
+              "value": 0.3231197771587744,
+              "wilson95": [
+                0.27683582217283076,
+                0.3731490488703657
+              ]
+            },
+            "RELEASING": {
+              "numerator": 152,
+              "denominator": 359,
+              "value": 0.4233983286908078,
+              "wilson95": [
+                0.37336325064133336,
+                0.47505539429863364
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.25348189415041783,
+          "median_nn_distance_deg": 9.943230185528243
+        },
+        "MANIPULATION": {
+          "n": 4079,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 305,
+              "denominator": 4079,
+              "value": 0.07477322873253249,
+              "wilson95": [
+                0.06709543678774932,
+                0.08325119435427863
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3213,
+              "denominator": 4079,
+              "value": 0.7876930620250061,
+              "wilson95": [
+                0.774875706149748,
+                0.7999690493157061
+              ]
+            },
+            "RELEASING": {
+              "numerator": 561,
+              "denominator": 4079,
+              "value": 0.1375337092424614,
+              "wilson95": [
+                0.12730490028123298,
+                0.14844459187413644
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.7876930620250061,
+          "median_nn_distance_deg": 13.50254427994591
+        },
+        "RELEASING": {
+          "n": 562,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 93,
+              "denominator": 562,
+              "value": 0.16548042704626334,
+              "wilson95": [
+                0.13704826068907017,
+                0.19845465423758557
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 114,
+              "denominator": 562,
+              "value": 0.20284697508896798,
+              "wilson95": [
+                0.17167034446389104,
+                0.23805830868904257
+              ]
+            },
+            "RELEASING": {
+              "numerator": 355,
+              "denominator": 562,
+              "value": 0.6316725978647687,
+              "wilson95": [
+                0.5910253465251871,
+                0.6705320167483633
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.6316725978647687,
+          "median_nn_distance_deg": 8.720097761410688
+        }
+      },
+      "15": {
+        "REACHING": {
+          "n": 283,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 76,
+              "denominator": 283,
+              "value": 0.26855123674911663,
+              "wilson95": [
+                0.22026729082811655,
+                0.3230344322261903
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 111,
+              "denominator": 283,
+              "value": 0.392226148409894,
+              "wilson95": [
+                0.3371487168498069,
+                0.45019025342738944
+              ]
+            },
+            "RELEASING": {
+              "numerator": 96,
+              "denominator": 283,
+              "value": 0.3392226148409894,
+              "wilson95": [
+                0.2865440249200928,
+                0.3962075536901509
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.26855123674911663,
+          "median_nn_distance_deg": 10.073835439920586
+        },
+        "MANIPULATION": {
+          "n": 4215,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 233,
+              "denominator": 4215,
+              "value": 0.05527876631079478,
+              "wilson95": [
+                0.048776061328027934,
+                0.06259135159960322
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3530,
+              "denominator": 4215,
+              "value": 0.8374851720047449,
+              "wilson95": [
+                0.8260412927688011,
+                0.8483144581570162
+              ]
+            },
+            "RELEASING": {
+              "numerator": 452,
+              "denominator": 4215,
+              "value": 0.10723606168446026,
+              "wilson95": [
+                0.09825021349837683,
+                0.1169371709250392
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.8374851720047449,
+          "median_nn_distance_deg": 13.555874276916446
+        },
+        "RELEASING": {
+          "n": 502,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 63,
+              "denominator": 502,
+              "value": 0.1254980079681275,
+              "wilson95": [
+                0.09933277013338176,
+                0.1573513283258532
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 243,
+              "denominator": 502,
+              "value": 0.48406374501992033,
+              "wilson95": [
+                0.44063439706071705,
+                0.5277351390439312
+              ]
+            },
+            "RELEASING": {
+              "numerator": 196,
+              "denominator": 502,
+              "value": 0.3904382470119522,
+              "wilson95": [
+                0.34874873207888607,
+                0.4337918286405709
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.3904382470119522,
+          "median_nn_distance_deg": 9.55201178212184
+        }
+      },
+      "16": {
+        "REACHING": {
+          "n": 292,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 75,
+              "denominator": 292,
+              "value": 0.2568493150684932,
+              "wilson95": [
+                0.21012183986472577,
+                0.30989134366252125
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 140,
+              "denominator": 292,
+              "value": 0.4794520547945205,
+              "wilson95": [
+                0.4227908174540997,
+                0.5366469163651042
+              ]
+            },
+            "RELEASING": {
+              "numerator": 77,
+              "denominator": 292,
+              "value": 0.2636986301369863,
+              "wilson95": [
+                0.21646213880078005,
+                0.31707180012006564
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.2568493150684932,
+          "median_nn_distance_deg": 10.227428425508101
+        },
+        "MANIPULATION": {
+          "n": 4174,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 156,
+              "denominator": 4174,
+              "value": 0.037374221370388115,
+              "wilson95": [
+                0.03203231284081823,
+                0.04356688400133496
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3636,
+              "denominator": 4174,
+              "value": 0.8711068519405846,
+              "wilson95": [
+                0.8605992176857238,
+                0.8809320324911301
+              ]
+            },
+            "RELEASING": {
+              "numerator": 382,
+              "denominator": 4174,
+              "value": 0.09151892668902731,
+              "wilson95": [
+                0.08314295114571582,
+                0.10064608594173688
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.8711068519405846,
+          "median_nn_distance_deg": 13.834126147072968
+        },
+        "RELEASING": {
+          "n": 534,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 86,
+              "denominator": 534,
+              "value": 0.16104868913857678,
+              "wilson95": [
+                0.13231065814570675,
+                0.19462854658993312
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 226,
+              "denominator": 534,
+              "value": 0.4232209737827715,
+              "wilson95": [
+                0.3820106810031266,
+                0.4655280338817421
+              ]
+            },
+            "RELEASING": {
+              "numerator": 222,
+              "denominator": 534,
+              "value": 0.4157303370786517,
+              "wilson95": [
+                0.3746761012963248,
+                0.4579883418699946
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.4157303370786517,
+          "median_nn_distance_deg": 9.938846998831778
+        }
+      },
+      "17": {
+        "REACHING": {
+          "n": 294,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 52,
+              "denominator": 294,
+              "value": 0.17687074829931973,
+              "wilson95": [
+                0.13750552972186292,
+                0.22457119138907083
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 114,
+              "denominator": 294,
+              "value": 0.3877551020408163,
+              "wilson95": [
+                0.3338492531094919,
+                0.44455634475009564
+              ]
+            },
+            "RELEASING": {
+              "numerator": 128,
+              "denominator": 294,
+              "value": 0.43537414965986393,
+              "wilson95": [
+                0.3798938775251714,
+                0.4925214666970153
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.17687074829931973,
+          "median_nn_distance_deg": 10.34120908169497
+        },
+        "MANIPULATION": {
+          "n": 4109,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 572,
+              "denominator": 4109,
+              "value": 0.13920661961547823,
+              "wilson95": [
+                0.1289589508988232,
+                0.15012826175289506
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3094,
+              "denominator": 4109,
+              "value": 0.7529812606473595,
+              "wilson95": [
+                0.7395622858919184,
+                0.7659276584241281
+              ]
+            },
+            "RELEASING": {
+              "numerator": 443,
+              "denominator": 4109,
+              "value": 0.10781211973716233,
+              "wilson95": [
+                0.0986928658931171,
+                0.11766399291851456
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.7529812606473595,
+          "median_nn_distance_deg": 14.416550523541197
+        },
+        "RELEASING": {
+          "n": 597,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 83,
+              "denominator": 597,
+              "value": 0.1390284757118928,
+              "wilson95": [
+                0.11357627061003815,
+                0.16909639840659668
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 190,
+              "denominator": 597,
+              "value": 0.31825795644891125,
+              "wilson95": [
+                0.2821568106163263,
+                0.35668302506026245
+              ]
+            },
+            "RELEASING": {
+              "numerator": 324,
+              "denominator": 597,
+              "value": 0.542713567839196,
+              "wilson95": [
+                0.5026061197215345,
+                0.5822748405572397
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.542713567839196,
+          "median_nn_distance_deg": 9.787291957606506
+        }
+      },
+      "18": {
+        "REACHING": {
+          "n": 370,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 123,
+              "denominator": 370,
+              "value": 0.3324324324324324,
+              "wilson95": [
+                0.28636993219919854,
+                0.381938659386214
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 134,
+              "denominator": 370,
+              "value": 0.3621621621621622,
+              "wilson95": [
+                0.31483752859704206,
+                0.4123195386748296
+              ]
+            },
+            "RELEASING": {
+              "numerator": 113,
+              "denominator": 370,
+              "value": 0.3054054054054054,
+              "wilson95": [
+                0.26067385037655444,
+                0.3541361269484409
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.3324324324324324,
+          "median_nn_distance_deg": 9.629671711575465
+        },
+        "MANIPULATION": {
+          "n": 3883,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 229,
+              "denominator": 3883,
+              "value": 0.05897501931496266,
+              "wilson95": [
+                0.05199206931345192,
+                0.06682972049034969
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3451,
+              "denominator": 3883,
+              "value": 0.8887458150914241,
+              "wilson95": [
+                0.8784686903380846,
+                0.8982545261823017
+              ]
+            },
+            "RELEASING": {
+              "numerator": 203,
+              "denominator": 3883,
+              "value": 0.05227916559361319,
+              "wilson95": [
+                0.04571000023702694,
+                0.05973331747036524
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.8887458150914241,
+          "median_nn_distance_deg": 13.782520037892205
+        },
+        "RELEASING": {
+          "n": 747,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 192,
+              "denominator": 747,
+              "value": 0.2570281124497992,
+              "wilson95": [
+                0.22698926852765539,
+                0.28955314434050944
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 249,
+              "denominator": 747,
+              "value": 0.3333333333333333,
+              "wilson95": [
+                0.30045679548993787,
+                0.36791527284111736
+              ]
+            },
+            "RELEASING": {
+              "numerator": 306,
+              "denominator": 747,
+              "value": 0.40963855421686746,
+              "wilson95": [
+                0.37492288318426814,
+                0.4452788406096775
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.40963855421686746,
+          "median_nn_distance_deg": 9.779920533695556
+        }
+      },
+      "19": {
+        "REACHING": {
+          "n": 292,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 101,
+              "denominator": 292,
+              "value": 0.3458904109589041,
+              "wilson95": [
+                0.2936528519409685,
+                0.40213015170306127
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 116,
+              "denominator": 292,
+              "value": 0.3972602739726027,
+              "wilson95": [
+                0.34281859818871313,
+                0.4543700709073066
+              ]
+            },
+            "RELEASING": {
+              "numerator": 75,
+              "denominator": 292,
+              "value": 0.2568493150684932,
+              "wilson95": [
+                0.21012183986472577,
+                0.30989134366252125
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.3458904109589041,
+          "median_nn_distance_deg": 10.631372950925948
+        },
+        "MANIPULATION": {
+          "n": 4018,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 378,
+              "denominator": 4018,
+              "value": 0.09407665505226481,
+              "wilson95": [
+                0.08543364148201597,
+                0.10349510337295874
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3057,
+              "denominator": 4018,
+              "value": 0.7608262817322051,
+              "wilson95": [
+                0.7473911672533137,
+                0.7737631401605346
+              ]
+            },
+            "RELEASING": {
+              "numerator": 583,
+              "denominator": 4018,
+              "value": 0.14509706321553012,
+              "wilson95": [
+                0.13454589911725073,
+                0.1563261978558908
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.7608262817322051,
+          "median_nn_distance_deg": 12.610802769103667
+        },
+        "RELEASING": {
+          "n": 690,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 249,
+              "denominator": 690,
+              "value": 0.36086956521739133,
+              "wilson95": [
+                0.3258970495048362,
+                0.3973826744736966
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 259,
+              "denominator": 690,
+              "value": 0.3753623188405797,
+              "wilson95": [
+                0.3400163385477738,
+                0.412088414182995
+              ]
+            },
+            "RELEASING": {
+              "numerator": 182,
+              "denominator": 690,
+              "value": 0.263768115942029,
+              "wilson95": [
+                0.23226031825274526,
+                0.29789171308580514
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.263768115942029,
+          "median_nn_distance_deg": 10.400344832400162
+        }
+      },
+      "20": {
+        "REACHING": {
+          "n": 308,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 74,
+              "denominator": 308,
+              "value": 0.24025974025974026,
+              "wilson95": [
+                0.19593235583571275,
+                0.29098641178075585
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 128,
+              "denominator": 308,
+              "value": 0.4155844155844156,
+              "wilson95": [
+                0.3619163858133112,
+                0.47133221366204103
+              ]
+            },
+            "RELEASING": {
+              "numerator": 106,
+              "denominator": 308,
+              "value": 0.34415584415584416,
+              "wilson95": [
+                0.2933105372260192,
+                0.3988407233438619
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.24025974025974026,
+          "median_nn_distance_deg": 10.424987839467452
+        },
+        "MANIPULATION": {
+          "n": 3914,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 137,
+              "denominator": 3914,
+              "value": 0.035002554931016866,
+              "wilson95": [
+                0.029685556571512235,
+                0.04123141690508345
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3515,
+              "denominator": 3914,
+              "value": 0.8980582524271845,
+              "wilson95": [
+                0.888185492049974,
+                0.9071504174684127
+              ]
+            },
+            "RELEASING": {
+              "numerator": 262,
+              "denominator": 3914,
+              "value": 0.06693919264179868,
+              "wilson95": [
+                0.05952665897389177,
+                0.07520096192876193
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.8980582524271845,
+          "median_nn_distance_deg": 15.569133564388984
+        },
+        "RELEASING": {
+          "n": 778,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 120,
+              "denominator": 778,
+              "value": 0.15424164524421594,
+              "wilson95": [
+                0.13056651484627477,
+                0.18131443757660795
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 311,
+              "denominator": 778,
+              "value": 0.39974293059125965,
+              "wilson95": [
+                0.36589614684198546,
+                0.4345749099943894
+              ]
+            },
+            "RELEASING": {
+              "numerator": 347,
+              "denominator": 778,
+              "value": 0.44601542416452444,
+              "wilson95": [
+                0.41143690204560035,
+                0.4811244362509093
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.44601542416452444,
+          "median_nn_distance_deg": 8.985939305115316
+        }
+      },
+      "21": {
+        "REACHING": {
+          "n": 307,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 111,
+              "denominator": 307,
+              "value": 0.36156351791530944,
+              "wilson95": [
+                0.3098360736554535,
+                0.41671262958869304
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 147,
+              "denominator": 307,
+              "value": 0.4788273615635179,
+              "wilson95": [
+                0.42355440858245935,
+                0.5346236283842923
+              ]
+            },
+            "RELEASING": {
+              "numerator": 49,
+              "denominator": 307,
+              "value": 0.15960912052117263,
+              "wilson95": [
+                0.12288460995410459,
+                0.20474690743444413
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.36156351791530944,
+          "median_nn_distance_deg": 11.084313141108973
+        },
+        "MANIPULATION": {
+          "n": 3968,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 127,
+              "denominator": 3968,
+              "value": 0.032006048387096774,
+              "wilson95": [
+                0.026966001847563464,
+                0.03795135739095244
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3611,
+              "denominator": 3968,
+              "value": 0.9100302419354839,
+              "wilson95": [
+                0.9007261034035203,
+                0.9185412399023141
+              ]
+            },
+            "RELEASING": {
+              "numerator": 230,
+              "denominator": 3968,
+              "value": 0.05796370967741935,
+              "wilson95": [
+                0.05111152195348649,
+                0.06567094875429859
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.9100302419354839,
+          "median_nn_distance_deg": 13.77778825501916
+        },
+        "RELEASING": {
+          "n": 725,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 188,
+              "denominator": 725,
+              "value": 0.2593103448275862,
+              "wilson95": [
+                0.22873662399560835,
+                0.29242124130379243
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 373,
+              "denominator": 725,
+              "value": 0.5144827586206897,
+              "wilson95": [
+                0.4781219991215598,
+                0.5506908513905108
+              ]
+            },
+            "RELEASING": {
+              "numerator": 164,
+              "denominator": 725,
+              "value": 0.22620689655172413,
+              "wilson95": [
+                0.19724205523798483,
+                0.2580578660338264
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.22620689655172413,
+          "median_nn_distance_deg": 9.760780440446347
+        }
+      },
+      "22": {
+        "REACHING": {
+          "n": 285,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 44,
+              "denominator": 285,
+              "value": 0.1543859649122807,
+              "wilson95": [
+                0.11706117230224544,
+                0.20090377357384887
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 158,
+              "denominator": 285,
+              "value": 0.5543859649122806,
+              "wilson95": [
+                0.496338398165896,
+                0.6109869149195917
+              ]
+            },
+            "RELEASING": {
+              "numerator": 83,
+              "denominator": 285,
+              "value": 0.2912280701754386,
+              "wilson95": [
+                0.2415363216142994,
+                0.34647296041237696
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.1543859649122807,
+          "median_nn_distance_deg": 11.142693804856906
+        },
+        "MANIPULATION": {
+          "n": 4052,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 161,
+              "denominator": 4052,
+              "value": 0.039733464955577495,
+              "wilson95": [
+                0.034142132625439026,
+                0.046196673052492504
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 3529,
+              "denominator": 4052,
+              "value": 0.8709279368213229,
+              "wilson95": [
+                0.8602521771582965,
+                0.8809010534401318
+              ]
+            },
+            "RELEASING": {
+              "numerator": 362,
+              "denominator": 4052,
+              "value": 0.08933859822309971,
+              "wilson95": [
+                0.08094073672882225,
+                0.09851436924869951
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.8709279368213229,
+          "median_nn_distance_deg": 14.193132054175775
+        },
+        "RELEASING": {
+          "n": 663,
+          "nn_phase_distribution": {
+            "REACHING": {
+              "numerator": 113,
+              "denominator": 663,
+              "value": 0.17043740573152338,
+              "wilson95": [
+                0.14373349898541818,
+                0.2009383203510214
+              ]
+            },
+            "MANIPULATION": {
+              "numerator": 344,
+              "denominator": 663,
+              "value": 0.5188536953242836,
+              "wilson95": [
+                0.480822353852517,
+                0.5566678166659935
+              ]
+            },
+            "RELEASING": {
+              "numerator": 206,
+              "denominator": 663,
+              "value": 0.31070889894419307,
+              "wilson95": [
+                0.27665753146572947,
+                0.34694115652842694
+              ]
+            }
+          },
+          "nn_same_phase_rate": 0.31070889894419307,
+          "median_nn_distance_deg": 10.72445502696288
+        }
+      }
+    },
+    "aggregate_same_phase_rate": {
+      "REACHING": {
+        "mean_nn_same_phase_rate": 0.252075175724687,
+        "sd": 0.06508183549135658,
+        "n_subjects": 22
+      },
+      "MANIPULATION": {
+        "mean_nn_same_phase_rate": 0.8326399297506074,
+        "sd": 0.05206431359835115,
+        "n_subjects": 22
+      },
+      "RELEASING": {
+        "mean_nn_same_phase_rate": 0.4383481383345204,
+        "sd": 0.1462318134332845,
+        "n_subjects": 22
+      }
+    },
+    "chance_rate": 0.3333333333333333
+  },
+  "variance_decomposition": {
+    "between_subject_ss_per_frame": 207.41439323257165,
+    "within_subject_ss_per_frame": 2532.6907366493424,
+    "between_over_within": 0.08189487576638486,
+    "phase_ss_within_subject": 121561168.24892573,
+    "residual_ss_within_subject": 1127144702.8936453,
+    "phase_variance_share_within_subject": 0.09734972106577569,
+    "interpretation": "the phase signal is the WITHIN-subject part.  A large between/within ratio means subject identity is an easier axis than phase, which is exactly why the protocol is subject-grouped and why subject id is never a feature"
+  },
+  "reaching_vs_releasing": {
+    "n_reaching": 31547,
+    "n_releasing": 70353,
+    "centroid_distance_deg": 14.803996690676879,
+    "mahalanobis_centroid_distance": 0.6880159653768542,
+    "separation_in_pooled_sd_units": 0.6880159653768542,
+    "reaching_sd_per_channel_deg": [
+      3.8551987880422085,
+      8.112706615951824,
+      5.715481488515583,
+      16.785365907139916,
+      16.810109666499198,
+      17.15663982200607,
+      4.533867857834756,
+      19.298441686361905,
+      4.121771975031633,
+      18.65124954475281
+    ],
+    "releasing_sd_per_channel_deg": [
+      4.902741672401975,
+      7.334867451566298,
+      5.132593690111653,
+      16.78605503076928,
+      16.694262278256822,
+      19.540886227805164,
+      3.909020034706898,
+      23.26285394032205,
+      3.7791892317928566,
+      20.810719597519313
+    ],
+    "mahalanobis_distance_comparable_to_manipulation": {
+      "reaching_vs_releasing": 0.6880159653768542,
+      "manipulation_vs_the_closer_directional_phase": 0.8277736377990863,
+      "ratio_directional_over_manipulation": 0.8311643835459356
+    },
+    "verdict": "REACHING and RELEASING centroids are within ~1 pooled SD: instantaneous pose alone is expected to be weak on this pair"
+  }
+}

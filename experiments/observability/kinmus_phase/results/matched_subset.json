@@ -1,0 +1,235 @@
+{
+  "artifact": "matched_subset.json",
+  "branch_id": "S6-KINMUS-TASK-OBSERVABILITY",
+  "plan_sha256": "19da16a52d11ad1591a456ac19d8863faa1c185e84ae7ed3521236a7faab3141",
+  "why": "R3's 500 ms centred window is defined only on frames at least 50 frames inside a trial, so the naive R3-vs-R1 comparison uses DIFFERENT FRAME SETS.  This block restricts every representation to the exact frame set where all of them are defined, which removes the confound.  It is the overlap set, not a post-hoc selection",
+  "matched_frame_count": 405657,
+  "interior_frame_count": 496699,
+  "r3_defined_frame_count": 405657,
+  "protocol": "identical to the primary run (grouped 5-fold, train-only z-scoring, LDA)",
+  "by_representation": {
+    "R1_POSE": {
+      "n": 405657,
+      "balanced_accuracy": 0.4050594239430206,
+      "macro_f1": 0.417375429982731,
+      "accuracy": 0.8820653902188302,
+      "per_phase_recall": {
+        "REACHING": 0.0,
+        "MANIPULATION": 0.965204449839533,
+        "RELEASING": 0.2499738219895288
+      },
+      "directional_error": {
+        "reaching_as_releasing": {
+          "numerator": 75,
+          "denominator": 6635,
+          "value": 0.011303692539562924,
+          "wilson95": [
+            0.009027811294767235,
+            0.014145126299079464
+          ]
+        },
+        "releasing_as_reaching": {
+          "numerator": 0,
+          "denominator": 38200,
+          "value": 0.0,
+          "wilson95": [
+            0.0,
+            0.0001005516375842668
+          ]
+        },
+        "def": "P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING)"
+      },
+      "across_subject_mean_ba": 0.40323288369034027,
+      "across_subject_sd_ba": 0.04894714977374943,
+      "n_subjects_ba_ge_0.50": 1,
+      "n_subjects": 22
+    },
+    "R2_POSE_VELOCITY": {
+      "n": 405657,
+      "balanced_accuracy": 0.42372584690827725,
+      "macro_f1": 0.43601204983767355,
+      "accuracy": 0.8819988315251555,
+      "per_phase_recall": {
+        "REACHING": 0.004069329314242653,
+        "MANIPULATION": 0.9588883161226311,
+        "RELEASING": 0.3082198952879581
+      },
+      "directional_error": {
+        "reaching_as_releasing": {
+          "numerator": 147,
+          "denominator": 6635,
+          "value": 0.02215523737754333,
+          "wilson95": [
+            0.01888036900356285,
+            0.025983100122509924
+          ]
+        },
+        "releasing_as_reaching": {
+          "numerator": 8,
+          "denominator": 38200,
+          "value": 0.0002094240837696335,
+          "wilson95": [
+            0.00010612408070624659,
+            0.00041323360854814205
+          ]
+        },
+        "def": "P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING)"
+      },
+      "across_subject_mean_ba": 0.4224891063469872,
+      "across_subject_sd_ba": 0.05614770642186453,
+      "n_subjects_ba_ge_0.50": 2,
+      "n_subjects": 22
+    },
+    "R3_TRAJECTORY": {
+      "n": 405657,
+      "balanced_accuracy": 0.6171510193700035,
+      "macro_f1": 0.6075800745091157,
+      "accuracy": 0.8964790451046081,
+      "per_phase_recall": {
+        "REACHING": 0.4556141672946496,
+        "MANIPULATION": 0.9525666395064603,
+        "RELEASING": 0.4432722513089005
+      },
+      "directional_error": {
+        "reaching_as_releasing": {
+          "numerator": 66,
+          "denominator": 6635,
+          "value": 0.009947249434815373,
+          "wilson95": [
+            0.007826862102697247,
+            0.012634759049621191
+          ]
+        },
+        "releasing_as_reaching": {
+          "numerator": 144,
+          "denominator": 38200,
+          "value": 0.003769633507853403,
+          "wilson95": [
+            0.0032030048114901825,
+            0.004436055756156276
+          ]
+        },
+        "def": "P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING)"
+      },
+      "across_subject_mean_ba": 0.6383284284799793,
+      "across_subject_sd_ba": 0.11319684754879267,
+      "n_subjects_ba_ge_0.50": 21,
+      "n_subjects": 22
+    },
+    "R4_POSE_PAST_ONLY": {
+      "n": 405657,
+      "balanced_accuracy": 0.4954721335703344,
+      "macro_f1": 0.5338828434817459,
+      "accuracy": 0.8914427706165554,
+      "per_phase_recall": {
+        "REACHING": 0.2052750565184627,
+        "MANIPULATION": 0.9649633337213362,
+        "RELEASING": 0.3161780104712042
+      },
+      "directional_error": {
+        "reaching_as_releasing": {
+          "numerator": 53,
+          "denominator": 6635,
+          "value": 0.0079879427279578,
+          "wilson95": [
+            0.006112492987313028,
+            0.01043278219390904
+          ]
+        },
+        "releasing_as_reaching": {
+          "numerator": 80,
+          "denominator": 38200,
+          "value": 0.0020942408376963353,
+          "wilson95": [
+            0.0016831717474061196,
+            0.0026054404068793645
+          ]
+        },
+        "def": "P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING)"
+      },
+      "across_subject_mean_ba": 0.5060920945520809,
+      "across_subject_sd_ba": 0.08045270280233126,
+      "n_subjects_ba_ge_0.50": 11,
+      "n_subjects": 22
+    },
+    "R5_FULL18": {
+      "n": 405657,
+      "balanced_accuracy": 0.42376159002315505,
+      "macro_f1": 0.43696168737958274,
+      "accuracy": 0.8787423858087005,
+      "per_phase_recall": {
+        "REACHING": 0.012057272042200452,
+        "MANIPULATION": 0.9555625765612962,
+        "RELEASING": 0.3036649214659686
+      },
+      "directional_error": {
+        "reaching_as_releasing": {
+          "numerator": 335,
+          "denominator": 6635,
+          "value": 0.050489826676714394,
+          "wilson95": [
+            0.045476626661645814,
+            0.05602323035412837
+          ]
+        },
+        "releasing_as_reaching": {
+          "numerator": 182,
+          "denominator": 38200,
+          "value": 0.004764397905759162,
+          "wilson95": [
+            0.00412190479146546,
+            0.005506484521614077
+          ]
+        },
+        "def": "P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING)"
+      },
+      "across_subject_mean_ba": 0.4215310965881489,
+      "across_subject_sd_ba": 0.0701775393615395,
+      "n_subjects_ba_ge_0.50": 4,
+      "n_subjects": 22
+    },
+    "R6_FULL18_VELOCITY": {
+      "n": 405657,
+      "balanced_accuracy": 0.4558866240263766,
+      "macro_f1": 0.4749060486985773,
+      "accuracy": 0.8804901678018622,
+      "per_phase_recall": {
+        "REACHING": 0.06164280331574981,
+        "MANIPULATION": 0.9512003148366784,
+        "RELEASING": 0.3548167539267016
+      },
+      "directional_error": {
+        "reaching_as_releasing": {
+          "numerator": 371,
+          "denominator": 6635,
+          "value": 0.05591559909570459,
+          "wilson95": [
+            0.05063978981639792,
+            0.061705332965489294
+          ]
+        },
+        "releasing_as_reaching": {
+          "numerator": 41,
+          "denominator": 38200,
+          "value": 0.0010732984293193718,
+          "wilson95": [
+            0.0007913174135984644,
+            0.0014556152387951765
+          ]
+        },
+        "def": "P(pred=RELEASING | true=REACHING) and P(pred=REACHING | true=RELEASING)"
+      },
+      "across_subject_mean_ba": 0.4573920683384372,
+      "across_subject_sd_ba": 0.08705236650879286,
+      "n_subjects_ba_ge_0.50": 5,
+      "n_subjects": 22
+    }
+  },
+  "deltas_vs_pose_only": {
+    "R2_minus_R1": 0.018666422965256668,
+    "R3_minus_R1": 0.21209159542698292,
+    "R4_minus_R1": 0.09041270962731385,
+    "R5_minus_R1": 0.018702166080134475
+  },
+  "reading_rule": "the NAIVE (unmatched) deltas are larger than these matched deltas because part of the apparent gain is the easier frame set, not the representation.  The matched deltas are the honest effect of adding temporal information"
+}

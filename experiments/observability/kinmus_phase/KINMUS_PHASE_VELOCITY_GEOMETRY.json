@@ -1,0 +1,90 @@
+{
+  "artifact": "KINMUS_PHASE_VELOCITY_GEOMETRY.json",
+  "branch_id": "S6-KINMUS-TASK-OBSERVABILITY",
+  "plan_sha256": "19da16a52d11ad1591a456ac19d8863faa1c185e84ae7ed3521236a7faab3141",
+  "purpose": "test the hypothesis 'pose is similar, direction differs' for REACHING vs RELEASING",
+  "method": [
+    "for reaching vs releasing, whether locally similar pose states carry OPPOSITE velocity directions",
+    "method: standardise the 10-D pose; for each reaching frame, find its k nearest releasing frames (k=50) and compare the sign agreement of the per-channel velocity between the frame and each neighbour",
+    "the same comparison within reaching and within releasing gives the reference sign-agreement rate",
+    "the statistic that matters is whether CROSS-phase sign agreement is LOWER than WITHIN-phase sign agreement at matched pose locality"
+  ],
+  "k_neighbours": 50,
+  "anchors_per_direction": 15000,
+  "matched_neighbour_sign_agreement": {
+    "definition": "fraction of (anchor channel, neighbour channel) pairs whose VELOCITY SIGN agrees, among the k nearest neighbours in standardised shared10 pose space",
+    "cross_phase_mean": 0.4218654666666667,
+    "cross_phase_sd": 0.10268124925587524,
+    "within_phase_mean": 0.5629304666666667,
+    "within_phase_sd": 0.11587526080942016,
+    "within_minus_cross": 0.141065,
+    "within_reaching_mean": 0.6235937333333332,
+    "within_releasing_mean": 0.5022672,
+    "chance_sign_agreement": 0.5,
+    "interpretation_rule": "if CROSS-phase sign agreement at matched pose locality is markedly BELOW within-phase agreement, then two phases can occupy similar poses with opposite motion - the premise of the OBS-B hypothesis"
+  },
+  "per_phase_mean_velocity": {
+    "REACHING": {
+      "mean_velocity_deg_per_s": [
+        6.883119905788422,
+        -6.49265396422153,
+        2.594260368854908,
+        20.422529775164865,
+        11.018540397694766,
+        28.0371099976009,
+        2.1484457815660227,
+        30.207539612299815,
+        -2.866523056268371,
+        23.839523084484526
+      ],
+      "mean_over_channels": 11.57918919029642,
+      "frac_channels_negative_mean": 0.2,
+      "sign_entropy": -0.6541080743853058
+    },
+    "MANIPULATION": {
+      "mean_velocity_deg_per_s": [
+        -0.20665849714049797,
+        0.44666085185091137,
+        -0.18733332865868357,
+        -0.6117424530543509,
+        -0.17947900351247026,
+        -0.43770251381172287,
+        -0.019781335912510023,
+        -0.4104684476597049,
+        0.11726048926399635,
+        -0.1684528172337351
+      ],
+      "mean_over_channels": -0.16576970558687756,
+      "frac_channels_negative_mean": 0.8,
+      "sign_entropy": -0.6848038956568416
+    },
+    "RELEASING": {
+      "mean_velocity_deg_per_s": [
+        -2.987516470334865,
+        0.5826239317304223,
+        -0.026649966468558314,
+        -9.609598113234902,
+        -8.538734425617628,
+        -13.86561207033493,
+        -0.6364364591636669,
+        -15.991706825267565,
+        1.353477838065826,
+        -13.250590071687194
+      ],
+      "mean_over_channels": -6.29707426323121,
+      "frac_channels_negative_mean": 0.8,
+      "sign_entropy": -0.6611839409978045
+    }
+  },
+  "directional_velocity_contrast": {
+    "REACHING_vs_RELEASING": {
+      "n_channels_with_opposite_mean_velocity_sign": 10,
+      "n_channels": 10,
+      "cosine_between_mean_velocity_vectors": -0.9871967878129612,
+      "mean_abs_velocity_deg_per_s": {
+        "REACHING": 13.451024594394411,
+        "RELEASING": 6.684294617190557
+      }
+    }
+  }
+}

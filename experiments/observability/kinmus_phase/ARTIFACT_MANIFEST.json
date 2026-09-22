@@ -1,0 +1,464 @@
+{
+  "artifact": "ARTIFACT_MANIFEST.json",
+  "branch_id": "S6-KINMUS-TASK-OBSERVABILITY",
+  "plan_sha256": "19da16a52d11ad1591a456ac19d8863faa1c185e84ae7ed3521236a7faab3141",
+  "generated_utc": "2026-09-21T07:03:29Z",
+  "n_files": 50,
+  "total_bytes": 2324044,
+  "files": [
+    {
+      "path": "KINMUS_BOUNDARY_ANALYSIS.json",
+      "bytes": 13909,
+      "sha256": "b93449d560e356c5a6e2e7b108cfd2607433a9afa653d233f311879182a61d12",
+      "mtime_utc": "2026-09-21T07:00:27Z"
+    },
+    {
+      "path": "KINMUS_DIRECTIONAL_ANALYSIS.json",
+      "bytes": 16467,
+      "sha256": "213b1b9261dcfee34ce066e2200e43fd6ed57ec4d9d9bb26d0952bcfe12f43fa",
+      "mtime_utc": "2026-09-21T07:02:31Z"
+    },
+    {
+      "path": "KINMUS_FULL18_DIAGNOSTIC.json",
+      "bytes": 18629,
+      "sha256": "c9b1ee8f310d2c4deb142c07a338a4028ec4cc8ad43b6bcbd861283f9d4cf93a",
+      "mtime_utc": "2026-09-21T06:58:38Z"
+    },
+    {
+      "path": "KINMUS_OBSERVABILITY_NULL_CONTROL.json",
+      "bytes": 28995,
+      "sha256": "3827db078819292fdcd553d8b4d07906c64e64db6d85765f246d1b2486d1edba",
+      "mtime_utc": "2026-09-21T06:58:38Z"
+    },
+    {
+      "path": "KINMUS_OBSERVABILITY_SOURCE_PROVENANCE.json",
+      "bytes": 5358,
+      "sha256": "de50d96e5a4a3111c628d8ce3f53bb16d8581309dc6f84c127c63d2c50496ff1",
+      "mtime_utc": "2026-09-21T06:37:00Z"
+    },
+    {
+      "path": "KINMUS_PHASE_COUNTS.json",
+      "bytes": 9419,
+      "sha256": "585e573a86453671eba72ccb1ee17bfa74f8bcc3df8037236c6086d84ddc02dc",
+      "mtime_utc": "2026-09-21T06:37:02Z"
+    },
+    {
+      "path": "KINMUS_PHASE_POSE_GEOMETRY.json",
+      "bytes": 81070,
+      "sha256": "46553cdb74dca3ce5ec301c86a4c4e3630451a6b3356144856702f8083b819dd",
+      "mtime_utc": "2026-09-21T06:40:19Z"
+    },
+    {
+      "path": "KINMUS_PHASE_VELOCITY_GEOMETRY.json",
+      "bytes": 3539,
+      "sha256": "d0588c83bcbcc01550f0b3086ed23cc0d695c143c5715f2cca184ad9198e4335",
+      "mtime_utc": "2026-09-21T06:42:02Z"
+    },
+    {
+      "path": "KINMUS_SINGLE_FRAME_RESULTS.json",
+      "bytes": 67035,
+      "sha256": "1da3b52e0545fb129177a422f924f87662c8fba5f38916b6354311427590c396",
+      "mtime_utc": "2026-09-21T07:01:46Z"
+    },
+    {
+      "path": "KINMUS_SUBJECT_STABILITY.json",
+      "bytes": 35933,
+      "sha256": "f5fe8fccdd8c3af96f227bee1b1c791b0f9c9a187c7c20be2d01183c95d680ea",
+      "mtime_utc": "2026-09-21T06:59:29Z"
+    },
+    {
+      "path": "KINMUS_TASK_OBSERVABILITY_DECISION.json",
+      "bytes": 26737,
+      "sha256": "2f0a21d81183c00265c8abeeaa7b2dce7e7143fe351ba4d3dbba9e4876168f88",
+      "mtime_utc": "2026-09-21T07:02:32Z"
+    },
+    {
+      "path": "KINMUS_TASK_OBSERVABILITY_FULL_LOG.txt",
+      "bytes": 23145,
+      "sha256": "099a2d2f69d83a143252da01e07172903da808c453a32f2ee8ef1abf3ac04ffb",
+      "mtime_utc": "2026-09-21T07:03:23Z"
+    },
+    {
+      "path": "KINMUS_TASK_OBSERVABILITY_HANDOVER.md",
+      "bytes": 11164,
+      "sha256": "bbf89e738bacb608e98eab7c347e784a8df5eeade32f5552e3d293470f139536",
+      "mtime_utc": "2026-09-21T05:59:42Z"
+    },
+    {
+      "path": "KINMUS_TASK_OBSERVABILITY_PLAN.json",
+      "bytes": 26136,
+      "sha256": "19da16a52d11ad1591a456ac19d8863faa1c185e84ae7ed3521236a7faab3141",
+      "mtime_utc": "2026-09-21T06:00:49Z"
+    },
+    {
+      "path": "KINMUS_TASK_OBSERVABILITY_PLAN.sha256",
+      "bytes": 102,
+      "sha256": "d359a8ee89f5c98d92b5e52fd09c868fbf781f4b9dc5fdafe28be8516ba4b90a",
+      "mtime_utc": "2026-09-21T06:00:49Z"
+    },
+    {
+      "path": "KINMUS_TASK_OBSERVABILITY_REPORT.md",
+      "bytes": 25615,
+      "sha256": "808043373d7bfdec85d1f59298a3c841f040e9b1b1e34d2be668b3d86404615b",
+      "mtime_utc": "2026-09-21T07:02:37Z"
+    },
+    {
+      "path": "KINMUS_TRAJECTORY_RESULTS.json",
+      "bytes": 57325,
+      "sha256": "4e026011d28922d03774f5742da7905eb2c3d0954867595d6a77fd17dd6c90d3",
+      "mtime_utc": "2026-09-21T07:01:46Z"
+    },
+    {
+      "path": "KINMUS_VELOCITY_RESULTS.json",
+      "bytes": 67947,
+      "sha256": "b30998864a58e91f1613d4e151a060975b710f6cecc5c66cfd569bae86a460d3",
+      "mtime_utc": "2026-09-21T07:01:46Z"
+    },
+    {
+      "path": "figures/01_phase_class_distribution.png",
+      "bytes": 53848,
+      "sha256": "aa36568e4daae050c6b5f0b73f49a8ea983c5fafe687ea14abd3f5b156d28c6a",
+      "mtime_utc": "2026-09-21T07:02:33Z"
+    },
+    {
+      "path": "figures/02_pca_projection_by_phase.png",
+      "bytes": 478986,
+      "sha256": "bfd9c703cb08ef429bc3ce6332deab591d2732d10097a5ee345f8150483d44a4",
+      "mtime_utc": "2026-09-21T07:02:34Z"
+    },
+    {
+      "path": "figures/03_reaching_vs_releasing_overlap.png",
+      "bytes": 624140,
+      "sha256": "04b9ad91d08fd0459789d291ccb76f2db0458e8217f2e235d42ee22bd4e8faf3",
+      "mtime_utc": "2026-09-21T07:02:34Z"
+    },
+    {
+      "path": "figures/04_reaching_vs_releasing_velocity.png",
+      "bytes": 72205,
+      "sha256": "b2d0b6654cd4a780f3e20ca20280da60a00665d99115a8dcad6ffe8d5ae6c0f0",
+      "mtime_utc": "2026-09-21T07:02:35Z"
+    },
+    {
+      "path": "figures/05_confusion_pose_only.png",
+      "bytes": 39804,
+      "sha256": "32d43f4edac3dc0339a29a9eab3ae84c1b48ad82635c7e7f2e71ce1125b3e687",
+      "mtime_utc": "2026-09-21T07:02:35Z"
+    },
+    {
+      "path": "figures/06_confusion_pose_velocity.png",
+      "bytes": 41787,
+      "sha256": "f28245c17f28d51ae332ed2c766bc70d9e17eda49e0f360ad84208a97ca85684",
+      "mtime_utc": "2026-09-21T07:02:35Z"
+    },
+    {
+      "path": "figures/07_confusion_best_temporal.png",
+      "bytes": 42808,
+      "sha256": "c1c7c891619536f579d37281999f4cf68c4e8d81d209c6fff218ada90159402c",
+      "mtime_utc": "2026-09-21T07:02:35Z"
+    },
+    {
+      "path": "figures/08_per_subject_balanced_accuracy.png",
+      "bytes": 43212,
+      "sha256": "3a327ccfb60e7879b59bdcf8ec62b29e5333bdb5fc9f1a968f0bb177396ef9eb",
+      "mtime_utc": "2026-09-21T07:02:35Z"
+    },
+    {
+      "path": "figures/09_real_vs_null.png",
+      "bytes": 34601,
+      "sha256": "8599a2b0a3e12db7a6244f14d94db3038bcfdeedf9f97169cd4365ae17428ebb",
+      "mtime_utc": "2026-09-21T07:02:36Z"
+    },
+    {
+      "path": "figures/10_boundary_vs_interior.png",
+      "bytes": 36747,
+      "sha256": "996c8b8dcc674e6f06f3782cd8331bac4f4f1b26aa6b345b24908c1b26bac223",
+      "mtime_utc": "2026-09-21T07:02:36Z"
+    },
+    {
+      "path": "figures/11_shared10_vs_full18.png",
+      "bytes": 43482,
+      "sha256": "6e9af1e4c93062fed63ada5e9f5e3b82168e4ae03cda74a7d638134690d234ac",
+      "mtime_utc": "2026-09-21T07:02:36Z"
+    },
+    {
+      "path": "logs/handedness_cluster_inspection.json",
+      "bytes": 5741,
+      "sha256": "5de30791e8f87d9afd177121af0497bbdb102ee3a4b179bc64965c030dbb4063",
+      "mtime_utc": "2026-09-21T06:36:59Z"
+    },
+    {
+      "path": "logs/handedness_probe.json",
+      "bytes": 11401,
+      "sha256": "47a551e07cc947a4eb5da0bea3ff0ad09138a6b47f27e7cf702affbd09d5f9cf",
+      "mtime_utc": "2026-09-21T06:36:57Z"
+    },
+    {
+      "path": "tools/assemble_log.py",
+      "bytes": 7443,
+      "sha256": "6e621f55876a63820da4f178aefad59cf56fa334f24553104fb678a0c396e535",
+      "mtime_utc": "2026-09-21T06:36:02Z"
+    },
+    {
+      "path": "tools/build_cv.py",
+      "bytes": 29924,
+      "sha256": "78e9761ee9e983aeb60ba38121c067c133c7cc47963e3c750306539bd70c8f1a",
+      "mtime_utc": "2026-09-21T05:41:30Z"
+    },
+    {
+      "path": "tools/build_decision.py",
+      "bytes": 22056,
+      "sha256": "0d30ec878eb72e41dea5e69c3909258d0e69163f597973c720fbf1fd8598647f",
+      "mtime_utc": "2026-09-21T05:53:14Z"
+    },
+    {
+      "path": "tools/build_directional.py",
+      "bytes": 9586,
+      "sha256": "c4af44390004322565a3f05c641e064ca111b3b6181c150864d55a566497b0bc",
+      "mtime_utc": "2026-09-21T05:52:22Z"
+    },
+    {
+      "path": "tools/build_features.py",
+      "bytes": 9822,
+      "sha256": "832f812acd6394b1817e709ccf8320afdf653a2d5cbbd6a204a6e92162807a56",
+      "mtime_utc": "2026-09-21T03:38:04Z"
+    },
+    {
+      "path": "tools/build_figures.py",
+      "bytes": 13586,
+      "sha256": "0038c2957ecd22e8be02d771f9bb47fc38a2233cc1a9e4983bf95b618c13fe60",
+      "mtime_utc": "2026-09-21T05:53:29Z"
+    },
+    {
+      "path": "tools/build_geometry.py",
+      "bytes": 19213,
+      "sha256": "8de17a9aabeb96fdd35a553aed11610bff3151b62f12453a3fb5fc89ce0a0b6e",
+      "mtime_utc": "2026-09-21T05:46:11Z"
+    },
+    {
+      "path": "tools/build_manifest.py",
+      "bytes": 5472,
+      "sha256": "4b2e7f07450718188a05c47df776b04d638c76cf7406c854ad42e529e0bf0a2f",
+      "mtime_utc": "2026-09-21T05:13:25Z"
+    },
+    {
+      "path": "tools/build_matched.py",
+      "bytes": 6226,
+      "sha256": "031aeb80c1088fbbf83527b51a1cd2bce5ebf771b77a6701d4a7bb598a74719d",
+      "mtime_utc": "2026-09-21T05:43:08Z"
+    },
+    {
+      "path": "tools/build_phase_counts.py",
+      "bytes": 5430,
+      "sha256": "546c180dab18140cb8263825d6621097a73c7396d6dbf02accc5731bcfd23bd5",
+      "mtime_utc": "2026-09-21T03:37:15Z"
+    },
+    {
+      "path": "tools/build_post.py",
+      "bytes": 7910,
+      "sha256": "6da33f8d24918d99cddd1c326592bebb0cd21c1ac2b3f81a2d072b5f2be77638",
+      "mtime_utc": "2026-09-21T04:22:54Z"
+    },
+    {
+      "path": "tools/build_provenance.py",
+      "bytes": 7592,
+      "sha256": "3a4363195a83799f6d494fee883da0998045fa3f05c5cdf2672c1eb068766d21",
+      "mtime_utc": "2026-09-21T03:36:53Z"
+    },
+    {
+      "path": "tools/build_report.py",
+      "bytes": 34825,
+      "sha256": "0be3710f66a51163896bbf06aab60129beec1e7d21f4966fbb46b9fd9370e003",
+      "mtime_utc": "2026-09-21T06:36:45Z"
+    },
+    {
+      "path": "tools/freeze_plan.py",
+      "bytes": 6050,
+      "sha256": "9ff42bb9f342cc658dc0cfaee7629f96d7572775863027774ddde1f56cb5a0e2",
+      "mtime_utc": "2026-09-21T03:36:38Z"
+    },
+    {
+      "path": "tools/inspect_handedness_clusters.py",
+      "bytes": 8105,
+      "sha256": "5f7a6a45d8eb690873404fdcc98579512d923df9e329d783c7b3dd5cc7acea98",
+      "mtime_utc": "2026-09-21T03:35:42Z"
+    },
+    {
+      "path": "tools/kinmus_task_observability_fact_check.py",
+      "bytes": 31328,
+      "sha256": "6e9de0de3139db05f1f62d0415f3ec7b8b4894fc052ad7614b977371d9ed783a",
+      "mtime_utc": "2026-09-21T06:35:54Z"
+    },
+    {
+      "path": "tools/obs_common.py",
+      "bytes": 9420,
+      "sha256": "d2a41b0c073ef6e896b3ae5a90063886345fcf3b06d133a2a0b8f58c017ff634",
+      "mtime_utc": "2026-09-21T05:57:57Z"
+    },
+    {
+      "path": "tools/obs_plan.py",
+      "bytes": 29626,
+      "sha256": "2c1ba643eba494f51905cb785cbceb44fab502eb24687f8a7be3558ddbe814da",
+      "mtime_utc": "2026-09-21T05:51:09Z"
+    },
+    {
+      "path": "tools/probe_handedness.py",
+      "bytes": 13143,
+      "sha256": "cddf09ad50e15fab62fa7a9a70adddb89041f6c7a85217d9c8e199dc39d80526",
+      "mtime_utc": "2026-09-21T03:35:53Z"
+    }
+  ],
+  "large_caches": {
+    "n_files": 13,
+    "total_bytes": 377324338,
+    "files": [
+      {
+        "path": "results/_cv_stdout.txt",
+        "bytes": 8376,
+        "sha256": "055bc05bb2aae01b9ac8db0db4a4d5c2b9cc760e421c4fab7ec8c8d92ddc9651",
+        "mtime_utc": "2026-09-21T05:39:54Z"
+      },
+      {
+        "path": "results/_dec_stdout.txt",
+        "bytes": 3082,
+        "sha256": "68cf9b9efe42e23e9ce84cfa6116224ef83460b623b49c4f245f4397108a4e7d",
+        "mtime_utc": "2026-09-21T05:53:14Z"
+      },
+      {
+        "path": "results/_dir_stdout.txt",
+        "bytes": 2340,
+        "sha256": "b3d8052d7b74e8b515bf5521da52503cabc7872fc00be05c9e4bd4136c29f099",
+        "mtime_utc": "2026-09-21T05:52:45Z"
+      },
+      {
+        "path": "results/_fig_stdout.txt",
+        "bytes": 1316,
+        "sha256": "06720c57cc51bf6596167770ab0673e4a980399b75c05398a5280e68564da6e5",
+        "mtime_utc": "2026-09-21T05:53:35Z"
+      },
+      {
+        "path": "results/_geom_stdout.txt",
+        "bytes": 4444,
+        "sha256": "7d2ca19ec743ad756dc8c4d801a3119097b72b1bd3b84e177032854be4b6f614",
+        "mtime_utc": "2026-09-21T05:49:20Z"
+      },
+      {
+        "path": "results/_matched_stdout.txt",
+        "bytes": 1806,
+        "sha256": "95fdd23437ebc9f43a1e16abd424565fcd9f5208b247ee2450a48dd3119d494d",
+        "mtime_utc": "2026-09-21T05:43:44Z"
+      },
+      {
+        "path": "results/_post_stdout.txt",
+        "bytes": 3638,
+        "sha256": "d0329cc373e99e98eb10e65cf5a3f7e662ace1bdc7c3a459220446d44adc412f",
+        "mtime_utc": "2026-09-21T05:42:57Z"
+      },
+      {
+        "path": "results/features.npz",
+        "bytes": 375075347,
+        "sha256": "7dc3256d069dd38a4fe287291db77160500bf17346a75c514206e8a9656ce4c9",
+        "mtime_utc": "2026-09-21T06:38:16Z"
+      },
+      {
+        "path": "results/matched_subset.json",
+        "bytes": 7835,
+        "sha256": "de8090844beb769fa9250cc2436136077b50f27ef62dea7ada23845c1f6d156e",
+        "mtime_utc": "2026-09-21T07:01:46Z"
+      },
+      {
+        "path": "results/predictions.npz",
+        "bytes": 1017372,
+        "sha256": "1d29f1492d1e73f9e3c22e64218b1c1a71c09d3d38d7ab4815641c8725d6b019",
+        "mtime_utc": "2026-09-21T06:58:38Z"
+      },
+      {
+        "path": "results/real_preds_cache.npz",
+        "bytes": 1017372,
+        "sha256": "1d29f1492d1e73f9e3c22e64218b1c1a71c09d3d38d7ab4815641c8725d6b019",
+        "mtime_utc": "2026-09-21T06:18:51Z"
+      },
+      {
+        "path": "results/real_results_cache.json",
+        "bytes": 139920,
+        "sha256": "4215c4d4d677d5efb05494f0102c91e295f8848228b4d1da015b29723aaa6718",
+        "mtime_utc": "2026-09-21T06:18:50Z"
+      },
+      {
+        "path": "results/shuffle_preds.npz",
+        "bytes": 41490,
+        "sha256": "c96d9c4c912494307db42aaae96e18a4fe18c1e00449ae9e3ef73addc2d6751f",
+        "mtime_utc": "2026-09-21T06:58:38Z"
+      }
+    ],
+    "note": "features.npz and predictions.npz are rebuildable caches, hashed here so a reviewer can confirm the analysis ran on the same bytes.  They are NOT results."
+  },
+  "freeze_order_hash_chain": {
+    "1_frozen_plan": {
+      "path": "KINMUS_TASK_OBSERVABILITY_PLAN.json",
+      "sha256": "19da16a52d11ad1591a456ac19d8863faa1c185e84ae7ed3521236a7faab3141"
+    },
+    "2_source_provenance": {
+      "path": "KINMUS_OBSERVABILITY_SOURCE_PROVENANCE.json",
+      "sha256": "de50d96e5a4a3111c628d8ce3f53bb16d8581309dc6f84c127c63d2c50496ff1"
+    },
+    "3_phase_counts": {
+      "path": "KINMUS_PHASE_COUNTS.json",
+      "sha256": "585e573a86453671eba72ccb1ee17bfa74f8bcc3df8037236c6086d84ddc02dc"
+    },
+    "4_pose_geometry": {
+      "path": "KINMUS_PHASE_POSE_GEOMETRY.json",
+      "sha256": "46553cdb74dca3ce5ec301c86a4c4e3630451a6b3356144856702f8083b819dd"
+    },
+    "5_velocity_geometry": {
+      "path": "KINMUS_PHASE_VELOCITY_GEOMETRY.json",
+      "sha256": "d0588c83bcbcc01550f0b3086ed23cc0d695c143c5715f2cca184ad9198e4335"
+    },
+    "6_single_frame": {
+      "path": "KINMUS_SINGLE_FRAME_RESULTS.json",
+      "sha256": "1da3b52e0545fb129177a422f924f87662c8fba5f38916b6354311427590c396"
+    },
+    "7_velocity": {
+      "path": "KINMUS_VELOCITY_RESULTS.json",
+      "sha256": "b30998864a58e91f1613d4e151a060975b710f6cecc5c66cfd569bae86a460d3"
+    },
+    "8_trajectory": {
+      "path": "KINMUS_TRAJECTORY_RESULTS.json",
+      "sha256": "4e026011d28922d03774f5742da7905eb2c3d0954867595d6a77fd17dd6c90d3"
+    },
+    "9_full18_secondary": {
+      "path": "KINMUS_FULL18_DIAGNOSTIC.json",
+      "sha256": "c9b1ee8f310d2c4deb142c07a338a4028ec4cc8ad43b6bcbd861283f9d4cf93a"
+    },
+    "10_null_control": {
+      "path": "KINMUS_OBSERVABILITY_NULL_CONTROL.json",
+      "sha256": "3827db078819292fdcd553d8b4d07906c64e64db6d85765f246d1b2486d1edba"
+    },
+    "11_boundary": {
+      "path": "KINMUS_BOUNDARY_ANALYSIS.json",
+      "sha256": "b93449d560e356c5a6e2e7b108cfd2607433a9afa653d233f311879182a61d12"
+    },
+    "12_stability": {
+      "path": "KINMUS_SUBJECT_STABILITY.json",
+      "sha256": "f5fe8fccdd8c3af96f227bee1b1c791b0f9c9a187c7c20be2d01183c95d680ea"
+    },
+    "13_decision": {
+      "path": "KINMUS_TASK_OBSERVABILITY_DECISION.json",
+      "sha256": "2f0a21d81183c00265c8abeeaa7b2dce7e7143fe351ba4d3dbba9e4876168f88"
+    },
+    "14_report": {
+      "path": "KINMUS_TASK_OBSERVABILITY_REPORT.md",
+      "sha256": "808043373d7bfdec85d1f59298a3c841f040e9b1b1e34d2be668b3d86404615b"
+    }
+  },
+  "notes": [
+    "the hash of the RAW BYTES of a JSON artifact is authoritative; no artifact is re-serialised after being written",
+    "COMMIT PENDING: the project root is not a git repository",
+    "no file outside kinmus_task_observability/ was written by this branch",
+    "the KIN-MUS .mat is READ-ONLY from the pose_api_dataset_admission lane and is not copied here"
+  ],
+  "do_not_delete": [
+    "KINMUS_TASK_OBSERVABILITY_PLAN.json (the pre-registration)",
+    "KINMUS_TASK_OBSERVABILITY_DECISION.json (the decision)",
+    "results/features.npz (rebuildable but slow)"
+  ]
+}
