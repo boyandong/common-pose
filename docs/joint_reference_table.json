@@ -1,0 +1,415 @@
+{
+  "n_joint": 20,
+  "units": "radians",
+  "ordering_source": "emg2pose/constants.py::JOINTS (official)",
+  "limits_source": "emg2pose/UmeTrack/dataset/generic_hand_model.json::joint_limits[0:20]",
+  "sign_verification": "inference/verify_joint_conventions.py (FK test, 15/15 FE flexion-positive)",
+  "ik_failure_encoding": "all-zero joint_angles rows; mask via emg2pose.utils.get_ik_failures_mask",
+  "emg": {
+    "channels": 16,
+    "sample_rate_hz": 2000,
+    "left_context": 1790
+  },
+  "joints": [
+    {
+      "index": 0,
+      "name": "THUMB_CMC_FE",
+      "finger": "thumb",
+      "joint_group": "proximal",
+      "dof_type": "FE",
+      "motion": "flexion/extension",
+      "positive_direction": "flexion",
+      "units": "radians",
+      "min_rad": -0.7872664332389832,
+      "max_rad": 1.287266492843628,
+      "min_deg": -45.10704397691153,
+      "max_deg": 73.75493714854727,
+      "range_deg": 118.8619811254588,
+      "rotation_axis_unit": [
+        0.8753682971000671,
+        0.4760543406009674,
+        -0.08427733927965164
+      ]
+    },
+    {
+      "index": 1,
+      "name": "THUMB_CMC_AA",
+      "finger": "thumb",
+      "joint_group": "proximal",
+      "dof_type": "AA",
+      "motion": "abduction/adduction",
+      "positive_direction": "per-finger (no global sign) -- see docs/joint_angle_definition.md 3.2",
+      "units": "radians",
+      "min_rad": -0.6117993593215942,
+      "max_rad": 0.6117993593215942,
+      "min_deg": -35.05352119793509,
+      "max_deg": 35.05352119793509,
+      "range_deg": 70.10704239587018,
+      "rotation_axis_unit": [
+        -0.5401725172996521,
+        0.25255540013313293,
+        0.8027636408805847
+      ]
+    },
+    {
+      "index": 2,
+      "name": "THUMB_MCP_FE",
+      "finger": "thumb",
+      "joint_group": "mid",
+      "dof_type": "FE",
+      "motion": "flexion/extension",
+      "positive_direction": "flexion",
+      "units": "radians",
+      "min_rad": 0.0,
+      "max_rad": 1.287266492843628,
+      "min_deg": 0.0,
+      "max_deg": 73.75493714854727,
+      "range_deg": 73.75493714854727,
+      "rotation_axis_unit": [
+        0.5273866653442383,
+        0.8426926136016846,
+        -0.10831665247678757
+      ]
+    },
+    {
+      "index": 3,
+      "name": "THUMB_IP_FE",
+      "finger": "thumb",
+      "joint_group": "distal",
+      "dof_type": "FE",
+      "motion": "flexion/extension",
+      "positive_direction": "flexion",
+      "units": "radians",
+      "min_rad": -0.25853946805000305,
+      "max_rad": 1.087266445159912,
+      "min_deg": -14.813220356822567,
+      "max_deg": 62.29577851385514,
+      "range_deg": 77.10899887067771,
+      "rotation_axis_unit": [
+        0.4143846035003662,
+        0.9100892543792725,
+        -0.0047915782779455185
+      ]
+    },
+    {
+      "index": 4,
+      "name": "INDEX_MCP_AA",
+      "finger": "index",
+      "joint_group": "proximal",
+      "dof_type": "AA",
+      "motion": "abduction/adduction",
+      "positive_direction": "per-finger (no global sign) -- see docs/joint_angle_definition.md 3.2",
+      "units": "radians",
+      "min_rad": -0.3372664749622345,
+      "max_rad": 0.4872664511203766,
+      "min_deg": -19.32394558659069,
+      "max_deg": 27.9183111475152,
+      "range_deg": 47.24225673410589,
+      "rotation_axis_unit": [
+        -0.055637165904045105,
+        -0.9966527223587036,
+        -0.059898603707551956
+      ]
+    },
+    {
+      "index": 5,
+      "name": "INDEX_MCP_FE",
+      "finger": "index",
+      "joint_group": "proximal",
+      "dof_type": "FE",
+      "motion": "flexion/extension",
+      "positive_direction": "flexion",
+      "units": "radians",
+      "min_rad": -0.28726646304130554,
+      "max_rad": 1.337266445159912,
+      "min_deg": -16.459155927917653,
+      "max_deg": 76.61972339212572,
+      "range_deg": 93.07887932004337,
+      "rotation_axis_unit": [
+        -0.0038841196801513433,
+        0.060207121074199677,
+        -0.9981783628463745
+      ]
+    },
+    {
+      "index": 6,
+      "name": "INDEX_PIP_FE",
+      "finger": "index",
+      "joint_group": "mid",
+      "dof_type": "FE",
+      "motion": "flexion/extension",
+      "positive_direction": "flexion",
+      "units": "radians",
+      "min_rad": 0.0,
+      "max_rad": 1.8824622631072998,
+      "min_deg": 0.0,
+      "max_deg": 107.85714276869382,
+      "range_deg": 107.85714276869382,
+      "rotation_axis_unit": [
+        -0.051793720573186874,
+        0.012505551800131798,
+        -0.9985795021057129
+      ]
+    },
+    {
+      "index": 7,
+      "name": "INDEX_DIP_FE",
+      "finger": "index",
+      "joint_group": "distal",
+      "dof_type": "FE",
+      "motion": "flexion/extension",
+      "positive_direction": "flexion",
+      "units": "radians",
+      "min_rad": 0.0,
+      "max_rad": 1.4336633682250977,
+      "min_deg": 0.0,
+      "max_deg": 82.14286024180815,
+      "range_deg": 82.14286024180815,
+      "rotation_axis_unit": [
+        -0.0875103622674942,
+        -0.017259228974580765,
+        -0.9960140585899353
+      ]
+    },
+    {
+      "index": 8,
+      "name": "MIDDLE_MCP_AA",
+      "finger": "middle",
+      "joint_group": "proximal",
+      "dof_type": "AA",
+      "motion": "abduction/adduction",
+      "positive_direction": "per-finger (no global sign) -- see docs/joint_angle_definition.md 3.2",
+      "units": "radians",
+      "min_rad": -0.4872664511203766,
+      "max_rad": 0.28726646304130554,
+      "min_deg": -27.9183111475152,
+      "max_deg": 16.459155927917653,
+      "range_deg": 44.377467075432854,
+      "rotation_axis_unit": [
+        -0.04328792914748192,
+        -0.9989069104194641,
+        0.017638539895415306
+      ]
+    },
+    {
+      "index": 9,
+      "name": "MIDDLE_MCP_FE",
+      "finger": "middle",
+      "joint_group": "proximal",
+      "dof_type": "FE",
+      "motion": "flexion/extension",
+      "positive_direction": "flexion",
+      "units": "radians",
+      "min_rad": -0.28726646304130554,
+      "max_rad": 1.43726646900177,
+      "min_deg": -16.459155927917653,
+      "max_deg": 82.34930270947179,
+      "range_deg": 98.80845863738944,
+      "rotation_axis_unit": [
+        -0.09821266680955887,
+        -0.013314826413989067,
+        -0.9950763583183289
+      ]
+    },
+    {
+      "index": 10,
+      "name": "MIDDLE_PIP_FE",
+      "finger": "middle",
+      "joint_group": "mid",
+      "dof_type": "FE",
+      "motion": "flexion/extension",
+      "positive_direction": "flexion",
+      "units": "radians",
+      "min_rad": 0.0,
+      "max_rad": 1.8824622631072998,
+      "min_deg": 0.0,
+      "max_deg": 107.85714276869382,
+      "range_deg": 107.85714276869382,
+      "rotation_axis_unit": [
+        -0.1165417954325676,
+        -0.03397350758314133,
+        -0.9926045536994934
+      ]
+    },
+    {
+      "index": 11,
+      "name": "MIDDLE_DIP_FE",
+      "finger": "middle",
+      "joint_group": "distal",
+      "dof_type": "FE",
+      "motion": "flexion/extension",
+      "positive_direction": "flexion",
+      "units": "radians",
+      "min_rad": 0.0,
+      "max_rad": 1.4336633682250977,
+      "min_deg": 0.0,
+      "max_deg": 82.14286024180815,
+      "range_deg": 82.14286024180815,
+      "rotation_axis_unit": [
+        -0.21881170570850372,
+        -0.11028341948986053,
+        -0.9695148468017578
+      ]
+    },
+    {
+      "index": 12,
+      "name": "RING_MCP_AA",
+      "finger": "ring",
+      "joint_group": "proximal",
+      "dof_type": "AA",
+      "motion": "abduction/adduction",
+      "positive_direction": "per-finger (no global sign) -- see docs/joint_angle_definition.md 3.2",
+      "units": "radians",
+      "min_rad": -0.28726646304130554,
+      "max_rad": 0.28726646304130554,
+      "min_deg": -16.459155927917653,
+      "max_deg": 16.459155927917653,
+      "range_deg": 32.918311855835306,
+      "rotation_axis_unit": [
+        -0.04123542830348015,
+        -0.9934192299842834,
+        0.10685436427593231
+      ]
+    },
+    {
+      "index": 13,
+      "name": "RING_MCP_FE",
+      "finger": "ring",
+      "joint_group": "proximal",
+      "dof_type": "FE",
+      "motion": "flexion/extension",
+      "positive_direction": "flexion",
+      "units": "radians",
+      "min_rad": -0.28726646304130554,
+      "max_rad": 1.537266492843628,
+      "min_deg": -16.459155927917653,
+      "max_deg": 88.07888202681785,
+      "range_deg": 104.5380379547355,
+      "rotation_axis_unit": [
+        -0.24059897661209106,
+        -0.09392563253641129,
+        -0.9660694003105164
+      ]
+    },
+    {
+      "index": 14,
+      "name": "RING_PIP_FE",
+      "finger": "ring",
+      "joint_group": "mid",
+      "dof_type": "FE",
+      "motion": "flexion/extension",
+      "positive_direction": "flexion",
+      "units": "radians",
+      "min_rad": 0.0,
+      "max_rad": 1.8824622631072998,
+      "min_deg": 0.0,
+      "max_deg": 107.85714276869382,
+      "range_deg": 107.85714276869382,
+      "rotation_axis_unit": [
+        -0.28127676248550415,
+        -0.15577161312103271,
+        -0.9468994736671448
+      ]
+    },
+    {
+      "index": 15,
+      "name": "RING_DIP_FE",
+      "finger": "ring",
+      "joint_group": "distal",
+      "dof_type": "FE",
+      "motion": "flexion/extension",
+      "positive_direction": "flexion",
+      "units": "radians",
+      "min_rad": 0.0,
+      "max_rad": 1.4336633682250977,
+      "min_deg": 0.0,
+      "max_deg": 82.14286024180815,
+      "range_deg": 82.14286024180815,
+      "rotation_axis_unit": [
+        -0.2774912416934967,
+        -0.16546812653541565,
+        -0.9463714361190796
+      ]
+    },
+    {
+      "index": 16,
+      "name": "PINKY_MCP_AA",
+      "finger": "pinky",
+      "joint_group": "proximal",
+      "dof_type": "AA",
+      "motion": "abduction/adduction",
+      "positive_direction": "per-finger (no global sign) -- see docs/joint_angle_definition.md 3.2",
+      "units": "radians",
+      "min_rad": -0.68726646900177,
+      "max_rad": 0.4872664511203766,
+      "min_deg": -39.377468074660044,
+      "max_deg": 27.9183111475152,
+      "range_deg": 67.29577922217524,
+      "rotation_axis_unit": [
+        -0.04448965936899185,
+        -0.9689905047416687,
+        0.24305979907512665
+      ]
+    },
+    {
+      "index": 17,
+      "name": "PINKY_MCP_FE",
+      "finger": "pinky",
+      "joint_group": "proximal",
+      "dof_type": "FE",
+      "motion": "flexion/extension",
+      "positive_direction": "flexion",
+      "units": "radians",
+      "min_rad": -0.4872664511203766,
+      "max_rad": 1.6372665166854858,
+      "min_deg": -27.9183111475152,
+      "max_deg": 93.80846134416392,
+      "range_deg": 121.72677249167911,
+      "rotation_axis_unit": [
+        -0.3117143213748932,
+        -0.21768911182880402,
+        -0.9249030351638794
+      ]
+    },
+    {
+      "index": 18,
+      "name": "PINKY_PIP_FE",
+      "finger": "pinky",
+      "joint_group": "mid",
+      "dof_type": "FE",
+      "motion": "flexion/extension",
+      "positive_direction": "flexion",
+      "units": "radians",
+      "min_rad": 0.0,
+      "max_rad": 1.8824622631072998,
+      "min_deg": 0.0,
+      "max_deg": 107.85714276869382,
+      "range_deg": 107.85714276869382,
+      "rotation_axis_unit": [
+        -0.39370208978652954,
+        -0.27802449464797974,
+        -0.8761855363845825
+      ]
+    },
+    {
+      "index": 19,
+      "name": "PINKY_DIP_FE",
+      "finger": "pinky",
+      "joint_group": "distal",
+      "dof_type": "FE",
+      "motion": "flexion/extension",
+      "positive_direction": "flexion",
+      "units": "radians",
+      "min_rad": 0.0,
+      "max_rad": 1.4336633682250977,
+      "min_deg": 0.0,
+      "max_deg": 82.14286024180815,
+      "range_deg": 82.14286024180815,
+      "rotation_axis_unit": [
+        -0.3021674156188965,
+        -0.29026415944099426,
+        -0.907987654209137
+      ]
+    }
+  ]
+}

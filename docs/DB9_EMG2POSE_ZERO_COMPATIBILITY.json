@@ -1,0 +1,116 @@
+{
+  "generated_utc": "2026-09-17T15:35:01Z",
+  "hand_model": {
+    "path": "<WORKSPACE_ROOT>\\baseline\\emg2pose\\emg2pose\\UmeTrack\\dataset\\generic_hand_model.json",
+    "sha256": "96649ddf7d036be3357dadd7c13db325a18638c6713583fbbbdd71446ce07564"
+  },
+  "question": "Do DB9 and emg2pose share a zero / axis convention for the 16 canonical16 variables after name-based selection?",
+  "emg2pose_zero_pose": {
+    "all_zero_joint_angles": true,
+    "finger_chain_interior_angles_deg": {
+      "index": {
+        "proximal_chain_angle_deg": 179.10147231102965,
+        "distal_chain_angle_deg": 168.44298214628972
+      },
+      "middle": {
+        "proximal_chain_angle_deg": 179.4493858290731,
+        "distal_chain_angle_deg": 166.67841865945982
+      },
+      "ring": {
+        "proximal_chain_angle_deg": 179.2752564837416,
+        "distal_chain_angle_deg": 172.81603661792246
+      },
+      "pinky": {
+        "proximal_chain_angle_deg": 174.84779770591183,
+        "distal_chain_angle_deg": 171.3632856956366
+      }
+    },
+    "fingertip_spacing": {
+      "index-middle": 29.32618304115227,
+      "middle-ring": 33.233691026086106,
+      "ring-pinky": 33.092802563911945,
+      "palm_width": 80.12901929485177
+    },
+    "most_spread_pose_spacing": {
+      "index-middle": 110.31503168356312,
+      "middle-ring": 15.875247219604356,
+      "ring-pinky": 58.13250788838357,
+      "palm_width": 161.45192818775183
+    },
+    "most_closed_pose_spacing": {
+      "index-middle": 31.555940480526342,
+      "middle-ring": 33.13623332508368,
+      "ring-pinky": 30.01454241876352,
+      "palm_width": 26.99027459454221
+    },
+    "zero_position_between_closed_and_spread": 0.010555700565644323,
+    "zero_looks_extended_and_together": true
+  },
+  "thumb_cmc_ab_adduction": {
+    "tests": {
+      "negative": {
+        "angle_rad": -0.3,
+        "thumb_tip": [
+          82.08313145902932,
+          -73.58522642697599,
+          82.82652119057553
+        ],
+        "displacement_from_zero": [
+          -14.813207957474589,
+          -22.180837999241618,
+          -2.98941966635806
+        ],
+        "displacement_norm": 26.839473435251996,
+        "along_palm_normal": -23.705047194058693,
+        "along_palm_axis": -9.101351955223345,
+        "thumb_index_tip_distance": 133.32081276144214
+      },
+      "zero": {
+        "angle_rad": 0.0,
+        "thumb_tip": [
+          96.8963394165039,
+          -51.404388427734375,
+          85.8159408569336
+        ],
+        "displacement_from_zero": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "displacement_norm": 0.0,
+        "along_palm_normal": 0.0,
+        "along_palm_axis": 0.0,
+        "thumb_index_tip_distance": 114.82862534258489
+      },
+      "positive": {
+        "angle_rad": 0.3,
+        "thumb_tip": [
+          106.0090294676116,
+          -26.222837905912463,
+          84.0254862691343
+        ],
+        "displacement_from_zero": [
+          9.112690051107691,
+          25.18155052182191,
+          -1.7904545877992888
+        ],
+        "displacement_norm": 26.839473435252003,
+        "along_palm_normal": 26.286140701800836,
+        "along_palm_axis": 2.6092055726919026,
+        "thumb_index_tip_distance": 100.45591806252413
+      }
+    },
+    "model_axis_authority": "hand_visualizer/README.md: y is the palm-normal axis, the palm faces -y, +z is the thumb side, model is a right hand. The palm-normal proxy used here is +y = dorsal.",
+    "emg2pose_positive_moves_thumb_dorsally": true,
+    "emg2pose_positive_thumb_index_distance_change": -14.372707280060752,
+    "emg2pose_negative_thumb_index_distance_change": 18.492187418857256,
+    "abduction_interpretation": "ISB-style: thumb CMC abduction swings the thumb away from the index finger, opening the web and INCREASING the thumb-index tip distance.",
+    "emg2pose_positive_is_abduction": false,
+    "db9_documented_sign": "CMC1_A: Abduction+ / Adduction- (Table 6)",
+    "polarity_agrees": false,
+    "confidence": "MEDIUM",
+    "why_not_high": "The frozen emg2pose contract explicitly declines to fix the sign of THUMB_CMC_AA ('NO globally meaningful sign rule'). This check infers the polarity from model geometry plus an anatomical convention, not from an official statement about emg2pose's thumb AA. NO sign flip is applied anywhere in this codebase as a result."
+  },
+  "data_side_reference_anchor": null,
+  "conclusion": null
+}

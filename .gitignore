@@ -1,0 +1,159 @@
+# =============================================================================
+# Common Pose — .gitignore
+#
+# Policy: this repository redistributes NO third-party data, NO checkpoints and NO
+# large experiment outputs. What it DOES track is source code plus the small frozen
+# evidence artifacts under `audits/`, `experiments/*/results/` and `docs/` that are
+# the published result.
+#
+# Directories below are anchored with a leading `/` wherever they describe a
+# project-root location. An unanchored pattern such as `artifacts/` or `logs/` matches
+# at ANY depth, which silently excludes the frozen audit artifacts this repository
+# exists to publish. That exact defect was caught by comparing `git ls-files` against
+# the working tree, and is why the anchoring here is explicit.
+# =============================================================================
+
+# --- datasets and raw data (never redistributed) -----------------------------
+/data/
+/datasets/
+/raw_data/
+/external/
+/downloads/
+/scratch/
+raw/
+data/
+datasets/
+
+# --- model weights and checkpoints -------------------------------------------
+/checkpoints/
+/models/
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+*.onnx
+*.h5
+*.hdf5
+*.mat
+*.npz
+*.npy
+*.pkl
+*.pickle
+*.joblib
+*.bin
+*.parquet
+*.feather
+*.xlsx
+*.xls
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# --- experiment outputs and caches, root-anchored -----------------------------
+/outputs/
+/runs/
+/wandb/
+/mlruns/
+
+# Bare names that mean "generated scratch" wherever they appear.
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.py[cod]
+*.so
+*.dylib
+*.dll
+.ipynb_checkpoints/
+
+# Logs and figures are generated, EXCEPT the captured stdout that the audit lanes
+# publish as evidence. Those live under `audits/` and are re-included below.
+*.log
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.pdf
+
+# --- build products ----------------------------------------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+.tox/
+.coverage
+htmlcov/
+coverage.xml
+*.prof
+
+# --- environments ------------------------------------------------------------
+.venv/
+.venv-*/
+venv/
+env/
+ENV/
+conda/
+.env
+.env.*
+*.env
+
+# --- editors and OS ----------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- secrets and machine-local configuration --------------------------------
+*.pem
+*.key
+*.ppk
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+.ssh/
+credentials*
+*secret*
+*token*
+!*token*.md
+
+# --- project-specific scratch conventions ------------------------------------
+# The historical research workspace used these prefixes for reconnaissance and
+# one-shot patch scripts. They are excluded from the evidence chain by the audit
+# plans and must not enter the public repository.
+_patch*.py
+_recon_*.py
+_audit_s*/
+_verify_s*/
+_tmp*/
+*.tmp
+
+# =============================================================================
+# Re-include the frozen evidence. Everything here is small, hand-curated, and is
+# the actual published result. Listed AFTER the exclusions so it wins.
+# =============================================================================
+!audits/**/*.json
+!audits/**/*.csv
+!audits/**/*.md
+!audits/**/*.txt
+!audits/**/*.log
+!experiments/**/results/*.json
+!experiments/**/*.md
+!provenance/**/*.json
+!provenance/**/*.sha256
+!docs/**/*.json
+!docs/**/*.csv
+!docs/**/*.md
+!docs/**/*.txt
+!src/**/*.md
+!scripts/**/*.py
+!tests/**/*.py
+!*.md
+!*.txt

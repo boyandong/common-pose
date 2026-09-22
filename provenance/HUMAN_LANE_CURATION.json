@@ -1,0 +1,155 @@
+{
+  "artifact": "HUMAN_LANE_CURATION.json",
+  "curation": "public-safe subset of the internal S6 human semantic-validation lane, mirrored into the common-pose public repository",
+  "source_lane_root": "emg2pose_handstate/human_semantic_validation/",
+  "target_root": "common-pose/",
+  "curation_basis": "PI authorisation limited to the durable methodological definition of the lane (ontology, protocol, blinding spec, pre-registered analysis plans) plus the frozen formal ontology record. Aggregate endpoint results were NOT published because the formal round is not concluded as pre-registered.",
+  "copy_fidelity": "source_sha256 and target_sha256 are computed independently. Four of the six files are byte-identical to source (equal digests). Two files carry exactly one class of edit, recorded per file under 'edits': a literal substitution of the original lane's local virtual-environment interpreter path in documented shell commands with the portable invocation 'python'. No computed number, threshold, label definition, endpoint or protocol statement was changed.",
+  "files": [
+    {
+      "source_path": "ANNOTATION_PROTOCOL.md",
+      "target_path": "audits/human_semantic_validation/ANNOTATION_PROTOCOL.md",
+      "source_sha256": "92cad95eaac65aa86d1d3cead9a6e8bff689bfd96ce47bac6ad20b53c08cc7d6",
+      "target_sha256": "b5a150b82522a8e7d000bed0d48dfdbbbcb5ceb75f3b70a088640532b088c272",
+      "bytes": 16264,
+      "why_public_safe": "Annotator-facing instructions and operator procedure for the instrument: it defines the label decision order, the fixed two-view rendering contract and the study controls, contains no per-annotator or per-sample data, and after the recorded substitution below carries no absolute path of any kind.",
+      "edits": [
+        "all 13 occurrences of the local virtual-environment interpreter path in the documented shell commands were replaced by the portable invocation 'python' (for example 'python human_semantic_validation/tools/make_annotation_benchmark.py'). The local absolute path itself is withheld. No other byte of the document was changed.",
+        "this removes the only absolute paths present; the text introducing those commands ('Nothing above requires an environment variable ... work in a clean Windows shell') is a statement about the servers' own output handling and was left unchanged."
+      ]
+    },
+    {
+      "source_path": "LABEL_DEFINITIONS.md",
+      "target_path": "audits/human_semantic_validation/LABEL_DEFINITIONS.md",
+      "source_sha256": "a5b36bd059f61bbf15fa6a4cdae26920af82d82b6a1edc5ba25bcf98d6182914",
+      "target_sha256": "a5b36bd059f61bbf15fa6a4cdae26920af82d82b6a1edc5ba25bcf98d6182914",
+      "bytes": 7828,
+      "why_public_safe": "The label ontology itself: the five primary classes, the diagnostic-only class, the three non-target codes, the closest-confusion discriminators and the stable storage codes; purely definitional and containing no annotator or sample information.",
+      "edits": [],
+      "note": "Pilot-1-era wording. The frozen FORMAL ontology is the later Pilot-3 thumb-base wording, recorded in formal_s6/ONTOLOGY_FREEZE.json (copied). Flagged in the target README."
+    },
+    {
+      "source_path": "BLINDING_SPEC.md",
+      "target_path": "audits/human_semantic_validation/BLINDING_SPEC.md",
+      "source_sha256": "c78a36d7c62edc0e0d4bfaeab2063d062d65f3bb5c3827df183280174408fcad",
+      "target_sha256": "a6e2199c30a7bfd7ed0780e3daa52c25a58a16f67fb4b17a9ef49d0d7e44fe17",
+      "bytes": 12364,
+      "why_public_safe": "The blinding specification and its verification method: what the instrument is blind to, what the annotator sees, the physical separation of evaluator material, and the seven checks backing the claim; it names evaluator-side filenames as identifiers but publishes none of their contents, and after the recorded substitution below carries no absolute path of any kind.",
+      "edits": [
+        "the single occurrence of the local virtual-environment interpreter path in the documented serve command was replaced by the portable invocation 'python'. The local absolute path itself is withheld. No other byte of the document was changed."
+      ],
+      "explained_token_hits": [
+        "the token 'hidden' appears only as evaluator-side filename identifiers (hidden_sample_manifest / hidden_duplicate_map / hidden_payload_contract) and as prose stating that hidden directory contents are excluded from the served tree",
+        "no filesystem path into the lane's hidden directory is published; no hidden label or manifest content is reproduced"
+      ]
+    },
+    {
+      "source_path": "FUTURE_ANALYSIS_PLAN.md",
+      "target_path": "audits/human_semantic_validation/FUTURE_ANALYSIS_PLAN.md",
+      "source_sha256": "35d29585449e8a872efaf1491d249e37c17ba79e4390521c6122c5df27747b2b",
+      "target_sha256": "35d29585449e8a872efaf1491d249e37c17ba79e4390521c6122c5df27747b2b",
+      "bytes": 12083,
+      "why_public_safe": "A pre-registered, explicitly NOT-EXECUTED analysis plan: it fixes the endpoints, denominators, stratification, uncertainty convention and reporting rules in advance, and contains no computed result and no per-annotator or per-sample data.",
+      "edits": [],
+      "explained_token_hits": [
+        "the token 'hidden' appears only as the count of hidden duplicate items, which is part of the published instrument design (360 unique + 36 duplicates)"
+      ]
+    },
+    {
+      "source_path": "formal_s6/FORMAL_ANALYSIS_PREREGISTRATION.md",
+      "target_path": "audits/human_semantic_validation/formal_s6/FORMAL_ANALYSIS_PREREGISTRATION.md",
+      "source_sha256": "349fee409a08ec7d7c641460d154b1eb9827b37cfc76b04b765d8c6c4c3f8c80",
+      "target_sha256": "349fee409a08ec7d7c641460d154b1eb9827b37cfc76b04b765d8c6c4c3f8c80",
+      "bytes": 8405,
+      "why_public_safe": "The formal round's binding pre-registration: the human-only step, the definition of the primary evaluable set fixed before unblinding, the model-unblinded step as a specification, and the pre-recorded invalidity conditions; it reports no result and no per-annotator data.",
+      "edits": []
+    },
+    {
+      "source_path": "formal_s6/ONTOLOGY_FREEZE.json",
+      "target_path": "audits/human_semantic_validation/formal_s6/ONTOLOGY_FREEZE.json",
+      "source_sha256": "13b09c181bd24f00b001b01ad944149bf01e6e0842ba0fc519925acbdeaf3e4b",
+      "target_sha256": "13b09c181bd24f00b001b01ad944149bf01e6e0842ba0fc519925acbdeaf3e4b",
+      "bytes": 9240,
+      "why_public_safe": "The frozen formal ontology record: ontology id and protocol version, the frozen annotator-facing marking, the content hash of the semantic wording, the frozen benchmark shape (360 unique + 36 duplicates = 396 per annotator), SHA-256 values of the frozen artefacts, and the standing scientific commitments. It contains no label values, no per-sample content and no per-annotator data.",
+      "edits": [],
+      "explained_token_hits": [
+        "the token 'hidden' appears only as the names of evaluator-only manifest artefacts inside the frozen-benchmark hash table",
+        "only SHA-256 digests and byte counts of those artefacts are published, never their contents",
+        "no absolute filesystem path and no unblinding key is present"
+      ]
+    }
+  ],
+  "withheld": [
+    {
+      "category": "hidden/ (sample manifest, duplicate map, payload contract)",
+      "reason": "Evaluator-only material: identifies which displayed items are hidden repeats and encodes source session, frame indices and hand side."
+    },
+    {
+      "category": "unblinding keys and unblinding scripts (including s6_interim_unblind.py and any file whose purpose is to reveal S6 outcomes)",
+      "reason": "Would defeat the blinding the whole instrument is built on."
+    },
+    {
+      "category": "s6_selective_head/ (selective-head and prospective-annotation variant lane)",
+      "reason": "Excluded by instruction as a separate prospective endpoint; it is additionally now unblinded (its own post-collection record reports completed collection and a frozen consensus), so it is not a public-safe methodological definition."
+    },
+    {
+      "category": "per-annotator raw exports, per-annotator directories (.../annotator_A|B|1|2, PROSPECTIVE_ANNOTATOR_*) and their payload.json files",
+      "reason": "Per-rater raw data; publishing it would also expose the semantic reference labels item by item."
+    },
+    {
+      "category": "s6_interim_unblind/ (interim diagnostic unblinding outputs, incl. human exports, cohort freeze, result block, mechanism report)",
+      "reason": "Contains unblinded per-item semantic results and frozen per-annotator label files; it is the first model-unblinded S6 analysis, explicitly diagnostic-only and non-final, and its publication is not authorised."
+    },
+    {
+      "category": "annotator identities, names, e-mail addresses, machine names, participant information",
+      "reason": "Personal and identifying data."
+    },
+    {
+      "category": "distribution/ and pilot2_external/packages/ (per-annotator bundles and localised launcher pages)",
+      "reason": "Contain per-annotator payloads and a localised annotation page; per-annotator distribution artefacts."
+    },
+    {
+      "category": "bundled third-party JavaScript and 3-D assets (three.module.js, three/, OrbitControls and similar)",
+      "reason": "Third-party provenance and redistributable status not verified in this curation."
+    },
+    {
+      "category": "every .zip, every screenshot .png, every payload.json, every *witness*.json",
+      "reason": "Archives, UI captures and machine-readable witness files that carry per-rater, per-machine or per-sample detail."
+    },
+    {
+      "category": "anything >= 1 MB",
+      "reason": "Size bound; large files in this lane are per-sample manifests, payloads or bundled assets, all of which are excluded for other reasons too."
+    },
+    {
+      "category": "build and cache directories (__pycache__, .pyc, .pytest_cache) and logs directories",
+      "reason": "Build/cache/log exhaust, not part of the methodological definition."
+    },
+    {
+      "category": "operational runbooks and build/serving/staging tools (including formal_s6/FORMAL_S6_RUNBOOK.md)",
+      "reason": "Rights were fine but the documents carry local absolute paths and a machine-specific interpreter location that the editing rule forbids publishing, and they are operational rather than definitional."
+    },
+    {
+      "category": "model-side diagnostic lanes (geometry-semantic, holdout-cue replication, human-readout, thumb diagnostics)",
+      "reason": "Outside the authorised bound of this lane's methodological definition; they are model-side development diagnostics computed on unblinded development data, not the human-annotation instrument."
+    },
+    {
+      "category": "per-annotator agreement records and evaluator ingest scripts (e.g. pilot-level human agreement records and their ingestion tool)",
+      "reason": "Contain local absolute paths, per-annotator free-text notes and per-item per-annotator label assignments; the aggregate agreement figure alone was not separable from those."
+    }
+  ],
+  "verdict_on_lane_status": "The instrument (ontology, blinding, sampling and pre-registered analysis) is complete and internally well controlled, but the FORMAL human endpoint is not concluded as pre-registered: no formal per-annotator export sits in the lane's own drop directory, an interim 200-of-396 checkpoint was nonetheless taken and deliberately model-unblinded in a diagnostic-only round, and the lane's own pre-registration required both annotators to finish all 396 items before any model output was computed.",
+  "verdict_evidence": [
+    "observed: the lane's label drop directory (annotations/) contains only its placeholder file",
+    "observed: an interim checkpoint records two formal annotator exports at 200/396 labelled items each, with SHA-256 values and export timestamps",
+    "observed: the interim round's cohort-freeze record states the model-blinding status as intact at freeze and deliberately broken by that session thereafter",
+    "observed: the interim mechanism report states it is diagnostic only, is not the final 360-window estimate, and is not a model evaluation on the full benchmark",
+    "observed: the interim agreement figures are computed on the overlap of two partially labelled subsets (93 shared unique windows), which its own record states is not a random sample of the benchmark",
+    "observed: the formal runbook remains at status launched/awaiting annotators, which conflicts with the interim exports above; the true final completion state of the two formal exports could not be established from the workspace"
+  ],
+  "not_established_here": [
+    "whether either formal annotator completed all 396 displayed items (final exports may exist outside the workspace; the workspace shows no post-checkpoint export)",
+    "any semantic endpoint, decoder accuracy, or model-versus-human comparison for the formal benchmark",
+    "the intra-rater reliability of the formal annotators on the hidden duplicates"
+  ],
+  "lane_integrity_at_read_time": "The source lane was read only. Every source file touched by this curation was re-hashed after copying and matched its pre-copy digest; no file under the source lane was created, modified or deleted."
+}

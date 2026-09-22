@@ -1,0 +1,552 @@
+{
+  "verification": "canonical16 adapter on official emg2pose mini dataset",
+  "adapter": "<WORKSPACE_ROOT>\\representation\\canonical_hand.py",
+  "repo_commit": "5f6f62b",
+  "source_indices": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    17,
+    18,
+    19
+  ],
+  "dropped_indices": [
+    4,
+    8,
+    12,
+    16
+  ],
+  "n_files": 30,
+  "per_file": [
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-10_left.hdf5",
+      "n_samples": 119266,
+      "n_ik_failure": 26103,
+      "frac_ik_failure": 0.21886371639863833,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-10_right.hdf5",
+      "n_samples": 119266,
+      "n_ik_failure": 14462,
+      "frac_ik_failure": 0.1212583636577063,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-11_left.hdf5",
+      "n_samples": 117131,
+      "n_ik_failure": 18132,
+      "frac_ik_failure": 0.1548010347388821,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-11_right.hdf5",
+      "n_samples": 117131,
+      "n_ik_failure": 9430,
+      "frac_ik_failure": 0.08050814899556906,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-12_left.hdf5",
+      "n_samples": 114954,
+      "n_ik_failure": 4002,
+      "frac_ik_failure": 0.03481392557022809,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-12_right.hdf5",
+      "n_samples": 114938,
+      "n_ik_failure": 4869,
+      "frac_ik_failure": 0.042361969061581024,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-13_left.hdf5",
+      "n_samples": 473808,
+      "n_ik_failure": 77928,
+      "frac_ik_failure": 0.16447168473305643,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-13_right.hdf5",
+      "n_samples": 473792,
+      "n_ik_failure": 109439,
+      "frac_ik_failure": 0.23098532689450224,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-14_left.hdf5",
+      "n_samples": 105504,
+      "n_ik_failure": 14474,
+      "frac_ik_failure": 0.13718911131331513,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-14_right.hdf5",
+      "n_samples": 105496,
+      "n_ik_failure": 38899,
+      "frac_ik_failure": 0.368724880564192,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-15_left.hdf5",
+      "n_samples": 91328,
+      "n_ik_failure": 35389,
+      "frac_ik_failure": 0.38749343027330063,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-15_right.hdf5",
+      "n_samples": 91328,
+      "n_ik_failure": 32198,
+      "frac_ik_failure": 0.35255343377715487,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-1_left.hdf5",
+      "n_samples": 142674,
+      "n_ik_failure": 62233,
+      "frac_ik_failure": 0.4361901958310554,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-1_right.hdf5",
+      "n_samples": 142652,
+      "n_ik_failure": 66960,
+      "frac_ik_failure": 0.46939404985559263,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-2_left.hdf5",
+      "n_samples": 119100,
+      "n_ik_failure": 9100,
+      "frac_ik_failure": 0.0764063811922754,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-2_right.hdf5",
+      "n_samples": 119116,
+      "n_ik_failure": 4265,
+      "frac_ik_failure": 0.03580543335907854,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-3_left.hdf5",
+      "n_samples": 120994,
+      "n_ik_failure": 6769,
+      "frac_ik_failure": 0.055944922888738285,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-3_right.hdf5",
+      "n_samples": 121002,
+      "n_ik_failure": 10034,
+      "frac_ik_failure": 0.08292424918596387,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-4_left.hdf5",
+      "n_samples": 117250,
+      "n_ik_failure": 2965,
+      "frac_ik_failure": 0.025287846481876333,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-4_right.hdf5",
+      "n_samples": 117250,
+      "n_ik_failure": 1333,
+      "frac_ik_failure": 0.011368869936034115,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-5_left.hdf5",
+      "n_samples": 114196,
+      "n_ik_failure": 533,
+      "frac_ik_failure": 0.004667413919927143,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-5_right.hdf5",
+      "n_samples": 114180,
+      "n_ik_failure": 33,
+      "frac_ik_failure": 0.00028901734104046245,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-6_left.hdf5",
+      "n_samples": 118611,
+      "n_ik_failure": 18701,
+      "frac_ik_failure": 0.1576666582357454,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-6_right.hdf5",
+      "n_samples": 118611,
+      "n_ik_failure": 7499,
+      "frac_ik_failure": 0.06322347842948799,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-7_left.hdf5",
+      "n_samples": 116427,
+      "n_ik_failure": 14420,
+      "frac_ik_failure": 0.12385443239111203,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-7_right.hdf5",
+      "n_samples": 116435,
+      "n_ik_failure": 6066,
+      "frac_ik_failure": 0.052097736934770475,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-8_left.hdf5",
+      "n_samples": 116387,
+      "n_ik_failure": 27008,
+      "frac_ik_failure": 0.23205340802666966,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-8_right.hdf5",
+      "n_samples": 116371,
+      "n_ik_failure": 24352,
+      "frac_ik_failure": 0.20926175765439844,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-9_left.hdf5",
+      "n_samples": 121795,
+      "n_ik_failure": 7743,
+      "frac_ik_failure": 0.06357403834311753,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-9_right.hdf5",
+      "n_samples": 121763,
+      "n_ik_failure": 3833,
+      "frac_ik_failure": 0.03147918497408901,
+      "values_exact": true,
+      "mask_agrees_with_official": true,
+      "not_positional_prefix": true,
+      "roundtrip_ok": true
+    }
+  ],
+  "ik_failure_zero_tolerance": [
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-10_left.hdf5",
+      "n_flagged": 26103,
+      "n_bit_exact_zero": 26103,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-10_right.hdf5",
+      "n_flagged": 14462,
+      "n_bit_exact_zero": 14462,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-11_left.hdf5",
+      "n_flagged": 18132,
+      "n_bit_exact_zero": 18132,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-11_right.hdf5",
+      "n_flagged": 9430,
+      "n_bit_exact_zero": 9430,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-12_left.hdf5",
+      "n_flagged": 4002,
+      "n_bit_exact_zero": 4002,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-12_right.hdf5",
+      "n_flagged": 4869,
+      "n_bit_exact_zero": 4869,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-13_left.hdf5",
+      "n_flagged": 77928,
+      "n_bit_exact_zero": 77928,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-13_right.hdf5",
+      "n_flagged": 109439,
+      "n_bit_exact_zero": 109437,
+      "n_near_zero_only": 2,
+      "max_abs_value_in_flagged": 1.1102230246251565e-16
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-14_left.hdf5",
+      "n_flagged": 14474,
+      "n_bit_exact_zero": 14474,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-14_right.hdf5",
+      "n_flagged": 38899,
+      "n_bit_exact_zero": 38899,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-15_left.hdf5",
+      "n_flagged": 35389,
+      "n_bit_exact_zero": 35389,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-15_right.hdf5",
+      "n_flagged": 32198,
+      "n_bit_exact_zero": 32198,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-1_left.hdf5",
+      "n_flagged": 62233,
+      "n_bit_exact_zero": 62232,
+      "n_near_zero_only": 1,
+      "max_abs_value_in_flagged": 2.220446049250313e-16
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-1_right.hdf5",
+      "n_flagged": 66960,
+      "n_bit_exact_zero": 66960,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-2_left.hdf5",
+      "n_flagged": 9100,
+      "n_bit_exact_zero": 9100,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-2_right.hdf5",
+      "n_flagged": 4265,
+      "n_bit_exact_zero": 4265,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-3_left.hdf5",
+      "n_flagged": 6769,
+      "n_bit_exact_zero": 6769,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-3_right.hdf5",
+      "n_flagged": 10034,
+      "n_bit_exact_zero": 10034,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-4_left.hdf5",
+      "n_flagged": 2965,
+      "n_bit_exact_zero": 2965,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-4_right.hdf5",
+      "n_flagged": 1333,
+      "n_bit_exact_zero": 1333,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-5_left.hdf5",
+      "n_flagged": 533,
+      "n_bit_exact_zero": 533,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-5_right.hdf5",
+      "n_flagged": 33,
+      "n_bit_exact_zero": 33,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-6_left.hdf5",
+      "n_flagged": 18701,
+      "n_bit_exact_zero": 18701,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-6_right.hdf5",
+      "n_flagged": 7499,
+      "n_bit_exact_zero": 7499,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-7_left.hdf5",
+      "n_flagged": 14420,
+      "n_bit_exact_zero": 14420,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-7_right.hdf5",
+      "n_flagged": 6066,
+      "n_bit_exact_zero": 6066,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-8_left.hdf5",
+      "n_flagged": 27008,
+      "n_bit_exact_zero": 27008,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-8_right.hdf5",
+      "n_flagged": 24352,
+      "n_bit_exact_zero": 24351,
+      "n_near_zero_only": 1,
+      "max_abs_value_in_flagged": 1.1102230246251565e-16
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-9_left.hdf5",
+      "n_flagged": 7743,
+      "n_bit_exact_zero": 7743,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    },
+    {
+      "filename": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-9_right.hdf5",
+      "n_flagged": 3833,
+      "n_bit_exact_zero": 3833,
+      "n_near_zero_only": 0,
+      "max_abs_value_in_flagged": 0.0
+    }
+  ],
+  "n_samples_total": 4218756,
+  "n_ik_failure_total": 659172,
+  "frac_ik_failure_total": 0.15624795555846321,
+  "all_values_exact": true,
+  "all_mask_agree_with_official": true,
+  "all_not_positional_prefix": true,
+  "all_roundtrip_ok": true,
+  "mask_mismatch_files": []
+}

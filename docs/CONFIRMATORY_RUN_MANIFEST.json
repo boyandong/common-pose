@@ -1,0 +1,1436 @@
+{
+  "manifest_version": 1,
+  "mode": "prepare+finalize",
+  "created_utc": "2026-09-18T03:38:58Z",
+  "exact_command": "python -X utf8 experiments/run_full_db9.py --extracted ../data/ninapro_db9/extracted --data-dir ../data/db9_posture16 --out-dir ../data/db9_posture16 --fig-dir ../figures/posture16 --cohorts ../docs/CONFIRMATORY_COHORTS.json",
+  "interpreter": {
+    "python": "3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "<ANACONDA_ROOT>\\python.exe",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "package_versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sklearn": "1.7.1",
+    "matplotlib": "3.10.6",
+    "h5py": "3.14.0"
+  },
+  "hashes": {
+    "frozen_spec_sha256": "50c338bed3bf8a346f492abb61002a3e406f45aa3606e506271d026a75dc4196",
+    "db9_canonical16_schema_sha256": "0ede53b97908460a0700cc78674789ea30303f7f6572a129922765d683ed0f80",
+    "cohort_record_sha256": "55a7d511198d3749ad289a3cee5b0e3b31e5cc42a10c9575108133eaf8f924fc",
+    "code_files": {
+      "representation/db9_to_canonical16.py": "8ec97d0b0b4a61f8e8d958f93c2984fccd3144b2b8ca15adf4ff59e6160ce3cf",
+      "representation/canonical_hand.py": "d9922ff0927760fb5d319b6fd22eb264602e836cf87a7f09291550218c987130",
+      "posture_decoder/db9/loader.py": "6a07c5cefb8219d741bdbd2d1912e11d7f4039baefa4b9fd4ac745364b344d0d",
+      "posture_decoder/db9/labels.py": "8a90a3b5ef583037a1c4f38855b795587d3965007a0db214feae61872317e5cf",
+      "posture_decoder/db9/canonical.py": "749ed8d9b03d856d0beafc4f5b811a753a0c672b7e2e183090155cdb963164ef",
+      "posture_decoder/db9/quality.py": "f541238dfe079a4836d46635fc11afcea6f21625d9d400220871250f616ec938",
+      "posture_decoder/experiments/confirmatory_policy.py": "85aea12a0f63139c6df945d1258f2b5e18f1979225495d24671349172e7d50fd",
+      "posture_decoder/experiments/run_posture16.py": "89ce5e62a6c8886b5aba566ff4388837ddba7750911b27131e39b2aaf8a062f1",
+      "posture_decoder/experiments/run_full_db9.py": "9ce2c7462fe80b60591b88da007b1f91170ce1fb8eb06801eac65354e44c66ae",
+      "posture_decoder/experiments/build_dataset.py": "d6c8a78fc745767e51410a812515b04afea472c4542fd8458dd3c729154be50d",
+      "posture_decoder/tools/fetch_db9_member.py": "eac5814a802d67afc9810769452d4f02d09a5a399d78545310d05fbf6d1c34c4",
+      "posture_decoder/tools/freeze_confirmatory_spec.py": "6e941430833dfdcb1af36afe73d3c370c494b0949f2babbd3001932f0e381804"
+    }
+  },
+  "primary_model": {
+    "model": "lda",
+    "config": {
+      "solver": "lsqr",
+      "shrinkage": "auto"
+    },
+    "normalization": "train_only_zscore",
+    "representation": "canonical16",
+    "selection_rule": "fixed by pre-registration; a secondary configuration scoring higher may not displace it"
+  },
+  "confirmatory_arms": {
+    "rule": "A is the primary number. B and C are reported alongside it and may never be substituted for it.",
+    "A_primary_confirmatory": {
+      "design_item": "2_untouched_confirmation.a_train_exposed_test_untouched",
+      "train_on": "development_exposed",
+      "test_on": "outcome_unseen",
+      "n_train_subjects": 34,
+      "n_test_subjects": 43,
+      "test_evaluations": 1,
+      "cohort_record": "docs/CONFIRMATORY_COHORTS.json",
+      "partition_source": "loaded from the cohort record at run time by confirmatory_policy.load_cohort_record; never hard-coded in the driver",
+      "strongest_evidence": true
+    },
+    "B_full_77_loso_descriptive": {
+      "design_item": "1_full_77_loso",
+      "tier": "descriptive only -- the development-exposed subjects are inside this evaluation"
+    },
+    "C_secondary_confirmatory": {
+      "design_item": "2_untouched_confirmation.b_loso_within_untouched",
+      "tier": "LOSO within the outcome-unseen cohort; cohort peers are in every training fold, so this is not an untouched external holdout"
+    }
+  },
+  "class_vocabulary": {
+    "primary": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "primary_names": [
+      "Thumb up",
+      "Extension of index and middle, flexion of the others",
+      "Flexion of ring and little finger, extension of the others",
+      "Thumb opposing base of little finger",
+      "Fingers flexed together in fist",
+      "Pointing index"
+    ],
+    "negative_control": [
+      5,
+      8
+    ],
+    "excluded": "exercise-C object grasps and exercise-B wrist/forearm movements"
+  },
+  "representations": {
+    "canonical16": {
+      "ndim": 16,
+      "names": [
+        "thumb_cmc_flexion",
+        "thumb_cmc_ab_adduction",
+        "thumb_mcp_flexion",
+        "thumb_ip_flexion",
+        "index_mcp_flexion",
+        "index_pip_flexion",
+        "index_dip_flexion",
+        "middle_mcp_flexion",
+        "middle_pip_flexion",
+        "middle_dip_flexion",
+        "ring_mcp_flexion",
+        "ring_pip_flexion",
+        "ring_dip_flexion",
+        "pinky_mcp_flexion",
+        "pinky_pip_flexion",
+        "pinky_dip_flexion"
+      ],
+      "role": "PRIMARY"
+    },
+    "canonical15_noThumbAA": {
+      "ndim": 15,
+      "names": [
+        "thumb_cmc_flexion",
+        "thumb_mcp_flexion",
+        "thumb_ip_flexion",
+        "index_mcp_flexion",
+        "index_pip_flexion",
+        "index_dip_flexion",
+        "middle_mcp_flexion",
+        "middle_pip_flexion",
+        "middle_dip_flexion",
+        "ring_mcp_flexion",
+        "ring_pip_flexion",
+        "ring_dip_flexion",
+        "pinky_mcp_flexion",
+        "pinky_pip_flexion",
+        "pinky_dip_flexion"
+      ],
+      "dropped": [
+        "thumb_cmc_ab_adduction"
+      ],
+      "role": "pre-registered robustness control (thumb-axis uncertainty)"
+    },
+    "canonical12_noDIP": {
+      "ndim": 12,
+      "names": [
+        "thumb_cmc_flexion",
+        "thumb_cmc_ab_adduction",
+        "thumb_mcp_flexion",
+        "thumb_ip_flexion",
+        "index_mcp_flexion",
+        "index_pip_flexion",
+        "middle_mcp_flexion",
+        "middle_pip_flexion",
+        "ring_mcp_flexion",
+        "ring_pip_flexion",
+        "pinky_mcp_flexion",
+        "pinky_pip_flexion"
+      ],
+      "dropped": [
+        "index_dip_flexion",
+        "middle_dip_flexion",
+        "ring_dip_flexion",
+        "pinky_dip_flexion"
+      ],
+      "role": "pre-registered robustness control (DIP reliability)"
+    },
+    "policy": "all three reported side by side; canonical16 is primary; none is used to select or tune the primary model",
+    "frozen_sign_transformation": {
+      "thumb_cmc_ab_adduction": -1.0
+    }
+  },
+  "extraction_rule": {
+    "rule": "split each labelled repetition into thirds; take the MEDIAN of the central third",
+    "central_fraction": 0.3333333333333333,
+    "min_samples_per_repetition": 30,
+    "unit_of_analysis": "subject x movement x repetition",
+    "tuning": "segmentation boundaries are never tuned per class or per accuracy"
+  },
+  "drift_correction": {
+    "method": "per-subject drift trajectory estimated from REST blocks only (labelled-free), median rest posture per block, offsets relative to the first block, linearly interpolated over normalised session time, subtracted",
+    "uses_test_labels": false,
+    "role": "falsification control; the primary result is reported uncorrected"
+  },
+  "normalization": {
+    "primary": "train_only_zscore",
+    "reported_control": "raw",
+    "excluded_by_policy": "per-subject normalisation of test subjects (requires subject-specific calibration a deployed decoder would not have)"
+  },
+  "metrics": {
+    "primary_confirmatory": "accuracy on the untouched cohort",
+    "companion": "balanced accuracy (classes are balanced by design)",
+    "also_reported": [
+      "macro F1",
+      "per-class recall",
+      "confusion matrix",
+      "drift-only LOSO",
+      "drift-corrected LOSO",
+      "label-permutation control"
+    ],
+    "chance": 0.16666666666666666,
+    "majority_class_baseline": "reported alongside every accuracy"
+  },
+  "frozen_sign_transformation": {
+    "thumb_cmc_ab_adduction": -1.0
+  },
+  "cohort_definitions": {
+    "policy": "machine-derived; never hand-edited. The final report must distinguish A primary untouched/outcome-unseen holdout evidence, B full-77 LOSO descriptive evidence, and C secondary/exploratory comparisons -- these are not equally confirmatory.",
+    "development_exposed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74
+    ],
+    "outcome_unseen": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      75,
+      76,
+      77
+    ],
+    "integrity_only_touched": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77
+    ],
+    "integrity_touch_is_not_outcome_exposure": true,
+    "evidence": {
+      "result_producing_logs": {
+        "smoke77.log": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          21,
+          22,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74
+        ],
+        "smoke77b.log": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74
+        ]
+      },
+      "n_available": 77,
+      "n_exposed": 34,
+      "n_outcome_unseen": 43,
+      "derivation_tool": "posture_decoder/tools/freeze_confirmatory_spec.py"
+    }
+  },
+  "corpus": {
+    "n_subjects": 77,
+    "identity_assertions": {
+      "n_subjects": 77,
+      "by_source_dataset": {
+        "DB1": 27,
+        "DB2": 40,
+        "DB5": 10
+      },
+      "expected_total": 77,
+      "identity_authority": "DB9 archive slot; the in-file `subject` field is provenance metadata only",
+      "source_recorded_tuples_injective": true,
+      "equal_recorded_ids_across_sources_are_expected": true,
+      "complete": true
+    },
+    "subject_source_mapping": {
+      "1": "DB1",
+      "2": "DB1",
+      "3": "DB1",
+      "4": "DB1",
+      "5": "DB1",
+      "6": "DB1",
+      "7": "DB1",
+      "8": "DB1",
+      "9": "DB1",
+      "10": "DB1",
+      "11": "DB1",
+      "12": "DB1",
+      "13": "DB1",
+      "14": "DB1",
+      "15": "DB1",
+      "16": "DB1",
+      "17": "DB1",
+      "18": "DB1",
+      "19": "DB1",
+      "20": "DB1",
+      "21": "DB1",
+      "22": "DB1",
+      "23": "DB1",
+      "24": "DB1",
+      "25": "DB1",
+      "26": "DB1",
+      "27": "DB1",
+      "28": "DB2",
+      "29": "DB2",
+      "30": "DB2",
+      "31": "DB2",
+      "32": "DB2",
+      "33": "DB2",
+      "34": "DB2",
+      "35": "DB2",
+      "36": "DB2",
+      "37": "DB2",
+      "38": "DB2",
+      "39": "DB2",
+      "40": "DB2",
+      "41": "DB2",
+      "42": "DB2",
+      "43": "DB2",
+      "44": "DB2",
+      "45": "DB2",
+      "46": "DB2",
+      "47": "DB2",
+      "48": "DB2",
+      "49": "DB2",
+      "50": "DB2",
+      "51": "DB2",
+      "52": "DB2",
+      "53": "DB2",
+      "54": "DB2",
+      "55": "DB2",
+      "56": "DB2",
+      "57": "DB2",
+      "58": "DB2",
+      "59": "DB2",
+      "60": "DB2",
+      "61": "DB2",
+      "62": "DB2",
+      "63": "DB2",
+      "64": "DB2",
+      "65": "DB2",
+      "66": "DB2",
+      "67": "DB2",
+      "68": "DB5",
+      "69": "DB5",
+      "70": "DB5",
+      "71": "DB5",
+      "72": "DB5",
+      "73": "DB5",
+      "74": "DB5",
+      "75": "DB5",
+      "76": "DB5",
+      "77": "DB5"
+    },
+    "inputs": [
+      {
+        "global_subject_id": 1,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 1,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_1_angles\\S1_E2_A1.mat",
+        "file_bytes": 5835644,
+        "file_sha256": "730912117976ab2fbf43574551a7063ee00c2380a3a7f07af6cbe82ca0d6e219",
+        "samples": 85671,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 2,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 2,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_2_angles\\S2_E2_A1.mat",
+        "file_bytes": 7641101,
+        "file_sha256": "4f33073297d97f49f6e2cdf181591f35e8279cea223696fed1448488116dda3a",
+        "samples": 85766,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 3,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 3,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_3_angles\\S3_E2_A1.mat",
+        "file_bytes": 7425209,
+        "file_sha256": "77d8697d1d0e6b17f9c09baf432c8bdebb502a6f89f32dcec8feb3c262d6a7c9",
+        "samples": 84983,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 4,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 4,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_4_angles\\S4_E2_A1.mat",
+        "file_bytes": 7310621,
+        "file_sha256": "0a6f18ee5fe47c87ebfa17d8fd9bf94b50efec0df3da1aaccb2b9a0913cf3c44",
+        "samples": 85980,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 5,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 5,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_5_angles\\S5_E2_A1.mat",
+        "file_bytes": 11229548,
+        "file_sha256": "a1225bdf4320b0579b31158d171018af08e6a0e5f01b33b3debe81372518ef02",
+        "samples": 85842,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 6,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 6,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_6_angles\\S6_E2_A1.mat",
+        "file_bytes": 7189208,
+        "file_sha256": "2429f57da770ebe440fd4301741a99eff5aad55618bcb3a585e3d9fe89fcee6b",
+        "samples": 86022,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 7,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 7,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_7_angles\\S7_E2_A1.mat",
+        "file_bytes": 7333084,
+        "file_sha256": "5497d0e0b253f920a715690705a47107ec0b7ce774abe245d7139e7755c5cb06",
+        "samples": 85390,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 8,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 8,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_8_angles\\S8_E2_A1.mat",
+        "file_bytes": 6447965,
+        "file_sha256": "129a6b585ca888a748c44d4917b95feba85c0594f9b1677a5183097b2b74a7d1",
+        "samples": 85486,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 9,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 9,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_9_angles\\S9_E2_A1.mat",
+        "file_bytes": 7308796,
+        "file_sha256": "05db5a22f4196c99cfd119cf0c85e5722363179a3230f992149e2fb4812f546f",
+        "samples": 85391,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 10,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 10,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_10_angles\\S10_E2_A1.mat",
+        "file_bytes": 7841702,
+        "file_sha256": "b74185ce5efa2cd654eb7a9162a31c383e6908c26dae9bf6f8ee76c29c3959b9",
+        "samples": 85810,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 11,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 11,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_11_angles\\S11_E2_A1.mat",
+        "file_bytes": 8403218,
+        "file_sha256": "0ca2dcc8164323c9eb814fd7a2bac745ff911f619438b132a278096675bf1797",
+        "samples": 85789,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 12,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 12,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_12_angles\\S12_E2_A1.mat",
+        "file_bytes": 8207715,
+        "file_sha256": "864821f8e31d28fe325b2193f3e08496c047734bb5e1f72e2648f1c12deb2799",
+        "samples": 85544,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 13,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 13,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_13_angles\\S13_E2_A1.mat",
+        "file_bytes": 5932591,
+        "file_sha256": "29bccf693d0d2ec4cc8d8b7f21b6f7092ec6cd8fe9159665163a417eb0f88e7f",
+        "samples": 85231,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 14,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 14,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_14_angles\\S14_E2_A1.mat",
+        "file_bytes": 6572423,
+        "file_sha256": "c1cd9087516dd64a61c0eea9a44347a9260997e30e81a0357fda8d85af77255c",
+        "samples": 85814,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 15,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 15,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_15_angles\\S15_E2_A1.mat",
+        "file_bytes": 5857740,
+        "file_sha256": "6e491bb7b00915751c554986328d1c2f4553896fc84f8c2a54f5a2c924bc2f1f",
+        "samples": 86146,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 16,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 16,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_16_angles\\S16_E2_A1.mat",
+        "file_bytes": 7576161,
+        "file_sha256": "356d23ce53b302f05e19adfee056815d0e85210fa792dc988e629a889058247a",
+        "samples": 85180,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 17,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 17,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_17_angles\\S17_E2_A1.mat",
+        "file_bytes": 7485359,
+        "file_sha256": "232fcb19dbfc4fdc985e108e598bd02ab55bb77bbf2c8d1e25c88d471a78ecdf",
+        "samples": 86627,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 18,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 18,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_18_angles\\S18_E2_A1.mat",
+        "file_bytes": 8234155,
+        "file_sha256": "59ce8cf28842499239e03f0a31b00bc4bbf8a35ea39b8dc4690a15bbb8e8969b",
+        "samples": 85348,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 19,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 19,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_19_angles\\S19_E2_A1.mat",
+        "file_bytes": 7331540,
+        "file_sha256": "8b5fbb2c343363bd33457a2a2979a4714099251216a8ae4ec77051e051860b58",
+        "samples": 85686,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 20,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 20,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_20_angles\\S20_E2_A1.mat",
+        "file_bytes": 6178732,
+        "file_sha256": "4b2fc8afd35b355295ea171ebc0298c10da3fdd6e6253d9697d2ef5e0d52509d",
+        "samples": 86443,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 21,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 21,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_21_angles\\S21_E2_A1.mat",
+        "file_bytes": 5907433,
+        "file_sha256": "85709a1b8954317169269f21da4f4177155927c2200047c82899bbcd25e86a88",
+        "samples": 86274,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 22,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 22,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_22_angles\\S22_E2_A1.mat",
+        "file_bytes": 6528139,
+        "file_sha256": "a63d485167e915637484eb612389f1dd64ca1b887123d80115d947d6bf9e494b",
+        "samples": 86313,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 23,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 23,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_23_angles\\S23_E2_A1.mat",
+        "file_bytes": 8082432,
+        "file_sha256": "b91138d27bca601116e1b5aa54ed5dcdf6e5913f730ae70e89a7443ad20b8a51",
+        "samples": 86152,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 24,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 24,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_24_angles\\S24_E2_A1.mat",
+        "file_bytes": 7888696,
+        "file_sha256": "7593fe78f774bdbed3e9ea6e917b52265fe7d025766713bef4e6006f66f81c69",
+        "samples": 85829,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 25,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 25,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_25_angles\\S25_E2_A1.mat",
+        "file_bytes": 6710842,
+        "file_sha256": "d36ad3c85bec1cf52a8282b1234a360cd1d2057f56ee2d5f34afa95e22fb661f",
+        "samples": 86140,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 26,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 26,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_26_angles\\S26_E2_A1.mat",
+        "file_bytes": 6272473,
+        "file_sha256": "6be9c8e081df6978acd3ded8c1bfdf46c6fd9f901a461c5eb34acc2b0f6c3af2",
+        "samples": 86100,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 27,
+        "source_dataset": "DB1",
+        "recorded_subject_field": 27,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_27_angles\\S27_E2_A1.mat",
+        "file_bytes": 6354748,
+        "file_sha256": "70721caa68bd0517b018ff361b2aab6092bf4b579c4ab217c1f17bcdcec6aa71",
+        "samples": 85973,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 28,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 1,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_28_angles\\S28_E1_A1.mat",
+        "file_bytes": 71884125,
+        "file_sha256": "1acb849cfd431d1a3c1b778be17ecd1097687b8852ca44f5e995bcb30adac71a",
+        "samples": 1808331,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 29,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 2,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_29_angles\\S29_E1_A1.mat",
+        "file_bytes": 69926756,
+        "file_sha256": "77d8b64d0e569b0d423cabc5cd98e9f8aedcf6f714009126c3ae21ef975fec84",
+        "samples": 1803711,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 30,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 3,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_30_angles\\S30_E1_A1.mat",
+        "file_bytes": 61738453,
+        "file_sha256": "31483f881aa08c0c0c7fe2da1274a73dbb1d3995af356d8d9d7c412d02361d87",
+        "samples": 1795150,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 31,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 4,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_31_angles\\S31_E1_A1.mat",
+        "file_bytes": 60576797,
+        "file_sha256": "0e580f5d7d1266d34f5fe1d442568e7563f1f35ac25ecbea97cafb882fcc1b5c",
+        "samples": 1797647,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 32,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 5,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_32_angles\\S32_E1_A1.mat",
+        "file_bytes": 53991673,
+        "file_sha256": "fd35b523227e4a2912d443bac1179d39b39620d0846d2ed6ad4dcc58c2e36a72",
+        "samples": 1801513,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 33,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 6,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_33_angles\\S33_E1_A1.mat",
+        "file_bytes": 72821918,
+        "file_sha256": "b597374cff84bde6b7bdc9a60fa4f24d328ff0abf9a1f60c3e864c65bed25c04",
+        "samples": 1797578,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 34,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 7,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_34_angles\\S34_E1_A1.mat",
+        "file_bytes": 60692549,
+        "file_sha256": "2c14254c62cedaf3e3c32ec2c500b1f7761c8249a80576b70601e82151044ca6",
+        "samples": 1796292,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 35,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 8,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_35_angles\\S35_E1_A1.mat",
+        "file_bytes": 69869127,
+        "file_sha256": "ed7d510073af54cd0884f5fdad0b170beb1e63382ae017c9dd614382921469c9",
+        "samples": 1803766,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 36,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 9,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_36_angles\\S36_E1_A1.mat",
+        "file_bytes": 55778858,
+        "file_sha256": "f85a86d0f8cac08355d66a2dfdad432c39620a5bc331cf9187ffcfcb5312065b",
+        "samples": 1801456,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 37,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 10,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_37_angles\\S37_E1_A1.mat",
+        "file_bytes": 70727343,
+        "file_sha256": "5c38a41ea3d6a247404976b90a5aee427bc17cf57f47623930df1a020784a27e",
+        "samples": 1805836,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 38,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 11,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_38_angles\\S38_E1_A1.mat",
+        "file_bytes": 47775190,
+        "file_sha256": "596af836f2b7a0feaf761f802899d4a2dc3c18cc0fb67d8275c4aac432ebe43c",
+        "samples": 1803896,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 39,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 12,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_39_angles\\S39_E1_A1.mat",
+        "file_bytes": 49738095,
+        "file_sha256": "1eb815cec3e3873fa956f6a4fe69f0fcf3a83d5f3d93f33660baf7be03f581ed",
+        "samples": 1797214,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 40,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 13,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_40_angles\\S40_E1_A1.mat",
+        "file_bytes": 62206970,
+        "file_sha256": "a10a771401abd86863f130b3b075ae7f80b606f6c59ce10c4a00f6fc117e8515",
+        "samples": 1801392,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 41,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 14,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_41_angles\\S41_E1_A1.mat",
+        "file_bytes": 63243693,
+        "file_sha256": "49d51005f814dc89e31c81db8c556d832de68d760d89ddf079f4a9c8b80d31a5",
+        "samples": 1804139,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 42,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 15,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_42_angles\\S42_E1_A1.mat",
+        "file_bytes": 59783985,
+        "file_sha256": "6feb1b0fa806071bd1520229fcc9efab255bc3c50ba3d1e36b0d06bd0d3f562a",
+        "samples": 1804393,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 43,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 16,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_43_angles\\S43_E1_A1.mat",
+        "file_bytes": 68319530,
+        "file_sha256": "598c3c19ed74e31b0f81acff2554ef9539dc2b4c8b63f9fbc1d430f601d52a61",
+        "samples": 1801903,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 44,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 17,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_44_angles\\S44_E1_A1.mat",
+        "file_bytes": 56446888,
+        "file_sha256": "b080776635bb4a88bece25e9d09cfc21c157c05119e2c8b54e96bff5119399c8",
+        "samples": 1804768,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 45,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 18,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_45_angles\\S45_E1_A1.mat",
+        "file_bytes": 66949424,
+        "file_sha256": "39b3b03b4197d15c12efff527e66a5a24f339ccc91ea8aa626040708953d9d6a",
+        "samples": 1800139,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 46,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 19,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_46_angles\\S46_E1_A1.mat",
+        "file_bytes": 56246098,
+        "file_sha256": "fe6720966a47ba6ee10054fddcac0bfddda58e58fa75f744177c0702e3a194c4",
+        "samples": 1797147,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 47,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 20,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_47_angles\\S47_E1_A1.mat",
+        "file_bytes": 46304284,
+        "file_sha256": "82c2393184950ceb831ab15986e0626ef4aab94460995d5500c7063e2a3921e6",
+        "samples": 1801389,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 48,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 21,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_48_angles\\S48_E1_A1.mat",
+        "file_bytes": 52176016,
+        "file_sha256": "ac27e3109ae101cb72bc7e77b6462c97d925574f222ec8c194d3b297d3214485",
+        "samples": 1813631,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 49,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 22,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_49_angles\\S49_E1_A1.mat",
+        "file_bytes": 56934324,
+        "file_sha256": "c897c69e0c9c8a087fb1412c1236a40918f598eb30114fc73b4ede5c62fa289b",
+        "samples": 1811318,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 50,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 23,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_50_angles\\S50_E1_A1.mat",
+        "file_bytes": 68440270,
+        "file_sha256": "1d8221b51091fafcae0e8b3e2bde12041221bba23a85a565d01f00332016383e",
+        "samples": 1804009,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 51,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 24,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_51_angles\\S51_E1_A1.mat",
+        "file_bytes": 59042698,
+        "file_sha256": "05752b4966c75fdacb129165ab41c3b231c6355313331c4b37649813dd10ca37",
+        "samples": 1799525,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 52,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 25,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_52_angles\\S52_E1_A1.mat",
+        "file_bytes": 72439232,
+        "file_sha256": "8112739de0adc8ccc28bfc2b30bfe5fb940a455c54b1003f8b119927d905f702",
+        "samples": 1804722,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 53,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 26,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_53_angles\\S53_E1_A1.mat",
+        "file_bytes": 70807461,
+        "file_sha256": "09dd2a9ae86df891b07b2a5e1245366bfbcc978014093f18691e8657124b4a24",
+        "samples": 1757421,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 54,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 27,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_54_angles\\S54_E1_A1.mat",
+        "file_bytes": 61570810,
+        "file_sha256": "9ee9353b09060ceecbc8164e774e05b31ec7143bad7556b00aef43c421aba952",
+        "samples": 1776868,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 55,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 28,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_55_angles\\S55_E1_A1.mat",
+        "file_bytes": 59610327,
+        "file_sha256": "5ffd93d464909abcb81f22ce9448ba2012ee434c7c319ab89322240da2c99c0a",
+        "samples": 1777602,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 56,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 29,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_56_angles\\S56_E1_A1.mat",
+        "file_bytes": 60828723,
+        "file_sha256": "081b4d206c747e937a8f679a7ce181df0acb8ae5255258d395f1606e496c641e",
+        "samples": 1771219,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 57,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 30,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_57_angles\\S57_E1_A1.mat",
+        "file_bytes": 55914454,
+        "file_sha256": "a323ecdeac1beaa736b7c49198b496d00f0f3e72a8b0e44899da405a8dcca183",
+        "samples": 1777267,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 58,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 31,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_58_angles\\S58_E1_A1.mat",
+        "file_bytes": 54393925,
+        "file_sha256": "0c772f62e8c06111c738719b5df52b92c0dd0d7111628f74fed67ce68a3cbc42",
+        "samples": 1771088,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 59,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 32,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_59_angles\\S59_E1_A1.mat",
+        "file_bytes": 59622627,
+        "file_sha256": "2fa0567d14043edb17794c9f3de01ef722f62bd3f606d6be7a23abaa9c8e2da4",
+        "samples": 1768437,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 60,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 33,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_60_angles\\S60_E1_A1.mat",
+        "file_bytes": 59303902,
+        "file_sha256": "65c8d0ef44befb1b130387eefd34189437e336d9ec53ada1729a4a03cd81a60a",
+        "samples": 1766451,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 61,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 34,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_61_angles\\S61_E1_A1.mat",
+        "file_bytes": 69033586,
+        "file_sha256": "b04550dd73f11dc8a4f97e6d3c51314f1a22ec57375020cee2be9f29710a3534",
+        "samples": 1771998,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 62,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 35,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_62_angles\\S62_E1_A1.mat",
+        "file_bytes": 59974315,
+        "file_sha256": "db13fe7276f091ca3dc5ef9f12aa1cd0da599c85c6533c188812b39558e2c831",
+        "samples": 1769567,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 63,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 36,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_63_angles\\S63_E1_A1.mat",
+        "file_bytes": 53392744,
+        "file_sha256": "cf7ca1dbc1f589dee4ae66e32047c3aa864febd354e76bc8651996aea01f8727",
+        "samples": 1771570,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 64,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 37,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_64_angles\\S64_E1_A1.mat",
+        "file_bytes": 65226506,
+        "file_sha256": "5f51522d20afd2ab203b7ccc1721e8b3b3962b983acfbdee79a14922a2e27a86",
+        "samples": 1764765,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 65,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 38,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_65_angles\\S65_E1_A1.mat",
+        "file_bytes": 59364751,
+        "file_sha256": "c42e0d9152434cdef8364e5e025336c9c2ff8dcd1f753a6a1b70395cab0ad8b9",
+        "samples": 1773208,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 66,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 39,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_66_angles\\S66_E1_A1.mat",
+        "file_bytes": 69203097,
+        "file_sha256": "05dff2a5cc4bdfa6541b5bd4da017fa4e65e5f46f6e64aa1c4c456e461db8dbb",
+        "samples": 1771800,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 67,
+        "source_dataset": "DB2",
+        "recorded_subject_field": 40,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_67_angles\\S67_E1_A1.mat",
+        "file_bytes": 71451621,
+        "file_sha256": "ba0b600d7e72351173bfa8c01e72dd1c30ef9e9fd2cbd1664b854cb04fa6c6e6",
+        "samples": 1772132,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 68,
+        "source_dataset": "DB5",
+        "recorded_subject_field": 1,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_68_angles\\S68_E2_A1.mat",
+        "file_bytes": 6937146,
+        "file_sha256": "36fa7c12b3b0e9847eb011635c4f3df0868915d4627939518a61bfa6f0cda77d",
+        "samples": 179901,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 69,
+        "source_dataset": "DB5",
+        "recorded_subject_field": 11,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_69_angles\\S69_E2_A1.mat",
+        "file_bytes": 6214947,
+        "file_sha256": "657dfdbfd4c6861ea62b2a16e13de4c4696a87882b9a5e3d774a227a0b26fef5",
+        "samples": 203945,
+        "identity_note": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_69_angles\\S69_E2_A1.mat: archive slot s_69 (source DB5) records subject=11 internally, but the source database's own numbering predicts 2. The archive slot is used as the authoritative identity; this is an inconsistency in the official release's metadata, not a reason to drop the recording."
+      },
+      {
+        "global_subject_id": 70,
+        "source_dataset": "DB5",
+        "recorded_subject_field": 3,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_70_angles\\S70_E2_A1.mat",
+        "file_bytes": 8247345,
+        "file_sha256": "3010659f0007e22636a4dce3683ab65098ffe3d875c13a808f373afeba9a8416",
+        "samples": 184429,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 71,
+        "source_dataset": "DB5",
+        "recorded_subject_field": 4,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_71_angles\\S71_E2_A1.mat",
+        "file_bytes": 5966362,
+        "file_sha256": "33cfbc4e5a0628eaeb11b82bacde198151e4bc79dbbd428f7bb4f5cdb7926ebb",
+        "samples": 206211,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 72,
+        "source_dataset": "DB5",
+        "recorded_subject_field": 5,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_72_angles\\S72_E2_A1.mat",
+        "file_bytes": 6632164,
+        "file_sha256": "5bd405c6b0be4736c333f717fc145cc5e160488b465d1641da2056fda66da53a",
+        "samples": 206127,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 73,
+        "source_dataset": "DB5",
+        "recorded_subject_field": 6,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_73_angles\\S73_E2_A1.mat",
+        "file_bytes": 7577232,
+        "file_sha256": "e79bd505e4d6b9bfc53a3b84d99b841a8c36a6ac510f7d9a893c6f82a4f60ec8",
+        "samples": 205431,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 74,
+        "source_dataset": "DB5",
+        "recorded_subject_field": 7,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_74_angles\\S74_E2_A1.mat",
+        "file_bytes": 7378530,
+        "file_sha256": "8629ca5cbd8547db52594dccd1b81b15c752ff75fba48942654c082fac8a1912",
+        "samples": 209024,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 75,
+        "source_dataset": "DB5",
+        "recorded_subject_field": 8,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_75_angles\\S75_E2_A1.mat",
+        "file_bytes": 7433924,
+        "file_sha256": "02a1adba2a4838b4f669f57f68c00abaa9aef279009cdb8821ccadf60257d4bf",
+        "samples": 206270,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 76,
+        "source_dataset": "DB5",
+        "recorded_subject_field": 9,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_76_angles\\S76_E2_A1.mat",
+        "file_bytes": 6802669,
+        "file_sha256": "386974b100be67607e75ccb553b24d2706f1b9877237c4c4fc230d3ff31229e5",
+        "samples": 208239,
+        "identity_note": null
+      },
+      {
+        "global_subject_id": 77,
+        "source_dataset": "DB5",
+        "recorded_subject_field": 10,
+        "file": "<WORKSPACE_ROOT>\\data\\ninapro_db9\\extracted\\s_77_angles\\S77_E2_A1.mat",
+        "file_bytes": 6687247,
+        "file_sha256": "2979cfc325941451a08bcf3a0208b2828ecf08415de7adf13c523ee042711033",
+        "samples": 214062,
+        "identity_note": null
+      }
+    ]
+  },
+  "result_artifacts": {
+    "data/_invalidated\\README.md": {
+      "bytes": 604,
+      "sha256": "bbbca3e468b4c96de1e80ffec56053ebce28f038624ba478f89511744754775c"
+    },
+    "data/_invalidated\\repetition_trajectories.npz.prequarantine": {
+      "bytes": 29008111,
+      "sha256": "8bb362cf1d66d8a2662d02dbfb18c7a21ed394d1eceeb1cf60033a7c7718aba1"
+    },
+    "data/_invalidated\\representative_postures.meta.json.prequarantine": {
+      "bytes": 9923,
+      "sha256": "04d2d3a712d008ae41246bcde875dc71637e4d546be0a6a1d4defd27863006e8"
+    },
+    "data/_invalidated\\representative_postures.npz.prequarantine": {
+      "bytes": 374919,
+      "sha256": "584ec51eaca95c003798f9d0b5a8828ba7cf9d84c991bd413a31ade0e66aedd6"
+    },
+    "data/confidence_report.json": {
+      "bytes": 70694,
+      "sha256": "343de1ba4eee8c988473414aa7a729a98b52a366de9e08bcfd970ee8774cf398"
+    },
+    "data/db2_member_probe.json": {
+      "bytes": 2935,
+      "sha256": "0937819fa7106ace216cf4941bffca593b31cc4cc93829a1cd091be9449d67fd"
+    },
+    "data/diagnostics.json": {
+      "bytes": 12430,
+      "sha256": "82fd18f421e1caa7ce12184251022a8bf8a4f3145cfab7b25b260950261f9740"
+    },
+    "data/diagnostics_drift.json": {
+      "bytes": 4342,
+      "sha256": "8fbed74115a0b98258e12eae7bd221f61a9cfd81e40868a5996fb6da52cacdfa"
+    },
+    "data/full_db9_results.json": {
+      "bytes": 756784,
+      "sha256": "47f09e2fe76ad3f78c7e468c3af9f7755da0cc27c2d61fb2a490abfd61fa430a"
+    },
+    "data/phase7_loso_confusion.json": {
+      "bytes": 1474,
+      "sha256": "d0559785820d2c360e5fcebb8a998c3f1e2a64b7e09c9d97a4351355cacabf95"
+    },
+    "data/repetition_trajectories_77.npz": {
+      "bytes": 808837227,
+      "sha256": "d39526479713f771f45014f52ec1aa9cc3111902917624be7ebac10de538be13"
+    },
+    "data/representative_postures_77.meta.json": {
+      "bytes": 26170,
+      "sha256": "7ff29ae0cdb33548703fa5a9c2bb900ec59439a3c780a72c46fc8b6f5dc70cfd"
+    },
+    "data/representative_postures_77.npz": {
+      "bytes": 1292939,
+      "sha256": "4fba093dff0ef82925176a77358b934ebcb362bd35b262d21d2ec7611f5e8b9f"
+    },
+    "data/results.json": {
+      "bytes": 1525519,
+      "sha256": "de19fe3e69296d00f18fb403ed1634a7907e3a616bd814ed707f33397e0509ac"
+    },
+    "data/subject_manifest.json": {
+      "bytes": 72861,
+      "sha256": "ae17e85f853f7c6faf10d5d1ba8e144ee84c03298af2fd9c8df4eb0aa7925996"
+    },
+    "data/subject_split.json": {
+      "bytes": 1015,
+      "sha256": "e8f962beb5134d50d5795afae1d02925a2670e98e5413def9acc4c973cf0f8cb"
+    },
+    "data/thumb_axis_resolution.json": {
+      "bytes": 10787,
+      "sha256": "8233afea1a9a6b71e1467284bd106c5c152d80c36d9f34b2a4488f49a208834d"
+    },
+    "data/thumb_impact.json": {
+      "bytes": 952,
+      "sha256": "033dea0ef7ae9f998450cfc3c57162025118ddfdf5af5cebe798ca9a48c9587e"
+    },
+    "data/thumb_web_sign_evidence.json": {
+      "bytes": 13871,
+      "sha256": "e78d89319d7152bfccb3c1bf6f0131b9faeebd2f1a3f568d6922497938af971b"
+    },
+    "data/thumb_zero_alignment.json": {
+      "bytes": 12472,
+      "sha256": "4ba8a51247738d57dd8e7ffeea40d529c558cb2fc6064aeb686b1c9362425cb9"
+    },
+    "figures/confusion__primary6__canonical12_noDIP__test.png": {
+      "bytes": 87245,
+      "sha256": "8fb1ed3e1b5aac04a772185d79b9b9fee6fd555f947a3f0629a404ecb1127175"
+    },
+    "figures/confusion__primary6__canonical16__test.png": {
+      "bytes": 85343,
+      "sha256": "028634a95ad6c19a6993210f038b69d6bc14359efb4ccaf78422fbde29a927ad"
+    },
+    "figures/confusion_full77_loso_DB1.png": {
+      "bytes": 76747,
+      "sha256": "a1c5eb9690258288143f73dde15b22b87b1a5539c14d3cba6167792e3f13a81e"
+    },
+    "figures/confusion_full77_loso_DB2.png": {
+      "bytes": 77836,
+      "sha256": "81449d32656dc7680009b8738d572028dc3702de481bbe3c6ebedaf2a1e153c1"
+    },
+    "figures/confusion_full77_loso_DB5.png": {
+      "bytes": 75160,
+      "sha256": "f3d2712ccf6fde291337e7cc9ff4e40e218eb15740f73b7312987ff1400bff4e"
+    },
+    "figures/confusion_primary_confirmatory_DB2.png": {
+      "bytes": 79928,
+      "sha256": "f15f127ebccd7e067a34761e236d7c38a5a5d99ca24fdf361748a0c64bce1fb9"
+    },
+    "figures/confusion_primary_confirmatory_DB5.png": {
+      "bytes": 75681,
+      "sha256": "4870c6f8f447c3a53af40972eb4237c62debe374c10fae107a116e1dadaf55fe"
+    },
+    "figures/negative_control_profile.png": {
+      "bytes": 49638,
+      "sha256": "a5519641387c39e50c0e9e07d2f6635eb8caac52eb55dc50aa19ae5302b08d5d"
+    },
+    "figures/per_class__primary6__canonical12_noDIP__test.png": {
+      "bytes": 61618,
+      "sha256": "cdb2379d8d3e383198964691ddbeffc56408c75b053a96d7d22bf76ccfac41ea"
+    },
+    "figures/per_class__primary6__canonical16__test.png": {
+      "bytes": 59788,
+      "sha256": "e1f042e13e7e9a4de85701e958d4144d06ce624bcad5097c95a81ebd4dfe8ccf"
+    },
+    "figures/single_channel_loso.png": {
+      "bytes": 40590,
+      "sha256": "03275e0ce92241585f28ed9f9a25d4a9cfc27689f5fa6efbad910f7576e4d14e"
+    },
+    "figures/thumb_web_sign_test.png": {
+      "bytes": 181896,
+      "sha256": "eebe47bbc59b023837fcd7439f432579e7a26f6ac01c12b311de63dbb8937da9"
+    }
+  },
+  "finalized_utc": "2026-09-18T04:33:32Z"
+}

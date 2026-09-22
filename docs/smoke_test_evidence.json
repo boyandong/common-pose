@@ -1,0 +1,110 @@
+{
+  "test": "smoke_test_inference",
+  "env": {
+    "session": "2022-12-06-1670313600-e3096-cv-emg-pose-train@2-recording-10_left.hdf5",
+    "n_samples": 119266,
+    "emg_shape": [
+      119266,
+      16
+    ],
+    "joint_angles_shape": [
+      119266,
+      20
+    ],
+    "declared_num_channels": 16,
+    "declared_sample_rate": 2000.0
+  },
+  "results": {
+    "regression_vemg2pose": {
+      "checkpoint_loaded": true,
+      "provide_initial_pos": false,
+      "left_context": 1790,
+      "right_context": 0,
+      "input_shape": [
+        11790,
+        16
+      ],
+      "output_shape": [
+        10000,
+        20
+      ],
+      "start_index": 1790,
+      "finite": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "min_rad": -0.5715768933296204,
+      "max_rad": 1.6046992540359497,
+      "min_deg": -32.748943654986505,
+      "max_deg": 91.94249464405145,
+      "inference_seconds": 0.7013847827911377,
+      "realtime_factor": 8.404801678960071,
+      "mae_rad": 0.2807426452636719,
+      "mae_deg": 16.08536870294683,
+      "mae_rad_masked": 0.21788644790649414,
+      "mae_deg_masked": 12.483973878139185,
+      "frac_ik_failure_in_window": 0.2368,
+      "metric_note": "mae_*_masked excludes all-zero IK-failure rows and is the only valid number. mae_rad/mae_deg are UNMASKED and contaminated; kept only to quantify contamination.",
+      "short_input_rejected": true
+    },
+    "tracking_vemg2pose": {
+      "checkpoint_loaded": true,
+      "provide_initial_pos": true,
+      "left_context": 1790,
+      "right_context": 0,
+      "input_shape": [
+        11790,
+        16
+      ],
+      "output_shape": [
+        10000,
+        20
+      ],
+      "start_index": 1790,
+      "finite": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "min_rad": -0.41643986105918884,
+      "max_rad": 1.459005355834961,
+      "min_deg": -23.86024645970592,
+      "max_deg": 83.59484917632614,
+      "inference_seconds": 0.7499940395355225,
+      "realtime_factor": 7.860062466164161,
+      "mae_rad": 0.2607782483100891,
+      "mae_deg": 14.9414930169827,
+      "mae_rad_masked": 0.22222654521465302,
+      "mae_deg_masked": 12.73264313657278,
+      "frac_ik_failure_in_window": 0.2368,
+      "metric_note": "mae_*_masked excludes all-zero IK-failure rows and is the only valid number. mae_rad/mae_deg are UNMASKED and contaminated; kept only to quantify contamination."
+    },
+    "regression_neuropose": {
+      "checkpoint_loaded": true,
+      "provide_initial_pos": false,
+      "left_context": 0,
+      "right_context": 0,
+      "input_shape": [
+        10000,
+        16
+      ],
+      "output_shape": [
+        10000,
+        20
+      ],
+      "start_index": 0,
+      "finite": true,
+      "n_nan": 0,
+      "n_inf": 0,
+      "min_rad": -0.40761053562164307,
+      "max_rad": 1.699710488319397,
+      "min_deg": -23.35436337618705,
+      "max_deg": 97.38623737482166,
+      "inference_seconds": 0.08717060089111328,
+      "realtime_factor": 57.35878781248291,
+      "mae_rad": 0.24472595751285553,
+      "mae_deg": 14.021764502784523,
+      "mae_rad_masked": 0.18199943006038666,
+      "mae_deg_masked": 10.42779921624656,
+      "frac_ik_failure_in_window": 0.2535,
+      "metric_note": "mae_*_masked excludes all-zero IK-failure rows and is the only valid number. mae_rad/mae_deg are UNMASKED and contaminated; kept only to quantify contamination."
+    }
+  }
+}

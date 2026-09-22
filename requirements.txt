@@ -1,0 +1,34 @@
+# Common Pose — runtime requirements
+#
+# The core project is deliberately light. No deep-learning framework is required
+# to run the audits, the adapter contract tests, or the downstream posture task:
+#   * the DB9 physical audit is closed-form classical statistics,
+#   * the posture task is a single LDA per fold,
+#   * the cross-dataset admission audit is descriptive.
+#
+# Deep-learning training is out of scope for this repository and, by standing
+# project policy, does not run on a local workstation at all.
+
+# --- core ---------------------------------------------------------------------
+numpy>=1.24,<3
+scipy>=1.10            # .mat I/O for the Ninapro DB9 released arrays
+scikit-learn>=1.3      # LinearDiscriminantAnalysis and cluster metrics
+
+# --- optional: reproducing the emg2pose front end ------------------------------
+# The emg2pose baseline is NOT redistributed here (CC-BY-NC-SA-4.0, with a
+# bundled UmeTrack under CC-BY-NC-4.0). To use the emg2pose estimator you must
+# clone it yourself and create its own environment:
+#   https://github.com/facebookresearch/emg2pose
+# Python 3.10 is pinned by its official environment.yml. On Python 3.11
+# emg2pose/kinematics.py fails at import time, so a 3.10 environment is required
+# for that path only:
+#   torch>=2.3,<3
+#   pytorch-lightning>=2.2,<3
+#   hydra-core>=1.3,<2
+#   h5py>=3.10
+#   polars
+# then set:
+#   COMMON_POSE_EMG2POSE_BASELINE=/path/to/emg2pose
+
+# --- optional: development ------------------------------------------------------
+# pytest>=7.4
