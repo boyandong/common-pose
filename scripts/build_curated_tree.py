@@ -189,11 +189,17 @@ add(DB9_FORENSIC, "audits/db9/channel_forensic", [
     "README.md", "FORENSIC_PLAN.md", "PLAN_SHA256.txt", "SEGMENTATION_VALIDATION.md",
     "DB9_CHANNEL_LEDGER.csv", "FLAGGED_CHANNEL_FORENSICS.md", "SENSOR11_IMPACT.md",
     "DIP_HANDSIZE_ANALYSIS.md", "BUGFIX_LOG.md", "DB9_FORENSIC_DECISION.md",
+    # The 77-subject final validation SUPERSEDES the 37-subject statements in the other
+    # curated documents above. Those are left byte-identical because they are the historical
+    # record and their source/target hashes are pinned in the curation manifest; this file
+    # carries the current truth.
+    "FINAL_VALIDATION.md",
 ])
 add(f"{DB9_FORENSIC}/artifacts", "audits/db9/channel_forensic/artifacts", [
     "DECISION.json", "FORENSIC_CORE.json", "POSTURE_UTILITY.json",
     "POSTURE_UTILITY_POSTURE_ONLY.json", "SEGMENTATION_VALIDATION.json", "VERDICTS.json",
     "TRANSFORM_SOLVER_S1E2.json", "RESIDUAL_MATRIX_S1E2.json",
+    "FINAL_VALIDATION.json",
 ])
 add(f"{DB9_FORENSIC}/docs", "audits/db9/channel_forensic/docs", ["DB9_instructions.txt"])
 add(f"{DB9_FORENSIC}/logs", "audits/db9/channel_forensic/logs", [
@@ -372,7 +378,11 @@ DRIVER_RENAME: dict[str, str] = {
     "04_utility.py": "utility.py",
     "04b_utility_posture_only.py": "utility_posture_only.py",
     "05_decision.py": "decision.py",
-    "06_final_validation.py": "final_validation.py",
+    # The published `final_validation.py` is the driver that actually produced the
+    # published 77-subject numbers. The earlier `06_final_validation.py` was superseded
+    # before it produced any artifact (it was memory-bound on the uncapped 11.8 M-frame
+    # set) and is deliberately not shipped as "the final validation".
+    "06b_final_validation.py": "final_validation.py",
     "99_fact_check.py": "fact_check.py",
 }
 
@@ -402,7 +412,7 @@ _PORT_SOURCES = {
     for n in (
         "fx_common.py", "01_segmentation.py", "02_forensic_core.py", "03_verdicts.py",
         "04_utility.py", "04b_utility_posture_only.py", "05_decision.py",
-        "06_final_validation.py", "99_fact_check.py",
+        "06b_final_validation.py", "99_fact_check.py",
     )
 }
 _COLLISIONS = [s for s, _ in PLAN if s in _PORT_SOURCES]
@@ -424,7 +434,8 @@ DRIVER_HEADER = '''# ===========================================================
 # Common Pose public repository. Frozen plan SHA-256:
 #   4c618b562903d0d364d03bb8a997ef6b4140bd9e09d0f2475f1b008ad80c8793
 #
-# Driver order: segmentation -> forensic_core -> verdicts -> utility -> decision.
+# Driver order: segmentation -> forensic_core -> verdicts -> utility -> decision
+#               -> final_validation.
 # `verdicts` freezes TRUSTED_DB9_POSE_v1 and `utility` asserts against that frozen
 # subset, so it must run after it.
 #

@@ -21,6 +21,28 @@ what has been **withdrawn** — without reading a conversation or a session log.
 
 ## A. Completed with evidence
 
+### A0. DB9 physical audit and the frozen trusted posture baseline
+
+**Claim that is now closed, and only this one:** *a physically audited reduced DB9
+representation has been established and it retains usable subject-held-out information
+for the official 8 hand configurations.*
+
+* `TRUSTED_DB9_POSE_v1`, 8 channels, frozen **before** any classifier ran;
+  SHA-256 `e51dde6e63941fd080c84f3896a98cf50fba9e17d5f9cebe909253d5465782d1`.
+* Revalidated across **all 77 DB9 participants** (DB1 27, DB2 40, DB5 10) under the
+  already-frozen rules. **The 8-channel subset did not change.**
+* Official posture task: Exercise B hand configurations, **movement IDs 1–8 only**.
+  77 subjects, leave-one-subject-out, global identity from the archive filename,
+  train-fold-only standardisation, per-segment frame cap 200.
+* Trusted **BA 0.7479** (5.98× chance 0.1250), macro-F1 0.7460, no class collapse;
+  historical 16-channel arm BA 0.8556. Utility loss ΔBA −0.1077.
+* Evidence: `audits/db9/channel_forensic/FINAL_VALIDATION.md` and
+  `audits/db9/channel_forensic/artifacts/FINAL_VALIDATION.json`.
+
+**This closes the DB9 task source only.** Cross-dataset interoperability, upstream
+substitution, emg2pose → DB9 transfer, open-set transfer, human-semantic transfer and the
+Common Pose API itself all remain open (see §B, §C, §E, §F).
+
 ### A1. emg2pose baseline bring-up and joint-convention verification
 
 `EXECUTED`. The official model was loaded and run on the official mini corpus.
@@ -100,7 +122,7 @@ Selected by physical validity rules with **no reference to classification perfor
 
 | finding | evidence |
 |---|---|
-| `DIP3` inverted | raw gauge and released angle both fall on an unambiguous fist, 35/37 subjects |
+| `DIP3` inverted | raw gauge and released angle both fall on an unambiguous fist, 71/77 subjects |
 | `DIP5` inverted | same inversion, coherent in 32/37 |
 | internal control | in the same segments MCP2_f/MCP3_f/MCP4_f/MCP5_f move positively in **37/37** |
 | `CMC5` sensor collision | released column is an exact linear function (slope 0.28511 = published 0.285) of the **same raw column** as `WRIST_F` |
@@ -174,7 +196,6 @@ sign provenance were already `UNKNOWN`. **Rejected.**
 
 | item | status | what is missing |
 |---|---|---|
-| **DB9 trusted subset — final validation** | `EXECUTED-PARTIAL` | the utility arm covers **37 Exercise-B subjects**, not the final full-DB9 validation. `tools/final_validation.py` exists in the port but its captured log is **0 bytes** — it did not complete here. **The subset is PROVISIONAL.** |
 | **`pose_coordinate_audit` — own corrections outstanding** | `EXECUTED-PARTIAL` | that lane's parity claim overstates what was verified (it compared an adapter against itself), and its DB1/DB2/DB5 reference-offset numbers were computed on a `repetition`-grouped corpus that does not match the frozen one. Confined to `pca_*.py`; the frozen downstream pipeline is correct. **Not repaired, not re-opened.** |
 | **Bridge audit (emg2pose pose ↔ DB9 pose)** | `EXECUTED-PARTIAL` | needs reinterpretation: it compares DB9 (DIP3/DIP5 inverted, CMC5 is the wrist channel) against emg2pose, so any conclusion leaning on those channels must be re-read. Also **within one subject** — the official mini corpus is a single held-out user. |
 | **KIN-MUS task-phase observability** | `EXECUTED-PARTIAL` | numbers stand for the ten columns used, but **four of the ten are not the DOFs they were named as** (see C2). Interpretation downgraded; a corrected re-run is outstanding. |
@@ -186,8 +207,6 @@ sign provenance were already `UNKNOWN`. **Rejected.**
 
 ## C. Ongoing
 
-* **C1.** Final full-DB9 validation of `TRUSTED_DB9_POSE_v1` (the gate on the PROVISIONAL
-  label).
 * **C2.** A **corrected KIN-MUS representation re-run**: re-execute the already-frozen
   observability pipeline with R1's column vector changed from `[0,2,4,6,7,8,9,11,13,15]` to
   `[1,2,5,6,7,8,10,11,14,15]`. Cheapest experiment that resolves the largest open
@@ -304,7 +323,9 @@ regressed. Recorded rather than re-tuned.
 * that any downstream head here survives upstream estimator substitution
 * that DIP angles, the palmar arch, or wrist deviation are usable physical measurements in
   any dataset audited here
-* that the trusted DB9 subset is final — it is **PROVISIONAL**
+* that the **Common Pose API** is frozen — only the DB9 *task source* is frozen
+* that freezing the DB9 baseline implies cross-dataset interoperability, upstream
+  substitution, open-set transfer or human-semantic transfer
 
 ---
 

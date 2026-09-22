@@ -232,8 +232,10 @@ _CANONICAL16: tuple[DofSpec, ...] = (
         positive_direction="flexion", zero_definition=_DB9_ZERO,
         handedness="right", emg2pose_index=10, db9_channel="PIP3", db9_index=8,
         calibration_provenance=_DB9_CALIB,
-        note="held INCONCLUSIVE by the audit: responds to a fist in only 20 of 37 "
-             "subjects, with a raw magnitude ~8-18 percent of the flexion-channel median.",
+        note="DROPped at the final 77-subject sample under the already-frozen rules: responds "
+             "to a fist in only 35 of 77 subjects, with a raw magnitude ~3 percent of the "
+             "flexion-channel median. At 37 subjects it was INCONCLUSIVE; the larger "
+             "sample made the rule strictly more conservative, not more permissive.",
     ),
     DofSpec(
         "middle_dip_flexion", "middle", "DIP", "FE",
@@ -241,7 +243,7 @@ _CANONICAL16: tuple[DofSpec, ...] = (
         handedness="right", emg2pose_index=11, db9_channel="DIP3", db9_index=17,
         calibration_provenance=_DB9_CALIB,
         note="DB9 DIP3 is DROPped: on an unambiguous fist the released angle decreases "
-             "in 35 of 37 subjects while every MCP and PIP channel increases.",
+             "in 71 of 77 subjects while every MCP and PIP channel increases.",
     ),
     DofSpec(
         "ring_mcp_flexion", "ring", "MCP", "FE",
@@ -260,8 +262,9 @@ _CANONICAL16: tuple[DofSpec, ...] = (
         positive_direction="flexion", zero_definition=_DB9_ZERO,
         handedness="right", emg2pose_index=15, db9_channel="DIP4", db9_index=18,
         calibration_provenance=_DB9_CALIB,
-        note="held INCONCLUSIVE: inverted in only 28 of 37 subjects and with a raw "
-             "response ~11-16 percent of the flexion-channel median.",
+        note="DROPped at the final 77-subject sample: inverted in 54 of 77 subjects and with a "
+             "raw response ~5 percent of the flexion-channel median, below the frozen "
+             "responsiveness floor.",
     ),
     DofSpec(
         "pinky_mcp_flexion", "pinky", "MCP", "FE",
@@ -280,7 +283,7 @@ _CANONICAL16: tuple[DofSpec, ...] = (
         positive_direction="flexion", zero_definition=_DB9_ZERO,
         handedness="right", emg2pose_index=19, db9_channel="DIP5", db9_index=19,
         calibration_provenance=_DB9_CALIB,
-        note="DB9 DIP5 is DROPped: the same inversion, coherent in 32 of 37 subjects.",
+        note="DB9 DIP5 is DROPped: the same inversion, coherent in 62 of 77 subjects.",
     ),
 )
 
@@ -460,8 +463,8 @@ def load_trusted_db9_subset(
         specs=tuple(specs),
         status=(
             "FROZEN EVIDENCE — selected by physical validity rules only, with no "
-            "reference to classification performance. PROVISIONAL pending final "
-            "full-DB9 validation: the utility arm covered 37 Exercise-B subjects."
+            "reference to classification performance. Revalidated across all 77 DB9 "
+            "participants under the frozen rules; the 8-channel subset was unchanged."
         ),
         provenance=(
             f"source {p.relative_to(REPO_ROOT).as_posix()} | plan_sha256 "

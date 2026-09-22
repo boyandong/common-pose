@@ -110,7 +110,7 @@ def test_trusted_subset_records_that_it_preceded_any_classifier():
     reg = load_trusted_db9_subset()
     assert "frozen_before_any_classifier=True" in reg.provenance
     assert "FROZEN EVIDENCE" in reg.status
-    assert "PROVISIONAL" in reg.status
+    assert "Revalidated across all 77 DB9 participants" in reg.status
 
 
 def test_trusted_subset_carries_no_wrist_dimension():
@@ -574,12 +574,30 @@ def test_frozen_utility_record_is_self_consistent():
 
     a = FROZEN_HANDSHAPE_UTILITY["A_historical_canonical16"]
     b = FROZEN_HANDSHAPE_UTILITY["B_TRUSTED_DB9_POSE_v1"]
-    assert a.chance_balanced_accuracy == pytest.approx(1 / 9)
-    assert b.chance_balanced_accuracy == pytest.approx(1 / 9)
+    # The official task is the eight Exercise B hand configurations, movement IDs 1-8.
+    # Movement IDs 9-17 are wrist movements and 17 is not a hand-shape class.
+    assert a.n_classes == 8 and b.n_classes == 8
+    assert a.chance_balanced_accuracy == pytest.approx(1 / 8)
+    assert b.chance_balanced_accuracy == pytest.approx(1 / 8)
+    assert a.n_subjects == 77 and b.n_subjects == 77
     assert b.balanced_accuracy < a.balanced_accuracy
     assert a.class_collapse is False and b.class_collapse is False
-    assert b.classes_with_recall_below_half == (8,)
-    # ~6.5x chance, the claim made in the docs.
-    assert 6.0 < b.balanced_accuracy_over_chance < 7.0
+    # Class 4 is the weakest class and must stay visible in the official record.
+    assert b.classes_with_recall_below_half == (4,)
+    # ~6.0x chance, the claim made in the docs.
+    assert 5.5 < b.balanced_accuracy_over_chance < 6.5
     # The loss is what the trusted subset costs; it must be reported, not buried.
-    assert 0.12 < (a.balanced_accuracy - b.balanced_accuracy) < 0.14
+    assert 0.09 < (a.balanced_accuracy - b.balanced_accuracy) < 0.12
+
+
+def test_historical_mixed_task_record_is_kept_but_is_not_the_benchmark():
+    """The 37-subject, 9-class run counted movement 17 as a hand-shape class. It is kept
+    for traceability and must stay clearly separated from the official task."""
+    from common_pose.tasks.posture import (FROZEN_HANDSHAPE_UTILITY,
+                                           HISTORICAL_MIXED_TASK_UTILITY)
+
+    h = HISTORICAL_MIXED_TASK_UTILITY["B_TRUSTED_DB9_POSE_v1"]
+    assert h.n_classes == 9 and h.n_subjects == 37
+    assert h.arm == FROZEN_HANDSHAPE_UTILITY["B_TRUSTED_DB9_POSE_v1"].arm
+    assert h.balanced_accuracy != FROZEN_HANDSHAPE_UTILITY[
+        "B_TRUSTED_DB9_POSE_v1"].balanced_accuracy

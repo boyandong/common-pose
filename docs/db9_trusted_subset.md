@@ -5,7 +5,7 @@
 **Frozen plan SHA-256:** `4c618b562903d0d364d03bb8a997ef6b4140bd9e09d0f2475f1b008ad80c8793`
 **Frozen before any classifier ran:** `true`
 
-> ## ⚠️ This subset remains **PROVISIONAL** pending final full-DB9 validation.
+> ## ✅ This subset is **FROZEN** and revalidated across all 77 DB9 participants.
 >
 > The utility arm covers the **37 Exercise-B subjects**. It is not the final full-corpus
 > validation, and it is not the 77-subject descriptive run. Treat the subset as a frozen
@@ -52,7 +52,7 @@ subset; only one asserts the channel is broken.
 All eight attach to canonical DOF `thumb_mcp_flexion`, `thumb_ip_flexion`,
 `index_mcp_flexion`, `index_pip_flexion`, `middle_mcp_flexion`, `ring_mcp_flexion`,
 `pinky_mcp_flexion`, `pinky_pip_flexion` with high subject-level agreement
-(0.919–1.000 over 37 subjects).
+(0.919–1.000 over the 37-subject frozen cohort; 0.92–1.00 over all 77).
 
 **No wrist channel is present, by construction** — `WRIST_A` is DROPped and `WRIST_F` is
 INCONCLUSIVE. This is why the mixed 17-class Exercise-B task is not a fair evaluation of
@@ -63,23 +63,27 @@ the subset: it scores a wristless representation on a wrist-inclusive target.
 | channel | reason |
 |---|---|
 | `MCP2_a` | **OFFICIAL_EXCLUSION.** All-NaN in every recording. Ninapro: *"Sensor 11 (which corresponds to MCP2-3_A) was not included into the calibrated data due to noise problems."* |
-| `CMC5` | The released column is an exact linear function (slope **0.28511** = the published 0.285) of the **same raw column** that feeds `WRIST_F`. On the wrist anchors both move by exactly the same raw amount, 37/37 subjects. One sensor cannot be both the palmar arch and the wrist. |
+| `CMC5` | The released column is an exact linear function (slope **0.28511** = the published 0.285) of the **same raw column** that feeds `WRIST_F`. Direct reconstruction from the released bytes therefore establishes a **released-representation defect**. The official documentation contains inconsistent sensor-number naming, but this does **not** alter the released-byte evidence, and the exact root cause (code typo, export bug or sensor-labelling mistake) remains **unknown**. CMC5 is excluded from the trusted physical subset. |
 | `MCP5_a` | The released polynomial is not reproduced from the published coefficients. |
-| `DIP3` | On an unambiguous fist, the raw DIP3 gauge and the released angle **decrease** in 35/37 subjects, while every MCP and PIP channel in the very same segments increases in 37/37. The transform is faithful; the direction contradicts the official "DIP(2-5)_F Flexion+/Extension−" criterion. |
-| `DIP5` | The same inversion, coherent in 32/37 subjects, raw response 11 % of the flexion-channel median. |
+| `DIP3` | On an unambiguous fist, the raw DIP3 gauge and the released angle **decrease** in 71/77 subjects, while every MCP and PIP channel in the very same segments increases in 77/77. The transform is faithful; the direction contradicts the official "DIP(2-5)_F Flexion+/Extension−" criterion. |
+| `DIP5` | The same inversion, coherent in 62/77 subjects, raw response ~6 % of the flexion-channel median. |
 | `WRIST_A` | SENSOR_OR_FIT_LIMITATION. |
 
-### Not established (INCONCLUSIVE)
+### Not established (INCONCLUSIVE) — 6 channels at the final 77-subject sample
+
+> At the final 77-subject sample, under the **already-frozen rules** and with no rule made
+> more permissive, `PIP3` and `DIP4` moved from `INCONCLUSIVE` to `DROP` because their
+> magnitude ratio fell below the frozen 0.15 responsiveness floor. They are listed below
+> with their final status. **The 8-channel frozen subset did not change.**
 
 | channel | why it is not settled |
 |---|---|
 | `CMC1_f`, `CMC1_a` | no pre-declared physical anchor in Exercise B for these channels |
-| `PIP3` | responds to a fist in only 20/37 subjects, raw magnitude 8 % of the flexion-channel median; raw and released behaviour are mutually consistent but the anchor is not reproduced |
-| `MCP4_a` | released `MCP4_a` and the raw abduction gauge move in **opposite** directions in 37/37 subjects, and three of six published polynomial coefficients are not reproduced |
-| `PIP4` | responds to a fist in 28/37 subjects |
-| `DIP2` | responds in the **correct** direction (28/37), unlike DIP3/DIP4/DIP5 |
-| `DIP4` | inverted in only 28/37 subjects, raw response ~11–16 % of the flexion-channel median |
-| `WRIST_F` | both wrist anchors pass 37/37, so its physical behaviour is sound; the only defect is a released quadratic coefficient that disagrees with the published one |
+| `PIP3` | responds to a fist in only 35/77 subjects, raw magnitude ~3 % of the flexion-channel median, below the frozen responsiveness floor; `DROP` at 77 subjects (`INCONCLUSIVE` at 37) |
+| `MCP4_a` | released `MCP4_a` and the raw abduction gauge move in **opposite** directions in every subject tested, and three of six published polynomial coefficients are not reproduced |
+| `PIP4` | responds to a fist in 59/77 subjects |
+| `DIP2` | responds in the **correct** direction (58/77), unlike DIP3/DIP4/DIP5 |
+| `WRIST_F` | both wrist anchors pass 77/77, so its physical behaviour is sound; the only defect is a released quadratic coefficient that disagrees with the published one |
 
 ---
 
@@ -136,28 +140,54 @@ paper's statement.
 
 ---
 
-## 5. Utility result (PROVISIONAL)
+## 5. Utility result — the official DB9 posture baseline (FROZEN)
 
-Both arms, always together. Task: Exercise-B **hand-shape** movements (ids 1–8, 17),
-subject-held-out, one shared LDA per fold, train-fold-only standardisation, radians, central
-60 % of every segment, 544 556 frames, 37 subjects.
+Both arms, always together. **Task: NinaPro DB9 Exercise B hand configurations, official
+movement IDs 1–8.** Movement IDs 9–17 are wrist movements and are **not** part of the
+posture task; movement 17 is a wrist movement, not a hand-shape class.
+
+**77 subjects**, leave-one-subject-out, global participant identity from the archive
+filename, train-fold-only standardisation, one shared LDA per fold, radians, central 60 %
+of every segment with a fixed per-segment frame cap of 200 (123 200 frames).
 
 | metric | arm A — historical canonical16 (16 ch) | arm B — trusted subset (8 ch) |
 |---|---|---|
-| accuracy | 0.8555 | 0.7286 |
-| balanced accuracy | 0.8538 | 0.7254 |
-| macro F1 | 0.8560 | 0.7257 |
-| worst-subject BA | 0.5648 | 0.4794 |
-| median-subject BA | 0.8707 | 0.7347 |
-| chance BA | 0.1111 | 0.1111 |
+| accuracy | 0.8556 | 0.7479 |
+| balanced accuracy | **0.8556** | **0.7479** |
+| macro F1 | 0.8559 | 0.7460 |
+| worst-subject BA | 0.5850 | 0.5369 |
+| median-subject BA | 0.8744 | 0.7556 |
+| chance BA | 0.1250 | 0.1250 |
 | class collapse | no | no |
-| classes with recall < 0.5 | none | `[8]` |
+| classes with recall < 0.5 | none | `[4]` |
 
-* utility loss: ΔBA **−0.1283**; arm B retains **0.850** of arm A's balanced accuracy
-* arm B is **6.5×** chance
-* on the **mixed 17-class** Exercise-B task the trusted subset reaches BA **0.4853**
-  (arm A 0.6087) — reported for completeness, and it is the number that must **not** be
-  presented as the subset's capability, because the subset carries no wrist channel
+* utility loss: ΔAcc **−0.1077**, ΔBA **−0.1077**, ΔMacroF1 **−0.1099**
+* arm B is **5.98×** chance
+* **per-class recall, arm B:** 1 `0.860`, 2 `0.691`, 3 `0.876`, 4 **`0.495`**, 5 `0.903`,
+  6 `0.751`, 7 `0.829`, 8 `0.579`
+
+> **Class 4 is the weakest posture class (recall 0.495) and most of its errors go to class
+> 5.** It stays in the official internal result. The aggregate 8-class BA must not be used
+> later to hide class-4 weakness during cross-dataset or human-semantic transfer;
+> class-4 thumb/opposition-like behaviour requires separate reporting there.
+
+### Why the frame cap is part of the protocol
+
+DB2 recordings are much longer than DB1/DB5 recordings. An uncapped frame-level evaluation
+would therefore weight the DB2 source database simply because it contains more frames per
+segment. A fixed per-segment frame cap preserves every participant, every movement and
+every segment while preventing recording duration from defining evaluation weight. It is a
+declared frame-count choice — not a random balancing step — and it changes no channel,
+model, split or threshold.
+
+### The earlier 37-subject, 9-class run
+
+The first utility arm covered only the 37 DB1/DB5 Exercise-B participants, because the
+loader then selected Exercise B by **filename exercise code** (`_E2_`); DB2 ships the same
+basic finger/wrist protocol as `_E1_` and its 40 files were never opened. That run also
+counted movement 17 as a hand-shape class. It is retained as
+`HISTORICAL_MIXED_TASK_UTILITY` in `src/common_pose/tasks/posture.py` and is **not** the
+official benchmark.
 
 Utility was computed **after** the subset was frozen, on a protocol that used no wrist
 channel and could not select on performance.
@@ -166,9 +196,9 @@ channel and could not select on performance.
 
 ## 6. What may and may not be claimed
 
-**Permitted:** the Exercise-B hand-shape movement classes recovered by the frozen trusted
-subset under subject-held-out evaluation, with the utility loss against the historical arm
-stated alongside.
+**Permitted:** the **official Exercise B hand configurations 1–8** recovered by the frozen
+trusted subset under subject-held-out evaluation over all 77 participants, with the utility
+loss against the historical arm stated alongside.
 
 **Not permitted:** any claim about DIP angles, about the palmar arch, or about wrist
 deviation as measured physical quantities. Those dimensions are either established-defective

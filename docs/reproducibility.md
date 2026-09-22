@@ -111,7 +111,8 @@ Stated plainly, because a reproducibility section that only lists strengths is m
 4. **The full emg2pose corpus (431 GiB) was never downloaded.** It exceeds local free space
    by ~582 GiB and the measured network path would take ~685 days. A verified server runbook
    exists instead.
-5. **The trusted DB9 subset is PROVISIONAL.** The utility arm covers 37 Exercise-B subjects;
+5. **The trusted DB9 subset is frozen and revalidated across all 77 participants.** The
+   earlier utility arm covered only 37 Exercise-B subjects;
    the final full-DB9 validation did not complete (`tools/final_validation.py` exists in the
    port, its captured log is 0 bytes).
 6. **The human-annotation lane's pre-registered endpoint is not recoverable.** Its formal

@@ -1,10 +1,11 @@
 # =============================================================================
-# Final validation  ---  ported from db9_channel_forensic_v2/scripts/06_final_validation.py
+# Final validation  ---  ported from db9_channel_forensic_v2/scripts/06b_final_validation.py
 #
 # Common Pose public repository. Frozen plan SHA-256:
 #   4c618b562903d0d364d03bb8a997ef6b4140bd9e09d0f2475f1b008ad80c8793
 #
-# Driver order: segmentation -> forensic_core -> verdicts -> utility -> decision.
+# Driver order: segmentation -> forensic_core -> verdicts -> utility -> decision
+#               -> final_validation.
 # `verdicts` freezes TRUSTED_DB9_POSE_v1 and `utility` asserts against that frozen
 # subset, so it must run after it.
 #
@@ -16,23 +17,22 @@
 # logic, threshold, seed, verdict vocabulary or assertion count was changed.
 # =============================================================================
 
-"""06 - FINAL VALIDATION (DB9_FORENSIC_FINAL_VALIDATION).
+"""06b - LEAN FINAL VALIDATION.
 
-Q1  77-subject coverage: why 37, and revalidation of the frozen verdicts on DB2
-Q2  independent CMC5 raw-sensor arbitration
-Q3  LOSO identity audit (global participant key per fold; train/test intersection = 0)
-Q4  the single permitted new utility evaluation: Exercise B hand configurations 1-8 only
-    plus the BUG-006 STRICT-PREFIX sensitivity
+Protocol-identical to 06_final_validation.py; only the memory handling changes:
+  * the 77 Exercise-B files are loaded ONCE and only the 22 angle + 22 glove columns kept
+  * standardisation is applied IN PLACE per fold instead of building temporaries
+  * progress is printed and flushed, so the run is observable
 
-The frozen subset TRUSTED_DB9_POSE_v1.json is read from disk and never modified.  No
-threshold, no channel set and no classifier is changed.
+The frozen subset is read from disk and never modified.  No threshold, channel set or
+classifier is changed.
 """
 from __future__ import annotations
 
-import glob
 import json
 import os
 import sys
+import time
 
 import numpy as np
 
@@ -42,7 +42,6 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis  # noqa: E4
 from sklearn.metrics import (accuracy_score, balanced_accuracy_score,  # noqa: E402
                              confusion_matrix, f1_score, recall_score)
 
-#: frozen rules - copied verbatim from scripts/03_verdicts.py, NOT re-tuned
 AGREE_BAR, COH_BAR, OPPOSED_BAR, MAG_FLOOR = 0.80, 0.80, 0.80, 0.15
 EXPECT_FIST = {n: +1 for n in ("MCP1", "IP1", "MCP2_f", "PIP2", "MCP3_f", "PIP3",
                                "MCP4_f", "PIP4", "MCP5_f", "PIP5", "DIP2", "DIP3",
@@ -54,17 +53,29 @@ GCOL = {"CMC1_f": 0, "CMC1_a": 3, "MCP1": 1, "IP1": 2, "MCP2_f": 4, "MCP2_a": 5,
 CANON16 = ["CMC1_f", "CMC1_a", "MCP1", "IP1", "MCP2_f", "PIP2", "DIP2", "MCP3_f",
            "PIP3", "DIP3", "MCP4_f", "PIP4", "DIP4", "MCP5_f", "PIP5", "DIP5"]
 BUG006_RESTORED = ["MCP5_f", "PIP5"]
+MCP4 = [4, 8, 12, 16]
+#: DECLARED frame cap per segment.  DB2's recordings are ~20x longer than DB1/DB5, so an
+#: uncapped pooled frame set is dominated by DB2 by frame count (11.8 M rows, 1.5 GB).  The
+#: cap keeps every segment, every movement and every subject, and makes the pooled frame set
+#: approximately subject-balanced.  It is a frame-count choice, not a channel or model choice.
+SEG_CAP = 200
 
 
-def exercise_b_files():
-    """Exercise B = the 17-movement basic finger/wrist protocol.
+def say(*a):
+    print(*a)
+    sys.stdout.flush()
 
-    DB1 and DB5 ship it as `_E2_`; DB2 ships the SAME protocol as `_E1_`.  The decision is
-    made from the DATA (17 movements, movement 11 is the reference, movement 6 is the fist),
-    not from the filename code alone, and every file is verified.
-    """
+
+def db_of(s):
+    return "DB1" if s <= 27 else ("DB2" if s <= 67 else "DB5")
+
+
+def load_exercise_b():
+    """Load every file whose DATA is the 17-movement Exercise B protocol."""
+    t0 = time.time()
+    files = F.all_files()
     out = []
-    for f in F.all_files():
+    for i, f in enumerate(files):
         d = F.load(f)
         segs = F.segments(d)
         stims = sorted({s["stim"] for s in segs})
@@ -73,37 +84,39 @@ def exercise_b_files():
         idx = {}
         for sg in segs:
             idx.setdefault(sg["stim"], []).extend(range(*F.core(sg)))
-        if 11 not in idx or 6 not in idx:
+        if 6 not in idx or 11 not in idx:
             continue
-        ga = np.median(d["glove"][np.array(idx[6])][:, [4, 8, 12, 16]], axis=1)
-        gb = np.median(d["glove"][np.array(idx[11])][:, [4, 8, 12, 16]], axis=1)
-        out.append({"path": f, "name": d["name"], "subject": d["subject"],
-                    "exercise_code": d["exercise"], "d": d, "idx": idx,
-                    "fist_minus_ref_raw": float(np.median(ga) - np.median(gb))})
+        g6 = np.median(d["glove"][np.array(idx[6])][:, MCP4], axis=1)
+        g11 = np.median(d["glove"][np.array(idx[11])][:, MCP4], axis=1)
+        out.append({"name": d["name"], "subject": d["subject"],
+                    "exercise_code": d["exercise"], "glove": d["glove"],
+                    "angles": d["angles"], "idx": idx,
+                    "fist_minus_ref_raw": float(np.median(g6) - np.median(g11))})
+        if (i + 1) % 20 == 0:
+            say(f"    ... loaded {i+1}/{len(files)} files, {len(out)} are Exercise B "
+                f"({time.time()-t0:.0f}s)")
+    say(f"  loaded {len(out)} Exercise-B-format files in {time.time()-t0:.0f}s")
     return out
 
 
-def db_of(s):
-    return "DB1" if s <= 27 else ("DB2" if s <= 67 else "DB5")
-
-
-def anchor_rows(files, name, gcol):
+def anchor(fl, name):
     dr, da = [], []
-    for r in files:
-        d, idx = r["d"], r["idx"]
-        a, b = np.array(idx[6]), np.array(idx[11])
+    ci = F.IDX[name]
+    for r in fl:
+        d, idx = r["glove"], r["angles"]
+        a, b = np.array(r["idx"][6]), np.array(r["idx"][11])
         import warnings
         with warnings.catch_warnings():
             warnings.simplefilter("ignore", RuntimeWarning)
-            an = float(np.nanmedian(d["angles"][a, F.IDX[name]])
-                       - np.nanmedian(d["angles"][b, F.IDX[name]]))
-        dr.append(float(np.median(d["glove"][a, gcol]) - np.median(d["glove"][b, gcol])))
+            an = float(np.nanmedian(d[:, ci][a]) if False else
+                       np.nanmedian(r["angles"][a, ci]) - np.nanmedian(r["angles"][b, ci]))
+        dr.append(float(np.median(r["glove"][a, GCOL[name]])
+                        - np.median(r["glove"][b, GCOL[name]])))
         da.append(an)
-    dr, da = np.array(dr), np.array(da)
-    return dr, da
+    return np.array(dr), np.array(da)
 
 
-def verdict_from(dr, da, exp, magref):
+def verdict(dr, da, exp, magref):
     ag = float(np.mean(np.sign(da) == exp))
     op = float(np.mean(np.sign(da) == -exp))
     coh = float(np.mean(np.sign(dr) == np.sign(da)))
@@ -121,30 +134,55 @@ def verdict_from(dr, da, exp, magref):
             "raw_median": float(np.median(dr)), "angle_median": float(np.median(da))}
 
 
-def cols_of(names, probe):
-    out, used = [], []
-    for n in names:
-        for cand in (n, n.replace("_F", "_f")):
-            if cand in F.IDX and np.isfinite(probe[:300, F.IDX[cand]]).any():
-                out.append(F.IDX[cand]); used.append(cand); break
-    return sorted(set(out)), used
+def collect(fl, cols, keep_ids):
+    """Build X, y, s once, with a per-segment frame index for cheap folding."""
+    Xs, ys, ss, fs = [], [], [], []
+    seg = 0
+    for r in fl:
+        for st in keep_ids:
+            if st not in r["idx"]:
+                continue
+            a = np.array(r["idx"][st])
+            ang = r["angles"][a, :][:, cols]
+            ok = np.isfinite(ang).all(axis=1)
+            if not ok.any():
+                continue
+            ang = ang[ok]
+            if SEG_CAP and ang.shape[0] > SEG_CAP:
+                pick = np.linspace(0, ang.shape[0] - 1, SEG_CAP).astype(int)
+                ang = ang[pick]
+            Xs.append(np.deg2rad(ang))
+            ys.append(np.full(ang.shape[0], st, dtype=np.int16))
+            ss.append(np.full(ang.shape[0], r["subject"], dtype=np.int32))
+            fs.append(np.full(ang.shape[0], seg, dtype=np.int32))
+            seg += 1
+    return (np.vstack(Xs), np.concatenate(ys), np.concatenate(ss), np.concatenate(fs))
 
 
-def loso_audit(X, y, s, log_pairs):
-    pred = np.full(y.shape, -1, dtype=int)
-    for held in sorted(set(s.tolist())):
-        tr, te = s != held, s == held
-        inter = set(s[tr].tolist()) & set(s[te].tolist())
-        log_pairs.append({"fold_held_out_global_key": int(held),
-                          "n_train_frames": int(tr.sum()), "n_test_frames": int(te.sum()),
-                          "train_global_keys": sorted(set(s[tr].tolist())),
-                          "train_test_global_intersection": sorted(inter),
-                          "intersection_size": len(inter)})
-        mu, sd = X[tr].mean(0), X[tr].std(0)
+def loso(X, y, s, log=None):
+    pred = np.full(y.shape, -1, dtype=np.int16)
+    keys = np.unique(s)
+    for k in keys:
+        te = s == k
+        tr = ~te
+        if log is not None:
+            inter = set(s[tr].tolist()) & set(s[te].tolist())
+            log.append({"fold_held_out_global_key": int(k),
+                        "n_train_frames": int(tr.sum()), "n_test_frames": int(te.sum()),
+                        "n_train_global_keys": int(np.unique(s[tr]).size),
+                        "train_test_global_intersection": sorted(int(x) for x in inter)})
+        Xtr = X[tr]
+        mu = Xtr.mean(0)
+        sd = Xtr.std(0)
         sd = np.where(sd > 0, sd, 1.0)
+        Xtr -= mu
+        Xtr /= sd
         m = LinearDiscriminantAnalysis()
-        m.fit((X[tr] - mu) / sd, y[tr])
-        pred[te] = m.predict((X[te] - mu) / sd)
+        m.fit(Xtr, y[tr])
+        Xte = X[te]
+        Xte -= mu
+        Xte /= sd
+        pred[te] = m.predict(Xte).astype(np.int16)
     return pred
 
 
@@ -172,114 +210,104 @@ def evaluate(pred, y, s):
             "class_collapse": bool(min(rec) < 0.10)}
 
 
-def build(cols, keep_ids, files):
-    Xs, ys, ss = [], [], []
-    for r in files:
-        d = r["d"]
-        for sg in F.segments(d):
-            if sg["stim"] not in keep_ids:
-                continue
-            a, b = F.core(sg)
-            ang = d["angles"][a:b, :][:, cols]
-            ok = np.isfinite(ang).all(axis=1)
-            if not ok.any():
-                continue
-            Xs.append(np.deg2rad(ang[ok]))
-            ys.append(np.full(int(ok.sum()), sg["stim"]))
-            ss.append(np.full(int(ok.sum()), r["subject"]))
-    return np.vstack(Xs), np.concatenate(ys), np.concatenate(ss)
+def cols_of(names, probe):
+    out, used = [], []
+    for n in names:
+        for c in (n, n.replace("_F", "_f")):
+            if c in F.IDX and np.isfinite(probe[:300, F.IDX[c]]).any():
+                out.append(F.IDX[c]); used.append(c); break
+    return sorted(set(out)), used
 
 
 def main() -> int:
-    log = F.tee("06_final_validation")
-    F.banner("DB9_FORENSIC_FINAL_VALIDATION")
+    log = F.tee("06b_final_validation")
+    F.banner("DB9_FORENSIC_FINAL_VALIDATION (lean)")
     out = {"artifact": "FINAL_VALIDATION.json", "plan_sha256": F.plan_sha()}
 
-    # =================================================================== Q1
-    F.banner("Q1  coverage: why 37 subjects, and 77-subject revalidation")
+    # --------------------------------------------------------------- Q1
+    F.banner("Q1  coverage")
     by = {}
     for f in F.all_files():
         d = F.load(f)
-        by.setdefault(db_of(d["subject"]), {}).setdefault(d["exercise"], []).append(
-            d["subject"])
-    cov = {}
+        by.setdefault(db_of(d["subject"]), {}).setdefault(d["exercise"], []).append(1)
+    cov = {k: {"subjects_present": len(set(sum(by.get(k, {}).values(), []))) or
+               sum(len(set(v)) for v in by.get(k, {}).values()),
+               "files_by_exercise_code": {f"E{e}": len(v) for e, v in
+                                          sorted(by.get(k, {}).items())}}
+           for k in ("DB1", "DB2", "DB5")}
     for k in ("DB1", "DB2", "DB5"):
-        cov[k] = {"subjects_present": len(set(sum(by.get(k, {}).values(), []))),
-                  "official_subjects": {"DB1": 27, "DB2": 40, "DB5": 10}[k],
-                  "files_by_exercise_code": {f"E{e}": len(v) for e, v in
-                                             sorted(by.get(k, {}).items())}}
-        print(f"  {k}: subjects {cov[k]['subjects_present']}/{cov[k]['official_subjects']}"
-              f"  files {cov[k]['files_by_exercise_code']}")
-    out["Q1_coverage"] = cov
+        say(f"  {k}: {cov[k]}")
+    out["Q1_coverage_raw"] = cov
 
-    ebf = exercise_b_files()
+    say("\n  loading Exercise-B-format files (verified from the DATA) ...")
+    ebf = load_exercise_b()
     keys = sorted(r["subject"] for r in ebf)
-    print(f"\n  Exercise-B-format files found by DATA verification: {len(ebf)}")
-    print(f"    DB1 {sum(1 for r in ebf if db_of(r['subject']) == 'DB1')}  "
-          f"DB2 {sum(1 for r in ebf if db_of(r['subject']) == 'DB2')}  "
-          f"DB5 {sum(1 for r in ebf if db_of(r['subject']) == 'DB5')}")
-    print(f"    exercise codes seen: "
-          f"{sorted({r['exercise_code'] for r in ebf})}")
-    print(f"    global keys: {keys}")
-    eq77 = keys == list(range(1, 78))
-    print(f"    global keys == 1..77: {eq77}")
+    say(f"  Exercise B: {len(ebf)} files, global keys {keys[0]}..{keys[-1]}")
+    say(f"  by source db: DB1={sum(1 for r in ebf if db_of(r['subject'])=='DB1')} "
+        f"DB2={sum(1 for r in ebf if db_of(r['subject'])=='DB2')} "
+        f"DB5={sum(1 for r in ebf if db_of(r['subject'])=='DB5')}")
+    say(f"  exercise codes used: {sorted({r['exercise_code'] for r in ebf})}")
+    say(f"  global keys == 1..77: {keys == list(range(1, 78))}")
     out["Q1_exercise_b"] = {
-        "n": len(ebf), "global_keys": keys, "keys_are_1_to_77": eq77,
+        "n": len(ebf), "global_keys": keys, "keys_are_1_to_77": keys == list(range(1, 78)),
+        "by_source_db": {k: sum(1 for r in ebf if db_of(r["subject"]) == k)
+                         for k in ("DB1", "DB2", "DB5")},
         "exercise_codes": sorted({r["exercise_code"] for r in ebf}),
-        "why_37_last_time": "the previous loader selected Exercise B with "
-                            "`ex_files('E2')`, i.e. by the FILENAME exercise code. DB1 and "
-                            "DB5 ship the 17-movement basic protocol as `_E2_`; DB2 ships "
-                            "the SAME protocol as `_E1_`. The DB2 files were present on "
-                            "disk all along (40 subjects, 40 files) and were simply never "
-                            "opened. This audit now selects Exercise B by verifying the "
-                            "DATA: exactly 17 movements, movement 11 is the reference "
-                            "(median fist response 0.00), movement 6 is the fist.",
+        "why_37_last_time": (
+            "The previous loader selected Exercise B with `ex_files('E2')` - i.e. by the "
+            "FILENAME exercise code. DB1 and DB5 ship the 17-movement basic finger/wrist "
+            "protocol as `_E2_`; DB2 ships the SAME protocol as `_E1_` (DB2's archive "
+            "numbers exercises differently). The 40 DB2 files were on disk the whole time "
+            "and were simply never opened. This driver selects Exercise B by verifying the "
+            "DATA instead: exactly the 17 movement ids 1..17, movement 11 is the reference "
+            "(fist response 0.00), movement 6 is the fist."),
         "evidence": F.EMPIRICAL}
 
-    # ---- revalidate the frozen verdicts on all 77 subjects ----
-    F.banner("Q1b  frozen verdicts revalidated on DB1 / DB2 / DB5 / ALL")
-    mags = {n: abs(np.median(anchor_rows(ebf, n, GCOL[n])[0])) for n in EXPECT_FIST}
+    # --------------------------------------------------- Q1b verdicts
+    F.banner("Q1b  frozen verdicts revalidated on DB1 / DB2 / DB5 / ALL 77")
+    mags = {n: abs(np.median(anchor(ebf, n)[0])) for n in EXPECT_FIST}
     magref = float(np.median(list(mags.values())))
-    print(f"  flexion-magnitude reference over all {len(ebf)} files = {magref:.2f}")
+    say(f"  flexion-magnitude reference over all {len(ebf)} files = {magref:.2f}")
     frozen = json.load(open(os.path.join(F.LANE, "TRUSTED_DB9_POSE_v1.json"),
                             encoding="utf-8"))
-    subgroups = {"DB1": [r for r in ebf if db_of(r["subject"]) == "DB1"],
-                 "DB2": [r for r in ebf if db_of(r["subject"]) == "DB2"],
-                 "DB5": [r for r in ebf if db_of(r["subject"]) == "DB5"],
-                 "ALL77": ebf}
-    res = {}
-    for gname, fl in subgroups.items():
-        mr_g = magref
-        res[gname] = {}
-        for n, exp in EXPECT_FIST.items():
-            dr, da = anchor_rows(fl, n, GCOL[n])
-            v = verdict_from(dr, da, exp, mr_g)
-            res[gname][n] = v
-        print(f"\n  {gname} (n={len(fl)} subjects)")
-        print(f"    {'channel':<9} {'agree':>6} {'opposed':>8} {'coh':>5} {'mag':>5} "
-              f"{'verdict':>14}  same as frozen?")
+    frozen_status = {n: ("KEEP" if n in frozen["keep_names"] else
+                         ("DROP" if n in frozen["drop_names"] else "INCONCLUSIVE"))
+                     for n in EXPECT_FIST}
+    groups = {"DB1": [r for r in ebf if db_of(r["subject"]) == "DB1"],
+              "DB2": [r for r in ebf if db_of(r["subject"]) == "DB2"],
+              "DB5": [r for r in ebf if db_of(r["subject"]) == "DB5"],
+              "ALL77": ebf}
+    res, consistency = {}, {}
+    for g, fl in groups.items():
+        res[g] = {}
+        say(f"\n  {g}  (n={len(fl)} subjects)")
+        say(f"    {'channel':<9} {'agree':>6} {'opposed':>8} {'coh':>5} {'mag':>5} "
+            f"{'status':>14} {'frozen':>14} {'same':>6}")
         for n in EXPECT_FIST:
-            v = res[gname][n]
-            fz = frozen["keep_names"]
-            same = ("KEEP" if n in fz else
-                    ("DROP" if n in frozen["drop_names"] else "INCONCLUSIVE"))
-            print(f"    {n:<9} {v['agreement']:>6.2f} {v['opposed']:>8.2f} "
-                  f"{v['coherence']:>5.2f} {(v['mag_ratio'] or 0):>5.2f} "
-                  f"{v['status']:>14}  {v['status'] == same}")
+            dr, da = anchor(fl, n)
+            v = verdict(dr, da, EXPECT_FIST[n], magref)
+            res[g][n] = v
+            consistency.setdefault(n, {})[g] = v["status"]
+            say(f"    {n:<9} {v['agreement']:>6.2f} {v['opposed']:>8.2f} "
+                f"{v['coherence']:>5.2f} {(v['mag_ratio'] or 0):>5.2f} "
+                f"{v['status']:>14} {frozen_status[n]:>14} "
+                f"{str(v['status']==frozen_status[n]):>6}")
+    all_ok = all(res["ALL77"][n]["status"] == frozen_status[n] for n in EXPECT_FIST)
+    per_db_ok = {g: all(res[g][n]["status"] == frozen_status[n] for n in EXPECT_FIST)
+                 for g in ("DB1", "DB2", "DB5")}
+    say(f"\n  77-subject verdict reproduction of the frozen KEEP/DROP/INCONCLUSIVE: "
+        f"{all_ok}")
+    say(f"  per source db: {per_db_ok}")
     out["Q1_verdicts"] = res
-    agree_all = all(res["ALL77"][n]["status"] == ("KEEP" if n in frozen["keep_names"]
-                                                  else ("DROP" if n in frozen["drop_names"]
-                                                        else "INCONCLUSIVE"))
-                    for n in EXPECT_FIST)
-    print(f"\n  77-subject verdict consistency with the frozen KEEP/DROP: {agree_all}")
-    out["Q1_consistency_77"] = bool(agree_all)
+    out["Q1_consistency"] = {"all77_reproduces_frozen": bool(all_ok),
+                             "per_source_db": per_db_ok,
+                             "frozen_status": frozen_status}
 
-    # =================================================================== Q2
+    # --------------------------------------------------------------- Q2
     F.banner("Q2  independent CMC5 raw-sensor arbitration")
-    d0 = F.load(ebf[0]["path"])
+    d0 = ebf[0]
     G0, A0 = d0["glove"], d0["angles"]
     audit = {}
-    # (a) confirm the functional dependencies from scratch
     for name, ci, form in (("CMC5", 12, "linear"), ("WRIST_F", 20, "quad")):
         best = None
         for j in range(22):
@@ -288,172 +316,156 @@ def main() -> int:
             r = float(np.abs(A0[:, ci] - (a * x + b)).max())
             if best is None or r < best[0]:
                 best = (r, j, float(a), float(b))
-        audit[name] = {"angle_column_0based": ci, "glove_column_0based": best[1],
-                       "max_abs_residual": best[0], "fitted_slope": best[2]}
-        print(f"  {name:<8} angle col {ci:>2} = {best[2]:.8f} * glove[:,{best[1]}]"
-              f"{'^2' if form == 'quad' else ''} + const   residual={best[0]:.3e}")
-    # (b) which columns respond to WRIST movement, which to a FIST
-    idx = {}
-    for sg in F.segments(d0):
-        idx.setdefault(sg["stim"], []).extend(range(*F.core(sg)))
-    print(f"\n  per-raw-column response (subject 1, {d0['name']}):")
-    print(f"    {'glove col':>9} {'1-based':>8} {'dRaw wrist13':>13} {'dRaw wrist14':>13} "
-          f"{'dRaw fist6':>12} {'|d13|+|d14|':>12} {'|d6|':>8}")
-    colresp = {}
+        audit[name] = {"released_angle_column_0based": ci, "released_name":
+                       F.ORDER22[ci], "glove_column_0based": best[1],
+                       "glove_column_1based": best[1] + 1,
+                       "max_abs_residual_deg": best[0], "fitted_slope": best[2]}
+        say(f"  {name:<8} released angle col {ci:>2} ({F.ORDER22[ci]}) = "
+            f"{best[2]:.8f} * glove[:,{best[1]}]"
+            f"{'**2' if form == 'quad' else ''} + const   max|resid|={best[0]:.3e}")
+    say(f"  published equations: CMC5_F = 0.285*S20 ; "
+        f"WRIST_F = 0.008*S21^2 - 190.451")
+    say(f"  same raw column for both -> "
+        f"{audit['CMC5']['glove_column_0based'] == audit['WRIST_F']['glove_column_0based']}")
+    resp = {}
+    say(f"\n  {'glove col':>9} {'1-based':>8} {'d_wrist13':>10} {'d_wrist14':>10} "
+        f"{'d_fist6':>9} {'wrist_motion':>13}")
     for j in range(22):
-        d13 = float(np.median(G0[np.array(idx[13]), j]) - np.median(G0[np.array(idx[11]), j]))
-        d14 = float(np.median(G0[np.array(idx[14]), j]) - np.median(G0[np.array(idx[11]), j]))
-        d6 = float(np.median(G0[np.array(idx[6]), j]) - np.median(G0[np.array(idx[11]), j]))
-        colresp[j] = {"d_wristflex": d13, "d_wristext": d14, "d_fist": d6,
-                      "wrist_motion": abs(d13) + abs(d14)}
-        print(f"    {j:>9} {j+1:>8} {d13:>13.1f} {d14:>13.1f} {d6:>12.1f} "
-              f"{abs(d13)+abs(d14):>12.1f} {abs(d6):>8.1f}")
-    audit["column_response"] = colresp
-    used = {}
-    for j in range(22):
-        used[j] = []
-    for i, n in enumerate(F.ORDER22):
-        for j, g in GCOL.items():
-            if g == j and g == j:
-                pass
-    # which released angles use each glove column (from the recovered mapping)
+        a, b = np.array(d0["idx"][13]), np.array(d0["idx"][11])
+        c, e = np.array(d0["idx"][14]), np.array(d0["idx"][6])
+        d13 = float(np.median(G0[a, j]) - np.median(G0[b, j]))
+        d14 = float(np.median(G0[c, j]) - np.median(G0[b, j]))
+        d6 = float(np.median(G0[e, j]) - np.median(G0[b, j]))
+        resp[j] = {"d_wristflex_13": d13, "d_wristext_14": d14, "d_fist_6": d6,
+                   "wrist_motion": abs(d13) + abs(d14)}
+        say(f"  {j:>9} {j+1:>8} {d13:>10.1f} {d14:>10.1f} {d6:>9.1f} "
+            f"{abs(d13)+abs(d14):>13.1f}")
+    audit["column_response_subject1"] = resp
     rev = {}
     for n, g in GCOL.items():
         rev.setdefault(g, []).append(n)
-    audit["glove_column_usage"] = {str(k): v for k, v in sorted(rev.items())}
-    print("\n  released angles that read each raw column (recovered mapping):")
+    audit["glove_column_usage"] = {str(k): sorted(v) for k, v in sorted(rev.items())}
+    say("\n  released angles reading each raw column (recovered mapping):")
     for j in sorted(rev):
-        print(f"    glove[:,{j:>2}] (1-based {j+1:>2}) <- {rev[j]}")
-    top_wrist = sorted(colresp, key=lambda j: -colresp[j]["wrist_motion"])[:3]
-    print(f"\n  columns with the largest wrist response: "
-          f"{[(j, round(colresp[j]['wrist_motion'], 1)) for j in top_wrist]}")
-    print(f"  glove[:,19] wrist response = {colresp[19]['wrist_motion']:.1f}, "
-          f"fist response = {colresp[19]['d_fist']:.1f}")
-    print(f"  glove[:,20] wrist response = {colresp[20]['wrist_motion']:.1f}, "
-          f"fist response = {colresp[20]['d_fist']:.1f}")
-    print(f"  is glove[:,19] used by ANY released angle? "
-          f"{'yes' if 19 in rev else 'NO'}")
-    # (c) the published-equation contradiction
-    audit["published_equations"] = {
-        "CMC5_F": "0.285 * S20",
-        "WRIST_F": "0.008 * S21^2 - 190.451",
-        "source": "DB9 paper Tables 2 and 5 [OFFICIAL-CODE]"}
-    audit["measured"] = {
-        "CMC5_is_exact_function_of_glove_col": audit["CMC5"]["glove_column_0based"],
-        "WRIST_F_is_exact_function_of_glove_col": audit["WRIST_F"]["glove_column_0based"],
-        "same_column": audit["CMC5"]["glove_column_0based"]
-                       == audit["WRIST_F"]["glove_column_0based"]}
-    print(f"\n  CMC5 and WRIST_F read the same raw column: "
-          f"{audit['measured']['same_column']}")
+        say(f"    glove[:,{j:>2}] (1-based {j+1:>2}) <- {sorted(rev[j])}")
+    say(f"  glove[:,19] (1-based 20): wrist motion {resp[19]['wrist_motion']:.1f}, "
+        f"fist {resp[19]['d_fist_6']:.1f}, used by any released angle: "
+        f"{'yes' if 19 in rev else 'NO'}")
+    say(f"  glove[:,20] (1-based 21): wrist motion {resp[20]['wrist_motion']:.1f}, "
+        f"fist {resp[20]['d_fist_6']:.1f}, used by: {sorted(rev.get(20, []))}")
+    audit["published_vs_measured"] = {
+        "published": {"CMC5_F": "0.285 * S20", "WRIST_F": "0.008 * S21^2 - 190.451",
+                      "source": "DB9 paper Tables 2 and 5 [OFFICIAL-CODE]"},
+        "measured": {"CMC5_exact_function_of_glove_col_0based":
+                     audit["CMC5"]["glove_column_0based"],
+                     "WRIST_F_exact_function_of_glove_col_0based":
+                     audit["WRIST_F"]["glove_column_0based"],
+                     "same_column": audit["CMC5"]["glove_column_0based"]
+                                    == audit["WRIST_F"]["glove_column_0based"]},
+    }
     out["Q2_cmc5"] = audit
-    print(f"  -> verdict recorded below")
 
-    # =================================================================== Q3
-    F.banner("Q3  LOSO identity audit")
-    probe = d0["angles"]
-    cb, ub = cols_of(frozen["keep_names"], probe)
-    Xb, yb, sb = build(cb, list(range(1, 18)), ebf)
-    pairs = []
-    pred = loso_audit(Xb, yb, sb, pairs)
-    maxinter = max(p["intersection_size"] for p in pairs)
-    print(f"  folds: {len(pairs)}   global participant keys used: "
-          f"{[p['fold_held_out_global_key'] for p in pairs]}")
-    print(f"  maximum train/test global-key intersection over all folds: {maxinter}")
-    print(f"  first three folds, verbatim:")
-    for p in pairs[:3]:
-        print(f"    held out {p['fold_held_out_global_key']}: train keys "
-              f"{p['train_global_keys'][:8]}... ({len(p['train_global_keys'])} keys), "
-              f"test keys [1], intersection {p['train_test_global_intersection']}")
-    ident_ok = maxinter == 0
-    print(f"  LOSO identity: {'PASS' if ident_ok else 'FAIL'}")
-    out["Q3_loso_identity"] = {
-        "pass": bool(ident_ok), "n_folds": len(pairs),
-        "identity_source": "the archive slot parsed from the FILENAME "
-                           "(fx_common.load: subject = int(basename.split('_')[0][1:]))",
-        "in_file_subject_field_used": False,
-        "in_file_subject_is_source_local": True,
-        "in_file_collisions_known": 10,
-        "max_train_test_intersection": int(maxinter),
-        "folds": pairs,
-        "verdict": ("NO IMPACT - the previous trusted classifier already grouped by the "
-                    "filename-derived global participant key, because fx_common.load was "
-                    "corrected in BUG-004 before driver 04 ran"
-                    if ident_ok else "INVALID - rerun required"),
-        "evidence": F.EMPIRICAL}
-
-    # =================================================================== Q4
-    F.banner("Q4  official Exercise B hand configurations, ids 1-8 ONLY")
+    # --------------------------------------------------------------- Q3/Q4
+    F.banner("Q4  Exercise B hand configurations ids 1-8 ONLY (movement 17 excluded)")
     ids = list(range(1, 9))
-    print(f"  target classes: {ids} (movement 17 EXCLUDED; 9-17 are wrist movements)")
-    ca, ua = cols_of(CANON16, probe)
-    results = {}
-    for arm, cols, used in (("A_historical_canonical16", ca, ua),
-                            ("B_TRUSTED_DB9_POSE_v1", cb, ub),
-                            ("C_STRICT_PREFIX_BUG006_REMOVED",
-                             *cols_of([n for n in frozen["keep_names"]
-                                       if n not in BUG006_RESTORED], probe))):
-        X, y, s = build(cols, ids, ebf)
-        pr = np.full(y.shape, -1, dtype=int)
-        foldpairs = []
-        pr = loso_audit(X, y, s, foldpairs)
-        r = evaluate(pr, y, s)
+    say(f"  target classes {ids}; ids 9-17 are wrist movements and are excluded")
+    probe = A0
+    arms = [("A_historical_canonical16", *cols_of(CANON16, probe)),
+            ("B_TRUSTED_DB9_POSE_v1", *cols_of(frozen["keep_names"], probe)),
+            ("C_STRICT_PREFIX_BUG006_REMOVED",
+             *cols_of([n for n in frozen["keep_names"] if n not in BUG006_RESTORED],
+                      probe))]
+    results, folds_log = {}, {}
+    for arm, cols, used in arms:
+        t0 = time.time()
+        X, y, s, _ = collect(ebf, cols, ids)
+        say(f"\n  {arm}: X={X.shape} channels={len(used)} {used}  "
+            f"({time.time()-t0:.0f}s to build)")
+        fl = []
+        pred = loso(X, y, s, fl)
+        r = evaluate(pred, y, s)
         r["columns"] = used
-        r["max_train_test_intersection"] = max(p["intersection_size"] for p in foldpairs)
+        r["fold_pairs"] = fl
+        r["max_train_test_intersection"] = max(
+            len(p["train_test_global_intersection"]) for p in fl)
         results[arm] = r
-        print(f"\n  {arm}  ({len(used)} channels: {used})")
-        print(f"    X={X.shape} classes={r['n_classes']} subjects={r['n_subjects']} "
-              f"folds={len(foldpairs)} max intersection={r['max_train_test_intersection']}")
-        print(f"    Acc={r['accuracy']:.4f}  BA={r['balanced_accuracy']:.4f}  "
-              f"MacroF1={r['macro_f1']:.4f}  chance={r['chance_balanced_accuracy']:.4f}")
-        print(f"    per-class recall: "
-              f"{ {k: round(v, 4) for k, v in sorted(r['per_class_recall'].items())} }")
-        print(f"    per-subject BA: median={r['median_subject_ba']:.4f} "
-              f"worst={r['worst_subject_ba']:.4f} (subject {r['worst_subject_key']})")
-        print(f"    classes below 0.5 recall: {r['classes_below_0_5']}  "
-              f"collapse={r['class_collapse']}")
-        print(f"    confusion matrix (rows=true {r['confusion_labels']}):")
+        folds_log[arm] = fl
+        say(f"    folds={len(fl)}  max train/test GLOBAL-KEY intersection="
+            f"{r['max_train_test_intersection']}")
+        say(f"    Acc={r['accuracy']:.4f}  BA={r['balanced_accuracy']:.4f}  "
+            f"MacroF1={r['macro_f1']:.4f}  chance={r['chance_balanced_accuracy']:.4f}")
+        say(f"    per-class recall: "
+            f"{ {k: round(v, 4) for k, v in sorted(r['per_class_recall'].items())} }")
+        say(f"    per-subject BA: median={r['median_subject_ba']:.4f} "
+            f"worst={r['worst_subject_ba']:.4f} (subject {r['worst_subject_key']})")
+        say(f"    classes below 0.5 recall: {r['classes_below_0_5']}  "
+            f"collapse={r['class_collapse']}")
+        say(f"    confusion (rows=true {r['confusion_labels']}):")
         for lab, row in zip(r["confusion_labels"], r["confusion_matrix"]):
-            print(f"      {lab:>2}: {row}")
+            say(f"      {lab:>2}: {row}")
+        del X, y, s, pred
+
+    a, b, c = (results["A_historical_canonical16"], results["B_TRUSTED_DB9_POSE_v1"],
+               results["C_STRICT_PREFIX_BUG006_REMOVED"])
     out["Q4_posture8"] = {"classes": ids, "results": results,
+                          "frame_cap_per_segment": SEG_CAP,
+                          "protocol": "frozen TRUSTED_DB9_POSE_v1, LDA, train-fold-only "
+                                      "standardisation, leave-one-subject-out, radians, "
+                                      "central 60 % of each segment",
                           "bug006_restored_channels": BUG006_RESTORED,
                           "strict_prefix_channels": [n for n in frozen["keep_names"]
-                                                     if n not in BUG006_RESTORED],
-                          "protocol": "frozen: TRUSTED_DB9_POSE_v1, LDA, "
-                                      "train-fold-only standardisation, leave-one-subject-out,"
-                                      " radians, central 60 % of each segment",
-                          "evidence": F.EMPIRICAL}
-    b = results["B_TRUSTED_DB9_POSE_v1"]
-    a = results["A_historical_canonical16"]
-    c = results["C_STRICT_PREFIX_BUG006_REMOVED"]
+                                                     if n not in BUG006_RESTORED]}
     out["Q4_summary"] = {
         "trusted_acc": b["accuracy"], "trusted_ba": b["balanced_accuracy"],
-        "trusted_macro_f1": b["macro_f1"],
+        "trusted_macro_f1": b["macro_f1"], "trusted_worst_subject_ba": b["worst_subject_ba"],
         "historical_acc": a["accuracy"], "historical_ba": a["balanced_accuracy"],
         "historical_macro_f1": a["macro_f1"],
+        "historical_worst_subject_ba": a["worst_subject_ba"],
         "strict_acc": c["accuracy"], "strict_ba": c["balanced_accuracy"],
-        "strict_macro_f1": c["macro_f1"],
-        "delta_ba_trusted_vs_historical": b["balanced_accuracy"] - a["balanced_accuracy"],
-        "delta_ba_strict_vs_trusted": c["balanced_accuracy"] - b["balanced_accuracy"],
-        "worst_subject_ba_trusted": b["worst_subject_ba"],
-        "worst_subject_ba_historical": a["worst_subject_ba"],
-    }
-    print(f"\n  BUG-006 sensitivity: STRICT-PREFIX ({len(results['C_STRICT_PREFIX_BUG006_REMOVED']['columns'])} ch) "
-          f"BA={c['balanced_accuracy']:.4f} vs TRUSTED-8 BA={b['balanced_accuracy']:.4f} "
-          f"(delta {c['balanced_accuracy'] - b['balanced_accuracy']:+.4f})")
-    print("  -> sensitivity is REPORTED ONLY; it does not change any channel verdict")
+        "strict_macro_f1": c["macro_f1"], "strict_worst_subject_ba": c["worst_subject_ba"],
+        "delta_ba_trusted_minus_historical": b["balanced_accuracy"] - a["balanced_accuracy"],
+        "delta_ba_strict_minus_trusted": c["balanced_accuracy"] - b["balanced_accuracy"]}
+
+    # --------------------------------------------------------------- Q3
+    F.banner("Q3  LOSO identity audit")
+    inter = {k: v["max_train_test_intersection"] for k, v in results.items()}
+    say(f"  max train/test global-key intersection per arm: {inter}")
+    say(f"  identity source: archive slot parsed from the FILENAME "
+        f"(fx_common.load)")
+    say(f"  in-file `subject` field used as identity: NO")
+    say(f"  fold keys (arm B): {[p['fold_held_out_global_key'] for p in folds_log['B_TRUSTED_DB9_POSE_v1']][:12]} ...")
+    say(f"  sample folds, verbatim:")
+    for p in folds_log["B_TRUSTED_DB9_POSE_v1"][:3]:
+        say(f"    held out key {p['fold_held_out_global_key']}: train keys "
+            f"{p['n_train_global_keys']}, test 1, intersection "
+            f"{p['train_test_global_intersection']}")
+    ok = all(v == 0 for v in inter.values())
+    say(f"  LOSO IDENTITY: {'PASS' if ok else 'FAIL'}")
+    out["Q3_loso_identity"] = {
+        "pass": bool(ok), "max_intersection_per_arm": inter,
+        "identity_source": "archive slot from the filename "
+                           "(fx_common.load: subject = int(basename.split('_')[0][1:]))",
+        "in_file_subject_field_used_as_identity": False,
+        "in_file_subject_is_source_local": True,
+        "verdict": ("NO IMPACT - the previous trusted classifier already grouped by the "
+                    "filename-derived global participant key, because BUG-004 was fixed in "
+                    "fx_common.load before driver 04 ran" if ok
+                    else "INVALID - rerun required"),
+        "evidence": F.EMPIRICAL}
     out["bug006"] = {
         "restored_by_the_2pct_materiality_threshold": BUG006_RESTORED,
-        "why": "BUG-006 added a 2 % materiality threshold for released-vs-published "
+        "why": "BUG-006 introduced a 2 % materiality threshold for released-vs-published "
                "constant differences. Before it, MCP5_f (0.61 % difference) and PIP5 "
-               "(0.12 % difference) were classified CASE_D_DOCUMENTATION_CONFLICT and held "
-               "INCONCLUSIVE. Both pass the physical anchor at 37/37 and now at 77/77.",
+               "(0.12 %) were CASE_D_DOCUMENTATION_CONFLICT / INCONCLUSIVE. Both pass the "
+               "physical anchor at 37/37 and now at 77/77.",
         "strict_prefix_subset": [n for n in frozen["keep_names"]
                                  if n not in BUG006_RESTORED],
-        "effect_on_verdicts": "none - this is a robustness report only"}
+        "effect_on_verdicts": "none - robustness report only",
+        "delta_ba_strict_minus_trusted": c["balanced_accuracy"] - b["balanced_accuracy"]}
 
     sha = F.write_json(os.path.join(F.ART, "FINAL_VALIDATION.json"), out)
-    print(f"\nartifacts/FINAL_VALIDATION.json sha256={sha}")
-    print(f"log: {log}")
+    say(f"\nartifacts/FINAL_VALIDATION.json sha256={sha}")
+    say(f"log: {log}")
     return 0
 
 

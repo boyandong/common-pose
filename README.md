@@ -109,17 +109,18 @@ Semantic anatomical correspondence is **not** numerical coordinate equivalence; 
   to classification performance.
 * **Identification of physically unreliable released DB9 channels.** Not just "noisy":
   directionally wrong. On an unambiguous fist the raw DIP3 gauge and the released angle
-  move *opposite* to the published flexion-positive criterion in 35 of 37 subjects, while
-  every MCP and PIP channel in the very same segments moves the documented way in 37/37.
+  move *opposite* to the published flexion-positive criterion in 71 of 77 subjects, while
+  every MCP and PIP channel in the very same segments moves the documented way in 77/77.
 * **A reduced trusted DB9 pose subset** — `TRUSTED_DB9_POSE_v1`, 8 channels, frozen before
   any classifier ran.
 * **Subject-held-out posture utility on the trusted dimensions**, reported against the
   historical 16-channel arm (see below).
+* **Revalidation of the trusted subset across all 77 DB9 participants.** The frozen
+  8-channel representation was unchanged by the larger sample. See
+  [`audits/db9/channel_forensic/FINAL_VALIDATION.md`](audits/db9/channel_forensic/FINAL_VALIDATION.md).
 
 ### In progress
 
-* Final validation of the trusted DB9 subset. **The subset is PROVISIONAL**: the utility
-  arm covers 37 Exercise-B subjects, not the final full-corpus validation.
 * Common Pose cross-dataset adapters.
 * Connection to EMG-based pose estimation.
 
@@ -146,7 +147,7 @@ Representative findings, all with evidence in
 
 | finding | evidence |
 |---|---|
-| `DIP3`, `DIP5` are **inverted** relative to the published sign criterion | raw gauge and released angle fall together in 35/37 and 32/37 subjects on an unambiguous fist, while MCP/PIP rise in 37/37 |
+| `DIP3`, `DIP5` are **inverted** relative to the published sign criterion | raw gauge and released angle fall together in 71/77 and 62/77 subjects on an unambiguous fist, while MCP/PIP rise in 77/77 |
 | `CMC5` is not the palmar arch | the released column is an exact linear function (slope 0.28511 = the published 0.285) of the **same raw sensor** that feeds `WRIST_F` |
 | an earlier "many channels fail" verdict was **partly wrong** | it segmented on the pre-relabelling `repetition` vector, which is length-misaligned with the kinematics in 24 of 99 released files |
 | the in-file `subject` field is **not a valid identity key** | it is source-database-local; `S68_E2_A1.mat` reports `subject == 1`, colliding with `S1_E2_A1.mat` |
@@ -162,23 +163,42 @@ audit; omitting the second number would hide that the surviving subset is genuin
 
 | | arm A — historical 16-channel | arm B — trusted subset (8) |
 |---|---|---|
-| balanced accuracy | 0.8538 | 0.7254 |
-| accuracy | 0.8555 | 0.7286 |
-| chance (9 classes) | 0.1111 | 0.1111 |
-| worst subject BA | 0.5648 | 0.4794 |
+| balanced accuracy | **0.8556** | **0.7479** |
+| accuracy | 0.8556 | 0.7479 |
+| macro-F1 | 0.8559 | 0.7460 |
+| chance (8 classes) | 0.1250 | 0.1250 |
+| median subject BA | 0.8744 | 0.7556 |
+| worst subject BA | 0.5850 | 0.5369 |
 | class collapse | no | no |
 
-Task: DB9 Exercise-B **hand-shape** movements (official ids 1–8, 17), subject-held-out, one
-shared LDA per fold, train-fold-only standardisation, central 60 % of every segment,
-544 556 frames over 37 subjects.
+Task: **NinaPro DB9 Exercise B hand configurations, official movement IDs 1–8.**
+Movement IDs 9–17 are wrist movements and are **not** part of the posture task; movement
+17 is a wrist movement, not a hand-shape class. 77 subjects, leave-one-subject-out,
+global participant identity from the archive filename, train-fold-only standardisation,
+one shared LDA per fold, radians, central 60 % of every segment with a fixed per-segment
+frame cap of 200 (123 200 frames).
 
-> **The task definition matters and is stated rather than implied.** Exercise B mixes nine
-> hand shapes with eight wrist movements. `TRUSTED_DB9_POSE_v1` contains no wrist channel
-> by construction, so the mixed 17-class task penalises it for a target it was never
-> designed to carry — on that task it reaches BA 0.4853. Both numbers are real; they answer
-> different questions.
+> **Why the task is IDs 1–8 only.** Exercise B mixes eight hand configurations with nine
+> wrist movements. `TRUSTED_DB9_POSE_v1` contains no wrist channel by construction, so a
+> wrist-inclusive target penalises it for a quantity it was never designed to carry.
+>
+> **Why the frame cap.** DB2 recordings are much longer than DB1/DB5 recordings. An
+> uncapped frame-level evaluation would therefore weight the DB2 source database simply
+> because it contains more frames per segment. A fixed per-segment frame cap preserves
+> every participant, every movement and every segment while preventing recording duration
+> from defining evaluation weight. It is a declared frame-count choice, not a random
+> balancing step, and it changes no channel, model, split or threshold.
+>
+> **Class 4 is the weakest posture class (recall 0.495), and most of its errors go to
+> class 5.** It stays in the official internal result and must be reported separately in
+> any future cross-dataset or human-semantic transfer evaluation rather than hidden
+> behind the aggregate.
 
-### Trusted subset — PROVISIONAL
+### Trusted subset — FROZEN
+
+`TRUSTED_DB9_POSE_v1` has been **revalidated across all 77 DB9 participants**. The frozen
+8-channel representation **remained unchanged**. Channel selection was based on physical
+validity *before* classification performance was evaluated.
 
 8 channels, frozen before any classifier ran, subset SHA-256
 `e51dde6e63941fd080c84f3896a98cf50fba9e17d5f9cebe909253d5465782d1`:
@@ -186,7 +206,10 @@ shared LDA per fold, train-fold-only standardisation, central 60 % of every segm
 `MCP1`, `IP1`, `MCP2_f`, `PIP2`, `MCP3_f`, `MCP4_f`, `MCP5_f`, `PIP5`
 
 * `DROP` (6): `MCP2_a` (vendor-excluded, all-NaN), `CMC5`, `MCP5_a`, `DIP3`, `DIP5`, `WRIST_A`
-* `INCONCLUSIVE` (8): `CMC1_f`, `CMC1_a`, `PIP3`, `MCP4_a`, `PIP4`, `DIP2`, `DIP4`, `WRIST_F`
+* `INCONCLUSIVE` (8 at 37 subjects, **6 at 77**): `CMC1_f`, `CMC1_a`, `MCP4_a`, `PIP4`,
+  `DIP2`, `WRIST_F`. Under the larger 77-subject sample and the **already-frozen rules**,
+  `PIP3` and `DIP4` moved from `INCONCLUSIVE` to `DROP`. No rule was made more permissive,
+  and the 8-channel frozen subset did not change.
 
 `DROP` means established not to be the named physical quantity. `INCONCLUSIVE` means the
 evidence does not settle it — that is a different statement and is not interchangeable
@@ -275,7 +298,9 @@ produced a wrong scientific result somewhere in this project.
 
 ## Roadmap
 
-1. Freeze the trusted physical pose representation (currently **provisional**).
+1. ~~Freeze the trusted physical pose representation.~~ **Done for DB9:**
+   `TRUSTED_DB9_POSE_v1`, 8 channels, revalidated across all 77 participants.
+   Note this freezes the **DB9 task source**, not the Common Pose API.
 2. Validate the pose-only downstream task.
 3. Integrate the EMG → pose front end.
 4. Test the frozen downstream task under upstream estimator substitution.

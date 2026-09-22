@@ -2,9 +2,9 @@
 
 What this task is
 -----------------
-Given **only hand joint angles**, identify which of the nine Exercise-B hand-shape
-movements (official ids 1-8 and 17) a representative posture belongs to, subject held
-out. It is deliberately classical: one shared LDA per fold, train-fold-only
+Given **only hand joint angles**, identify which of the **eight official Exercise-B hand
+configurations (movement IDs 1-8)** a representative posture belongs to, subject held
+out. Movement IDs 9-17 are wrist movements and are not part of this task. It is deliberately classical: one shared LDA per fold, train-fold-only
 standardisation, no deep network, no EMG. The unit of analysis is
 ``subject x movement x repetition``, not a frame.
 
@@ -12,18 +12,20 @@ Why the task definition is written down here rather than left implicit
 --------------------------------------------------------------------
 Two protocol choices change the number and neither is obvious from a results table:
 
-1. **Hand-shape movements only, not all 17 Exercise-B movements.** Exercise B mixes nine
-   hand shapes with eight wrist movements. ``TRUSTED_DB9_POSE_v1`` contains no wrist
-   channel by construction, because the audit DROPped ``WRIST_A`` and held ``WRIST_F``
+1. **Official movement IDs 1-8 only.** Exercise B mixes eight hand configurations with
+   nine wrist movements. ``TRUSTED_DB9_POSE_v1`` contains no wrist channel by
+   construction, because the audit DROPped ``WRIST_A`` and held ``WRIST_F``
    inconclusive. Scoring a wristless representation on a wrist-inclusive target
-   penalises it for a quantity it was never designed to carry. On the mixed task the
-   trusted subset reaches BA 0.4853; on the hand-shape task, 0.7254. Both numbers are
-   real; they answer different questions.
+   penalises it for a quantity it was never designed to carry.
 2. **The reference arm is the historical ``canonical16``, not a strawman.** The trusted
-   subset loses 0.128 balanced accuracy against it (0.8538 -> 0.7254). Reporting only
-   the trusted-subset number would hide the cost of the physical audit, and reporting
-   only the loss would hide that the surviving subset is 6.5x chance with no class
-   collapse.
+   subset loses 0.108 balanced accuracy against it (0.8556 -> 0.7479 on 77 subjects).
+   Reporting only the trusted-subset number would hide the cost of the physical audit,
+   and reporting only the loss would hide that the surviving subset is 6.0x chance with
+   no class collapse.
+3. **A fixed per-segment frame cap of 200.** DB2 recordings are far longer than DB1/DB5
+   recordings, so an uncapped frame-level evaluation would weight the DB2 source database
+   merely because it holds more frames per segment. The cap keeps every participant,
+   movement and segment while preventing recording duration from defining the weight.
 
 Both arms are therefore always reported together. See
 ``docs/db9_trusted_subset.md``.
@@ -111,9 +113,39 @@ class ArmResult:
 #: ``audits/db9/channel_forensic/artifacts/POSTURE_UTILITY_POSTURE_ONLY.json``
 #: (trusted_subset_sha256 e51dde6e63941fd080c84f3896a98cf50fba9e17d5f9cebe909253d5465782d1).
 #:
-#: PROVISIONAL: the utility arm covered the 37 Exercise-B subjects. It is not the final
-#: full-77-subject validation.
+#: FINAL: the official 8-posture benchmark over all 77 DB9 participants (movement IDs
+#: 1-8 only), with a fixed per-segment frame cap of 200. This is the downstream DB9
+#: posture baseline. The earlier 37-subject, 9-class mixed-task run is retained as
+#: HISTORICAL_MIXED_TASK_UTILITY below and is NOT the official benchmark.
+#: Source of the numbers: ``audits/db9/channel_forensic/artifacts/FINAL_VALIDATION.json``.
 FROZEN_HANDSHAPE_UTILITY: Mapping[str, ArmResult] = {
+    "A_historical_canonical16": ArmResult(
+        arm="A_historical_canonical16", n_dimensions=16, n_frames=123_200,
+        n_subjects=77, n_classes=8,
+        accuracy=0.8556, balanced_accuracy=0.8556,
+        macro_f1=0.8559, chance_balanced_accuracy=0.125,
+        worst_subject_balanced_accuracy=0.5850,
+        median_subject_balanced_accuracy=0.8744,
+        classes_with_recall_below_half=(), class_collapse=False,
+    ),
+    "B_TRUSTED_DB9_POSE_v1": ArmResult(
+        arm="B_TRUSTED_DB9_POSE_v1", n_dimensions=8, n_frames=123_200,
+        n_subjects=77, n_classes=8,
+        accuracy=0.7479, balanced_accuracy=0.7479,
+        macro_f1=0.7460, chance_balanced_accuracy=0.125,
+        worst_subject_balanced_accuracy=0.5369,
+        median_subject_balanced_accuracy=0.7556,
+        classes_with_recall_below_half=(4,), class_collapse=False,
+    ),
+}
+
+#: HISTORICAL, NOT THE BENCHMARK. The earlier 37-subject run on nine classes
+#: (movement IDs 1-8 and 17). Movement 17 is a wrist movement and was wrongly counted as a
+#: hand-shape class; the run also covered only the 37 DB1/DB5 Exercise-B participants
+#: because the loader then selected Exercise B by filename exercise code. Kept only so the
+#: earlier statement remains traceable. Source:
+#: ``audits/db9/channel_forensic/artifacts/POSTURE_UTILITY_POSTURE_ONLY.json``.
+HISTORICAL_MIXED_TASK_UTILITY: Mapping[str, ArmResult] = {
     "A_historical_canonical16": ArmResult(
         arm="A_historical_canonical16", n_dimensions=16, n_frames=544_556,
         n_subjects=37, n_classes=9,
@@ -137,7 +169,7 @@ FROZEN_HANDSHAPE_UTILITY: Mapping[str, ArmResult] = {
 
 @dataclass
 class PostureTask:
-    """Task definition for DB9 hand-shape identification.
+    """Task definition for DB9 hand-configuration identification.
 
     Holds the *definition*; the frozen pipeline that computes it lives at
     ``src/common_pose/adapters/db9/experiments/`` and

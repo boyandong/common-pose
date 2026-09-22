@@ -162,7 +162,7 @@ that are **not** made were checked just as deliberately.
 | CMC5 slope 0.28511 = published 0.285, same raw column as WRIST_F | `audits/db9/channel_forensic/artifacts/VERDICTS.json` |
 | earlier "many channels fail" verdict partly overturned; `repetition` misaligned in 24 of 99 files | `audits/db9/channel_forensic/SEGMENTATION_VALIDATION.md` |
 | in-file `subject` collides; 10 collisions in 37 Exercise-B files | `audits/db9/channel_forensic/DB9_FORENSIC_DECISION.md` |
-| arm A BA 0.8538 / arm B BA 0.7254, chance 0.1111, 544 556 frames, 37 subjects | `audits/db9/channel_forensic/artifacts/POSTURE_UTILITY_POSTURE_ONLY.json` |
+| arm A BA 0.8556 / arm B BA 0.7479, chance 0.1250, 123 200 frames, 77 subjects, official movement IDs 1–8 | `audits/db9/channel_forensic/artifacts/FINAL_VALIDATION.json` |
 | mixed 17-class arm B BA 0.4853 | same artifact, mixed-task block |
 | emg2pose IK failures 15.6 %; 16.09° vs 12.48° MAE | `docs/joint_angle_definition.md`, `docs/smoke_test_evidence.json` |
 | cross-dataset disagreement 2–40° medians, up to 450° ranges | `audits/db9/coordinate_audit/artifacts/COMMON_POSE_API_VERDICT.json` |
@@ -180,8 +180,8 @@ The README states, in three places and without hedging, that the project has **n
 demonstrated: universal task transfer; universal cross-dataset numerical coordinate
 equivalence; a deployment-grade or frozen API; arbitrary downstream task support; or that
 any downstream head survives upstream estimator substitution. The trusted subset is
-labelled **PROVISIONAL** with the reason (37 Exercise-B subjects, not the final
-full-corpus validation). `docs/research_status.md` §E keeps the withdrawn and negative
+labelled **FROZEN** and revalidated across all 77 DB9 participants; the earlier
+PROVISIONAL label and its reason are recorded in the lane's history. `docs/research_status.md` §E keeps the withdrawn and negative
 results, including three retracted claims.
 
 ### Known residual risks
@@ -190,10 +190,11 @@ results, including three retracted claims.
    `COMMIT PENDING` because the research workspaces predate version control. This
    repository starts a clean history and does not carry the old one. The strings are
    accurate and were not upgraded.
-2. **The trusted subset is provisional.** The DB9 final-validation driver is included at
-   `audits/db9/channel_forensic/tools/final_validation.py`, but its captured log in the
-   historical workspace is 0 bytes — it did not complete. The README and
-   `docs/db9_trusted_subset.md` both say so.
+2. **The trusted subset is frozen; the API is not.** The DB9 final-validation driver is
+   included at `audits/db9/channel_forensic/tools/final_validation.py` and produced the
+   published 77-subject numbers (`artifacts/FINAL_VALIDATION.json`). Freezing the DB9
+   *task source* implies nothing about the Common Pose API, which remains explicitly
+   unfrozen, nor about cross-dataset or upstream-substitution transfer.
 3. **The human-annotation endpoint is not recoverable.** Its formal round was interrupted
    by a diagnostic model-unblinding at 200 of 396 items. No endpoint is published anywhere
    in this repository, and the reason is recorded in the lane's README.

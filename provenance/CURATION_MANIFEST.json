@@ -640,6 +640,15 @@
       "note": ""
     },
     {
+      "source_path": "db9_channel_forensic_v2/FINAL_VALIDATION.md",
+      "target_path": "audits/db9/channel_forensic/FINAL_VALIDATION.md",
+      "source_sha256": "4fa700dc26d0d50f243c72372b2c1a67ee9749b4964757e529b8212839fd2b81",
+      "target_sha256": "4fa700dc26d0d50f243c72372b2c1a67ee9749b4964757e529b8212839fd2b81",
+      "altered_by_curation": false,
+      "rules_hit": [],
+      "note": ""
+    },
+    {
       "source_path": "db9_channel_forensic_v2/FLAGGED_CHANNEL_FORENSICS.md",
       "target_path": "audits/db9/channel_forensic/FLAGGED_CHANNEL_FORENSICS.md",
       "source_sha256": "3bb7c78b0b9067893481da16f2957484546264f5760413f857dfee3c30ec8417",
@@ -705,6 +714,15 @@
       "target_path": "audits/db9/channel_forensic/artifacts/DECISION.json",
       "source_sha256": "1609fad13be49d7588d39d16ce7fb93225e3fa99c5faa50b69517c992ae50172",
       "target_sha256": "1609fad13be49d7588d39d16ce7fb93225e3fa99c5faa50b69517c992ae50172",
+      "altered_by_curation": false,
+      "rules_hit": [],
+      "note": ""
+    },
+    {
+      "source_path": "db9_channel_forensic_v2/artifacts/FINAL_VALIDATION.json",
+      "target_path": "audits/db9/channel_forensic/artifacts/FINAL_VALIDATION.json",
+      "source_sha256": "cd54572a7c72cd8ddd19806c5a1a54683835f3c3498d31c9f0bc54de8fc8abe4",
+      "target_sha256": "cd54572a7c72cd8ddd19806c5a1a54683835f3c3498d31c9f0bc54de8fc8abe4",
       "altered_by_curation": false,
       "rules_hit": [],
       "note": ""
@@ -835,7 +853,7 @@
       "source_path": "db9_channel_forensic_v2/scripts/05_decision.py",
       "target_path": "audits/db9/channel_forensic/tools/decision.py",
       "source_sha256": "8c7d5a08c28e768a654a9b5b4741226e9010448b7d3ea858c6d17052dc4eda27",
-      "target_sha256": "6664a3f682a84f80798a571db6e42dbb7a84b53dc456e557d10692f733379816",
+      "target_sha256": "beb13ddff90addb6a163ee5fd3e48c5cd18b911fac09400a03ac36dc932d584e",
       "altered_by_curation": true,
       "rules_hit": [],
       "note": "renamed from 05_decision.py; original docstring retained below the header"
@@ -844,7 +862,7 @@
       "source_path": "db9_channel_forensic_v2/scripts/99_fact_check.py",
       "target_path": "audits/db9/channel_forensic/tools/fact_check.py",
       "source_sha256": "87800f6176470787361e151a7682b3dda9dfebb782fb372d7b07977d045394ec",
-      "target_sha256": "d5f46c0a4dcdea37518c355c7d447edf1caace8f77876a9b1d8fc8a47f720e62",
+      "target_sha256": "a0066cbd2bce5e0d8e77d212acbb423a9b21583809226962a9dfb7113a430589",
       "altered_by_curation": true,
       "rules_hit": [
         "04_utility.py",
@@ -854,19 +872,19 @@
       "note": "renamed from 99_fact_check.py; original docstring retained below the header"
     },
     {
-      "source_path": "db9_channel_forensic_v2/scripts/06_final_validation.py",
+      "source_path": "db9_channel_forensic_v2/scripts/06b_final_validation.py",
       "target_path": "audits/db9/channel_forensic/tools/final_validation.py",
-      "source_sha256": "6dfbd7e095a8f18d2411012aaf1a0e2976e278a00d02d475a2c85d4ef86baa2a",
-      "target_sha256": "dc89f77ba6b9ef6e26fb5fec98514dca0515f2512bbc11c026c3f11a68aa42ed",
+      "source_sha256": "ff1f4b6aa1b14d1ca9b114224e201f12789416cacbaaf88c83c9d087117a1482",
+      "target_sha256": "e4b439e30dce893aa4f80c93cffc92ed5bb36bfbbfdfbc75b8bc6b955d94d59b",
       "altered_by_curation": true,
       "rules_hit": [],
-      "note": "renamed from 06_final_validation.py; original docstring retained below the header"
+      "note": "renamed from 06b_final_validation.py; original docstring retained below the header"
     },
     {
       "source_path": "db9_channel_forensic_v2/scripts/02_forensic_core.py",
       "target_path": "audits/db9/channel_forensic/tools/forensic_core.py",
       "source_sha256": "26990529c79ccf8ee6d5c5840ff7ee358c4863bb425ff6fe077f0d9d51c8f1a2",
-      "target_sha256": "a7a92298b3f7475111c7681eed091e912f9b9effdc6c13ac219d851915b6698b",
+      "target_sha256": "8f41151048ce2548f398c1e0b60f69d7ffedc1612a6273d89911e22314d865d8",
       "altered_by_curation": true,
       "rules_hit": [],
       "note": "renamed from 02_forensic_core.py; original docstring retained below the header"
@@ -875,7 +893,7 @@
       "source_path": "db9_channel_forensic_v2/scripts/fx_common.py",
       "target_path": "audits/db9/channel_forensic/tools/fx_common.py",
       "source_sha256": "fd76b032fb697be2a3c9ea4e3b5aca12df8d1a8b4446fa04005975d1deba3c5e",
-      "target_sha256": "d02f2bb87178c93f08313e6aa237998fa64036888e2e6d2a65edd56b3b8e029f",
+      "target_sha256": "817a372db6ac7c2abb0bf8a757d429ee052bbaa4576f8a91df8cc9992eff90c0",
       "altered_by_curation": true,
       "rules_hit": [
         "path block -> environment variables"
@@ -886,7 +904,7 @@
       "source_path": "db9_channel_forensic_v2/scripts/01_segmentation.py",
       "target_path": "audits/db9/channel_forensic/tools/segmentation.py",
       "source_sha256": "30eaafd96dae0570e9d7b0b355e650ce9438fbea33cfe2b1b8f6ad120b96ba94",
-      "target_sha256": "1a30e330038f1ac99d195b3d1344774a060a8512f6618dd74f0b72f2ff94392d",
+      "target_sha256": "02b77d5c8eeb46f4099d950cae2392fb259ba2210ddd4a90b52d1ce199fa27fa",
       "altered_by_curation": true,
       "rules_hit": [],
       "note": "renamed from 01_segmentation.py; original docstring retained below the header"
@@ -895,7 +913,7 @@
       "source_path": "db9_channel_forensic_v2/scripts/04_utility.py",
       "target_path": "audits/db9/channel_forensic/tools/utility.py",
       "source_sha256": "d187da923b5551153c257416528eb714d748af0f06e1c2fa5e20b7d119531417",
-      "target_sha256": "dc25d8bdfec52e513a40bffeb8563e534a685e36c9233c85501a7036bb53448e",
+      "target_sha256": "a529ad14130c52586f3539fb98637f76de493a596e1cd78a914ba17a49107e8b",
       "altered_by_curation": true,
       "rules_hit": [],
       "note": "renamed from 04_utility.py; original docstring retained below the header"
@@ -904,7 +922,7 @@
       "source_path": "db9_channel_forensic_v2/scripts/04b_utility_posture_only.py",
       "target_path": "audits/db9/channel_forensic/tools/utility_posture_only.py",
       "source_sha256": "25aed50a2f5fc00d6d31a5e06e558623d46add0faa26d4c191c4dd7b934e5474",
-      "target_sha256": "28960d8a37d64ada231de56feefcd0cc9bfbd15f6d75900f172f9e6c327dcf1a",
+      "target_sha256": "6f85aa4ee7321c8172b3e733d9688881061eb8fca98478d717e200f79077041b",
       "altered_by_curation": true,
       "rules_hit": [
         "04_utility.py"
@@ -915,7 +933,7 @@
       "source_path": "db9_channel_forensic_v2/scripts/03_verdicts.py",
       "target_path": "audits/db9/channel_forensic/tools/verdicts.py",
       "source_sha256": "802a5d66139d0bd49bbacd552400e4fe268f977a7ea4ac08a6ef14e48cfdb283",
-      "target_sha256": "db748ba0188b343bd0e04dce805b7b4d32e04eec61050b625f3077ff3ea24cef",
+      "target_sha256": "c982ae12211b0439eff735499422a29f27cfc8ec50667bdada252e78b038c3f7",
       "altered_by_curation": true,
       "rules_hit": [
         "02_forensic_core.py"

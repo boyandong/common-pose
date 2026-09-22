@@ -4,7 +4,8 @@
 # Common Pose public repository. Frozen plan SHA-256:
 #   4c618b562903d0d364d03bb8a997ef6b4140bd9e09d0f2475f1b008ad80c8793
 #
-# Driver order: segmentation -> forensic_core -> verdicts -> utility -> decision.
+# Driver order: segmentation -> forensic_core -> verdicts -> utility -> decision
+#               -> final_validation.
 # `verdicts` freezes TRUSTED_DB9_POSE_v1 and `utility` asserts against that frozen
 # subset, so it must run after it.
 #
