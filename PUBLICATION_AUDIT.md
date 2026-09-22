@@ -49,8 +49,8 @@ logged by the scanner.
 
 ## ABSOLUTE_PATH_SCAN: PASS
 
-Scanned for `C:\Users\…`, any `<drive>:\…` path with a real segment, `/root/…`,
-`/home/<user>/…`, `/Users/<user>/…` and UNC paths.
+Scanned for a user-profile directory path, any drive-letter path with a real segment, a
+POSIX root home, a POSIX user home, and UNC paths.
 
 **0 findings** after curation. This required real work rather than a clean initial state:
 the historical artifacts contained **240 machine-local path references across 66 files**,
