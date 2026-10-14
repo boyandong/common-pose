@@ -1,0 +1,13 @@
+{
+  "attempt_id": "20261010_202822_samecode",
+  "code_changed": false,
+  "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+  "credential_transport": "stdin/RAM only",
+  "observed_local_time": "2026-10-10T20:28:22.068306+08:00",
+  "pid": 7344,
+  "previous_pid_verified_absent": 27816,
+  "runner_sha256": "66b070cd27868d9de59157e809741d0ef408d0e63463cf32ee17b8f179590115",
+  "scientific_protocol_or_members_changed": false,
+  "start_time": "2026-10-10T20:28:22.0852468+08:00",
+  "status": "SAME_SEALED_CONTROLLER_RESUMED_AFTER_VERIFIED_TRANSFER_STOP"
+}

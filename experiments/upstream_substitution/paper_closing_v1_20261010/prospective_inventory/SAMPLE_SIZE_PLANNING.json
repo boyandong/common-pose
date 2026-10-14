@@ -1,0 +1,18 @@
+{
+  "status": "PLANNING_ONLY_NO_ENROLLMENT_DECISION",
+  "alpha_per_endpoint_two_sided": 0.025,
+  "family": "U vs boundary distance; B vs matched class model",
+  "nominal_N80_p70_endpoint_power": 0.9084021100368282,
+  "N80_p70_both_endpoint_union_bound": 0.8168042200736565,
+  "N80_source_bytes_subset_range": [
+    43573458072,
+    55405029552
+  ],
+  "unresolved": "power assumes 80 defined nonzero pairs; losses/ties reduce effective N; true probability unknown; magnitude precision pilot may be optimistic; exposure and structure audit pending",
+  "source_effect_sha256": "1e2db3e3364e47e8c5fb48e23084923605aa545fde63c3202fb2f2d9e499429b",
+  "code_sha256": "f8016091d723949a1612f728020b0cf3b8f056ea352dd3b092eb6ef072d960c9",
+  "method_sources": [
+    "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.binomtest.html",
+    "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.binom.html"
+  ]
+}

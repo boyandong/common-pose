@@ -1,0 +1,7 @@
+# Gate4C implementation repair 001 — before outcome analysis
+
+The frozen plan SHA256 `f346608139d1386947f7200c3fd80b93abcdec4e1fe385c2b647bf756eaa2332` and cohort SHA256 `db61d9c75510d78e17b3858943bc3dd052dab61aa041dc260c84e064e619bead` remain unchanged. The first detached run computed 14 file receipts, then stopped because the next file had zero blocks satisfying the already-frozen paired GT/prediction validity mask; sklearn LDA rejects an input with shape `(0,8)`. No downstream outputs or agreement metrics were inspected to choose this repair.
+
+Runner v1 SHA256 `77476c930ec96f5710d48b6e8ab52aabb0f6e349bcfd56d585583be709d85b4f` called `head.predict` on the empty array. Runner v1.1 SHA256 `e3ca8e3b2a7d4a6059ac5fba9d01df264d329f52dc3497fdcc9cfdc0b4e98091` writes empty class and probability arrays with the frozen shapes when paired block count is zero. It uses identical computation on every nonempty file. The selected file cohort, input bytes, validity mask, Common Pose adapter, checkpoint, head, output meanings and endpoints are unchanged. A zero-block file contributes zero paired samples and its GT/prediction/paired coverage counts remain in its receipt. Resume recomputes the first 14 outputs because receipts are bound to the runner hash; no outcome-driven selection occurs.
+
+This amendment records an implementation boundary only. It authorizes no new data exclusion, mask change, model adjustment, or scientific metric change.

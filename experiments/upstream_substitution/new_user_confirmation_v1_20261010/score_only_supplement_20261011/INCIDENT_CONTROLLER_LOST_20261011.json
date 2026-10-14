@@ -1,0 +1,194 @@
+{
+  "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+  "controller_terminal_present": false,
+  "effect_values_read": false,
+  "execution_complete_present": false,
+  "exit_cause": "UNKNOWN",
+  "foreign_pid_27444_observed": {
+    "image": "C:/WINDOWS/system32/conhost.exe",
+    "observed_local_time": "2026-10-11T05:21:21.3334772+08:00",
+    "start_time": "2026-10-11T05:18:31.6957285+08:00"
+  },
+  "git_head": "95db08ad9e8ba936df3d6e2dad64d68f4a916319",
+  "last_local_parent_progress": {
+    "actual_handle_observation": {
+      "launch": {
+        "child_pid": 30785,
+        "code_seal_sha256": "98f6e32909af8b2bf97527422389a657a755b080cbfb981a04dee14714cc7679",
+        "command": [
+          "/root/miniconda3/envs/commonpose-supplement/bin/python",
+          "-u",
+          "/root/work/common-pose/experiments/upstream_substitution/new_user_confirmation_v1_20261010/reconstruct_users.py"
+        ],
+        "parent_pid": 30784,
+        "stage": "reconstruction",
+        "started_epoch": 1791658435.9861102
+      },
+      "live": [
+        {
+          "command": "/root/miniconda3/envs/commonpose-supplement/bin/python -u /root/work/common-pose/experiments/upstream_substitution/new_user_confirmation_v1_20261010/run_stage_job.py reconstruction ",
+          "pid": 30784,
+          "role": "parent_pid"
+        },
+        {
+          "command": "/root/miniconda3/envs/commonpose-supplement/bin/python -u /root/work/common-pose/experiments/upstream_substitution/new_user_confirmation_v1_20261010/reconstruct_users.py ",
+          "pid": 30785,
+          "role": "child_pid"
+        }
+      ],
+      "state": "LIVE"
+    },
+    "observed_epoch": 1791667072.5151,
+    "pid": 27444,
+    "stage": "REMOTE_STAGE_LIVE",
+    "stage_name": "reconstruction"
+  },
+  "local_log_hashes": {
+    "integrated_controller.stderr.log": {
+      "bytes": 0,
+      "mtime_epoch": 1791657881.7915056,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "integrated_controller.stdout.log": {
+      "bytes": 9928,
+      "mtime_epoch": 1791667072.5235791,
+      "sha256": "8554c39dcc27086d6cf1508f3c53c930a90dd15502263bec88d27e4eca7d0d65"
+    },
+    "successor_dispatch.stderr.log": {
+      "bytes": 0,
+      "mtime_epoch": 1791657881.4232512,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "successor_dispatch.stdout.log": {
+      "bytes": 0,
+      "mtime_epoch": 1791657881.4226167,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "local_os_uptime_observation": {
+    "milliseconds": 32614937,
+    "observed_local_time": "2026-10-11T05:22:02.2382663+08:00",
+    "windows_reboot_during_controller_loss_not_supported": true
+  },
+  "lost_observation_cell": 44,
+  "observation_cell_not_found_is_not_pipeline_exit_evidence": true,
+  "observed_local_time": "2026-10-11T05:23:21.234866+08:00",
+  "old_controller_exit_code": "UNKNOWN",
+  "original_analysis_sealed_files_reverified": 6,
+  "original_launch": {
+    "credential_channel": "RAM_TO_STDIN_ONLY",
+    "launcher_sha256": "0ab80fdc68bdb76cbfdd77c012fcf7e900bd94df8a68706a2f678858debd289c",
+    "observed_local_time": "2026-10-11T02:44:41.732616+08:00",
+    "original_frozen_files_changed": false,
+    "pid": 27444,
+    "preflight_sha256": "f5dba8c8f9cdb3bfae48b784367d263850374bcf0333cf105cd314b1d4195526",
+    "runner_sha256": "22cac5b1c07e2bbcaa973ab5687e74dad1b4eaedcb1f6c48af6300e59f78debb",
+    "start_time": "2026-10-11T02:44:41.4245510+08:00",
+    "status": "SINGLE_HUMAN_AUTHORIZED_INTEGRATED_LAUNCH"
+  },
+  "protocol_sha256": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a",
+  "remote_observation_file": "EXECUTION_OBSERVATION_incident_controller_lost_20261011_052200.json",
+  "remote_observation_sha256": "c6039b207b6062c9e8c5c17591975cf77d22e60e98e8e0530a0c4c7d397c1a7d",
+  "remote_stages": {
+    "analysis": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "qualification": {
+      "LAUNCH.json": {
+        "child_pid": 30680,
+        "code_seal_sha256": "98f6e32909af8b2bf97527422389a657a755b080cbfb981a04dee14714cc7679",
+        "command": [
+          "/root/miniconda3/envs/commonpose-supplement/bin/python",
+          "-u",
+          "/root/work/common-pose/experiments/upstream_substitution/new_user_confirmation_v1_20261010/qualify_sources.py"
+        ],
+        "parent_pid": 30679,
+        "stage": "qualification",
+        "started_epoch": 1791658283.3416677
+      },
+      "TERMINAL.json": {
+        "exit_code": 0,
+        "finished_epoch": 1791658434.0944428,
+        "output_log_sha256": "820baf3ee71d7ee651cddac6b8554250be772bbb9be630349057a49243386149",
+        "stage": "qualification",
+        "started_epoch": 1791658283.3416677
+      },
+      "actual_handles": [],
+      "dispatch": {
+        "dispatched_epoch": 1791658283.2938507,
+        "pid": 30679,
+        "stage": "qualification"
+      },
+      "state": "TERMINAL"
+    },
+    "reconstruction": {
+      "LAUNCH.json": {
+        "child_pid": 30785,
+        "code_seal_sha256": "98f6e32909af8b2bf97527422389a657a755b080cbfb981a04dee14714cc7679",
+        "command": [
+          "/root/miniconda3/envs/commonpose-supplement/bin/python",
+          "-u",
+          "/root/work/common-pose/experiments/upstream_substitution/new_user_confirmation_v1_20261010/reconstruct_users.py"
+        ],
+        "parent_pid": 30784,
+        "stage": "reconstruction",
+        "started_epoch": 1791658435.9861102
+      },
+      "actual_handles": [
+        {
+          "pid": 30785,
+          "role": "child_pid",
+          "scripts": [
+            "reconstruct_users.py"
+          ],
+          "start_ticks": "451958792"
+        },
+        {
+          "pid": 30784,
+          "role": "parent_pid",
+          "scripts": [
+            "run_stage_job.py"
+          ],
+          "start_ticks": "451958789"
+        }
+      ],
+      "dispatch": {
+        "dispatched_epoch": 1791658435.9592578,
+        "pid": 30784,
+        "stage": "reconstruction"
+      },
+      "state": "DISPATCHED"
+    },
+    "score_only_supplement_20261011/analysis": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "score_only_supplement_20261011/backup_export": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "score_only_supplement_20261011/support": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "score_only_supplement_20261011/verification": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "support": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "verification": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    }
+  },
+  "required_action": "archive this incident session for forensic evidence; continue execution only in a human-authorized clean successor after fresh runtime verification",
+  "scientific_job_restarts_attempted": false,
+  "scientific_outputs_or_rules_modified": false,
+  "status": "INCIDENT_LOCAL_CONTROLLER_LOST_NO_TERMINAL_REMOTE_RECONSTRUCTION_LIVE",
+  "supplement_seal_sha256": "aebe0573e0e332c923e9c27fb0ee4611b5e10a32ef89bd796d208b51c1f7eec3",
+  "supplement_sealed_files_reverified": 28
+}

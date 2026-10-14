@@ -1,0 +1,11 @@
+{
+  "continuation_execution_seal_modified": false,
+  "effect_values_read": false,
+  "previous_figure_builder_sha256": "b9c44b8b1b0a50c90782e8d5a6663c9fda48bef5892fca01ef1d57e550d96b5e",
+  "problem": "Adding the actual OS exit prerequisite shifted EXECUTION_COMPLETE to index2. It has its declared completion status, not PASS. Its explicit completion-status assertion is retained; only verifier/backup receipts are checked for PASS. The previously sealed preparatory figure script remains unchanged.",
+  "replacement_figure_builder": "build_continuation_figures_receipt_gate_20261011.py",
+  "replacement_sha256": "79a82b851c4fb902e210dc9fa042792103defbf9386e730f88dee4c0618738f0",
+  "scientific_decisions_modified": false,
+  "status": "EXECUTION_ONLY_REPORTING_ADMISSION_INDEX_CORRECTION_BEFORE_EFFECT_READING",
+  "use": "After continuation genuine exit0, independent verifiers and full backup PASS: run this separately sealed figure builder, inspect PNGs, then invoke the sealed finalizer, which validates the existing figure manifest and hashes. Rendering, figure metrics and scientific code unchanged."
+}

@@ -1,0 +1,54 @@
+{
+  "effect_values_read": false,
+  "local_python_handles": [
+    {
+      "Id": 27444,
+      "start_time": "2026-10-11T02:44:41.4245510+08:00"
+    },
+    {
+      "Id": 30560,
+      "start_time": "2026-10-11T02:51:03.6240220+08:00"
+    }
+  ],
+  "local_terminal_receipt_present": false,
+  "observed_local_time": "2026-10-11T02:51:04.949808+08:00",
+  "stages": {
+    "analysis": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "qualification": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "reconstruction": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "score_only_supplement_20261011/analysis": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "score_only_supplement_20261011/backup_export": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "score_only_supplement_20261011/support": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "score_only_supplement_20261011/verification": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "support": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "verification": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    }
+  },
+  "supplement_partial_files": []
+}

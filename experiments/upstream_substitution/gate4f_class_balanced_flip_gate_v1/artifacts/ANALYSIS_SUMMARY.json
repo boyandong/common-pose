@@ -1,0 +1,12 @@
+{
+  "canonical12_robustness": "DEFERRED_NO_FROZEN_CONSUMER",
+  "customer_head_sha256": "b0ef8caf8e390a480fa2a3b448f79ccf14f75c71265ef925ee299a5e9e660386",
+  "dev_files": 654,
+  "dev_users": 19,
+  "final_gate_instance_sha256": "f0fa280b2c87b22a6d4b1356299bde408b59b4ed35030f066b7bb61a24a7a29d",
+  "forbidden_gt_predictor_features": false,
+  "plan_sha256": "f2cebeb2e546825ffa6fb80499037dc2dec338d36ad883bc6373056b35722a2a",
+  "selected_method": "logistic",
+  "status": "DEV_METHOD_DEVELOPMENT_COMPLETE",
+  "validation_users_opened": 0
+}

@@ -1,0 +1,10 @@
+{
+  "all_local_SHA256_recomputed": true,
+  "local_D_report_files": {
+    "BUILD_MANIFEST.json": "47013c09d944a1ad2ff42bac206b0a3eeec3582206743f85848d0083380575c4",
+    "BUILD_MANIFEST.json.sha256": "77c204b9ab6b4f95f5b9cba1e02fb7095dd65d1fad9d1996ca47ff44d62b484b",
+    "MANUSCRIPT_CONFIRMATION_WITH_SCORE_ONLY.md": "293903f13dbd123bf64e7e18e5a5b419900498db948cfd571370183d79fb75ef",
+    "SCORE_ONLY_N80_REPORT.md": "513b8d84397eababd67fb8f77920f0638a36e83d9944b1f884b41c96dbc25a30"
+  },
+  "status": "PASS"
+}

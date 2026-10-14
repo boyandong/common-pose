@@ -1,0 +1,19 @@
+{
+  "effects_read": false,
+  "handles": [
+    {
+      "cpu_ticks_observed_change": 0,
+      "pid": 37481,
+      "script": "run_stage_job.py",
+      "start_ticks": "453028637"
+    },
+    {
+      "cpu_ticks_observed_change": 101,
+      "pid": 37482,
+      "script": "verify_new_results.py",
+      "start_ticks": "453028639"
+    }
+  ],
+  "observed_epoch": 1791670331.9041631,
+  "state": "LIVE_EXACT_PROCESS_IDENTITIES"
+}

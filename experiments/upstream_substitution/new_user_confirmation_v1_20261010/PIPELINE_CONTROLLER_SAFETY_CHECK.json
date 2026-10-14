@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "actual_transfer_gate_currently_closed": true,
+  "remote_python_fragments_syntax_checked": 10,
+  "ambiguous_dispatch_not_relaunched": true,
+  "real_remote_stages_started_by_test": false,
+  "runner_sha256": "66b070cd27868d9de59157e809741d0ef408d0e63463cf32ee17b8f179590115"
+}

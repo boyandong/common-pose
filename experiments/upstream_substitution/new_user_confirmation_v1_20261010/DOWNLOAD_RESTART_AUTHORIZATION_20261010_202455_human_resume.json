@@ -1,0 +1,9 @@
+{
+  "authorized_local_time": "2026-10-10T20:24:55.793195+08:00",
+  "human_request": "\u91cd\u542f\u4e0b\u8f7d",
+  "known_terminal_pid": 24788,
+  "preserve_all_failed_attempts_and_partials": true,
+  "scientific_protocol_and_members_changed": false,
+  "session_rule": "Direct human restart authorization; same sealed runner, no temporary implementation",
+  "terminal_receipt": "ACQUISITION_SEGMENTED_TERMINAL_20261010_successor_v3.json"
+}

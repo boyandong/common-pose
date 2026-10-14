@@ -1,0 +1,21 @@
+{
+  "auc_by_gate": {
+    "entropy": 1.4930719766254348,
+    "gate_a": 1.2266439870034669,
+    "margin": 1.4904479148576613,
+    "tta": 1.3011501591442711
+  },
+  "best_auc_gate": "gate_a",
+  "dev_users": 19,
+  "files": 654,
+  "gates": [
+    "gate_a",
+    "tta",
+    "margin",
+    "entropy"
+  ],
+  "plan_sha256": "08a17402bf438cff514fef85ca00d9971c9790d9903a72f48f43b72a4d46e276",
+  "semantic_gesture_accuracy": "NOT_IDENTIFIABLE",
+  "status": "DEV_BENCHMARK_COMPLETE",
+  "validation_users_opened": 0
+}

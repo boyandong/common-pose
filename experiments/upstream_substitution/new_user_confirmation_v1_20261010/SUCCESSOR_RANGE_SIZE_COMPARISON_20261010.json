@@ -1,0 +1,515 @@
+{
+  "comparisons": [
+    {
+      "body_read_limit": 524288,
+      "bytes_read": 524288,
+      "content_length": "5947456",
+      "headers_seconds": 1.5150000000003274,
+      "label": "remaining-member",
+      "range_bytes": 5947456,
+      "reads": [
+        {
+          "bytes": 16384,
+          "seconds": 0.26599999999962165
+        },
+        {
+          "bytes": 468,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.125
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 10108,
+          "seconds": 0.14000000000032742
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.1570000000001528
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.31199999999989814
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.3599999999996726
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.18699999999989814
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.10900000000037835
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.17199999999957072
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.18800000000010186
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.20300000000042928
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.26599999999962165
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.2650000000003274
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.125
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.17199999999957072
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.39100000000053114
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.18699999999989814
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.25
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.10999999999967258
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.10900000000037835
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.14099999999962165
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.18699999999989814
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.14100000000053114
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.07799999999951979
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.06199999999989814
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.11000000000058208
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.03099999999994907
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.04699999999957072
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.06199999999989814
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.04700000000048021
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.04699999999957072
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 9904,
+          "seconds": 0.03099999999994907
+        }
+      ],
+      "total_seconds": 6.592999999999847,
+      "writes_performed": false
+    },
+    {
+      "body_read_limit": 524288,
+      "bytes_read": 524288,
+      "content_length": "4194304",
+      "headers_seconds": 1.3910000000005311,
+      "label": "4MiB-segment",
+      "range_bytes": 4194304,
+      "reads": [
+        {
+          "bytes": 16384,
+          "seconds": 0.03099999999994907
+        },
+        {
+          "bytes": 448,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.18800000000010186
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 10108,
+          "seconds": 0.014999999999417923
+        },
+        {
+          "bytes": 9000,
+          "seconds": 0.032000000000152795
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.03099999999994907
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.14000000000032742
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.032000000000152795
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.014999999999417923
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.016000000000531145
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.01599999999962165
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.015000000000327418
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.10999999999967258
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.015000000000327418
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.03099999999994907
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.01599999999962165
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.016000000000531145
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.014999999999417923
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.016000000000531145
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.10899999999946886
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.016000000000531145
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 16384,
+          "seconds": 0.01599999999962165
+        },
+        {
+          "bytes": 1024,
+          "seconds": 0.0
+        },
+        {
+          "bytes": 924,
+          "seconds": 0.0
+        }
+      ],
+      "total_seconds": 2.282000000000153,
+      "writes_performed": false
+    }
+  ],
+  "effect_values_read": false,
+  "member": "emg2pose_data/2022-11-29-1669708800-076e4-cv-emg-pose-demonstration@2-recording-16_left.hdf5",
+  "status": "READ_ONLY_DIAGNOSTIC_COMPLETE"
+}

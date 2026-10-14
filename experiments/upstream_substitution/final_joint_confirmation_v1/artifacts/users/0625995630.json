@@ -1,0 +1,1010 @@
+{
+  "cohort_sha256": "8820158c3942c56432a900bb809e1e17ad6b4332183b273ea0b01b0bf38d8afe",
+  "e_model_sha256": "ca06d630e40fc44687bec5ac12c83d9b20aa7c48fe200d89e48d583f9d09f035",
+  "f_model_sha256": "535828304087d511402c8224ea0276d55e58e0a0c1cba0562bafe7d2d1147b66",
+  "gates": {
+    "Gate4E_Requirement_U": {
+      "auprc": 0.5679240112869409,
+      "auroc": 0.727138848315007,
+      "balanced_risk_reduction_100_to_30": -0.006502539154359388,
+      "deployment_threshold_rows": [
+        {
+          "accepted": 110697,
+          "accepted_balanced_flip_risk": 0.7113501330698683,
+          "accepted_flip_risk": 0.3076777148432207,
+          "achieved_coverage": 1.0,
+          "class_flip_risk": [
+            0.9727696166248656,
+            0.9146455223880597,
+            1.0,
+            0.05536843552378334,
+            0.939401314188367,
+            0.25229700455665943,
+            0.8702542093100033,
+            0.9747148288973384
+          ],
+          "class_support": [
+            2791,
+            6432,
+            1,
+            58192,
+            8218,
+            26774,
+            3029,
+            5260
+          ],
+          "nominal_coverage": 1.0,
+          "supported_classes": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "threshold": 0.9267830236965764
+        },
+        {
+          "accepted": 106699,
+          "accepted_balanced_flip_risk": 0.7172427451088589,
+          "accepted_flip_risk": 0.2885875219074218,
+          "achieved_coverage": 0.9638833934072287,
+          "class_flip_risk": [
+            0.9789391575663027,
+            0.9311618535930154,
+            1.0,
+            0.03211179137921908,
+            0.9369780793319415,
+            0.23771090357046773,
+            0.9049855491329479,
+            0.9988118811881188
+          ],
+          "class_support": [
+            2564,
+            5956,
+            1,
+            56677,
+            7664,
+            26019,
+            2768,
+            5050
+          ],
+          "nominal_coverage": 0.9,
+          "supported_classes": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "threshold": 0.7470038224546764
+        },
+        {
+          "accepted": 97540,
+          "accepted_balanced_flip_risk": 0.721969840671376,
+          "accepted_flip_risk": 0.2589809309001435,
+          "achieved_coverage": 0.8811440237766155,
+          "class_flip_risk": [
+            0.986827661909989,
+            0.9539052496798975,
+            1.0,
+            0.020058681330848295,
+            0.9680103285038014,
+            0.19697953178415337,
+            0.9280074314909429,
+            1.0
+          ],
+          "class_support": [
+            1822,
+            4686,
+            1,
+            54191,
+            6971,
+            23109,
+            2153,
+            4607
+          ],
+          "nominal_coverage": 0.8,
+          "supported_classes": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "threshold": 0.6431664462306872
+        },
+        {
+          "accepted": 88359,
+          "accepted_balanced_flip_risk": 0.7242600481566452,
+          "accepted_flip_risk": 0.23376226530404373,
+          "achieved_coverage": 0.7982059134393886,
+          "class_flip_risk": [
+            1.0,
+            0.9765933446136492,
+            null,
+            0.013735887451816777,
+            0.9914847499612943,
+            0.15443364411823052,
+            0.933572710951526,
+            1.0
+          ],
+          "class_support": [
+            1284,
+            3546,
+            0,
+            51107,
+            6459,
+            20164,
+            1671,
+            4128
+          ],
+          "nominal_coverage": 0.7,
+          "supported_classes": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "threshold": 0.5530408322756628
+        },
+        {
+          "accepted": 78343,
+          "accepted_balanced_flip_risk": 0.7246085214079436,
+          "accepted_flip_risk": 0.20975709380544527,
+          "achieved_coverage": 0.7077246899193294,
+          "class_flip_risk": [
+            1.0,
+            0.9856985698569857,
+            null,
+            0.008292402883204694,
+            0.9982980332829047,
+            0.12938067333103528,
+            0.950589970501475,
+            1.0
+          ],
+          "class_support": [
+            973,
+            2727,
+            0,
+            47031,
+            5288,
+            17406,
+            1356,
+            3562
+          ],
+          "nominal_coverage": 0.6,
+          "supported_classes": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "threshold": 0.4780041169096966
+        },
+        {
+          "accepted": 70234,
+          "accepted_balanced_flip_risk": 0.7257966721904381,
+          "accepted_flip_risk": 0.19573141213657202,
+          "achieved_coverage": 0.6344706721952718,
+          "class_flip_risk": [
+            1.0,
+            0.9854368932038835,
+            null,
+            0.0068488380191767464,
+            0.9995457642516467,
+            0.11714452139020128,
+            0.9716006884681584,
+            1.0
+          ],
+          "class_support": [
+            843,
+            2266,
+            0,
+            43073,
+            4403,
+            15451,
+            1162,
+            3036
+          ],
+          "nominal_coverage": 0.5,
+          "supported_classes": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "threshold": 0.43497956232944723
+        },
+        {
+          "accepted": 51415,
+          "accepted_balanced_flip_risk": 0.7234278388690759,
+          "accepted_flip_risk": 0.1661577360692405,
+          "achieved_coverage": 0.46446606502434573,
+          "class_flip_risk": [
+            1.0,
+            0.986090775988287,
+            null,
+            0.0055354547422457245,
+            1.0,
+            0.07884532529082292,
+            0.9935233160621761,
+            1.0
+          ],
+          "class_support": [
+            591,
+            1366,
+            0,
+            32337,
+            2874,
+            11605,
+            772,
+            1870
+          ],
+          "nominal_coverage": 0.3,
+          "supported_classes": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "threshold": 0.349550271481634
+        }
+      ],
+      "fixed_coverage_curve": [
+        {
+          "accepted": 110697,
+          "balanced_preservation": 0.2886498669301319,
+          "class_preservation": [
+            0.027230383375134393,
+            0.08535447761194026,
+            0.0,
+            0.9446315644762167,
+            0.06059868581163297,
+            0.7477029954433405,
+            0.1297457906899967,
+            0.025285171102661597
+          ],
+          "class_support": [
+            2791,
+            6432,
+            1,
+            58192,
+            8218,
+            26774,
+            3029,
+            5260
+          ],
+          "coverage": 1.0,
+          "fisher_error_median": 2.0169906838855507,
+          "fisher_raw_l2_median": 2.6496250693009498,
+          "flip_risk": 0.3076777148432207,
+          "method": "Gate4E_Requirement_U",
+          "physical_pose_error_median": 0.9443806409835815,
+          "preservation": 0.6923222851567793,
+          "probability_tv_median": 0.19608481228351593,
+          "user": "0625995630"
+        },
+        {
+          "accepted": 99628,
+          "balanced_preservation": 0.28100735994621384,
+          "class_preservation": [
+            0.012428793371310198,
+            0.05027478119275397,
+            0.0,
+            0.9772656777418943,
+            0.05193539404065717,
+            0.7930149379339364,
+            0.0821319353429445,
+            0.0
+          ],
+          "class_support": [
+            1931,
+            4913,
+            1,
+            54807,
+            7182,
+            23765,
+            2289,
+            4740
+          ],
+          "coverage": 0.9,
+          "fisher_error_median": 1.9825262595140216,
+          "fisher_raw_l2_median": 2.595082100986742,
+          "flip_risk": 0.2648753362508532,
+          "method": "Gate4E_Requirement_U",
+          "physical_pose_error_median": 0.9245525896549225,
+          "preservation": 0.7351246637491469,
+          "probability_tv_median": 0.17164231836795807,
+          "user": "0625995630"
+        },
+        {
+          "accepted": 88558,
+          "balanced_preservation": 0.27573163173409626,
+          "class_preservation": [
+            0.0,
+            0.02329497614369913,
+            null,
+            0.9861078546307152,
+            0.008811253671355712,
+            0.8450815620365794,
+            0.06682577565632464,
+            0.0
+          ],
+          "class_support": [
+            1309,
+            3563,
+            0,
+            51180,
+            6469,
+            20230,
+            1676,
+            4131
+          ],
+          "coverage": 0.8,
+          "fisher_error_median": 1.9340579994365616,
+          "fisher_raw_l2_median": 2.5224458390805724,
+          "flip_risk": 0.23420808961358658,
+          "method": "Gate4E_Requirement_U",
+          "physical_pose_error_median": 0.8963598310947418,
+          "preservation": 0.7657919103864135,
+          "probability_tv_median": 0.15781818330287933,
+          "user": "0625995630"
+        },
+        {
+          "accepted": 77488,
+          "balanced_preservation": 0.27523481359466256,
+          "class_preservation": [
+            0.0,
+            0.014552238805970119,
+            null,
+            0.9918695698809397,
+            0.0013492675404780385,
+            0.8717874171415281,
+            0.047085201793722,
+            0.0
+          ],
+          "class_support": [
+            963,
+            2680,
+            0,
+            46615,
+            5188,
+            17198,
+            1338,
+            3506
+          ],
+          "coverage": 0.7,
+          "fisher_error_median": 1.9212519478179975,
+          "fisher_raw_l2_median": 2.4982364320186425,
+          "flip_risk": 0.20841936816023127,
+          "method": "Gate4E_Requirement_U",
+          "physical_pose_error_median": 0.8842365145683289,
+          "preservation": 0.7915806318397687,
+          "probability_tv_median": 0.14843058586120605,
+          "user": "0625995630"
+        },
+        {
+          "accepted": 66419,
+          "balanced_preservation": 0.2736405629649487,
+          "class_preservation": [
+            0.0,
+            0.011175898931001016,
+            null,
+            0.9935545069805906,
+            0.0004973887092762919,
+            0.8908117016893284,
+            0.019444444444444486,
+            0.0
+          ],
+          "class_support": [
+            787,
+            2058,
+            0,
+            41114,
+            4021,
+            14562,
+            1080,
+            2797
+          ],
+          "coverage": 0.6,
+          "fisher_error_median": 1.9164727147740064,
+          "fisher_raw_l2_median": 2.488621591269635,
+          "flip_risk": 0.18898206838404674,
+          "method": "Gate4E_Requirement_U",
+          "physical_pose_error_median": 0.8766734004020691,
+          "preservation": 0.8110179316159533,
+          "probability_tv_median": 0.13904041051864624,
+          "user": "0625995630"
+        },
+        {
+          "accepted": 55349,
+          "balanced_preservation": 0.27587695209604746,
+          "class_preservation": [
+            0.0,
+            0.012690355329949221,
+            null,
+            0.9944016391077252,
+            0.0,
+            0.9099951479864143,
+            0.014051522248243575,
+            0.0
+          ],
+          "class_support": [
+            645,
+            1576,
+            0,
+            34653,
+            3152,
+            12366,
+            854,
+            2103
+          ],
+          "coverage": 0.5,
+          "fisher_error_median": 1.9183114524177023,
+          "fisher_raw_l2_median": 2.489676970008767,
+          "flip_risk": 0.1735352038880558,
+          "method": "Gate4E_Requirement_U",
+          "physical_pose_error_median": 0.8777227997779846,
+          "preservation": 0.8264647961119442,
+          "probability_tv_median": 0.1283697485923767,
+          "user": "0625995630"
+        },
+        {
+          "accepted": 33210,
+          "balanced_preservation": 0.28214732777577245,
+          "class_preservation": [
+            0.0,
+            0.020771513353115778,
+            null,
+            0.994592468783797,
+            0.0,
+            0.9596673122934943,
+            0.0,
+            0.0
+          ],
+          "class_support": [
+            424,
+            674,
+            0,
+            20342,
+            1626,
+            8777,
+            438,
+            929
+          ],
+          "coverage": 0.3,
+          "fisher_error_median": 1.9114896020916619,
+          "fisher_raw_l2_median": 2.471224298930564,
+          "flip_risk": 0.1367359229147847,
+          "method": "Gate4E_Requirement_U",
+          "physical_pose_error_median": 0.8815139532089233,
+          "preservation": 0.8632640770852154,
+          "probability_tv_median": 0.10106959193944931,
+          "user": "0625995630"
+        }
+      ],
+      "ordinary_risk_reduction_100_to_30": 0.170941791928436
+    },
+    "Gate4F_Requirement_B": {
+      "auprc": 0.4986854087944851,
+      "auroc": 0.6437853944064247,
+      "balanced_risk_reduction_100_to_30": 0.16604180286766157,
+      "deployment_threshold_rows": [
+        {
+          "accepted": 110696,
+          "accepted_balanced_flip_risk": 0.7113482370199845,
+          "accepted_flip_risk": 0.30767146057671463,
+          "achieved_coverage": 0.9999909663315175,
+          "class_flip_risk": [
+            0.9727696166248656,
+            0.9146322500388742,
+            1.0,
+            0.05536843552378334,
+            0.939401314188367,
+            0.25229700455665943,
+            0.8702542093100033,
+            0.9747148288973384
+          ],
+          "class_support": [
+            2791,
+            6431,
+            1,
+            58192,
+            8218,
+            26774,
+            3029,
+            5260
+          ],
+          "nominal_coverage": 1.0,
+          "supported_classes": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "threshold": 0.979975455359356
+        },
+        {
+          "accepted": 101769,
+          "accepted_balanced_flip_risk": 0.6914234575262473,
+          "accepted_flip_risk": 0.275810905088976,
+          "achieved_coverage": 0.919347407788829,
+          "class_flip_risk": [
+            0.9651695692025665,
+            0.8913946587537092,
+            1.0,
+            0.058278433359878375,
+            0.9351478057038677,
+            0.1885614689311337,
+            0.8302375809935205,
+            0.9711746857390551
+          ],
+          "class_support": [
+            2182,
+            5055,
+            1,
+            55252,
+            7679,
+            24671,
+            2315,
+            4614
+          ],
+          "nominal_coverage": 0.9,
+          "supported_classes": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "threshold": 0.8902376111249561
+        },
+        {
+          "accepted": 91896,
+          "accepted_balanced_flip_risk": 0.6730268516773703,
+          "accepted_flip_risk": 0.2551253591015931,
+          "achieved_coverage": 0.8301579988617578,
+          "class_flip_risk": [
+            0.9602510460251046,
+            0.852498656636217,
+            1.0,
+            0.0630680361965972,
+            0.928989020390703,
+            0.14684014869888476,
+            0.7925026399155227,
+            0.9670384138785626
+          ],
+          "class_support": [
+            1912,
+            3722,
+            1,
+            50723,
+            7013,
+            22596,
+            1894,
+            4035
+          ],
+          "nominal_coverage": 0.8,
+          "supported_classes": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "threshold": 0.8424356817354626
+        },
+        {
+          "accepted": 83218,
+          "accepted_balanced_flip_risk": 0.6581360865350989,
+          "accepted_flip_risk": 0.24278401307409456,
+          "achieved_coverage": 0.7517638237711952,
+          "class_flip_risk": [
+            0.956989247311828,
+            0.8205295848316443,
+            null,
+            0.06929982827206921,
+            0.918918918918919,
+            0.12118628008338071,
+            0.7578558225508318,
+            0.9621729237770194
+          ],
+          "class_support": [
+            1767,
+            3059,
+            0,
+            46003,
+            6142,
+            21108,
+            1623,
+            3516
+          ],
+          "nominal_coverage": 0.7,
+          "supported_classes": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "threshold": 0.807365073619989
+        },
+        {
+          "accepted": 65792,
+          "accepted_balanced_flip_risk": 0.6247474671346034,
+          "accepted_flip_risk": 0.21929717898832685,
+          "achieved_coverage": 0.5943431167962998,
+          "class_flip_risk": [
+            0.94798083504449,
+            0.7370689655172413,
+            null,
+            0.08755526767861668,
+            0.8790381345640029,
+            0.08724973656480506,
+            0.6863527533918595,
+            0.947986577181208
+          ],
+          "class_support": [
+            1461,
+            2088,
+            0,
+            35509,
+            4117,
+            18980,
+            1253,
+            2384
+          ],
+          "nominal_coverage": 0.6,
+          "supported_classes": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "threshold": 0.7451514089286679
+        },
+        {
+          "accepted": 52194,
+          "accepted_balanced_flip_risk": 0.5985158545571811,
+          "accepted_flip_risk": 0.21238073341763422,
+          "achieved_coverage": 0.47150329277216185,
+          "class_flip_risk": [
+            0.941358024691358,
+            0.6826589595375723,
+            null,
+            0.11286630895651195,
+            0.8253244475622589,
+            0.07024550687184307,
+            0.6337371854613234,
+            0.9234205488194002
+          ],
+          "class_support": [
+            1296,
+            1730,
+            0,
+            26651,
+            2851,
+            17026,
+            1073,
+            1567
+          ],
+          "nominal_coverage": 0.5,
+          "supported_classes": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "threshold": 0.6917263425707736
+        },
+        {
+          "accepted": 28408,
+          "accepted_balanced_flip_risk": 0.5251398906022737,
+          "accepted_flip_risk": 0.22578147000844834,
+          "achieved_coverage": 0.25662845424898595,
+          "class_flip_risk": [
+            0.9274116523400191,
+            0.5543831168831169,
+            null,
+            0.22051138484509145,
+            0.6025744167337088,
+            0.06064626912269747,
+            0.4594222833562586,
+            0.8510301109350238
+          ],
+          "class_support": [
+            1047,
+            1232,
+            0,
+            10716,
+            1243,
+            12812,
+            727,
+            631
+          ],
+          "nominal_coverage": 0.3,
+          "supported_classes": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "threshold": 0.565140854310843
+        }
+      ],
+      "fixed_coverage_curve": [
+        {
+          "accepted": 110697,
+          "balanced_preservation": 0.2886498669301319,
+          "class_preservation": [
+            0.027230383375134393,
+            0.08535447761194026,
+            0.0,
+            0.9446315644762167,
+            0.06059868581163297,
+            0.7477029954433405,
+            0.1297457906899967,
+            0.025285171102661597
+          ],
+          "class_support": [
+            2791,
+            6432,
+            1,
+            58192,
+            8218,
+            26774,
+            3029,
+            5260
+          ],
+          "coverage": 1.0,
+          "fisher_error_median": 2.0169906838855507,
+          "fisher_raw_l2_median": 2.6496250693009498,
+          "flip_risk": 0.3076777148432207,
+          "method": "Gate4F_Requirement_B",
+          "physical_pose_error_median": 0.9443806409835815,
+          "preservation": 0.6923222851567793,
+          "probability_tv_median": 0.19608481228351593,
+          "user": "0625995630"
+        },
+        {
+          "accepted": 99628,
+          "balanced_preservation": 0.3131942881747233,
+          "class_preservation": [
+            0.03646833013435702,
+            0.11633820724729815,
+            0.0,
+            0.9409806518060767,
+            0.06597774244833066,
+            0.8232064723850409,
+            0.17978042086001833,
+            0.02960819234194123
+          ],
+          "class_support": [
+            2084,
+            4719,
+            1,
+            54372,
+            7548,
+            24226,
+            2186,
+            4492
+          ],
+          "coverage": 0.9,
+          "fisher_error_median": 1.9761496279034967,
+          "fisher_raw_l2_median": 2.5827438672947363,
+          "flip_risk": 0.2697334082787971,
+          "method": "Gate4F_Requirement_B",
+          "physical_pose_error_median": 0.9221962988376617,
+          "preservation": 0.7302665917212029,
+          "probability_tv_median": 0.1754206344485283,
+          "user": "0625995630"
+        },
+        {
+          "accepted": 88558,
+          "balanced_preservation": 0.33281819505446125,
+          "class_preservation": [
+            0.041192411924119265,
+            0.15717148582880047,
+            null,
+            0.9347799461092512,
+            0.07469626518674066,
+            0.8658747496814128,
+            0.22115925717501406,
+            0.03485324947589097
+          ],
+          "class_support": [
+            1845,
+            3493,
+            0,
+            48988,
+            6667,
+            21972,
+            1777,
+            3816
+          ],
+          "coverage": 0.8,
+          "fisher_error_median": 1.9582388884981958,
+          "fisher_raw_l2_median": 2.5565526691492355,
+          "flip_risk": 0.24945233632195848,
+          "method": "Gate4F_Requirement_B",
+          "physical_pose_error_median": 0.9122044742107391,
+          "preservation": 0.7505476636780415,
+          "probability_tv_median": 0.1638404205441475,
+          "user": "0625995630"
+        },
+        {
+          "accepted": 77488,
+          "balanced_preservation": 0.35156001734210457,
+          "class_preservation": [
+            0.045508982035928125,
+            0.2046979865771812,
+            null,
+            0.9253682102038412,
+            0.08907172241101768,
+            0.890106128038343,
+            0.26429051782111634,
+            0.04187657430730474
+          ],
+          "class_support": [
+            1670,
+            2682,
+            0,
+            42435,
+            5591,
+            20447,
+            1487,
+            3176
+          ],
+          "coverage": 0.7,
+          "fisher_error_median": 1.963482155618675,
+          "fisher_raw_l2_median": 2.5565526691492355,
+          "flip_risk": 0.23708187074127607,
+          "method": "Gate4F_Requirement_B",
+          "physical_pose_error_median": 0.910725861787796,
+          "preservation": 0.7629181292587239,
+          "probability_tv_median": 0.15530440211296082,
+          "user": "0625995630"
+        },
+        {
+          "accepted": 66419,
+          "balanced_preservation": 0.3737189294128376,
+          "class_preservation": [
+            0.051525423728813524,
+            0.2588401697312589,
+            null,
+            0.9132604695254558,
+            0.11868446139180167,
+            0.9119496855345912,
+            0.31042654028436023,
+            0.051345755693581796
+          ],
+          "class_support": [
+            1475,
+            2121,
+            0,
+            35866,
+            4196,
+            19080,
+            1266,
+            2415
+          ],
+          "coverage": 0.6,
+          "fisher_error_median": 1.9886536087975775,
+          "fisher_raw_l2_median": 2.580395448321089,
+          "flip_risk": 0.22017796112558152,
+          "method": "Gate4F_Requirement_B",
+          "physical_pose_error_median": 0.9175975918769836,
+          "preservation": 0.7798220388744185,
+          "probability_tv_median": 0.14447036385536194,
+          "user": "0625995630"
+        },
+        {
+          "accepted": 55349,
+          "balanced_preservation": 0.3947796032250061,
+          "class_preservation": [
+            0.057794676806083634,
+            0.30264608599779497,
+            null,
+            0.8937374158161494,
+            0.1611650485436893,
+            0.9261253006528462,
+            0.3534172661870504,
+            0.06857142857142862
+          ],
+          "class_support": [
+            1315,
+            1814,
+            0,
+            28806,
+            3090,
+            17462,
+            1112,
+            1750
+          ],
+          "coverage": 0.5,
+          "fisher_error_median": 2.032753749475754,
+          "fisher_raw_l2_median": 2.627757718396278,
+          "flip_risk": 0.21312038157870963,
+          "method": "Gate4F_Requirement_B",
+          "physical_pose_error_median": 0.9351433515548706,
+          "preservation": 0.7868796184212904,
+          "probability_tv_median": 0.1354770064353943,
+          "user": "0625995630"
+        },
+        {
+          "accepted": 33210,
+          "balanced_preservation": 0.45469166979779335,
+          "class_preservation": [
+            0.06998158379373853,
+            0.4045689019896831,
+            null,
+            0.8140841013824884,
+            0.33288590604026846,
+            0.9420206245042186,
+            0.48819875776397514,
+            0.13110181311018132
+          ],
+          "class_support": [
+            1086,
+            1357,
+            0,
+            13888,
+            1490,
+            13867,
+            805,
+            717
+          ],
+          "coverage": 0.3,
+          "fisher_error_median": 2.1142709871406864,
+          "fisher_raw_l2_median": 2.7151501997759926,
+          "flip_risk": 0.21779584462511292,
+          "method": "Gate4F_Requirement_B",
+          "physical_pose_error_median": 0.9831385910511017,
+          "preservation": 0.7822041553748871,
+          "probability_tv_median": 0.11385165527462959,
+          "user": "0625995630"
+        }
+      ],
+      "ordinary_risk_reduction_100_to_30": 0.08988187021810778
+    }
+  },
+  "paired_blocks": 110697,
+  "schema": "common-pose-final-user-v1",
+  "user_id": "0625995630"
+}

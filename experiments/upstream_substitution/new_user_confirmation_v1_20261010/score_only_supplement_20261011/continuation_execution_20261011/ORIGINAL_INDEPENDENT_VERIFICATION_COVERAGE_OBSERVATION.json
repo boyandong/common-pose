@@ -1,0 +1,24 @@
+{
+  "coverage_counts": {
+    "bootstrap_summaries": 240,
+    "class_rows": 62720,
+    "curve_rows": 7840,
+    "effect_rows": 19200,
+    "exact_rescored_vectors": 1120,
+    "primary_rows": 160,
+    "raw_base_tta_hash_and_label_lineage_users": 80,
+    "seed_rows": 22400,
+    "users": 80
+  },
+  "does_not_independently_rerun_neural_inference": true,
+  "effect_values_read_by_this_check": false,
+  "status": "PASS_ORIGINAL_INDEPENDENT_COVERAGE_CONTRACT",
+  "terminal": {
+    "exit_code": 0,
+    "finished_epoch": 1791671454.819563,
+    "output_log_sha256": "5509fdcb43e8e30a3b7fe15fe2b01f089040c914001908fb1346ca033750c7ca",
+    "stage": "verification",
+    "started_epoch": 1791669134.4586701
+  },
+  "verification_sha256": "3321ae832ddb14ccd3b7849e52e71c27a6da47d740caccea65dfe9313ac115fb"
+}

@@ -1,0 +1,16 @@
+{
+  "acquisition_execution_manifest_sha256": "074c64a961f5193736a035909b66a006d33b8a29031cd72ff6abcc8c39a17516",
+  "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+  "files": {
+    "analyze_new_users.py": "5dc160d948d470cd9cfc205dc4c4a91de8a256e8076b0126243f4e1eaebf73cc",
+    "reconstruct_users.py": "7e49417f253f660fe7a207d057f0a1c3cab08a5ad1a31340d03d70217de049ee",
+    "run_stage_job.py": "f16b0c27e1532aa664cf0eceba3a09a75458dcec4caf68781eb8f615b717c01e",
+    "seal_analysis_code.py": "4ac27f6cd2b2d2b9d4469129cb7d3482afa35383ea79698572a0bf6d0006ca60",
+    "validate_execution_on_old_cache.py": "cef80046b6fe95f5ca903cd3cda3f7c8c38fab19584ae0858b039fbc0033c5c1",
+    "verify_new_results.py": "395c0b4d047c5dd8e596cd8b41c7c4800dccef68499eaf5031429383b9fee336"
+  },
+  "no_new_user_features_or_effects_seen": true,
+  "old_cache_validation_sha256": "c773c0e01f3617ff6172aa824454b52bf6ad1c27e64efcddedf51e559b32307f",
+  "protocol_sha256": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a",
+  "status": "FROZEN_BEFORE_FIRST_NEW_USER_PREDICTION"
+}

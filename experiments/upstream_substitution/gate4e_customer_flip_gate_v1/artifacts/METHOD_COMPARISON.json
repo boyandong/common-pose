@@ -1,0 +1,85 @@
+{
+  "gaussian_diagnostics": [
+    {
+      "absolute_q95": 1.9774834509051449,
+      "fold": 0,
+      "signed_mean": 0.04669663596600175,
+      "signed_skew": 0.1131414985125423,
+      "supported": true
+    },
+    {
+      "absolute_q95": 2.0045386683066346,
+      "fold": 1,
+      "signed_mean": 0.05485399893805296,
+      "signed_skew": 0.11576612417165306,
+      "supported": true
+    },
+    {
+      "absolute_q95": 2.021192166188062,
+      "fold": 2,
+      "signed_mean": 0.06172456537893217,
+      "signed_skew": 0.11599027607003609,
+      "supported": true
+    },
+    {
+      "absolute_q95": 2.022029554071626,
+      "fold": 3,
+      "signed_mean": 0.07385603976008728,
+      "signed_skew": 0.08772792954543708,
+      "supported": true
+    },
+    {
+      "absolute_q95": 1.9958394718156258,
+      "fold": 4,
+      "signed_mean": 0.07371809866192101,
+      "signed_skew": 0.09332304916867078,
+      "supported": true
+    }
+  ],
+  "gaussian_status": "SUPPORTED",
+  "methods": [
+    {
+      "median_user_flip_auc": 0.22543774387480014,
+      "method": "margin",
+      "users_improved_at_30pct": 19
+    },
+    {
+      "median_user_flip_auc": 0.2183075681203307,
+      "method": "entropy",
+      "users_improved_at_30pct": 19
+    },
+    {
+      "median_user_flip_auc": 0.2224928115616034,
+      "method": "boundary_distance",
+      "users_improved_at_30pct": 19
+    },
+    {
+      "median_user_flip_auc": 0.2786739322491684,
+      "method": "tta_dispersion",
+      "users_improved_at_30pct": 12
+    },
+    {
+      "median_user_flip_auc": 0.20248776611311883,
+      "method": "logistic",
+      "users_improved_at_30pct": 19
+    },
+    {
+      "median_user_flip_auc": 0.20103090508736327,
+      "method": "hist_gbdt",
+      "users_improved_at_30pct": 19
+    },
+    {
+      "median_user_flip_auc": 0.24398172352840403,
+      "method": "boundary_safety",
+      "users_improved_at_30pct": 17
+    },
+    {
+      "median_user_flip_auc": 0.21912665401843598,
+      "method": "gaussian_crossing",
+      "users_improved_at_30pct": 19
+    }
+  ],
+  "schema": "gate4e-method-comparison-v1",
+  "selected_method": "hist_gbdt",
+  "selection_rule": "median user Flip-risk AUC 30%-100%, frozen lexicographic ties"
+}

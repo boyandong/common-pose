@@ -1,0 +1,10 @@
+{
+  "actual_visual_review": "Both PNGs viewed: all panel titles, risk/coverage axes, eight-method legend, secondary designation, primary 80/80 pair labels and captions are legible and unclipped. Close full/no_tta/score_only curves reflect the verified data; no curves were removed. Scatter shows all computable users and the diagonal.",
+  "figure_build_manifest_sha256": "c9ea73c6e7df03305f7c8ad0a4b8a4a9ca9725f2ed4a908f219982494393dfa9",
+  "new_endpoints_or_tests": false,
+  "png_files_inspected": {
+    "EIGHT_METHOD_RISK_COVERAGE.png": "2aa912e8a9656a0c005d3f34bfdc84af01696202b091d4932416f9dbc83f24c0",
+    "PRIMARY_USER_PAIRED_RISKS.png": "0cb446e6f04be45aad504013a5a5820791e0872a3ef4c98d1377fea47ebe4a44"
+  },
+  "status": "PASS"
+}

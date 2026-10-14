@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "cache_files_verified": 39,
+  "transfer_hashes_verified": 34,
+  "n_checks": 360,
+  "failed_checks": [],
+  "max_abs_difference": 0.0,
+  "code_sha256": "8e0dda3b8ea00ae9e1dfd3127db4f594e2f1c13353ca8a36beb5c5c5e1ba6582",
+  "models": {
+    "U": {
+      "full": "ca06d630e40fc44687bec5ac12c83d9b20aa7c48fe200d89e48d583f9d09f035",
+      "class_model": "1d08ebfb338919488c2e4e8e5f72a29777a475ccd70d89e4ee12ebb84a56140e"
+    },
+    "B": {
+      "full": "535828304087d511402c8224ea0276d55e58e0a0c1cba0562bafe7d2d1147b66",
+      "class_model": "39f0cb7963cec31c6df647664a91b37bc13a266e37f9a65c8e8ef0f766ef249f"
+    }
+  },
+  "python": "3.10.13",
+  "numpy": "1.26.4",
+  "sklearn": "1.5.2",
+  "threadpools": [
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 8,
+      "prefix": "libgomp",
+      "filepath": "/root/miniconda3/envs/commonpose-supplement/lib/python3.10/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 8,
+      "prefix": "libopenblas",
+      "filepath": "/root/miniconda3/envs/commonpose-supplement/lib/python3.10/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+      "version": "0.3.23.dev",
+      "threading_layer": "pthreads",
+      "architecture": "SapphireRapids"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 8,
+      "prefix": "libopenblas",
+      "filepath": "/root/miniconda3/envs/commonpose-supplement/lib/python3.10/site-packages/scipy.libs/libopenblasp-r0-01191904.3.27.so",
+      "version": "0.3.27",
+      "threading_layer": "pthreads",
+      "architecture": "SapphireRapids"
+    }
+  ],
+  "thread_environment": {
+    "OMP_NUM_THREADS": "8",
+    "OPENBLAS_NUM_THREADS": "8",
+    "MKL_NUM_THREADS": "8"
+  },
+  "interpretation": "risk admission only; original per-block score vectors unavailable; no fitting or new seed outcomes"
+}

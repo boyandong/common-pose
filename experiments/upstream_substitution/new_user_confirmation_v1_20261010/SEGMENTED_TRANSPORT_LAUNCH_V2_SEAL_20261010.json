@@ -1,0 +1,24 @@
+{
+  "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+  "files": {
+    "TRANSPORT_SEGMENTED_AMENDMENT_20261010.md": "390c979ecb13867ddd71a217df3f74f730ca83725c9fba57b20c43dd22e0ea9f",
+    "acquire_sources_segmented_20261010.py": "520eab04ff901f44f4ff636d15aa9a03bccff2291b159c46ee4a48d7aa74d5c2",
+    "launch_successor_execution_20261010.py": "707cef2980e239d3654bce238f281a2ac9d4c683cf740a8794fce7cf7451e7ab",
+    "launch_successor_execution_v2_20261010.py": "bb49dff3d49e8457c8b8b53c89a8c836173547c957b11e510ce0dbca531b12be",
+    "successor_preflight_transport_20261010.py": "7d1dd2e670a5c741b271672bd1de56f546a995b991eb54043e0f76012916de35",
+    "test_segmented_transport_20261010.py": "5e70c184791ec25cd02c1e1cfa1bdbfbeb4a7ba9a85c74b4fd41ca4ad6d0a477"
+  },
+  "full_segment_smoke_sha256": "44c896035947be4209c4379cbbddf38ec5a115468c0852ec52959c109ca38f66",
+  "known_prelaunch_failure": {
+    "child_dispatched": false,
+    "previous_launcher": "launch_successor_execution_20261010.py",
+    "reason": "missing Get-Process query emitted nonzero shell exit; explicit typed missing-process handling verified",
+    "transport_or_scientific_runner_changed": false
+  },
+  "preserved_acquisition_execution_manifest_sha256": "074c64a961f5193736a035909b66a006d33b8a29031cd72ff6abcc8c39a17516",
+  "preserved_original_transport_seal_sha256": "a55ab40ef03eba3b4c487cd139b38094d0b0f910e360b84be83398c69580d13d",
+  "protocol_sha256": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a",
+  "scientific_protocol_or_members_changed": false,
+  "status": "SEALED_LAUNCHER_PROCESS_ABSENCE_FIX_BEFORE_FIRST_DOWNLOAD",
+  "tests": "4 transport integrity/recovery controls PASS"
+}

@@ -1,0 +1,734 @@
+{
+  "canonical": {
+    "B": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "U": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    }
+  },
+  "common_sets_changed": false,
+  "comparison": "score_only minus full; positive favors full",
+  "conditional_seeds": {
+    "B|20261009": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261010": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261011": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261012": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261013": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261014": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261015": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261016": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261017": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261018": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261019": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261020": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261021": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261022": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261023": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261024": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261025": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261026": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261027": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "B|20261028": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "U|20261009": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261010": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261011": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261012": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261013": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261014": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261015": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261016": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261017": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261018": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261019": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261020": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261021": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261022": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261023": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261024": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261025": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261026": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261027": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    },
+    "U|20261028": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    }
+  },
+  "enrolled_users": 80,
+  "new_confirmatory_primary": false,
+  "original_primary_changed": false,
+  "source_seals": {
+    "code": "0b5e40a30a4fbaba584507037bbf58cd29356f79ef1ce87c78656f7c8cbc821e",
+    "cohort": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+    "models": "d8bed63d657d197327fd17bbb09068f16331b26c0db02579e74c4fb6c52a4601",
+    "original_common_sets": "1e1c76a662a422a6daf13677a41a6eb3155f69a75b0d4276a9e3a1a8b79e75fc",
+    "supplement_spec": "64600843bc41532fc18d60fcc567fd58b309bc6fc8ac934cdc8cf8aa758bb41d",
+    "support": "b7c66d425da6ecec7f5ceeeaebe638e74a2efa6d480955fc19ff3a422cab9c56"
+  },
+  "status": "ANALYZED_PENDING_INDEPENDENT_VERIFICATION"
+}

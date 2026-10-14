@@ -1,0 +1,137 @@
+{
+  "artifact": "RECONCILIATION_DECISION.json",
+  "phase": "PRE-SUBSTITUTION EVIDENCE RECONCILIATION",
+  "frozen_representation": "TRUSTED_DB9_POSE_v1",
+  "frozen_subset_sha256": "e51dde6e63941fd080c84f3896a98cf50fba9e17d5f9cebe909253d5465782d1",
+  "go_no_go": "CONDITIONAL_GO",
+  "go_no_go_basis": {
+    "GO_TO_GATE2_requirements": {
+      "all_8_dofs_have_established_semantic_or_anatomical_mapping": true,
+      "units_sign_order_closed": true,
+      "no_unresolved_handedness_issue_can_change_physical_meaning": true,
+      "remaining_calibration_uncertainty_characterisable_without_outcome_driven_fitting": false
+    },
+    "why_not_GO": "All eight DOFs are semantically and anatomically matched, and units/sign/zero-semantics/order are closed; DB9's own ruler is fully recovered from the bytes. But no CROSS-SOURCE calibration record exists on either side, and the only available cross-source statistic (per-dimension median gap, 10.57-31.23 deg) is confounded by task composition: the audit measured the emg2pose-side session spread at 3.74x the cross-dataset median gap and stated that no per-dimension cross-dataset claim in the 20-30 deg range is resolvable with this corpus at all. One minimal, pre-declared, outcome-free check can bound it.",
+    "why_not_NO_GO": "No required DOF lacks a defensible physical correspondence. All eight have ESTABLISHED anatomical correspondence, unit compatibility, sign compatibility and zero SEMANTICS. No arbitrary fitted alignment is required to state the mapping; the open question is measurement equivalence, not identity."
+  },
+  "closed_facts": [
+    "Anatomical correspondence for all 8 frozen DOFs (criteria A and B PASS x16).",
+    "Source indexing: DB9 order_of_angles indices 2, 3, 4, 6, 7, 9, 13, 15 and the emg2pose constants.py indices 2, 3, 5, 6, 9, 13, 17, 18.",
+    "Units: DB9 degrees, emg2pose radians, explicit pi/180, reproduced bit-exactly across 77 files / 77,354,864 samples (max |diff| 8.88e-16 rad).",
+    "Sign: positive = flexion on both sides for all 8 (DB9 Table 6 documented; emg2pose 15/15 FE joints FK-verified). Zero sign transforms applied.",
+    "Zero SEMANTICS: both sides place zero at the extended, fingers-together hand; DB9's documented anchor is numerically attained (0.854 deg mean |angle|).",
+    "Angle convention: both are joint rotation magnitudes about fixed joint-specific axes, not derived interior angles (PIP round-trip 0.5-0.9 deg).",
+    "Range/wrapping: neither side wraps (criterion H PASS x16).",
+    "DB9 physical identity of all 8 channels: 77/77 stable, 0 of 8 KEEP channels changed.",
+    "DB9-internal anchor behaviour: for the six finger channels a positive change from the extended anchor to the flexed anchor (+31.72 to +123.79 deg, DIMENSION_CONFIDENCE_CLASSIFICATION.json); for the two thumb channels (MCP1, IP1) no extended->flexed anchor CHANGE is recorded in the artifacts (null), so their directional evidence rests on the A_FIST anchor at 77 participants (agreement 0.9221 and 1.0000 respectively).",
+    "The 8 DOFs are disjoint from every DOF the coordinate audit found directionally defective (middle/ring/pinky DIP and middle PIP).",
+    "DB9 WITHIN-SOURCE calibration provenance: the released angle of every one of the 8 channels is an exact affine map of a single raw glove column (FORENSIC_CORE.json .A_transform_forms, max residual 3.8e-12 to 1.6e-11 deg), and the recovered slope reproduces the published calibration gain to within 0.61% on every channel. The DB9 ruler is therefore fully known and auditable."
+  ],
+  "partially_closed": [
+    "Sign compatibility of MCP1: 77-participant agreement 0.9221 (opposed 0.0779) rather than 1.0000. DB1 1.000, DB2 0.925, DB5 0.700 - DB5 alone rates MCP1 INCONCLUSIVE. The frozen rule pools all 77, so the KEEP is correct under the frozen rule; the per-source detail is a limitation, not a contradiction.",
+    "Numerical interchangeability: 4 of 8 are INTERCHANGEABLE_WITH_KNOWN_CONVENTION (IP1, PIP2, MCP4_f, PIP5), 4 of 8 are SEMANTICALLY_MATCHED_BUT_CALIBRATION_UNCERTAIN (MCP1, MCP2_f, MCP3_f, MCP5_f). None is DIRECTLY_INTERCHANGEABLE.",
+    "Source-database independence: 5 of 8 show a DB2-DB1 subject-level CI excluding zero (MCP2_f, PIP2, MCP3_f, MCP4_f, MCP5_f).",
+    "Numerical zero interchangeability: NOT_ESTABLISHED for all 8 (the emg2pose side is 0 by construction, not a measurement).",
+    "Handedness: criterion I UNCERTAIN x16; contained, not closed.",
+    "emg2pose official-limit adherence: 0.05%-20.97% of mini-corpus samples lie outside the official UmeTrack limits per DOF, and the frozen contract forbids clamping."
+  ],
+  "superseded_evidence": [
+    {
+      "old_claim": "docs/research_status.md section E5: the coordinate audit's per-source-database reference means (DB1 18.0 / DB2 5.9 / DB5 21.3 degrees) were computed on a repetition-grouped corpus that does not match the frozen one.",
+      "classification": "INVALIDATED (by reconciliation, not by re-running)",
+      "why": "The coordinate audit was run on the frozen corpus, not the old one. Its frozen plan pins data/db9_posture16/representative_postures_77.npz (sha256 4fba093dff0ef82925176a77358b934ebcb362bd35b262d21d2ec7611f5e8b9f); its reproducibility section reports 77 raw .mat files / 77,354,864 samples with max |diff| 8.88e-16 rad against the frozen adapter; its bug log records that db9_pick_file_for_slot keyed on the filename tag _E2_ was FIXED to identify the protocol file from the data (the same defect that separated 37 from 77 participants); and the non-zero values it reports are exactly the values in SOURCE_DEFINITION_AUDIT.json and DB9_SOURCE_CALIBRATION_AUDIT.json.",
+      "what_replaces_it": "The values 18.001 / 5.911 / 21.268 deg ARE valid evidence and are used as such in this reconciliation. The genuinely superseded 179.7 deg figure is a different statistic (grand mean offset) from a different branch, correctly reinterpreted by the coordinate audit section 20.",
+      "action": "REPORTED ONLY. No authoritative document was edited. See EVIDENCE_RECONCILIATION.md section 8."
+    },
+    {
+      "old_claim": "POSE_COORDINATE_AUDIT_REPORT.md section 18 cell for thumb_ip_flexion: 'NOT YET SAFE (range disagreement 31 deg)', with empirical_range_compatibility = LOW.",
+      "classification": "UNRESOLVED (audit-internal figure, not reproducible here)",
+      "why": "31.2328 is stored in DIMENSION_CONFIDENCE_CLASSIFICATION.json and CANONICAL16_EQUIVALENCE_MATRIX.csv as median_difference_deg - a median LOCATION gap, not a range/span gap. THUMB_IP_FE official limits are -14.81 to +62.30 deg and the DB9 median is +6.89 deg; nothing preserved in common-pose yields a 31 deg RANGE disagreement. The construction rule for empirical_range_compatibility is not present in this repository.",
+      "what_replaces_it": "Nothing yet. The verdict direction is conservative (a caution, not a clearance), so no status here changes. Recorded so the 31 deg is not quoted as a range fact.",
+      "action": "REPORTED ONLY. See EVIDENCE_RECONCILIATION.md section 10."
+    },
+    {
+      "old_claim": "TRUSTED_DB9_POSE_v1.json .exclusion_list[C MC5] carries case = CASE_B_SENSOR_OR_FIT_LIMITATION.",
+      "classification": "SUPERSEDED",
+      "why": "The final case is CASE_A_RELEASED_REPRESENTATION (docs/research_status.md section A3; docs/db9_trusted_subset.md section 4.3). The artifact is frozen and preserved unmodified.",
+      "what_replaces_it": "docs/db9_trusted_subset.md section 4.3 - released CMC5 = exact affine function of the same raw column as WRIST_F.",
+      "action": "Recorded. Not relevant to any of the 8 trusted DOFs (CMC5 is DROP)."
+    },
+    {
+      "old_claim": "TRUSTED_DB9_POSE_v1.json records n_subjects: 37 throughout.",
+      "classification": "SUPERSEDED",
+      "why": "Coverage is 77 of 77 participants; the 37 was a loader selection artifact.",
+      "what_replaces_it": "audits/db9/channel_forensic/FINAL_VALIDATION.md (sha256 4fa700dc26d0d50f243c72372b2c1a67ee9749b4964757e529b8212839fd2b81).",
+      "action": "Recorded. 0 of 8 KEEP channels changed at 77 participants."
+    },
+    {
+      "old_claim": "DB9_EMG2POSE_ZERO_COMPATIBILITY.json section thumb_cmc_ab_adduction: 'emg2pose_positive_is_abduction: false', confidence MEDIUM.",
+      "classification": "SUPERSEDED",
+      "why": "The probe used only +/- 0.3 rad.",
+      "what_replaces_it": "The full-range FK sweep over the official limit range [-0.6118, +0.6118] rad (DB9_CANONICAL16_MAPPING.md section 4.2).",
+      "action": "Recorded. thumb CMC AA is NOT one of the 8 trusted DOFs."
+    },
+    {
+      "old_claim": "The coordinate audit's 179.7 deg grand-mean offset reading as a possible coordinate mismatch between the two datasets.",
+      "classification": "INVALIDATED",
+      "why": "The coordinate audit section 20 shows the statistic was dominated by DB9's broken DIP channels, task composition and source-database imbalance.",
+      "what_replaces_it": "A genuine cross-dataset disagreement that is smaller, joint-specific and differently shaped.",
+      "action": "Already superseded before this round; carried here for completeness."
+    }
+  ],
+  "true_remaining_blockers": [
+    {
+      "id": "B1",
+      "blocker": "No CROSS-SOURCE calibration record exists, so 'same physical variable' does not yet imply 'same physical scale'. The DB9 ruler is fully known (recovered from the bytes) but emg2pose's is not, and the frozen head's decision boundaries were learned on DB9 scales.",
+      "affects": "all 8 DOFs",
+      "severity": "NON-TASK-DERIVED CALIBRATION / ZERO QUESTION - needs one minimal pre-declared check, not a redesign"
+    },
+    {
+      "id": "B2",
+      "blocker": "Numerical zero interchangeability is NOT_ESTABLISHED: the emg2pose zero is a model-construction fact, not a measurement, and no cross-source zero comparison exists for any of the 8.",
+      "affects": "all 8 DOFs",
+      "severity": "same minimal check as B1"
+    },
+    {
+      "id": "B3",
+      "blocker": "Source-database level shifts inside DB9 (5 of 8 DOFs) mean 'DB9' is not one calibration. A substitution result therefore cannot be attributed to upstream substitution alone unless source-database identity is carried as metadata.",
+      "affects": "MCP2_f, PIP2, MCP3_f, MCP4_f, MCP5_f",
+      "severity": "METADATA REQUIREMENT - no new measurement needed"
+    }
+  ],
+  "not_a_blocker": [
+    "The coordinate audit's classification of four dimensions as 'already trustworthy' is internally consistent with, and not contradicted by, the DROP of PIP3 as DB9's own middle-PIP channel. They measure different things: PIP3 (middle finger) is DROP; middle_pip_flexion is therefore ABSENT from the trusted-8, while ring_pip_flexion is INCONCLUSIVE and also absent. The trusted-8 contains exactly one PIP: PIP2 (index) and PIP5 (pinky)."
+  ],
+  "next_minimal_check": {
+    "id": "N2",
+    "question": "On the local emg2pose mini corpus, at frames whose pose realises the DB9 documented reference posture (hand resting on the table, fingers closed together and extended), what is the per-DOF distribution of the 8 canonical16 values?",
+    "why_it_is_not_duplicating_previous_work": "The audit verified the DB9 side of the anchor (0.854 deg mean |angle|) and asserted the emg2pose side is 0 by construction. It never MEASURED the emg2pose side at an equivalent physical posture. That is the single missing term in the zero claim.",
+    "why_it_is_not_outcome_driven": "It uses only GT joint angles and the official hand model. No task head, no labels, no probabilities, no margins, no accuracy, and no fitted parameter enters the check. The pass/fail rule is declared in advance.",
+    "data_required": "docs-adjacent local emg2pose mini corpus (data/official/emg2pose_dataset_mini/*.hdf5, 30 sessions) plus generic_hand_model.json (sha256 96649ddf7d036be3357dadd7c13db325a18638c6713583fbbbdd71446ce07564).",
+    "existing_local_data_sufficient": true,
+    "server_needed": false,
+    "gpu_needed": false,
+    "expected_scope": "Single CPU pass over ~4.2M frames of already-local 20D joint angles. Select frames by proximity to the DB9 reference-posture prototype in canonical16 space; report per-DOF median and p05/p95. Minutes.",
+    "pass_criterion": "For every one of the 8 DOFs, the emg2pose value at the reference-posture frames lies within +/- 2 deg of 0, i.e. consistent with the DB9 anchor's own per-joint residuals (range 0.00 to 1.94 deg in absolute value). This would establish numerical zero interchangeability.",
+    "fail_criterion": "Any DOF whose reference-posture frames sit at a non-zero level that exceeds the DB9 anchor residual by more than the DB9 anchor's own movement-to-movement spread would establish a per-DOF zero offset, which would be a hard blocker for head substitution and would have to be reported as a negative result.",
+    "note": "If the natural mini corpus does not contain the reference posture at all, the check is NOT_EVALUABLE LOCALLY and must be reported as such - it must not be rescued by synthesising the pose from the model, because that would assume the model's zero equals the physical zero."
+  },
+  "downstream_firewall": {
+    "DOWNSTREAM_HEAD_ACCESSED": "NO",
+    "TASK_LABELS_GENERATED": "NO",
+    "TASK_PROBABILITIES_INSPECTED": "NO",
+    "GT_VS_PRED_PRESERVATION_RUN": "NO",
+    "MAPPING_TUNED_USING_TASK_OUTPUT": "NO"
+  },
+  "next_allowed_step": "Run only the specified minimal physical-compatibility check before any task-head evaluation.",
+  "execution_scope": {
+    "models_trained": 0,
+    "db9_forensic_rerun": false,
+    "trusted_channels_reselected": false,
+    "TRUSTED_DB9_POSE_v1_modified": false,
+    "new_heavy_data_files_created": false,
+    "deep_learning_run": false,
+    "server_used": false,
+    "network_used": false
+  }
+}

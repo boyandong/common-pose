@@ -1,0 +1,12 @@
+{
+  "additional_backup_bytes": 3333538048,
+  "all_local_file_sha256_recomputed": true,
+  "cache_dependency_result_files": 17573,
+  "elapsed_seconds": 7200.485000000001,
+  "local_root": "D:\\CommonPose_confirmation_N80_20261010",
+  "manifest_sha256": "678eadcc9c922be65bc58ba1e3b84376ec5b7f46efc0af616f71e56f3a9c0fbe",
+  "runner_sha256": "23080469d792f552abd90312f1c8a957f3aebbefd6079bacda714f2eb1563511",
+  "source_bytes": 50213536592,
+  "source_files": 2768,
+  "status": "PASS"
+}

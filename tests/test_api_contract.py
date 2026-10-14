@@ -493,18 +493,41 @@ def test_db9_adapter_refuses_missing_file_with_an_actionable_message():
 # --------------------------------------------------------------------------- #
 
 
-def test_posture_task_defaults_to_handshape_only():
+def test_posture_task_defaults_to_the_eight_official_hand_configurations():
+    """The official DB9 Exercise-B hand configurations are movement IDs 1-8 ONLY.
+
+    This assertion previously encoded ``(1,2,3,4,5,6,7,8,17)`` and 9 classes. That was
+    the SUPERSEDED definition: the official protocol names movement 17
+    "Wrist extension with closed hand", so it is a wrist movement and not a hand-shape
+    class. The test was updated because the scientific claim it encoded was corrected,
+    not to make it pass.
+    """
     task = PostureTask()
-    assert task.movement_ids == (1, 2, 3, 4, 5, 6, 7, 8, 17)
-    assert task.n_classes == 9
-    assert task.chance_balanced_accuracy == pytest.approx(1 / 9)
+    assert task.movement_ids == (1, 2, 3, 4, 5, 6, 7, 8)
+    assert task.n_classes == 8
+    assert task.chance_balanced_accuracy == pytest.approx(0.1250)
+    # Wrist and forearm-rotation movements are excluded from the posture task.
     assert 11 not in task.movement_ids
+    assert 17 not in task.movement_ids
 
 
-def test_wrist_inclusive_task_is_available_but_not_the_default():
+def test_task_declares_its_frame_cap_and_identity_key():
+    """The frame cap is a real deviation from an uncapped evaluation and the identity key
+    is the one that makes the LOSO claim valid, so both are part of the task definition."""
+    task = PostureTask()
+    assert task.frame_cap_per_segment == 200
+    assert "archive slot" in task.identity_key
+    assert task.split == "leave-one-subject-out"
+
+
+def test_wrist_inclusive_task_is_available_but_not_the_official_baseline():
+    """Setting ``include_wrist_movements`` reproduces the full 17-movement Exercise-B task.
+    It is a legitimate but different question, and it is NOT the official posture
+    baseline — a wristless representation is penalised by it."""
     task = PostureTask(include_wrist_movements=True)
     assert task.n_classes == 17
     assert task.chance_balanced_accuracy == pytest.approx(1 / 17)
+    assert 17 in task.movement_ids
 
 
 def test_wristless_arm_is_flagged_as_unable_to_carry_a_wrist_task():

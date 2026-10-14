@@ -1,0 +1,33 @@
+{
+  "status": "CONTROL_REPRODUCED",
+  "user": "299b130307",
+  "contract": "B",
+  "method": "class_model",
+  "blocks": 60912,
+  "accepted": 18274,
+  "risk_threads8": 0.36346722118857394,
+  "risk_threads1": 0.36357666630184965,
+  "risk_difference": 0.00010944511327570794,
+  "score_changed_blocks": 8,
+  "max_abs_score_difference": 1.1102230246251565e-16,
+  "rank_position_changes": 19234,
+  "accepted_only_threads8": [
+    15227,
+    60910,
+    60911
+  ],
+  "accepted_only_threads1": [
+    6435,
+    15253,
+    30525
+  ],
+  "removed_flip_sum": 1,
+  "added_flip_sum": 3,
+  "cache_sha256": "2f065621be99e156b30de82f577321106050e8b9f9afe0dacbe4ce74208ab36e",
+  "model_sha256": "39f0cb7963cec31c6df647664a91b37bc13a266e37f9a65c8e8ef0f766ef249f",
+  "code_sha256": "1a61c367da6650f91fe21c1b985f90a866bd306ca00e54d92bcca8be32113287",
+  "private_score_sha256": "b2591febe59553aefa0f62750a73de3a07d2f6591942ec23f744f333d29f1378",
+  "scoring_origin": "preserved remote score vectors; local serialization repair without rescoring",
+  "original_partial_producer_sha256": "3a72ffd831124666a97f52cdcea7ed586bb3be735cbcd6441a999d9cb661a997",
+  "interpretation": "same-instance same-cache numerical thread control; floating score strata precede SHA256 ties; no score rounding or new tie definition"
+}

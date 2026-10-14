@@ -1,0 +1,7 @@
+{
+  "completed_files": 457,
+  "failed_member": "emg2pose_data/2022-11-22-1669104000-69f54-cv-emg-pose-train@2-recording-11_left.hdf5",
+  "observed_epoch": 1791621031.041697,
+  "pid": 22488,
+  "stage": "ACQUISITION_FAILED"
+}

@@ -1,0 +1,24 @@
+{
+  "all_eight_methods_and_seven_coverages": true,
+  "files": {
+    "CURVE_PRESENTATION_SUMMARY.csv": "ec216b19c9c6da206b345102aa2e175527f71ae2191bd7a02e443551d532345e",
+    "EIGHT_METHOD_RISK_COVERAGE.png": "2aa912e8a9656a0c005d3f34bfdc84af01696202b091d4932416f9dbc83f24c0",
+    "EIGHT_METHOD_RISK_COVERAGE.svg": "ca9c8632c70bc322d52f5823dd5ec783168e93c7aee6d4046716b669a3c2e536",
+    "FIGURE_CAPTIONS.md": "9c699e4021b9a1c84dac8b40c42af704c810be814976dfd573e10752c061e7f0",
+    "PRIMARY_USER_PAIRED_RISKS.png": "0cb446e6f04be45aad504013a5a5820791e0872a3ef4c98d1377fea47ebe4a44",
+    "PRIMARY_USER_PAIRED_RISKS.svg": "da6de027bc02dc64e07e4a187bc5ae8416b83b91a4d28e8b9472946e3eec2698"
+  },
+  "input_sha256": {
+    "PRIMARY_RESULT.json": "ec6787cfcfd254769bd3836bf014626e87bab6647b74781f818835069854a482",
+    "PRIMARY_USER_EFFECTS.csv": "44203e0c1b1c00bda9f40d8f331cc1337c1be0b0e1d2ec2efd0a3858e99434e3",
+    "RISK_COVERAGE_ROWS.csv": "8d27753b5b2c9c4b8b16af1e77ef5f97d4a34d2a74e25e10516a00f778398347",
+    "score_only_supplement_20261011/RISK_COVERAGE_ROWS.csv": "c58290bc337c2c7b914f0eacbb339fec8e4d2e83eda866e7dba58fef5e22df6d"
+  },
+  "matplotlib": "3.10.6",
+  "missing_user_denominators_retained": true,
+  "new_inferential_test_or_endpoint": false,
+  "source_code_sha256": "79a82b851c4fb902e210dc9fa042792103defbf9386e730f88dee4c0618738f0",
+  "status": "VERIFIED_FROZEN_PRESENTATION_FIGURES_BUILT",
+  "summary_rows": 112,
+  "visual_review": "REQUIRED_BEFORE_FINAL_GOAL_COMPLETION"
+}

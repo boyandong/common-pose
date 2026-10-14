@@ -1,0 +1,6 @@
+{
+  "path": "/root/work/common-pose/experiments/upstream_substitution/gate3b_continuous_representation/artifacts/FISHER_DB9_REFERENCE_SCALE.json",
+  "sha256": "d15997aa56e5264bdede56c10727a910f94b2c7e32ab8137a6e8e9e45c39c667",
+  "expected_sha256": "d15997aa56e5264bdede56c10727a910f94b2c7e32ab8137a6e8e9e45c39c667",
+  "status": "PASS"
+}

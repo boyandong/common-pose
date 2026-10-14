@@ -1,0 +1,24 @@
+{
+  "artifact": "GATE3_ALIGNMENT_AUDIT.json",
+  "plan_sha256": "9869d9b94ba07d916fc8accd1646f51ec3ea9a0efe5427a530f37880edcfc381",
+  "estimator_temporal_semantics": {
+    "source": "official emg2pose/pose_modules.py BasePoseModule.forward",
+    "left_context": 1790,
+    "right_context": 0,
+    "prediction_span": "EMG[left_context : T - right_context]",
+    "upsampling": "interpolate(pred, n_time, mode='linear') where n_time = T - left_context",
+    "output_grid": "the 2 kHz input grid (same grid as GT joint_angles)",
+    "provide_initial_pos": false,
+    "rollout_freq_hz": 50,
+    "num_position_steps": 500
+  },
+  "per_record_timestamp_equality": "np.array_equal(GT.time[1790:], pred.time) asserted for every record -> exact",
+  "records_checked": 30,
+  "row_offsets": [
+    1790
+  ],
+  "shift_applied": "NONE (beyond the official left_context trim)",
+  "shift_search_performed": "NO",
+  "outcome_used_for_alignment": "NO",
+  "conclusion": "GT[row_offset+i] and prediction[i] share the same physical timestamp by construction and by exact array equality."
+}

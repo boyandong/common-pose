@@ -1,0 +1,37 @@
+{
+  "N80_results_seen": false,
+  "additional_requirements": [
+    "exact existing DEV-only U/B score-only instances with disjoint N80 users",
+    "old DEV Linux runtime admission",
+    "supplement support seal before any N80 effects",
+    "eight-method complete secondary comparisons, seven coverages and20tie seeds",
+    "original primary/common-set identity preserved",
+    "separate independent score-only verification",
+    "full model/cache/dependency/result/source D backup including supplemental files",
+    "original primary report plus score-only/integrated report and report backups",
+    "full requirement-by-requirement completion audit; no completion from model registration or transfer"
+  ],
+  "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+  "historical_old_manuscript_and_seven_method_protocol_preserved": true,
+  "human_request": "\u5b9e\u9a8c\u65f6\u52a0\u4e00\u4e2ascore-only\u57fa\u7ebf",
+  "observed_local_time": "2026-10-11T02:32:57.463951+08:00",
+  "original_goal_scope_retained": true,
+  "original_primary_spec_sha256": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a",
+  "required_receipts": [
+    "MODEL_REGISTRATION.json",
+    "RUNTIME_ADMISSION.json",
+    "CODE_SEAL.json",
+    "SUPPORT_SEAL.json",
+    "SCORE_CACHE_MANIFEST.json",
+    "SECONDARY_RESULT.json",
+    "RESULT_MANIFEST.json",
+    "INDEPENDENT_VERIFICATION.json",
+    "OFFHOST_BACKUP_VERIFICATION.json",
+    "EXPORT_EXECUTION_BACKUP_VERIFICATION.json",
+    "EXECUTION_COMPLETE.json",
+    "manuscript_score_only/BUILD_MANIFEST.json",
+    "REPORT_BACKUP_VERIFICATION.json"
+  ],
+  "status": "HUMAN_AUTHORIZED_SCOPE_ADDITION_BEFORE_N80_INFERENCE",
+  "supersedes_current_deferral": true
+}

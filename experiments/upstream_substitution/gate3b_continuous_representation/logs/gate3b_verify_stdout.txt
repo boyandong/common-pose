@@ -1,0 +1,257 @@
+==============================================================================
+GATE 3B — INDEPENDENT VERIFICATION
+==============================================================================
+
+[1] plan integrity
+  [PASS] plan sha256 matches GATE3B_PLAN.sha256  -- 4aa731b8d7b15f80… vs 4aa731b8d7b15f80…
+  [PASS] GATE3B_DATA_LINK.json records the same plan sha
+  [PASS] FISHER_PRESERVATION_SUMMARY.json records the same plan sha
+  [PASS] SCORE_SPACE_PRESERVATION.json records the same plan sha
+  [PASS] POSE_TO_FISHER_RELATION.json records the same plan sha
+  [PASS] GATE3B_DECISION.json records the same plan sha
+  [PASS] REPRESENTATIONAL_CKA.json records the same plan sha
+
+[2] frozen objects
+  [PASS] frozen head sha256
+  [PASS] trusted subset sha256
+  [PASS] trusted subset content sha256
+  [PASS] DB9 reference declares no emg2pose data used
+  [PASS] DB9 reference declares no Gate3B outcome inspected
+  [PASS] DB9 corpus reproduced frozen head frame count  -- 123200
+  [PASS] DB9 corpus reproduces head mu
+  [PASS] DB9 corpus reproduces head sd
+  [PASS] LDA solver is svd
+  [PASS] scalings_ shape == (8, 7)  -- (8, 7)
+  [PASS] Fisher dimension == 7  -- 7
+  [PASS] Fisher dimension recorded as 7
+  [PASS] explained_variance_ratio_ present with 7 entries
+  [PASS] evr sums to 1
+  [PASS] transform includes xbar_ centering (identity verified)
+
+[3] population + alignment identity
+  [PASS] alignment exact for every record (offset 1790)
+  [PASS] population == Gate3 eligible population  -- 86833
+  [PASS] data link records same population
+  [PASS] analysis rate is 50 Hz
+
+[4] representation recomputation
+  [PASS] z shapes are (N, 7)
+  [PASS] valid cosine frame count recomputes  -- 86833
+  [PASS] invalid cosine frame count reported
+  [PASS] no frame was silently assigned cosine 1
+  [PASS] cosine median recomputes
+  [PASS] cosine mean recomputes
+  [PASS] cosine IQR recomputes
+  [PASS] cosine p05 recomputes
+  [PASS] cosine p95 recomputes
+  [PASS] fraction <0 recomputes
+  [PASS] fraction >0.5 recomputes
+  [PASS] fraction >0.8 recomputes
+  [PASS] fraction >0.9 recomputes
+  [PASS] cosine in [-1,1]
+  [PASS] DB9 sigma has 7 entries
+  [PASS] DB9 sigma positive
+  [PASS] DB9 corpus rebuild frame count == 123200  -- 123200
+  [PASS] DB9 Fisher sigma recomputes from raw DB9 data  -- max diff 0.000e+00
+  [PASS] d_norm median recomputes
+  [PASS] d_norm mean recomputes
+  [PASS] d_norm IQR recomputes
+  [PASS] d_norm p05/p95 recompute
+  [PASS] d_raw median recomputes
+  [PASS] d_norm uses DB9 sigma only (recomputed identically)
+  [PASS] 7 components reported
+  [PASS]   component 1 pearson recomputes
+  [PASS]   component 1 MAE recomputes
+  [PASS]   component 1 RMSE recomputes
+  [PASS]   component 1 db9 weight recomputes
+  [PASS]   component 1 OLS slope/intercept recompute
+  [PASS]   component 2 pearson recomputes
+  [PASS]   component 2 MAE recomputes
+  [PASS]   component 2 RMSE recomputes
+  [PASS]   component 2 db9 weight recomputes
+  [PASS]   component 2 OLS slope/intercept recompute
+  [PASS]   component 3 pearson recomputes
+  [PASS]   component 3 MAE recomputes
+  [PASS]   component 3 RMSE recomputes
+  [PASS]   component 3 db9 weight recomputes
+  [PASS]   component 3 OLS slope/intercept recompute
+  [PASS]   component 4 pearson recomputes
+  [PASS]   component 4 MAE recomputes
+  [PASS]   component 4 RMSE recomputes
+  [PASS]   component 4 db9 weight recomputes
+  [PASS]   component 4 OLS slope/intercept recompute
+  [PASS]   component 5 pearson recomputes
+  [PASS]   component 5 MAE recomputes
+  [PASS]   component 5 RMSE recomputes
+  [PASS]   component 5 db9 weight recomputes
+  [PASS]   component 5 OLS slope/intercept recompute
+  [PASS]   component 6 pearson recomputes
+  [PASS]   component 6 MAE recomputes
+  [PASS]   component 6 RMSE recomputes
+  [PASS]   component 6 db9 weight recomputes
+  [PASS]   component 6 OLS slope/intercept recompute
+  [PASS]   component 7 pearson recomputes
+  [PASS]   component 7 MAE recomputes
+  [PASS]   component 7 RMSE recomputes
+  [PASS]   component 7 db9 weight recomputes
+  [PASS]   component 7 OLS slope/intercept recompute
+  [PASS] DB9-weighted component correlation recomputes
+  [PASS] weights sum to 1
+
+[5] score-space recomputation
+  [PASS] score vectors are 8-D
+  [PASS] affinity-score argmax reproduces head.predict exactly
+  [PASS] centering arithmetic: row means are 0
+  [PASS] score cosine valid count recomputes
+  [PASS] score cosine median recomputes
+  [PASS] DB9 score sigma has 8 entries
+  [PASS] DB9 score sigma positive
+  [PASS] score normalized distance median recomputes
+  [PASS] score raw distance median recomputes
+
+[6] probability and hard-decision reproduction
+  [PASS] Gate3 TV median reproduced  -- 0.460399 vs 0.460399
+  [PASS] Gate3 JS median reproduced  -- 0.207569 vs 0.207569
+  [PASS] Gate3 hard agreement reproduced  -- 0.36453883 vs 0.36453883
+
+[7] SAME vs FLIP
+  [PASS] SAME + FLIP counts == total  -- 31654+55179=86833 vs 86833
+  [PASS] SAME count recomputes  -- 31654 vs 31654
+  [PASS] FLIP count recomputes  -- 55179 vs 55179
+  [PASS] SAME fraction recomputes
+  [PASS] FLIP fraction recomputes
+  [PASS] SAME fisher cosine median recomputes
+  [PASS] FLIP fisher cosine median recomputes
+  [PASS] SAME fisher distance median recomputes
+  [PASS] FLIP fisher distance median recomputes
+  [PASS] SAME TV median recomputes
+  [PASS] FLIP TV median recomputes
+  [PASS] no classifier fitted to predict flips
+
+[8] decile accounting
+  [PASS] FISHER_DISTANCE_DECILES.csv has 10 deciles
+  [PASS] FISHER_DISTANCE_DECILES.csv sizes sum to N  -- 86833
+  [PASS]   FISHER_DISTANCE_DECILES.csv decile 1 recomputes
+  [PASS]   FISHER_DISTANCE_DECILES.csv decile 2 recomputes
+  [PASS]   FISHER_DISTANCE_DECILES.csv decile 3 recomputes
+  [PASS]   FISHER_DISTANCE_DECILES.csv decile 4 recomputes
+  [PASS]   FISHER_DISTANCE_DECILES.csv decile 5 recomputes
+  [PASS]   FISHER_DISTANCE_DECILES.csv decile 6 recomputes
+  [PASS]   FISHER_DISTANCE_DECILES.csv decile 7 recomputes
+  [PASS]   FISHER_DISTANCE_DECILES.csv decile 8 recomputes
+  [PASS]   FISHER_DISTANCE_DECILES.csv decile 9 recomputes
+  [PASS]   FISHER_DISTANCE_DECILES.csv decile 10 recomputes
+  [PASS] FISHER_COSINE_DECILES.csv has 10 deciles
+  [PASS] FISHER_COSINE_DECILES.csv sizes sum to N  -- 86833
+  [PASS]   FISHER_COSINE_DECILES.csv decile 1 recomputes
+  [PASS]   FISHER_COSINE_DECILES.csv decile 2 recomputes
+  [PASS]   FISHER_COSINE_DECILES.csv decile 3 recomputes
+  [PASS]   FISHER_COSINE_DECILES.csv decile 4 recomputes
+  [PASS]   FISHER_COSINE_DECILES.csv decile 5 recomputes
+  [PASS]   FISHER_COSINE_DECILES.csv decile 6 recomputes
+  [PASS]   FISHER_COSINE_DECILES.csv decile 7 recomputes
+  [PASS]   FISHER_COSINE_DECILES.csv decile 8 recomputes
+  [PASS]   FISHER_COSINE_DECILES.csv decile 9 recomputes
+  [PASS]   FISHER_COSINE_DECILES.csv decile 10 recomputes
+
+[9] pose -> fisher -> hard
+  [PASS] spearman(pose RMSE, fisher distance) recomputes
+  [PASS] spearman(fisher distance, flip) recomputes
+  [PASS] Gate3 value quoted, not recomputed as new
+  [PASS] no causal claim asserted
+
+[10] temporal (zero-lag, no lag search)
+  [PASS] 7 components reported temporally
+  [PASS] sequence bounds cover all samples
+  [PASS] derivative pairs computed only within record boundaries  -- 86803
+  [PASS]   component 1 zero-lag pearson recomputes
+  [PASS]   component 1 derivative pearson recomputes
+  [PASS]   component 1 derivative pair count recomputes
+  [PASS]   component 2 zero-lag pearson recomputes
+  [PASS]   component 2 derivative pearson recomputes
+  [PASS]   component 2 derivative pair count recomputes
+  [PASS]   component 3 zero-lag pearson recomputes
+  [PASS]   component 3 derivative pearson recomputes
+  [PASS]   component 3 derivative pair count recomputes
+  [PASS]   component 4 zero-lag pearson recomputes
+  [PASS]   component 4 derivative pearson recomputes
+  [PASS]   component 4 derivative pair count recomputes
+  [PASS]   component 5 zero-lag pearson recomputes
+  [PASS]   component 5 derivative pearson recomputes
+  [PASS]   component 5 derivative pair count recomputes
+  [PASS]   component 6 zero-lag pearson recomputes
+  [PASS]   component 6 derivative pearson recomputes
+  [PASS]   component 6 derivative pair count recomputes
+  [PASS]   component 7 zero-lag pearson recomputes
+  [PASS]   component 7 derivative pearson recomputes
+  [PASS]   component 7 derivative pair count recomputes
+  [PASS] no lag search artifacts present
+
+[11] side / stage accounting
+  [PASS] REPRESENTATION_BY_SIDE.csv counts sum to N  -- 86833
+  [PASS]   REPRESENTATION_BY_SIDE.csv left n recomputes
+  [PASS]   REPRESENTATION_BY_SIDE.csv left cosine recomputes
+  [PASS]   REPRESENTATION_BY_SIDE.csv right n recomputes
+  [PASS]   REPRESENTATION_BY_SIDE.csv right cosine recomputes
+  [PASS] REPRESENTATION_BY_STAGE.csv counts sum to N  -- 86833
+  [PASS]   REPRESENTATION_BY_STAGE.csv CountingUpDownFaceSideAway n recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv CountingUpDownFaceSideAway cosine recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv FingerAbductionSeries n recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv FingerAbductionSeries cosine recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv FingerFreeform n recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv FingerFreeform cosine recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv FingerPinchesSingleFingerP n recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv FingerPinchesSingleFingerP cosine recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv FingerWigglingSpreading n recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv FingerWigglingSpreading cosine recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv HandClawGraspFlicks n recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv HandClawGraspFlicks cosine recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv HookEmHornsOKScissors n recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv HookEmHornsOKScissors cosine recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv IndividualFingerPointingSn n recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv IndividualFingerPointingSn cosine recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv OneHandedFreeStyle n recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv OneHandedFreeStyle cosine recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv ShakaVulcanPeace n recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv ShakaVulcanPeace cosine recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv ThumbsSwipesWholeHand n recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv ThumbsSwipesWholeHand cosine recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv ThumbsUpDownThumbRotations n recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv ThumbsUpDownThumbRotations cosine recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv TwoHandedFreeStyle n recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv TwoHandedFreeStyle cosine recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv WristFlexionAbduction n recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv WristFlexionAbduction cosine recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv unconstrained n recomputes
+  [PASS]   REPRESENTATION_BY_STAGE.csv unconstrained cosine recomputes
+  [PASS] 15 stages present
+
+[12] CKA
+  [PASS] CKA mode is the declared deterministic subsample
+
+[13] firewall
+  [PASS] firewall NEW_INFERENCE_RUN == NO
+  [PASS] firewall MODEL_RETRAINED == NO
+  [PASS] firewall CALIBRATION_FITTED == NO
+  [PASS] firewall SMOOTHING_APPLIED == NO
+  [PASS] firewall GATE_CREATED == NO
+  [PASS] firewall UNKNOWN_CLASS == NO
+  [PASS] firewall HUMAN_LABELS_USED == NO
+  [PASS] firewall LAG_SEARCH_PERFORMED == NO
+  [PASS] firewall DOF_INTERVENTION_PERFORMED == NO
+  [PASS] firewall SAMPLE_FILTERING_APPLIED == NO
+  [PASS] firewall COMPONENT_SELECTION_ON_OUTCOME == NO
+  [PASS] firewall POPULATION_CHANGED == NO
+  [PASS] firewall GATE3_ARTIFACTS_MODIFIED == NO
+  [PASS] firewall SCALING_FROM_EMG2POSE == NO
+  [PASS] evidence status declared post-hoc motivated
+  [PASS] no arbitrary thresholds claimed
+  [PASS] hard agreement did not drive the label
+  [PASS] mechanism label is one of the four declared  -- REPRESENTATION_PARTIALLY_PRESERVED
+  [PASS] no gate artifact created
+  [PASS] no human-label artifact created
+  [PASS] Gate3 artifacts unmodified (plan sha still matches)
+
+==============================================================================
+ASSERTIONS: 224   FAILED: 0
+VERIFY_GATE3B: PASS

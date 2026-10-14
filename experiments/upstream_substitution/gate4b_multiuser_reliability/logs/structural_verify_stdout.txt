@@ -1,0 +1,4 @@
+VERIFY_GATE4B_DATA: PARTIAL | 57 checks | 0 failures | acquisition incomplete: 14/964 files; full structural qualification not run
+COMPLETED_FILE_STRUCTURAL_SMOKE: 14 authorized files, 70 checks, 0 failures; session qualification PENDING remaining acquisition
+VERIFY_GATE4B_DATA: PARTIAL | 57 checks | 0 failures | acquisition incomplete: 14/964 files; full structural qualification not run
+VERIFY_GATE4B_DATA: PARTIAL | 57 checks | 0 failures | acquisition incomplete: 14/964 files; full structural qualification not run

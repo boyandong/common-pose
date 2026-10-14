@@ -1,0 +1,10 @@
+{
+  "continuation_launch_sha256": "09aa7d129899ea20bf35dcfd252292da8daebd59a6003429060e69a1715c56d1",
+  "execution_identity": "continuation_execution_20261011",
+  "original_controller_exit": "UNKNOWN",
+  "primary_pipeline_complete_sha256": "c92a5a1396a012fce425efb5719516de2c3ee5bdb6c873c020b7c34e9ea8bb66",
+  "reports_and_full_goal_audit": "STILL_REQUIRED",
+  "status": "PRIMARY_AND_SCORE_ONLY_VERIFIED_AND_FULLY_BACKED_UP",
+  "supplement_backup_verification_sha256": "76f4ab40e9e98129af41bad3dbf82aa36b1fc04ad78ab6d865a2b301b9e39cc5",
+  "supplement_verification_sha256": "1ed4c0dcde506fa180a2179ea5000d954d30bef23aef4532e2c1acfd1ae2a445"
+}

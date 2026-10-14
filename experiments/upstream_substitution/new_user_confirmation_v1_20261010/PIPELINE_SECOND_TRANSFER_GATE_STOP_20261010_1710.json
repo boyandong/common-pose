@@ -1,0 +1,7 @@
+{
+  "error_type": "RuntimeError",
+  "observed_epoch": 1791623445.8986158,
+  "pid": 15872,
+  "reason": "transfer terminal failure; preserve and inspect PROGRESS.json",
+  "stage": "PIPELINE_STOPPED_PRESERVE_AND_INSPECT"
+}

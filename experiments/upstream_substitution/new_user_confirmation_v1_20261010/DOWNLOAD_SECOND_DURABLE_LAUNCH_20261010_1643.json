@@ -1,0 +1,12 @@
+{
+  "status": "ACTIVE_DOWNLOAD_RESUMED_AFTER_KNOWN_NETWORK_DEADLINE",
+  "new_pid": 20892,
+  "new_start_time": "2026-10-10T16:43:20.7943028+08:00",
+  "previous_pid_verified_absent": 22488,
+  "previous_launch_snapshot": "DOWNLOAD_FIRST_DURABLE_LAUNCH_20261010_1541.json",
+  "preserved_failure_receipt": "DOWNLOAD_DEADLINE_FAILURE_20261010_1630.json",
+  "code_changed": false,
+  "member_selection_changed": false,
+  "source_version_changed": false,
+  "retained_partial_validation": "original same-member tail comparison before resume"
+}

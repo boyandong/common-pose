@@ -1,0 +1,4 @@
+__pycache__/
+SOURCE_METADATA_PROGRESS.json
+*.log
+*.partial

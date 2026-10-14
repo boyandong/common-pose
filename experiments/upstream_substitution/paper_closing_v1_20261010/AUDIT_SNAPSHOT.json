@@ -1,0 +1,271 @@
+{
+  "status": "LOCAL_ARTIFACT_CONSISTENCY_PASS",
+  "sealed_local_files_verified": 32,
+  "transfer_files_verified": 34,
+  "sidecar_targets_unavailable_locally": [],
+  "effect_rows": 2340,
+  "effect_groups_with_bootstrap_and_sign_recomputed": 120,
+  "dense_class_rows_crosschecked": 873600,
+  "risk_coverage_rows": 54600,
+  "final_max_aggregate_risk_drift": 0.001733574010921557,
+  "dev_refit_and_tie_drift_vs_historical_at_30": {
+    "U": {
+      "max_abs_ordinary_drift_30": 0.030795660611459302,
+      "median_ordinary_drift_30": 0.0006687685105569996
+    },
+    "B": {
+      "max_abs_ordinary_drift_30": 0.00027491408934710027,
+      "median_ordinary_drift_30": -3.31840053094945e-05
+    }
+  },
+  "common_support": {
+    "B_DEV": {
+      "class_counts": {
+        "1": 11,
+        "2": 19,
+        "4": 19,
+        "5": 19,
+        "6": 19,
+        "7": 18,
+        "8": 19,
+        "3": 1
+      },
+      "set_size_counts": {
+        "7": 10,
+        "6": 7,
+        "8": 1,
+        "5": 1
+      }
+    },
+    "B_FINAL": {
+      "class_counts": {
+        "1": 15,
+        "2": 18,
+        "4": 20,
+        "5": 20,
+        "6": 20,
+        "7": 19,
+        "8": 20,
+        "3": 1
+      },
+      "set_size_counts": {
+        "7": 12,
+        "6": 6,
+        "8": 1,
+        "5": 1
+      }
+    },
+    "U_DEV": {
+      "class_counts": {
+        "1": 11,
+        "2": 18,
+        "4": 19,
+        "5": 19,
+        "6": 19,
+        "7": 18,
+        "8": 19,
+        "3": 1
+      },
+      "set_size_counts": {
+        "7": 10,
+        "6": 7,
+        "8": 1,
+        "4": 1
+      }
+    },
+    "U_FINAL": {
+      "class_counts": {
+        "1": 15,
+        "2": 17,
+        "4": 20,
+        "5": 20,
+        "6": 20,
+        "7": 17,
+        "8": 20,
+        "3": 1
+      },
+      "set_size_counts": {
+        "7": 11,
+        "6": 5,
+        "8": 1,
+        "5": 3
+      }
+    }
+  },
+  "secondary_auc_30_100": {
+    "U_DEV": {
+      "class_empirical": {
+        "median_unnormalized_auc_reduction": 0.02644828560018639,
+        "positive_users": 18
+      },
+      "margin": {
+        "median_unnormalized_auc_reduction": 0.028937078143407263,
+        "positive_users": 18
+      },
+      "entropy": {
+        "median_unnormalized_auc_reduction": 0.0288966815337231,
+        "positive_users": 17
+      },
+      "boundary_distance": {
+        "median_unnormalized_auc_reduction": 0.015753923564358535,
+        "positive_users": 17
+      },
+      "no_tta": {
+        "median_unnormalized_auc_reduction": 0.0008549386042585039,
+        "positive_users": 13
+      },
+      "class_model": {
+        "median_unnormalized_auc_reduction": 0.026507021607693887,
+        "positive_users": 18
+      }
+    },
+    "U_FINAL": {
+      "class_empirical": {
+        "median_unnormalized_auc_reduction": 0.030296180405441693,
+        "positive_users": 20
+      },
+      "margin": {
+        "median_unnormalized_auc_reduction": 0.03359067814937024,
+        "positive_users": 17
+      },
+      "entropy": {
+        "median_unnormalized_auc_reduction": 0.026882598948546825,
+        "positive_users": 17
+      },
+      "boundary_distance": {
+        "median_unnormalized_auc_reduction": 0.014945429099874424,
+        "positive_users": 16
+      },
+      "no_tta": {
+        "median_unnormalized_auc_reduction": -0.0006185128948260066,
+        "positive_users": 7
+      },
+      "class_model": {
+        "median_unnormalized_auc_reduction": 0.030531127707597278,
+        "positive_users": 20
+      }
+    },
+    "B_DEV": {
+      "class_empirical": {
+        "median_unnormalized_auc_reduction": 0.14333397045278568,
+        "positive_users": 19
+      },
+      "margin": {
+        "median_unnormalized_auc_reduction": 0.03878990764824625,
+        "positive_users": 19
+      },
+      "entropy": {
+        "median_unnormalized_auc_reduction": 0.03899252716479007,
+        "positive_users": 18
+      },
+      "boundary_distance": {
+        "median_unnormalized_auc_reduction": 0.04987993441229044,
+        "positive_users": 19
+      },
+      "no_tta": {
+        "median_unnormalized_auc_reduction": 0.0005280607484612343,
+        "positive_users": 12
+      },
+      "class_model": {
+        "median_unnormalized_auc_reduction": 0.03198533421451122,
+        "positive_users": 19
+      }
+    },
+    "B_FINAL": {
+      "class_empirical": {
+        "median_unnormalized_auc_reduction": 0.14235803521889118,
+        "positive_users": 20
+      },
+      "margin": {
+        "median_unnormalized_auc_reduction": 0.04559168243198597,
+        "positive_users": 20
+      },
+      "entropy": {
+        "median_unnormalized_auc_reduction": 0.0350206156443483,
+        "positive_users": 19
+      },
+      "boundary_distance": {
+        "median_unnormalized_auc_reduction": 0.0466253900888049,
+        "positive_users": 20
+      },
+      "no_tta": {
+        "median_unnormalized_auc_reduction": 0.00046425384350218257,
+        "positive_users": 14
+      },
+      "class_model": {
+        "median_unnormalized_auc_reduction": 0.032286309611470276,
+        "positive_users": 20
+      }
+    }
+  },
+  "B_FINAL_plot_defined_user_counts": {
+    "0.01": {
+      "class_empirical": 19,
+      "margin": 5,
+      "entropy": 4,
+      "boundary_distance": 2,
+      "full": 14,
+      "no_tta": 13,
+      "class_model": 13
+    },
+    "0.05": {
+      "class_empirical": 20,
+      "margin": 17,
+      "entropy": 16,
+      "boundary_distance": 13,
+      "full": 20,
+      "no_tta": 20,
+      "class_model": 20
+    },
+    "0.1": {
+      "class_empirical": 20,
+      "margin": 19,
+      "entropy": 18,
+      "boundary_distance": 20,
+      "full": 20,
+      "no_tta": 20,
+      "class_model": 20
+    },
+    "0.2": {
+      "class_empirical": 20,
+      "margin": 20,
+      "entropy": 20,
+      "boundary_distance": 20,
+      "full": 20,
+      "no_tta": 20,
+      "class_model": 20
+    },
+    "0.3": {
+      "class_empirical": 20,
+      "margin": 20,
+      "entropy": 20,
+      "boundary_distance": 20,
+      "full": 20,
+      "no_tta": 20,
+      "class_model": 20
+    }
+  },
+  "B_FINAL_full_baseline_class_set_effect_bounds": {
+    "class_empirical": {
+      "median_effect_lower": 0.3476027581418758,
+      "median_effect_upper": 0.3476027581418758,
+      "positive_lower_users": 20
+    },
+    "class_model": {
+      "median_effect_lower": 0.09027413032861614,
+      "median_effect_upper": 0.09027413032861614,
+      "positive_lower_users": 19
+    },
+    "boundary_distance": {
+      "median_effect_lower": 0.12467679241431404,
+      "median_effect_upper": 0.12681845032392206,
+      "positive_lower_users": 20
+    },
+    "no_tta": {
+      "median_effect_lower": -0.0013222993043847941,
+      "median_effect_upper": -0.0013222993043847941,
+      "positive_lower_users": 8
+    }
+  },
+  "scope": "Local source/table/hash audit only, including available supplementary model file hashes. Raw sources, feature caches and nested score receipts were not independently accessed; predictions were not regenerated; no remote runtime verification or new fitting."
+}

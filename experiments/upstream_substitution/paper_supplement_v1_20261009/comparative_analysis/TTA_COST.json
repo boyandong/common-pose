@@ -1,0 +1,25 @@
+{
+  "base_seconds": [
+    0.38137461990118027,
+    0.37016794458031654,
+    0.36857033893465996,
+    0.3666390925645828,
+    0.3689456172287464
+  ],
+  "device": "NVIDIA GeForce RTX 5090",
+  "emg_rows": 88106,
+  "four_view_seconds": [
+    1.4897342696785927,
+    1.4888431131839752,
+    1.4678293131291866,
+    1.4676658548414707,
+    1.474264457821846
+  ],
+  "interpretation": "one metadata-first DEV recording; warmed model; CUDA synchronized; includes CPU/GPU data transfer; does not generalize latency to other recordings",
+  "median_base_seconds": 0.3689456172287464,
+  "median_four_view_seconds": 1.474264457821846,
+  "median_paired_incremental_seconds": 1.1053188405930996,
+  "source_member": "emg2pose_data/2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2-recording-10_left.hdf5",
+  "source_sha256": "9a9529d6dfa6685b3d627d872561c778514b24a67f849d8e467a3ff0a2f2e9f6",
+  "torch": "2.8.0+cu128"
+}

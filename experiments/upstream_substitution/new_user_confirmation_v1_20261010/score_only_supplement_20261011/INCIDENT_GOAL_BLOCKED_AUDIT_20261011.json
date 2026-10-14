@@ -1,0 +1,37 @@
+{
+  "archive_rule_source": "AGENTS.md:14-16",
+  "awaited_human_action": "authorize a clean successor or explicitly supersede the incident-session execution rule; elapsed time and automatic goal continuations are not authorization",
+  "consecutive_goal_turns": 3,
+  "forensic_backup_verification_sha256": "d8169382792468713f4d57d73339593e19a2153fa993f063c304228ca03e6a61",
+  "full_scientific_goal_preserved": true,
+  "goal_complete": false,
+  "handover": "SESSION_HANDOVER_INCIDENT_CONTROLLER_LOST_20261011.md",
+  "handover_sha256": "cf910c8da2b78036af839f3274b7b47d42592cb2cd9d7a14229fc207a7c86290",
+  "incident_receipt_sha256": "48140f2c99fccb5b5ac1a511b3c65618ceb1cf4dc94402f0fb453c7dbb45cede",
+  "observed_local_time": "2026-10-11T05:29:01.761781+08:00",
+  "same_blocking_condition": "unreceipted local controller loss; AGENTS requires this incident session to remain forensic/archive; no human authorization for clean successor has arrived",
+  "scientific_job_restarts_attempted": false,
+  "scientific_rule_changes": false,
+  "status": "BLOCKED_AUDIT_THRESHOLD_SATISFIED_PENDING_GOAL_STATUS_UPDATE",
+  "turn_evidence": [
+    {
+      "continuation_goal_usage_marker": 282932,
+      "evidence": "INCIDENT_CONTROLLER_LOST_20261011.json",
+      "incident_commit": "ef1fc4ddb759003fda3017de2c4b791fd5c495b7",
+      "turn": 1
+    },
+    {
+      "continuation_goal_usage_marker": 310980,
+      "evidence": "INCIDENT_FORENSIC_D_BACKUP_VERIFICATION_20261011.json",
+      "forensic_backup_commit": "b669ba6",
+      "turn": 2
+    },
+    {
+      "continuation_goal_usage_marker": 325295,
+      "forensic_D_files_freshly_rehashed": 14,
+      "full_goal_audit_present": false,
+      "original_execution_complete_present": false,
+      "turn": 3
+    }
+  ]
+}

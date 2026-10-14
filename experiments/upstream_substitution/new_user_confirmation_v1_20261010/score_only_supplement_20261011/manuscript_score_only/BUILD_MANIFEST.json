@@ -1,0 +1,14 @@
+{
+  "all80_user_rows_and20_seeds_reported": true,
+  "original_primaries_and_common_sets_preserved": true,
+  "original_primary_report_sha256": "b91fb9553cc8440129891c15d96780ee84731e431bc86d7a2b90ac4cc8017e6e",
+  "original_primary_unchanged": true,
+  "reports": {
+    "MANUSCRIPT_CONFIRMATION_WITH_SCORE_ONLY.md": "293903f13dbd123bf64e7e18e5a5b419900498db948cfd571370183d79fb75ef",
+    "SCORE_ONLY_N80_REPORT.md": "513b8d84397eababd67fb8f77920f0638a36e83d9944b1f884b41c96dbc25a30"
+  },
+  "secondary_result_sha256": "9dd3a6b8d5f06d1a7de62f8d9d37efff487f81e0e2db1bd6c56e6f71a651f57e",
+  "secondary_verification_sha256": "1ed4c0dcde506fa180a2179ea5000d954d30bef23aef4532e2c1acfd1ae2a445",
+  "source_code_sha256": "9846396b73af1efb643bdd2cd7f34c82bd9f9e73d28bad899b7e3ba7e926b598",
+  "status": "VERIFIED_EIGHT_METHOD_REPORTS_BUILT"
+}

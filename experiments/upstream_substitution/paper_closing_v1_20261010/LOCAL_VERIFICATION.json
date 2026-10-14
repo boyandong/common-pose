@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "transfer_hashes": 34,
+  "support_points": 400,
+  "area_users_methods": 546,
+  "area_summaries_vs_prior_independent_audit": 24,
+  "FINAL_B_1pct_common_users": 0,
+  "scope": "independent input/output seals, exact user sets, trapezoid sums, effect signs/medians; not neural inference"
+}

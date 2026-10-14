@@ -1,0 +1,28 @@
+{
+  "backup_inventory_bytes": 3333538048,
+  "backup_inventory_files": 17573,
+  "capacity_gate": {
+    "available_bytes": 60163235840,
+    "manifest_sha256": "678eadcc9c922be65bc58ba1e3b84376ec5b7f46efc0af616f71e56f3a9c0fbe",
+    "required_new_bytes": 3333538048,
+    "status": "PASS"
+  },
+  "effect_values_read_by_this_check": false,
+  "original_controller_exit": "UNKNOWN",
+  "original_verification_sha256": "3321ae832ddb14ccd3b7849e52e71c27a6da47d740caccea65dfe9313ac115fb",
+  "secondary_coverage_counts": {
+    "canonical_user_effects": 160,
+    "class_rows": 17920,
+    "contracts": 2,
+    "deployment_rows": 320,
+    "model_prediction_vectors_checked": 320,
+    "paired_seed_effects": 3200,
+    "risk_rows": 2240,
+    "seed_risk_rows": 6400,
+    "support_rows": 2560,
+    "users": 80,
+    "within_class_rows": 320
+  },
+  "secondary_verification_sha256": "1ed4c0dcde506fa180a2179ea5000d954d30bef23aef4532e2c1acfd1ae2a445",
+  "status": "PASS_BOTH_INDEPENDENT_VERIFIERS_EXACT_EXPORT_BACKUP_PENDING"
+}

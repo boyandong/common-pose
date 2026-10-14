@@ -1,329 +1,286 @@
 # Common Pose
 
-A research prototype for a **common physical hand-pose interface** connecting
-biosignal-based pose estimation with reusable downstream task models.
+**A research framework for testing whether physical hand pose can decouple biosignal estimation from downstream hand tasks.**
 
-> **Status: research prototype.** The interface is being established, not shipped. Nothing
-> here demonstrates universal task transfer, cross-dataset numerical equivalence, or an
-> SDK. [`docs/research_status.md`](docs/research_status.md) is the evidence ledger and is
-> the honest answer to "what do you actually know?".
+> **Status — active research.**
+> A physically audited downstream posture baseline is now frozen on NinaPro DB9.
+> Cross-upstream task reuse — the central Common Pose hypothesis — has **not yet been demonstrated**.
 
 ---
 
-## Motivation
+## Research Question
 
-Most biosignal interfaces are built as a single-purpose pipeline:
+Most EMG interfaces are trained directly for a specific task:
 
-```
-EMG ──────────────────────────────► task label
-```
+    EMG → task label
 
-The decoder and the task definition are entangled. Adding a downstream task tends to mean
-collecting a new task-specific EMG dataset, because the model was never asked to produce
-anything reusable — it was asked to produce that one label.
+That couples the sensor decoder to the task. Adding a new task can require new task-specific EMG data and retraining.
 
-Common Pose explores a different decomposition:
+Common Pose asks a different question:
 
-```
-EMG ──► physical hand state ──► reusable task model
-```
+> **Can a downstream task model be trained only from physical hand pose and task labels, then consume pose produced by an independent biosignal-to-pose estimator without task-specific EMG retraining?**
 
-If the middle term is a *standardized physical* description of the hand — the same joints,
-units, signs and zero across sources — then sensor decoding and task definition become
-separable: a task head could in principle be trained on `pose + label` alone and then
-attached to a different upstream estimator. That is the hypothesis being tested. It is
-currently unproven, and a large part of this repository is the audit work needed to make
-it testable at all.
+The proposed decomposition is:
 
----
+    biosignal
+       ↓
+    pose estimator
+       ↓
+    source adapter
+       ↓
+    Common Pose
+       ↓
+    pose-only downstream task
 
-## Concept
-
-```
-                 ┌──────────────────┐
-   biosignal ───►│  pose estimator  │  replaceable front end
-   (sEMG, ...)   └────────┬─────────┘
-                          │  physical hand joint state
-                          ▼
-                 ┌──────────────────┐
-                 │ Common Pose API  │  semantics, validity, provenance
-                 └────────┬─────────┘
-                          │  time-stamped pose stream
-                          ▼
-                 ┌──────────────────┐
-                 │ downstream task  │  trained on pose + label,
-                 │      head        │  never on task-specific EMG
-                 └──────────────────┘
-```
-
-A task head consumes pose and labels. If it needed the raw biosignal, the interface would
-be doing no work and the research question would be untestable by construction.
+The project is not assuming that this decomposition works. It is building the interface and the experiments needed to test whether it does.
 
 ---
 
-## Common Pose API
+## Why It Matters
 
-The idea is a standardized, time-stamped stream of physical hand joint states, carrying
-validity and provenance, with optional access to recent history. Every dimension should
-eventually answer all of:
+A shared hand-pose representation is only useful if the numbers mean the same physical thing across sources.
 
-| field | question |
-|---|---|
-| anatomical DOF | which joint, which axis |
-| unit | degrees or radians, stated, never implied |
-| positive direction | what a positive value means (flexion? abduction?) |
-| zero / reference definition | what 0 is, and how it was physically established |
-| handedness convention | left / right, and whether it is mirrored |
-| calibration provenance | where the scale came from, and whether it is independently closable |
-| validity / confidence | may *this sample* of *this dimension* be interpreted as the named quantity |
+In practice, apparently compatible datasets can disagree in:
 
-**A dataset-specific 16-dimensional vector is not the API.** The container is deliberately
-provisional precisely because the project is still establishing what it must carry. What is
-already frozen is a *result*: the physically audited DB9 channel subset, described below.
+- joint ordering,
+- units,
+- sign conventions,
+- physical zero,
+- calibration procedures,
+- handedness,
+- invalid-sample encoding,
+- sensor fit and channel validity.
 
-Two design consequences that are enforced in code rather than documented as intentions:
+This project therefore treats pose interoperability as a **measurement and interface problem**, not only a machine-learning problem.
 
-* **A value never travels without its interpretability.** There is no accessor anywhere in
-  this package that returns a bare joint angle. Validity is three-valued
-  (`VALID` / `INVALID` / `NOT_ESTABLISHED`) because a boolean flag forces "not yet
-  established" to collapse into one of the other two, and both collapse directions have
-  already produced wrong results in this project's history.
-* **An invalid sample is not a zero.** The emg2pose release encodes inverse-kinematics
-  failures as all-zero joint-angle rows rather than NaN — 15.6 % of the official mini
-  corpus. Zero is a legitimate angle (the extended hand). Masking is explicit, and the
-  measured effect on one held-out session is 16.09° MAE unmasked versus 12.48° masked.
-
-Semantic anatomical correspondence is **not** numerical coordinate equivalence; see
-[`docs/common_pose_api.md`](docs/common_pose_api.md).
+A joint name matching across two datasets is not sufficient evidence that their numeric coordinates are interchangeable.
 
 ---
 
-## Current research status
+## Core Idea
 
-### Validated / established
+A Common Pose frame is intended to make the physical meaning of a pose explicit.
 
-* **Dataset provenance and coordinate audits** across the released pose corpora considered
-  for admission, with sources, hashes and access dates recorded per artifact.
-* **DB9 channel-level forensic validation.** A frozen, physically motivated audit whose
-  verdicts are `KEEP` / `DROP` / `INCONCLUSIVE` — established with no reference whatsoever
-  to classification performance.
-* **Identification of physically unreliable released DB9 channels.** Not just "noisy":
-  directionally wrong. On an unambiguous fist the raw DIP3 gauge and the released angle
-  move *opposite* to the published flexion-positive criterion in 71 of 77 subjects, while
-  every MCP and PIP channel in the very same segments moves the documented way in 77/77.
-* **A reduced trusted DB9 pose subset** — `TRUSTED_DB9_POSE_v1`, 8 channels, frozen before
-  any classifier ran.
-* **Subject-held-out posture utility on the trusted dimensions**, reported against the
-  historical 16-channel arm (see below).
-* **Revalidation of the trusted subset across all 77 DB9 participants.** The frozen
-  8-channel representation was unchanged by the larger sample. See
-  [`audits/db9/channel_forensic/FINAL_VALIDATION.md`](audits/db9/channel_forensic/FINAL_VALIDATION.md).
+Each pose dimension should eventually carry:
 
-### In progress
+- anatomical degree of freedom,
+- value and unit,
+- positive direction,
+- zero / reference definition,
+- handedness convention,
+- calibration provenance,
+- validity state,
+- timestamp,
+- optional recent history.
 
-* Common Pose cross-dataset adapters.
-* Connection to EMG-based pose estimation.
-
-### Not yet demonstrated
-
-* Universal task transfer.
-* Universal cross-dataset numerical coordinate equivalence.
-* A deployment-grade API. The current container is a research prototype and is expected to
-  change.
-* Arbitrary downstream task support.
-* That any downstream task head trained here would survive an upstream estimator
-  substitution. This is the central open question.
+The API itself is still evolving. A dataset-specific vector such as `canonical16` is **not** treated as the final interface.
 
 ---
 
-## DB9 physical audit
+## My Role
 
-**DB9 was not treated as a black-box benchmark.** Its channel layer was audited against
-physical anchors derived from the protocol itself, and some released calibrated channels
-cannot safely be interpreted as physical anatomical angles.
+I lead the project's:
 
-Representative findings, all with evidence in
-[`audits/db9/channel_forensic/`](audits/db9/channel_forensic/):
+- problem formulation and system decomposition,
+- experimental design and scientific gating,
+- cross-dataset coordinate and calibration audits,
+- interpretation of negative results and stop / rescope decisions,
+- reproducibility and evidence-governance strategy.
 
-| finding | evidence |
-|---|---|
-| `DIP3`, `DIP5` are **inverted** relative to the published sign criterion | raw gauge and released angle fall together in 71/77 and 62/77 subjects on an unambiguous fist, while MCP/PIP rise in 77/77 |
-| `CMC5` is not the palmar arch | the released column is an exact linear function (slope 0.28511 = the published 0.285) of the **same raw sensor** that feeds `WRIST_F` |
-| an earlier "many channels fail" verdict was **partly wrong** | it segmented on the pre-relabelling `repetition` vector, which is length-misaligned with the kinematics in 24 of 99 released files |
-| the in-file `subject` field is **not a valid identity key** | it is source-database-local; `S68_E2_A1.mat` reports `subject == 1`, colliding with `S1_E2_A1.mat` |
-
-**The trusted subset comes from physical validity rules, not from classification
-performance.** That ordering is the point: a subset chosen for accuracy cannot then be used
-to argue that the surviving channels are physically sound.
-
-### What the trusted subset costs
-
-Both arms are always reported together. Omitting the loss would hide the price of the
-audit; omitting the second number would hide that the surviving subset is genuinely usable.
-
-| | arm A — historical 16-channel | arm B — trusted subset (8) |
-|---|---|---|
-| balanced accuracy | **0.8556** | **0.7479** |
-| accuracy | 0.8556 | 0.7479 |
-| macro-F1 | 0.8559 | 0.7460 |
-| chance (8 classes) | 0.1250 | 0.1250 |
-| median subject BA | 0.8744 | 0.7556 |
-| worst subject BA | 0.5850 | 0.5369 |
-| class collapse | no | no |
-
-Task: **NinaPro DB9 Exercise B hand configurations, official movement IDs 1–8.**
-Movement IDs 9–17 are wrist movements and are **not** part of the posture task; movement
-17 is a wrist movement, not a hand-shape class. 77 subjects, leave-one-subject-out,
-global participant identity from the archive filename, train-fold-only standardisation,
-one shared LDA per fold, radians, central 60 % of every segment with a fixed per-segment
-frame cap of 200 (123 200 frames).
-
-> **Why the task is IDs 1–8 only.** Exercise B mixes eight hand configurations with nine
-> wrist movements. `TRUSTED_DB9_POSE_v1` contains no wrist channel by construction, so a
-> wrist-inclusive target penalises it for a quantity it was never designed to carry.
->
-> **Why the frame cap.** DB2 recordings are much longer than DB1/DB5 recordings. An
-> uncapped frame-level evaluation would therefore weight the DB2 source database simply
-> because it contains more frames per segment. A fixed per-segment frame cap preserves
-> every participant, every movement and every segment while preventing recording duration
-> from defining evaluation weight. It is a declared frame-count choice, not a random
-> balancing step, and it changes no channel, model, split or threshold.
->
-> **Class 4 is the weakest posture class (recall 0.495), and most of its errors go to
-> class 5.** It stays in the official internal result and must be reported separately in
-> any future cross-dataset or human-semantic transfer evaluation rather than hidden
-> behind the aggregate.
-
-### Trusted subset — FROZEN
-
-`TRUSTED_DB9_POSE_v1` has been **revalidated across all 77 DB9 participants**. The frozen
-8-channel representation **remained unchanged**. Channel selection was based on physical
-validity *before* classification performance was evaluated.
-
-8 channels, frozen before any classifier ran, subset SHA-256
-`e51dde6e63941fd080c84f3896a98cf50fba9e17d5f9cebe909253d5465782d1`:
-
-`MCP1`, `IP1`, `MCP2_f`, `PIP2`, `MCP3_f`, `MCP4_f`, `MCP5_f`, `PIP5`
-
-* `DROP` (6): `MCP2_a` (vendor-excluded, all-NaN), `CMC5`, `MCP5_a`, `DIP3`, `DIP5`, `WRIST_A`
-* `INCONCLUSIVE` (8 at 37 subjects, **6 at 77**): `CMC1_f`, `CMC1_a`, `MCP4_a`, `PIP4`,
-  `DIP2`, `WRIST_F`. Under the larger 77-subject sample and the **already-frozen rules**,
-  `PIP3` and `DIP4` moved from `INCONCLUSIVE` to `DROP`. No rule was made more permissive,
-  and the 8-channel frozen subset did not change.
-
-`DROP` means established not to be the named physical quantity. `INCONCLUSIVE` means the
-evidence does not settle it — that is a different statement and is not interchangeable
-with `DROP`. Details and the full forensic chain:
-[`docs/db9_trusted_subset.md`](docs/db9_trusted_subset.md).
+A major focus of the project has been separating implementation success from scientific evidence: code that runs, a classifier that scores well, and a physically valid interface are treated as different claims.
 
 ---
 
-## Repository structure
+## Current Evidence
 
-```
-common-pose/
-├── src/common_pose/          the interface
-│   ├── api/                  DOF registry, pose container, validity, provenance
-│   ├── adapters/             released dataset -> Common Pose stream
-│   ├── estimators/           biosignal -> pose front end
-│   ├── tasks/                downstream task definitions and heads
-│   └── evaluation/           metrics that carry their protocol
-├── audits/
-│   ├── db9/
-│   │   ├── channel_forensic/ frozen physical-validity audit (plan, ledgers, verdicts)
-│   │   ├── coordinate_audit/ cross-dataset coordinate and calibration audit
-│   │   └── trusted_pose/     TRUSTED_DB9_POSE_v1 — the frozen artifact
-│   ├── dataset_admission/    third-party pose corpora: admissibility and blockers
-│   └── human_semantic_validation/  annotation ontology and protocol (partly withheld)
-├── experiments/
-│   ├── db9_posture/          frozen posture-task results
-│   ├── bridge/               emg2pose pose vs DB9 pose
-│   └── observability/        KIN-MUS task-phase observability
-├── docs/                     architecture, API philosophy, status, reproducibility, licensing
-├── provenance/               curation manifest: per-file source and target hashes
-├── scripts/                  build, verification and pre-publication scan entry points
-└── tests/                    contract tests, runnable without any dataset
-```
+### 1. A physically audited DB9 posture representation
 
-`src/common_pose/adapters/_db9_pipeline/` holds the DB9 task pipeline (loader, canonical
-mapping, labels, quality checks, fetch and unpack tools) carried over from the research
-workspace. It is source material for the adapter rather than part of the interface, which
-is why it is underscore-prefixed and why it is not a sibling package of
-`adapters/db9.py` — those two would collide in the import namespace.
+NinaPro DB9 was not used as a black-box kinematic benchmark.
 
-Not every directory contains finished work. Where a lane is provisional, downgraded or
-withheld, the directory's own README says so. `PUBLICATION_AUDIT.md` records what was
-verified before publication and what was not.
+Channel validity was evaluated from physical movement anchors and released sensor/calibration behavior **before downstream classification performance was inspected**.
+
+The frozen representation,
+
+`TRUSTED_DB9_POSE_v1`,
+
+contains eight retained dimensions:
+
+    MCP1
+    IP1
+    MCP2_f
+    PIP2
+    MCP3_f
+    MCP4_f
+    MCP5_f
+    PIP5
+
+The subset was subsequently revalidated across **all 77 DB9 participants**. None of the eight retained channels changed status.
+
+Several released channels were excluded or left unresolved. In particular, the released `CMC5` representation was found to derive from the same raw glove column used by `WRIST_F`, despite the published calibration assigning these quantities to different sensors.
+
+Full evidence: [`docs/db9_trusted_subset.md`](docs/db9_trusted_subset.md).
 
 ---
 
-## Reproducibility
+### 2. The trusted subset still carries posture information
 
-**Third-party datasets are not redistributed.** Every dataset used here is obtainable from
-its official source; this repository ships the code, the analysis protocols, the frozen
-manifests and the content hashes, but never the data itself.
+The downstream utility test uses the official DB9 Exercise-B hand configurations, movement IDs **1–8 only**.
 
-| dataset | role | official source |
-|---|---|---|
-| **Ninapro DB9** | calibrated CyberGlove-II kinematics; the physical-audit and posture-task corpus | [ninapro.hevs.ch](https://ninapro.hevs.ch/instructions/DB9.html) |
-| **emg2pose** | sEMG → hand pose front end and UmeTrack hand model | [github.com/facebookresearch/emg2pose](https://github.com/facebookresearch/emg2pose) |
-| **KIN-MUS UJI** | external pose source with a task-phase label | [doi:10.5281/zenodo.3469380](https://doi.org/10.5281/zenodo.3469380) |
-| **KINE-ADL BE-UJI** | external ADL kinematics | [doi:10.17632/8mf4y2srgh.4](https://doi.org/10.17632/8mf4y2srgh.4) |
-| **MyoKi** | external pose + sEMG + IMU corpus | DLR Myography & Kinematics record |
+Evaluation:
 
-What this repository does provide for reproducibility:
+- 77 participants,
+- leave-one-subject-out,
+- global subject identity derived from archive identity rather than the source-local `subject` field,
+- train-fold-only standardisation,
+- one simple LDA per fold,
+- fixed per-segment frame cap to prevent source-database recording duration from determining sample weight.
 
-* **frozen plans with hashes** — each audit lane pins a plan SHA-256 before it runs, so the
-  rules cannot be adjusted after seeing the outcome;
-* **frozen evidence artifacts** with their own hashes, under `audits/`;
-* **content hashes of the source files** curated here, in `provenance/`;
-* **protocol definitions in code** — the task, the split policy, the normalisation rule and
-  the metrics are executable objects, not prose;
-* **contract tests** that run with no dataset at all: `python -m pytest tests/ -q`.
+| representation | balanced accuracy | macro-F1 |
+|---|---:|---:|
+| historical 16-channel representation | 0.8556 | 0.8559 |
+| `TRUSTED_DB9_POSE_v1` | **0.7479** | **0.7460** |
+| chance | 0.1250 | — |
 
-Where a commit hash is unavailable the provenance records say `COMMIT PENDING` rather than
-implying version control coverage that did not exist at the time.
+The trusted subset has no class collapse. Class 4 remains the weakest configuration (`recall = 0.495`) and will be reported separately in future transfer experiments rather than hidden inside an aggregate score.
 
-### Running the tests
+The goal of this result is not to maximise DB9 classification accuracy. It establishes that a representation selected for physical validity still retains useful downstream posture information.
 
-```bash
-python -m pip install -r requirements.txt
-python -m pytest tests/ -q          # 58 tests, no dataset, no GPU, no training
-```
+---
 
-These are contract tests, not smoke tests. Each pins a property whose violation has already
-produced a wrong scientific result somewhere in this project.
+### 3. The upstream pose side has been brought under the same interface assumptions
+
+The official emg2pose model and mini corpus have been used to verify:
+
+- the released joint ordering,
+- angle units and flexion conventions,
+- the model’s temporal context,
+- pose-output timing,
+- invalid inverse-kinematics encoding.
+
+These checks establish interface facts, **not** an end-to-end Common Pose result.
+
+The official mini corpus covers a single held-out user, so results derived from it are not presented as a cross-user benchmark.
+
+---
+
+## Corrective and Negative Findings
+
+Several attractive intermediate conclusions did not survive audit.
+
+- An earlier DB9 screen reported that most candidate channels failed. That result was partly caused by segmentation on a pre-relabelling acquisition vector that is misaligned with kinematics in part of the release. The result was superseded by the forensic audit.
+- A first DB9 forensic pass covered only 37 participants because the loader selected the protocol by filename exercise code. DB2 stores the same 17-movement protocol under a different exercise number. Selection by data content recovered the full 77-participant cohort.
+- A ten-dimensional KIN-MUS representation was initially interpreted as ten intended anatomical DOFs. Four columns had been assigned semantics from a different UJI column order. The numerical experiment remains a feature-space result, but the physical interpretation was withdrawn.
+- Simple distributional/open-set transfer from DB9 did not provide a reliable bridge to natural emg2pose poses. Removing physically suspect DB9 channels did not rescue this branch and in some cases increased false acceptance.
+- A formal human semantic-validation round was interrupted by model unblinding at an interim checkpoint. Its preregistered primary endpoint is therefore not reported as a completed result.
+
+These failures are retained because they define what the project is currently allowed to claim.
+
+See [`docs/research_status.md`](docs/research_status.md) for the full evidence ledger.
+
+---
+
+## What Is Not Yet Demonstrated
+
+Common Pose has **not** yet established:
+
+- that a frozen downstream task head survives substitution of the upstream pose estimator,
+- cross-dataset numerical coordinate equivalence,
+- arbitrary or universal downstream task reuse,
+- reliable cross-dataset open-set rejection,
+- a deployment-grade or frozen Common Pose API,
+- multi-user end-to-end EMG → Common Pose → task generalisation.
+
+The current software infrastructure should not be interpreted as evidence for those claims.
+
+---
+
+## Current Scientific Gate
+
+The next experiment tests the central hypothesis directly:
+
+> **Can the frozen DB9 posture head retain meaningful task behavior when the same physical DOFs are supplied by an independently produced pose stream?**
+
+Before evaluating the task output, the upstream source must independently establish the mapping of the required DOFs, including units, signs, physical reference, validity and calibration provenance.
+
+The mapping will not be tuned using downstream task performance.
+
+---
+
+## Repository Structure
+
+    common-pose/
+    ├── src/common_pose/          interface, adapters, estimators and task abstractions
+    ├── audits/                   frozen dataset, coordinate and channel-validity audits
+    │   ├── db9/
+    │   ├── dataset_admission/
+    │   └── human_semantic_validation/
+    ├── experiments/              executed research branches and preserved results
+    ├── docs/                     architecture, evidence ledger and technical documentation
+    ├── provenance/               curation manifests and source/content hashes
+    ├── scripts/                  repository curation and publication checks
+    └── tests/                    software and scientific-contract tests
+
+The repository intentionally preserves negative and superseded research artifacts. Their presence does not mean their original conclusions remain current; authoritative status is recorded in [`docs/research_status.md`](docs/research_status.md).
+
+---
+
+## Reproducibility and Data Boundary
+
+Third-party datasets are **not redistributed** in this repository.
+
+The public repository contains:
+
+- analysis and interface code,
+- frozen protocols,
+- lightweight result artifacts,
+- provenance manifests,
+- hashes,
+- evidence ledgers.
+
+It excludes:
+
+- raw third-party datasets,
+- model checkpoints,
+- private annotator-level data,
+- hidden-label / unblinding material,
+- credentials and machine-local configuration.
+
+The curated human-semantic-validation directory is intentionally incomplete because some evaluator-level material should not be public.
+
+---
+
+## Running the Tests
+
+The current test suite checks software and research-contract invariants; passing it does not imply scientific validation of the Common Pose hypothesis.
+
+    python -m pip install -r requirements.txt
+    python -m pytest tests/ -q
+
+No raw dataset or GPU is required for the contract tests.
 
 ---
 
 ## Roadmap
 
-1. ~~Freeze the trusted physical pose representation.~~ **Done for DB9:**
-   `TRUSTED_DB9_POSE_v1`, 8 channels, revalidated across all 77 participants.
-   Note this freezes the **DB9 task source**, not the Common Pose API.
-2. Validate the pose-only downstream task.
-3. Integrate the EMG → pose front end.
-4. Test the frozen downstream task under upstream estimator substitution.
-5. Study cross-dataset interoperability.
+The immediate research sequence is:
+
+1. freeze and document the audited DB9 downstream baseline — **completed**;
+2. establish an independent source mapping for the same trusted physical DOFs;
+3. test the frozen downstream head under upstream substitution;
+4. separate interface/domain-shift failure from pose-estimation failure;
+5. only then evaluate whether broader task or dataset interoperability is justified.
 
 ---
 
 ## Author
 
-**Boyan Dong** — Biomedical Engineering, Southeast University
+**Boyan Dong**
+Biomedical Engineering, Southeast University
 
 ---
 
-## Citation
+## Citation and License
 
-This project is currently under active research. A formal citation will be added when an
-associated publication or preprint is available.
+This project is under active research and does not yet have an associated publication or preprint.
 
----
-
-## License
-
-License information will be added after third-party code provenance is reviewed. See
-[`docs/licensing.md`](docs/licensing.md) — several dependencies carry
-non-commercial or share-alike terms and their lineage constrains what this repository can
-claim.
+No repository-wide open-source licence has been selected while third-party code lineage is still under review. See [`docs/licensing.md`](docs/licensing.md).

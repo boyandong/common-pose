@@ -1,0 +1,11 @@
+{
+  "credential_channel": "RAM_TO_STDIN_ONLY",
+  "launcher_sha256": "0ab80fdc68bdb76cbfdd77c012fcf7e900bd94df8a68706a2f678858debd289c",
+  "observed_local_time": "2026-10-11T02:44:41.732616+08:00",
+  "original_frozen_files_changed": false,
+  "pid": 27444,
+  "preflight_sha256": "f5dba8c8f9cdb3bfae48b784367d263850374bcf0333cf105cd314b1d4195526",
+  "runner_sha256": "22cac5b1c07e2bbcaa973ab5687e74dad1b4eaedcb1f6c48af6300e59f78debb",
+  "start_time": "2026-10-11T02:44:41.4245510+08:00",
+  "status": "SINGLE_HUMAN_AUTHORIZED_INTEGRATED_LAUNCH"
+}

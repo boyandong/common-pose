@@ -1,0 +1,17 @@
+VERIFIED 20/964 files
+VERIFIED 40/964 files
+VERIFIED 60/964 files
+VERIFIED 80/964 files
+VERIFIED 100/964 files
+VERIFIED 120/964 files
+VERIFIED 140/964 files
+VERIFIED 160/964 files
+VERIFIED 180/964 files
+Traceback (most recent call last):
+  File "/root/work/common-pose/experiments/upstream_substitution/gate4b_multiuser_reliability/scripts/verify_gate4b_data.py", line 283, in <module>
+    main()
+  File "/root/work/common-pose/experiments/upstream_substitution/gate4b_multiuser_reliability/scripts/verify_gate4b_data.py", line 177, in main
+    check(n > 1790 + 40, f"enough source rows: {path.name}")
+  File "/root/work/common-pose/experiments/upstream_substitution/gate4b_multiuser_reliability/scripts/verify_gate4b_data.py", line 68, in check
+    raise AssertionError(description)
+AssertionError: enough source rows: 2022-04-07-1649318400-a9a00-cv-emg-pose-demonstration@2-recording-16_left.hdf5

@@ -1,0 +1,10 @@
+metadata rows: 25253
+tar HDF5 members: 25253
+preflight participants: 192
+preflight sessions: 745
+frozen reservations: 48
+split counts: {'DEV': 20, 'CALIBRATION_LOCKED': 10, 'VALIDATION': 8, 'FINAL_TEST_LOCKED': 10}
+actual eligible-frame count: PENDING; stop without replacement if short
+scientific outcomes inspected: NO
+VERIFY_COHORT: PASS | 118 checks | 0 failures
+Full HDF5, timestamp, GT-valid, and prediction-valid checks remain PENDING.

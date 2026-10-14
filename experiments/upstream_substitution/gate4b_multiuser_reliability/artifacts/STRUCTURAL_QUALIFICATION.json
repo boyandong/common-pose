@@ -1,0 +1,18 @@
+{
+  "task": "COMMON-POSE-GATE4B-20260922-DATA-ACQUISITION",
+  "status": "PARTIAL",
+  "assertions": 57,
+  "failures": 0,
+  "acquisition_complete": false,
+  "files_complete": 14,
+  "files_expected": 964,
+  "sessions_assessed": 0,
+  "session_qualifications": [],
+  "reason": "Full structural and GT-valid session qualification requires all frozen files.",
+  "actual_eligible_frame_count_known": false,
+  "upstream_inference_run": false,
+  "scientific_outcome_computed": false,
+  "calibration_locked_accessed": false,
+  "final_test_locked_accessed": false,
+  "discovery_user_accessed": false
+}

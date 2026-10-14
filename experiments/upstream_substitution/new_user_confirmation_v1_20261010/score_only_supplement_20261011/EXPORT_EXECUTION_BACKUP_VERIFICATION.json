@@ -1,0 +1,26 @@
+{
+  "all_local_sha256_recomputed": true,
+  "closed_export_logs_and_terminal": [
+    {
+      "bytes": 51,
+      "relative": "jobs/backup_export/output.log",
+      "sha256": "7179b24660d72fc5c1541b831f4ff612070f3d9e7960ad6d5ed9bb23f1599a1e"
+    },
+    {
+      "bytes": 219,
+      "relative": "jobs/backup_export/TERMINAL.json",
+      "sha256": "058ff286832108fba92f757b891567f0d8a3b8d3f0dd8e2321c7ab461bb2c1f3"
+    },
+    {
+      "bytes": 80,
+      "relative": "jobs/backup_export/TERMINAL.json.sha256",
+      "sha256": "9bad62b6af3ddc6a94d2761a27633202a655cc526fd238999d9b91c2d119cc66"
+    },
+    {
+      "bytes": 0,
+      "relative": "dispatcher_backup_export.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "status": "PASS"
+}

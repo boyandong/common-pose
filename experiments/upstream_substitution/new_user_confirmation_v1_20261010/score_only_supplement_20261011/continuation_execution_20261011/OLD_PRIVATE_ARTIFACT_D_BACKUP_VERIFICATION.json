@@ -1,0 +1,155 @@
+{
+  "all_source_and_D_sha256_recomputed": true,
+  "archived_seed_files": 27,
+  "credential_material_copied": false,
+  "files": {
+    "GIT_RELEASE_RECEIPT.json": {
+      "bytes": 285,
+      "sha256": "0401ce5d65d9564991f694ebc46920ef68b04d4bfe81b87d0a083ca6b4ec3b5d"
+    },
+    "LOCAL_BACKUP_VERIFICATION.json": {
+      "bytes": 235,
+      "sha256": "dc719f77439cca9f41d308cd3e70f4d5f8ff467421e723ca7af219951f97d494"
+    },
+    "RELEASE_CONTENT_MANIFEST.json": {
+      "bytes": 22539,
+      "sha256": "94bc8ccced15b00a290b141122e4d20664109504c245b85f1b473a7b081254bc"
+    },
+    "REPORTING_SEED_BACKUP_MANIFEST.json": {
+      "bytes": 9070,
+      "sha256": "b594bb4550a59c668ac5700c0ac7c39b81790873a397b4bfc99d24977a0d653f"
+    },
+    "manuscript_closing/MANUSCRIPT_CLOSING.md": {
+      "bytes": 15645,
+      "sha256": "ed07a402de253bc26c17faaae6cc0f63d8729535e3ab742eb5a9c98140102f99"
+    },
+    "private_cache_backup_20261010.tar.gz": {
+      "bytes": 384382955,
+      "sha256": "79241d7fdf9006b2c6cb95c6a88ac9f85ba1951931ce9e0097b53dcce25283cc"
+    },
+    "private_reporting_and_seed_backup_20261010.tar.gz": {
+      "bytes": 17428285,
+      "sha256": "413f782643ed4e01f2738881787369018c45167e3c73f14626a7ff005ca30f5a"
+    },
+    "reproduction_attempt3_8threads/INDEPENDENT_VERIFICATION.json": {
+      "bytes": 1679,
+      "sha256": "06d763a6206e26ea5259377f512f727446ca60a4c73ce89c245a987e4ec3e02f"
+    },
+    "reproduction_attempt3_8threads/seed_results/B_fold0_class_model.joblib": {
+      "bytes": 1622,
+      "sha256": "a8ee77811c8459d5a082c1a58753665b603e0cacdd4180d7e174a07803f1b78b"
+    },
+    "reproduction_attempt3_8threads/seed_results/B_fold0_full.joblib": {
+      "bytes": 2518,
+      "sha256": "8ed2bd74c4132dacc436cd9fc3bd02be7c356ea0b0f7dc107095bee9cfa4177d"
+    },
+    "reproduction_attempt3_8threads/seed_results/B_fold1_class_model.joblib": {
+      "bytes": 1622,
+      "sha256": "e329bccce7fd95dbeafa40e40794b45b401e7051a88e9dd058016c0f0898d848"
+    },
+    "reproduction_attempt3_8threads/seed_results/B_fold1_full.joblib": {
+      "bytes": 2518,
+      "sha256": "4cc234462bc691bad51a23cf67e8f90dfad21a318acbe92b02d4c2bb5688a9a5"
+    },
+    "reproduction_attempt3_8threads/seed_results/B_fold2_class_model.joblib": {
+      "bytes": 1622,
+      "sha256": "4fdef3faa8c1416b9c81e613bd5ef92fbf286652dbc0a54e79f9b408e90ddfac"
+    },
+    "reproduction_attempt3_8threads/seed_results/B_fold2_full.joblib": {
+      "bytes": 2518,
+      "sha256": "374f4237e422be22e857801dc9e25456cd468f321cf0d2855cf3420ff5d86e24"
+    },
+    "reproduction_attempt3_8threads/seed_results/B_fold3_class_model.joblib": {
+      "bytes": 1622,
+      "sha256": "081741ede01e5fed754e2c3f788f79ea08ad1eec099b8501b65965f6fd3d56f3"
+    },
+    "reproduction_attempt3_8threads/seed_results/B_fold3_full.joblib": {
+      "bytes": 2518,
+      "sha256": "c3f7c3f6a5961dbc49626b46c619000f5c1cbc1fc8755ca4776e3a6f10cff830"
+    },
+    "reproduction_attempt3_8threads/seed_results/B_fold4_class_model.joblib": {
+      "bytes": 1622,
+      "sha256": "e2101c98aa3825ae5d063687be50a5f3ebc5f09a95e3fca0109cd672ed560a26"
+    },
+    "reproduction_attempt3_8threads/seed_results/B_fold4_full.joblib": {
+      "bytes": 2518,
+      "sha256": "c4cee2aef84de44d24a57c5ad4bb7c2eea4d0b13f4fdca95ec8d62c8b1e7a2c6"
+    },
+    "reproduction_attempt3_8threads/seed_results/CANONICAL_SEED_ADMISSION.csv": {
+      "bytes": 62636,
+      "sha256": "6d7602f4825b7ce5caaebdd38ac86ff860502d0e7307079f52340fa846cceb60"
+    },
+    "reproduction_attempt3_8threads/seed_results/RUN_MANIFEST.json": {
+      "bytes": 2973,
+      "sha256": "44bdcce88ff0d8f3c65e6465a851cc0f5742c639a69a0a01b687d7cc3c1b1d23"
+    },
+    "reproduction_attempt3_8threads/seed_results/SCORE_LINEAGE.json": {
+      "bytes": 16179,
+      "sha256": "52dbff5cde8c2ae43ee07b13cb319da215a1bab2024b3b413260da4a4e65c564"
+    },
+    "reproduction_attempt3_8threads/seed_results/SEED_CLASS_SUPPORT.csv": {
+      "bytes": 2429715,
+      "sha256": "77e66ac381f9547253d2bcb12dbe3388e883d81e7a6dcbd93de1d5aebc9867d5"
+    },
+    "reproduction_attempt3_8threads/seed_results/SEED_PAIRED_EFFECTS.csv": {
+      "bytes": 267777,
+      "sha256": "6592af4797e2f56489616f344038daef03e0c0d3a2c37d32de8ed1ad3bfa6cbb"
+    },
+    "reproduction_attempt3_8threads/seed_results/SEED_SUPPORT_INTERSECTIONS_DIAGNOSTIC.csv": {
+      "bytes": 179887,
+      "sha256": "ef6077ab95713a8cf910bbec2a942dd93b761aa8576c96091f974da5046a27ff"
+    },
+    "reproduction_attempt3_8threads/seed_results/SEED_USER_RISKS.csv": {
+      "bytes": 685614,
+      "sha256": "f571a40ce530f68bf01613ad6730fcbcd8f1105e7f1a5580ac4ec2a3e82b973e"
+    },
+    "reproduction_attempt3_8threads/seed_results/SUMMARY.json": {
+      "bytes": 81815,
+      "sha256": "5dc89a22ac2a431692693453259df96d31dbba8e4f553c02e94f12220d81c8a5"
+    },
+    "reproduction_attempt3_8threads/seed_results/U_fold0_class_model.joblib": {
+      "bytes": 28248,
+      "sha256": "90d7f4300e92bd71ecfc275883f72a5ed5129943b8c38425bfe6845e1e1bb50e"
+    },
+    "reproduction_attempt3_8threads/seed_results/U_fold0_full.joblib": {
+      "bytes": 165966,
+      "sha256": "e70f78f413cbc71f06e1675066e2a833d0438e3b5a71bf739a46f4614f99d2c3"
+    },
+    "reproduction_attempt3_8threads/seed_results/U_fold1_class_model.joblib": {
+      "bytes": 33584,
+      "sha256": "e836d2c867540fda444d85d2186207eb5e3d361f9af095ee3a882157135432cb"
+    },
+    "reproduction_attempt3_8threads/seed_results/U_fold1_full.joblib": {
+      "bytes": 166750,
+      "sha256": "6a5a25bf063382da8e416bfa6812489ebaf2ab1f97d578da0e8fc6302cc0469d"
+    },
+    "reproduction_attempt3_8threads/seed_results/U_fold2_class_model.joblib": {
+      "bytes": 35968,
+      "sha256": "43d7bb16d5c6b91155f75de104e9797fb11132e02db2749373579217d8c4df80"
+    },
+    "reproduction_attempt3_8threads/seed_results/U_fold2_full.joblib": {
+      "bytes": 165758,
+      "sha256": "b65cf62fef7ac4099b7f11aec36fa609ee693345679efb42393d0d34fb7dc386"
+    },
+    "reproduction_attempt3_8threads/seed_results/U_fold3_class_model.joblib": {
+      "bytes": 62600,
+      "sha256": "5a1350442d6ef3d1112404c05aa38b59a6cf8f72be630bfb2596c71a85991a2d"
+    },
+    "reproduction_attempt3_8threads/seed_results/U_fold3_full.joblib": {
+      "bytes": 165534,
+      "sha256": "67c3d6f202a14ce3e87db437fcbdaf17ddfbf5d0e3fb79ab6053ae8919dbda51"
+    },
+    "reproduction_attempt3_8threads/seed_results/U_fold4_class_model.joblib": {
+      "bytes": 25312,
+      "sha256": "65385866881fb2b27c88cc416e8bf8bf3d7f802e279216eaff1b02a188c5a40b"
+    },
+    "reproduction_attempt3_8threads/seed_results/U_fold4_full.joblib": {
+      "bytes": 166542,
+      "sha256": "fe0b05680dd5da6f705e15aff057f29e6bf3979733fe5038d4bed1e54ab5661e"
+    }
+  },
+  "local_D_root": "D:\\CommonPose_confirmation_N80_20261010\\old_private_recovery_backup_20261011",
+  "not_new_N80_efficacy_evidence": true,
+  "old_git_anchor": "1fc75512698c92d4bd11cf52e660c8814b1ac127",
+  "status": "PASS_OLD_PRIVATE_ARCHIVES_AND_PRESCRIBED_SEED_EVIDENCE_ON_D"
+}

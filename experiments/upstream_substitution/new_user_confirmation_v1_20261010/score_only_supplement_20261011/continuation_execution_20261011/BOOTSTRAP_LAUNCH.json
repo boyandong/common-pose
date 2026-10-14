@@ -1,0 +1,7 @@
+{
+  "credential_channel": "existing scoped credential reader in hidden launcher; RAM/stdin only",
+  "git_commit": "a6c42202502e148953dd229211442aec01c1ad3a",
+  "launcher_sha256": "e166e8e02292a509ce41f5bb130f07547f1758b0f7e0dfa695d133e923dd54ab",
+  "observed_epoch": 1791668255.2293053,
+  "pid": 30156
+}

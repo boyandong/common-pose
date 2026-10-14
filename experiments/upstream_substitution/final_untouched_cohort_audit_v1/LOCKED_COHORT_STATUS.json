@@ -1,0 +1,54 @@
+{
+  "caveat": "identity reservation is intact in available provenance; actual upstream membership and paired streams remain unverified",
+  "cohorts": [
+    {
+      "cohort": "CALIBRATION_LOCKED",
+      "overlap_with_touched_users": 0,
+      "paired_stream_structure": "NOT_VERIFIED_FROM_METADATA",
+      "reserved_archive_bytes": 6001267032,
+      "reserved_recording_count": 338,
+      "reserved_session_count": 10,
+      "scientific_data_accessed_according_to_provenance": false,
+      "upstream_training_membership": "UNKNOWN",
+      "user_count": 10,
+      "users": [
+        "05026be68a",
+        "0f85d8939c",
+        "13ba969d01",
+        "4c4bfe28ea",
+        "4e37b5eb0b",
+        "60e5a2b0a4",
+        "91e58c0561",
+        "9261f6ab56",
+        "9fc18a9307",
+        "d999a1ad10"
+      ],
+      "verdict": "ELIGIBLE_UNTOUCHED"
+    },
+    {
+      "cohort": "FINAL_TEST_LOCKED",
+      "overlap_with_touched_users": 0,
+      "paired_stream_structure": "NOT_VERIFIED_FROM_METADATA",
+      "reserved_archive_bytes": 6465233144,
+      "reserved_recording_count": 386,
+      "reserved_session_count": 10,
+      "scientific_data_accessed_according_to_provenance": false,
+      "upstream_training_membership": "UNKNOWN",
+      "user_count": 10,
+      "users": [
+        "1152814359",
+        "2942949786",
+        "2cefcf6cba",
+        "513ba531ad",
+        "76bfc2d385",
+        "af1317ea3d",
+        "b27941d454",
+        "cdd070e9c3",
+        "ec05871b7c",
+        "f51770da75"
+      ],
+      "verdict": "ELIGIBLE_UNTOUCHED"
+    }
+  ],
+  "schema": "final-cohort-locked-status-v1"
+}

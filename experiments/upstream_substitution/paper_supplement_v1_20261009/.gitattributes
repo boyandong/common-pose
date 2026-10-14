@@ -1,0 +1,2 @@
+# Preserve frozen artifact/code bytes; line ending normalization breaks seals.
+* -text

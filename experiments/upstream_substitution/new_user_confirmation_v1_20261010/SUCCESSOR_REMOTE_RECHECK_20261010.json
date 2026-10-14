@@ -1,0 +1,78 @@
+{
+  "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+  "local_python_handles": [
+    {
+      "Id": 2060,
+      "start_time": "2026-10-10T20:24:55.8070883+08:00"
+    },
+    {
+      "Id": 22948,
+      "start_time": "2026-10-10T20:27:09.3984035+08:00"
+    }
+  ],
+  "new_effects_read": false,
+  "observed_local_time": "2026-10-10T20:27:09.749657+08:00",
+  "protocol_sha256": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a",
+  "remote_preflight": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5090 D",
+    "gpu_state": "NVIDIA GeForce RTX 5090 D, 4 MiB, 32607 MiB, 0 %\n",
+    "python": "3.10.13",
+    "remaining_bytes": 168342667264,
+    "remote_jobs": [],
+    "source_files": 1057,
+    "status": "PASS",
+    "threadpools": [
+      {
+        "filepath": "/root/miniconda3/envs/commonpose-supplement/lib/python3.10/site-packages/torch/lib/libgomp.so.1",
+        "internal_api": "openmp",
+        "num_threads": 8,
+        "prefix": "libgomp",
+        "user_api": "openmp",
+        "version": null
+      },
+      {
+        "architecture": "SapphireRapids",
+        "filepath": "/root/miniconda3/envs/commonpose-supplement/lib/python3.10/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+        "internal_api": "openblas",
+        "num_threads": 8,
+        "prefix": "libopenblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.23.dev"
+      }
+    ],
+    "torch": "2.8.0+cu128",
+    "upstream_tree_sha256": "0fc2d40b69c46254c9cb4fdc72e7a3e2f37549803e60bb698b6ba09ffecb6b7b",
+    "versions": {
+      "joblib": "1.4.2",
+      "numpy": "1.26.4",
+      "scikit-learn": "1.5.2",
+      "scipy": "1.13.1",
+      "threadpoolctl": "3.7.0"
+    }
+  },
+  "remote_stages": {
+    "analysis": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    },
+    "qualification": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    },
+    "reconstruction": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    },
+    "support": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    },
+    "verification": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    }
+  },
+  "status": "READ_ONLY_SUCCESSOR_AUDIT_COMPLETE"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "archive_sha256": "0eb0a5bff49fc92efbfeaf896255db719e5453445b5125cf86a13c2105979168",
+  "artifact_hashes_verified": 34,
+  "source_files_verified": 1356,
+  "max_reproduction_risk_drift": 0.001733574010921557,
+  "paired_effect_rows": 2340,
+  "effect_summary_groups_verified": 120,
+  "risk_coverage_rows": 54600,
+  "risk_effect_crosschecks": 1404,
+  "scope": "independent hashes and CSV consistency; not per-block identity or new prospective confirmation"
+}

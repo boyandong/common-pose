@@ -1,0 +1,21 @@
+{
+  "status": "ORIGINAL_DOWNLOAD_HANDLE_AND_PID_ABSENT_AFTER_INTENTIONAL_TURN_INTERRUPTION",
+  "original_unified_session": 77827,
+  "original_pid": 16232,
+  "observed_epoch": 1791617960.7895317,
+  "last_progress": {
+    "completed_bytes": 1817540960,
+    "completed_files": 100,
+    "elapsed_seconds": 1082.1569999999992,
+    "observed_epoch": 1791616744.4181929,
+    "pid": 16232,
+    "required_files": 2768,
+    "stage": "ACQUISITION_RUNNING"
+  },
+  "completed_files_on_D": 105,
+  "completed_bytes_on_D": 1957406696,
+  "retained_partial_files": 8,
+  "retained_partial_bytes": 137855250,
+  "restart_basis": "both tool handle and OS pid absent; not progress-file timestamp or observation timeout",
+  "action": "resume identical sealed source-members and code; validate completed SHA256 and retained partial tail before resume"
+}

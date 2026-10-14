@@ -1,0 +1,171 @@
+==============================================================================
+GATE 3 — INDEPENDENT VERIFICATION
+==============================================================================
+
+[1] plan integrity
+  [PASS] plan sha256 matches GATE3_PLAN.sha256  -- 9869d9b94ba07d91… vs 9869d9b94ba07d91…
+  [PASS] GATE3_DATA_MANIFEST.json records the same plan sha
+  [PASS] GATE3_ALIGNMENT_AUDIT.json records the same plan sha
+  [PASS] GATE3_POSE_ERROR.json records the same plan sha
+  [PASS] GATE3_PRESERVATION_SUMMARY.json records the same plan sha
+  [PASS] GATE3_DECISION.json records the same plan sha
+
+[2] frozen objects
+  [PASS] frozen subset sha256
+  [PASS] head DB9 columns == [2,3,4,6,7,9,13,15]
+  [PASS] head class set == 1..8
+  [PASS] head has predict_proba
+  [PASS] head replication EXACT  -- 13 quantities
+  [PASS]   replication n_frames == frozen record  -- 123200 vs 123200
+  [PASS]   replication n_subjects == frozen record  -- 77 vs 77
+  [PASS]   replication accuracy == frozen record  -- 0.747914 vs 0.747914
+  [PASS]   replication balanced_accuracy == frozen record  -- 0.747914 vs 0.747914
+  [PASS]   replication macro_f1 == frozen record  -- 0.74598 vs 0.74598
+  [PASS]   replication recall class 1  -- 0.86026 vs 0.86026
+  [PASS]   replication recall class 2  -- 0.691364 vs 0.691364
+  [PASS]   replication recall class 3  -- 0.875584 vs 0.875584
+  [PASS]   replication recall class 4  -- 0.49474 vs 0.49474
+  [PASS]   replication recall class 5  -- 0.902857 vs 0.902857
+  [PASS]   replication recall class 6  -- 0.750974 vs 0.750974
+  [PASS]   replication recall class 7  -- 0.829026 vs 0.829026
+  [PASS]   replication recall class 8  -- 0.578506 vs 0.578506
+
+[3] trusted-8 mapping
+  [PASS] trusted-8 emg2pose indices == [2,3,5,6,9,13,17,18]
+  [PASS] 8 trusted DOF names present
+
+[4] recomputation from source (independent of the runner)
+  [PASS] record count matches manifest  -- 30 vs 30
+  [PASS] GT/pred timestamp grids exactly equal for every record
+  [PASS] GT/pred shapes consistent for every record
+  [PASS] stored rows match manifest  -- 4218756 vs 4218756
+  [PASS] GT-valid rows match manifest  -- 3512166 vs 3512166
+  [PASS] prediction-valid rows match manifest  -- 4165056 vs 4165056
+  [PASS] aligned rows match manifest
+  [PASS] analysis rows == sum of per-file eligible blocks  -- 86833
+  [PASS] analysis sampling rate is 50 Hz
+  [PASS] n_analysis_samples matches  -- 86833 vs 86833
+  [PASS] hard agreement recomputes  -- 0.36453883 vs 0.36453883
+  [PASS] disagreement count recomputes
+  [PASS] class supports sum to N
+  [PASS] class supports recompute
+  [PASS] Y_GT occupancy sums to 1  -- 1.0
+  [PASS] balanced preservation recomputes  -- 0.28680458 vs 0.28680458
+  [PASS] sufficient class list recomputes
+  [PASS]   per-class preservation class 1 recomputes
+  [PASS]   per-class preservation class 2 recomputes
+  [PASS]   per-class preservation class 3 recomputes
+  [PASS]   per-class preservation class 4 recomputes
+  [PASS]   per-class preservation class 5 recomputes
+  [PASS]   per-class preservation class 6 recomputes
+  [PASS]   per-class preservation class 7 recomputes
+  [PASS]   per-class preservation class 8 recomputes
+  [PASS] preservation matrix total == N  -- 86833
+  [PASS] preservation matrix rows sum to class supports
+  [PASS] row-normalised matrix matches recomputation (12-dp file)
+  [PASS] count matrix matches recomputation
+  [PASS] exact integer count matrix (JSON) matches recomputation
+  [PASS] exact count matrix total == N
+  [PASS] exact count matrix row sums == class supports
+  [PASS] matrix orientation is rows=Y_GT, columns=Y_PRED
+  [PASS] row-normalised matrix rows sum to 1
+  [PASS] Cohen kappa recomputes  -- 0.18945462 vs 0.18945462
+  [PASS] TV median recomputes
+  [PASS] TV IQR recomputes
+  [PASS] JS median recomputes
+  [PASS] P_PRED[Y_GT] median recomputes
+  [PASS] TV in [0,1]
+  [PASS] JS >= 0
+  [PASS] overall pose RMSE recomputes
+  [PASS] overall pose MAE recomputes
+  [PASS]   DOF thumb_mcp_flexion MAE recomputes
+  [PASS]   DOF thumb_ip_flexion MAE recomputes
+  [PASS]   DOF index_mcp_flexion MAE recomputes
+  [PASS]   DOF index_pip_flexion MAE recomputes
+  [PASS]   DOF middle_mcp_flexion MAE recomputes
+  [PASS]   DOF ring_mcp_flexion MAE recomputes
+  [PASS]   DOF pinky_mcp_flexion MAE recomputes
+  [PASS]   DOF pinky_pip_flexion MAE recomputes
+  [PASS] contiguous sequence assembly consumes all samples
+  [PASS] GT switch rate recomputes
+  [PASS] prediction switch rate recomputes
+  [PASS] GT transition event count recomputes  -- 6706 vs 6706
+  [PASS] transition-event match fraction recomputes  -- 0.035789
+
+[5] stratification accounting
+  [PASS] side counts sum to N  -- {'left': 43535, 'right': 43298}
+  [PASS]   side left n matches  -- 43535 vs 43535
+  [PASS]   side left agreement recomputes
+  [PASS]   side right n matches  -- 43298 vs 43298
+  [PASS]   side right agreement recomputes
+  [PASS] stage counts sum to N  -- 15 stages
+  [PASS]   stage CountingUpDownFaceSideAway n matches  -- 5530 vs 5530
+  [PASS]   stage FingerAbductionSeries n matches  -- 5601 vs 5601
+  [PASS]   stage FingerFreeform n matches  -- 4356 vs 4356
+  [PASS]   stage FingerPinchesSingleFingerPin n matches  -- 5179 vs 5179
+  [PASS]   stage FingerWigglingSpreading n matches  -- 5647 vs 5647
+  [PASS]   stage HandClawGraspFlicks n matches  -- 4813 vs 4813
+  [PASS]   stage HookEmHornsOKScissors n matches  -- 5430 vs 5430
+  [PASS]   stage IndividualFingerPointingSnap n matches  -- 5735 vs 5735
+  [PASS]   stage OneHandedFreeStyle n matches  -- 3586 vs 3586
+  [PASS]   stage ShakaVulcanPeace n matches  -- 5087 vs 5087
+  [PASS]   stage ThumbsSwipesWholeHand n matches  -- 5530 vs 5530
+  [PASS]   stage ThumbsUpDownThumbRotationsCW n matches  -- 3780 vs 3780
+  [PASS]   stage TwoHandedFreeStyle n matches  -- 18478 vs 18478
+  [PASS]   stage WristFlexionAbduction n matches  -- 5134 vs 5134
+  [PASS]   stage unconstrained n matches  -- 2947 vs 2947
+
+[6] firewall assertions
+  [PASS] firewall GATE_CREATED == NO
+  [PASS] firewall UNKNOWN_CLASS == NO
+  [PASS] firewall ABSTENTION == NO
+  [PASS] firewall REJECTION == NO
+  [PASS] firewall HUMAN_LABELS_USED == NO
+  [PASS] firewall CALIBRATION_FITTED == NO
+  [PASS] firewall TASK_SPECIFIC_RETRAINING == NO
+  [PASS] firewall UPSTREAM_RETRAINING == NO
+  [PASS] firewall SMOOTHING_APPLIED == NO
+  [PASS] firewall CHECKPOINT_SELECTED_ON_DOWNSTREAM_PERFORMANCE == NO
+  [PASS] firewall ALIGNMENT_OPTIMIZED_ON_OUTCOME == NO
+  [PASS] firewall SAMPLE_SELECTION_ON_DOWNSTREAM_OUTPUT == NO
+  [PASS] firewall SEMANTIC_ACCURACY_CLAIMED == NO
+  [PASS] firewall HISTORICAL_0_7646_USED_FOR_DESIGN == NO
+  [PASS] firewall FULL_CORPUS_DOWNLOADED == NO
+  [PASS] no categorical verdict emitted
+  [PASS] historical 0.7646 flagged not-used-for-design
+  [PASS] no gate artifact present (no GMM/OCSVM/conformal files)
+  [PASS] no human-label artifact present
+
+[7] error -> functional failure curve
+  [PASS] curve has 10 deciles
+  [PASS] decile sizes sum to N
+  [PASS]   decile 1 n/median recompute
+  [PASS]   decile 1 disagreement rate recomputes
+  [PASS]   decile 2 n/median recompute
+  [PASS]   decile 2 disagreement rate recomputes
+  [PASS]   decile 3 n/median recompute
+  [PASS]   decile 3 disagreement rate recomputes
+  [PASS]   decile 4 n/median recompute
+  [PASS]   decile 4 disagreement rate recomputes
+  [PASS]   decile 5 n/median recompute
+  [PASS]   decile 5 disagreement rate recomputes
+  [PASS]   decile 6 n/median recompute
+  [PASS]   decile 6 disagreement rate recomputes
+  [PASS]   decile 7 n/median recompute
+  [PASS]   decile 7 disagreement rate recomputes
+  [PASS]   decile 8 n/median recompute
+  [PASS]   decile 8 disagreement rate recomputes
+  [PASS]   decile 9 n/median recompute
+  [PASS]   decile 9 disagreement rate recomputes
+  [PASS]   decile 10 n/median recompute
+  [PASS]   decile 10 disagreement rate recomputes
+
+[8] alignment audit
+  [PASS] shift_search_performed == NO
+  [PASS] outcome_used_for_alignment == NO
+  [PASS] only official left_context trim applied
+  [PASS] row offsets are exactly [1790]  -- [1790]
+
+==============================================================================
+ASSERTIONS: 148   FAILED: 0
+VERIFY_GATE3: PASS

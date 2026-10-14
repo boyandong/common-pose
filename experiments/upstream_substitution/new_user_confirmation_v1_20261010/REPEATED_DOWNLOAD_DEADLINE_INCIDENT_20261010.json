@@ -1,0 +1,75 @@
+{
+  "status": "REPEATED_KNOWN_DOWNLOAD_DEADLINE_FORENSIC_ONLY",
+  "observed_local_time": "2026-10-10T17:14:35.987814+08:00",
+  "failed_member": {
+    "user": "2bbe806971",
+    "session": "2022-11-29-1669708800-076e4-cv-emg-pose-demonstration@2",
+    "side": "left",
+    "source_member": "emg2pose_data/2022-11-29-1669708800-076e4-cv-emg-pose-demonstration@2-recording-16_left.hdf5",
+    "archive_header_offset": 442739783168,
+    "archive_data_offset": 442739783680,
+    "size": 17678400,
+    "duration_seconds": 58.14999985694885,
+    "official_split": "test",
+    "stage": "HandOverHandCountingUpDownFingerWigglingSpreading"
+  },
+  "failed_partial_bytes": 11730944,
+  "completed_local_files": 664,
+  "completed_local_bytes": 11792195984,
+  "partial_files": 9,
+  "partial_bytes": 51576832,
+  "inventory_scope": "filename and byte size only; no new raw sample/effect values or full source rehash",
+  "remote_progress": {
+    "completed_files": 664,
+    "observed_epoch": 1791623671.236811,
+    "pid": 28460,
+    "remotely_verified_bytes": 11792195984,
+    "required_files": 2768,
+    "stage": "WAITING_FOR_LOCAL_SOURCE"
+  },
+  "process_evidence": [
+    {
+      "receipt": "DURABLE_DOWNLOAD_LAUNCH_RECEIPT.json",
+      "pid": 20892,
+      "expected_creation": "2026-10-10T16:43:20.7943028+08:00",
+      "observed_creation": "",
+      "state": "MISSING"
+    },
+    {
+      "receipt": "STREAM_RELAY_V2_LAUNCH.json",
+      "pid": 28460,
+      "expected_creation": "2026-10-10T16:15:23.8582245+08:00",
+      "observed_creation": "2026-10-10T16:15:23.8582245+08:00",
+      "state": "LIVE_IDENTITY_MATCH"
+    },
+    {
+      "receipt": "PIPELINE_SUPERVISOR_LAUNCH.json",
+      "pid": 15872,
+      "expected_creation": "2026-10-10T16:49:58.0604238+08:00",
+      "observed_creation": "",
+      "state": "MISSING"
+    }
+  ],
+  "failed_member_transport_events": [
+    {
+      "event": "TRANSPORT_RETRY",
+      "epoch": 1791623428.323418,
+      "member": "emg2pose_data/2022-11-29-1669708800-076e4-cv-emg-pose-demonstration@2-recording-16_left.hdf5",
+      "attempt": 1,
+      "error": "TimeoutError('The read operation timed out')"
+    }
+  ],
+  "log_sha256": {
+    "acquisition_deadline_resume.stderr.log": "ea984303c5eac5fe26a995a1feabba88313ce867e285e09b6e1499afe96acc22",
+    "acquisition_events.jsonl": "4f9e4e9e2dc2424a7ad9d8b78055fc2b52405056a2eadcd6bfc54f7d075e7e83",
+    "pipeline_supervisor.stderr.log": "2246fb7ee408cafeb1c4058ad8caa67593eb81356b3c43448c25a8cf8f545c12"
+  },
+  "known_error": "TimeoutError: same-member deadline exceeded",
+  "prior_same_error_receipt": "DOWNLOAD_DEADLINE_FAILURE_20261010_1630.json",
+  "scientific_corruption": "NOT_ESTABLISHED",
+  "new_user_inference": "NOT_STARTED_BY_PIPELINE",
+  "session_rule": "AGENTS.md repeated retries: old session archive/forensic only",
+  "automatic_download_restart_performed": false,
+  "scientific_protocol_or_cohort_changed": false,
+  "goal_status": "active, requires fresh authorized execution session; not achieved"
+}

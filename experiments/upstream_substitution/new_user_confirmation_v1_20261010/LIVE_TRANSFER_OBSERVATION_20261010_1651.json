@@ -1,0 +1,71 @@
+{
+  "status": "LIVE_DOWNLOAD_UPLOAD_AND_GATE_CONTROLLER",
+  "observed_local_time": "2026-10-10T16:51:43.453195+08:00",
+  "live_handle_evidence": [
+    {
+      "launch": "DURABLE_DOWNLOAD_LAUNCH_RECEIPT.json",
+      "pid": 20892,
+      "creation_time": "2026-10-10T16:43:20.7943028+08:00",
+      "state": "LIVE"
+    },
+    {
+      "launch": "STREAM_RELAY_V2_LAUNCH.json",
+      "pid": 28460,
+      "creation_time": "2026-10-10T16:15:23.8582245+08:00",
+      "state": "LIVE"
+    },
+    {
+      "launch": "PIPELINE_SUPERVISOR_LAUNCH.json",
+      "pid": 15872,
+      "creation_time": "2026-10-10T16:49:58.0604238+08:00",
+      "state": "LIVE"
+    }
+  ],
+  "download": {
+    "completed_bytes": 9057021112,
+    "completed_files": 510,
+    "elapsed_seconds": 365.3900000000003,
+    "observed_epoch": 1791622166.3462417,
+    "pid": 20892,
+    "required_files": 2768,
+    "stage": "ACQUISITION_RUNNING"
+  },
+  "remote_hash_verified_transfer_progress": {
+    "active_files": 3,
+    "completed_files": 507,
+    "elapsed_seconds": 2177.859,
+    "observed_epoch": 1791622302.01014,
+    "pid": 28460,
+    "remaining_files": 2258,
+    "remotely_verified_bytes": 9016361600,
+    "required_files": 2768,
+    "stage": "STREAM_RELAY_V2_RUNNING"
+  },
+  "controller": {
+    "actual_local_handle_evidence": [
+      {
+        "creation_time": "2026-10-10T16:43:20.7943028+08:00",
+        "pid": 20892,
+        "state": "LIVE"
+      },
+      {
+        "creation_time": "2026-10-10T16:15:23.8582245+08:00",
+        "pid": 28460,
+        "state": "LIVE"
+      }
+    ],
+    "observed_epoch": 1791622290.0962045,
+    "pid": 15872,
+    "stage": "WAITING_FOR_COMPLETE_FIXED_TRANSFERS"
+  },
+  "prior_deadline_member_completed_after_resume": {
+    "event": "FILE_COMPLETE",
+    "epoch": 1791621812.9846652,
+    "member": "emg2pose_data/2022-11-22-1669104000-69f54-cv-emg-pose-train@2-recording-11_left.hdf5",
+    "bytes": 19696808,
+    "sha256": "9066a84dfffdd8373196394e95172232e8c8476728bc56f4e4cc85185b6aeabb"
+  },
+  "full_transfer_gate_closed": true,
+  "new_user_outcomes": "NOT_PRODUCED_BY_THIS_PIPELINE",
+  "source_cohort_and_scientific_protocol_hashes_reverified": true
+}

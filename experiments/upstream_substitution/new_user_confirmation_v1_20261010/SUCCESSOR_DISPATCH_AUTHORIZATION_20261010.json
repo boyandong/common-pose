@@ -1,0 +1,16 @@
+{
+  "status": "HUMAN_AUTHORIZED_SUCCESSOR_CREATED",
+  "human_answer": "新建接续会话并暂停旧目标（推荐）",
+  "old_incident_thread": "01a123d4-c876-7ed3-9d94-f466f725a2ad",
+  "successor_thread": "01a1251c-0ccd-7401-9ef4-69c24ecd417d",
+  "successor_host": "local",
+  "successor_name": "COMMON-POSE-CONFIRMATION-20261010-TRANSPORT-DIAGNOSIS",
+  "repo": "C:/Users/董伯言/Desktop/fingers/common-pose",
+  "handover": "INCIDENT_SESSION_HANDOVER_REPEATED_DEADLINE_20261010.md",
+  "incident_commit": "f52565b19e94b0562c5192a6d0998fc714cfb264",
+  "full_goal_and_scientific_decisions_preserved": true,
+  "old_goal_pause_requested_by_human": true,
+  "old_goal_pause_tool_confirmation": "reported separately after this dispatch receipt",
+  "existing_sources_partials_and_uploader_retained": true,
+  "observed_local_time": "2026-10-10T17:19:56.010720+08:00"
+}

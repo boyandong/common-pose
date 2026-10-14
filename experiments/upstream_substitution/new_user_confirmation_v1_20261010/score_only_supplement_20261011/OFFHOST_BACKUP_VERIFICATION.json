@@ -1,0 +1,8 @@
+{
+  "all_checked_local_sha256_recomputed": true,
+  "model_instances_included": true,
+  "original_backup_verification_sha256": "d70fc34cdea1d54f7d42fce5883eafcd0492f3356637584feb9db309342febc0",
+  "status": "PASS",
+  "supplement_dependency_result_files_checked": 32,
+  "supplement_score_caches_checked": 160
+}

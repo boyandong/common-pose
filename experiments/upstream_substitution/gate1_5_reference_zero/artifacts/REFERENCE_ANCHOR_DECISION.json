@@ -1,0 +1,242 @@
+{
+  "artifact": "REFERENCE_ANCHOR_DECISION.json",
+  "gate": "PHASE 1 / GATE 1.5 - REFERENCE-ANCHOR AVAILABILITY & NUMERICAL-ZERO CHECK",
+  "ANCHOR_STATUS": "NO_INDEPENDENT_ANCHOR",
+  "ZERO_GATE": "NOT_EVALUABLE_LOCALLY",
+  "anchor_definition": "NONE",
+  "why_non_circular": "No anchor was selected, so no circular selection occurred. The audit that reached this conclusion never read a trusted-8 pose value: it inspected file structure, group attributes and metadata columns only. Candidate A2 (`stage`) was accepted as pose-independent but rejected for specifying no posture; candidate C (FK geometry) was rejected precisely BECAUSE it is circular.",
+  "local_corpus": {
+    "n_files": 30,
+    "n_sessions": 1,
+    "n_participants": 1,
+    "hand_sides": {
+      "left": 15,
+      "right": 15
+    },
+    "total_frames": 4218756,
+    "split_values": [
+      "val"
+    ],
+    "held_out_user": [
+      true
+    ],
+    "stage_vocabulary_local": [
+      "CountingUpDownFaceSideAway",
+      "FingerAbductionSeries",
+      "FingerFreeform",
+      "FingerPinchesSingleFingerPinchesMultiple",
+      "FingerWigglingSpreading",
+      "HandClawGraspFlicks",
+      "HookEmHornsOKScissors",
+      "IndividualFingerPointingSnap",
+      "OneHandedFreeStyle",
+      "ShakaVulcanPeace",
+      "ThumbsSwipesWholeHand",
+      "ThumbsUpDownThumbRotationsCWCCWP",
+      "TwoHandedFreeStyle",
+      "WristFlexionAbduction",
+      "unconstrained"
+    ]
+  },
+  "candidate_anchor_sources": [
+    {
+      "id": "A1",
+      "class": "A: official protocol/event marker",
+      "candidate": "per-frame hand-posture or gesture label",
+      "present_locally": false,
+      "independent_of_trusted8": null,
+      "evidence": "HDF5 exposes exactly one group 'emg2pose' with one compound dataset 'timeseries' whose fields are time / joint_angles(20) / emg(16). There is no per-frame label field and no per-frame event marker. (Verified by walking every object and attribute of a real file with h5py.visititems.)",
+      "verdict": "ABSENT"
+    },
+    {
+      "id": "A2",
+      "class": "A: official protocol/event marker",
+      "candidate": "group attribute `stage` (activity segment label)",
+      "present_locally": true,
+      "independent_of_trusted8": true,
+      "evidence": "Present as a per-file group attribute, and it is independent of the pose values. But it names a COMPOUND ACTIVITY, not a hand posture: locally the 15 stages are CountingUpDownFaceSideAway, FingerAbductionSeries, FingerFreeform, FingerPinchesSingleFingerPinchesMultiple, FingerWigglingSpreading, HandClawGraspFlicks, HookEmHornsOKScissors, IndividualFingerPointingSnap, OneHandedFreeStyle, ShakaVulcanPeace, ThumbsSwipesWholeHand, ThumbsUpDownThumbRotationsCWCCWP, TwoHandedFreeStyle, WristFlexionAbduction, unconstrained. None of them specifies the geometric configuration of the finger joints, so none defines a reference posture. The dataset reference itself calls `stage` the 'gesture/task' label (EMG2POSE_DATASET_REFERENCE.md line 147) and the project's own D4 result is that emg2pose carries no per-frame posture label.",
+      "verdict": "PRESENT_BUT_DOES_NOT_DEFINE_A_POSTURE"
+    },
+    {
+      "id": "A3",
+      "class": "A: official protocol/event marker",
+      "candidate": "stage `HandDeskSeparateClaspedChest` (name includes a desk-rest position)",
+      "present_locally": false,
+      "independent_of_trusted8": "PARTIAL",
+      "evidence": "This is the only stage name in the full 29-stage vocabulary that names a resting position ('Desk'), and it is the closest analogue to DB9's documented reference posture ('hand resting on the table with the fingers closed together and extended'). It is NOT in the local corpus - the local participant recorded 15 other stages (see A2). Even if it were present, the name is a composite of several configurations and positions ('SeparateClaspedChest') and does not by itself state that the fingers are extended at a known timestamp, so it would still require a posture assertion from outside the data.",
+      "verdict": "ABSENT_LOCALLY"
+    },
+    {
+      "id": "B",
+      "class": "B: synchronised annotation / protocol marker",
+      "candidate": "any annotation or protocol marker stating the hand posture at a time",
+      "present_locally": false,
+      "independent_of_trusted8": null,
+      "evidence": "No annotation stream, no event marker and no per-segment posture statement exists in the released corpus or in the local metadata.csv columns (session, user, stage, start, end, side, filename, moving_hand, held_out_user, held_out_stage, split, generalization). `start`/`end` bound an activity segment; they do not state a hand configuration.",
+      "verdict": "ABSENT"
+    },
+    {
+      "id": "C",
+      "class": "C: verified geometric/FK criterion",
+      "candidate": "forward-kinematics test for an extended/reference configuration",
+      "present_locally": true,
+      "independent_of_trusted8": false,
+      "evidence": "The official model and FK are available locally, so a geometric criterion could be computed. It is nevertheless NOT independent: in this model the finger is straight exactly when the joint rotation is zero, and the model's own per-joint limits already encode that (THUMB_MCP_FE, INDEX_PIP_FE, MIDDLE_PIP_FE, RING_PIP_FE, PINKY_PIP_FE all have min = 0.0 rad, i.e. zero IS the extended end of the range). Any 'is this hand extended?' geometric test therefore reduces to 'are these joint angles near zero', which is precisely the circular criterion the gate forbids. Furthermore the same joint angles define the FK landmarks, so the test would reuse the very quantities it is meant to validate independently.",
+      "verdict": "PRESENT_BUT_CIRCULAR"
+    },
+    {
+      "id": "D",
+      "class": "D: recorded calibration/reference-pose marker",
+      "candidate": "a recorded calibration or reference-pose marker in the generation pipeline",
+      "present_locally": false,
+      "independent_of_trusted8": null,
+      "evidence": "The released artifacts carry no calibration marker. The only thing in the pipeline named 'neutral' is UmeTrack tracker initialisation: `neutral_joint_angles()` (UmeTrack/lib/tracker/perspective_crop.py lines 19-24) returns joint_limits[...,0]*0.5 + joint_limits[...,1]*0.5, a synthetic midpoint OF A MODEL LIMIT RANGE used to seed the crop/tracker - not a recorded posture, not a physical reference, and not attained by any subject by construction.",
+      "verdict": "ABSENT"
+    }
+  ],
+  "tolerance_audit": {
+    "pre_existing_reference_anchor_tolerance_found": false,
+    "searched": [
+      "audits/db9/channel_forensic/FORENSIC_PLAN.md (thresholds section)",
+      "audits/db9/coordinate_audit/POSE_COORDINATE_AUDIT_PLAN.json",
+      "audits/db9/coordinate_audit/artifacts/DB9_SOURCE_CALIBRATION_AUDIT.json (interpretation_rules)"
+    ],
+    "thresholds_that_DO_exist_but_do_not_apply": {
+      "sign_consistency_and_magnitude (FORENSIC_PLAN.md section 7, 'Thresholds, fixed now')": "PASS >= 80% of subjects in the expected direction AND pooled median magnitude > 2 deg; WEAK 60-80%; FAIL < 60%. This governs a channel's response to a PHYSICAL ANCHOR (does it move the documented way), not the numerical residual of a reference posture in a second dataset.",
+      "magnitude_ratio_floor": "0.15 (the frozen floor that moved PIP3 and DIP4 from INCONCLUSIVE to DROP). Different statistic.",
+      "documentation_materiality": "2% rounding-materiality rule used for the BUG-006 MCP5_f/PIP5 restoration. Different statistic."
+    },
+    "conclusion": "No pre-existing frozen rule bounds a cross-source reference-anchor residual. Per the gate's section 6 an ad-hoc +/-2 deg threshold must NOT be invented after the fact, so this gate emits descriptive compatibility classes rather than a thresholded pass/fail - and, because no independent anchor exists, it emits NOT_MEASURED rather than any classification at all."
+  },
+  "db9_reference_comparator": {
+    "artifact": "C:\\Users\\董伯言\\Desktop\\fingers\\common-pose\\audits\\db9\\coordinate_audit\\artifacts\\DB9_SOURCE_CALIBRATION_AUDIT.json",
+    "artifact_sha256": "c186e817c1611a48c0626266268cfb41aabfec8c72f6850c7310bf04235f387e",
+    "field": "reference_posture_per_source (unit = subject x movement x repetition, central phase)",
+    "what_it_measures": "the residual of the DOCUMENTED DB9 calibration reference posture, i.e. how far the released angles sit from zero AT the anchor - a reference-anchor residual, NOT a dataset-level distribution shift",
+    "per_source": {
+      "DB1": {
+        "n_units": 281,
+        "n_subjects": 27,
+        "mean_abs_deg_all16": 18.0014,
+        "per_joint_median_deg_all16": [
+          4.0692,
+          -2.5423,
+          -0.1342,
+          1.1003,
+          3.2145,
+          4.2015,
+          0.7222,
+          3.3921,
+          0.5623,
+          -4.868,
+          1.4368,
+          -0.1146,
+          -9.1045,
+          4.9599,
+          1.4831,
+          -3.9669
+        ],
+        "trusted8_per_joint_median_deg": {
+          "thumb_mcp_flexion": -0.1342,
+          "thumb_ip_flexion": 1.1003,
+          "index_mcp_flexion": 3.2145,
+          "index_pip_flexion": 4.2015,
+          "middle_mcp_flexion": 3.3921,
+          "ring_mcp_flexion": 1.4368,
+          "pinky_mcp_flexion": 4.9599,
+          "pinky_pip_flexion": 1.4831
+        }
+      },
+      "DB2": {
+        "n_units": 273,
+        "n_subjects": 40,
+        "mean_abs_deg_all16": 5.9106,
+        "per_joint_median_deg_all16": [
+          0.3655,
+          0.0582,
+          0.2583,
+          -0.1694,
+          -0.1558,
+          -0.748,
+          0.1996,
+          -0.4614,
+          -0.0641,
+          0.8274,
+          -0.3868,
+          0.0,
+          2.077,
+          -0.3134,
+          0.4324,
+          0.4442
+        ],
+        "trusted8_per_joint_median_deg": {
+          "thumb_mcp_flexion": 0.2583,
+          "thumb_ip_flexion": -0.1694,
+          "index_mcp_flexion": -0.1558,
+          "index_pip_flexion": -0.748,
+          "middle_mcp_flexion": -0.4614,
+          "ring_mcp_flexion": -0.3868,
+          "pinky_mcp_flexion": -0.3134,
+          "pinky_pip_flexion": 0.4324
+        }
+      },
+      "DB5": {
+        "n_units": 100,
+        "n_subjects": 10,
+        "mean_abs_deg_all16": 21.2684,
+        "per_joint_median_deg_all16": [
+          0.9109,
+          -2.0476,
+          -2.2853,
+          2.3062,
+          3.205,
+          2.5006,
+          -0.4365,
+          2.2536,
+          -0.2463,
+          -4.7869,
+          2.1089,
+          0.0,
+          -4.1554,
+          3.3235,
+          0.3571,
+          -4.6023
+        ],
+        "trusted8_per_joint_median_deg": {
+          "thumb_mcp_flexion": -2.2853,
+          "thumb_ip_flexion": 2.3062,
+          "index_mcp_flexion": 3.205,
+          "index_pip_flexion": 2.5006,
+          "middle_mcp_flexion": 2.2536,
+          "ring_mcp_flexion": 2.1089,
+          "pinky_mcp_flexion": 3.3235,
+          "pinky_pip_flexion": 0.3571
+        }
+      }
+    },
+    "trusted8_anchor_residual_abs_max_deg": 4.9599,
+    "trusted8_anchor_residual_abs_min_deg": 0.1342,
+    "artifact_interpretation_rule": "a reference-posture mean|angle| that is small in every source database means the documented calibration zero IS attained everywhere and is therefore not a source-specific artefact",
+    "note_on_the_18_5_9_21_numbers": "The widely quoted 18.001 / 5.911 / 21.268 deg are mean |angle| over ALL 16 canonical dimensions at the reference posture. They are inflated by the dimensions the forensic lane DROPped (DIP3/DIP4/DIP5/CMC5 sit at -9.10, -4.87, -3.97, -4.60 deg in DB1). For the trusted-8 the per-joint medians at the anchor are much smaller - see trusted8_per_joint_median_deg."
+  },
+  "trusted8_zero_statistics": "NOT_MEASURED",
+  "reference_frames_synthesised": false,
+  "downstream_firewall": {
+    "DOWNSTREAM_HEAD_ACCESSED": "NO",
+    "TASK_OUTPUT_INSPECTED": "NO",
+    "PREDICTED_POSE_USED": "NO",
+    "MAPPING_TUNED": "NO",
+    "OFFSET_FITTED": "NO"
+  },
+  "execution_scope": {
+    "models_trained": 0,
+    "server_used": false,
+    "gpu_used": false,
+    "full_corpus_downloaded": false,
+    "inference_rerun": false,
+    "offset_or_scale_fitted": false,
+    "pose_values_read_for_anchor_selection": false
+  },
+  "scientific_framing": "NOT_EVALUABLE_LOCALLY is not a scientific failure. It states that the current local mini corpus cannot independently answer cross-source numerical-zero compatibility, because no released field identifies a physical reference/neutral hand posture.",
+  "next_allowed_step": "Do not invent a zero calibration; decide whether to run an explicitly labelled native-coordinate diagnostic or obtain an independent physical anchor."
+}

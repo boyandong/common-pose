@@ -1,0 +1,28 @@
+{
+  "status": "SCOPED_METADATA_AND_RESOURCE_PRECHECK_VERIFIED",
+  "official_users": 193,
+  "known_contact_excluded": 56,
+  "remaining_protected_excluded": 10,
+  "metadata_candidates": 127,
+  "source_manifest_records": 4285,
+  "sampled_hand_schema_pass": 254,
+  "same_member_TLS_only_retries": 3,
+  "remote_capacity_pass": true,
+  "local_backup_capacity_pass": true,
+  "enrollment_selected": false,
+  "new_predictions_or_effect_values_read": false,
+  "full_source_hash_and_sample_validity": "NOT_YET_AUDITED",
+  "upstream_training_membership": "UNRESOLVED",
+  "history_scope": "local fingers provenance, including hidden/ignored manifests and processed filenames; outside-root, unsaved and private remote history not certified absent",
+  "artifact_sha256": {
+    "HISTORICAL_ACCESS_ADJUDICATION.json": "2a1e178b77f627e80045ba1c8fbdd01e3f7501960b28fe6d6d28b4268e842b0f",
+    "IDENTITY_REGISTRY_PRECHECK.csv": "770cad369e02537449804c823931f72828272eac9a9e8a747c352eeb69f8dc58",
+    "CANDIDATE_SOURCE_PREFLIGHT_MANIFEST.json": "6d19d5dbe252aae260fc00453e0f23b75ed1e06c7235d17da4eef74a46bf873d",
+    "SOURCE_METADATA_PREFLIGHT_COMPLETE.json": "e9a13d0a07e4f6ac4d0561f0e2d9ab7676924939641bc988bfec989365f76e10",
+    "SOURCE_METADATA_PREFLIGHT.json": "4685e982550f70915288cc44afca7d24eb2d36f7dd201302b849f3fd9298864d",
+    "SOURCE_METADATA_TRANSPORT_RETRY.json": "a97b248f1c8cbed621f0b01b3f689184b00fe3a25135bc9424bb151bf5d3d090",
+    "REMOTE_CAPACITY_RECHECK_AFTER_USER_UPDATE.json": "11494d416c2485f57757580cb2f80f265a2e3990a22fc4d267ccb99b1a0bf50e",
+    "RESOURCE_BUDGET.json": "1902ef8e3f71efd503d9b0555369a85fa8f0823586d5b4529d5dc0d2f547755b"
+  },
+  "code_sha256": "e2d53cbf21088fbb7636d85c1995695ccb151d629b1bf4e1893a30ed7bff48a9"
+}

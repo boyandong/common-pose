@@ -1,0 +1,291 @@
+{
+  "effect_values_read": false,
+  "local_python_handles": [
+    {
+      "Id": 7272,
+      "start_time": "2026-10-11T06:47:15.7230837+08:00"
+    },
+    {
+      "Id": 8500,
+      "start_time": "2026-10-11T05:37:36.0879814+08:00"
+    },
+    {
+      "Id": 26832,
+      "start_time": "2026-10-11T06:46:03.9084001+08:00"
+    },
+    {
+      "Id": 30156,
+      "start_time": "2026-10-11T05:37:35.1795178+08:00"
+    }
+  ],
+  "local_terminal_receipt_present": false,
+  "observed_local_time": "2026-10-11T06:47:16.938087+08:00",
+  "source_qualification": {
+    "bad_users": [],
+    "effects_read": false,
+    "files": 2768,
+    "minimum_user_valid_blocks": 38865,
+    "status": "PASS",
+    "users": 80,
+    "valid_block_total": 7111408
+  },
+  "stages": {
+    "analysis": {
+      "LAUNCH.json": {
+        "child_pid": 37125,
+        "code_seal_sha256": "98f6e32909af8b2bf97527422389a657a755b080cbfb981a04dee14714cc7679",
+        "command": [
+          "/root/miniconda3/envs/commonpose-supplement/bin/python",
+          "-u",
+          "/root/work/common-pose/experiments/upstream_substitution/new_user_confirmation_v1_20261010/analyze_new_users.py",
+          "--analyze"
+        ],
+        "parent_pid": 37124,
+        "stage": "analysis",
+        "started_epoch": 1791668410.6687193
+      },
+      "TERMINAL.json": {
+        "exit_code": 0,
+        "finished_epoch": 1791669111.8426104,
+        "output_log_sha256": "ba940a7212e396e10d0cccb34419227dacc6890bfc71e14d2ae92cc5368cfb3d",
+        "stage": "analysis",
+        "started_epoch": 1791668410.6687193
+      },
+      "actual_handles": [],
+      "dispatch": {
+        "dispatched_epoch": 1791668410.618429,
+        "pid": 37124,
+        "stage": "analysis"
+      },
+      "state": "TERMINAL"
+    },
+    "qualification": {
+      "LAUNCH.json": {
+        "child_pid": 30680,
+        "code_seal_sha256": "98f6e32909af8b2bf97527422389a657a755b080cbfb981a04dee14714cc7679",
+        "command": [
+          "/root/miniconda3/envs/commonpose-supplement/bin/python",
+          "-u",
+          "/root/work/common-pose/experiments/upstream_substitution/new_user_confirmation_v1_20261010/qualify_sources.py"
+        ],
+        "parent_pid": 30679,
+        "stage": "qualification",
+        "started_epoch": 1791658283.3416677
+      },
+      "TERMINAL.json": {
+        "exit_code": 0,
+        "finished_epoch": 1791658434.0944428,
+        "output_log_sha256": "820baf3ee71d7ee651cddac6b8554250be772bbb9be630349057a49243386149",
+        "stage": "qualification",
+        "started_epoch": 1791658283.3416677
+      },
+      "actual_handles": [],
+      "dispatch": {
+        "dispatched_epoch": 1791658283.2938507,
+        "pid": 30679,
+        "stage": "qualification"
+      },
+      "state": "TERMINAL"
+    },
+    "reconstruction": {
+      "LAUNCH.json": {
+        "child_pid": 30785,
+        "code_seal_sha256": "98f6e32909af8b2bf97527422389a657a755b080cbfb981a04dee14714cc7679",
+        "command": [
+          "/root/miniconda3/envs/commonpose-supplement/bin/python",
+          "-u",
+          "/root/work/common-pose/experiments/upstream_substitution/new_user_confirmation_v1_20261010/reconstruct_users.py"
+        ],
+        "parent_pid": 30784,
+        "stage": "reconstruction",
+        "started_epoch": 1791658435.9861102
+      },
+      "TERMINAL.json": {
+        "exit_code": 0,
+        "finished_epoch": 1791667906.0506678,
+        "output_log_sha256": "336c729a054e9496505a72a6fa18a8b52987276ef76127c65886af61ff9bbc5f",
+        "stage": "reconstruction",
+        "started_epoch": 1791658435.9861102
+      },
+      "actual_handles": [],
+      "dispatch": {
+        "dispatched_epoch": 1791658435.9592578,
+        "pid": 30784,
+        "stage": "reconstruction"
+      },
+      "state": "TERMINAL"
+    },
+    "score_only_supplement_20261011/analysis": {
+      "LAUNCH.json": {
+        "child_pid": 38551,
+        "code_seal_sha256": "aebe0573e0e332c923e9c27fb0ee4611b5e10a32ef89bd796d208b51c1f7eec3",
+        "command": [
+          "/root/miniconda3/envs/commonpose-supplement/bin/python",
+          "-u",
+          "/root/work/common-pose/experiments/upstream_substitution/new_user_confirmation_v1_20261010/score_only_supplement_20261011/analyze_score_only.py",
+          "analysis"
+        ],
+        "parent_pid": 38550,
+        "stage": "analysis",
+        "started_epoch": 1791671455.4479308
+      },
+      "TERMINAL.json": {
+        "exit_code": 0,
+        "finished_epoch": 1791671864.6490624,
+        "output_log_sha256": "6462fadab669dd7d1067c3b68946f1a7ed103733aef9ee32a5b591a65b664098",
+        "stage": "analysis",
+        "started_epoch": 1791671455.4479308
+      },
+      "actual_handles": [],
+      "dispatch": {
+        "dispatched_epoch": 1791671455.3758726,
+        "pid": 38550,
+        "stage": "analysis"
+      },
+      "state": "TERMINAL"
+    },
+    "score_only_supplement_20261011/backup_export": {
+      "LAUNCH.json": {
+        "child_pid": 39005,
+        "code_seal_sha256": "aebe0573e0e332c923e9c27fb0ee4611b5e10a32ef89bd796d208b51c1f7eec3",
+        "command": [
+          "/root/miniconda3/envs/commonpose-supplement/bin/python",
+          "-u",
+          "/root/work/common-pose/experiments/upstream_substitution/new_user_confirmation_v1_20261010/score_only_supplement_20261011/export_integrated_backup_manifest.py"
+        ],
+        "parent_pid": 39004,
+        "stage": "backup_export",
+        "started_epoch": 1791672303.5583649
+      },
+      "TERMINAL.json": {
+        "exit_code": 0,
+        "finished_epoch": 1791672307.8716893,
+        "output_log_sha256": "7179b24660d72fc5c1541b831f4ff612070f3d9e7960ad6d5ed9bb23f1599a1e",
+        "stage": "backup_export",
+        "started_epoch": 1791672303.5583649
+      },
+      "actual_handles": [],
+      "dispatch": {
+        "dispatched_epoch": 1791672303.4847693,
+        "pid": 39004,
+        "stage": "backup_export"
+      },
+      "state": "TERMINAL"
+    },
+    "score_only_supplement_20261011/support": {
+      "LAUNCH.json": {
+        "child_pid": 37068,
+        "code_seal_sha256": "aebe0573e0e332c923e9c27fb0ee4611b5e10a32ef89bd796d208b51c1f7eec3",
+        "command": [
+          "/root/miniconda3/envs/commonpose-supplement/bin/python",
+          "-u",
+          "/root/work/common-pose/experiments/upstream_substitution/new_user_confirmation_v1_20261010/score_only_supplement_20261011/analyze_score_only.py",
+          "support"
+        ],
+        "parent_pid": 37067,
+        "stage": "support",
+        "started_epoch": 1791668349.9432857
+      },
+      "TERMINAL.json": {
+        "exit_code": 0,
+        "finished_epoch": 1791668401.7255743,
+        "output_log_sha256": "de55d981cf16561eb670df4f54c0b99f4ea725ad60bdea1ff5a6549f970482d3",
+        "stage": "support",
+        "started_epoch": 1791668349.9432857
+      },
+      "actual_handles": [],
+      "dispatch": {
+        "dispatched_epoch": 1791668349.8714516,
+        "pid": 37067,
+        "stage": "support"
+      },
+      "state": "TERMINAL"
+    },
+    "score_only_supplement_20261011/verification": {
+      "LAUNCH.json": {
+        "child_pid": 38777,
+        "code_seal_sha256": "aebe0573e0e332c923e9c27fb0ee4611b5e10a32ef89bd796d208b51c1f7eec3",
+        "command": [
+          "/root/miniconda3/envs/commonpose-supplement/bin/python",
+          "-u",
+          "/root/work/common-pose/experiments/upstream_substitution/new_user_confirmation_v1_20261010/score_only_supplement_20261011/verify_score_only.py"
+        ],
+        "parent_pid": 38776,
+        "stage": "verification",
+        "started_epoch": 1791671876.841822
+      },
+      "TERMINAL.json": {
+        "exit_code": 0,
+        "finished_epoch": 1791672284.0097058,
+        "output_log_sha256": "dba96e596a4a53d7bf026bc6f9c4ced9aa332116d05e92c7210800f878a1f278",
+        "stage": "verification",
+        "started_epoch": 1791671876.841822
+      },
+      "actual_handles": [],
+      "dispatch": {
+        "dispatched_epoch": 1791671876.7941084,
+        "pid": 38776,
+        "stage": "verification"
+      },
+      "state": "TERMINAL"
+    },
+    "support": {
+      "LAUNCH.json": {
+        "child_pid": 36991,
+        "code_seal_sha256": "98f6e32909af8b2bf97527422389a657a755b080cbfb981a04dee14714cc7679",
+        "command": [
+          "/root/miniconda3/envs/commonpose-supplement/bin/python",
+          "-u",
+          "/root/work/common-pose/experiments/upstream_substitution/new_user_confirmation_v1_20261010/analyze_new_users.py",
+          "--freeze-support"
+        ],
+        "parent_pid": 36990,
+        "stage": "support",
+        "started_epoch": 1791668258.8743916
+      },
+      "TERMINAL.json": {
+        "exit_code": 0,
+        "finished_epoch": 1791668343.824713,
+        "output_log_sha256": "62dfdb8f1e400df964935cf6e5f8ed8408bf7f1a6a18d2434aa98bde23bfbec3",
+        "stage": "support",
+        "started_epoch": 1791668258.8743916
+      },
+      "actual_handles": [],
+      "dispatch": {
+        "dispatched_epoch": 1791668258.8241756,
+        "pid": 36990,
+        "stage": "support"
+      },
+      "state": "TERMINAL"
+    },
+    "verification": {
+      "LAUNCH.json": {
+        "child_pid": 37482,
+        "code_seal_sha256": "98f6e32909af8b2bf97527422389a657a755b080cbfb981a04dee14714cc7679",
+        "command": [
+          "/root/miniconda3/envs/commonpose-supplement/bin/python",
+          "-u",
+          "/root/work/common-pose/experiments/upstream_substitution/new_user_confirmation_v1_20261010/verify_new_results.py"
+        ],
+        "parent_pid": 37481,
+        "stage": "verification",
+        "started_epoch": 1791669134.4586701
+      },
+      "TERMINAL.json": {
+        "exit_code": 0,
+        "finished_epoch": 1791671454.819563,
+        "output_log_sha256": "5509fdcb43e8e30a3b7fe15fe2b01f089040c914001908fb1346ca033750c7ca",
+        "stage": "verification",
+        "started_epoch": 1791669134.4586701
+      },
+      "actual_handles": [],
+      "dispatch": {
+        "dispatched_epoch": 1791669134.4325163,
+        "pid": 37481,
+        "stage": "verification"
+      },
+      "state": "TERMINAL"
+    }
+  },
+  "supplement_partial_files": []
+}

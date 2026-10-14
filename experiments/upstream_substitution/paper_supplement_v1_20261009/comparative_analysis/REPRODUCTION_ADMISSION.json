@@ -1,0 +1,2246 @@
+{
+  "interpretation": "aggregate comparison only; individual original predictions and byte identity unavailable",
+  "max_risk_drift": 0.001733574010921557,
+  "rows": [
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -0.00010777530500827304,
+      "ordinary_drift": -2.7101005447338622e-05,
+      "user": "0625995630"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -4.102843366515785e-05,
+      "ordinary_drift": -1.0037338900703574e-05,
+      "user": "0625995630"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -6.632179870613708e-05,
+      "ordinary_drift": 0.0,
+      "user": "0625995630"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -9.084137289250283e-05,
+      "ordinary_drift": -3.871567210406157e-05,
+      "user": "0625995630"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -4.73878776308112e-06,
+      "ordinary_drift": 3.011186558063428e-05,
+      "user": "0625995630"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -1.493466442348268e-05,
+      "ordinary_drift": 0.0,
+      "user": "0625995630"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": -1.681690045673978e-05,
+      "ordinary_drift": 3.011141222522551e-05,
+      "user": "0625995630"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -0.00010777530500827304,
+      "ordinary_drift": -2.7101005447338622e-05,
+      "user": "0625995630"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -0.00013350126725164557,
+      "ordinary_drift": -3.0112016702110722e-05,
+      "user": "0625995630"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -0.00016336703278041487,
+      "ordinary_drift": -5.646017299396067e-05,
+      "user": "0625995630"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -0.0001622719190530475,
+      "ordinary_drift": -2.581044806937438e-05,
+      "user": "0625995630"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -0.0001807711764223452,
+      "ordinary_drift": -1.5055932790303261e-05,
+      "user": "0625995630"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -0.0002520222482030876,
+      "ordinary_drift": 0.0,
+      "user": "0625995630"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": -0.0005163277779720588,
+      "ordinary_drift": -0.00012044564890092979,
+      "user": "0625995630"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -4.989490514639705e-06,
+      "ordinary_drift": -1.9500589892862408e-05,
+      "user": "0ba89d682e"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": 3.4047495345190804e-05,
+      "ordinary_drift": 0.0,
+      "user": "0ba89d682e"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": 9.772360136350855e-05,
+      "ordinary_drift": -1.2187838974275778e-05,
+      "user": "0ba89d682e"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -2.4236549093226145e-05,
+      "ordinary_drift": 4.178680372737831e-05,
+      "user": "0ba89d682e"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -4.244680982001814e-05,
+      "ordinary_drift": -1.6250385946658952e-05,
+      "user": "0ba89d682e"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 0.000643542463626301,
+      "ordinary_drift": -5.8501199274585414e-05,
+      "user": "0ba89d682e"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": -4.596208384222145e-06,
+      "ordinary_drift": -3.250024375182903e-05,
+      "user": "0ba89d682e"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -4.989490514639705e-06,
+      "ordinary_drift": -1.9500589892862408e-05,
+      "user": "0ba89d682e"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": 9.388214013528184e-06,
+      "ordinary_drift": 0.0,
+      "user": "0ba89d682e"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -1.1314742174861614e-05,
+      "ordinary_drift": -4.87513558970476e-05,
+      "user": "0ba89d682e"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": 9.171215461178939e-06,
+      "ordinary_drift": -2.7857869151604042e-05,
+      "user": "0ba89d682e"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -3.121352124513255e-05,
+      "ordinary_drift": -9.750231568000922e-05,
+      "user": "0ba89d682e"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 0.00013889305971370725,
+      "ordinary_drift": 7.800159903276205e-05,
+      "user": "0ba89d682e"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 7.11586240094153e-05,
+      "ordinary_drift": 0.0,
+      "user": "0ba89d682e"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -5.729231927897871e-05,
+      "ordinary_drift": 0.0,
+      "user": "1152814359"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": 1.9151318919830018e-05,
+      "ordinary_drift": 2.4964737308563745e-05,
+      "user": "1152814359"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": 5.070024906750348e-05,
+      "ordinary_drift": 8.425546256252137e-05,
+      "user": "1152814359"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": 8.628506077523745e-06,
+      "ordinary_drift": -3.20975766329723e-05,
+      "user": "1152814359"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": 1.0268824692793999e-06,
+      "ordinary_drift": -1.8723436125023252e-05,
+      "user": "1152814359"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -0.00010936129212635315,
+      "ordinary_drift": -8.987350304445751e-05,
+      "user": "1152814359"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": -1.202919172083039e-05,
+      "ordinary_drift": -0.0001872308556450375,
+      "user": "1152814359"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -5.729231927897871e-05,
+      "ordinary_drift": 0.0,
+      "user": "1152814359"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -5.31543555601921e-05,
+      "ordinary_drift": 2.4964737308508234e-05,
+      "user": "1152814359"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -7.440281845305652e-05,
+      "ordinary_drift": 1.404257709369805e-05,
+      "user": "1152814359"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -8.284211638809325e-05,
+      "ordinary_drift": 3.20975766329723e-05,
+      "user": "1152814359"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -9.190978227013868e-05,
+      "ordinary_drift": 5.6170308375014244e-05,
+      "user": "1152814359"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -0.00015579450105096537,
+      "ordinary_drift": -6.740512728331538e-05,
+      "user": "1152814359"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 0.00020268616799246075,
+      "ordinary_drift": 7.48923422579928e-05,
+      "user": "1152814359"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -1.7100745490106206e-05,
+      "ordinary_drift": -3.0352084176454852e-05,
+      "user": "16923056b7"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": 8.381185976014116e-06,
+      "ordinary_drift": -3.372453797384489e-05,
+      "user": "16923056b7"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": 0.00014623285199688585,
+      "ordinary_drift": 1.2646701740198774e-05,
+      "user": "16923056b7"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -3.717424407723158e-05,
+      "ordinary_drift": 5.781349366942856e-05,
+      "user": "16923056b7"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": 0.00016174195802132196,
+      "ordinary_drift": 3.372453797381714e-05,
+      "user": "16923056b7"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -8.353919419101796e-05,
+      "ordinary_drift": -0.00014164305949007638,
+      "user": "16923056b7"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 4.653394259857002e-05,
+      "ordinary_drift": 0.0,
+      "user": "16923056b7"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -1.7100745490106206e-05,
+      "ordinary_drift": -3.0352084176454852e-05,
+      "user": "16923056b7"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -1.3511755367345835e-05,
+      "ordinary_drift": -2.248302531587809e-05,
+      "user": "16923056b7"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -4.7690805473510345e-05,
+      "ordinary_drift": -3.7940105220568565e-05,
+      "user": "16923056b7"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -2.685296221682787e-05,
+      "ordinary_drift": -4.336012025202285e-05,
+      "user": "16923056b7"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -4.614644099310006e-05,
+      "ordinary_drift": -6.744907594768978e-05,
+      "user": "16923056b7"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -2.4904218454802063e-05,
+      "ordinary_drift": 0.0,
+      "user": "16923056b7"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 8.603043186228287e-06,
+      "ordinary_drift": -6.744907594763427e-05,
+      "user": "16923056b7"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -1.192253023640788e-05,
+      "ordinary_drift": -1.062586335143223e-05,
+      "user": "18449b9c12"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -1.948012523667053e-05,
+      "ordinary_drift": -1.1806514834900028e-05,
+      "user": "18449b9c12"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -6.173998376213241e-06,
+      "ordinary_drift": -5.312931675705013e-05,
+      "user": "18449b9c12"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -9.664680747256682e-06,
+      "ordinary_drift": -6.071921915085099e-05,
+      "user": "18449b9c12"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -0.00022888653898878175,
+      "ordinary_drift": -0.00012396840576633927,
+      "user": "18449b9c12"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -4.162119570016998e-05,
+      "ordinary_drift": -4.25034534056179e-05,
+      "user": "18449b9c12"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 8.20566663817246e-06,
+      "ordinary_drift": 3.541954450464457e-05,
+      "user": "18449b9c12"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -1.192253023640788e-05,
+      "ordinary_drift": -1.062586335143223e-05,
+      "user": "18449b9c12"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -1.1846929653280824e-05,
+      "ordinary_drift": -2.3613029669800056e-05,
+      "user": "18449b9c12"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": 3.625552390307263e-06,
+      "ordinary_drift": 0.0,
+      "user": "18449b9c12"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -1.4539953522074711e-05,
+      "ordinary_drift": -3.0359609575425495e-05,
+      "user": "18449b9c12"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -3.611395607350243e-05,
+      "ordinary_drift": -7.083908900928915e-05,
+      "user": "18449b9c12"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -8.071506932461059e-05,
+      "ordinary_drift": 2.1251726702753437e-05,
+      "user": "18449b9c12"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 2.4411021274928224e-05,
+      "ordinary_drift": -3.5419544504700085e-05,
+      "user": "18449b9c12"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": 4.9255876746201466e-06,
+      "ordinary_drift": 0.0,
+      "user": "1896997952"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -1.4879223389385743e-05,
+      "ordinary_drift": -1.068478806720563e-05,
+      "user": "1896997952"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -4.7762022338915244e-05,
+      "ordinary_drift": 0.0,
+      "user": "1896997952"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -2.757891818216951e-05,
+      "ordinary_drift": -8.24255079471814e-05,
+      "user": "1896997952"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -1.3913136299836815e-05,
+      "ordinary_drift": -4.8081546302508604e-05,
+      "user": "1896997952"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 0.00013020539751007476,
+      "ordinary_drift": -1.923261852099234e-05,
+      "user": "1896997952"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": -0.00014931753088698319,
+      "ordinary_drift": 0.0,
+      "user": "1896997952"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": 4.9255876746201466e-06,
+      "ordinary_drift": 0.0,
+      "user": "1896997952"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -5.449651445665893e-07,
+      "ordinary_drift": -1.068478806720563e-05,
+      "user": "1896997952"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -1.648891889405313e-05,
+      "ordinary_drift": -3.6061159726874514e-05,
+      "user": "1896997952"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -3.692705839686283e-05,
+      "ordinary_drift": -6.868792328929008e-05,
+      "user": "1896997952"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -1.9257435310726656e-05,
+      "ordinary_drift": -6.41087284033448e-05,
+      "user": "1896997952"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 0.00010130105858441318,
+      "ordinary_drift": 1.923261852099234e-05,
+      "user": "1896997952"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 2.106620548758542e-05,
+      "ordinary_drift": -6.41087284033448e-05,
+      "user": "1896997952"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -1.3163755924083809e-05,
+      "ordinary_drift": -2.2678822515553865e-05,
+      "user": "2942949786"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -1.9387483067845324e-05,
+      "ordinary_drift": -1.259921884841364e-05,
+      "user": "2942949786"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": 6.7589845413884575e-06,
+      "ordinary_drift": 0.0,
+      "user": "2942949786"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": 1.729965019070523e-05,
+      "ordinary_drift": 6.479621590099738e-05,
+      "user": "2942949786"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": 8.934578026309481e-06,
+      "ordinary_drift": -3.7797894657271014e-05,
+      "user": "2942949786"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 3.7623374044781777e-05,
+      "ordinary_drift": 0.00024946704767087047,
+      "user": "2942949786"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 5.144925582012405e-06,
+      "ordinary_drift": 0.00015118872132138805,
+      "user": "2942949786"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -1.3163755924083809e-05,
+      "ordinary_drift": -2.2678822515553865e-05,
+      "user": "2942949786"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": 6.363836900558084e-06,
+      "ordinary_drift": -1.2599218848441396e-05,
+      "user": "2942949786"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -2.447004771555239e-05,
+      "ordinary_drift": -1.4174143527390104e-05,
+      "user": "2942949786"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": 1.2891138343573694e-05,
+      "ordinary_drift": 8.09952698762606e-05,
+      "user": "2942949786"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": 3.072799275338767e-05,
+      "ordinary_drift": 1.8898947328593874e-05,
+      "user": "2942949786"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -5.304776455528071e-05,
+      "ordinary_drift": -6.803646754655057e-05,
+      "user": "2942949786"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 3.7570797571939707e-06,
+      "ordinary_drift": 0.0,
+      "user": "2942949786"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": 1.5031950630794988e-05,
+      "ordinary_drift": 0.0,
+      "user": "299b130307"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": 8.996911920022832e-05,
+      "ordinary_drift": 0.0,
+      "user": "299b130307"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": 8.786018759177061e-05,
+      "ordinary_drift": 0.0,
+      "user": "299b130307"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": 2.981547492708625e-05,
+      "ordinary_drift": 0.00011726353807545165,
+      "user": "299b130307"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": 7.813241446730235e-05,
+      "ordinary_drift": 0.0001915289482324889,
+      "user": "299b130307"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 0.00019608031609008592,
+      "ordinary_drift": 9.850275807721243e-05,
+      "user": "299b130307"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": -1.8619740180803035e-06,
+      "ordinary_drift": 0.00010944511327568018,
+      "user": "299b130307"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": 1.5031950630794988e-05,
+      "ordinary_drift": 0.0,
+      "user": "299b130307"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": 1.3801073188268731e-05,
+      "ordinary_drift": 0.0,
+      "user": "299b130307"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -3.6556133859666495e-05,
+      "ordinary_drift": -8.208495793143866e-05,
+      "user": "299b130307"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -5.4167494627277435e-05,
+      "ordinary_drift": -9.381083046033911e-05,
+      "user": "299b130307"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": 8.768347779908314e-05,
+      "ordinary_drift": 0.00010944511327565243,
+      "user": "299b130307"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -3.451002915566548e-05,
+      "ordinary_drift": -3.283425269240414e-05,
+      "user": "299b130307"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 5.255886702981716e-05,
+      "ordinary_drift": 0.0,
+      "user": "299b130307"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -2.304091045390866e-05,
+      "ordinary_drift": -2.5227043390529946e-05,
+      "user": "2cefcf6cba"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": 2.6008576219482826e-05,
+      "ordinary_drift": -1.4015024105806795e-05,
+      "user": "2cefcf6cba"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": 0.000380170808914726,
+      "ordinary_drift": 0.0,
+      "user": "2cefcf6cba"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -0.000374571881202046,
+      "ordinary_drift": -3.603863341500313e-05,
+      "user": "2cefcf6cba"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": 5.6892323205381956e-05,
+      "ordinary_drift": 4.204507231753141e-05,
+      "user": "2cefcf6cba"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 8.157711433032233e-07,
+      "ordinary_drift": -2.5227043390529946e-05,
+      "user": "2cefcf6cba"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": -9.909581671574408e-06,
+      "ordinary_drift": -0.00012613521695256646,
+      "user": "2cefcf6cba"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -2.304091045390866e-05,
+      "ordinary_drift": -2.5227043390529946e-05,
+      "user": "2cefcf6cba"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -3.4884785941824425e-05,
+      "ordinary_drift": -5.606009642339371e-05,
+      "user": "2cefcf6cba"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -3.9742552793708974e-05,
+      "ordinary_drift": -3.1533804238148555e-05,
+      "user": "2cefcf6cba"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -9.888573755945096e-07,
+      "ordinary_drift": 1.801931670752932e-05,
+      "user": "2cefcf6cba"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -0.00013571906912507314,
+      "ordinary_drift": -4.204507231753141e-05,
+      "user": "2cefcf6cba"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -2.42081287087359e-05,
+      "ordinary_drift": -5.045408678105989e-05,
+      "user": "2cefcf6cba"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": -0.00012592163428037928,
+      "ordinary_drift": -0.00016818028927007012,
+      "user": "2cefcf6cba"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -2.8210586939469984e-05,
+      "ordinary_drift": -1.037398205300244e-05,
+      "user": "495869fa89"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": 6.961979099717741e-05,
+      "ordinary_drift": 3.457974088244553e-05,
+      "user": "495869fa89"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -2.3412209391282524e-05,
+      "ordinary_drift": 2.59349551325061e-05,
+      "user": "495869fa89"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -2.890744763706099e-05,
+      "ordinary_drift": 0.0,
+      "user": "495869fa89"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": 4.348639141893429e-05,
+      "ordinary_drift": -3.45799401766933e-05,
+      "user": "495869fa89"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 5.49708145108907e-05,
+      "ordinary_drift": 8.299099547699751e-05,
+      "user": "495869fa89"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 0.0001537912520475082,
+      "ordinary_drift": 0.0,
+      "user": "495869fa89"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -2.8210586939469984e-05,
+      "ordinary_drift": -1.037398205300244e-05,
+      "user": "495869fa89"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -3.186157293111336e-05,
+      "ordinary_drift": -1.1526580294185518e-05,
+      "user": "495869fa89"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -1.2733381840823732e-05,
+      "ordinary_drift": 1.2967477566239172e-05,
+      "user": "495869fa89"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -3.847535002210467e-06,
+      "ordinary_drift": 2.9639729092867384e-05,
+      "user": "495869fa89"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -2.4265900248510164e-05,
+      "ordinary_drift": 0.0,
+      "user": "495869fa89"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -3.386176430147936e-05,
+      "ordinary_drift": -4.149549773851957e-05,
+      "user": "495869fa89"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 2.1087711516210028e-05,
+      "ordinary_drift": 6.915868460183328e-05,
+      "user": "495869fa89"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": 1.5641585640158162e-05,
+      "ordinary_drift": 4.348204191673144e-05,
+      "user": "513ba531ad"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": 2.256418329160681e-05,
+      "ordinary_drift": 6.039157899823122e-05,
+      "user": "513ba531ad"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": 5.98909516339452e-05,
+      "ordinary_drift": 0.00019023289942116106,
+      "user": "513ba531ad"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": 0.00033656269358905977,
+      "ordinary_drift": 0.0001863498718844281,
+      "user": "513ba531ad"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -2.4730149384977196e-05,
+      "ordinary_drift": 1.811725487355087e-05,
+      "user": "513ba531ad"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 1.0117154485400626e-05,
+      "ordinary_drift": 8.696408383335186e-05,
+      "user": "513ba531ad"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 0.00048368759984063203,
+      "ordinary_drift": -0.00010870352924124971,
+      "user": "513ba531ad"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": 1.5641585640158162e-05,
+      "ordinary_drift": 4.348204191673144e-05,
+      "user": "513ba531ad"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -2.1510468272145644e-06,
+      "ordinary_drift": 0.0,
+      "user": "513ba531ad"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -2.803646070193011e-06,
+      "ordinary_drift": 0.0,
+      "user": "513ba531ad"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -2.0189894262001573e-06,
+      "ordinary_drift": 1.552915599040139e-05,
+      "user": "513ba531ad"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": 6.671623746734578e-05,
+      "ordinary_drift": 5.435176462065261e-05,
+      "user": "513ba531ad"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 7.733810670962349e-05,
+      "ordinary_drift": 0.00017392816766675923,
+      "user": "513ba531ad"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": -0.00014229162855244892,
+      "ordinary_drift": 7.246901949414797e-05,
+      "user": "513ba531ad"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -3.2870653803085403e-05,
+      "ordinary_drift": -7.380182733324192e-05,
+      "user": "76bfc2d385"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -1.4946295705420276e-05,
+      "ordinary_drift": -4.920049200490828e-05,
+      "user": "76bfc2d385"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": 0.00040270417142673764,
+      "ordinary_drift": 1.8450184501861422e-05,
+      "user": "76bfc2d385"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": 5.05338358331997e-05,
+      "ordinary_drift": 4.2171850289929314e-05,
+      "user": "76bfc2d385"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -3.597715562153603e-05,
+      "ordinary_drift": -9.840098400981656e-05,
+      "user": "76bfc2d385"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -2.307455053118801e-05,
+      "ordinary_drift": -0.00011808118081180208,
+      "user": "76bfc2d385"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 6.138936077648705e-05,
+      "ordinary_drift": 0.0,
+      "user": "76bfc2d385"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -3.2870653803085403e-05,
+      "ordinary_drift": -7.380182733324192e-05,
+      "user": "76bfc2d385"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -4.991610147897507e-05,
+      "ordinary_drift": -8.200082000819897e-05,
+      "user": "76bfc2d385"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -4.500498437887135e-05,
+      "ordinary_drift": -7.380073800739018e-05,
+      "user": "76bfc2d385"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -4.525211958394948e-05,
+      "ordinary_drift": -6.325777543492173e-05,
+      "user": "76bfc2d385"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -5.3443709465694766e-05,
+      "ordinary_drift": 4.920049200496379e-05,
+      "user": "76bfc2d385"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -4.9648195396545525e-05,
+      "ordinary_drift": 0.00011808118081180208,
+      "user": "76bfc2d385"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 0.00016677473107284957,
+      "ordinary_drift": -4.920049200490828e-05,
+      "user": "76bfc2d385"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -0.00011586661177742652,
+      "ordinary_drift": -2.958959235405123e-05,
+      "user": "831cb06e26"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -0.000204370199595183,
+      "ordinary_drift": -3.287707262544792e-05,
+      "user": "831cb06e26"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -1.0690394146140036e-05,
+      "ordinary_drift": -6.164468006408796e-05,
+      "user": "831cb06e26"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": 0.00016705673297345847,
+      "ordinary_drift": 2.818052443956387e-05,
+      "user": "831cb06e26"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": 5.661621864072597e-05,
+      "ordinary_drift": -1.6438446238054016e-05,
+      "user": "831cb06e26"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 5.0686307614400405e-05,
+      "ordinary_drift": -0.00011835720203576261,
+      "user": "831cb06e26"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 1.3435044968201915e-05,
+      "ordinary_drift": -3.287635203998163e-05,
+      "user": "831cb06e26"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -0.00011586661177742652,
+      "ordinary_drift": -2.958959235405123e-05,
+      "user": "831cb06e26"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -0.00013192137021023065,
+      "ordinary_drift": -3.287707262544792e-05,
+      "user": "831cb06e26"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -0.00012215660216619018,
+      "ordinary_drift": -2.465787202565739e-05,
+      "user": "831cb06e26"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -0.00022145245010318781,
+      "ordinary_drift": -0.00011272209775825548,
+      "user": "831cb06e26"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -0.000197779672529097,
+      "ordinary_drift": -8.219223119027008e-05,
+      "user": "831cb06e26"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -7.559441082127805e-05,
+      "ordinary_drift": -3.945240067854128e-05,
+      "user": "831cb06e26"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 3.819613990541093e-05,
+      "ordinary_drift": -0.0001315054081599265,
+      "user": "831cb06e26"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": 6.210254372085444e-06,
+      "ordinary_drift": 3.0398524658303838e-05,
+      "user": "af1317ea3d"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": 0.0002603888130471299,
+      "ordinary_drift": 6.755159252880283e-05,
+      "user": "af1317ea3d"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": 0.0001746020884512145,
+      "ordinary_drift": 8.866146519409535e-05,
+      "user": "af1317ea3d"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": 6.1022992313253255e-05,
+      "ordinary_drift": 5.7901365024676243e-05,
+      "user": "af1317ea3d"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": 0.0003182889760551255,
+      "ordinary_drift": 3.3775796264401414e-05,
+      "user": "af1317ea3d"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -0.0001852134943850503,
+      "ordinary_drift": 0.00012159286655183399,
+      "user": "af1317ea3d"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 6.24737630650074e-06,
+      "ordinary_drift": 0.0,
+      "user": "af1317ea3d"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": 6.210254372085444e-06,
+      "ordinary_drift": 3.0398524658303838e-05,
+      "user": "af1317ea3d"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -4.374424918607289e-05,
+      "ordinary_drift": 1.1258598754837479e-05,
+      "user": "af1317ea3d"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -5.8083284769083754e-05,
+      "ordinary_drift": 1.2665923599164408e-05,
+      "user": "af1317ea3d"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -2.7539198126924624e-05,
+      "ordinary_drift": 5.7901365024704e-05,
+      "user": "af1317ea3d"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -8.42659536485213e-05,
+      "ordinary_drift": 6.755159252880283e-05,
+      "user": "af1317ea3d"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -9.637568897802318e-05,
+      "ordinary_drift": 4.053095551725949e-05,
+      "user": "af1317ea3d"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": -9.997862646859978e-05,
+      "ordinary_drift": 0.00013510318505760566,
+      "user": "af1317ea3d"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": 9.172502671517258e-06,
+      "ordinary_drift": 3.9011830337554176e-05,
+      "user": "b27941d454"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": 1.5052471609156015e-06,
+      "ordinary_drift": 3.250975292584668e-05,
+      "user": "b27941d454"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -2.8148860288790267e-05,
+      "ordinary_drift": 3.657332341788777e-05,
+      "user": "b27941d454"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -3.753036925124853e-06,
+      "ordinary_drift": 5.573048736309816e-05,
+      "user": "b27941d454"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -2.5975964817015473e-05,
+      "ordinary_drift": 1.6254876462951096e-05,
+      "user": "b27941d454"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -4.882109618631336e-05,
+      "ordinary_drift": -0.00027308014902374667,
+      "user": "b27941d454"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": -1.0574446571043339e-05,
+      "ordinary_drift": -0.0001950585175552466,
+      "user": "b27941d454"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": 9.172502671517258e-06,
+      "ordinary_drift": 3.9011830337554176e-05,
+      "user": "b27941d454"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": 2.3504197346424505e-05,
+      "ordinary_drift": 6.501950585174887e-05,
+      "user": "b27941d454"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": 3.3233578712654754e-05,
+      "ordinary_drift": 9.752886244773773e-05,
+      "user": "b27941d454"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": 3.333420116902186e-05,
+      "ordinary_drift": 9.752835288545647e-05,
+      "user": "b27941d454"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": 1.2515434172799544e-05,
+      "ordinary_drift": 4.8764629388797776e-05,
+      "user": "b27941d454"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 5.185836618759598e-05,
+      "ordinary_drift": 0.00015604579944211716,
+      "user": "b27941d454"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": -6.0296565115303125e-05,
+      "ordinary_drift": -3.250975292584668e-05,
+      "user": "b27941d454"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": 6.687262533122684e-05,
+      "ordinary_drift": 3.445305770888307e-05,
+      "user": "cdd070e9c3"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -0.0005168446956362871,
+      "ordinary_drift": -7.656235046415993e-05,
+      "user": "cdd070e9c3"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -1.0762571394096199e-06,
+      "ordinary_drift": 2.1533161068038043e-05,
+      "user": "cdd070e9c3"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": 0.0001511591216833974,
+      "ordinary_drift": 2.4609326934904585e-05,
+      "user": "cdd070e9c3"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -9.93948333638528e-08,
+      "ordinary_drift": -5.742176284811995e-05,
+      "user": "cdd070e9c3"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 3.878847783522765e-06,
+      "ordinary_drift": 3.445305770885532e-05,
+      "user": "cdd070e9c3"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": -1.6099170892625025e-05,
+      "ordinary_drift": -5.742176284811995e-05,
+      "user": "cdd070e9c3"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": 6.687262533122684e-05,
+      "ordinary_drift": 3.445305770888307e-05,
+      "user": "cdd070e9c3"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -1.9681432335549864e-05,
+      "ordinary_drift": 1.9140587616039983e-05,
+      "user": "cdd070e9c3"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": 5.886026730650418e-05,
+      "ordinary_drift": 0.0,
+      "user": "cdd070e9c3"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": 4.626052039974349e-05,
+      "ordinary_drift": 2.460932693487683e-05,
+      "user": "cdd070e9c3"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -0.0001122866813279555,
+      "ordinary_drift": -8.613264427220768e-05,
+      "user": "cdd070e9c3"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 9.454858499913232e-05,
+      "ordinary_drift": 5.16795865632691e-05,
+      "user": "cdd070e9c3"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": -1.7907457958987738e-05,
+      "ordinary_drift": -8.613264427220768e-05,
+      "user": "cdd070e9c3"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": 7.172494740492752e-05,
+      "ordinary_drift": 1.2375931288832742e-05,
+      "user": "ec05871b7c"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": 0.00013143617761535165,
+      "ordinary_drift": 4.125299084184464e-05,
+      "user": "ec05871b7c"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -3.0665706395316406e-06,
+      "ordinary_drift": -1.5469818384350464e-05,
+      "user": "ec05871b7c"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": 7.237865929965448e-05,
+      "ordinary_drift": 0.0,
+      "user": "ec05871b7c"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": 0.00026953497344073263,
+      "ordinary_drift": 0.00012375727073965503,
+      "user": "ec05871b7c"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 0.0001514145161202185,
+      "ordinary_drift": -9.900745031066194e-05,
+      "user": "ec05871b7c"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 6.792051154835832e-08,
+      "ordinary_drift": 4.125242357988501e-05,
+      "user": "ec05871b7c"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": 7.172494740492752e-05,
+      "ordinary_drift": 1.2375931288832742e-05,
+      "user": "ec05871b7c"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": 0.000141649242900721,
+      "ordinary_drift": 4.125299084184464e-05,
+      "user": "ec05871b7c"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": 9.559854332219508e-05,
+      "ordinary_drift": 4.640945515299588e-05,
+      "user": "ec05871b7c"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": 0.00016331401070812657,
+      "ordinary_drift": 7.071885718329396e-05,
+      "user": "ec05871b7c"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": 0.00010720808733999387,
+      "ordinary_drift": 0.0,
+      "user": "ec05871b7c"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 0.00012229984427708507,
+      "ordinary_drift": 2.4751862577665484e-05,
+      "user": "ec05871b7c"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 1.5442784125463405e-05,
+      "ordinary_drift": 0.0,
+      "user": "ec05871b7c"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -1.5082069626082273e-05,
+      "ordinary_drift": 0.0,
+      "user": "ec7f7bbbcd"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -1.0341852286377407e-05,
+      "ordinary_drift": -5.575482743880311e-05,
+      "user": "ec7f7bbbcd"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": 6.512302831757077e-05,
+      "ordinary_drift": 6.272476373675451e-05,
+      "user": "ec7f7bbbcd"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": 7.809537655834031e-06,
+      "ordinary_drift": 0.0,
+      "user": "ec7f7bbbcd"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -3.8365975762566507e-05,
+      "ordinary_drift": -5.57553455437787e-05,
+      "user": "ec7f7bbbcd"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -1.0765617933894411e-05,
+      "ordinary_drift": 0.00010035794333121406,
+      "user": "ec7f7bbbcd"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 7.801183159872327e-05,
+      "ordinary_drift": 0.000223015165031204,
+      "user": "ec7f7bbbcd"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -1.5082069626082273e-05,
+      "ordinary_drift": 0.0,
+      "user": "ec7f7bbbcd"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": 3.786839852082391e-06,
+      "ordinary_drift": 1.8584942479582534e-05,
+      "user": "ec7f7bbbcd"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": 2.214379703696645e-05,
+      "ordinary_drift": 6.272476373675451e-05,
+      "user": "ec7f7bbbcd"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -5.334237364429395e-06,
+      "ordinary_drift": 0.0,
+      "user": "ec7f7bbbcd"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": 2.146685920467739e-06,
+      "ordinary_drift": 0.0,
+      "user": "ec7f7bbbcd"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 8.39238900622874e-05,
+      "ordinary_drift": 0.00010035794333121406,
+      "user": "ec7f7bbbcd"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": -3.531908817078211e-07,
+      "ordinary_drift": -5.5753791257801e-05,
+      "user": "ec7f7bbbcd"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": 8.109451563143022e-05,
+      "ordinary_drift": 8.888177834676103e-06,
+      "user": "f51770da75"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -5.074356808054681e-05,
+      "ordinary_drift": 0.0,
+      "user": "f51770da75"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -2.8198614797636523e-06,
+      "ordinary_drift": 2.2220247089144163e-05,
+      "user": "f51770da75"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": 2.5810230653844357e-05,
+      "ordinary_drift": 1.2697284050941504e-05,
+      "user": "f51770da75"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -9.42016631074738e-05,
+      "ordinary_drift": -2.9626996118858884e-05,
+      "user": "f51770da75"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 0.0004956215239566575,
+      "ordinary_drift": 0.0,
+      "user": "f51770da75"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 0.001733574010921557,
+      "ordinary_drift": -2.9626996118865823e-05,
+      "user": "f51770da75"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": 8.109451563143022e-05,
+      "ordinary_drift": 8.888177834676103e-06,
+      "user": "f51770da75"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": 0.00019211289155857125,
+      "ordinary_drift": 3.950266149177484e-05,
+      "user": "f51770da75"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": -1.1828135432490061e-05,
+      "ordinary_drift": 2.2220247089144163e-05,
+      "user": "f51770da75"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": -2.9049173092099423e-05,
+      "ordinary_drift": 0.0,
+      "user": "f51770da75"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -4.693213174533639e-05,
+      "ordinary_drift": 1.4813498059429442e-05,
+      "user": "f51770da75"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": -1.2017132138553155e-05,
+      "ordinary_drift": 3.555239534264176e-05,
+      "user": "f51770da75"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 0.00013782225555381,
+      "ordinary_drift": 2.9626996118858884e-05,
+      "user": "f51770da75"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "U",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -1.1102230246251565e-16,
+      "ordinary_drift": 0.0,
+      "user": "fba9f08c33"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": -2.7978659923766358e-05,
+      "ordinary_drift": 0.0,
+      "user": "fba9f08c33"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": 1.0670631263143271e-05,
+      "ordinary_drift": 5.157386236656625e-05,
+      "user": "fba9f08c33"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": 2.600368909311257e-06,
+      "ordinary_drift": 0.0,
+      "user": "fba9f08c33"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": -3.363631337915951e-05,
+      "ordinary_drift": -0.00011460792628417704,
+      "user": "fba9f08c33"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 2.058312933739259e-05,
+      "ordinary_drift": 8.251732863903682e-05,
+      "user": "fba9f08c33"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "U",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": -4.701030378873039e-05,
+      "ordinary_drift": -9.168423947923665e-05,
+      "user": "fba9f08c33"
+    },
+    {
+      "class_support_equal": true,
+      "contract": "B",
+      "coverage": 1.0,
+      "dynamic_balanced_drift": -1.1102230246251565e-16,
+      "ordinary_drift": 0.0,
+      "user": "fba9f08c33"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.9,
+      "dynamic_balanced_drift": 1.679831819978439e-06,
+      "ordinary_drift": -1.5281173594172692e-05,
+      "user": "fba9f08c33"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.8,
+      "dynamic_balanced_drift": 3.0295006918534817e-05,
+      "ordinary_drift": 0.0,
+      "user": "fba9f08c33"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.7,
+      "dynamic_balanced_drift": 1.378708635058068e-05,
+      "ordinary_drift": 0.0,
+      "user": "fba9f08c33"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.6,
+      "dynamic_balanced_drift": 0.00012747697337511799,
+      "ordinary_drift": 4.584317051367637e-05,
+      "user": "fba9f08c33"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.5,
+      "dynamic_balanced_drift": 0.00013837574220154636,
+      "ordinary_drift": 2.750577621299377e-05,
+      "user": "fba9f08c33"
+    },
+    {
+      "class_support_equal": false,
+      "contract": "B",
+      "coverage": 0.3,
+      "dynamic_balanced_drift": 0.00015286868888975125,
+      "ordinary_drift": 4.584211973956975e-05,
+      "user": "fba9f08c33"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "artifact": "REPRESENTATIONAL_CKA.json",
+  "plan_sha256": "4aa731b8d7b15f802586e07c34dc198510e0dadc89a13831c09526cacd2cfc77",
+  "linear_cka": 0.23374578402429644,
+  "mode": "DETERMINISTIC_FIRST_N",
+  "n_used": 40000,
+  "declared_subsample_rule": "first 40000 eligible samples in frozen population order if full computation infeasible",
+  "is_secondary": true,
+  "caution": "CKA is more invariant than direct substitution requires (ignores rotation and isotropic scaling); a high CKA must not override poor per-frame preservation"
+}

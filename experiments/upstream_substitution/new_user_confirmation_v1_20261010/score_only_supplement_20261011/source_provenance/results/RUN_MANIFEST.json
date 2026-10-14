@@ -1,0 +1,457 @@
+{
+  "status": "COMPLETE",
+  "preflight_sha256": "f235bf2680321e731bded50bf015c158d203fab4c7e53b11fa84b9af66b1505e",
+  "spec_sha256": "6371cd6e30a313fc269a5ea6d627696a3491b168863b47d08a8f6461fe12dd24",
+  "code_sha256": "d646f41193efad8a990a20fd2dbac02bbc5bcf93099e47864882c9329f93a0f6",
+  "environment": {
+    "python": "3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "C:\\Users\\\u8463\u4f2f\u8a00\\Desktop\\fingers\\common-pose\\.venv-score-only-20261010\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "joblib": "1.5.2",
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 8,
+        "prefix": "libopenblas",
+        "filepath": "C:\\Users\\\u8463\u4f2f\u8a00\\Desktop\\fingers\\common-pose\\.venv-score-only-20261010\\Lib\\site-packages\\numpy.libs\\libopenblas64__v0.3.23-293-gc2f4bdbb-gcc_10_3_0-2bde3a66a51006b2b53eb373ff767a3f.dll",
+        "version": "0.3.23.dev",
+        "threading_layer": "pthreads",
+        "architecture": "Prescott"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 8,
+        "prefix": "vcomp",
+        "filepath": "C:\\Users\\\u8463\u4f2f\u8a00\\Desktop\\fingers\\common-pose\\.venv-score-only-20261010\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+        "version": null
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 8,
+        "prefix": "libopenblas",
+        "filepath": "C:\\Users\\\u8463\u4f2f\u8a00\\Desktop\\fingers\\common-pose\\.venv-score-only-20261010\\Lib\\site-packages\\scipy.libs\\libopenblas_v0.3.27--3aa239bc726cfb0bd8e5330d8d4c15c6.dll",
+        "version": "0.3.27",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      }
+    ],
+    "thread_environment": {
+      "OMP_NUM_THREADS": "8",
+      "OPENBLAS_NUM_THREADS": "8",
+      "MKL_NUM_THREADS": "8"
+    }
+  },
+  "folds": [
+    {
+      "contract": "U",
+      "fold": 0,
+      "train": [
+        "2132c5d085",
+        "2327817653",
+        "23b817e892",
+        "32cbfe3221",
+        "3589743749",
+        "47c605ad6f",
+        "7afcdcd6be",
+        "87aa3b3887",
+        "8bd1c0ff16",
+        "ce52651f99",
+        "dd810188d9",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "13b8b5f76d",
+        "2e45fde443",
+        "6a7fc66366"
+      ],
+      "test": [
+        "0816388460",
+        "2be40c4380",
+        "54c854b839",
+        "9b8c99cdc2"
+      ]
+    },
+    {
+      "contract": "U",
+      "fold": 1,
+      "train": [
+        "0816388460",
+        "2327817653",
+        "23b817e892",
+        "2be40c4380",
+        "3589743749",
+        "47c605ad6f",
+        "54c854b839",
+        "87aa3b3887",
+        "8bd1c0ff16",
+        "9b8c99cdc2",
+        "dd810188d9",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "2132c5d085",
+        "32cbfe3221",
+        "7afcdcd6be"
+      ],
+      "test": [
+        "13b8b5f76d",
+        "2e45fde443",
+        "6a7fc66366",
+        "ce52651f99"
+      ]
+    },
+    {
+      "contract": "U",
+      "fold": 2,
+      "train": [
+        "0816388460",
+        "13b8b5f76d",
+        "23b817e892",
+        "2be40c4380",
+        "2e45fde443",
+        "47c605ad6f",
+        "54c854b839",
+        "6a7fc66366",
+        "8bd1c0ff16",
+        "9b8c99cdc2",
+        "ce52651f99",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "2327817653",
+        "3589743749",
+        "87aa3b3887"
+      ],
+      "test": [
+        "2132c5d085",
+        "32cbfe3221",
+        "7afcdcd6be",
+        "dd810188d9"
+      ]
+    },
+    {
+      "contract": "U",
+      "fold": 3,
+      "train": [
+        "0816388460",
+        "13b8b5f76d",
+        "2132c5d085",
+        "2be40c4380",
+        "2e45fde443",
+        "32cbfe3221",
+        "54c854b839",
+        "6a7fc66366",
+        "7afcdcd6be",
+        "9b8c99cdc2",
+        "ce52651f99",
+        "dd810188d9"
+      ],
+      "calibration": [
+        "23b817e892",
+        "47c605ad6f",
+        "8bd1c0ff16"
+      ],
+      "test": [
+        "2327817653",
+        "3589743749",
+        "87aa3b3887",
+        "f1b6a408bf"
+      ]
+    },
+    {
+      "contract": "U",
+      "fold": 4,
+      "train": [
+        "0816388460",
+        "13b8b5f76d",
+        "2132c5d085",
+        "2327817653",
+        "2e45fde443",
+        "32cbfe3221",
+        "3589743749",
+        "6a7fc66366",
+        "7afcdcd6be",
+        "87aa3b3887",
+        "ce52651f99",
+        "dd810188d9",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "2be40c4380",
+        "54c854b839",
+        "9b8c99cdc2"
+      ],
+      "test": [
+        "23b817e892",
+        "47c605ad6f",
+        "8bd1c0ff16"
+      ]
+    },
+    {
+      "contract": "B",
+      "fold": 0,
+      "train": [
+        "2132c5d085",
+        "2327817653",
+        "23b817e892",
+        "32cbfe3221",
+        "3589743749",
+        "47c605ad6f",
+        "7afcdcd6be",
+        "87aa3b3887",
+        "8bd1c0ff16",
+        "ce52651f99",
+        "dd810188d9",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "13b8b5f76d",
+        "2e45fde443",
+        "6a7fc66366"
+      ],
+      "test": [
+        "0816388460",
+        "2be40c4380",
+        "54c854b839",
+        "9b8c99cdc2"
+      ]
+    },
+    {
+      "contract": "B",
+      "fold": 1,
+      "train": [
+        "0816388460",
+        "2327817653",
+        "23b817e892",
+        "2be40c4380",
+        "3589743749",
+        "47c605ad6f",
+        "54c854b839",
+        "87aa3b3887",
+        "8bd1c0ff16",
+        "9b8c99cdc2",
+        "dd810188d9",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "2132c5d085",
+        "32cbfe3221",
+        "7afcdcd6be"
+      ],
+      "test": [
+        "13b8b5f76d",
+        "2e45fde443",
+        "6a7fc66366",
+        "ce52651f99"
+      ]
+    },
+    {
+      "contract": "B",
+      "fold": 2,
+      "train": [
+        "0816388460",
+        "13b8b5f76d",
+        "23b817e892",
+        "2be40c4380",
+        "2e45fde443",
+        "47c605ad6f",
+        "54c854b839",
+        "6a7fc66366",
+        "8bd1c0ff16",
+        "9b8c99cdc2",
+        "ce52651f99",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "2327817653",
+        "3589743749",
+        "87aa3b3887"
+      ],
+      "test": [
+        "2132c5d085",
+        "32cbfe3221",
+        "7afcdcd6be",
+        "dd810188d9"
+      ]
+    },
+    {
+      "contract": "B",
+      "fold": 3,
+      "train": [
+        "0816388460",
+        "13b8b5f76d",
+        "2132c5d085",
+        "2be40c4380",
+        "2e45fde443",
+        "32cbfe3221",
+        "54c854b839",
+        "6a7fc66366",
+        "7afcdcd6be",
+        "9b8c99cdc2",
+        "ce52651f99",
+        "dd810188d9"
+      ],
+      "calibration": [
+        "23b817e892",
+        "47c605ad6f",
+        "8bd1c0ff16"
+      ],
+      "test": [
+        "2327817653",
+        "3589743749",
+        "87aa3b3887",
+        "f1b6a408bf"
+      ]
+    },
+    {
+      "contract": "B",
+      "fold": 4,
+      "train": [
+        "0816388460",
+        "13b8b5f76d",
+        "2132c5d085",
+        "2327817653",
+        "2e45fde443",
+        "32cbfe3221",
+        "3589743749",
+        "6a7fc66366",
+        "7afcdcd6be",
+        "87aa3b3887",
+        "ce52651f99",
+        "dd810188d9",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "2be40c4380",
+        "54c854b839",
+        "9b8c99cdc2"
+      ],
+      "test": [
+        "23b817e892",
+        "47c605ad6f",
+        "8bd1c0ff16"
+      ]
+    }
+  ],
+  "files": {
+    "results/CLASS_SUPPORT_30.csv": "63e2d38783fd66b383faa5f5cfaee4490a656938f893265f057d1287e82555ed",
+    "results/DEPLOYMENT_ROWS.csv": "19b26296d296f64aa5b4aa6d642552631652e024e9ff51d09d0872dee6154082",
+    "results/PAIRED_EFFECTS_30.csv": "1e971d6cbeed572f8f0b75d481a121f373e75236f10e19e93d8303ea6775eda8",
+    "results/RISK_COVERAGE_ROWS.csv": "8b359943f52f835d72ea244618b82ba629c0591c44dd5420513db10aa6b07a8f",
+    "results/SEED_USER_EFFECTS.csv": "2e608c4907ffa83bd29b409f6adf80cece2a59e2a9689c26582d6d8a9964eadb",
+    "results/SUMMARY.json": "3787dfb32de3869edc7cc3a145251213a4f9de2d6ee0d553406206f006ee9670",
+    "results/TARGET_AREAS_30_100.csv": "5128f487c6bc341affc80d27b41165711789c1a3f424f8a0cb6c28951e013c6b",
+    "results/USER_RISKS_30.csv": "984d79ed87215730dc18ac12b1d89face7df1763c44a3ba7f7b80a6a2e7c7354",
+    "results/WITHIN_PREDICTED_CLASS_30.csv": "1057d9acb5d2101b016176c621a91f6343677f69474f47d1be522039525ab5c5",
+    "results/scores/DEV/B_0816388460.npz": "5440b5f24b1333d76a0bfd360e7da478dbb90d8e11cbbd2a4ac521323e68f1f5",
+    "results/scores/DEV/B_13b8b5f76d.npz": "0a65fe3089bb8b6f75a79e3e90b0874fdb269c2653b4f1b80c61349b755d9813",
+    "results/scores/DEV/B_2132c5d085.npz": "461c975ec9b1c9e1a5ff1a8f00a5c94d15cd2609f3866b9171b189933de94ba5",
+    "results/scores/DEV/B_2327817653.npz": "afdfdf0e0b860da28c6c05fb9d999088c72b8cf2d4b78ec52d27417d1ffd5d1b",
+    "results/scores/DEV/B_23b817e892.npz": "a57e3bd49ebc6bd3c59cea433d4b4d039e20aa3a8465b3637ef4b5b6ae8b4a5f",
+    "results/scores/DEV/B_2be40c4380.npz": "07287c63caccebc327c74cde806eacc6273fd2122b03d398aad83756ff2c665f",
+    "results/scores/DEV/B_2e45fde443.npz": "4b4fae224a3d1216d9cb42e3aa2f4a5cc4bd47fb2a61063e352e8ddfbe85deab",
+    "results/scores/DEV/B_32cbfe3221.npz": "a828309b245a551346ac584aa26c21a6f5e3e6756d18c7ef6b24418a66530067",
+    "results/scores/DEV/B_3589743749.npz": "f575e68dc3abf52641a037989b7d499a2ba029ee45678e59ffe8a6009d7b44ea",
+    "results/scores/DEV/B_47c605ad6f.npz": "ff7f3eb4193453f35071597e36a1bcfffa5fff850be519b561891ee8a02c2440",
+    "results/scores/DEV/B_54c854b839.npz": "1ddfb930da8804ac69a72a6b26a444e50e1769f5441f8ca53dbb5c1f6fdea1e9",
+    "results/scores/DEV/B_6a7fc66366.npz": "b423148fce9b19006e620d66babffac7fef2389b886a13401b3845d34e182ff1",
+    "results/scores/DEV/B_7afcdcd6be.npz": "4c174787c3793d49296528f02e3285a373fc60dda415e00a1925e37b7e37fffc",
+    "results/scores/DEV/B_87aa3b3887.npz": "b7109efc49e235d27d2cffb6e2ad5e347f598e1b26be79ec79098865931cb736",
+    "results/scores/DEV/B_8bd1c0ff16.npz": "edbddcd21941e600a4d2d599f62f82070985e443af76e2d32b671219870914a1",
+    "results/scores/DEV/B_9b8c99cdc2.npz": "ac47dcde881ef87ba15cb208935f8da2fa5164e1511d05188feba88f41766872",
+    "results/scores/DEV/B_ce52651f99.npz": "1b049d87e9978f7a1f486582e3aba38b1b8af44431fa57856b9c6a6d27aaaaff",
+    "results/scores/DEV/B_dd810188d9.npz": "150b2bf83c82d64bf674e8cc47b1012591bbb4240f33f9674bf2bc73f7611667",
+    "results/scores/DEV/B_f1b6a408bf.npz": "c576b02ce765a14da5c05ea0bea517e0217309453cb4ea37d3b99c3402321794",
+    "results/scores/DEV/U_0816388460.npz": "9c6ba44021d72d8be0452220db42aa5d1693cef2cb51b667c84331ee4e7434a9",
+    "results/scores/DEV/U_13b8b5f76d.npz": "1986761d7d3c7d296f81126a6f9a15463d5817704042eaa31b070ef17f1ffbfc",
+    "results/scores/DEV/U_2132c5d085.npz": "4a81691be6817dbdf86deb6a39cf16d698706a9dbf9c7b2b36291e700961ff9b",
+    "results/scores/DEV/U_2327817653.npz": "1313439be3ad6dca923b6ea13afe837a4cb5296edadc76e0d1ab7d4fdca55bfc",
+    "results/scores/DEV/U_23b817e892.npz": "539113ec68f563daf79f3d76bddf637a5630dbaa5c848748caab3cced7cb26ab",
+    "results/scores/DEV/U_2be40c4380.npz": "6225cdae64d15a1a06ee36b662ca7d039e6d051c8bf479c6246e6827fa7042da",
+    "results/scores/DEV/U_2e45fde443.npz": "96c573d2fa16bea3ab26193c1e02f2255bec35494b43af0bf9df19508a5ab66f",
+    "results/scores/DEV/U_32cbfe3221.npz": "5e67037ff0d7a431fac56576063a69c6be9e82099d07ccd4674e09650e9e7649",
+    "results/scores/DEV/U_3589743749.npz": "e14e5b9e23759a3c6150aeda965a71a951417c7e51be0920b2d4ee1c9fe41b9b",
+    "results/scores/DEV/U_47c605ad6f.npz": "fdd98de472008990a96e5ae5529ae80b3ff541e9387fb0e87e795b53c949d64c",
+    "results/scores/DEV/U_54c854b839.npz": "ea916c1bfbc2db4e8a46e05bde0e1bb324aad6ebbba772b54027bbcbb5db7733",
+    "results/scores/DEV/U_6a7fc66366.npz": "2aee07c23b4e50faa133fc8d1bc8bfca66735d989e3b06970d26ac6fb3073fcb",
+    "results/scores/DEV/U_7afcdcd6be.npz": "3bf81c43302fb3713066a651e54074fd91ceabce2f77d20d1e07aec54cabe0a9",
+    "results/scores/DEV/U_87aa3b3887.npz": "ab79f459aa984b365cd88bfcf1af80c5d10c328d708077e7a403e47aabe61da2",
+    "results/scores/DEV/U_8bd1c0ff16.npz": "e82b3476e1252a1f8face5ea2e0e1cf8ba040294dac694c31361297987e428c6",
+    "results/scores/DEV/U_9b8c99cdc2.npz": "b452c84ad9ebbd1f4970e24f25b843cb0a2b2f6264849ba0f6b15489f63c9e2f",
+    "results/scores/DEV/U_ce52651f99.npz": "54f1ab00704cec0aa48967408f86872cd291363b1e3a61283ee0e68df27ca072",
+    "results/scores/DEV/U_dd810188d9.npz": "7601416ac860322ba50fe67cda4fad968a58b9f62012e534126b6ba869df968e",
+    "results/scores/DEV/U_f1b6a408bf.npz": "a6c0b2aeb68f5bb68e447331bce4bff76d6c8d8ec84166fb5d4ab6b6ed5371d2",
+    "results/scores/FINAL/B_0625995630.npz": "2a4fffe8af1fa8e6ab4f6d6b69cd32545280af455b58a2f4af3278383975c162",
+    "results/scores/FINAL/B_0ba89d682e.npz": "0b5a9da7aee8577732e8d1c9dc128e3e3289cad856d06931ae6d06408e3d04d9",
+    "results/scores/FINAL/B_1152814359.npz": "0b9cdacce05a0e21452dceb9940d52c618895e35760d4ca798d17b1e855d5d5c",
+    "results/scores/FINAL/B_16923056b7.npz": "18c5fff904e7dc762a9ec9522df01bb7b4b1670ad3fb44705f576e580eda4174",
+    "results/scores/FINAL/B_18449b9c12.npz": "916ec71d237b82a3223e3555e881daa3c660822dd1da3a4635f8f96b9bfb039a",
+    "results/scores/FINAL/B_1896997952.npz": "ca41343b77568bcb1d0145715e847f39774c7535b716dd5ff7f12ccd55103b89",
+    "results/scores/FINAL/B_2942949786.npz": "d45470f15b37a125e4241cf5dfb05ef0fd71fb5c6cb49dff0cf1903984254dbe",
+    "results/scores/FINAL/B_299b130307.npz": "1c5cdf988a611b13c9d876a6eb7068c006b044c345ff49f8dc374e65fb549993",
+    "results/scores/FINAL/B_2cefcf6cba.npz": "ae984c19b509afd41e5554131de3cb7a52c94138ca1277255e67552f21e1f9bc",
+    "results/scores/FINAL/B_495869fa89.npz": "db34b1e8d386425f3c1348615c42d24de04db00b5be4888b325f58b9e3bd6dfb",
+    "results/scores/FINAL/B_513ba531ad.npz": "25c39f82d57eeaed4dec94b808599bf7c70073dfd35933a9412872d1ad41b8a5",
+    "results/scores/FINAL/B_76bfc2d385.npz": "052ba932ce765a1c2fe07ce8355bdbd4c611dc5d9290ce6613243054f4c0d247",
+    "results/scores/FINAL/B_831cb06e26.npz": "161f3b82ba435109fb148128ae8af4f74d25da0b150c149cbdaa13e7af133474",
+    "results/scores/FINAL/B_af1317ea3d.npz": "f1130e911003f6831cdcbe641246b7ee654981cfd10307cfb84d0dc76a6be410",
+    "results/scores/FINAL/B_b27941d454.npz": "1e2362e0fd29c5c94bb6ab2eda91811f9ab74be73996bddecf6de25cabb3aab2",
+    "results/scores/FINAL/B_cdd070e9c3.npz": "6f0ac29bb572002da97d6625629403259877d12bbc3082123dfadbbc36f5be72",
+    "results/scores/FINAL/B_ec05871b7c.npz": "34f13ff352b9fe151984cd04962d7def53df55cd591ace18e8f5b4133d87dc7c",
+    "results/scores/FINAL/B_ec7f7bbbcd.npz": "9f34c7324ca8e776a584a7bea58894aef4b956464f085bc08fb6c0f3cb9ce0e4",
+    "results/scores/FINAL/B_f51770da75.npz": "661b425e0e7f2bcb6ad2d8fdcb55dadccdcb88fbd71ab2d97be7f7e0ab7f559b",
+    "results/scores/FINAL/B_fba9f08c33.npz": "9a512a8836efe9bcddf279ef6c1cc21d998934f80dda68d2a457e421378550fd",
+    "results/scores/FINAL/U_0625995630.npz": "d7bcb58f6875588faa3ec6d467d201f68b6d0b1bd2faa58b5f7dc2b1235cd12a",
+    "results/scores/FINAL/U_0ba89d682e.npz": "d1284a0c31e6a14d8e4c3445cafed85fc19adfd3cbfc8d85c3358700bfd2c362",
+    "results/scores/FINAL/U_1152814359.npz": "8a0a75807ca9c8309ef07599c8dc3549452fb3681b634acaceb21fbfb8dc9da0",
+    "results/scores/FINAL/U_16923056b7.npz": "77b15e6159a7e6a81b323d4e27383e118ab6a44615556e48988485d8d61f984f",
+    "results/scores/FINAL/U_18449b9c12.npz": "75c6d0acf368377a014b4829404a4ae1fc666e92cc7e323a7b83a32281eee3ae",
+    "results/scores/FINAL/U_1896997952.npz": "7bb7cc4b4a3bbe0a95b3a2a63aa0c608b950c28899f6b028498b3926b2efc32c",
+    "results/scores/FINAL/U_2942949786.npz": "c52966d843fe4836f1d48ecf2f0543d784bd819bf6842d95bfca183207fc4515",
+    "results/scores/FINAL/U_299b130307.npz": "b3c365259cc11d903071756b0950b0bbe354ff7c268246cf85b4350ad3313917",
+    "results/scores/FINAL/U_2cefcf6cba.npz": "bcaaa277ff41bb89c6932c0d5785b0ff0c274b6706a8a6031417bc051859adfd",
+    "results/scores/FINAL/U_495869fa89.npz": "4803fb7d3cb29c21f5cec5f8a17b38f4121c84966c9cd9b135ccbd9c6d55a57e",
+    "results/scores/FINAL/U_513ba531ad.npz": "0b90b48b6227b45fb03616749130c116b313a49e498d0e27ee4dbcb005324697",
+    "results/scores/FINAL/U_76bfc2d385.npz": "522d418bc353f5f51b199ba17f1c460f29d8c865c5ef4f58df78f3735e2161d3",
+    "results/scores/FINAL/U_831cb06e26.npz": "0929514c140d2603d766a94ac7e62e364ce67a1ad263c93f29a153498cdc4e62",
+    "results/scores/FINAL/U_af1317ea3d.npz": "3d290ed0ab5824d623d7ca28938614932cc1999cb81154ccc6b45a51a34ff529",
+    "results/scores/FINAL/U_b27941d454.npz": "16db621c964d6d0c53f587b0c2b1997e29cf8ad52fa9d3ecbef2797652efa8ed",
+    "results/scores/FINAL/U_cdd070e9c3.npz": "312131849e8ee70eeef1e81c64d90770383609a576e34d3b01600b3d4b8d9480",
+    "results/scores/FINAL/U_ec05871b7c.npz": "76640eeae4579cc7d9f38cf0e93355252465cad326c7d8a85dbe449921ade260",
+    "results/scores/FINAL/U_ec7f7bbbcd.npz": "11866119ab83898bf068fe8f073e21b6badce52381e8d81988dcc172adf98ac8",
+    "results/scores/FINAL/U_f51770da75.npz": "2e2ac553309debaeb2b192bd86e52c019cc07fd15ae697cc0a02f71cdc827cb1",
+    "results/scores/FINAL/U_fba9f08c33.npz": "ce6e0940b43125e9de1012c3a257124cba21546397505a971de15967a17a86f3",
+    "models/B_FINAL_DEV_ONLY_score_only.joblib": "4c178a8c21c08509955d08c1682f12ae01966cfa94103a8ddb51f7a4dc45d7a3",
+    "models/B_FINAL_DEV_ONLY_score_only_INSTANCE.json": "79fa2342ab7cd386675523e9d8ef2bf1fa972cd0c439daaf4fee51ae1a52a5cd",
+    "models/B_FINAL_FROZEN_BEFORE_EVALUATION.json": "6cab08e86a9cbdf4278a1cdd81c3eb6cf934ec8260d7b1690e71c8905aa9f736",
+    "models/B_fold0_score_only.joblib": "be4a72b0f27e069b7d5983329dd18a8cc71b20b46c7d029472740546eb65b49c",
+    "models/B_fold0_score_only_INSTANCE.json": "7282bf656b4092dc62b4f97f59b1e027d11b7e7f13c86fa080c0de1633a161a6",
+    "models/B_fold1_score_only.joblib": "a3a742f1e0e739773c44405e98b124e153e45489be87be47942c346f5a73dbec",
+    "models/B_fold1_score_only_INSTANCE.json": "ef2bc9b329e59fc109adf2ca12331b5b9cc33da7c086a07942362a7db22ae765",
+    "models/B_fold2_score_only.joblib": "ae64730ec3a79abff853eb4b2a1465ab5e86a6508aa50573c4af8a78de7b630b",
+    "models/B_fold2_score_only_INSTANCE.json": "b825c91ea60ec497c80b9f436dc4757038b5aeec5714aa577b7f77ccd990f0c3",
+    "models/B_fold3_score_only.joblib": "d7df0fe54c70ef62e30fc44b6e21cdd448adfe963356c2e2226e62bc72a9c58d",
+    "models/B_fold3_score_only_INSTANCE.json": "bfdc72cc7d0c318fca445accb5704bf9174ae07499b487606cfd7936d4179764",
+    "models/B_fold4_score_only.joblib": "bb3b81a9665262da411739859acbd5983b1e057c33d14ad6c054e2decc185694",
+    "models/B_fold4_score_only_INSTANCE.json": "002b075e90443a4712ce162df50274b8db397def26a9bf674298a6ce6ea84668",
+    "models/U_FINAL_DEV_ONLY_score_only.joblib": "3317e96137dd968e27a91702a57fe3363b1142ef0101764ae303d8b71cc7895f",
+    "models/U_FINAL_DEV_ONLY_score_only_INSTANCE.json": "6e1b6e9f7662cf57133b13bbbdc5ea2a29fea1f84ee197004a3a58f7b8d9547d",
+    "models/U_FINAL_FROZEN_BEFORE_EVALUATION.json": "7b5ca19a585f8fee3aacdd61aea94d15f032b2b1b50396092205021a8b85d960",
+    "models/U_fold0_score_only.joblib": "f73fc0b174edf31b0f4f531ab439643a90353bb9dc6165ee856c4840c86bde51",
+    "models/U_fold0_score_only_INSTANCE.json": "1f64075c5b41731caee99ec66a938a3570eb04d93839b2e1465a406b98c8a254",
+    "models/U_fold1_score_only.joblib": "aab5817772dab4c3a015310a0417e0b9e989e30be31a768de6a9ba74b01fa254",
+    "models/U_fold1_score_only_INSTANCE.json": "502ed2b016b295f552f264a0d68938a4f07a0c7db6eb19442df4fc485ff93526",
+    "models/U_fold2_score_only.joblib": "339a1cd6243774ffa0b0f32da78457568669924c2e9dba66468fbed2d5536963",
+    "models/U_fold2_score_only_INSTANCE.json": "6c29181dfd79780eb885850afbdbd0668aa456ad4a40c9ef7106dc058aca725d",
+    "models/U_fold3_score_only.joblib": "41c303a641d086176d20f982f342e91070cf53da215438ddcfcb5b407b78880d",
+    "models/U_fold3_score_only_INSTANCE.json": "20cfdaf9d3a7c86a72cb57070d72e27ac6f9ffb5ba94d75166ba638d7c3fa529",
+    "models/U_fold4_score_only.joblib": "baeb588aa96347604284243380d8d776e8e851ed1bb25621a844f8d83429ac63",
+    "models/U_fold4_score_only_INSTANCE.json": "2f462e861eddff3913bd2c3eb4771d36c9f5326d2ad237c007493aedd6a0608e"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "attempt_id": "20261010_successor_v3",
+  "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+  "credential_transport": "no credential",
+  "new_pid": 24788,
+  "new_start_time": "2026-10-10T17:31:44.8872514+08:00",
+  "observed_local_time": "2026-10-10T17:31:45.069329+08:00",
+  "pid": 24788,
+  "previous_pid_verified_absent": 20892,
+  "role": "download",
+  "runner_sha256": "520eab04ff901f44f4ff636d15aa9a03bccff2291b159c46ee4a48d7aa74d5c2",
+  "scientific_protocol_and_members_changed": false,
+  "start_time": "2026-10-10T17:31:44.8872514+08:00",
+  "status": "HIDDEN_SUCCESSOR_LAUNCHED_AFTER_VERIFIED_TERMINAL",
+  "transport_seal_sha256": "744996becb62f83b3f48ac32ab34f2d8cde0413554efbaf3f63344f7fdecb17b"
+}

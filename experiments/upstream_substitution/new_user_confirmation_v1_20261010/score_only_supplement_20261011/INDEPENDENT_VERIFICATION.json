@@ -1,0 +1,20 @@
+{
+  "canonical_user_effects": 160,
+  "class_rows": 17920,
+  "contracts": 2,
+  "deployment_rows": 320,
+  "model_prediction_vectors_checked": 320,
+  "new_confirmatory_primary": false,
+  "original_common_sets_sha256": "1e1c76a662a422a6daf13677a41a6eb3155f69a75b0d4276a9e3a1a8b79e75fc",
+  "original_primary_verification_sha256": "3321ae832ddb14ccd3b7849e52e71c27a6da47d740caccea65dfe9313ac115fb",
+  "original_sets_changed": false,
+  "paired_seed_effects": 3200,
+  "risk_rows": 2240,
+  "secondary_result_sha256": "9dd3a6b8d5f06d1a7de62f8d9d37efff487f81e0e2db1bd6c56e6f71a651f57e",
+  "seed_risk_rows": 6400,
+  "status": "PASS",
+  "support_rows": 2560,
+  "users": 80,
+  "verifier_sha256": "7fbb6ce835cb2ec4eb536c26509d1cf8711204a744d0624547955d9daaf386df",
+  "within_class_rows": 320
+}

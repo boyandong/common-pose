@@ -24,7 +24,8 @@ The concern is concrete:
 
 ## What this repository does about it
 
-**No third-party code is redistributed.** Specifically:
+**No known third-party code is intentionally redistributed in this curated repository;
+repository-wide licensing remains pending provenance review.** Specifically:
 
 * The emg2pose baseline is **not vendored**. `adapters/emg2pose.py` and
   `estimators/emg2pose/predict_pose.py` are wrappers that import it from a user-provided
@@ -37,6 +38,12 @@ The concern is concrete:
 * Per-dataset terms and access routes are recorded in
   [`reproducibility.md`](reproducibility.md), with source URLs, DOIs and access dates in
   `audits/dataset_admission/pose_api_admission/OFFICIAL_SOURCE_REFERENCES.md`.
+
+The hedge above is deliberate rather than boilerplate. Several files in the curated tree are
+copied from a historical research workspace whose individual file lineage has **not** been
+traced to a third-party origin, and the negative claim ("no known third-party code is
+intentionally redistributed") is the strongest statement the evidence supports. It is not a
+statement that every line has been proven original.
 
 ## What still needs review before a licence can be chosen
 

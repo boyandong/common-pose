@@ -1,0 +1,18 @@
+{
+  "schema": "gate4e-deployment-feature-v1",
+  "all_features_deployment_available_without_gt": true,
+  "gate4d_learned_risk_excluded": "fold-local generation unnecessary for this fixed pool",
+  "features": [
+    {"name": "predicted_class_onehot", "dimension": 8, "source": "frozen customer prediction on predicted pose"},
+    {"name": "predicted_class_scores", "dimension": 8, "source": "frozen customer decision_function on predicted API state"},
+    {"name": "top1_top2_margin", "dimension": 1, "source": "predicted class scores"},
+    {"name": "probability_entropy", "dimension": 1, "source": "frozen customer predict_proba on predicted pose"},
+    {"name": "nearest_boundary_distance", "dimension": 1, "source": "frozen LDA class-score geometry and predicted state"},
+    {"name": "predicted_trusted8_pose", "dimension": 8, "source": "frozen EMG-to-pose and Common Pose adapter"},
+    {"name": "predicted_fisher_coordinate", "dimension": 7, "source": "frozen LDA transform on predicted API state"},
+    {"name": "four_view_tta_fisher_dispersion", "dimension": 1, "source": "frozen Gate4D four-view TTA Fisher outputs"},
+    {"name": "tta_sd_nearest_boundary_normal", "dimension": 1, "source": "four-view Fisher outputs projected onto the nearest frozen LDA class boundary"}
+  ],
+  "total_dimension": 36,
+  "forbidden_inputs": ["GT pose", "y_GT", "Flip", "GT Fisher", "true Fisher error", "GT probabilities", "human labels", "protected cohort statistics"]
+}

@@ -46,6 +46,7 @@ PATTERN_DEFINITION_FILES = {
     "scripts/publication_scan.py",
     "scripts/verify_curated_tree.py",
     "scripts/build_curated_tree.py",
+    "scripts/check_readme_claims.py",
     "provenance/CURATION_MANIFEST.json",
 }
 

@@ -1,0 +1,56 @@
+==============================================================================
+GATE 3 — official emg2pose upstream inference (regression_vemg2pose)
+==============================================================================
+checkpoint        : /root/models/emg2pose/regression_vemg2pose.ckpt
+checkpoint sha256 : 748b1d1ef0ce1985f6fc07225d97eebfb370243429af803b4997d28ecce2424e
+matches documented: True
+device            : cuda
+gpu               : NVIDIA GeForce RTX 4090
+torch / cuda      : 2.3.1+cu121 / 12.1
+/root/miniconda3/envs/emg2pose-gate3/lib/python3.10/site-packages/lightning_fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+Lightning automatically upgraded your loaded checkpoint from v1.8.6 to v2.2.2. To apply the upgrade to your files permanently, run `python -m pytorch_lightning.utilities.upgrade_checkpoint ../../models/emg2pose/regression_vemg2pose.ckpt`
+experiment        : regression_vemg2pose
+provide_initial_pos: False
+left_context      : 1790
+right_context     : 0
+rollout_freq      : 50
+emg_sample_rate   : 2000
+num_joints        : 20
+
+recordings        : 30
+  [ 1/30] mg-pose-train@2-recording-10_left.hdf5 T= 119266 ->  117476  nonfinite=0
+  [ 2/30] g-pose-train@2-recording-10_right.hdf5 T= 119266 ->  117476  nonfinite=0
+  [ 3/30] mg-pose-train@2-recording-11_left.hdf5 T= 117131 ->  115341  nonfinite=0
+  [ 4/30] g-pose-train@2-recording-11_right.hdf5 T= 117131 ->  115341  nonfinite=0
+  [ 5/30] mg-pose-train@2-recording-12_left.hdf5 T= 114954 ->  113164  nonfinite=0
+  [ 6/30] g-pose-train@2-recording-12_right.hdf5 T= 114938 ->  113148  nonfinite=0
+  [ 7/30] mg-pose-train@2-recording-13_left.hdf5 T= 473808 ->  472018  nonfinite=0
+  [ 8/30] g-pose-train@2-recording-13_right.hdf5 T= 473792 ->  472002  nonfinite=0
+  [ 9/30] mg-pose-train@2-recording-14_left.hdf5 T= 105504 ->  103714  nonfinite=0
+  [10/30] g-pose-train@2-recording-14_right.hdf5 T= 105496 ->  103706  nonfinite=0
+  [11/30] mg-pose-train@2-recording-15_left.hdf5 T=  91328 ->   89538  nonfinite=0
+  [12/30] g-pose-train@2-recording-15_right.hdf5 T=  91328 ->   89538  nonfinite=0
+  [13/30] emg-pose-train@2-recording-1_left.hdf5 T= 142674 ->  140884  nonfinite=0
+  [14/30] mg-pose-train@2-recording-1_right.hdf5 T= 142652 ->  140862  nonfinite=0
+  [15/30] emg-pose-train@2-recording-2_left.hdf5 T= 119100 ->  117310  nonfinite=0
+  [16/30] mg-pose-train@2-recording-2_right.hdf5 T= 119116 ->  117326  nonfinite=0
+  [17/30] emg-pose-train@2-recording-3_left.hdf5 T= 120994 ->  119204  nonfinite=0
+  [18/30] mg-pose-train@2-recording-3_right.hdf5 T= 121002 ->  119212  nonfinite=0
+  [19/30] emg-pose-train@2-recording-4_left.hdf5 T= 117250 ->  115460  nonfinite=0
+  [20/30] mg-pose-train@2-recording-4_right.hdf5 T= 117250 ->  115460  nonfinite=0
+  [21/30] emg-pose-train@2-recording-5_left.hdf5 T= 114196 ->  112406  nonfinite=0
+  [22/30] mg-pose-train@2-recording-5_right.hdf5 T= 114180 ->  112390  nonfinite=0
+  [23/30] emg-pose-train@2-recording-6_left.hdf5 T= 118611 ->  116821  nonfinite=0
+  [24/30] mg-pose-train@2-recording-6_right.hdf5 T= 118611 ->  116821  nonfinite=0
+  [25/30] emg-pose-train@2-recording-7_left.hdf5 T= 116427 ->  114637  nonfinite=0
+  [26/30] mg-pose-train@2-recording-7_right.hdf5 T= 116435 ->  114645  nonfinite=0
+  [27/30] emg-pose-train@2-recording-8_left.hdf5 T= 116387 ->  114597  nonfinite=0
+  [28/30] mg-pose-train@2-recording-8_right.hdf5 T= 116371 ->  114581  nonfinite=0
+  [29/30] emg-pose-train@2-recording-9_left.hdf5 T= 121795 ->  120005  nonfinite=0
+  [30/30] mg-pose-train@2-recording-9_right.hdf5 T= 121763 ->  119973  nonfinite=0
+
+input rows        : 4218756
+output rows       : 4165056
+nonfinite values  : 0
+elapsed           : 37.5s
+out dir           : /root/work/gate3_work/pred_pose

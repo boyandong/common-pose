@@ -1,0 +1,8 @@
+{
+  "all_local_sha256_recomputed": true,
+  "files": {
+    "BUILD_MANIFEST.json": "b8ca59830ed323189b594cd40929c98400fb25e3bacf03a47c03beb5d8c9a01c",
+    "MANUSCRIPT_CONFIRMATION.md": "b91fb9553cc8440129891c15d96780ee84731e431bc86d7a2b90ac4cc8017e6e"
+  },
+  "status": "PASS"
+}

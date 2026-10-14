@@ -1,0 +1,10 @@
+{
+  "backup_verification_sha256": "d70fc34cdea1d54f7d42fce5883eafcd0492f3356637584feb9db309342febc0",
+  "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+  "independent_verification_sha256": "3321ae832ddb14ccd3b7849e52e71c27a6da47d740caccea65dfe9313ac115fb",
+  "joint_decision": "POSITIVE",
+  "manuscript_update_and_completion_audit": "STILL_REQUIRED",
+  "status": "FROZEN_EXPERIMENT_INDEPENDENTLY_VERIFIED_AND_BACKED_UP",
+  "supplement_backup_verification_sha256": "76f4ab40e9e98129af41bad3dbf82aa36b1fc04ad78ab6d865a2b301b9e39cc5",
+  "supplement_verification_sha256": "1ed4c0dcde506fa180a2179ea5000d954d30bef23aef4532e2c1acfd1ae2a445"
+}

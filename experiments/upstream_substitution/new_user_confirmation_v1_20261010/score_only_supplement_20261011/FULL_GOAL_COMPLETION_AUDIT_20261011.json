@@ -1,0 +1,174 @@
+{
+  "all_stages_exit_zero": {
+    "analysis": {
+      "end": 1791669111.8426104,
+      "start": 1791668410.6687193
+    },
+    "qualification": {
+      "end": 1791658434.0944428,
+      "start": 1791658283.3416677
+    },
+    "reconstruction": {
+      "end": 1791667906.0506678,
+      "start": 1791658435.9861102
+    },
+    "score_only_supplement_20261011/analysis": {
+      "end": 1791671864.6490624,
+      "start": 1791671455.4479308
+    },
+    "score_only_supplement_20261011/backup_export": {
+      "end": 1791672307.8716893,
+      "start": 1791672303.5583649
+    },
+    "score_only_supplement_20261011/support": {
+      "end": 1791668401.7255743,
+      "start": 1791668349.9432857
+    },
+    "score_only_supplement_20261011/verification": {
+      "end": 1791672284.0097058,
+      "start": 1791671876.841822
+    },
+    "support": {
+      "end": 1791668343.824713,
+      "start": 1791668258.8743916
+    },
+    "verification": {
+      "end": 1791671454.819563,
+      "start": 1791669134.4586701
+    }
+  },
+  "archived_result_files_freshly_rehashed": 210,
+  "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+  "execution_gate": {
+    "actual_process_exit_sha256": "3a20056243dc18da94ef86412ecac45c5ba4b1e31df7bf59d6427b0fa99ab99d",
+    "launch_sha256": "09aa7d129899ea20bf35dcfd252292da8daebd59a6003429060e69a1715c56d1",
+    "original_controller_exit": "UNKNOWN",
+    "status": "PASS_REAL_CONTINUATION_EXIT_ZERO_ORIGINAL_EXIT_UNKNOWN",
+    "terminal_sha256": "eec145b28a04c922d40bd550e9163d616c976612ea1e65fa97d8dc46bd87c5bd"
+  },
+  "flip_definition": "one frozen consumer output preservation, not independently labelled gesture accuracy",
+  "fresh_original_requirements_recheck_sha256": "0b41ccfaa390d0f2e67571dc8b7f05568e27f758472a63bb227dc1adfa98db11",
+  "history_scope": "local fingers provenance, including hidden/ignored manifests and processed filenames; outside-root, unsaved and private remote history not certified absent",
+  "independent_verification_scope": "independent frozen model/cache rescoring, ties, support sets, all risk/effect/count/statistics rows; does not independently rerun neural inference",
+  "independent_verifier_coverage_count_contracts_checked": true,
+  "joint_decision": "POSITIVE",
+  "observed_local_time": "2026-10-11T13:14:48.413194+08:00",
+  "original_controller_exit": "UNKNOWN",
+  "original_protocol_sha256": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a",
+  "private_sources_models_and_caches_retained": true,
+  "qualification_and_both_support_stages_precede_effect_analysis": true,
+  "required_supplement_receipts_checked": [
+    "MODEL_REGISTRATION.json",
+    "RUNTIME_ADMISSION.json",
+    "CODE_SEAL.json",
+    "SUPPORT_SEAL.json",
+    "SCORE_CACHE_MANIFEST.json",
+    "SECONDARY_RESULT.json",
+    "RESULT_MANIFEST.json",
+    "INDEPENDENT_VERIFICATION.json",
+    "OFFHOST_BACKUP_VERIFICATION.json",
+    "EXPORT_EXECUTION_BACKUP_VERIFICATION.json",
+    "EXECUTION_COMPLETE.json",
+    "manuscript_score_only/BUILD_MANIFEST.json",
+    "REPORT_BACKUP_VERIFICATION.json"
+  ],
+  "requirements": [
+    {
+      "evidence": "ORIGINAL_REQUIREMENTS_RECHECK_20261011.json",
+      "requirement": "old manuscript and fixed reproducible Git",
+      "sha256": "821cf74cd188c5ec19ccbb5269e260c99aaf03b1da4d9b96abcb0deb53959f6c",
+      "status": "VERIFIED"
+    },
+    {
+      "evidence": "ORIGINAL_REQUIREMENTS_RECHECK_20261011.json",
+      "requirement": "restored cache and private local archive backups",
+      "sha256": "821cf74cd188c5ec19ccbb5269e260c99aaf03b1da4d9b96abcb0deb53959f6c",
+      "status": "VERIFIED"
+    },
+    {
+      "evidence": "ORIGINAL_REQUIREMENTS_RECHECK_20261011.json",
+      "requirement": "canonical diagnosis and prescribed20-seed independent verification",
+      "sha256": "821cf74cd188c5ec19ccbb5269e260c99aaf03b1da4d9b96abcb0deb53959f6c",
+      "status": "VERIFIED"
+    },
+    {
+      "evidence": "ORIGINAL_REQUIREMENTS_RECHECK_20261011.json",
+      "requirement": "scoped history, protected cohort and upstream exposure audit",
+      "sha256": "821cf74cd188c5ec19ccbb5269e260c99aaf03b1da4d9b96abcb0deb53959f6c",
+      "status": "VERIFIED"
+    },
+    {
+      "evidence": "../INDEPENDENT_RESULT_VERIFICATION.json",
+      "requirement": "frozen N80 original seven-method experiment",
+      "sha256": "3321ae832ddb14ccd3b7849e52e71c27a6da47d740caccea65dfe9313ac115fb",
+      "status": "VERIFIED"
+    },
+    {
+      "evidence": "INDEPENDENT_VERIFICATION.json",
+      "requirement": "prospective eighth-method score-only supplement",
+      "sha256": "1ed4c0dcde506fa180a2179ea5000d954d30bef23aef4532e2c1acfd1ae2a445",
+      "status": "VERIFIED"
+    },
+    {
+      "evidence": "../OFFHOST_BACKUP_VERIFICATION.json",
+      "requirement": "full off-host source/cache/dependency/result backup",
+      "sha256": "d70fc34cdea1d54f7d42fce5883eafcd0492f3356637584feb9db309342febc0",
+      "status": "VERIFIED"
+    },
+    {
+      "evidence": "OFFHOST_BACKUP_VERIFICATION.json",
+      "requirement": "supplement models, scores and result backup",
+      "sha256": "76f4ab40e9e98129af41bad3dbf82aa36b1fc04ad78ab6d865a2b301b9e39cc5",
+      "status": "VERIFIED"
+    },
+    {
+      "evidence": "EXPORT_EXECUTION_BACKUP_VERIFICATION.json",
+      "requirement": "closed export logs and terminal backup",
+      "sha256": "552c6c0ea3f89e8a09eee9c55100ef7fe47ae9f2e1181504cdf816617df97592",
+      "status": "VERIFIED"
+    },
+    {
+      "evidence": "LOCAL_EXECUTION_SOURCE_BACKUP_VERIFICATION_20261011.json",
+      "requirement": "local controller/import closure and closed execution evidence backup",
+      "sha256": "57a586c201b2d01b3f4cb902bcb021d866e15aec40c80aa1c22e637ff008f97c",
+      "status": "VERIFIED"
+    },
+    {
+      "evidence": "PRIMARY_REPORT_BACKUP_VERIFICATION_20261011.json",
+      "requirement": "original prospective report and backup",
+      "sha256": "31519445819aed5de815e56fc42b27ce40fb9f2b3ef9f6a86290a78d090783e7",
+      "status": "VERIFIED"
+    },
+    {
+      "evidence": "REPORT_BACKUP_VERIFICATION.json",
+      "requirement": "supplement and integrated report and backup",
+      "sha256": "853c421fd4159f9aaeb509f6537b40e808b2410bcba6af1347af19db2776d8e3",
+      "status": "VERIFIED"
+    },
+    {
+      "evidence": "FIGURE_VISUAL_REVIEW_20261011.json",
+      "requirement": "eight-method/primary paired figures and visual review",
+      "sha256": "2abde3bc99d0bac7ab59007b13feedf02726f11e2a61ea87a3f2dac70ed693ce",
+      "status": "VERIFIED"
+    }
+  ],
+  "scope_amendment_sha256": "240d8b483ff90233da49ba80e6e135a67b25859db281de80ba070515607b73c1",
+  "score_only_role": "prospective descriptive secondary; original primary/common sets unchanged",
+  "status": "FULL_ORIGINAL_GOAL_PLUS_SCORE_ONLY_COMPLETION_AUDIT_PASS",
+  "successor_execution_evidence_D_backup": {
+    "EXECUTION_COMPLETE.json": "7a018ecb24dd4b7ac521d18bbacb75465f80f0f97416c751af420b437b78ca7c",
+    "EXPORT_EXECUTION_BACKUP_VERIFICATION.json": "552c6c0ea3f89e8a09eee9c55100ef7fe47ae9f2e1181504cdf816617df97592",
+    "FIGURE_VISUAL_REVIEW_20261011.json": "2abde3bc99d0bac7ab59007b13feedf02726f11e2a61ea87a3f2dac70ed693ce",
+    "INTEGRATED_CONTROLLER_LAUNCH_20261011.json": "3a1a7c5bed113a7e9e55d5d85175fb24a8a7ad0b72c378b1fa7e262387fe84ab",
+    "OFFHOST_BACKUP_VERIFICATION.json": "76f4ab40e9e98129af41bad3dbf82aa36b1fc04ad78ab6d865a2b301b9e39cc5",
+    "ORIGINAL_REQUIREMENTS_RECHECK_20261011.json": "821cf74cd188c5ec19ccbb5269e260c99aaf03b1da4d9b96abcb0deb53959f6c",
+    "PRIMARY_REPORT_BACKUP_VERIFICATION_20261011.json": "31519445819aed5de815e56fc42b27ce40fb9f2b3ef9f6a86290a78d090783e7",
+    "REPORT_BACKUP_VERIFICATION.json": "853c421fd4159f9aaeb509f6537b40e808b2410bcba6af1347af19db2776d8e3",
+    "SUCCESSOR_EXECUTION_PREFLIGHT_20261011.json": "f5dba8c8f9cdb3bfae48b784367d263850374bcf0333cf105cd314b1d4195526",
+    "finalize_continuation_verified_goal_20261011.py": "03ea8f8258787f75aabdf972a6bc8670e062827fbf75c9ef0ff9eb702b409c0c",
+    "launch_integrated_successor_20261011.py": "0ab80fdc68bdb76cbfdd77c012fcf7e900bd94df8a68706a2f678858debd289c",
+    "recheck_original_requirements_20261011.py": "e3e728cb043c68523443b84819d8c91eafa4f152a0ace69f78e1de9853aa55a1",
+    "successor_execution_preflight_20261011.py": "7a0e7971ff0dbefaddbf74c7a6ce8283a78cdf849b748844b6db8e61445335a2"
+  },
+  "upstream_membership": "UNRESOLVED"
+}
