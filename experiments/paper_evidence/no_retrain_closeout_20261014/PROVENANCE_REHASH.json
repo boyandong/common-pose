@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "checkpoint_sha256": "748b1d1ef0ce1985f6fc07225d97eebfb370243429af803b4997d28ecce2424e",
+  "checkpoint_bytes": 71878748,
+  "metadata_sha256": "0e7ad04a79a0f162385d22ec8d6f43af9b8360978ca11ef9d601bbf9594b09e6",
+  "release_member_identity": [
+    {
+      "name": "emg2pose_model_checkpoints/regression_vemg2pose.ckpt",
+      "bytes": 71878748,
+      "mtime": 1717641859,
+      "regular_file": true,
+      "sha256": "748b1d1ef0ce1985f6fc07225d97eebfb370243429af803b4997d28ecce2424e"
+    }
+  ],
+  "released_checkpoint_specific_membership": "UNKNOWN",
+  "inspection_binding_sha256": "4e8fb291d7a96e13bc0b805396af76b53003a89314f3eedf4acb2fd08b8f99bd",
+  "scope": "current local bytes bind to archived official receipt, not a new full release download"
+}

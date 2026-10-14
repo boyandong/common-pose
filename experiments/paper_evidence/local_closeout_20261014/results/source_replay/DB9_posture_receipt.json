@@ -1,0 +1,14 @@
+{
+  "consumer": "DB9 posture",
+  "users": 77,
+  "classes": 8,
+  "test_units": 123200,
+  "unit": "sample",
+  "pooled_BA": 0.7479139610389611,
+  "archived_BA": 0.7479139610389611,
+  "prediction_mismatches": 0,
+  "fold_fit_seconds": 4.450999999986379,
+  "wall_seconds": 4.85899999999674,
+  "source_input_sha256": "39ffcaf5ff67e8ad3a271e70bcbbea06c9e5102ee1b4ef083097b15ebda77412",
+  "status": "PASS_EXACT_OOF_REPRODUCTION"
+}

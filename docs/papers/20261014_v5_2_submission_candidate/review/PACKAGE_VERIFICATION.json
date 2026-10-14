@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ZIP_CRC_AND_EVERY_MEMBER_SHA256",
+  "archive": "<PROJECT_ROOT>\\docs\\papers\\CommonPose_EMBC2027_V5_2_source_and_review.zip",
+  "members": 97,
+  "archive_sha256": "de9fb643714a411aa6b9043ead64718b1bdb1694f7cba622b1828f421d198828",
+  "bytes": 8960652,
+  "English_source_contains_all_paper_content": true,
+  "figures_and_class_bundled": true,
+  "system_fonts_or_credentials_distributed": false
+}

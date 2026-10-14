@@ -1,0 +1,15 @@
+{
+  "attempt_id": "20261010_202455_human_resume",
+  "code_changed": false,
+  "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+  "member_selection_changed": false,
+  "new_pid": 2060,
+  "new_start_time": "2026-10-10T20:24:55.8070883+08:00",
+  "observed_local_time": "2026-10-10T20:24:55.793195+08:00",
+  "pid": 2060,
+  "previous_pid_verified_absent": 24788,
+  "protocol_sha256": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a",
+  "runner_sha256": "520eab04ff901f44f4ff636d15aa9a03bccff2291b159c46ee4a48d7aa74d5c2",
+  "start_time": "2026-10-10T20:24:55.8070883+08:00",
+  "status": "HUMAN_AUTHORIZED_SAME_CODE_RESTART_AFTER_KNOWN_TERMINAL"
+}

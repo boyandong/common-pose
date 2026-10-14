@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "stdout": "{\"SCORE_FIELD_STATE.json\": \"{\\n  \\\"stage\\\": \\\"score_field_ablation.py\\\",\\n  \\\"status\\\": \\\"RUNNING\\\",\\n  \\\"pid\\\": 4765,\\n  \\\"elapsed_seconds\\\": 0.0002418477088212967\\n}\\n\", \"score_field_ablation/PROGRESS.json\": \"{\\n  \\\"stage\\\": \\\"evaluation\\\",\\n  \\\"cohort\\\": \\\"N80\\\",\\n  \\\"users_complete\\\": 61,\\n  \\\"users\\\": 80,\\n  \\\"pid\\\": 4892\\n}\\n\"}\n",
+  "stderr": ""
+}

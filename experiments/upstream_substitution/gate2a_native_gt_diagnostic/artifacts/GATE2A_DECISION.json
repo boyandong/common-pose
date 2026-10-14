@@ -1,0 +1,67 @@
+{
+  "artifact": "GATE2A_DECISION.json",
+  "gate": "PHASE 1 / GATE 2A",
+  "plan_sha256": "9fc91ea7b34fdfdc08791d9ebcba8922aa253b826edf89fa54222b6d1eb46ce7",
+  "GATE2A_DECISION": "STRUCTURED_NONDEGENERATE",
+  "degenerate_triggers": [],
+  "ambiguous_triggers": [],
+  "declared_thresholds": {
+    "collapse_frac": 0.9,
+    "collapse_max_classes": 2,
+    "switch_rate": 0.5,
+    "bad_margin_frac": 0.1,
+    "class45_frac": 0.5,
+    "ambiguity_entropy_bits": 1.0
+  },
+  "evidence": {
+    "occupancy_entropy_bits": 2.192892225288547,
+    "max_class_fraction": 0.4629227780365603,
+    "margin_median": 0.8464981607133009,
+    "margin_iqr": 1.3330776024279767,
+    "margin_frac_le_zero": 0.0,
+    "switch_rate_per_sample": 0.07621407221357215,
+    "median_dwell_blocks": 6.0,
+    "median_dwell_s": 0.12,
+    "class4_fraction": 0.1998204933025824,
+    "top2_pair_4_5_fraction": 0.06775809768345471,
+    "n_distinct_stage_dominant_classes": 4,
+    "n_stages": 15,
+    "n_side_dominant_classes": 1
+  },
+  "db9_comparator_summary": {
+    "occupancy_entropy_bits": 2.958383694837085,
+    "max_class_fraction": 0.1862905844155844,
+    "margin_median": 1.9874753695160199,
+    "switch_rate_per_sample": 0.04582979834236116,
+    "median_dwell_blocks": 9.0
+  },
+  "meaning": {
+    "STRUCTURED_NONDEGENERATE": "the frozen head exhibits sufficiently varied and temporally coherent behaviour on native emg2pose GT to justify a separately designed semantic validation step. It does NOT mean the behaviour is correct.",
+    "DEGENERATE": "native-coordinate use of the frozen head is not currently scientifically useful; the failure may reflect unresolved calibration/domain mismatch rather than the Common Pose concept. Do not rescue with fitted calibration.",
+    "AMBIGUOUS": "report the ambiguity and the smallest discriminating follow-up."
+  },
+  "not_claimed": [
+    "posture accuracy",
+    "balanced accuracy",
+    "semantic correctness",
+    "sensitivity / specificity",
+    "transfer accuracy",
+    "any cross-source calibration equivalence",
+    "that structured output implies correct output"
+  ],
+  "firewall": {
+    "PREDICTED_POSE_USED": "NO",
+    "GT_VS_PRED_AGREEMENT": "NOT RUN",
+    "EMG_INFERENCE_RUN": "NO",
+    "UNKNOWN_GATE_CREATED": "NO",
+    "CALIBRATION_FITTED": "NO",
+    "SEMANTIC_ACCURACY_CLAIMED": "NO",
+    "OFFSET_OR_SCALE_FITTED": "NO",
+    "SUBSET_SELECTED": "NO",
+    "MODEL_TUNED": "NO",
+    "SERVER_USED": "NO",
+    "GPU_USED": "NO",
+    "FULL_CORPUS_DOWNLOADED": "NO"
+  },
+  "next_allowed_step": "Design a fresh prospective GT semantic-applicability validation before any GT-vs-PRED substitution claim."
+}

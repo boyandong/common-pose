@@ -1,0 +1,39 @@
+{
+  "N80_effect_values_read": false,
+  "N80_selection_and_members_rederived": true,
+  "canonical_max_abs_difference": 0.0,
+  "historical_score_only_deferral": "historical only; GOAL_SCOPE_AMENDMENT supersedes for the separately frozen N80 supplement",
+  "history_artifact_hashes_checked": 8,
+  "history_scope": "local fingers provenance, including hidden/ignored manifests and processed filenames; outside-root, unsaved and private remote history not certified absent",
+  "observed_local_time": "2026-10-11T02:46:14.923678+08:00",
+  "old_20seed_files_rehashed": 27,
+  "old_20seed_row_counts": {
+    "CANONICAL_SEED_ADMISSION.csv": 702,
+    "SEED_CLASS_SUPPORT.csv": 37440,
+    "SEED_PAIRED_EFFECTS.csv": 3120,
+    "SEED_USER_RISKS.csv": 4680
+  },
+  "old_backups": [
+    {
+      "archive": "private_cache_backup_20261010.tar.gz",
+      "bytes": 384382955,
+      "receipt": "LOCAL_BACKUP_VERIFICATION.json",
+      "scope": "fresh archive rehash against frozen prior member verification",
+      "sha256": "79241d7fdf9006b2c6cb95c6a88ac9f85ba1951931ce9e0097b53dcce25283cc"
+    },
+    {
+      "archive": "private_reporting_and_seed_backup_20261010.tar.gz",
+      "bytes": 17428285,
+      "receipt": "REPORTING_SEED_BACKUP_MANIFEST.json",
+      "scope": "fresh archive rehash against frozen prior member verification",
+      "sha256": "413f782643ed4e01f2738881787369018c45167e3c73f14626a7ff005ca30f5a"
+    }
+  ],
+  "old_git_anchor": "1fc75512698c92d4bd11cf52e660c8814b1ac127",
+  "old_independent_status": "PASS",
+  "old_independent_verification_sha256": "06d763a6206e26ea5259377f512f727446ca60a4c73ce89c245a987e4ec3e02f",
+  "release_file_and_git_blob_hashes_checked": 125,
+  "score_only_old_DEV_users_disjoint": true,
+  "status": "COMPLETED_ORIGINAL_REQUIREMENTS_CURRENTLY_REVERIFIED_N80_PENDING",
+  "upstream_membership": "UNRESOLVED"
+}

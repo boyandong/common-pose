@@ -1,0 +1,11 @@
+{
+  "status": "OWNED_DOWNLOAD_MIGRATED_TO_HIDDEN_BACKGROUND",
+  "old_pid": 8456,
+  "old_start_time": "2026-10-10T15:39:21.1780705+08:00",
+  "new_pid": 22488,
+  "new_start_time": "2026-10-10T15:41:05.6324351+08:00",
+  "scientific_code_changed": false,
+  "frozen_members_changed": false,
+  "local_source_root": "D:/CommonPose_confirmation_N80_20261010/source",
+  "reason": "Durable download independent of chat terminal; verified owned foreground process stopped before starting a single replacement"
+}

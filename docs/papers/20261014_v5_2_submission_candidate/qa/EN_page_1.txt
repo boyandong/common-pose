@@ -1,0 +1,93 @@
+Decision Fidelity Across Frozen Pose Consumers
+Under EMG-Based Input Substitution
+Boyan Dong
+School of Biological Science and Medical Engineering
+Southeast University
+Nanjing, China
+yan494815@gmail.com
+Abstract—Hand pose may provide a shared interface between
+electromyography (EMG) sensing and models trained on pose
+data. Y et an input that ﬁts a model does not necessarily
+preserve its decisions. We investigate this gap using one frozen
+EMG-to-pose estimator and six frozen pose classiﬁers built
+from four public datasets. By comparing decisions on paired
+measured and estimated poses, we ﬁrst quantify how often
+input substitution changes the outputs of unchanged classiﬁers.
+We then test whether learned ofﬂine ranking can preferentially
+retain decisions that match the measured-pose reference. Across
+80 participants, full-feature ranking reduced median paired
+overall disagreement by 1.87–4.65 percentage points relative to
+boundary-based selection at 30% retention. However, this overall
+improvement did not always extend to individual reference
+classes. For SHOW instruction, overall disagreement improved
+by 2.61 points while class-balanced disagreement worsened by
+20.88 points among the same 79 evaluable participants. Selec-
+tion also reduced evaluable class support in some consumers.
+These ﬁndings show that lower overall disagreement does not
+guarantee class-balanced decision preservation, motivating joint
+evaluation of overall disagreement, class-balanced disagreement,
+and reference-class support. The results characterize retrospec-
+tive agreement with model-generated reference decisions, not
+independent action accuracy or validated online rejection.
+I. INTRODUCTION
+Electromyography (EMG) is commonly used to decode
+movement or gestures directly. An alternative is to estimate
+hand pose from EMG and pass that estimate to models already
+trained on pose data. But the input may be compatible in
+format without preserving the downstream model’s decision.
+A ﬁxed gesture classiﬁer may predict class A from mea-
+sured hand pose but class B from the corresponding EMG-
+estimated pose. We call this change a decision ﬂip: input
+substitution changed the model’s output, regardless of whether
+either prediction matches an independently labeled action. This
+motivates evaluating downstream decisions as well as pose
+reconstruction error.
+Previous work has studied EMG-based pose estimation [ 1],
+pose-guided EMG representations [ 2], [ 3], and rejection in
+myoelectric or selective prediction systems [ 4]–[6]. Here, we
+keep the upstream estimator and downstream classiﬁers ﬁxed.
+We examine three connected questions: How often does
+pose substitution change frozen downstream decisions? Can
+ofﬂine ranking reduce these changes? And do improvements
+in overall agreement extend across reference classes? Our
+evaluation concerns output ﬁdelity rather than independently
+veriﬁed action accuracy or online control.
+II. METHODS
+A. Frozen Pose-Input Substitution and Consumers
+A frozen pose consumer is a pose-based classiﬁer whose
+parameters and source-ﬁtted preprocessing remain unchanged.
+We pass measured pose and EMG-estimated pose through
+the same consumer and compare the resulting decisions.
+The upstream EMG-to-pose estimator is also frozen. Our six
+linear discriminant analysis (LDA) consumers cover posture
+and grasp classiﬁcation from DB9 [ 7] and CeTI-Age [ 8],
+instruction classiﬁcation from SHOW3D [ 9], and movement-
+phase classiﬁcation from KIN-MUS UJI [ 10].
+The released VEMG2Pose estimator [ 1] and each source
+consumer are connected using a ﬁxed eight-joint pose adapter
+in radians. Joint selection, units, and available axis or topol-
+ogy information were audited. The paired target inputs use
+corresponding cached block indices after a common crop,
+with approximately 20-ms target blocks. These implementa-
+tion checks do not independently establish identical physical
+joint zero positions or residual sensor synchronization across
+sources.
+The original EMG-to-pose dataset documents individual
+calibration and software timestamp alignment [ 1]. Cross-
+source physical equivalence remains a separate, unveriﬁed
+requirement.
+Six source-domain leave-one-subject-out evaluations were
+reproduced against the archived out-of-fold predictions. The
+corresponding balanced accuracies were 74.79%, 85.50%,
+58.56%, 72.25%, 100%, and 56.17% for DB9 posture, DB9
+grasp, CeTI posture, CeTI grasp, SHOW instruction, and KIN
+phase, respectively. The SHOW result covers 16 participants
+and 60 weak-instruction recordings. These tasks use different
+source labels and evaluation units, so their accuracies should
+not be interpreted as a common performance ranking.
+The eight angles are thumb MCP/IP , index MCP/PIP , middle
+MCP , ring MCP , and little-ﬁnger MCP/PIP (target native
+indices 2, 3, 5, 6, 9, 13, 17, 18). Source-ﬁtted standardization
+is held ﬁxed. Target pose and reference streams share a 1790-
+row crop and nonoverlapping 40-row means, time-stamped
+at the block end. Source aggregation differs: CeTI averages

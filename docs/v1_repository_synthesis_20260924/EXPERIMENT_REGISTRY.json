@@ -1,0 +1,520 @@
+[
+  {
+    "id": "ADMISSION",
+    "folder": "audits/dataset_admission",
+    "status": "diagnostic",
+    "question": "Which datasets meet source/label/coordinate admission?",
+    "data": [
+      "DB9",
+      "KIN-MUS",
+      "KINE-ADL",
+      "MyoKi"
+    ],
+    "cohort": "source-specific",
+    "methods": "static provenance/schema/coordinate audit",
+    "primary_endpoint": "admission verdict",
+    "results": "Capability restrictions",
+    "decision": "diagnostic only",
+    "supports": "source-specific ledger",
+    "does_not_support": "cross-source equivalence",
+    "evidence_files": [
+      "audits/dataset_admission/ADMISSION_DECISION.md"
+    ],
+    "preceded_by": [],
+    "followed_by": [
+      "DB9-CANONICAL",
+      "KINMUS-OBS"
+    ]
+  },
+  {
+    "id": "DB9-CANONICAL",
+    "folder": "experiments/db9_posture",
+    "status": "frozen validation",
+    "question": "Can canonical16 classify six DB9 postures?",
+    "data": [
+      "NinaPro DB9"
+    ],
+    "cohort": "77 users; primary train 34/test 43",
+    "methods": "LDA, frozen holdout",
+    "primary_endpoint": "six-class accuracy/BA",
+    "results": "primary 0.9780",
+    "decision": "advance historical baseline",
+    "supports": "six-class DB9 internal posture task",
+    "does_not_support": "trusted-8 eight-class or emg2pose semantic task",
+    "evidence_files": [
+      "docs/CONFIRMATORY_RESULTS.md",
+      "experiments/db9_posture/results/full_db9_results.json"
+    ],
+    "preceded_by": [
+      "ADMISSION"
+    ],
+    "followed_by": [
+      "DB9-FORENSIC",
+      "BRIDGE-S5"
+    ]
+  },
+  {
+    "id": "DB9-FORENSIC",
+    "folder": "audits/db9/channel_forensic",
+    "status": "frozen validation",
+    "question": "Which channels retain physical identity and posture utility?",
+    "data": [
+      "NinaPro DB9"
+    ],
+    "cohort": "77 users; LOSO",
+    "methods": "physical anchor forensics; trusted-8 LDA",
+    "primary_endpoint": "channel validity and eight-class BA",
+    "results": "eight KEEP stable; BA .7479; macro-F1 .7460",
+    "decision": "freeze trusted eight",
+    "supports": "audited DB9 customer representation",
+    "does_not_support": "cross-source substitution",
+    "evidence_files": [
+      "audits/db9/channel_forensic/FINAL_VALIDATION.md",
+      "audits/db9/channel_forensic/artifacts/FINAL_VALIDATION.json"
+    ],
+    "preceded_by": [
+      "ADMISSION"
+    ],
+    "followed_by": [
+      "COORDINATE",
+      "RECONCILIATION"
+    ]
+  },
+  {
+    "id": "COORDINATE",
+    "folder": "audits/db9/coordinate_audit",
+    "status": "diagnostic",
+    "question": "Are DB9 and emg2pose coordinates numerically interchangeable?",
+    "data": [
+      "DB9",
+      "emg2pose mini"
+    ],
+    "cohort": "77 DB9 users; one mini user",
+    "methods": "mapping, source calibration and matched semantics audit",
+    "primary_endpoint": "physical equivalence verdict",
+    "results": "no direct interchangeability proven",
+    "decision": "retain uncertainty",
+    "supports": "anatomical mapping limits",
+    "does_not_support": "zero/calibration equivalence",
+    "evidence_files": [
+      "audits/db9/coordinate_audit/POSE_COORDINATE_AUDIT_REPORT.md"
+    ],
+    "preceded_by": [
+      "DB9-FORENSIC"
+    ],
+    "followed_by": [
+      "RECONCILIATION"
+    ]
+  },
+  {
+    "id": "BRIDGE-S5",
+    "folder": "experiments/bridge",
+    "status": "diagnostic",
+    "question": "Does historical six-class customer agree between GT and predicted mini pose?",
+    "data": [
+      "DB9",
+      "emg2pose mini"
+    ],
+    "cohort": "one mini user; 30 files",
+    "methods": "reconstructed six-class LDA, paired bridge",
+    "primary_endpoint": "GT/pred customer agreement",
+    "results": "about .765",
+    "decision": "close diagnostic",
+    "supports": "within-user historical agreement",
+    "does_not_support": "Gate3/Gate4C or semantic accuracy",
+    "evidence_files": [
+      "experiments/bridge/SESSION5_BRIDGE_AUDIT_REPORT.md"
+    ],
+    "preceded_by": [
+      "DB9-CANONICAL"
+    ],
+    "followed_by": [
+      "RECONCILIATION"
+    ]
+  },
+  {
+    "id": "KINMUS-OBS",
+    "folder": "experiments/observability/kinmus_phase",
+    "status": "diagnostic",
+    "question": "Can instantaneous kinematics identify KIN-MUS phase?",
+    "data": [
+      "KIN-MUS"
+    ],
+    "cohort": "22 subjects; 1713 trials",
+    "methods": "grouped classifiers and temporal controls",
+    "primary_endpoint": "phase BA and observability decision",
+    "results": "OBS-B; temporal state needed",
+    "decision": "close diagnostic",
+    "supports": "feature-space temporal dependence",
+    "does_not_support": "valid anatomy for misindexed shared10",
+    "evidence_files": [
+      "experiments/observability/kinmus_phase/KINMUS_TASK_OBSERVABILITY_REPORT.md",
+      "docs/research_status.md"
+    ],
+    "preceded_by": [
+      "ADMISSION"
+    ],
+    "followed_by": []
+  },
+  {
+    "id": "HUMAN-S6",
+    "folder": "audits/human_semantic_validation",
+    "status": "closed negative",
+    "question": "Can blinded annotation establish semantic applicability?",
+    "data": [
+      "human annotation audit"
+    ],
+    "cohort": "200/396 interim; full cohort unresolved",
+    "methods": "preregistered blind semantic audit interrupted",
+    "primary_endpoint": "semantic primary endpoint",
+    "results": "unblinding invalidated primary",
+    "decision": "close",
+    "supports": "protocol failure record",
+    "does_not_support": "semantic accuracy",
+    "evidence_files": [
+      "audits/human_semantic_validation/formal_s6/FORMAL_ANALYSIS_PREREGISTRATION.md",
+      "docs/research_status.md"
+    ],
+    "preceded_by": [],
+    "followed_by": []
+  },
+  {
+    "id": "RECONCILIATION",
+    "folder": "experiments/upstream_substitution/pre_substitution_reconciliation",
+    "status": "diagnostic",
+    "question": "Are trusted-eight source mappings ready?",
+    "data": [
+      "DB9",
+      "emg2pose mini"
+    ],
+    "cohort": "77 DB9 plus one mini user",
+    "methods": "static reconciliation",
+    "primary_endpoint": "mapping go/no-go",
+    "results": "CONDITIONAL_GO; calibration unresolved",
+    "decision": "advance only with boundary",
+    "supports": "anatomical mapping",
+    "does_not_support": "numerical equivalence",
+    "evidence_files": [
+      "experiments/upstream_substitution/pre_substitution_reconciliation/artifacts/RECONCILIATION_DECISION.json"
+    ],
+    "preceded_by": [
+      "COORDINATE",
+      "BRIDGE-S5"
+    ],
+    "followed_by": [
+      "G1.5"
+    ]
+  },
+  {
+    "id": "G1.5",
+    "folder": "experiments/upstream_substitution/gate1_5_reference_zero",
+    "status": "closed negative",
+    "question": "Is an independent zero anchor locally available?",
+    "data": [
+      "emg2pose mini"
+    ],
+    "cohort": "one user; 30 files",
+    "methods": "metadata and structure inspection",
+    "primary_endpoint": "anchor availability",
+    "results": "NOT_EVALUABLE_LOCALLY",
+    "decision": "close",
+    "supports": "absence of independent local anchor",
+    "does_not_support": "zero equivalence",
+    "evidence_files": [
+      "experiments/upstream_substitution/gate1_5_reference_zero/artifacts/REFERENCE_ANCHOR_DECISION.json"
+    ],
+    "preceded_by": [
+      "RECONCILIATION"
+    ],
+    "followed_by": [
+      "G2A"
+    ]
+  },
+  {
+    "id": "G2A",
+    "folder": "experiments/upstream_substitution/gate2a_native_gt_diagnostic",
+    "status": "diagnostic",
+    "question": "Is frozen customer behavior structured on native GT?",
+    "data": [
+      "DB9",
+      "emg2pose mini"
+    ],
+    "cohort": "one mini user; 30 files",
+    "methods": "GT-only trusted-8 LDA diagnostic",
+    "primary_endpoint": "structure/degeneracy",
+    "results": "STRUCTURED_NONDEGENERATE",
+    "decision": "close diagnostic",
+    "supports": "nondegenerate output",
+    "does_not_support": "semantic correctness",
+    "evidence_files": [
+      "experiments/upstream_substitution/gate2a_native_gt_diagnostic/artifacts/GATE2A_DECISION.json"
+    ],
+    "preceded_by": [
+      "G1.5"
+    ],
+    "followed_by": [
+      "G3"
+    ]
+  },
+  {
+    "id": "G3",
+    "folder": "experiments/upstream_substitution/gate3_formal_substitution",
+    "status": "frozen validation",
+    "question": "What changes when GT pose is replaced with frozen predicted pose?",
+    "data": [
+      "emg2pose mini",
+      "DB9"
+    ],
+    "cohort": "one mini user; 86833 paired 50-Hz blocks",
+    "methods": "paired GT/pred trusted-8 LDA",
+    "primary_endpoint": "hard agreement",
+    "results": "hard .3645; balanced .2868; TV .4604",
+    "decision": "descriptive close",
+    "supports": "single-user substitution profile",
+    "does_not_support": "cross-user or semantic accuracy",
+    "evidence_files": [
+      "experiments/upstream_substitution/gate3_formal_substitution/artifacts/GATE3_DECISION.json"
+    ],
+    "preceded_by": [
+      "G2A"
+    ],
+    "followed_by": [
+      "G3B"
+    ]
+  },
+  {
+    "id": "G3B",
+    "folder": "experiments/upstream_substitution/gate3b_continuous_representation",
+    "status": "diagnostic",
+    "question": "Is continuous Fisher representation preserved?",
+    "data": [
+      "Gate3 paired outputs"
+    ],
+    "cohort": "one mini user; 86833 blocks",
+    "methods": "7-D Fisher analysis",
+    "primary_endpoint": "Fisher cosine",
+    "results": "median .6760; partial preservation",
+    "decision": "diagnostic close",
+    "supports": "partial representation preservation",
+    "does_not_support": "universal gate",
+    "evidence_files": [
+      "experiments/upstream_substitution/gate3b_continuous_representation/artifacts/GATE3B_DECISION.json"
+    ],
+    "preceded_by": [
+      "G3"
+    ],
+    "followed_by": [
+      "G4A"
+    ]
+  },
+  {
+    "id": "G4A",
+    "folder": "experiments/upstream_substitution/gate4a_reliability_feasibility",
+    "status": "diagnostic",
+    "question": "Can visible scores rank Fisher error for one user?",
+    "data": [
+      "emg2pose mini"
+    ],
+    "cohort": "one user; 30 files",
+    "methods": "TEMP, 3-view TTA, stage-grouped predictor",
+    "primary_endpoint": "ranking association",
+    "results": "numerical decision artifact absent; UNRESOLVED",
+    "decision": "feasibility only",
+    "supports": "candidate definitions",
+    "does_not_support": "cross-user validity or frozen gate",
+    "evidence_files": [
+      "experiments/upstream_substitution/gate4a_reliability_feasibility/GATE4A_PLAN.md",
+      "experiments/upstream_substitution/gate4a_reliability_feasibility/README.md"
+    ],
+    "preceded_by": [
+      "G3B"
+    ],
+    "followed_by": [
+      "G4B"
+    ]
+  },
+  {
+    "id": "G4B",
+    "folder": "experiments/upstream_substitution/gate4b_multiuser_reliability",
+    "status": "closed negative",
+    "question": "Does predictor rank error across users?",
+    "data": [
+      "official emg2pose"
+    ],
+    "cohort": "20 DEV+8 VALIDATION; 964 files",
+    "methods": "frozen plan; acquisition and structural verification",
+    "primary_endpoint": "user-level ranking planned",
+    "results": "four source-authentic failures; no scientific outcome",
+    "decision": "close before inference",
+    "supports": "structural source failure",
+    "does_not_support": "any predictor effect",
+    "evidence_files": [
+      "experiments/upstream_substitution/gate4c_upstream_substitution_reliability_v1/GATE4B_CLOSURE.md"
+    ],
+    "preceded_by": [
+      "G4A"
+    ],
+    "followed_by": [
+      "G4C"
+    ]
+  },
+  {
+    "id": "G4C",
+    "folder": "experiments/upstream_substitution/gate4c_upstream_substitution_reliability_v1",
+    "status": "frozen validation",
+    "question": "Does predicted pose preserve frozen customer output across users?",
+    "data": [
+      "official emg2pose",
+      "DB9"
+    ],
+    "cohort": "19 DEV+8 VALIDATION; 926 files; eight primary users",
+    "methods": "frozen substitution; user bootstrap",
+    "primary_endpoint": "hard preservation",
+    "results": "VALIDATION median .6571; balanced .3331; TV .2260",
+    "decision": "descriptive close",
+    "supports": "heterogeneous cross-user preservation",
+    "does_not_support": "semantic accuracy or upstream-unseen",
+    "evidence_files": [
+      "experiments/upstream_substitution/gate4c_upstream_substitution_reliability_v1/GATE4C_DECISION.md"
+    ],
+    "preceded_by": [
+      "G4B"
+    ],
+    "followed_by": [
+      "G4D"
+    ]
+  },
+  {
+    "id": "G4D",
+    "folder": "experiments/upstream_substitution/gate4d_task_aware_gate_benchmark_v1",
+    "status": "method development",
+    "question": "Can visible features select low Fisher e_F blocks?",
+    "data": [
+      "Gate4C DEV"
+    ],
+    "cohort": "19 users; 654 files",
+    "methods": "Gate A, four-view TTA, margin, entropy; grouped folds",
+    "primary_endpoint": "median e_F risk-coverage",
+    "results": "Gate A 2.012 to 1.624 at 30%; 18/19",
+    "decision": "select continuous DEV candidate",
+    "supports": "task-space ranking",
+    "does_not_support": "final customer Flip reliability",
+    "evidence_files": [
+      "experiments/upstream_substitution/gate4d_task_aware_gate_benchmark_v1/GATE4D_DECISION.md"
+    ],
+    "preceded_by": [
+      "G4C"
+    ],
+    "followed_by": [
+      "G4E",
+      "G4F"
+    ]
+  },
+  {
+    "id": "G4E",
+    "folder": "experiments/upstream_substitution/gate4e_customer_flip_gate_v1",
+    "status": "method development",
+    "question": "Can Requirement-U ordinary Flip risk fall under selective service?",
+    "data": [
+      "Gate4C DEV"
+    ],
+    "cohort": "19 users; 654 files",
+    "methods": "eight candidates; hist-GBDT selected; 15/4 final fit",
+    "primary_endpoint": "ordinary Flip risk AUC",
+    "results": "median .4034 to .1775 at 30%; 19/19",
+    "decision": "freeze hist-GBDT",
+    "supports": "DEV ordinary customer Flip reduction",
+    "does_not_support": "balanced class protection or confirmation",
+    "evidence_files": [
+      "experiments/upstream_substitution/gate4e_customer_flip_gate_v1/GATE4E_DECISION.md",
+      "experiments/upstream_substitution/gate4e_customer_flip_gate_v1/artifacts/FINAL_GATE_INSTANCE.json"
+    ],
+    "preceded_by": [
+      "G4D"
+    ],
+    "followed_by": [
+      "FINAL"
+    ]
+  },
+  {
+    "id": "G4F",
+    "folder": "experiments/upstream_substitution/gate4f_class_balanced_flip_gate_v1",
+    "status": "method development",
+    "question": "Can Requirement-B class-balanced Flip risk fall?",
+    "data": [
+      "Gate4C DEV"
+    ],
+    "cohort": "19 users; 654 files",
+    "methods": "eight candidates; logistic selected; >=30 class support; 15/4 fit",
+    "primary_endpoint": "balanced Flip risk AUC",
+    "results": "median .6816 to .5066 at 30%; 19/19",
+    "decision": "freeze logistic",
+    "supports": "DEV balanced customer Flip reduction",
+    "does_not_support": "ordinary risk reduction or confirmation",
+    "evidence_files": [
+      "experiments/upstream_substitution/gate4f_class_balanced_flip_gate_v1/GATE4F_FINAL_REPORT.md",
+      "experiments/upstream_substitution/gate4f_class_balanced_flip_gate_v1/artifacts/FINAL_GATE_INSTANCE.json"
+    ],
+    "preceded_by": [
+      "G4D"
+    ],
+    "followed_by": [
+      "FINAL"
+    ]
+  },
+  {
+    "id": "COHORT-AUDIT",
+    "folder": "experiments/upstream_substitution/final_untouched_cohort_audit_v1",
+    "status": "diagnostic",
+    "question": "Are development-untouched confirmation identities available?",
+    "data": [
+      "official metadata"
+    ],
+    "cohort": "193 total; 29 touched; 164 untouched",
+    "methods": "metadata-only registry and exposure audit",
+    "primary_endpoint": "eligible identity count",
+    "results": "164; upstream exposure unknown",
+    "decision": "no outcome opened",
+    "supports": "identity eligibility",
+    "does_not_support": "upstream-unseen status or paired stream integrity",
+    "evidence_files": [
+      "experiments/upstream_substitution/final_untouched_cohort_audit_v1/AUDIT_SUMMARY.md"
+    ],
+    "preceded_by": [
+      "G4E",
+      "G4F"
+    ],
+    "followed_by": [
+      "FINAL"
+    ]
+  },
+  {
+    "id": "FINAL",
+    "folder": "experiments/upstream_substitution/final_joint_confirmation_v1",
+    "status": "final confirmation",
+    "question": "Do frozen Gate4E/F reduce their prespecified user risks?",
+    "data": [
+      "official emg2pose",
+      "DB9 customer"
+    ],
+    "cohort": "20 development-untouched users; 702 files; 20 sessions",
+    "methods": "frozen upstream and gate inference; paired sign tests; Holm",
+    "primary_endpoint": "within-user 100% minus 30% risk",
+    "results": "U +17.08 pp; B +16.11 pp; both 20/20, Holm p 1.90735e-6",
+    "decision": "confirm bounded V1 claims",
+    "supports": "fixed-cohort selective risk reduction",
+    "does_not_support": "upstream-unseen, semantic accuracy, population-wide or full-coverage 30% ACC",
+    "evidence_files": [
+      "experiments/upstream_substitution/final_joint_confirmation_v1/FINAL_RUN_PLAN.md",
+      "experiments/upstream_substitution/final_joint_confirmation_v1/FINAL_COHORT_MANIFEST.json",
+      "experiments/upstream_substitution/final_joint_confirmation_v1/FINAL_CONFIRMATION_RESULTS.json",
+      "experiments/upstream_substitution/final_joint_confirmation_v1/FINAL_REPORT.md"
+    ],
+    "preceded_by": [
+      "G4E",
+      "G4F",
+      "COHORT-AUDIT"
+    ],
+    "followed_by": []
+  }
+]

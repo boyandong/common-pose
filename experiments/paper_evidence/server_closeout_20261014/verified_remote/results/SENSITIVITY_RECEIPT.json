@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETE_PRESPECIFIED_EXPLORATORY_SENSITIVITY",
+  "lag_rows": 15000,
+  "window_rows": 9000,
+  "lag_selected": false,
+  "physical_delay_estimated": false,
+  "original_main_results_replaced": false
+}

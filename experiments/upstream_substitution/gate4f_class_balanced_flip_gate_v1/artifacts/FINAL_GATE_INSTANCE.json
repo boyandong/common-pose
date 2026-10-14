@@ -1,0 +1,49 @@
+{
+  "analysis_code_sha256": "c246a09833ff1d86e7d37be742649e16bc2ac44e1fc9e490e702c3bce8db9a31",
+  "calibration": "median supported-class score quantile per user, then median calibration users",
+  "calibration_users": [
+    "0816388460",
+    "2be40c4380",
+    "54c854b839",
+    "9b8c99cdc2"
+  ],
+  "failure_definition_sha256": "707e30190453d8c24abfee64a8e34b9ebe72bd69ac61f90a34126ed0ccea0f82",
+  "feature_manifest_sha256": "13f0174503f19c82e62f7ea6331e85449c102e3cd8df8bdef643f545880bf7f5",
+  "gaussian_coefficients": null,
+  "gaussian_training_diagnostic": null,
+  "method": "logistic",
+  "method_manifest_sha256": "8c8d991bc2ff2be7c5874466bc1af5e89f7f969b810f9012462de8eea1d99acc",
+  "model_file": "FINAL_GATE_MODEL.joblib",
+  "model_sha256": "535828304087d511402c8224ea0276d55e58e0a0c1cba0562bafe7d2d1147b66",
+  "no_confirmation_users_opened": true,
+  "schema": "gate4f-db9-balanced-customer-instance-v1",
+  "score_orientation": "lower risk means higher confidence",
+  "thresholds_by_nominal_coverage": {
+    "0.3": 0.565140854310843,
+    "0.5": 0.6917263425707736,
+    "0.6": 0.7451514089286679,
+    "0.7": 0.807365073619989,
+    "0.8": 0.8424356817354626,
+    "0.9": 0.8902376111249561,
+    "1.0": 0.979975455359356
+  },
+  "trained_users": [
+    "13b8b5f76d",
+    "2132c5d085",
+    "2327817653",
+    "23b817e892",
+    "2e45fde443",
+    "32cbfe3221",
+    "3589743749",
+    "47c605ad6f",
+    "6a7fc66366",
+    "7afcdcd6be",
+    "87aa3b3887",
+    "8bd1c0ff16",
+    "ce52651f99",
+    "dd810188d9",
+    "f1b6a408bf"
+  ],
+  "training_weighting": "equal users; equal observed reference classes per user; equal observed Flip states per user-class",
+  "user_count": 19
+}

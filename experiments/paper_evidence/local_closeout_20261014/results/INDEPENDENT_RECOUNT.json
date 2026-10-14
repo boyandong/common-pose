@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": 61743,
+  "alternative_sorted_medians_and_linear_percentiles": true,
+  "all_48_S3_cells_reproduced": true,
+  "all_12_S4_cells_reproduced": true,
+  "source_LOSO_reproduction": {
+    "status": "PASS",
+    "consumers": 6,
+    "folds": 249,
+    "original_heads_replaced": false,
+    "new_independent_test_cohort": false,
+    "KIN_scored_unit": "user,parent_recording,phase",
+    "implementation_correction": "Original probe grouped KIN by user/trial only and stopped; source contract requires phase too. Five successful source fits were retained, not rerun."
+  },
+  "paper_187_files_unchanged": true,
+  "input_postcheck": "PASS",
+  "no_training_of_target_gates": true
+}

@@ -1,0 +1,14 @@
+{
+  "consumer": "DB9 grasp",
+  "users": 22,
+  "classes": 3,
+  "test_units": 77205,
+  "unit": "sample",
+  "pooled_BA": 0.8549630755305787,
+  "archived_BA": 0.8549630755305787,
+  "prediction_mismatches": 0,
+  "fold_fit_seconds": 0.6869999999908032,
+  "wall_seconds": 0.7969999999913853,
+  "source_input_sha256": "5c9a0b18f90c09523e4924cf6098e638d0b623a671b3d16cb9e39b8725fbb5d2",
+  "status": "PASS_EXACT_OOF_REPRODUCTION"
+}

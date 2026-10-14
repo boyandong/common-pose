@@ -1,0 +1,10 @@
+{
+  "phase": "V5.2 submission candidate",
+  "AI_disclosure": "DEFERRED_BY_EXPLICIT_USER_INSTRUCTION",
+  "submission_performed": false,
+  "github_sync_authorized": true,
+  "github_current_visibility": "PRIVATE",
+  "authors": "preserve existing pending user confirmation",
+  "new_experiments": false,
+  "instructions_sha256": "e56b1fedf4fb9b12ecf13b19ef0064bd96368aee71c10254ffc65c8d778a36da"
+}

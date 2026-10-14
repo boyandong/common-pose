@@ -1,0 +1,141 @@
+{
+  "automatic_relaunch_after_this_failure": false,
+  "concurrent_partial_renames_observed": [],
+  "controller": {
+    "launch": {
+      "attempt_id": "20261010_202822_samecode",
+      "code_changed": false,
+      "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+      "credential_transport": "stdin/RAM only",
+      "observed_local_time": "2026-10-10T20:28:22.068306+08:00",
+      "pid": 7344,
+      "previous_pid_verified_absent": 27816,
+      "runner_sha256": "66b070cd27868d9de59157e809741d0ef408d0e63463cf32ee17b8f179590115",
+      "scientific_protocol_or_members_changed": false,
+      "start_time": "2026-10-10T20:28:22.0852468+08:00",
+      "status": "SAME_SEALED_CONTROLLER_RESUMED_AFTER_VERIFIED_TRANSFER_STOP"
+    },
+    "progress": {
+      "error_type": "RuntimeError",
+      "observed_epoch": 1791638743.0249898,
+      "pid": 7344,
+      "reason": "transfer terminal failure; preserve and inspect STREAM_RELAY_V2_PROGRESS.json",
+      "stage": "PIPELINE_STOPPED_PRESERVE_AND_INSPECT"
+    }
+  },
+  "download": {
+    "launch": {
+      "attempt_id": "20261010_202455_human_resume",
+      "code_changed": false,
+      "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+      "member_selection_changed": false,
+      "new_pid": 2060,
+      "new_start_time": "2026-10-10T20:24:55.8070883+08:00",
+      "observed_local_time": "2026-10-10T20:24:55.793195+08:00",
+      "pid": 2060,
+      "previous_pid_verified_absent": 24788,
+      "protocol_sha256": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a",
+      "runner_sha256": "520eab04ff901f44f4ff636d15aa9a03bccff2291b159c46ee4a48d7aa74d5c2",
+      "start_time": "2026-10-10T20:24:55.8070883+08:00",
+      "status": "HUMAN_AUTHORIZED_SAME_CODE_RESTART_AFTER_KNOWN_TERMINAL"
+    },
+    "progress": {
+      "completed_bytes": 26644569544,
+      "completed_files": 1420,
+      "elapsed_seconds": 3712.891,
+      "observed_epoch": 1791638808.7987773,
+      "pid": 2060,
+      "required_files": 2768,
+      "stage": "ACQUISITION_RUNNING",
+      "supplemental_attempt": "20261010_202455_human_resume"
+    }
+  },
+  "goal_complete": false,
+  "inventory_scope": "names/sizes and immutable receipt metadata; sources growing, partial inventory not atomic; no fresh full file rehash",
+  "known_error": "PermissionError [WinError 5] local os.replace of STREAM_RELAY_V2_PROGRESS.json denied",
+  "local_partial_bytes": 73992879,
+  "local_partial_files": 7,
+  "local_python_handles": [
+    {
+      "Id": 2060,
+      "start_time": "2026-10-10T20:24:55.8070883+08:00"
+    },
+    {
+      "Id": 12548,
+      "start_time": "2026-10-10T21:28:07.1384292+08:00"
+    }
+  ],
+  "local_source_bytes": 26768104480,
+  "local_source_files": 1427,
+  "log_sha256": {
+    "pipeline_supervisor.stderr.log": "85ae15000c5568e255a95c3fb988a00ea883b7f7dda551f7c53bb7ccb98bffd0",
+    "stream_relay_v2.stderr.log": "dc11b5b87dc185b1336c117198e9291875dfac3c0f86fe75839981f3de306840",
+    "stream_relay_v2.stdout.log": "82c1a53cd0c6aca2c6cefb91eeafb17df344e61b22c8b51979201a643ae2781b"
+  },
+  "new_effect_values_read": false,
+  "observed_local_time": "2026-10-10T21:28:07.400017+08:00",
+  "persistent_remote_hash_receipt_bytes": 23410773776,
+  "persistent_transfer_receipts_validated": 1256,
+  "remote_runtime": {
+    "gpu": "NVIDIA GeForce RTX 5090 D, 2 MiB, 32607 MiB, 0 %",
+    "jobs_directory_exists": false,
+    "remaining_bytes": 164580143104,
+    "source_files": 1256,
+    "source_partial_files": 0
+  },
+  "remote_stage_states": {
+    "analysis": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    },
+    "qualification": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    },
+    "reconstruction": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    },
+    "support": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    },
+    "verification": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    }
+  },
+  "root_cause": "UNKNOWN; concurrent reader share/delete locking or external Windows file lock is a working hypothesis",
+  "scientific_protocol_or_members_changed": false,
+  "scientific_seals": {
+    "analysis": "98f6e32909af8b2bf97527422389a657a755b080cbfb981a04dee14714cc7679",
+    "cohort": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+    "protocol": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a"
+  },
+  "session_rule": "AGENTS.md repeated recovery failures: archive/forensic; no further repair/launch in this session",
+  "source_scientific_corruption": "NOT_ESTABLISHED",
+  "status": "KNOWN_LOCAL_PROGRESS_REPLACE_FAILURE_PRESERVE_AND_HANDOVER",
+  "upload": {
+    "launch": {
+      "attempt_id": "20261010_202738_samecode",
+      "code_changed": false,
+      "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+      "credential_transport": "stdin/RAM only",
+      "members_changed": false,
+      "observed_local_time": "2026-10-10T20:27:38.889456+08:00",
+      "pid": 28740,
+      "prior_pid_verified_absent": 28460,
+      "runner_sha256": "e98825f2131b0b657ab343692114a4b6e23257895a1e80ab90c7d85442baf246",
+      "start_time": "2026-10-10T20:27:38.9247771+08:00",
+      "status": "SAME_SEALED_UPLOADER_RESUMED_AFTER_VERIFIED_TERMINAL_NETWORK_FAILURE"
+    },
+    "progress": {
+      "completed_files": 1252,
+      "error_type": "PermissionError",
+      "observed_epoch": 1791638717.5186176,
+      "pid": 28740,
+      "remotely_verified_bytes": 23338060312,
+      "stage": "STREAM_RELAY_V2_FAILED"
+    }
+  }
+}

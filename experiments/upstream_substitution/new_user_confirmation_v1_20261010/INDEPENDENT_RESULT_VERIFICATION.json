@@ -1,0 +1,18 @@
+{
+  "all_frozen_support_sets_rederived": true,
+  "bootstrap_summaries": 240,
+  "cache_checks": 160,
+  "class_rows": 62720,
+  "curve_rows": 7840,
+  "effect_rows": 19200,
+  "exact_rescored_vectors": 1120,
+  "joint_decision": "POSITIVE",
+  "primary_rows": 160,
+  "producer_score_tie_metric_stats_functions_imported": false,
+  "raw_base_tta_hash_and_label_lineage_users": 80,
+  "result_sha256": "ec6787cfcfd254769bd3836bf014626e87bab6647b74781f818835069854a482",
+  "seed_rows": 22400,
+  "status": "PASS",
+  "users": 80,
+  "verifier_sha256": "395c0b4d047c5dd8e596cd8b41c7c4800dccef68499eaf5031429383b9fee336"
+}

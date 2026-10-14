@@ -1,0 +1,282 @@
+{
+  "by_user": [
+    {
+      "below_10000_paired_blocks": false,
+      "files": 40,
+      "gt_valid_blocks": 94247,
+      "paired_valid_blocks": 94247,
+      "participant_id": "0816388460",
+      "pred_valid_blocks": 110534,
+      "session_id": "2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 46,
+      "gt_valid_blocks": 104776,
+      "paired_valid_blocks": 104776,
+      "participant_id": "13b8b5f76d",
+      "pred_valid_blocks": 111387,
+      "session_id": "2022-08-05-1659686400-20990-cv-emg-pose-demonstration@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 30,
+      "gt_valid_blocks": 107402,
+      "paired_valid_blocks": 107402,
+      "participant_id": "2132c5d085",
+      "pred_valid_blocks": 112669,
+      "session_id": "2022-09-07-1662537600-44552-cv-emg-pose-train@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 30,
+      "gt_valid_blocks": 112103,
+      "paired_valid_blocks": 112103,
+      "participant_id": "2327817653",
+      "pred_valid_blocks": 127432,
+      "session_id": "2022-06-13-1655107200-7640c-cv-emg-pose-train@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 30,
+      "gt_valid_blocks": 101534,
+      "paired_valid_blocks": 101534,
+      "participant_id": "23b817e892",
+      "pred_valid_blocks": 104816,
+      "session_id": "2022-07-22-1658476800-247a3-cv-emg-pose-train@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 30,
+      "gt_valid_blocks": 98788,
+      "paired_valid_blocks": 98788,
+      "participant_id": "2be40c4380",
+      "pred_valid_blocks": 104959,
+      "session_id": "2022-11-21-1669017600-d8a8b-cv-emg-pose-train@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 30,
+      "gt_valid_blocks": 87846,
+      "paired_valid_blocks": 87846,
+      "participant_id": "2e45fde443",
+      "pred_valid_blocks": 105257,
+      "session_id": "2022-10-03-1664784000-9635b-cv-emg-pose-train@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 46,
+      "gt_valid_blocks": 99904,
+      "paired_valid_blocks": 99904,
+      "participant_id": "32cbfe3221",
+      "pred_valid_blocks": 115572,
+      "session_id": "2022-09-02-1662105600-51cd5-cv-emg-pose-demonstration@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 50,
+      "gt_valid_blocks": 62469,
+      "paired_valid_blocks": 62469,
+      "participant_id": "3589743749",
+      "pred_valid_blocks": 101197,
+      "session_id": "2022-06-17-1655452800-74e32-cv-emg-pose-demonstration@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 32,
+      "gt_valid_blocks": 72749,
+      "paired_valid_blocks": 72749,
+      "participant_id": "47c605ad6f",
+      "pred_valid_blocks": 77284,
+      "session_id": "2022-10-20-1666252800-2307d-cv-emg-pose-demonstration@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 30,
+      "gt_valid_blocks": 89728,
+      "paired_valid_blocks": 89728,
+      "participant_id": "54c854b839",
+      "pred_valid_blocks": 101478,
+      "session_id": "2022-11-14-1668412800-0d677-cv-emg-pose-train@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 30,
+      "gt_valid_blocks": 90915,
+      "paired_valid_blocks": 90915,
+      "participant_id": "6a7fc66366",
+      "pred_valid_blocks": 102794,
+      "session_id": "2022-11-18-1668758400-d7f6d-cv-emg-pose-train@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 46,
+      "gt_valid_blocks": 99876,
+      "paired_valid_blocks": 99876,
+      "participant_id": "7afcdcd6be",
+      "pred_valid_blocks": 123704,
+      "session_id": "2022-07-26-1658822400-40f70-cv-emg-pose-demonstration@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 30,
+      "gt_valid_blocks": 100449,
+      "paired_valid_blocks": 100449,
+      "participant_id": "87aa3b3887",
+      "pred_valid_blocks": 106878,
+      "session_id": "2022-08-30-1661846400-02aab-cv-emg-pose-train@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 32,
+      "gt_valid_blocks": 104670,
+      "paired_valid_blocks": 104670,
+      "participant_id": "8bd1c0ff16",
+      "pred_valid_blocks": 115792,
+      "session_id": "2022-08-30-1661846400-b0a7b-cv-emg-pose-train@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 30,
+      "gt_valid_blocks": 99063,
+      "paired_valid_blocks": 99063,
+      "participant_id": "9b8c99cdc2",
+      "pred_valid_blocks": 103945,
+      "session_id": "2022-08-22-1661155200-0a6e2-cv-emg-pose-train@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 30,
+      "gt_valid_blocks": 94001,
+      "paired_valid_blocks": 94001,
+      "participant_id": "ce52651f99",
+      "pred_valid_blocks": 109792,
+      "session_id": "2022-09-06-1662451200-c4a49-cv-emg-pose-train@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 30,
+      "gt_valid_blocks": 95845,
+      "paired_valid_blocks": 95845,
+      "participant_id": "dd810188d9",
+      "pred_valid_blocks": 106123,
+      "session_id": "2022-10-03-1664784000-7c163-cv-emg-pose-train@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 32,
+      "gt_valid_blocks": 64112,
+      "paired_valid_blocks": 64112,
+      "participant_id": "f1b6a408bf",
+      "pred_valid_blocks": 75502,
+      "session_id": "2022-11-11-1668153600-0b654-cv-emg-pose-demonstration@2",
+      "split": "DEV"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 32,
+      "gt_valid_blocks": 60464,
+      "paired_valid_blocks": 60464,
+      "participant_id": "737fb9d2eb",
+      "pred_valid_blocks": 76965,
+      "session_id": "2022-11-16-1668585600-aa2f5-cv-emg-pose-demonstration@2",
+      "split": "VALIDATION"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 30,
+      "gt_valid_blocks": 110197,
+      "paired_valid_blocks": 110197,
+      "participant_id": "76932c8337",
+      "pred_valid_blocks": 115136,
+      "session_id": "2022-07-05-1657008000-12581-cv-emg-pose-train@2",
+      "split": "VALIDATION"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 40,
+      "gt_valid_blocks": 95010,
+      "paired_valid_blocks": 95010,
+      "participant_id": "8e69533c16",
+      "pred_valid_blocks": 117959,
+      "session_id": "2022-06-08-1654675200-3234f-cv-emg-pose-train@2",
+      "split": "VALIDATION"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 32,
+      "gt_valid_blocks": 66665,
+      "paired_valid_blocks": 66665,
+      "participant_id": "92f25d4f36",
+      "pred_valid_blocks": 78841,
+      "session_id": "2022-09-22-1663833600-778fb-cv-emg-pose-demonstration@2",
+      "split": "VALIDATION"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 30,
+      "gt_valid_blocks": 103866,
+      "paired_valid_blocks": 103866,
+      "participant_id": "9e7c5def0b",
+      "pred_valid_blocks": 107691,
+      "session_id": "2022-07-20-1658304000-03bfa-cv-emg-pose-train@2",
+      "split": "VALIDATION"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 46,
+      "gt_valid_blocks": 10712,
+      "paired_valid_blocks": 10712,
+      "participant_id": "ab228f34a5",
+      "pred_valid_blocks": 112004,
+      "session_id": "2022-10-05-1664956800-5974f-cv-emg-pose-demonstration@2",
+      "split": "VALIDATION"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 32,
+      "gt_valid_blocks": 55820,
+      "paired_valid_blocks": 55820,
+      "participant_id": "b6fa6cd36f",
+      "pred_valid_blocks": 78853,
+      "session_id": "2022-11-15-1668499200-06fb2-cv-emg-pose-demonstration@2",
+      "split": "VALIDATION"
+    },
+    {
+      "below_10000_paired_blocks": false,
+      "files": 30,
+      "gt_valid_blocks": 97800,
+      "paired_valid_blocks": 97800,
+      "participant_id": "e86f1eaf2f",
+      "pred_valid_blocks": 104280,
+      "session_id": "2022-09-13-1663056000-bf969-cv-emg-pose-train@2",
+      "split": "VALIDATION"
+    }
+  ],
+  "cohort_sha256": "db61d9c75510d78e17b3858943bc3dd052dab61aa041dc260c84e064e619bead",
+  "files": 926,
+  "paired_valid_blocks": 2381011,
+  "plan_sha256": "f346608139d1386947f7200c3fd80b93abcdec4e1fe385c2b647bf756eaa2332",
+  "runner_sha256": "e3ca8e3b2a7d4a6059ac5fba9d01df264d329f52dc3497fdcc9cfdc0b4e98091",
+  "schema": "gate4c-result-integrity-v1",
+  "status": "PASS",
+  "users": 27
+}

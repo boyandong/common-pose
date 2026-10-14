@@ -1,0 +1,26 @@
+{
+  "complete_inventory_bytes": 21205478440,
+  "complete_inventory_files": 1146,
+  "controller_pid27816_state": "MISSING",
+  "current_launch_sha256": "0dbc86c6ae2e35ed96ef288ff3239cb2deab980fb20bf0273859a75143324256",
+  "download_pid": 2060,
+  "download_start_time": "2026-10-10T20:24:55.8070883+08:00",
+  "full_goal_complete": false,
+  "human_restart_authorization": "\u91cd\u542f\u4e0b\u8f7d",
+  "inventory_scope": "filename/size observation; immutable file SHA256 receipts written by acquisition",
+  "new_user_inference_started": false,
+  "observed_local_time": "2026-10-10T20:26:04.991851+08:00",
+  "prior_failure_terminal_sha256": "78e93b2c658b94af94fc144ce44efe9e49764b45ad6fef2604a3d28ae1dd9873",
+  "progress": {
+    "completed_bytes": 21098519600,
+    "completed_files": 1140,
+    "elapsed_seconds": 8.609000000000037,
+    "observed_epoch": 1791635104.5176823,
+    "pid": 2060,
+    "required_files": 2768,
+    "stage": "ACQUISITION_RUNNING",
+    "supplemental_attempt": "20261010_202455_human_resume"
+  },
+  "status": "LIVE_DOWNLOAD_IDENTITY_AND_BYTE_PROGRESS_CONFIRMED",
+  "upload_pid28460_state": "MISSING"
+}

@@ -1,0 +1,15 @@
+{
+  "spec": {
+    "scope": "same_first_three_sorted_N80_records_offline_CPU_only",
+    "selection": "same GPU_COST_RECEIPT selected_files; no performance selection",
+    "consumers": 6,
+    "warmups_per_cell": 1,
+    "timed_repeats_per_cell": 2,
+    "threads": 2,
+    "feature_time_includes_measured_reference_evaluation": true,
+    "scorer": "original Full/U bit7, unchanged model",
+    "online_latency_verified": false,
+    "population_cost_distribution_verified": false
+  },
+  "script_sha256": "6e1c89d55cea805e43a960b92860aa7bb4ccc87032c4153e9b0a841d054ddb0e"
+}

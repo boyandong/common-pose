@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "rows": 36,
+  "csv_sha256": "6e5cccc90eacd79cff03d8f1de3068af9e2fb162c08775126bdf3ffbd150b3f4",
+  "spec": {
+    "scope": "same_first_three_sorted_N80_records_offline_CPU_only",
+    "selection": "same GPU_COST_RECEIPT selected_files; no performance selection",
+    "consumers": 6,
+    "warmups_per_cell": 1,
+    "timed_repeats_per_cell": 2,
+    "threads": 2,
+    "feature_time_includes_measured_reference_evaluation": true,
+    "scorer": "original Full/U bit7, unchanged model",
+    "online_latency_verified": false,
+    "population_cost_distribution_verified": false
+  }
+}

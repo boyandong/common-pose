@@ -1,0 +1,35 @@
+==============================================================================
+GATE 3B — DB9-ONLY FISHER REFERENCE SCALES
+==============================================================================
+[1] frozen head geometry
+    solver            : svd
+    shrinkage         : None
+    classes           : [1, 2, 3, 4, 5, 6, 7, 8]
+    n_features_in_    : 8
+    scalings_ shape   : (8, 7)
+    xbar_ present     : True
+    explained_variance_ratio_ : [0.45635195, 0.29560768, 0.17173923, 0.06415877, 0.00904045, 0.0024689, 0.00063303]
+    sum evr           : 0.9999999999999999
+    transform dim     : 7
+    expected dim      : min(8, 8-1) = 7
+    transform == (x - xbar_) @ scalings_ : True  max|diff| 0.000e+00
+    xbar_ (DB9 feature mean) : [-0.0, 0.0, 0.0, 0.0, 0.0, -0.0, 0.0, 0.0]
+
+[2] rebuild the frozen DB9 training corpus (identical protocol)
+    files 77  X=(123200, 8)  classes=[1, 2, 3, 4, 5, 6, 7, 8]  subjects=77
+    corpus/mu/sd consistency: True / True
+
+[3] DB9 Fisher reference
+    z_DB9 shape       : (123200, 7)
+    sigma_DB9 (ddof=0): [2.52839938, 2.11972473, 1.74052774, 1.32594168, 1.052031, 1.01445103, 1.00370104]
+    sigma_DB9 (ddof=1): [2.52840964, 2.11973334, 1.7405348, 1.32594706, 1.05203527, 1.01445515, 1.00370512]
+    z_DB9 per-component mean: [0.0, -0.0, -0.0, 0.0, -0.0, -0.0, -0.0]
+    DB9 affinity score matrix : (123200, 8)
+    affinity argmax == head.predict : True
+    DB9 per-class score sigma (ddof=0): [8.46058536, 6.5200128, 9.35685055, 11.06796022, 11.11574723, 9.00570995, 6.66914283, 10.46107455]
+    DB9 per-class score sigma (ddof=1): [8.4606197, 6.52003926, 9.35688853, 11.06800514, 11.11579235, 9.0057465, 6.6691699, 10.461117]
+    DB9 per-class score mean          : [-17.36886968, -15.37271318, -19.64888027, -16.54519084, -16.62344445, -18.82927407, -19.00278151, -15.78131993]
+
+[4] wrote /root/work/common-pose/experiments/upstream_substitution/gate3b_continuous_representation/artifacts/FISHER_DB9_REFERENCE_SCALE.json
+    sha256 d15997aa56e5264bdede56c10727a910f94b2c7e32ab8137a6e8e9e45c39c667
+elapsed 72.3s

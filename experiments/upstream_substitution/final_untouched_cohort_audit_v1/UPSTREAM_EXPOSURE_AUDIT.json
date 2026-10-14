@@ -1,0 +1,21 @@
+{
+  "checkpoint_sha256": "748b1d1ef0ce1985f6fc07225d97eebfb370243429af803b4997d28ecce2424e",
+  "checkpoint_specific_training_membership": "UNRESOLVED",
+  "evidence": [
+    "The checkpoint top-level keys are callbacks, epoch, global_step, hparams_name, hyper_parameters, loops, lr_schedulers, optimizer_states, pytorch-lightning_version, and state_dict.",
+    "The checkpoint hyper_parameters keys are loss_weights, lr_scheduler_conf, network_conf, optimizer_conf, and provide_initial_pos. They contain no participant IDs, session IDs, dataset manifest, or split identity.",
+    "At official repository HEAD, config/base.yaml defaults to data_split: full_split; config/data_split/full_split.yaml points to metadata.csv; emg2pose/utils.py load_splits reads its split column.",
+    "The official repository worktree is dirty; the above source statements were checked at immutable Git HEAD. A repository default does not establish how this particular checkpoint was trained."
+  ],
+  "group_C_unknown_upstream_membership": 164,
+  "known_group_A_unseen_to_both": 0,
+  "known_group_B_seen_by_upstream": 0,
+  "official_split_is_checkpoint_training_proof": false,
+  "official_split_profiles_descriptive_only": {
+    "test": 16,
+    "test/train": 139,
+    "val": 9
+  },
+  "schema": "final-cohort-upstream-exposure-v1",
+  "strong_unseen_upstream_claim_ready": false
+}

@@ -1,0 +1,95 @@
+==============================================================================
+GATE 2A — NATIVE-COORDINATE GT-ONLY FROZEN-HEAD DIAGNOSTIC
+==============================================================================
+plan            : GATE2A_PLAN.md
+plan SHA-256    : 9fc91ea7b34fdfdc08791d9ebcba8922aa253b826edf89fa54222b6d1eb46ce7
+
+frozen subset   : TRUSTED_DB9_POSE_v1  keep=['MCP1', 'IP1', 'MCP2_f', 'PIP2', 'MCP3_f', 'MCP4_f', 'MCP5_f', 'PIP5']
+frozen subset sha256: e51dde6e63941fd080c84f3896a98cf50fba9e17d5f9cebe909253d5465782d1
+DB9 columns     : [2, 3, 4, 6, 7, 9, 13, 15]
+emg2pose idx    : [2, 3, 5, 6, 9, 13, 17, 18]
+
+[1] DB9 frozen-corpus rebuild
+    Exercise-B-format files : 77
+    global keys             : 1..77  (distinct 77)
+    X=(123200, 8)  classes=[1, 2, 3, 4, 5, 6, 7, 8]  subjects=77
+    segments (subject x movement x repetition): 616
+
+[2] REPLICATION CHECK vs FINAL_VALIDATION.json .Q4_posture8
+    quantity               reconstructed   frozen record  match
+    n_frames                      123200          123200  YES
+    n_subjects                        77              77  YES
+    accuracy                    0.747914        0.747914  YES
+    balanced_accuracy           0.747914        0.747914  YES
+    macro_f1                     0.74598         0.74598  YES
+    recall class 1               0.86026         0.86026  YES
+    recall class 2              0.691364        0.691364  YES
+    recall class 3              0.875584        0.875584  YES
+    recall class 4               0.49474         0.49474  YES
+    recall class 5              0.902857        0.902857  YES
+    recall class 6              0.750974        0.750974  YES
+    recall class 7              0.829026        0.829026  YES
+    recall class 8              0.578506        0.578506  YES
+    REPLICATION: EXACT
+
+[3] DB9 comparator: pred-occupancy entropy 2.9584 bits, max-class frac 0.1863, median margin 1.9875, switch rate 0.0458, median dwell 9 frames
+    (DB9 true-label occupancy entropy for reference: 2.9584 bits)
+
+[4] Aggregate head (all 77 DB9 participants) — the object applied to emg2pose
+    train frames      : 123200
+    class priors      : {1: 0.125, 2: 0.125, 3: 0.125, 4: 0.125, 5: 0.125, 6: 0.125, 7: 0.125, 8: 0.125}
+    standardisation mu: [0.135, 0.3284, 0.3049, 0.5231, 0.6896, 0.8327, 1.3158, 0.4098]
+    standardisation sd: [0.2604, 0.5662, 0.5234, 0.9007, 0.8576, 0.7114, 1.0969, 0.5369]
+    LDA defaults      : solver=svd shrinkage=None
+
+[5] emg2pose GT (native values, frozen 50 Hz block reduction)
+    files             : 30
+    stored rows       : 4218756
+    GT-valid rows     : 3559584  (IK-failure 659172)
+    analysis samples  : 88019   at 50 Hz (block mean of 40 rows)
+    sides             : {'left': 15, 'right': 15}
+    stages            : 15
+
+[6] PRIMARY DIAGNOSTICS
+    class occupancy   : 1:0.0404 2:0.0471 3:0.0002 4:0.1998 5:0.0729 6:0.1533 7:0.0234 8:0.4629
+    occupancy entropy : 2.1929 bits (max 3.0000)
+    max-class fraction: 0.4629  (class 8)
+    margin median     : 0.8465  IQR [0.3684, 1.7015]  p05 0.0721  p95 4.1053
+    margin <= 0 frac  : 0.0000
+
+[7] TEMPORAL STRUCTURE (contiguous per-file sequences at 50 Hz)
+    transitions       : 87989
+    switches          : 6706
+    switch rate       : 0.0762 per sample
+    median dwell      : 6 blocks (0.120 s)
+    DB9 comparator    : rate 0.0458, dwell 9 frames
+
+[8] SIDE left  : n=44101  entropy 2.0190  maxfrac 0.5478 dom class 8  median margin 0.7710  switch 0.0704
+[8] SIDE right : n=43918  entropy 2.3066  maxfrac 0.3777 dom class 8  median margin 0.8964  switch 0.0821
+
+[9] STAGE CountingUpDownFaceSideAway                   n=   5606 dom=2 frac=0.204 ent=2.735 c4=0.192 c5=0.090
+[9] STAGE FingerAbductionSeries                        n=   5692 dom=8 frac=0.835 ent=0.838 c4=0.081 c5=0.079
+[9] STAGE FingerFreeform                               n=   4444 dom=8 frac=0.669 ent=1.474 c4=0.066 c5=0.086
+[9] STAGE FingerPinchesSingleFingerPinchesMultiple     n=   5268 dom=4 frac=0.624 ent=1.217 c4=0.624 c5=0.011
+[9] STAGE FingerWigglingSpreading                      n=   5738 dom=8 frac=0.599 ent=1.487 c4=0.057 c5=0.286
+[9] STAGE HandClawGraspFlicks                          n=   4903 dom=8 frac=0.637 ent=1.369 c4=0.126 c5=0.012
+[9] STAGE HookEmHornsOKScissors                        n=   5514 dom=8 frac=0.603 ent=1.436 c4=0.296 c5=0.011
+[9] STAGE IndividualFingerPointingSnap                 n=   5783 dom=6 frac=0.351 ent=2.236 c4=0.210 c5=0.004
+[9] STAGE OneHandedFreeStyle                           n=   3639 dom=8 frac=0.566 ent=1.770 c4=0.166 c5=0.144
+[9] STAGE ShakaVulcanPeace                             n=   5130 dom=8 frac=0.389 ent=2.411 c4=0.053 c5=0.062
+[9] STAGE ThumbsSwipesWholeHand                        n=   5612 dom=6 frac=0.610 ent=1.800 c4=0.026 c5=0.104
+[9] STAGE ThumbsUpDownThumbRotationsCWCCWP             n=   3865 dom=6 frac=0.441 ent=2.028 c4=0.131 c5=0.049
+[9] STAGE TwoHandedFreeStyle                           n=  18563 dom=8 frac=0.396 ent=2.143 c4=0.281 c5=0.082
+[9] STAGE WristFlexionAbduction                        n=   5223 dom=8 frac=0.830 ent=0.775 c4=0.148 c5=0.017
+[9] STAGE unconstrained                                n=   3039 dom=8 frac=0.614 ent=0.998 c4=0.381 c5=0.005
+
+[10] CLASS 4/5: class4 frac 0.1998  class5 frac 0.0729
+     class4 margin median 0.5259
+     top2 pair == {4,5} fraction 0.0678
+     score4-score5 median 1.1939 (frac > 0: 0.7674)
+
+[11] DECISION (rule fixed in the plan before any output)
+     DEGENERATE triggers : none
+     AMBIGUOUS triggers  : none
+     GATE2A DECISION     : STRUCTURED_NONDEGENERATE
+

@@ -1,0 +1,3499 @@
+{
+  "candidate_order": [
+    {
+      "archive_bytes": 676220320,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 110040,
+      "participant_id": "ce52651f99",
+      "record_count": 30,
+      "session_hash": "16696a7f0102b722f5c8bba79a421f553f427c0fd8f0adedb270db1161223e84",
+      "session_id": "2022-09-06-1662451200-c4a49-cv-emg-pose-train@2",
+      "user_hash": "01a8b626376d3cd50eaaa52cd03eb136016068e02a47929e5c8e39ec48786b10"
+    },
+    {
+      "archive_bytes": 658509280,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 107274,
+      "participant_id": "87aa3b3887",
+      "record_count": 30,
+      "session_hash": "254b13189adbdbdc851b4ede256ff3d28895852e61ca63093801da5fe3285029",
+      "session_id": "2022-08-30-1661846400-02aab-cv-emg-pose-train@2",
+      "user_hash": "01b5590e778b8e5436eb9081e288ddcaf008af03381a2cf128b6d7d30150a7cf"
+    },
+    {
+      "archive_bytes": 625683056,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 101528,
+      "participant_id": "54c854b839",
+      "record_count": 30,
+      "session_hash": "2f47b3e2f5f72e15ebe082c06521d3cb6f5b0bf9d3fb5a14b27bf9f00d03bb5f",
+      "session_id": "2022-11-14-1668412800-0d677-cv-emg-pose-train@2",
+      "user_hash": "02251a5b0e4aa52d7127da116b4e5d2b8eacfd61fdd8a7f201c0595de1dde19f"
+    },
+    {
+      "archive_bytes": 648641440,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105296,
+      "participant_id": "2e45fde443",
+      "record_count": 30,
+      "session_hash": "0758c4f7446fa6e65a864f0d0bf49a88830314e56c2a9cb47e36d2a51fc50aeb",
+      "session_id": "2022-10-03-1664784000-9635b-cv-emg-pose-train@2",
+      "user_hash": "02a96b8192849f4c22f1b68e0bfc5704618cc3210047f6b8f55d06280beae1b9"
+    },
+    {
+      "archive_bytes": 633681144,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 102844,
+      "participant_id": "6a7fc66366",
+      "record_count": 30,
+      "session_hash": "26703c3b6a9f051675e292b98a69dd84230d8ad1f204c597524e92911844cd8b",
+      "session_id": "2022-11-18-1668758400-d7f6d-cv-emg-pose-train@2",
+      "user_hash": "08a8271a731e89d9fa0bedb790bf5251edb1e6d80eb54e8beb9e7cf055cb519e"
+    },
+    {
+      "archive_bytes": 645953016,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105014,
+      "participant_id": "23b817e892",
+      "record_count": 30,
+      "session_hash": "4129c757087a3c6067d5a8f7fa500d93a73923885b275c15ab568390bebd939b",
+      "session_id": "2022-07-22-1658476800-247a3-cv-emg-pose-train@2",
+      "user_hash": "092a47865458f1b4f5ca0e1bb56a81c27750886753967b8c2b4c4783a0605083"
+    },
+    {
+      "archive_bytes": 693703360,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 112714,
+      "participant_id": "2132c5d085",
+      "record_count": 30,
+      "session_hash": "574b69103c9ecde947c01eea694f57672b20d4c556e4ed1b0810bab6b47f1cb5",
+      "session_id": "2022-09-07-1662537600-44552-cv-emg-pose-train@2",
+      "user_hash": "09bb4d537d180192956876023dbd1dcb43794757d1403a23a69142c4e36e0e8f"
+    },
+    {
+      "archive_bytes": 783475016,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 127896,
+      "participant_id": "2327817653",
+      "record_count": 30,
+      "session_hash": "3b53d33136e6f04db9164419d1e7d544343486546970c13990c3733933f202de",
+      "session_id": "2022-06-13-1655107200-7640c-cv-emg-pose-train@2",
+      "user_hash": "0b68a340efdb6a747a449023f7fa9554fcb1d42acfc599e42b37db17e4f3104c"
+    },
+    {
+      "archive_bytes": 479155592,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 77332,
+      "participant_id": "47c605ad6f",
+      "record_count": 32,
+      "session_hash": "1b43b7bd47fba4e31bc4a917c2740e1edd435a14c558c438b7d90ec5d8fa6b36",
+      "session_id": "2022-10-20-1666252800-2307d-cv-emg-pose-demonstration@2",
+      "user_hash": "0c67f50d2b5d277df9145ea6c835d5ec1e088da171d24728aae9dfa55fab85f7"
+    },
+    {
+      "archive_bytes": 646832792,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105016,
+      "participant_id": "2be40c4380",
+      "record_count": 30,
+      "session_hash": "5da7612660c53e57eda6acf32e62eedf21f50d1502b3e5c69c4564f88e4dd337",
+      "session_id": "2022-11-21-1669017600-d8a8b-cv-emg-pose-train@2",
+      "user_hash": "0c9faf5ba44c79d1ad76e4843897b2a55cf41fc165b4d139821fefbc92145d4f"
+    },
+    {
+      "archive_bytes": 474854536,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 84890,
+      "participant_id": "29ddab35d7",
+      "record_count": 38,
+      "session_hash": "0091dc8ad75bf458b36a5e7e0d7459e37c9840b44c58b66a914eb63b3de339fa",
+      "session_id": "2022-04-07-1649318400-a9a00-cv-emg-pose-demonstration@2",
+      "user_hash": "0dc63a8874334b8705cbedcfee83df5b670cfe74accb9465d8411eb9eee674f4"
+    },
+    {
+      "archive_bytes": 683613392,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 111166,
+      "participant_id": "0816388460",
+      "record_count": 40,
+      "session_hash": "71ce46a930c58964981dc3640cbca5a5eb2796cc4c486991fb06fb37fafeceb3",
+      "session_id": "2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2",
+      "user_hash": "0eeb3277adb0fd43eeaf1f0d925072fbcd70adfc4004292693cfab6301cfa669"
+    },
+    {
+      "archive_bytes": 765432496,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 124126,
+      "participant_id": "7afcdcd6be",
+      "record_count": 46,
+      "session_hash": "2f2d914863f770230d1c4c36faacffa40f0bf8f39d105d77cca4c9a14ba6d511",
+      "session_id": "2022-07-26-1658822400-40f70-cv-emg-pose-demonstration@2",
+      "user_hash": "0f89e36ff233b25ede0c60911ebe5028797598d994c2f2f7d0b3a9e6f11eae71"
+    },
+    {
+      "archive_bytes": 713287880,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 115844,
+      "participant_id": "8bd1c0ff16",
+      "record_count": 32,
+      "session_hash": "016c9b44728f0455e405362d7f53b9ccf7d838c4e6d8aef840954ad4371b7aaa",
+      "session_id": "2022-08-30-1661846400-b0a7b-cv-emg-pose-train@2",
+      "user_hash": "113c357e9e50ff194aa9758a4d547759c76dba57559467800c93d6c70df2c318"
+    },
+    {
+      "archive_bytes": 690539664,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 111472,
+      "participant_id": "13b8b5f76d",
+      "record_count": 46,
+      "session_hash": "2e1db0c74183fb8fca5f771d620bebb39ce455efdfbda19a39edb7dd15e7e316",
+      "session_id": "2022-08-05-1659686400-20990-cv-emg-pose-demonstration@2",
+      "user_hash": "1637500d418a27432309fcf62ae6af8abb48ea0ab1b219c6430cb63f1f1ff67b"
+    },
+    {
+      "archive_bytes": 468300664,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 75564,
+      "participant_id": "f1b6a408bf",
+      "record_count": 32,
+      "session_hash": "1b8ecbd5a1e3c4e2a31e3e61002fb22b0cdce75f0c2aad2968badf7bf6e5d734",
+      "session_id": "2022-11-11-1668153600-0b654-cv-emg-pose-demonstration@2",
+      "user_hash": "1861b95dc2ce8e8508e5344cdcf9f002edfd3617acd96e179a59e46430d46b6c"
+    },
+    {
+      "archive_bytes": 653917360,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 106172,
+      "participant_id": "dd810188d9",
+      "record_count": 30,
+      "session_hash": "3365c52cb832c75ee463f5a2dc1cf208db66e363507ef83baa3968948096839e",
+      "session_id": "2022-10-03-1664784000-7c163-cv-emg-pose-train@2",
+      "user_hash": "1b26405083c189480581111dc6f2222246518625fdf5fa0537d33057605c5b8b"
+    },
+    {
+      "archive_bytes": 640665696,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 104224,
+      "participant_id": "9b8c99cdc2",
+      "record_count": 30,
+      "session_hash": "097e33396cd6406840aab7eabb09d92590c23245a49d3054686ff3278ee8e7b5",
+      "session_id": "2022-08-22-1661155200-0a6e2-cv-emg-pose-train@2",
+      "user_hash": "1e19ebc12f6068fdf3e58a4358870f51005ad6827afac8858a0706a9056472d4"
+    },
+    {
+      "archive_bytes": 715999512,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 115644,
+      "participant_id": "32cbfe3221",
+      "record_count": 46,
+      "session_hash": "088b03b99d2d056fa46d92faaf76227172b19e853b2f2f78f2a1fdcc36f49b52",
+      "session_id": "2022-09-02-1662105600-51cd5-cv-emg-pose-demonstration@2",
+      "user_hash": "1e7e8454341e71f46464a5efd6d963768db0ec57c9a7cd3d0b9f3d8ea3c9e848"
+    },
+    {
+      "archive_bytes": 629752896,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 122996,
+      "participant_id": "3589743749",
+      "record_count": 50,
+      "session_hash": "22d046a1844403f38dd16a8552b69f0f78a1295fc4440ebf7817dc65efa82b28",
+      "session_id": "2022-06-17-1655452800-74e32-cv-emg-pose-demonstration@2",
+      "user_hash": "1ec92f4982b044712620a9a49d4bf5b1ad9978e13cb417e08205b9806c1ab2b9"
+    },
+    {
+      "archive_bytes": 722508760,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 117034,
+      "participant_id": "60e5a2b0a4",
+      "record_count": 46,
+      "session_hash": "076988b67d724fde29d0f8533ec52f3274e790316c66b3382b3f8ab5cbaf526f",
+      "session_id": "2022-07-25-1658736000-cbea6-cv-emg-pose-demonstration@2",
+      "user_hash": "1ef17d63e53d255629ea04f49254d8ef6c82f0cd21fcceb6d6bebafc66b4a3e3"
+    },
+    {
+      "archive_bytes": 725325776,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 117476,
+      "participant_id": "4e37b5eb0b",
+      "record_count": 46,
+      "session_hash": "39cfdfed017ba7b74e68318dd152c373539754410be293e024e540e0958e3928",
+      "session_id": "2022-07-26-1658822400-e55e7-cv-emg-pose-demonstration@2",
+      "user_hash": "1f0d4cd093388d8e1915b87bae2fbedab94f8b5feeaa54a21c887b528981ec09"
+    },
+    {
+      "archive_bytes": 636506296,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 103680,
+      "participant_id": "9261f6ab56",
+      "record_count": 32,
+      "session_hash": "1fa7a0c629bc3404a450361ed162345b80043c83ce3e0eb4184691aef4e5e928",
+      "session_id": "2022-11-29-1669708800-946ec-cv-emg-pose-train@2",
+      "user_hash": "201faaae2cc6217bb0b7526d074d9b6859e6dc939e1d55acc6dd6f9e96b97c21"
+    },
+    {
+      "archive_bytes": 153418784,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 24868,
+      "participant_id": "0f85d8939c",
+      "record_count": 8,
+      "session_hash": "1460aa5116fb669a540c35e85b5198c881a36a8d989f1aeb07f3e90f96af75e5",
+      "session_id": "2022-10-27-1666857600-12e5c-cv-emg-pose-train@2",
+      "user_hash": "20b5b4cef92e2820ff8d8b93e902436c59a42c6fe4d21fb3a4b851d25e2458f3"
+    },
+    {
+      "archive_bytes": 695154536,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 112234,
+      "participant_id": "13ba969d01",
+      "record_count": 46,
+      "session_hash": "11e812bbb8ed94e4684a77b576c58905a008b79850cfe948fcec264548f02ee3",
+      "session_id": "2022-12-05-1670227200-7b84f-cv-emg-pose-demonstration@2",
+      "user_hash": "2137f9f3a9242f63ce9a812aa4ffca8792ece5364ae9ba64c48e579bb7952865"
+    },
+    {
+      "archive_bytes": 613545264,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 99322,
+      "participant_id": "4c4bfe28ea",
+      "record_count": 38,
+      "session_hash": "0f5727490ee768f47b93949d4d96690e0a45925f66858eec3633a04e14d0534a",
+      "session_id": "2022-04-12-1649750400-4351b-cv-emg-pose-demonstration@2",
+      "user_hash": "216fbc097d43ecf92f63ef88be2c75b0bb7fa7a0b66e78052dd294b23280d8f5"
+    },
+    {
+      "archive_bytes": 483517536,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 78044,
+      "participant_id": "05026be68a",
+      "record_count": 32,
+      "session_hash": "128ab0b859ef6d7ecfb827ad8e68edfb48109c8dadbd6d787ba8b437cd713184",
+      "session_id": "2022-09-28-1664352000-52772-cv-emg-pose-demonstration@2",
+      "user_hash": "26fe4af04b00443888aa445123881d394743eeddc89b11bdd5092de5c4ee1e33"
+    },
+    {
+      "archive_bytes": 641178544,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 104078,
+      "participant_id": "9fc18a9307",
+      "record_count": 30,
+      "session_hash": "3cc41cb61d477553b53ce54dc66199a99956763ac8924f526231b41a5221dafc",
+      "session_id": "2022-08-22-1661155200-607bc-cv-emg-pose-train@2",
+      "user_hash": "279adb6ecbfbbab67390225c0408a4c76a606382478a5f4e3ba46c14ca29fe05"
+    },
+    {
+      "archive_bytes": 647439424,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105112,
+      "participant_id": "d999a1ad10",
+      "record_count": 30,
+      "session_hash": "43d9fbade984ca8cb8dc0abc787f6e6e551f025f36db00242622b0bb409faee9",
+      "session_id": "2022-10-06-1665043200-74302-cv-emg-pose-train@2",
+      "user_hash": "2923b174fe10a424676406642ef2f32f463ddeb8cadae86054efab40939f6fa6"
+    },
+    {
+      "archive_bytes": 682672112,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 110908,
+      "participant_id": "91e58c0561",
+      "record_count": 30,
+      "session_hash": "0fd3f4a00e040debc51d8e97a6ce46fc71bd8985403bbecb15bcf4807e3f0f30",
+      "session_id": "2022-09-12-1662969600-5c4cd-cv-emg-pose-train@2",
+      "user_hash": "2bb6594261faf65c63baef807d2cfb6365ea36f2e52ee6a245721ce7fe5a55b5"
+    },
+    {
+      "archive_bytes": 694289960,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 112080,
+      "participant_id": "ab228f34a5",
+      "record_count": 46,
+      "session_hash": "179ba00e7df607ee5a08e8878c774677038c5d4df380100752ab1f53aea869f9",
+      "session_id": "2022-10-05-1664956800-5974f-cv-emg-pose-demonstration@2",
+      "user_hash": "2c3c6c0727391e6251a7d9e102c57aeb62a8ea0b46add684e619d1d95ff1ca14"
+    },
+    {
+      "archive_bytes": 728763472,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 118036,
+      "participant_id": "8e69533c16",
+      "record_count": 40,
+      "session_hash": "2dab4c0aeb139aa0895db444cf5df9bf01660e0ee29e2413ad8cd366a8563a6c",
+      "session_id": "2022-06-08-1654675200-3234f-cv-emg-pose-train@2",
+      "user_hash": "2c669d70b8b1f30b23f9ce5c1a82385b9e3a3d2e78ab6edc31f7a3238188b2be"
+    },
+    {
+      "archive_bytes": 663451712,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 107756,
+      "participant_id": "9e7c5def0b",
+      "record_count": 30,
+      "session_hash": "378d23e821b5a1110c103c3850c6911497a5e02f2c6f99ec1eef2914f78307e4",
+      "session_id": "2022-07-20-1658304000-03bfa-cv-emg-pose-train@2",
+      "user_hash": "301d671ce1fe4ddb8953cb0d1ed247b825767c5ca4ff974a49159745457da5f5"
+    },
+    {
+      "archive_bytes": 708716552,
+      "eligible_session_count": 2,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 115576,
+      "participant_id": "76932c8337",
+      "record_count": 30,
+      "session_hash": "1655ee81b67d82014d3661b159ea0f020b0d82f3c9b2cc38f8a6f4bb541e9cd6",
+      "session_id": "2022-07-05-1657008000-12581-cv-emg-pose-train@2",
+      "user_hash": "31809bfccd25f1f676aa267e48e07e52a7d5d0304adb5840e1123426de5503ef"
+    },
+    {
+      "archive_bytes": 488601024,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 78874,
+      "participant_id": "92f25d4f36",
+      "record_count": 32,
+      "session_hash": "3b592ddf2b4a942e938650080be828a34358a92a1687b2576a1b5747785b6c2b",
+      "session_id": "2022-09-22-1663833600-778fb-cv-emg-pose-demonstration@2",
+      "user_hash": "3193eff0817dce961621ea5466202926a756354d160e1dd2ee43238bc0ffcf0b"
+    },
+    {
+      "archive_bytes": 477200872,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 77014,
+      "participant_id": "737fb9d2eb",
+      "record_count": 32,
+      "session_hash": "296f72662f246d0eede97651ce857159d738546ffd72db72dae4e43024de54b4",
+      "session_id": "2022-11-16-1668585600-aa2f5-cv-emg-pose-demonstration@2",
+      "user_hash": "32bf195c48b45465aa88dd83e4e05f1733020c096b7038ccab985c16cdd5d828"
+    },
+    {
+      "archive_bytes": 642695504,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 104326,
+      "participant_id": "e86f1eaf2f",
+      "record_count": 30,
+      "session_hash": "51cf3963c42659806c71f0160d1036e05a0f6884d7f0c0db94e0f9b0f65ed4fd",
+      "session_id": "2022-09-13-1663056000-bf969-cv-emg-pose-train@2",
+      "user_hash": "3467d072cb575e43731c936d92bf2576983a3cb5179cd9de073e0c2ca3a42927"
+    },
+    {
+      "archive_bytes": 488674744,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 78914,
+      "participant_id": "b6fa6cd36f",
+      "record_count": 32,
+      "session_hash": "349dedb61132b15fa9efc007ea39f177784061028fa4ceba7d92ca5b7c6dcfe8",
+      "session_id": "2022-11-15-1668499200-06fb2-cv-emg-pose-demonstration@2",
+      "user_hash": "3546123aa8383c0362fce20c36758d28287c82ae0987a8b6f9e14089767d7465"
+    },
+    {
+      "archive_bytes": 697893272,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 113204,
+      "participant_id": "513ba531ad",
+      "record_count": 46,
+      "session_hash": "a07ea2d8c3877d851ab58948b8e2f674cd7c6d5f66cc2512dcf18e1ec4113d91",
+      "session_id": "2022-07-29-1659081600-ae2b7-cv-emg-pose-demonstration@2",
+      "user_hash": "357fcbc178249e23a4776db759b62db09e3339d95d87525dc14b3a2b8b440abc"
+    },
+    {
+      "archive_bytes": 756195304,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 122582,
+      "participant_id": "cdd070e9c3",
+      "record_count": 46,
+      "session_hash": "1984730bad7af56961949a22b219690d462dcd508cd739bd4e16fa91ccb59167",
+      "session_id": "2022-07-05-1657008000-09475-cv-emg-pose-demonstration@2",
+      "user_hash": "35ae0f635a7f05a92da9eebb4e05618bdea6155a6c52c513ba3c97cacb51a50b"
+    },
+    {
+      "archive_bytes": 621002896,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 101104,
+      "participant_id": "1152814359",
+      "record_count": 28,
+      "session_hash": "0b0027a41be0cb7a0f0c7a5c8993c6345ed32841bba6e48bea49f68ac886fcb8",
+      "session_id": "2022-06-09-1654761600-3aefb-cv-emg-pose-train@2",
+      "user_hash": "35e2638f3d7543f2f64b9135165c3c36c81d6294c72f6a098a74c01c6d88437e"
+    },
+    {
+      "archive_bytes": 558339088,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 90176,
+      "participant_id": "2cefcf6cba",
+      "record_count": 36,
+      "session_hash": "83755ca6f068626441c034b287eecd672e9b18776789f0cf955decb62bc4f5a7",
+      "session_id": "2022-08-02-1659427200-27150-cv-emg-pose-demonstration@2",
+      "user_hash": "374dea52fb787c7998cba42a38f99d3599c358fbbfa26d621b85c3a0a73f5071"
+    },
+    {
+      "archive_bytes": 658710680,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 106956,
+      "participant_id": "ec05871b7c",
+      "record_count": 30,
+      "session_hash": "6690e32e6af856bd535e681b2abed1538ea032c4e89250664fe97a8a8fc03f23",
+      "session_id": "2022-09-01-1662019200-1639c-cv-emg-pose-train@2",
+      "user_hash": "379566dd2fd7bfe2e296a4d7981bdf6b077a52ec8d615cb6336488ec5f4d7e60"
+    },
+    {
+      "archive_bytes": 494121968,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 79788,
+      "participant_id": "76bfc2d385",
+      "record_count": 32,
+      "session_hash": "78c8833d45b27c16ae3746251500019b9a9dee4455b9be09ce46038114a67bf4",
+      "session_id": "2022-10-10-1665388800-2b6cb-cv-emg-pose-demonstration@2",
+      "user_hash": "3b7391c0c94560e33f194f6ed9840959e6e0a1be80e27ecaa6504d88162baec1"
+    },
+    {
+      "archive_bytes": 656602928,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 123564,
+      "participant_id": "2942949786",
+      "record_count": 46,
+      "session_hash": "7dc105338d900108dc199d723bf9c1f5110a16fcd60282052423a1f43a77b2aa",
+      "session_id": "2022-06-10-1654848000-1484a-cv-emg-pose-demonstration@2",
+      "user_hash": "3c4e28f09e9172b94854a023eb04c9454c6600b61fdbacca05f9437b8f18d242"
+    },
+    {
+      "archive_bytes": 700482592,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 113338,
+      "participant_id": "f51770da75",
+      "record_count": 46,
+      "session_hash": "1ecc5550911dd7ea2bfea463bbebef1cd752083cf7c33aae740b7f40c3b5c7c0",
+      "session_id": "2022-07-25-1658736000-cf621-cv-emg-pose-demonstration@2",
+      "user_hash": "3c80482e7df2b55b45983ee029b3f7b8d752c7f03240d9621966330987181620"
+    },
+    {
+      "archive_bytes": 641823936,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 104178,
+      "participant_id": "b27941d454",
+      "record_count": 30,
+      "session_hash": "54ec18ee3a7dd59121c3af6fec7715b0b682956116d182ae927e36ec5635bb2c",
+      "session_id": "2022-10-26-1666771200-b60a3-cv-emg-pose-train@2",
+      "user_hash": "3d65b15e822b52cc313b08de8c027deab95a8463928485fd301ebdeabd615317"
+    },
+    {
+      "archive_bytes": 680060480,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 109776,
+      "participant_id": "af1317ea3d",
+      "record_count": 46,
+      "session_hash": "47c6e74f5578fe30b554d13bf39789a960727738d05dd8df60d71d17ca791722",
+      "session_id": "2022-07-21-1658390400-0f0b8-cv-emg-pose-demonstration@2",
+      "user_hash": "3dbfd77efad30b0626df525051250f285f8826ad9a6c7fb774937dcc580a81bb"
+    },
+    {
+      "archive_bytes": 579903088,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 94002,
+      "participant_id": "5c3e677177",
+      "record_count": 30,
+      "session_hash": "02d20ba52fda61eca9f69e8de12ac69af353a0cf9ed743aa173e14975f7f2cef",
+      "session_id": "2022-11-09-1667980800-1be21-cv-emg-pose-train@2",
+      "user_hash": "40418822110a7cd552e36603051c2486e932783f84b86936f5ca173bc0912409"
+    },
+    {
+      "archive_bytes": 641028216,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 104070,
+      "participant_id": "01aff754c1",
+      "record_count": 30,
+      "session_hash": "08adbf573bdd368178796d64d05c70c94cd1db62358480cd4c1914c0cfeed380",
+      "session_id": "2022-10-18-1666080000-c5b4b-cv-emg-pose-train@2",
+      "user_hash": "4261a08451fc112aa86d83e5b118c0a2cf130e03a033fb3813e7e410df49e645"
+    },
+    {
+      "archive_bytes": 602164552,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 97718,
+      "participant_id": "2251681168",
+      "record_count": 30,
+      "session_hash": "15d8fa1dd005b316289f7caedf38f8aaaf485b7d4044d23e5ddcca11891ce149",
+      "session_id": "2022-06-08-1654675200-9ceed-cv-emg-pose-train@2",
+      "user_hash": "4299f2c22f6e1594b08a25888cb979e908c7d53da23cbe767641932d30ec4e4e"
+    },
+    {
+      "archive_bytes": 809895536,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 131216,
+      "participant_id": "5058b0b5f2",
+      "record_count": 46,
+      "session_hash": "5ed73e433fbec989e3f63ec0427183d909d1ed204be6b782efcf6d37d007496f",
+      "session_id": "2022-08-02-1659427200-09722-cv-emg-pose-demonstration@2",
+      "user_hash": "44a2c73218551db9dba57ffb862a86705b0f663a726397a56992dc1b9d2ba5c9"
+    },
+    {
+      "archive_bytes": 638691064,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 103666,
+      "participant_id": "6076c7a1a2",
+      "record_count": 30,
+      "session_hash": "29fa2db7f46ab79aa9983cbe4e5da79792761dd6f7fcad0496fdeff3dc9fb273",
+      "session_id": "2022-10-21-1666339200-7af67-cv-emg-pose-train@2",
+      "user_hash": "46b8df5250a41bc0790735594f645d51f8f923c21744d9d400efcfbfec5ddcb5"
+    },
+    {
+      "archive_bytes": 713132488,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 115202,
+      "participant_id": "c2991a87f6",
+      "record_count": 46,
+      "session_hash": "68d5fcdca05c96c426c02c08f9866170b8cacc3b793a855fb25a1de5499f406c",
+      "session_id": "2022-07-27-1658908800-02f1b-cv-emg-pose-demonstration@2",
+      "user_hash": "484d1faf1eb73fbbd7dc62e37ad81f3ec8b8a7d2770e4a3d41a834b671969ba9"
+    },
+    {
+      "archive_bytes": 637050680,
+      "eligible_session_count": 2,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 103406,
+      "participant_id": "915e7ab7da",
+      "record_count": 30,
+      "session_hash": "282a7b6861f3dd379908a73b9503bf54b58f04f42367d8359c0ca84f8cf32522",
+      "session_id": "2022-10-19-1666166400-cfea7-cv-emg-pose-train@2",
+      "user_hash": "4861bc6062d3dde17604b7283e5a5404310d3a120c782d4ee91d8b94fc7153ae"
+    },
+    {
+      "archive_bytes": 671310416,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 109044,
+      "participant_id": "e51f6d97cf",
+      "record_count": 30,
+      "session_hash": "1ed175f25848f5ba9a0ed2e43fd12375f418b491d3d1a216de048832dd981125",
+      "session_id": "2022-09-07-1662537600-9b9d9-cv-emg-pose-train@2",
+      "user_hash": "4b2a7f8c4ea403cfbe7421b8886573c0ca122660a30e46a62481f57170d9425b"
+    },
+    {
+      "archive_bytes": 714464544,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 115306,
+      "participant_id": "65546ad185",
+      "record_count": 48,
+      "session_hash": "0b4c33ffafe33125440b93b662d91dadb9e8f1bd404aed9cfb30bd086e369992",
+      "session_id": "2022-10-14-1665734400-1b672-cv-emg-pose-demonstration@2",
+      "user_hash": "4d67a8b25e0c3f040bc7b9eeee109542d3c0d63debbc21572c275680f0545a0e"
+    },
+    {
+      "archive_bytes": 710279600,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 114996,
+      "participant_id": "f3d1d06b13",
+      "record_count": 46,
+      "session_hash": "3d3c42d083a13213db5afee68d13eb9bd8802568c50b183eb561458c999ad98f",
+      "session_id": "2022-08-31-1661932800-b7d96-cv-emg-pose-demonstration@2",
+      "user_hash": "4db52482d3667bb69df325e963cf2187bd78deaad6acdb1ebaf18eeab2439027"
+    },
+    {
+      "archive_bytes": 686095000,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 111486,
+      "participant_id": "4cf27a8135",
+      "record_count": 30,
+      "session_hash": "19dc00a45fa88cab9cf50f3ebd370bfff6f3ac9d34ef28a60215495888d190ec",
+      "session_id": "2022-07-19-1658217600-5f38d-cv-emg-pose-train@2",
+      "user_hash": "4dceb545b32ecee1ff991d6afe0e80343110a14549c813b4f81d659cbe713a05"
+    },
+    {
+      "archive_bytes": 468146232,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 75526,
+      "participant_id": "a91351ec22",
+      "record_count": 32,
+      "session_hash": "441c6262c2152ad15391be1b20ac7cc75223aa900b281c816ac5d4a4b26e820a",
+      "session_id": "2022-11-15-1668499200-e450f-cv-emg-pose-demonstration@2",
+      "user_hash": "4df1a440b4990dc468bebd3345c243a8d2ba9337c3fec1527a5c075b96f11fb5"
+    },
+    {
+      "archive_bytes": 651976320,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105848,
+      "participant_id": "2cc385c3cd",
+      "record_count": 30,
+      "session_hash": "65cdfa5d04414f9e2ae1189810db237559994b08e1dff62ac5b18869719a1289",
+      "session_id": "2022-09-15-1663228800-7f996-cv-emg-pose-train@2",
+      "user_hash": "4e089c99853ed830e3f09b848fa6744d8b0e8b7e8be4dd0a22b29fad865a1c90"
+    },
+    {
+      "archive_bytes": 761835264,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 123434,
+      "participant_id": "2668760727",
+      "record_count": 46,
+      "session_hash": "346326652842ac71b6ea2c9d8ea113b7ac2035f41519f86365306f4414436413",
+      "session_id": "2022-06-14-1655193600-41286-cv-emg-pose-demonstration@2",
+      "user_hash": "50ec83d4ea33c8f320e7f09388f21d0a09652545822ae9b6fd2fdc55b7d04b92"
+    },
+    {
+      "archive_bytes": 456222440,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 73566,
+      "participant_id": "2772dd6ee3",
+      "record_count": 32,
+      "session_hash": "3483005f91f419954d8a9fb2ac156edb856101ad743c2ad4b80f26da89ea7649",
+      "session_id": "2022-11-11-1668153600-5f9f0-cv-emg-pose-demonstration@2",
+      "user_hash": "523f880c44a2602961d1edecc6da6cd83ffcc0103bd036a88dbe4c3524ef472f"
+    },
+    {
+      "archive_bytes": 453795000,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 73154,
+      "participant_id": "0219627c14",
+      "record_count": 32,
+      "session_hash": "a6fc5510a7fda6e8f66e9fa7f39f651212e7ff76f5f8bd3cdf71ca100a9e327a",
+      "session_id": "2022-10-31-1667203200-37538-cv-emg-pose-demonstration@2",
+      "user_hash": "5446f24ef069407180f048da7962822e993b56daf7fbdfa59d865fbea73da6a1"
+    },
+    {
+      "archive_bytes": 625415688,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 104584,
+      "participant_id": "8d653d8587",
+      "record_count": 30,
+      "session_hash": "a11244aa68ee12783871ac8adcba01079ef41489da1de09d2199d02ba3d69454",
+      "session_id": "2022-12-05-1670227200-68489-cv-emg-pose-train@2",
+      "user_hash": "55e725b53d88a6e3f606d35f5259156f468280b2c9bc55d9d95b09e30fac7709"
+    },
+    {
+      "archive_bytes": 647416928,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105098,
+      "participant_id": "18449b9c12",
+      "record_count": 30,
+      "session_hash": "9fac9ba8b2a15e3e7a77b70e872128171878952052630cf156f429f8b938f287",
+      "session_id": "2022-10-07-1665129600-75015-cv-emg-pose-train@2",
+      "user_hash": "57f949d231358eeab44c2d922067cde19d2b0010abfcdeb3ff373bbe420dfcd3"
+    },
+    {
+      "archive_bytes": 789474152,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 128480,
+      "participant_id": "e5ffa40c92",
+      "record_count": 30,
+      "session_hash": "0ebe6c25fa0794982f4b95fbe3c19a5763c0a7b7842d03c6819c63b06f49c5a2",
+      "session_id": "2022-07-15-1657872000-1b810-cv-emg-pose-train@2",
+      "user_hash": "582938fd6af2836a2633aa9ccad07f346b8c9e757827b59f6319744e79069fa9"
+    },
+    {
+      "archive_bytes": 701970672,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 113356,
+      "participant_id": "eab042e9de",
+      "record_count": 46,
+      "session_hash": "044cd678c593069f688e469fbea6235f95093d184a133f31c3c8ead6d2f766fd",
+      "session_id": "2022-07-12-1657612800-6f603-cv-emg-pose-demonstration@2",
+      "user_hash": "58d8df72d31f9b8c2f62372204882df48568828cc9cbbaf97a2092e4bfa5f046"
+    },
+    {
+      "archive_bytes": 840899736,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 136648,
+      "participant_id": "d8b3b209f4",
+      "record_count": 46,
+      "session_hash": "04e6d8ae2701323dd5350a2df516167418afce2e4ffdac86547c21ea73417e95",
+      "session_id": "2022-06-28-1656403200-9181e-cv-emg-pose-demonstration@2",
+      "user_hash": "5a8dafe4456d637a34bd729816c250de510c9dd2442952e0ea7b621f2485eb4a"
+    },
+    {
+      "archive_bytes": 668170552,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 108526,
+      "participant_id": "06d17ebbe4",
+      "record_count": 30,
+      "session_hash": "1a96329cb7e068b6cdb3490c7103c4abfb1445e5993ae7a18b6fd1262a0d0856",
+      "session_id": "2022-09-30-1664524800-763c5-cv-emg-pose-train@2",
+      "user_hash": "5baadfdacbcfadc6f7e188d3d3c3c2bff2a118b6585d891a157b003f7b091fc3"
+    },
+    {
+      "archive_bytes": 629683392,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 102192,
+      "participant_id": "827c91d800",
+      "record_count": 30,
+      "session_hash": "128252eb3ae1b40b5af29fc87176d183ce5b4aefd345a4de45f07d107f4a49a5",
+      "session_id": "2022-11-17-1668672000-5a848-cv-emg-pose-train@2",
+      "user_hash": "5bc5245d22587d85d1675c6acad2400fb0de688e4f1894150fea73b49c0597e7"
+    },
+    {
+      "archive_bytes": 483295616,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 78008,
+      "participant_id": "2ae025bda1",
+      "record_count": 32,
+      "session_hash": "1a6bce377c1c9c4a8b935efe559a5356d5a3c3ad3d695b39df7ad8321d3fae84",
+      "session_id": "2022-09-22-1663833600-03943-cv-emg-pose-demonstration@2",
+      "user_hash": "5d00649a5913712e5083385232139d7cc02fd8ece265136024b1c658561bb7d9"
+    },
+    {
+      "archive_bytes": 490312088,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 79170,
+      "participant_id": "97a2aa29dd",
+      "record_count": 32,
+      "session_hash": "6b10237d2414ed7abe761e1946c857cfdfb3acddd17eaad0a38a64dc1e01f01a",
+      "session_id": "2022-09-20-1663660800-f48f3-cv-emg-pose-demonstration@2",
+      "user_hash": "5df2ea5b4d126cba67abe385822b5e35b49b638fb179f0df0fe3dcd055b335f1"
+    },
+    {
+      "archive_bytes": 651422440,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 109012,
+      "participant_id": "3976352430",
+      "record_count": 34,
+      "session_hash": "178813cadc9a23654f1f7e975caaf7c0e663184fb97e7bf13999167882dcb13d",
+      "session_id": "2022-06-14-1655193600-00144-cv-emg-pose-train@2",
+      "user_hash": "600ea80dfd93a21addcc564154bf878038a6d69817cbe761fbdeadf2566d2bd7"
+    },
+    {
+      "archive_bytes": 635503320,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 103416,
+      "participant_id": "937c4a3e64",
+      "record_count": 30,
+      "session_hash": "33a3311e45d1cfed5df7db4fe155838dc43419b61c13f47761a7a524df914156",
+      "session_id": "2022-07-27-1658908800-9394d-cv-emg-pose-train@2",
+      "user_hash": "6123c53144b089633761bc485cf76b8789084c4c9e81d2b3d472d70c878ede57"
+    },
+    {
+      "archive_bytes": 476545600,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 76912,
+      "participant_id": "a49cf31c6c",
+      "record_count": 32,
+      "session_hash": "197d0fc1f97efa9c2b1fb026a650caae54e4e5bf7a17333cd0d42c387edc159a",
+      "session_id": "2022-09-21-1663747200-fdbfe-cv-emg-pose-demonstration@2",
+      "user_hash": "626b937390af07b483164a0894eae186d18fd99ed99fe691c8911f2e38a153d0"
+    },
+    {
+      "archive_bytes": 697045840,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 113328,
+      "participant_id": "3f79dccf7a",
+      "record_count": 30,
+      "session_hash": "0bc97f7ddfb2a2550b48b40e64eeda77c1eede91b33b94b4f697d1c3a838f03d",
+      "session_id": "2022-07-12-1657612800-30646-cv-emg-pose-train@2",
+      "user_hash": "6417a4f8e634aaba39ccc76425aaa47aac5f8cb29aa219cd435dc8ba7e8c887a"
+    },
+    {
+      "archive_bytes": 642235552,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 104256,
+      "participant_id": "9fcad1a5cc",
+      "record_count": 30,
+      "session_hash": "0a5340aee2765ba998b7f40675f962ec27b426ca2a8af092b7acb79ad0d13218",
+      "session_id": "2022-10-19-1666166400-c2210-cv-emg-pose-train@2",
+      "user_hash": "64687de3e0382c683426efdb286b0395415c8662c572930c0b239efb30e5c4ff"
+    },
+    {
+      "archive_bytes": 651406624,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105774,
+      "participant_id": "a993d16f6e",
+      "record_count": 30,
+      "session_hash": "3ca0341ef2ac094e138a8b6e4fb3b06bc543ecade867fa4b2283f240d2fba054",
+      "session_id": "2022-10-12-1665561600-4d7c2-cv-emg-pose-train@2",
+      "user_hash": "654464d26c037e161845a9cec24ec7b085c2c070cca68bb9e980555962ddca11"
+    },
+    {
+      "archive_bytes": 465269632,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 75048,
+      "participant_id": "7411c05095",
+      "record_count": 32,
+      "session_hash": "0f8929bfa35a017445033918e8a7967255b8aea119f686c78d65681e3e996183",
+      "session_id": "2022-11-18-1668758400-d3781-cv-emg-pose-demonstration@2",
+      "user_hash": "658414e933fab9655220afe1ed51e262cbd13874e9b790a5bce254158089e586"
+    },
+    {
+      "archive_bytes": 697734888,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 112640,
+      "participant_id": "21cfae42e1",
+      "record_count": 46,
+      "session_hash": "1705e64116a7c31dfdb8afb7866b7243f57d2ba564d28be7d06cb2539747d60f",
+      "session_id": "2022-09-15-1663228800-967ca-cv-emg-pose-demonstration@2",
+      "user_hash": "671239fba2ecbe32daa6bb081de91e9378ce260e2d2d0dd35ad02988ce183b29"
+    },
+    {
+      "archive_bytes": 738333024,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 119582,
+      "participant_id": "7e08fa55fd",
+      "record_count": 46,
+      "session_hash": "3a09b43d8961f52e6cae93c1d20152e5b3addca6cf15f41fdda8614255edccac",
+      "session_id": "2022-07-06-1657094400-84cd9-cv-emg-pose-demonstration@2",
+      "user_hash": "6765e43651ee2cad134a945219bbb463a2635884e7df944562b0b7a38cc975ed"
+    },
+    {
+      "archive_bytes": 487519088,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 78718,
+      "participant_id": "323f919c83",
+      "record_count": 32,
+      "session_hash": "059e5d0ceedf72b4a4d3b33d409b1a25aea2a40d3dfd701dfb0dbc465d858341",
+      "session_id": "2022-10-04-1664870400-79aa0-cv-emg-pose-demonstration@2",
+      "user_hash": "68d29d058a63bdeb3d2bef3d89c6c8652f08cd7c307058d0502aacd555e46a33"
+    },
+    {
+      "archive_bytes": 460647008,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 74306,
+      "participant_id": "c664b157c0",
+      "record_count": 32,
+      "session_hash": "05855018c1d1e99c35bef4b37af37218b3bbb3b27cd81ef59eb9c66f5e8a354e",
+      "session_id": "2022-11-10-1668067200-63c38-cv-emg-pose-demonstration@2",
+      "user_hash": "68de19ec314e2d5eb96a851526a80ebad9e069f6eb5c0fa6c9e018acafc003b4"
+    },
+    {
+      "archive_bytes": 457203904,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 73714,
+      "participant_id": "34269a8572",
+      "record_count": 32,
+      "session_hash": "175983f89096e9011829932085e3994c618c841addadd30232d0c6e421221683",
+      "session_id": "2022-11-10-1668067200-6da94-cv-emg-pose-demonstration@2",
+      "user_hash": "698f626a74ec96cc8d635b59db6f37469628c550753381e454b0ec20d40517e6"
+    },
+    {
+      "archive_bytes": 471766112,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 76120,
+      "participant_id": "fba9f08c33",
+      "record_count": 32,
+      "session_hash": "57ef7d0663acd0a14f02bb9ad4d68bfe38174dd27ee8349b3da701c816bd7c41",
+      "session_id": "2022-11-02-1667376000-d1993-cv-emg-pose-demonstration@2",
+      "user_hash": "69c3d122853af9331420e22cb8128a2d226a7c7becf82b00be35661b5b37430d"
+    },
+    {
+      "archive_bytes": 668777664,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 108108,
+      "participant_id": "bd84652be9",
+      "record_count": 42,
+      "session_hash": "7294afa1165f53b2cebdf6d573a28180fba1b44b37ffad1e5c570298cb456216",
+      "session_id": "2022-04-14-1649923200-041a1-cv-emg-pose-demonstration@2",
+      "user_hash": "6e4cd8549ca344fdf15c20edb0c197e5d5cc27817846d9e7ff2cd7b46dae2610"
+    },
+    {
+      "archive_bytes": 700970632,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 113914,
+      "participant_id": "1c0b9963d7",
+      "record_count": 30,
+      "session_hash": "9129f2f5805b8a6cdfde63184bb8ecc99ac6f62541a68abc0bfb520a3b1463cc",
+      "session_id": "2022-07-19-1658217600-4607f-cv-emg-pose-train@2",
+      "user_hash": "6e9348ace21cc775651cd0795265b8419616f5e4aca98dd243ab166dfc1486bd"
+    },
+    {
+      "archive_bytes": 642638656,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 104310,
+      "participant_id": "20059f07ed",
+      "record_count": 30,
+      "session_hash": "4d271f976286344792ffe2d49da3e92151ffafab37db24059a62091ff35d41fe",
+      "session_id": "2022-10-21-1666339200-21aa9-cv-emg-pose-train@2",
+      "user_hash": "70a9b6a475249e9dfbc029d9ba25c4af5dc85718175a6c79615ff7718c5d9a8f"
+    },
+    {
+      "archive_bytes": 648088312,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105208,
+      "participant_id": "a485d3c03a",
+      "record_count": 30,
+      "session_hash": "028f089b0796b9a0bf2b81c0df4b28631e6df8c074e177693a71a956cb4bcf12",
+      "session_id": "2022-11-01-1667289600-ce4ee-cv-emg-pose-train@2",
+      "user_hash": "7257e952165a52b39e0e4d38c8e380cd3f52ad95c68b0ec73661dc7a7c9af0cc"
+    },
+    {
+      "archive_bytes": 751984112,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 122474,
+      "participant_id": "38a974a38e",
+      "record_count": 30,
+      "session_hash": "48937746c4b6a7b8ebb1e9e3619018f26353e2b9ca3526d981a4e04ea2cdc865",
+      "session_id": "2022-07-13-1657699200-54a30-cv-emg-pose-train@2",
+      "user_hash": "73808509113191422821a8f88efbea6ec4828f3ae0861baa77902a4312a6ce73"
+    },
+    {
+      "archive_bytes": 440182472,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 71372,
+      "participant_id": "b99b939f3f",
+      "record_count": 24,
+      "session_hash": "3d28e7fda393ab31dac895894a1ea1bdd2e565ff420d6e68dcd95f7d559b8487",
+      "session_id": "2022-07-13-1657699200-e6055-cv-emg-pose-train@2",
+      "user_hash": "75f68214228e42db8dd55b6f7d8836334b9d49eb77433c8991174563936e66f1"
+    },
+    {
+      "archive_bytes": 696764520,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 112844,
+      "participant_id": "2478d8eb54",
+      "record_count": 46,
+      "session_hash": "1541d83b436b00372223922e731986cb4163318d61689c3832f4af2b1033329c",
+      "session_id": "2022-07-14-1657785600-aac40-cv-emg-pose-demonstration@2",
+      "user_hash": "767c59babdc190a2d2e98db1e02e14badda7755f25a8cb6cb8c9b72475903b7c"
+    },
+    {
+      "archive_bytes": 723140624,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 117198,
+      "participant_id": "f0ff207f52",
+      "record_count": 46,
+      "session_hash": "4618cb7ab2ffa9f27b759707a8e35eecd0fe0ac2a1703fc51749ed05b4d0dd53",
+      "session_id": "2022-07-18-1658131200-a6320-cv-emg-pose-demonstration@2",
+      "user_hash": "78113c36ee72068d121ff03de83a3d1a4a0189f15866db4ecd93776a5227e640"
+    },
+    {
+      "archive_bytes": 720746016,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 116434,
+      "participant_id": "5ef3a0537e",
+      "record_count": 46,
+      "session_hash": "042449cbc44bac8f83de6c15def72b3ab2bf142220bd5c8133a115ab4b902833",
+      "session_id": "2022-09-12-1662969600-52279-cv-emg-pose-demonstration@2",
+      "user_hash": "7b2043c3a02b76a2b8fb1238df9faa0783190064e8b6929d7e1252e610784459"
+    },
+    {
+      "archive_bytes": 696055136,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 112378,
+      "participant_id": "effb699d16",
+      "record_count": 46,
+      "session_hash": "55e93b6f7ac231bfa3cc92cc94720d29dfbdc03061e08a48894d5c55fd49a974",
+      "session_id": "2022-08-04-1659600000-90710-cv-emg-pose-demonstration@2",
+      "user_hash": "7c2dedd5467ae1a6890ef15cd569e2691d2b5b0e4e3d41557d51020a4a68a18b"
+    },
+    {
+      "archive_bytes": 650808808,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105660,
+      "participant_id": "374b365235",
+      "record_count": 30,
+      "session_hash": "8081418caeee711abcc528d78f4d7ca2a208f12573fc73fc22562b484a8f081b",
+      "session_id": "2022-09-22-1663833600-f5b95-cv-emg-pose-train@2",
+      "user_hash": "7c4822980904a267235de561a4d3a015912ecc6c5304124749cdc14263220604"
+    },
+    {
+      "archive_bytes": 633162368,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 102760,
+      "participant_id": "22808ee66c",
+      "record_count": 30,
+      "session_hash": "80f87f42c1acbfdfdeab5ee06d680693eed5f9e5567f8eaba232130445c681fa",
+      "session_id": "2022-11-22-1669104000-69f54-cv-emg-pose-train@2",
+      "user_hash": "7c7146d403ae74f194d3b39504ad6dafa90ddeaf7721c1ec8a2870583b66cba0"
+    },
+    {
+      "archive_bytes": 721136048,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 117390,
+      "participant_id": "1407610453",
+      "record_count": 46,
+      "session_hash": "945a8500bcfcb435fdf56139c76bd355327d092f43d53714338f51c6980214b9",
+      "session_id": "2022-06-13-1655107200-8ece7-cv-emg-pose-demonstration@2",
+      "user_hash": "7d93e0ec5072505b58fef9b8251eb6fa3e41935f5c32d1899789168db05cd378"
+    },
+    {
+      "archive_bytes": 626339392,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 101626,
+      "participant_id": "65228c03b3",
+      "record_count": 30,
+      "session_hash": "442d7f9ed9eb87dadf07141b7eaa0035001e5ffcac47f5d8d0c4a1364c2c605c",
+      "session_id": "2022-11-16-1668585600-01bbb-cv-emg-pose-train@2",
+      "user_hash": "7e1acfff8d7c282d203cede9f4ab06a51dbd5a5973debf7fc9eaaed94f4a42a8"
+    },
+    {
+      "archive_bytes": 662547768,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 107614,
+      "participant_id": "a3bb314215",
+      "record_count": 30,
+      "session_hash": "5e03a2b62c154db7ff52e994b4cdf715a208a3cc92f43e9d21924d2464abea74",
+      "session_id": "2022-12-01-1669881600-bb12e-cv-emg-pose-train@2",
+      "user_hash": "7e1e79fde13001f3936aa5f8bcadadfb3dfdd4139dbb1fb780186dc611616d6a"
+    },
+    {
+      "archive_bytes": 475456064,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 76724,
+      "participant_id": "299b130307",
+      "record_count": 32,
+      "session_hash": "2fd03c1b32a90dff511119650fa55a74647f2a2019178a7c81831275ea7a2616",
+      "session_id": "2022-10-19-1666166400-f36b8-cv-emg-pose-demonstration@2",
+      "user_hash": "7f39328a575d6af7681d5c700ae282d095bc6f9bbb75f4a2f5c6a5367ba8b88d"
+    },
+    {
+      "archive_bytes": 655472928,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 106416,
+      "participant_id": "d89102dc16",
+      "record_count": 30,
+      "session_hash": "03ba2b42b8887f214ead54b86de838840871d80a8b6d564a5fc38693b8df49f6",
+      "session_id": "2022-09-27-1664265600-a5d51-cv-emg-pose-train@2",
+      "user_hash": "81d91a1dab072bcb3ecc55d66560ec97e54c4889c87a2ace599124892eebdcb5"
+    },
+    {
+      "archive_bytes": 644584256,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 104960,
+      "participant_id": "bd64911c18",
+      "record_count": 30,
+      "session_hash": "6c151dfa6f703b5d61d291ddc8ad5f1c3855085bfecefb067ad70c8030c66c64",
+      "session_id": "2022-11-22-1669104000-00017-cv-emg-pose-train@2",
+      "user_hash": "83165284850f62a413f7e425649d46356b5cb18dc6f15b92f5a4c04b8712e020"
+    },
+    {
+      "archive_bytes": 679989008,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 110792,
+      "participant_id": "057e6195fe",
+      "record_count": 30,
+      "session_hash": "31f96b6303173ea9d91fcea1f5c69534f036bbc85daabcce5f8d8d1a18faf9ee",
+      "session_id": "2022-07-28-1658995200-38ed4-cv-emg-pose-train@2",
+      "user_hash": "85230964e1d927cc3d86a6f3d095fa535acdc7a2fc0c3077cb4bca693724563e"
+    },
+    {
+      "archive_bytes": 698575904,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 113112,
+      "participant_id": "059f336bce",
+      "record_count": 46,
+      "session_hash": "014d2796cab836fa6682e51515ccebc259c92389c773b2edc830616212d1a468",
+      "session_id": "2022-08-31-1661932800-fc428-cv-emg-pose-demonstration@2",
+      "user_hash": "892653abdac34742f14ef7764581527797e8f7a71cc7ff6c05e6495a5eb1eac6"
+    },
+    {
+      "archive_bytes": 813886496,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 132626,
+      "participant_id": "751c72b291",
+      "record_count": 32,
+      "session_hash": "0ecc701a982515f1d98fa29e3207e8c5ca5b42f33f609d4b0e0d5ec365d3236d",
+      "session_id": "2022-05-18-1652860800-6e413-cv-emg-pose-train@2",
+      "user_hash": "898303033f8c4e77a10385318aaa1edc0abd82678ef45543c026d47722102256"
+    },
+    {
+      "archive_bytes": 698083848,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 113772,
+      "participant_id": "7b3e63f24d",
+      "record_count": 30,
+      "session_hash": "486ba2a79d222a6f9200dfb98e333ad1d90e491517764d0cbe7f918fc1b86300",
+      "session_id": "2022-05-17-1652774400-43548-cv-emg-pose-train@2",
+      "user_hash": "8d6de5e83f71b341b05d9a2a7d0af89e2ddb2f70923793057a6769f084b2e226"
+    },
+    {
+      "archive_bytes": 640070312,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 104266,
+      "participant_id": "66cb44c2dc",
+      "record_count": 30,
+      "session_hash": "a3c9713418b6357dcf54c898c1f94e06c9f1665ee58288a3c294decb7f669def",
+      "session_id": "2022-08-04-1659600000-0e9f8-cv-emg-pose-train@2",
+      "user_hash": "91a77831f76169ea65883a3b6e0b98bed26c1bc92cc38da5db23e9974ac43545"
+    },
+    {
+      "archive_bytes": 253371648,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 40844,
+      "participant_id": "232751bf39",
+      "record_count": 18,
+      "session_hash": "18b1f7140b4eb5e076357786e5fbb290886a50b16d587b13f0bb54e078a55486",
+      "session_id": "2022-09-16-1663315200-a65cc-cv-emg-pose-demonstration@2",
+      "user_hash": "92818313e4103169c808af3f57334d1b50a86eb9d5bc10b7a79f04a914cf6fb8"
+    },
+    {
+      "archive_bytes": 727971944,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 117994,
+      "participant_id": "5e30de9ee8",
+      "record_count": 46,
+      "session_hash": "124abcde907f3eac3224e08102e7ec837d49fa36bc5af8ec9c84fa1bcab771d7",
+      "session_id": "2022-07-28-1658995200-77840-cv-emg-pose-demonstration@2",
+      "user_hash": "94624d96349a63771c8938750b2cda053f82c5f256796853f9b7be689d801f51"
+    },
+    {
+      "archive_bytes": 461057408,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 74346,
+      "participant_id": "ae1ab56df2",
+      "record_count": 32,
+      "session_hash": "0ffd13f7c16badac3e2663accce60bbc80019dcb549f8668861ad8e7ec4ce34a",
+      "session_id": "2022-11-28-1669622400-1b623-cv-emg-pose-demonstration@2",
+      "user_hash": "95750f7b1a1f439e43330f6e9b7d468655ae22dec4089977386c6002b8619a71"
+    },
+    {
+      "archive_bytes": 634619592,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 103012,
+      "participant_id": "342248118e",
+      "record_count": 30,
+      "session_hash": "5c5ab6aa6e1858abd394eef3c2d0e26af929f72d3abc31d62c63ef88d7f3e3f5",
+      "session_id": "2022-11-17-1668672000-4df9c-cv-emg-pose-train@2",
+      "user_hash": "95ff146b94f74b3ea19f17ac6e440e277ede90d9f8dd721a7c6340823ff3bb6b"
+    },
+    {
+      "archive_bytes": 722039840,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 116666,
+      "participant_id": "fd7b487e8d",
+      "record_count": 46,
+      "session_hash": "6f60453668262caa440b84b3a69503c66bf8e8848b7b4ab83f92c039a74c9ddd",
+      "session_id": "2022-09-01-1662019200-01949-cv-emg-pose-demonstration@2",
+      "user_hash": "97e7c37edf1badbf5318cbe4819334733960551bde0d3eb2ce62ea7c9825e75e"
+    },
+    {
+      "archive_bytes": 694539544,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 112484,
+      "participant_id": "0ba89d682e",
+      "record_count": 46,
+      "session_hash": "1b6617377cb91dd7fe747f7dbf88f9574bfa7cc24d03efa52f3027ceca69eb48",
+      "session_id": "2022-07-22-1658476800-15c99-cv-emg-pose-demonstration@2",
+      "user_hash": "99ed6fe1dad309db124fc5391687d58cb5fad2c95a809df63c372bba589f90d8"
+    },
+    {
+      "archive_bytes": 483449592,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 78050,
+      "participant_id": "880c49a2d1",
+      "record_count": 32,
+      "session_hash": "033fd345f63f8feea84417423b9d916e72257bbd7fc7553be762c6090c4d0ff3",
+      "session_id": "2022-12-02-1669968000-4a59d-cv-emg-pose-demonstration@2",
+      "user_hash": "9a75307707d716a04014eff0e2beb12e80bb508174148da8516c0e4d86d089ad"
+    },
+    {
+      "archive_bytes": 637080624,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 103410,
+      "participant_id": "9c1a1875e7",
+      "record_count": 30,
+      "session_hash": "4c17dc5fa2d858e833cc823097f5669c3d05b1fb91744bc04f0865fd78a29568",
+      "session_id": "2022-11-03-1667462400-af5fc-cv-emg-pose-train@2",
+      "user_hash": "9aae960e438ad6615bfbc9a0f4212681afe19c2070cd3a05dd98c7857aed5a50"
+    },
+    {
+      "archive_bytes": 690793168,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 112228,
+      "participant_id": "7e11a60f88",
+      "record_count": 30,
+      "session_hash": "2f345d1aa863dea53873b2bc3ce729117b94c12e20f238fc8fa95c4fc01a4008",
+      "session_id": "2022-08-29-1661760000-2fa93-cv-emg-pose-train@2",
+      "user_hash": "9b788ba8d0cd33a0df2d431841adb009d467be04070ed04e146e5063e95ec7a1"
+    },
+    {
+      "archive_bytes": 704991824,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 113876,
+      "participant_id": "31b6cc13eb",
+      "record_count": 46,
+      "session_hash": "04d7c96503a35d9cbe9a45c61436fd472e405b1dcdd313683a1b12d8fabdaf89",
+      "session_id": "2022-08-01-1659340800-13b91-cv-emg-pose-demonstration@2",
+      "user_hash": "9e97dc9bc117c84c3f440370128d5ed2319c1a9ba31cad03fbf8e2324db37ec1"
+    },
+    {
+      "archive_bytes": 645527720,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 104796,
+      "participant_id": "ada8b78af8",
+      "record_count": 30,
+      "session_hash": "38ee89f0cc2b73e73ce4bab38859d7df0035884bd85587b8610f1bbaa85c8d49",
+      "session_id": "2022-09-27-1664265600-9778e-cv-emg-pose-train@2",
+      "user_hash": "9f14542d20f915376d7427c8da7df961ef876825ee66129928c1b5de4fd9e7a6"
+    },
+    {
+      "archive_bytes": 607951648,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 98612,
+      "participant_id": "1223558697",
+      "record_count": 30,
+      "session_hash": "01836c685b17d135f836fa757bd4a425ea778af038f64269842d4bbd0f06bd85",
+      "session_id": "2022-10-18-1666080000-ce01d-cv-emg-pose-train@2",
+      "user_hash": "a037dd36ac392419ea44c124c64f87c894d93f1a15b2c6e0b607fdc3002c4e46"
+    },
+    {
+      "archive_bytes": 832439536,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 135618,
+      "participant_id": "0625995630",
+      "record_count": 30,
+      "session_hash": "36cfd2abfa940a47fc030a800ffad00d0795485d037d89a7bf581aadd5efc19d",
+      "session_id": "2022-06-17-1655452800-714eb-cv-emg-pose-train@2",
+      "user_hash": "a39973e21d1146816ba9747db370facfa2c439f4049715956018a35e8cdca1c2"
+    },
+    {
+      "archive_bytes": 374086720,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 60330,
+      "participant_id": "ec7f7bbbcd",
+      "record_count": 26,
+      "session_hash": "67f73da519b3cd1d5f81d2819d00501fa853bee2538ad3a6822a9ec03069f9ba",
+      "session_id": "2022-09-20-1663660800-61e6b-cv-emg-pose-demonstration@2",
+      "user_hash": "a3b22b8897f4bbc664745302e921400df25f5f6d4b3e9ebfcc659ee17c80d257"
+    },
+    {
+      "archive_bytes": 694208488,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 112088,
+      "participant_id": "b7e608b482",
+      "record_count": 46,
+      "session_hash": "0c37e407eba4d2a30cddbbe0747aff32248fde63c21f55c2910ef8c2c1c86e10",
+      "session_id": "2022-09-14-1663142400-473fb-cv-emg-pose-demonstration@2",
+      "user_hash": "a4fa2166043e17e379d51f53f240aad308264f3ea288db6feb10f0a020bf00a4"
+    },
+    {
+      "archive_bytes": 697376624,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 112584,
+      "participant_id": "e666e9de6e",
+      "record_count": 46,
+      "session_hash": "37d6614faa114832e1f97524b51ec729eea1be0e17698ad7c5bc012381e00a3e",
+      "session_id": "2022-09-22-1663833600-afc84-cv-emg-pose-demonstration@2",
+      "user_hash": "a641f7a85012c4b3ece3ebd0d4f8c93cf1e6d7209c069294f2a1deeaeb8cd3a4"
+    },
+    {
+      "archive_bytes": 571833424,
+      "eligible_session_count": 9,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 92328,
+      "participant_id": "03d49b393e",
+      "record_count": 38,
+      "session_hash": "18fe71a3b07361e1e27441e91233eb2c094fd416ec88358bda7e97ee78fba851",
+      "session_id": "2022-04-13-1649836800-62d94-cv-emg-pose-demonstration@2",
+      "user_hash": "a685efc2a91af2bd717243f596a96fac85b6fd31e657ce8fa072e6eb3bce6444"
+    },
+    {
+      "archive_bytes": 669964608,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 108822,
+      "participant_id": "b5064e141f",
+      "record_count": 30,
+      "session_hash": "1171421570d401eeb3e353b6140ecee1062cc6d338af06fde621e0602be39c7d",
+      "session_id": "2022-10-24-1666598400-089c0-cv-emg-pose-train@2",
+      "user_hash": "a86696f8d5f276043e38eec6ef1184c2e1dcb8795f43b249406a5d6313fc2ce4"
+    },
+    {
+      "archive_bytes": 756801296,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 123106,
+      "participant_id": "456bd13d28",
+      "record_count": 30,
+      "session_hash": "2cedfc406bdccb073a3f25b9f9887e6a3403ced4d3c423aa688914fab42f09dd",
+      "session_id": "2022-07-08-1657267200-9414e-cv-emg-pose-train@2",
+      "user_hash": "ae927843e45efa07d1b8282d3922632bcfa1c649688ecfb8fbacacbbf3204c25"
+    },
+    {
+      "archive_bytes": 662188896,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 107530,
+      "participant_id": "831cb06e26",
+      "record_count": 30,
+      "session_hash": "0564bc1ba4e36e23a9f3ae446cc46fae3cf1177522ac31c795e52c94a7ca44f3",
+      "session_id": "2022-08-29-1661760000-d872d-cv-emg-pose-train@2",
+      "user_hash": "aecd34e0336fa13db117e1e8db8911758f7acbde6e5647d1694ccc2697e27f79"
+    },
+    {
+      "archive_bytes": 646921712,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105020,
+      "participant_id": "495869fa89",
+      "record_count": 30,
+      "session_hash": "10645ddcf06f6b5d12838b6cfaa7279564b983365ad6e57b3bc9a2e82e0941b9",
+      "session_id": "2022-10-05-1664956800-b347b-cv-emg-pose-train@2",
+      "user_hash": "aef7eb3297f8837b8d9a31a87db121a1a4aec85250c6557485f0b006f8d8cb1d"
+    },
+    {
+      "archive_bytes": 470663352,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 75944,
+      "participant_id": "2038d88aa3",
+      "record_count": 32,
+      "session_hash": "13498e122cdb45525df3e8548566068a56f346aadcdaaed4781bff9d1b0eb741",
+      "session_id": "2022-10-25-1666684800-7ab57-cv-emg-pose-demonstration@2",
+      "user_hash": "afed124604b9be42aae535bc8137079d8d91db4f7a840deec9b9dd35953c114f"
+    },
+    {
+      "archive_bytes": 470119952,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 75842,
+      "participant_id": "b12a8b6064",
+      "record_count": 32,
+      "session_hash": "2e0ead2e6776e5b2227e9ca7b307602c33559e15d0d22fca154e2bb4b21229a6",
+      "session_id": "2022-12-02-1669968000-d56c9-cv-emg-pose-demonstration@2",
+      "user_hash": "b16e2f88cc3500e76258f959164360fed6a33fdab43915b8da3f275bf2dd8747"
+    },
+    {
+      "archive_bytes": 650672464,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105636,
+      "participant_id": "9ea3bd3394",
+      "record_count": 30,
+      "session_hash": "02bb8b8c46b563f97b337ed544b6e467a744af0967a0ae606617551bb5b86e76",
+      "session_id": "2022-09-28-1664352000-b12b4-cv-emg-pose-train@2",
+      "user_hash": "b1d40e9bb611978bfe73a90f49c08c1231fe0a82d035f4b9e275addee9dcfd2c"
+    },
+    {
+      "archive_bytes": 569048632,
+      "eligible_session_count": 5,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 91868,
+      "participant_id": "82f6fe243f",
+      "record_count": 38,
+      "session_hash": "03995597a9749468958aec1fd94cee47b45911b8b3c6bd6b5aff12bc01fc5d6e",
+      "session_id": "2022-04-13-1649836800-e6cfb-cv-emg-pose-demonstration@2",
+      "user_hash": "b39364dfb7dfd85ccbfbb84427c92109cc2e36ca4f4e39da17e3a33f5a63de3f"
+    },
+    {
+      "archive_bytes": 481711016,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 77744,
+      "participant_id": "0adf4a785f",
+      "record_count": 32,
+      "session_hash": "46dfe8dc9eb6bc2953a0a5465f3c37bb84a21aa974ddf79d0b06e7a3c0c96d35",
+      "session_id": "2022-09-29-1664438400-06899-cv-emg-pose-demonstration@2",
+      "user_hash": "b5a859a459bfa4913ae7568d65bde8fc43dcbf01f3640dcc61c339c35abab806"
+    },
+    {
+      "archive_bytes": 485018512,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 78858,
+      "participant_id": "d9a33cf983",
+      "record_count": 20,
+      "session_hash": "65020a680e8fefd2db9b314435591d86ff10e9e616d18c4d4e3ed853aca029d2",
+      "session_id": "2022-10-11-1665475200-80844-cv-emg-pose-train@2",
+      "user_hash": "b5dda4cbe0137fa6b321132fbf8c5da4d9681c9eeef6b886d88de11cb704e5cd"
+    },
+    {
+      "archive_bytes": 634514864,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 102974,
+      "participant_id": "adc5269c79",
+      "record_count": 30,
+      "session_hash": "8b238428a9ce8f4e15081a265fc8a431cb1777ced1c64ddb9ec57db2c389fe05",
+      "session_id": "2022-10-24-1666598400-bc906-cv-emg-pose-train@2",
+      "user_hash": "b6b0514d77adcb261257de4db2a180bebca9655e9069b1ea7b2d63b6471d1a8b"
+    },
+    {
+      "archive_bytes": 475286584,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 76688,
+      "participant_id": "f3a4630adf",
+      "record_count": 32,
+      "session_hash": "0354ec701b9e2da21805ccf6e7893b1d246ffc3a751bc7d6fcd477bca8c6a745",
+      "session_id": "2022-11-21-1669017600-b61c8-cv-emg-pose-demonstration@2",
+      "user_hash": "b8466dd694e4f0d132f556906ddb01a94bed9a63389251f39ffa6db553774558"
+    },
+    {
+      "archive_bytes": 472017824,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 76152,
+      "participant_id": "a7f8802c08",
+      "record_count": 32,
+      "session_hash": "42e4df0cf04981b993b534209a39867888000f178fb08b4f0ad34b622593b4df",
+      "session_id": "2022-11-02-1667376000-e47b1-cv-emg-pose-demonstration@2",
+      "user_hash": "b85c00431cfeba4a6046b1be7150dbf1641511e7678d199bd5d0db776d95b6ce"
+    },
+    {
+      "archive_bytes": 661357152,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 107382,
+      "participant_id": "2af4aec870",
+      "record_count": 30,
+      "session_hash": "0c5a71c6bd0421d3b921d6fbbfb54b99a93cd284a045c75ff81a2810bb4d742c",
+      "session_id": "2022-09-13-1663056000-74597-cv-emg-pose-train@2",
+      "user_hash": "b9ccc2afe031dc04191e7415686487cb0d070c4d6acad73e38f4c444983bc24b"
+    },
+    {
+      "archive_bytes": 630378336,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 102302,
+      "participant_id": "03c48f96aa",
+      "record_count": 30,
+      "session_hash": "0c75247d6bd1ed519b4d55aa7655d77382b9b0767c669dcf20f47952fe53a3cc",
+      "session_id": "2022-10-26-1666771200-9a4a0-cv-emg-pose-train@2",
+      "user_hash": "ba1cfdba52c5c623a7bdd9ab192054fe0af9fe597cbd5183c95a0aa119ef155e"
+    },
+    {
+      "archive_bytes": 472096864,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 76168,
+      "participant_id": "1f6de69ab3",
+      "record_count": 32,
+      "session_hash": "1f902001d7699a3adf3369391b7dc201ab76d78c1f9be6e638f93143102bbdc5",
+      "session_id": "2022-10-31-1667203200-ca334-cv-emg-pose-demonstration@2",
+      "user_hash": "ba768ff663b942e92b4118fa410a4c2d67d9b998d8b13e9a7fc013a5635a9448"
+    },
+    {
+      "archive_bytes": 459966384,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 74423,
+      "participant_id": "77202ba0fc",
+      "record_count": 29,
+      "session_hash": "74ffdaafe8806321f972867c62c1a9e9b9e90e65623a69dfdb708085495c2a38",
+      "session_id": "2022-07-20-1658304000-abf16-cv-emg-pose-demonstration@2",
+      "user_hash": "bb8a5293698e3d35b34f25584d2bddd74f1617a7daf1ea1f642d8854d9db36c6"
+    },
+    {
+      "archive_bytes": 676566608,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 109164,
+      "participant_id": "7539cfcc1f",
+      "record_count": 46,
+      "session_hash": "27abaf65afc8dd7f0ec1d73afe57ce8a8efeaed2198c74a1ca6e1c1144ed3d8a",
+      "session_id": "2022-11-23-1669190400-3499e-cv-emg-pose-demonstration@2",
+      "user_hash": "bc9bf10e19944ea1bb1e3ac0eb5ec9e0c138d7a4e6a287179ee3a841d8aee1b9"
+    },
+    {
+      "archive_bytes": 710733592,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 115542,
+      "participant_id": "3b8495fc25",
+      "record_count": 30,
+      "session_hash": "283fa98a46d070f8bb7a55a52b4a67bbe541c22a570a73bdc0b6b0bc0871205b",
+      "session_id": "2022-07-21-1658390400-9f437-cv-emg-pose-train@2",
+      "user_hash": "be71f8e941569012fe9778f441dd117ec65f9e91cf6516458a63e72602d54ecb"
+    },
+    {
+      "archive_bytes": 473875568,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 76476,
+      "participant_id": "1b89ab145b",
+      "record_count": 32,
+      "session_hash": "0b8cf5e96e665060554382b8527f9fbe87dfdf67754305cf87138a52a3d2306a",
+      "session_id": "2022-11-14-1668412800-ffbd5-cv-emg-pose-demonstration@2",
+      "user_hash": "be7e65f877703c7883e122d6324b32decc2baff0b1f87c48e174366ffa0f3597"
+    },
+    {
+      "archive_bytes": 637726016,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 103502,
+      "participant_id": "947f4aad09",
+      "record_count": 30,
+      "session_hash": "3cc8811539e53af31f359a681b97a14896969054c7fcc08a1956bdc8d5448b36",
+      "session_id": "2022-10-27-1666857600-3ea84-cv-emg-pose-train@2",
+      "user_hash": "beda2f9384889161b9eca95d0db16e0c6f75965c7f7afb30a8f3fcdff7ca0d6a"
+    },
+    {
+      "archive_bytes": 631444160,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 102492,
+      "participant_id": "e5ecebd9aa",
+      "record_count": 30,
+      "session_hash": "09ca851a3bbbb55e9af102cd48aee121cf5400c9877302caa6ee3ccb55ad4802",
+      "session_id": "2022-11-01-1667289600-4827e-cv-emg-pose-train@2",
+      "user_hash": "bfe43f69f2aae3d448feb5bf67c5fb72103a7f1d96c6c43945035b2195e2a925"
+    },
+    {
+      "archive_bytes": 736147840,
+      "eligible_session_count": 2,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 119724,
+      "participant_id": "3669295621",
+      "record_count": 30,
+      "session_hash": "37024a2fd4c3a5d8fb5597fa8e95311003eeec762c2e297a56c9597f7f78a14d",
+      "session_id": "2022-06-16-1655366400-48fdf-cv-emg-pose-train@2",
+      "user_hash": "c0edb9e32c5f46e77333c79f4f28bbb462b3e2d68007dd58ccc83e479860dd34"
+    },
+    {
+      "archive_bytes": 672975272,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 109310,
+      "participant_id": "16923056b7",
+      "record_count": 30,
+      "session_hash": "045e35da6aa971ad1892b07a0cccb49ddba0def9bb2aee7ddd1e6ca4f954345b",
+      "session_id": "2022-09-16-1663315200-bfa9f-cv-emg-pose-train@2",
+      "user_hash": "c19989c6bb2f70f94a1dee3e6155957f909ef0fbe0d5ea0baa698f95ae701e6f"
+    },
+    {
+      "archive_bytes": 573071600,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 93344,
+      "participant_id": "0e0e34d703",
+      "record_count": 30,
+      "session_hash": "0752cd3a8fcacef5d163b2abb505ad2d190febe1b1e162957a2c9f9a28bcc919",
+      "session_id": "2022-11-23-1669190400-028e1-cv-emg-pose-train@2",
+      "user_hash": "c1e9b00ec789a7ba78af9a6bb52e1fecdfba624f7b6d8e61fba14c29356cfa3b"
+    },
+    {
+      "archive_bytes": 739985416,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 119892,
+      "participant_id": "e03cea741b",
+      "record_count": 46,
+      "session_hash": "45215f8c1378ec385aa85048c280f32b49c4e436a742b1566cf441a3259d8b23",
+      "session_id": "2022-07-07-1657180800-e0c9a-cv-emg-pose-demonstration@2",
+      "user_hash": "c1fc241d77149d2384f4832c7bc48a2a3298dd1d995fa6d933081cdd70af65db"
+    },
+    {
+      "archive_bytes": 465570744,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 75092,
+      "participant_id": "9f2bac1c05",
+      "record_count": 32,
+      "session_hash": "120b8c3639a12e0d0c9707371573b477d84ce216c7a11ad02cc32861fa17ecef",
+      "session_id": "2022-12-06-1670313600-12400-cv-emg-pose-demonstration@2",
+      "user_hash": "c373b691dd2b50ae2d6a99b012816c1f9efff638c43a2c7bced7d004e3d3b506"
+    },
+    {
+      "archive_bytes": 175860224,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 28372,
+      "participant_id": "2f97e4c26e",
+      "record_count": 12,
+      "session_hash": "b18ab2e983a27fd170fbd649f1e57265219ba2033b2810ac71c758eea1738d54",
+      "session_id": "2022-10-10-1665388800-26df2-cv-emg-pose-demonstration@2",
+      "user_hash": "c386f7d27eeb647bc242aade22975acb989cca7d51b13b595237b8c47c73dc48"
+    },
+    {
+      "archive_bytes": 632171936,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 102592,
+      "participant_id": "75ad09e541",
+      "record_count": 30,
+      "session_hash": "0429171fb9d668adee409c15ea7d204c6306647bef8f53d3e10505734eb3d381",
+      "session_id": "2022-11-07-1667808000-f56aa-cv-emg-pose-train@2",
+      "user_hash": "c4b5a50665cf85a62175958a084c4ea0fc6bcc0daba0c1572bf10e75a5ec933c"
+    },
+    {
+      "archive_bytes": 456328688,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 73572,
+      "participant_id": "7b5690f286",
+      "record_count": 32,
+      "session_hash": "1e725c15ab9c79cef26aed1b90ac2f33abeb155624ecccb4d3472f17b8e19163",
+      "session_id": "2022-09-09-1662710400-dcb38-cv-emg-pose-demonstration@2",
+      "user_hash": "c7e57c95d22273cff2ab97e4e91e44811451be517c1119783eb026a409eacde7"
+    },
+    {
+      "archive_bytes": 472808528,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 76280,
+      "participant_id": "d29fdc12bb",
+      "record_count": 32,
+      "session_hash": "49582b3b178b6f9292a9b1685deb76305830448605e3b9eeacda1e0bd0b2c37d",
+      "session_id": "2022-09-14-1663142400-5a783-cv-emg-pose-demonstration@2",
+      "user_hash": "c7fe73bb4b908001448cb3a60509fe435d004568121210b00e84c578ce5a994b"
+    },
+    {
+      "archive_bytes": 635569592,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 103150,
+      "participant_id": "e627a3984a",
+      "record_count": 30,
+      "session_hash": "8128c538865b90a6877ef67f7ae950cfc09c9f7b42353ab80cb9ad904b99e4d4",
+      "session_id": "2022-10-17-1665993600-b93aa-cv-emg-pose-train@2",
+      "user_hash": "c9143a9792d019f4448d506b0caff2b54a77fab1fe840e9a30e844f55695f9d8"
+    },
+    {
+      "archive_bytes": 463637456,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 74792,
+      "participant_id": "969483f088",
+      "record_count": 32,
+      "session_hash": "1d3b2bad50966803920b29399e185e29c81fe9a22c1b84d46defbdc4775f2d5b",
+      "session_id": "2022-11-08-1667894400-66494-cv-emg-pose-demonstration@2",
+      "user_hash": "c9573f3393214b1e4452dbb3ffe5a60a184892467ffa246e25d81aca262e7fdf"
+    },
+    {
+      "archive_bytes": 478414136,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 77218,
+      "participant_id": "fd5ce7691e",
+      "record_count": 32,
+      "session_hash": "0a18b72dc1bb16c4e7a49a583ad5dcb2bcfae073d226f6d38a6796d363092d51",
+      "session_id": "2022-10-06-1665043200-71677-cv-emg-pose-demonstration@2",
+      "user_hash": "c96a20ddadeb262a6b28adee28ce717cc27a4520f20be917fbbb0896e9e0fbbb"
+    },
+    {
+      "archive_bytes": 487247920,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 78668,
+      "participant_id": "8db8aaea3b",
+      "record_count": 32,
+      "session_hash": "048d9226c8ef975b1ee53d5727776afa0488efde7c8704ef7efc1d82474825e6",
+      "session_id": "2022-09-29-1664438400-cf48c-cv-emg-pose-demonstration@2",
+      "user_hash": "c96a4d86c70ea16455a6abc23683a98e92f58a53bbe7960fa84861493a10cce4"
+    },
+    {
+      "archive_bytes": 627794032,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 101864,
+      "participant_id": "2e17a57d54",
+      "record_count": 30,
+      "session_hash": "18fe380abc01bf8b2aeadc653e46cd68638b627dc169213971eb554dae82564e",
+      "session_id": "2022-10-14-1665734400-b163f-cv-emg-pose-train@2",
+      "user_hash": "cb102293d3fab39d86322567d4f3b0d907941114a4de03f0caaa83eef27d5d1d"
+    },
+    {
+      "archive_bytes": 703690704,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 113646,
+      "participant_id": "b1284f4935",
+      "record_count": 46,
+      "session_hash": "0b1e049784c2979bfea74f4d229a00efb384d754123b12f2703b8fc882fca639",
+      "session_id": "2022-10-17-1665993600-6ec79-cv-emg-pose-demonstration@2",
+      "user_hash": "cc8729eac3b984b941fb509b1a477f8602bdac9bcd62992b51601930f66c1eb6"
+    },
+    {
+      "archive_bytes": 743477432,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 121096,
+      "participant_id": "3108329190",
+      "record_count": 30,
+      "session_hash": "0da9175d224520ac7f6b1800b53562ac29ef334f81531f6bda1d3f4a00a9c115",
+      "session_id": "2022-07-06-1657094400-ad315-cv-emg-pose-train@2",
+      "user_hash": "cfbaff26e78f3cbd411777eb36b2e20e49f99c19d43a7834fe95c8bf636321a7"
+    },
+    {
+      "archive_bytes": 458329616,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 73914,
+      "participant_id": "cab34d1c74",
+      "record_count": 32,
+      "session_hash": "0cea2ff5d079cc5c79a61724984827f5136ff2b8698bf7cf29afa604bece0ff2",
+      "session_id": "2022-10-28-1666944000-3f819-cv-emg-pose-demonstration@2",
+      "user_hash": "d1dbe8099bd68206bad9fc0be9d9f044d01d5b529d8d97cfc5db49806db8ae21"
+    },
+    {
+      "archive_bytes": 476590896,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 76914,
+      "participant_id": "722aa7faff",
+      "record_count": 32,
+      "session_hash": "5a016ec93b19028240b0d857c4c678517aebf7de16b91497d33298a06858677e",
+      "session_id": "2022-10-28-1666944000-c1d23-cv-emg-pose-demonstration@2",
+      "user_hash": "d22e6cb6f44af5a06774ee3751f9821b1eaf760c864dcac385e8d502767d11b1"
+    },
+    {
+      "archive_bytes": 651619880,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105932,
+      "participant_id": "f6a246de38",
+      "record_count": 30,
+      "session_hash": "51e83b6fafc8f458c953586305b643c4ab60a9c7f670c942c4c362578995fc3d",
+      "session_id": "2022-06-06-1654502400-5d6a1-cv-emg-pose-train@2",
+      "user_hash": "d42067d620feb42fd5aa294a11711aaa867d0e774580610fbaa7a29b33e234c3"
+    },
+    {
+      "archive_bytes": 640310320,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 103942,
+      "participant_id": "5f75b1e7f6",
+      "record_count": 30,
+      "session_hash": "23e172be2622c28bc71262712379973ad7bf488caba3705cf39c17a170686242",
+      "session_id": "2022-11-07-1667808000-9004d-cv-emg-pose-train@2",
+      "user_hash": "d56318f534f38db746235639016a37a4b297ed4d83439066403254aa87833648"
+    },
+    {
+      "archive_bytes": 649366024,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105450,
+      "participant_id": "be762396f6",
+      "record_count": 30,
+      "session_hash": "333793b96f22fa439acf6df576c4ca27bf905d314e44d0f5a37a250242cf5d4d",
+      "session_id": "2022-07-18-1658131200-3e7c2-cv-emg-pose-train@2",
+      "user_hash": "d62bbb333f249b5f052bf7476a10f8b1b70150eb6b78338ab7a1ca8ee1fc0190"
+    },
+    {
+      "archive_bytes": 474814016,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 76620,
+      "participant_id": "2bbe806971",
+      "record_count": 32,
+      "session_hash": "1b8ad559ebc13731fb2a5428a5aceaa84f4a63d61d02a08aa002b1b73c59b2ab",
+      "session_id": "2022-11-29-1669708800-076e4-cv-emg-pose-demonstration@2",
+      "user_hash": "d66abb188029c996789f97ebdba08169de2e2529c8478a550efdea52b84080f5"
+    },
+    {
+      "archive_bytes": 748278536,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 121330,
+      "participant_id": "3175245a1b",
+      "record_count": 46,
+      "session_hash": "22284d4b67819e77c1ec480835c452d6800c9cfa4768bd670ea3678dd1bed57d",
+      "session_id": "2022-07-08-1657267200-e0629-cv-emg-pose-demonstration@2",
+      "user_hash": "d726c6ab27a36d6c834ce2bfe041d134a51155f05a6ce9e9187c145fddf403f1"
+    },
+    {
+      "archive_bytes": 861927568,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 139670,
+      "participant_id": "70ad60b9a1",
+      "record_count": 46,
+      "session_hash": "370086b7c44219979a748197775c0669e3d65319f5284674bbf0a5f6cc9ccb6c",
+      "session_id": "2022-08-03-1659513600-7afa5-cv-emg-pose-demonstration@2",
+      "user_hash": "d7cd7faf43e995b5490d8342d34bd30d4cb6d21be9c6f0fe3a94145f4a60d922"
+    },
+    {
+      "archive_bytes": 699593088,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 113292,
+      "participant_id": "ef59709d32",
+      "record_count": 46,
+      "session_hash": "3b3f1720be08bd50852bf20af78b58b586fedbd9442dda8fed90577dd7c08aa0",
+      "session_id": "2022-07-14-1657785600-89f0d-cv-emg-pose-demonstration@2",
+      "user_hash": "d9e62997caa3ce1fca308c5b627c6f6838a7338d69fd1aef0ad5ab52a2c400c8"
+    },
+    {
+      "archive_bytes": 744666072,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 124804,
+      "participant_id": "1896997952",
+      "record_count": 30,
+      "session_hash": "04f5852735c49d21f9576245829af64db4b7f58bad0ce4b4d9eb49290ce9d9fb",
+      "session_id": "2022-06-10-1654848000-6f2bf-cv-emg-pose-train@2",
+      "user_hash": "dce718995b822cf19ae5cd314e207359f7677eb4124a5c07043bf20de235040a"
+    },
+    {
+      "archive_bytes": 650402512,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105592,
+      "participant_id": "26a8454b40",
+      "record_count": 30,
+      "session_hash": "46c21a2464f1cdd7b0f5b5a40ad9b4d072d357f9c48f7230a547ce3ae69023c5",
+      "session_id": "2022-10-07-1665129600-ad0c8-cv-emg-pose-train@2",
+      "user_hash": "df0433fba0186e3dca1745f071d7d0bfef4a822d6a13718cb020f52d43f770df"
+    },
+    {
+      "archive_bytes": 719929624,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 116414,
+      "participant_id": "7016fd5330",
+      "record_count": 46,
+      "session_hash": "06e251d7bab3f080182ee282d0518b489eee7b3ca136a45f1c3e661c51e6432a",
+      "session_id": "2022-09-22-1663833600-3a143-cv-emg-pose-demonstration@2",
+      "user_hash": "e196321e90d3bdf3675d4bc74906a28fe5db2c22f2af795a10f8d2ae9e5b4b4c"
+    },
+    {
+      "archive_bytes": 769012704,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 125020,
+      "participant_id": "3875521008",
+      "record_count": 46,
+      "session_hash": "0e25b4d39a5a289dbfb4fed1f3266e1fb76a2db8439f2ed7dd788d6f814402bd",
+      "session_id": "2022-06-16-1655366400-930ef-cv-emg-pose-demonstration@2",
+      "user_hash": "e25cf12ce2746193c184243b5a4ac8f90658c0193c3a42f87e3e9ce47a0c622a"
+    },
+    {
+      "archive_bytes": 633576416,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 102822,
+      "participant_id": "79d6b65fef",
+      "record_count": 30,
+      "session_hash": "589681c9891f5f478d59722b7ae1b217b168bbd8c32341966491c37ec6ef9902",
+      "session_id": "2022-11-28-1669622400-dac61-cv-emg-pose-train@2",
+      "user_hash": "e3c81317049494801d6d2e3e8110116fc3020fe577869c2240b11c190b66ac52"
+    },
+    {
+      "archive_bytes": 754028848,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 122346,
+      "participant_id": "2d0838950a",
+      "record_count": 46,
+      "session_hash": "10ac0a071eb645050124f49b81a3b88abc64adf5dba85567ca90d4c73361ee8c",
+      "session_id": "2022-10-11-1665475200-3a3a5-cv-emg-pose-demonstration@2",
+      "user_hash": "e3eb556b2926db3ab7f6ff82f6591b2fc4d0b676ff6ee24e3f73916308f2787c"
+    },
+    {
+      "archive_bytes": 294709568,
+      "eligible_session_count": 1,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 47638,
+      "participant_id": "32473f0e96",
+      "record_count": 18,
+      "session_hash": "bb740fdcf35139cf42405df72e04c72e34af114edf03e89bdb7f8405de76fc6d",
+      "session_id": "2022-10-12-1665561600-bab71-cv-emg-pose-demonstration@2",
+      "user_hash": "e46c8c83c61386afea3199cfff74ec1a4f2a6a00cd9e43155726cc31fd76b601"
+    },
+    {
+      "archive_bytes": 656715832,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 106644,
+      "participant_id": "1066cc94fc",
+      "record_count": 30,
+      "session_hash": "38dd2b1ffd165e91fe4a294097dc68518986888eeadd2bd4d3c5d58a42b1e80b",
+      "session_id": "2022-07-29-1659081600-8c817-cv-emg-pose-train@2",
+      "user_hash": "e8e54200bb3a0c633da3391a8ba6d74bf8137f679cae8a13012c3dee0e96763b"
+    },
+    {
+      "archive_bytes": 642845984,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 104342,
+      "participant_id": "786ba539e1",
+      "record_count": 30,
+      "session_hash": "45ac92510162e65fa9ee226b759bdc4ef7f9d78329c72fb6ee807c3e30e42ecb",
+      "session_id": "2022-09-22-1663833600-789b7-cv-emg-pose-train@2",
+      "user_hash": "eb62f34cfffee3ac09be4631db55e1785d159cc89e3d6800714506f048984173"
+    },
+    {
+      "archive_bytes": 627978560,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 101902,
+      "participant_id": "f1bc3d19f7",
+      "record_count": 30,
+      "session_hash": "14f526ba26ade0d49a9e1044fea7692b6d7bbe91f0e90784838c706395bd25f6",
+      "session_id": "2022-11-08-1667894400-41a24-cv-emg-pose-train@2",
+      "user_hash": "ee02dc3168da78879a8f98a361e4481769c4e009dcbaabb2bda60dbbb13a983d"
+    },
+    {
+      "archive_bytes": 481837024,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 77782,
+      "participant_id": "0dc695684d",
+      "record_count": 32,
+      "session_hash": "2c7ca7418fce91a38baa024e6742dac07ec7ca43fa72b4e9d1ae6adb80547b11",
+      "session_id": "2022-09-30-1664524800-bc828-cv-emg-pose-demonstration@2",
+      "user_hash": "efd2722f0428d18d109e698cb9f55f292e830509c9c8fe4ab1073ae7d9d59557"
+    },
+    {
+      "archive_bytes": 677074592,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 109242,
+      "participant_id": "805d5c474a",
+      "record_count": 46,
+      "session_hash": "093381da68527bade4ceeab40c680fec6d0a9f6458a871410e2435769eda6d76",
+      "session_id": "2022-12-01-1669881600-4eb2b-cv-emg-pose-demonstration@2",
+      "user_hash": "f184c89dd3732fe9d31378df6d18392a0d9b5d619ca0a2f56c001ac3d53f2357"
+    },
+    {
+      "archive_bytes": 143576784,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 23602,
+      "participant_id": "3916480018",
+      "record_count": 8,
+      "session_hash": "06b3b788f8c9d902987e6df65c41f8797f568666ed56cb19acbd801910b43830",
+      "session_id": "2022-06-07-1654588800-3f7b5-cv-emg-pose-train@2",
+      "user_hash": "f2e16a43bd7cb6acd898ac0116e3a31409e7f629ecb5d556238caba97573df98"
+    },
+    {
+      "archive_bytes": 713874096,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 115716,
+      "participant_id": "84a77feea6",
+      "record_count": 46,
+      "session_hash": "6a39185923d4fa2d1a7aecea755df2a755bcc698c598f89c1de53f9940f183d2",
+      "session_id": "2022-08-03-1659513600-a6d15-cv-emg-pose-demonstration@2",
+      "user_hash": "f3673c34ddef3097312c516c914f85fdcec4b02a912a4ee665bf9e46f6fc1f23"
+    },
+    {
+      "archive_bytes": 637402864,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 103472,
+      "participant_id": "518feaea99",
+      "record_count": 30,
+      "session_hash": "36ab0745f26bdb3eb00a256eb5e04dd63898094cc5b6c9c99b7ec2c57df315ce",
+      "session_id": "2022-10-20-1666252800-34992-cv-emg-pose-train@2",
+      "user_hash": "f7f221ae2b307feba9943798033b299253909ad39ba49842d648169cba9c186c"
+    },
+    {
+      "archive_bytes": 708315272,
+      "eligible_session_count": 2,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 116510,
+      "participant_id": "3714261337",
+      "record_count": 30,
+      "session_hash": "63fab9748eb84f8327fde7101eadd115386724e147eb623c03003d11f229283a",
+      "session_id": "2022-06-15-1655280000-2b90e-cv-emg-pose-train@2",
+      "user_hash": "fac56e36a90e581657de29d6c1bce0660b93482030c03dfc8b429adebd05acb9"
+    },
+    {
+      "archive_bytes": 648237424,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105256,
+      "participant_id": "5359e252a0",
+      "record_count": 30,
+      "session_hash": "2e14f28b1b1318f8dcf1b0f26fda9d31cc6ea54aed5de48936ac8c8073e46caa",
+      "session_id": "2022-09-21-1663747200-13d3a-cv-emg-pose-train@2",
+      "user_hash": "fd9926f4e5a964f00761106bb3826eb4736ff7dae7d7c53de2bcbd3943cbd255"
+    },
+    {
+      "archive_bytes": 493853536,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 79762,
+      "participant_id": "195b39dad8",
+      "record_count": 32,
+      "session_hash": "2bced6b85e7601fa26ac45e65c59db8438f9be9b90d2c7f05d62a56f5a1a35f1",
+      "session_id": "2022-10-04-1664870400-c9abb-cv-emg-pose-demonstration@2",
+      "user_hash": "fdf91c90d502c9edeadf3a25b0e1ff6b6ef003ec34c1ae60e8ddb4b7ea2372a8"
+    },
+    {
+      "archive_bytes": 630763808,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 102364,
+      "participant_id": "055bb1b487",
+      "record_count": 30,
+      "session_hash": "0e18ef4975dc211a2222039deffe3944bc2ff2ce5716addc2db386238b2a739c",
+      "session_id": "2022-11-09-1667980800-36775-cv-emg-pose-train@2",
+      "user_hash": "fe05bf508d03794f7ad45c1bfc5dfb4e0eb81b663bd6d65acdc0f11940d9f578"
+    }
+  ],
+  "cohort_status": "PROSPECTIVE_METADATA_PREFLIGHT_FROZEN_FULL_VALIDITY_PENDING",
+  "discovery_participant_excluded": "d387095792",
+  "failure_policy": "stop without cohort replacement, session replacement, or reordering",
+  "locked_scientific_data_accessed": false,
+  "preflight_criteria": [
+    "nonempty participant and session IDs",
+    "finite positive start/end interval for every metadata recording",
+    "every named recording occurs once as a positive-size official tar HDF5 member",
+    "both left and right recording metadata are present",
+    "nominal 50-Hz capacity proxy >= 10000 after 1790-row context and first-block exclusion per record"
+  ],
+  "preflight_participant_count": 192,
+  "preflight_session_count": 745,
+  "schema_version": 1,
+  "scientific_outcomes_inspected": false,
+  "selected": [
+    {
+      "archive_bytes": 676220320,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 110040,
+      "participant_id": "ce52651f99",
+      "rank": 1,
+      "record_count": 30,
+      "session_hash": "16696a7f0102b722f5c8bba79a421f553f427c0fd8f0adedb270db1161223e84",
+      "session_id": "2022-09-06-1662451200-c4a49-cv-emg-pose-train@2",
+      "split": "DEV",
+      "user_hash": "01a8b626376d3cd50eaaa52cd03eb136016068e02a47929e5c8e39ec48786b10"
+    },
+    {
+      "archive_bytes": 658509280,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 107274,
+      "participant_id": "87aa3b3887",
+      "rank": 2,
+      "record_count": 30,
+      "session_hash": "254b13189adbdbdc851b4ede256ff3d28895852e61ca63093801da5fe3285029",
+      "session_id": "2022-08-30-1661846400-02aab-cv-emg-pose-train@2",
+      "split": "DEV",
+      "user_hash": "01b5590e778b8e5436eb9081e288ddcaf008af03381a2cf128b6d7d30150a7cf"
+    },
+    {
+      "archive_bytes": 625683056,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 101528,
+      "participant_id": "54c854b839",
+      "rank": 3,
+      "record_count": 30,
+      "session_hash": "2f47b3e2f5f72e15ebe082c06521d3cb6f5b0bf9d3fb5a14b27bf9f00d03bb5f",
+      "session_id": "2022-11-14-1668412800-0d677-cv-emg-pose-train@2",
+      "split": "DEV",
+      "user_hash": "02251a5b0e4aa52d7127da116b4e5d2b8eacfd61fdd8a7f201c0595de1dde19f"
+    },
+    {
+      "archive_bytes": 648641440,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105296,
+      "participant_id": "2e45fde443",
+      "rank": 4,
+      "record_count": 30,
+      "session_hash": "0758c4f7446fa6e65a864f0d0bf49a88830314e56c2a9cb47e36d2a51fc50aeb",
+      "session_id": "2022-10-03-1664784000-9635b-cv-emg-pose-train@2",
+      "split": "DEV",
+      "user_hash": "02a96b8192849f4c22f1b68e0bfc5704618cc3210047f6b8f55d06280beae1b9"
+    },
+    {
+      "archive_bytes": 633681144,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 102844,
+      "participant_id": "6a7fc66366",
+      "rank": 5,
+      "record_count": 30,
+      "session_hash": "26703c3b6a9f051675e292b98a69dd84230d8ad1f204c597524e92911844cd8b",
+      "session_id": "2022-11-18-1668758400-d7f6d-cv-emg-pose-train@2",
+      "split": "DEV",
+      "user_hash": "08a8271a731e89d9fa0bedb790bf5251edb1e6d80eb54e8beb9e7cf055cb519e"
+    },
+    {
+      "archive_bytes": 645953016,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105014,
+      "participant_id": "23b817e892",
+      "rank": 6,
+      "record_count": 30,
+      "session_hash": "4129c757087a3c6067d5a8f7fa500d93a73923885b275c15ab568390bebd939b",
+      "session_id": "2022-07-22-1658476800-247a3-cv-emg-pose-train@2",
+      "split": "DEV",
+      "user_hash": "092a47865458f1b4f5ca0e1bb56a81c27750886753967b8c2b4c4783a0605083"
+    },
+    {
+      "archive_bytes": 693703360,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 112714,
+      "participant_id": "2132c5d085",
+      "rank": 7,
+      "record_count": 30,
+      "session_hash": "574b69103c9ecde947c01eea694f57672b20d4c556e4ed1b0810bab6b47f1cb5",
+      "session_id": "2022-09-07-1662537600-44552-cv-emg-pose-train@2",
+      "split": "DEV",
+      "user_hash": "09bb4d537d180192956876023dbd1dcb43794757d1403a23a69142c4e36e0e8f"
+    },
+    {
+      "archive_bytes": 783475016,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 127896,
+      "participant_id": "2327817653",
+      "rank": 8,
+      "record_count": 30,
+      "session_hash": "3b53d33136e6f04db9164419d1e7d544343486546970c13990c3733933f202de",
+      "session_id": "2022-06-13-1655107200-7640c-cv-emg-pose-train@2",
+      "split": "DEV",
+      "user_hash": "0b68a340efdb6a747a449023f7fa9554fcb1d42acfc599e42b37db17e4f3104c"
+    },
+    {
+      "archive_bytes": 479155592,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 77332,
+      "participant_id": "47c605ad6f",
+      "rank": 9,
+      "record_count": 32,
+      "session_hash": "1b43b7bd47fba4e31bc4a917c2740e1edd435a14c558c438b7d90ec5d8fa6b36",
+      "session_id": "2022-10-20-1666252800-2307d-cv-emg-pose-demonstration@2",
+      "split": "DEV",
+      "user_hash": "0c67f50d2b5d277df9145ea6c835d5ec1e088da171d24728aae9dfa55fab85f7"
+    },
+    {
+      "archive_bytes": 646832792,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105016,
+      "participant_id": "2be40c4380",
+      "rank": 10,
+      "record_count": 30,
+      "session_hash": "5da7612660c53e57eda6acf32e62eedf21f50d1502b3e5c69c4564f88e4dd337",
+      "session_id": "2022-11-21-1669017600-d8a8b-cv-emg-pose-train@2",
+      "split": "DEV",
+      "user_hash": "0c9faf5ba44c79d1ad76e4843897b2a55cf41fc165b4d139821fefbc92145d4f"
+    },
+    {
+      "archive_bytes": 474854536,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 84890,
+      "participant_id": "29ddab35d7",
+      "rank": 11,
+      "record_count": 38,
+      "session_hash": "0091dc8ad75bf458b36a5e7e0d7459e37c9840b44c58b66a914eb63b3de339fa",
+      "session_id": "2022-04-07-1649318400-a9a00-cv-emg-pose-demonstration@2",
+      "split": "DEV",
+      "user_hash": "0dc63a8874334b8705cbedcfee83df5b670cfe74accb9465d8411eb9eee674f4"
+    },
+    {
+      "archive_bytes": 683613392,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 111166,
+      "participant_id": "0816388460",
+      "rank": 12,
+      "record_count": 40,
+      "session_hash": "71ce46a930c58964981dc3640cbca5a5eb2796cc4c486991fb06fb37fafeceb3",
+      "session_id": "2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2",
+      "split": "DEV",
+      "user_hash": "0eeb3277adb0fd43eeaf1f0d925072fbcd70adfc4004292693cfab6301cfa669"
+    },
+    {
+      "archive_bytes": 765432496,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 124126,
+      "participant_id": "7afcdcd6be",
+      "rank": 13,
+      "record_count": 46,
+      "session_hash": "2f2d914863f770230d1c4c36faacffa40f0bf8f39d105d77cca4c9a14ba6d511",
+      "session_id": "2022-07-26-1658822400-40f70-cv-emg-pose-demonstration@2",
+      "split": "DEV",
+      "user_hash": "0f89e36ff233b25ede0c60911ebe5028797598d994c2f2f7d0b3a9e6f11eae71"
+    },
+    {
+      "archive_bytes": 713287880,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 115844,
+      "participant_id": "8bd1c0ff16",
+      "rank": 14,
+      "record_count": 32,
+      "session_hash": "016c9b44728f0455e405362d7f53b9ccf7d838c4e6d8aef840954ad4371b7aaa",
+      "session_id": "2022-08-30-1661846400-b0a7b-cv-emg-pose-train@2",
+      "split": "DEV",
+      "user_hash": "113c357e9e50ff194aa9758a4d547759c76dba57559467800c93d6c70df2c318"
+    },
+    {
+      "archive_bytes": 690539664,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 111472,
+      "participant_id": "13b8b5f76d",
+      "rank": 15,
+      "record_count": 46,
+      "session_hash": "2e1db0c74183fb8fca5f771d620bebb39ce455efdfbda19a39edb7dd15e7e316",
+      "session_id": "2022-08-05-1659686400-20990-cv-emg-pose-demonstration@2",
+      "split": "DEV",
+      "user_hash": "1637500d418a27432309fcf62ae6af8abb48ea0ab1b219c6430cb63f1f1ff67b"
+    },
+    {
+      "archive_bytes": 468300664,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 75564,
+      "participant_id": "f1b6a408bf",
+      "rank": 16,
+      "record_count": 32,
+      "session_hash": "1b8ecbd5a1e3c4e2a31e3e61002fb22b0cdce75f0c2aad2968badf7bf6e5d734",
+      "session_id": "2022-11-11-1668153600-0b654-cv-emg-pose-demonstration@2",
+      "split": "DEV",
+      "user_hash": "1861b95dc2ce8e8508e5344cdcf9f002edfd3617acd96e179a59e46430d46b6c"
+    },
+    {
+      "archive_bytes": 653917360,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 106172,
+      "participant_id": "dd810188d9",
+      "rank": 17,
+      "record_count": 30,
+      "session_hash": "3365c52cb832c75ee463f5a2dc1cf208db66e363507ef83baa3968948096839e",
+      "session_id": "2022-10-03-1664784000-7c163-cv-emg-pose-train@2",
+      "split": "DEV",
+      "user_hash": "1b26405083c189480581111dc6f2222246518625fdf5fa0537d33057605c5b8b"
+    },
+    {
+      "archive_bytes": 640665696,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 104224,
+      "participant_id": "9b8c99cdc2",
+      "rank": 18,
+      "record_count": 30,
+      "session_hash": "097e33396cd6406840aab7eabb09d92590c23245a49d3054686ff3278ee8e7b5",
+      "session_id": "2022-08-22-1661155200-0a6e2-cv-emg-pose-train@2",
+      "split": "DEV",
+      "user_hash": "1e19ebc12f6068fdf3e58a4358870f51005ad6827afac8858a0706a9056472d4"
+    },
+    {
+      "archive_bytes": 715999512,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 115644,
+      "participant_id": "32cbfe3221",
+      "rank": 19,
+      "record_count": 46,
+      "session_hash": "088b03b99d2d056fa46d92faaf76227172b19e853b2f2f78f2a1fdcc36f49b52",
+      "session_id": "2022-09-02-1662105600-51cd5-cv-emg-pose-demonstration@2",
+      "split": "DEV",
+      "user_hash": "1e7e8454341e71f46464a5efd6d963768db0ec57c9a7cd3d0b9f3d8ea3c9e848"
+    },
+    {
+      "archive_bytes": 629752896,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 122996,
+      "participant_id": "3589743749",
+      "rank": 20,
+      "record_count": 50,
+      "session_hash": "22d046a1844403f38dd16a8552b69f0f78a1295fc4440ebf7817dc65efa82b28",
+      "session_id": "2022-06-17-1655452800-74e32-cv-emg-pose-demonstration@2",
+      "split": "DEV",
+      "user_hash": "1ec92f4982b044712620a9a49d4bf5b1ad9978e13cb417e08205b9806c1ab2b9"
+    },
+    {
+      "archive_bytes": 722508760,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 117034,
+      "participant_id": "60e5a2b0a4",
+      "rank": 21,
+      "record_count": 46,
+      "session_hash": "076988b67d724fde29d0f8533ec52f3274e790316c66b3382b3f8ab5cbaf526f",
+      "session_id": "2022-07-25-1658736000-cbea6-cv-emg-pose-demonstration@2",
+      "split": "CALIBRATION_LOCKED",
+      "user_hash": "1ef17d63e53d255629ea04f49254d8ef6c82f0cd21fcceb6d6bebafc66b4a3e3"
+    },
+    {
+      "archive_bytes": 725325776,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 117476,
+      "participant_id": "4e37b5eb0b",
+      "rank": 22,
+      "record_count": 46,
+      "session_hash": "39cfdfed017ba7b74e68318dd152c373539754410be293e024e540e0958e3928",
+      "session_id": "2022-07-26-1658822400-e55e7-cv-emg-pose-demonstration@2",
+      "split": "CALIBRATION_LOCKED",
+      "user_hash": "1f0d4cd093388d8e1915b87bae2fbedab94f8b5feeaa54a21c887b528981ec09"
+    },
+    {
+      "archive_bytes": 636506296,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 103680,
+      "participant_id": "9261f6ab56",
+      "rank": 23,
+      "record_count": 32,
+      "session_hash": "1fa7a0c629bc3404a450361ed162345b80043c83ce3e0eb4184691aef4e5e928",
+      "session_id": "2022-11-29-1669708800-946ec-cv-emg-pose-train@2",
+      "split": "CALIBRATION_LOCKED",
+      "user_hash": "201faaae2cc6217bb0b7526d074d9b6859e6dc939e1d55acc6dd6f9e96b97c21"
+    },
+    {
+      "archive_bytes": 153418784,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 24868,
+      "participant_id": "0f85d8939c",
+      "rank": 24,
+      "record_count": 8,
+      "session_hash": "1460aa5116fb669a540c35e85b5198c881a36a8d989f1aeb07f3e90f96af75e5",
+      "session_id": "2022-10-27-1666857600-12e5c-cv-emg-pose-train@2",
+      "split": "CALIBRATION_LOCKED",
+      "user_hash": "20b5b4cef92e2820ff8d8b93e902436c59a42c6fe4d21fb3a4b851d25e2458f3"
+    },
+    {
+      "archive_bytes": 695154536,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 112234,
+      "participant_id": "13ba969d01",
+      "rank": 25,
+      "record_count": 46,
+      "session_hash": "11e812bbb8ed94e4684a77b576c58905a008b79850cfe948fcec264548f02ee3",
+      "session_id": "2022-12-05-1670227200-7b84f-cv-emg-pose-demonstration@2",
+      "split": "CALIBRATION_LOCKED",
+      "user_hash": "2137f9f3a9242f63ce9a812aa4ffca8792ece5364ae9ba64c48e579bb7952865"
+    },
+    {
+      "archive_bytes": 613545264,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 99322,
+      "participant_id": "4c4bfe28ea",
+      "rank": 26,
+      "record_count": 38,
+      "session_hash": "0f5727490ee768f47b93949d4d96690e0a45925f66858eec3633a04e14d0534a",
+      "session_id": "2022-04-12-1649750400-4351b-cv-emg-pose-demonstration@2",
+      "split": "CALIBRATION_LOCKED",
+      "user_hash": "216fbc097d43ecf92f63ef88be2c75b0bb7fa7a0b66e78052dd294b23280d8f5"
+    },
+    {
+      "archive_bytes": 483517536,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 78044,
+      "participant_id": "05026be68a",
+      "rank": 27,
+      "record_count": 32,
+      "session_hash": "128ab0b859ef6d7ecfb827ad8e68edfb48109c8dadbd6d787ba8b437cd713184",
+      "session_id": "2022-09-28-1664352000-52772-cv-emg-pose-demonstration@2",
+      "split": "CALIBRATION_LOCKED",
+      "user_hash": "26fe4af04b00443888aa445123881d394743eeddc89b11bdd5092de5c4ee1e33"
+    },
+    {
+      "archive_bytes": 641178544,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 104078,
+      "participant_id": "9fc18a9307",
+      "rank": 28,
+      "record_count": 30,
+      "session_hash": "3cc41cb61d477553b53ce54dc66199a99956763ac8924f526231b41a5221dafc",
+      "session_id": "2022-08-22-1661155200-607bc-cv-emg-pose-train@2",
+      "split": "CALIBRATION_LOCKED",
+      "user_hash": "279adb6ecbfbbab67390225c0408a4c76a606382478a5f4e3ba46c14ca29fe05"
+    },
+    {
+      "archive_bytes": 647439424,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 105112,
+      "participant_id": "d999a1ad10",
+      "rank": 29,
+      "record_count": 30,
+      "session_hash": "43d9fbade984ca8cb8dc0abc787f6e6e551f025f36db00242622b0bb409faee9",
+      "session_id": "2022-10-06-1665043200-74302-cv-emg-pose-train@2",
+      "split": "CALIBRATION_LOCKED",
+      "user_hash": "2923b174fe10a424676406642ef2f32f463ddeb8cadae86054efab40939f6fa6"
+    },
+    {
+      "archive_bytes": 682672112,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 110908,
+      "participant_id": "91e58c0561",
+      "rank": 30,
+      "record_count": 30,
+      "session_hash": "0fd3f4a00e040debc51d8e97a6ce46fc71bd8985403bbecb15bcf4807e3f0f30",
+      "session_id": "2022-09-12-1662969600-5c4cd-cv-emg-pose-train@2",
+      "split": "CALIBRATION_LOCKED",
+      "user_hash": "2bb6594261faf65c63baef807d2cfb6365ea36f2e52ee6a245721ce7fe5a55b5"
+    },
+    {
+      "archive_bytes": 694289960,
+      "eligible_session_count": 3,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 112080,
+      "participant_id": "ab228f34a5",
+      "rank": 31,
+      "record_count": 46,
+      "session_hash": "179ba00e7df607ee5a08e8878c774677038c5d4df380100752ab1f53aea869f9",
+      "session_id": "2022-10-05-1664956800-5974f-cv-emg-pose-demonstration@2",
+      "split": "VALIDATION",
+      "user_hash": "2c3c6c0727391e6251a7d9e102c57aeb62a8ea0b46add684e619d1d95ff1ca14"
+    },
+    {
+      "archive_bytes": 728763472,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 118036,
+      "participant_id": "8e69533c16",
+      "rank": 32,
+      "record_count": 40,
+      "session_hash": "2dab4c0aeb139aa0895db444cf5df9bf01660e0ee29e2413ad8cd366a8563a6c",
+      "session_id": "2022-06-08-1654675200-3234f-cv-emg-pose-train@2",
+      "split": "VALIDATION",
+      "user_hash": "2c669d70b8b1f30b23f9ce5c1a82385b9e3a3d2e78ab6edc31f7a3238188b2be"
+    },
+    {
+      "archive_bytes": 663451712,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 107756,
+      "participant_id": "9e7c5def0b",
+      "rank": 33,
+      "record_count": 30,
+      "session_hash": "378d23e821b5a1110c103c3850c6911497a5e02f2c6f99ec1eef2914f78307e4",
+      "session_id": "2022-07-20-1658304000-03bfa-cv-emg-pose-train@2",
+      "split": "VALIDATION",
+      "user_hash": "301d671ce1fe4ddb8953cb0d1ed247b825767c5ca4ff974a49159745457da5f5"
+    },
+    {
+      "archive_bytes": 708716552,
+      "eligible_session_count": 2,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 115576,
+      "participant_id": "76932c8337",
+      "rank": 34,
+      "record_count": 30,
+      "session_hash": "1655ee81b67d82014d3661b159ea0f020b0d82f3c9b2cc38f8a6f4bb541e9cd6",
+      "session_id": "2022-07-05-1657008000-12581-cv-emg-pose-train@2",
+      "split": "VALIDATION",
+      "user_hash": "31809bfccd25f1f676aa267e48e07e52a7d5d0304adb5840e1123426de5503ef"
+    },
+    {
+      "archive_bytes": 488601024,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 78874,
+      "participant_id": "92f25d4f36",
+      "rank": 35,
+      "record_count": 32,
+      "session_hash": "3b592ddf2b4a942e938650080be828a34358a92a1687b2576a1b5747785b6c2b",
+      "session_id": "2022-09-22-1663833600-778fb-cv-emg-pose-demonstration@2",
+      "split": "VALIDATION",
+      "user_hash": "3193eff0817dce961621ea5466202926a756354d160e1dd2ee43238bc0ffcf0b"
+    },
+    {
+      "archive_bytes": 477200872,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 77014,
+      "participant_id": "737fb9d2eb",
+      "rank": 36,
+      "record_count": 32,
+      "session_hash": "296f72662f246d0eede97651ce857159d738546ffd72db72dae4e43024de54b4",
+      "session_id": "2022-11-16-1668585600-aa2f5-cv-emg-pose-demonstration@2",
+      "split": "VALIDATION",
+      "user_hash": "32bf195c48b45465aa88dd83e4e05f1733020c096b7038ccab985c16cdd5d828"
+    },
+    {
+      "archive_bytes": 642695504,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 104326,
+      "participant_id": "e86f1eaf2f",
+      "rank": 37,
+      "record_count": 30,
+      "session_hash": "51cf3963c42659806c71f0160d1036e05a0f6884d7f0c0db94e0f9b0f65ed4fd",
+      "session_id": "2022-09-13-1663056000-bf969-cv-emg-pose-train@2",
+      "split": "VALIDATION",
+      "user_hash": "3467d072cb575e43731c936d92bf2576983a3cb5179cd9de073e0c2ca3a42927"
+    },
+    {
+      "archive_bytes": 488674744,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 78914,
+      "participant_id": "b6fa6cd36f",
+      "rank": 38,
+      "record_count": 32,
+      "session_hash": "349dedb61132b15fa9efc007ea39f177784061028fa4ceba7d92ca5b7c6dcfe8",
+      "session_id": "2022-11-15-1668499200-06fb2-cv-emg-pose-demonstration@2",
+      "split": "VALIDATION",
+      "user_hash": "3546123aa8383c0362fce20c36758d28287c82ae0987a8b6f9e14089767d7465"
+    },
+    {
+      "archive_bytes": 697893272,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 113204,
+      "participant_id": "513ba531ad",
+      "rank": 39,
+      "record_count": 46,
+      "session_hash": "a07ea2d8c3877d851ab58948b8e2f674cd7c6d5f66cc2512dcf18e1ec4113d91",
+      "session_id": "2022-07-29-1659081600-ae2b7-cv-emg-pose-demonstration@2",
+      "split": "FINAL_TEST_LOCKED",
+      "user_hash": "357fcbc178249e23a4776db759b62db09e3339d95d87525dc14b3a2b8b440abc"
+    },
+    {
+      "archive_bytes": 756195304,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 122582,
+      "participant_id": "cdd070e9c3",
+      "rank": 40,
+      "record_count": 46,
+      "session_hash": "1984730bad7af56961949a22b219690d462dcd508cd739bd4e16fa91ccb59167",
+      "session_id": "2022-07-05-1657008000-09475-cv-emg-pose-demonstration@2",
+      "split": "FINAL_TEST_LOCKED",
+      "user_hash": "35ae0f635a7f05a92da9eebb4e05618bdea6155a6c52c513ba3c97cacb51a50b"
+    },
+    {
+      "archive_bytes": 621002896,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 101104,
+      "participant_id": "1152814359",
+      "rank": 41,
+      "record_count": 28,
+      "session_hash": "0b0027a41be0cb7a0f0c7a5c8993c6345ed32841bba6e48bea49f68ac886fcb8",
+      "session_id": "2022-06-09-1654761600-3aefb-cv-emg-pose-train@2",
+      "split": "FINAL_TEST_LOCKED",
+      "user_hash": "35e2638f3d7543f2f64b9135165c3c36c81d6294c72f6a098a74c01c6d88437e"
+    },
+    {
+      "archive_bytes": 558339088,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 90176,
+      "participant_id": "2cefcf6cba",
+      "rank": 42,
+      "record_count": 36,
+      "session_hash": "83755ca6f068626441c034b287eecd672e9b18776789f0cf955decb62bc4f5a7",
+      "session_id": "2022-08-02-1659427200-27150-cv-emg-pose-demonstration@2",
+      "split": "FINAL_TEST_LOCKED",
+      "user_hash": "374dea52fb787c7998cba42a38f99d3599c358fbbfa26d621b85c3a0a73f5071"
+    },
+    {
+      "archive_bytes": 658710680,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 106956,
+      "participant_id": "ec05871b7c",
+      "rank": 43,
+      "record_count": 30,
+      "session_hash": "6690e32e6af856bd535e681b2abed1538ea032c4e89250664fe97a8a8fc03f23",
+      "session_id": "2022-09-01-1662019200-1639c-cv-emg-pose-train@2",
+      "split": "FINAL_TEST_LOCKED",
+      "user_hash": "379566dd2fd7bfe2e296a4d7981bdf6b077a52ec8d615cb6336488ec5f4d7e60"
+    },
+    {
+      "archive_bytes": 494121968,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 79788,
+      "participant_id": "76bfc2d385",
+      "rank": 44,
+      "record_count": 32,
+      "session_hash": "78c8833d45b27c16ae3746251500019b9a9dee4455b9be09ce46038114a67bf4",
+      "session_id": "2022-10-10-1665388800-2b6cb-cv-emg-pose-demonstration@2",
+      "split": "FINAL_TEST_LOCKED",
+      "user_hash": "3b7391c0c94560e33f194f6ed9840959e6e0a1be80e27ecaa6504d88162baec1"
+    },
+    {
+      "archive_bytes": 656602928,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 123564,
+      "participant_id": "2942949786",
+      "rank": 45,
+      "record_count": 46,
+      "session_hash": "7dc105338d900108dc199d723bf9c1f5110a16fcd60282052423a1f43a77b2aa",
+      "session_id": "2022-06-10-1654848000-1484a-cv-emg-pose-demonstration@2",
+      "split": "FINAL_TEST_LOCKED",
+      "user_hash": "3c4e28f09e9172b94854a023eb04c9454c6600b61fdbacca05f9437b8f18d242"
+    },
+    {
+      "archive_bytes": 700482592,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 113338,
+      "participant_id": "f51770da75",
+      "rank": 46,
+      "record_count": 46,
+      "session_hash": "1ecc5550911dd7ea2bfea463bbebef1cd752083cf7c33aae740b7f40c3b5c7c0",
+      "session_id": "2022-07-25-1658736000-cf621-cv-emg-pose-demonstration@2",
+      "split": "FINAL_TEST_LOCKED",
+      "user_hash": "3c80482e7df2b55b45983ee029b3f7b8d752c7f03240d9621966330987181620"
+    },
+    {
+      "archive_bytes": 641823936,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 104178,
+      "participant_id": "b27941d454",
+      "rank": 47,
+      "record_count": 30,
+      "session_hash": "54ec18ee3a7dd59121c3af6fec7715b0b682956116d182ae927e36ec5635bb2c",
+      "session_id": "2022-10-26-1666771200-b60a3-cv-emg-pose-train@2",
+      "split": "FINAL_TEST_LOCKED",
+      "user_hash": "3d65b15e822b52cc313b08de8c027deab95a8463928485fd301ebdeabd615317"
+    },
+    {
+      "archive_bytes": 680060480,
+      "eligible_session_count": 4,
+      "hands": [
+        "left",
+        "right"
+      ],
+      "nominal_50hz_capacity_proxy": 109776,
+      "participant_id": "af1317ea3d",
+      "rank": 48,
+      "record_count": 46,
+      "session_hash": "47c6e74f5578fe30b554d13bf39789a960727738d05dd8df60d71d17ca791722",
+      "session_id": "2022-07-21-1658390400-0f0b8-cv-emg-pose-demonstration@2",
+      "split": "FINAL_TEST_LOCKED",
+      "user_hash": "3dbfd77efad30b0626df525051250f285f8826ad9a6c7fb774937dcc580a81bb"
+    }
+  ],
+  "source": {
+    "archive_hdf5_members": 25253,
+    "metadata_csv_sha256": "0e7ad04a79a0f162385d22ec8d6f43af9b8360978ca11ef9d601bbf9594b09e6",
+    "metadata_file_rows": 25253,
+    "tar_content_length": 462824048640,
+    "tar_etag": "\"62df27ac9a04800702061bac0ac1af32-6897\"",
+    "tar_index_jsonl_sha256": "0fd7977638cd9e090f46643f5c8e19c58a163a0d136742bbcdbe2204ce94ad36",
+    "tar_url": "https://fb-ctrl-oss.s3.amazonaws.com/emg2pose/emg2pose_dataset.tar"
+  },
+  "split_counts": {
+    "CALIBRATION_LOCKED": 10,
+    "DEV": 20,
+    "FINAL_TEST_LOCKED": 10,
+    "VALIDATION": 8
+  },
+  "task": "COMMON-POSE-GATE4B-20260922-COHORT-FREEZE",
+  "unverified_before_inference": [
+    "per-file HDF5 parseability and EMG/joint-angle stream presence",
+    "exact per-record timestamp alignment",
+    "GT-valid and prediction-valid complete 40-row block counts",
+    "actual >=10000 eligible 50-Hz frames per frozen session"
+  ]
+}

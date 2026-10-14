@@ -1,0 +1,28 @@
+% Reviewer-directed narrative revision; all edits mapped to REVIEW_ORIGINAL.txt.
+% Layout review draft; not a submission-ready manuscript.
+\RequirePackage[T1]{fontenc}
+\documentclass[conference,letterpaper]{IEEEtran}
+\usepackage{cite}
+\usepackage{float,stfloats}
+\setcounter{dblbotnumber}{2}
+
+\usepackage{amsmath,amssymb,dsfont,graphicx,array,booktabs}
+\usepackage{mathptmx}
+\usepackage[hidelinks]{hyperref}
+% Compact float/display spacing; IEEE body font, class, margins unchanged.
+\setlength{\textfloatsep}{6pt plus 2pt minus 2pt}
+\setlength{\dbltextfloatsep}{6pt plus 2pt minus 2pt}
+\setlength{\floatsep}{6pt plus 2pt minus 2pt}
+\setlength{\dblfloatsep}{6pt plus 2pt minus 2pt}
+\AtBeginDocument{\setlength{\abovedisplayskip}{5pt}\setlength{\belowdisplayskip}{5pt}\setlength{\abovedisplayshortskip}{4pt}\setlength{\belowdisplayshortskip}{4pt}}
+\title{Decision Fidelity Across Frozen Pose Consumers Under EMG-Based Input Substitution}
+\author{\IEEEauthorblockN{Boyan Dong}\IEEEauthorblockA{\textit{School of Biological Science and Medical Engineering}\\\textit{Southeast University}\\Nanjing, China\\yan494815@gmail.com}}
+\begin{document}
+\raggedbottom
+\maketitle
+\input{manuscript.tex}
+\clearpage
+\IEEEtriggeratref{6}
+\bibliographystyle{IEEEtranCommonPose}
+\bibliography{references}
+\end{document}

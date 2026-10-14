@@ -1,0 +1,680 @@
+{
+  "rows": [
+    {
+      "split": "FINAL",
+      "contract": "U",
+      "identity": "original frozen full + sealed DEV-only class model; no fit",
+      "full_sha256": "ca06d630e40fc44687bec5ac12c83d9b20aa7c48fe200d89e48d583f9d09f035",
+      "class_model_sha256": "1d08ebfb338919488c2e4e8e5f72a29777a475ccd70d89e4ee12ebb84a56140e"
+    },
+    {
+      "split": "DEV",
+      "contract": "U",
+      "fold": 0,
+      "method": "full",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "e70f78f413cbc71f06e1675066e2a833d0438e3b5a71bf739a46f4614f99d2c3",
+      "train": [
+        "2132c5d085",
+        "2327817653",
+        "23b817e892",
+        "32cbfe3221",
+        "3589743749",
+        "47c605ad6f",
+        "7afcdcd6be",
+        "87aa3b3887",
+        "8bd1c0ff16",
+        "ce52651f99",
+        "dd810188d9",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "13b8b5f76d",
+        "2e45fde443",
+        "6a7fc66366"
+      ],
+      "test": [
+        "0816388460",
+        "2be40c4380",
+        "54c854b839",
+        "9b8c99cdc2"
+      ]
+    },
+    {
+      "split": "DEV",
+      "contract": "U",
+      "fold": 0,
+      "method": "class_model",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "90d7f4300e92bd71ecfc275883f72a5ed5129943b8c38425bfe6845e1e1bb50e",
+      "train": [
+        "2132c5d085",
+        "2327817653",
+        "23b817e892",
+        "32cbfe3221",
+        "3589743749",
+        "47c605ad6f",
+        "7afcdcd6be",
+        "87aa3b3887",
+        "8bd1c0ff16",
+        "ce52651f99",
+        "dd810188d9",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "13b8b5f76d",
+        "2e45fde443",
+        "6a7fc66366"
+      ],
+      "test": [
+        "0816388460",
+        "2be40c4380",
+        "54c854b839",
+        "9b8c99cdc2"
+      ]
+    },
+    {
+      "split": "DEV",
+      "contract": "U",
+      "fold": 1,
+      "method": "full",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "6a5a25bf063382da8e416bfa6812489ebaf2ab1f97d578da0e8fc6302cc0469d",
+      "train": [
+        "0816388460",
+        "2327817653",
+        "23b817e892",
+        "2be40c4380",
+        "3589743749",
+        "47c605ad6f",
+        "54c854b839",
+        "87aa3b3887",
+        "8bd1c0ff16",
+        "9b8c99cdc2",
+        "dd810188d9",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "2132c5d085",
+        "32cbfe3221",
+        "7afcdcd6be"
+      ],
+      "test": [
+        "13b8b5f76d",
+        "2e45fde443",
+        "6a7fc66366",
+        "ce52651f99"
+      ]
+    },
+    {
+      "split": "DEV",
+      "contract": "U",
+      "fold": 1,
+      "method": "class_model",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "e836d2c867540fda444d85d2186207eb5e3d361f9af095ee3a882157135432cb",
+      "train": [
+        "0816388460",
+        "2327817653",
+        "23b817e892",
+        "2be40c4380",
+        "3589743749",
+        "47c605ad6f",
+        "54c854b839",
+        "87aa3b3887",
+        "8bd1c0ff16",
+        "9b8c99cdc2",
+        "dd810188d9",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "2132c5d085",
+        "32cbfe3221",
+        "7afcdcd6be"
+      ],
+      "test": [
+        "13b8b5f76d",
+        "2e45fde443",
+        "6a7fc66366",
+        "ce52651f99"
+      ]
+    },
+    {
+      "split": "DEV",
+      "contract": "U",
+      "fold": 2,
+      "method": "full",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "b65cf62fef7ac4099b7f11aec36fa609ee693345679efb42393d0d34fb7dc386",
+      "train": [
+        "0816388460",
+        "13b8b5f76d",
+        "23b817e892",
+        "2be40c4380",
+        "2e45fde443",
+        "47c605ad6f",
+        "54c854b839",
+        "6a7fc66366",
+        "8bd1c0ff16",
+        "9b8c99cdc2",
+        "ce52651f99",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "2327817653",
+        "3589743749",
+        "87aa3b3887"
+      ],
+      "test": [
+        "2132c5d085",
+        "32cbfe3221",
+        "7afcdcd6be",
+        "dd810188d9"
+      ]
+    },
+    {
+      "split": "DEV",
+      "contract": "U",
+      "fold": 2,
+      "method": "class_model",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "43d7bb16d5c6b91155f75de104e9797fb11132e02db2749373579217d8c4df80",
+      "train": [
+        "0816388460",
+        "13b8b5f76d",
+        "23b817e892",
+        "2be40c4380",
+        "2e45fde443",
+        "47c605ad6f",
+        "54c854b839",
+        "6a7fc66366",
+        "8bd1c0ff16",
+        "9b8c99cdc2",
+        "ce52651f99",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "2327817653",
+        "3589743749",
+        "87aa3b3887"
+      ],
+      "test": [
+        "2132c5d085",
+        "32cbfe3221",
+        "7afcdcd6be",
+        "dd810188d9"
+      ]
+    },
+    {
+      "split": "DEV",
+      "contract": "U",
+      "fold": 3,
+      "method": "full",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "67c3d6f202a14ce3e87db437fcbdaf17ddfbf5d0e3fb79ab6053ae8919dbda51",
+      "train": [
+        "0816388460",
+        "13b8b5f76d",
+        "2132c5d085",
+        "2be40c4380",
+        "2e45fde443",
+        "32cbfe3221",
+        "54c854b839",
+        "6a7fc66366",
+        "7afcdcd6be",
+        "9b8c99cdc2",
+        "ce52651f99",
+        "dd810188d9"
+      ],
+      "calibration": [
+        "23b817e892",
+        "47c605ad6f",
+        "8bd1c0ff16"
+      ],
+      "test": [
+        "2327817653",
+        "3589743749",
+        "87aa3b3887",
+        "f1b6a408bf"
+      ]
+    },
+    {
+      "split": "DEV",
+      "contract": "U",
+      "fold": 3,
+      "method": "class_model",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "5a1350442d6ef3d1112404c05aa38b59a6cf8f72be630bfb2596c71a85991a2d",
+      "train": [
+        "0816388460",
+        "13b8b5f76d",
+        "2132c5d085",
+        "2be40c4380",
+        "2e45fde443",
+        "32cbfe3221",
+        "54c854b839",
+        "6a7fc66366",
+        "7afcdcd6be",
+        "9b8c99cdc2",
+        "ce52651f99",
+        "dd810188d9"
+      ],
+      "calibration": [
+        "23b817e892",
+        "47c605ad6f",
+        "8bd1c0ff16"
+      ],
+      "test": [
+        "2327817653",
+        "3589743749",
+        "87aa3b3887",
+        "f1b6a408bf"
+      ]
+    },
+    {
+      "split": "DEV",
+      "contract": "U",
+      "fold": 4,
+      "method": "full",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "fe0b05680dd5da6f705e15aff057f29e6bf3979733fe5038d4bed1e54ab5661e",
+      "train": [
+        "0816388460",
+        "13b8b5f76d",
+        "2132c5d085",
+        "2327817653",
+        "2e45fde443",
+        "32cbfe3221",
+        "3589743749",
+        "6a7fc66366",
+        "7afcdcd6be",
+        "87aa3b3887",
+        "ce52651f99",
+        "dd810188d9",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "2be40c4380",
+        "54c854b839",
+        "9b8c99cdc2"
+      ],
+      "test": [
+        "23b817e892",
+        "47c605ad6f",
+        "8bd1c0ff16"
+      ]
+    },
+    {
+      "split": "DEV",
+      "contract": "U",
+      "fold": 4,
+      "method": "class_model",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "65385866881fb2b27c88cc416e8bf8bf3d7f802e279216eaff1b02a188c5a40b",
+      "train": [
+        "0816388460",
+        "13b8b5f76d",
+        "2132c5d085",
+        "2327817653",
+        "2e45fde443",
+        "32cbfe3221",
+        "3589743749",
+        "6a7fc66366",
+        "7afcdcd6be",
+        "87aa3b3887",
+        "ce52651f99",
+        "dd810188d9",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "2be40c4380",
+        "54c854b839",
+        "9b8c99cdc2"
+      ],
+      "test": [
+        "23b817e892",
+        "47c605ad6f",
+        "8bd1c0ff16"
+      ]
+    },
+    {
+      "split": "FINAL",
+      "contract": "B",
+      "identity": "original frozen full + sealed DEV-only class model; no fit",
+      "full_sha256": "535828304087d511402c8224ea0276d55e58e0a0c1cba0562bafe7d2d1147b66",
+      "class_model_sha256": "39f0cb7963cec31c6df647664a91b37bc13a266e37f9a65c8e8ef0f766ef249f"
+    },
+    {
+      "split": "DEV",
+      "contract": "B",
+      "fold": 0,
+      "method": "full",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "8ed2bd74c4132dacc436cd9fc3bd02be7c356ea0b0f7dc107095bee9cfa4177d",
+      "train": [
+        "2132c5d085",
+        "2327817653",
+        "23b817e892",
+        "32cbfe3221",
+        "3589743749",
+        "47c605ad6f",
+        "7afcdcd6be",
+        "87aa3b3887",
+        "8bd1c0ff16",
+        "ce52651f99",
+        "dd810188d9",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "13b8b5f76d",
+        "2e45fde443",
+        "6a7fc66366"
+      ],
+      "test": [
+        "0816388460",
+        "2be40c4380",
+        "54c854b839",
+        "9b8c99cdc2"
+      ]
+    },
+    {
+      "split": "DEV",
+      "contract": "B",
+      "fold": 0,
+      "method": "class_model",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "a8ee77811c8459d5a082c1a58753665b603e0cacdd4180d7e174a07803f1b78b",
+      "train": [
+        "2132c5d085",
+        "2327817653",
+        "23b817e892",
+        "32cbfe3221",
+        "3589743749",
+        "47c605ad6f",
+        "7afcdcd6be",
+        "87aa3b3887",
+        "8bd1c0ff16",
+        "ce52651f99",
+        "dd810188d9",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "13b8b5f76d",
+        "2e45fde443",
+        "6a7fc66366"
+      ],
+      "test": [
+        "0816388460",
+        "2be40c4380",
+        "54c854b839",
+        "9b8c99cdc2"
+      ]
+    },
+    {
+      "split": "DEV",
+      "contract": "B",
+      "fold": 1,
+      "method": "full",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "4cc234462bc691bad51a23cf67e8f90dfad21a318acbe92b02d4c2bb5688a9a5",
+      "train": [
+        "0816388460",
+        "2327817653",
+        "23b817e892",
+        "2be40c4380",
+        "3589743749",
+        "47c605ad6f",
+        "54c854b839",
+        "87aa3b3887",
+        "8bd1c0ff16",
+        "9b8c99cdc2",
+        "dd810188d9",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "2132c5d085",
+        "32cbfe3221",
+        "7afcdcd6be"
+      ],
+      "test": [
+        "13b8b5f76d",
+        "2e45fde443",
+        "6a7fc66366",
+        "ce52651f99"
+      ]
+    },
+    {
+      "split": "DEV",
+      "contract": "B",
+      "fold": 1,
+      "method": "class_model",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "e329bccce7fd95dbeafa40e40794b45b401e7051a88e9dd058016c0f0898d848",
+      "train": [
+        "0816388460",
+        "2327817653",
+        "23b817e892",
+        "2be40c4380",
+        "3589743749",
+        "47c605ad6f",
+        "54c854b839",
+        "87aa3b3887",
+        "8bd1c0ff16",
+        "9b8c99cdc2",
+        "dd810188d9",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "2132c5d085",
+        "32cbfe3221",
+        "7afcdcd6be"
+      ],
+      "test": [
+        "13b8b5f76d",
+        "2e45fde443",
+        "6a7fc66366",
+        "ce52651f99"
+      ]
+    },
+    {
+      "split": "DEV",
+      "contract": "B",
+      "fold": 2,
+      "method": "full",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "374f4237e422be22e857801dc9e25456cd468f321cf0d2855cf3420ff5d86e24",
+      "train": [
+        "0816388460",
+        "13b8b5f76d",
+        "23b817e892",
+        "2be40c4380",
+        "2e45fde443",
+        "47c605ad6f",
+        "54c854b839",
+        "6a7fc66366",
+        "8bd1c0ff16",
+        "9b8c99cdc2",
+        "ce52651f99",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "2327817653",
+        "3589743749",
+        "87aa3b3887"
+      ],
+      "test": [
+        "2132c5d085",
+        "32cbfe3221",
+        "7afcdcd6be",
+        "dd810188d9"
+      ]
+    },
+    {
+      "split": "DEV",
+      "contract": "B",
+      "fold": 2,
+      "method": "class_model",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "4fdef3faa8c1416b9c81e613bd5ef92fbf286652dbc0a54e79f9b408e90ddfac",
+      "train": [
+        "0816388460",
+        "13b8b5f76d",
+        "23b817e892",
+        "2be40c4380",
+        "2e45fde443",
+        "47c605ad6f",
+        "54c854b839",
+        "6a7fc66366",
+        "8bd1c0ff16",
+        "9b8c99cdc2",
+        "ce52651f99",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "2327817653",
+        "3589743749",
+        "87aa3b3887"
+      ],
+      "test": [
+        "2132c5d085",
+        "32cbfe3221",
+        "7afcdcd6be",
+        "dd810188d9"
+      ]
+    },
+    {
+      "split": "DEV",
+      "contract": "B",
+      "fold": 3,
+      "method": "full",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "c3f7c3f6a5961dbc49626b46c619000f5c1cbc1fc8755ca4776e3a6f10cff830",
+      "train": [
+        "0816388460",
+        "13b8b5f76d",
+        "2132c5d085",
+        "2be40c4380",
+        "2e45fde443",
+        "32cbfe3221",
+        "54c854b839",
+        "6a7fc66366",
+        "7afcdcd6be",
+        "9b8c99cdc2",
+        "ce52651f99",
+        "dd810188d9"
+      ],
+      "calibration": [
+        "23b817e892",
+        "47c605ad6f",
+        "8bd1c0ff16"
+      ],
+      "test": [
+        "2327817653",
+        "3589743749",
+        "87aa3b3887",
+        "f1b6a408bf"
+      ]
+    },
+    {
+      "split": "DEV",
+      "contract": "B",
+      "fold": 3,
+      "method": "class_model",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "081741ede01e5fed754e2c3f788f79ea08ad1eec099b8501b65965f6fd3d56f3",
+      "train": [
+        "0816388460",
+        "13b8b5f76d",
+        "2132c5d085",
+        "2be40c4380",
+        "2e45fde443",
+        "32cbfe3221",
+        "54c854b839",
+        "6a7fc66366",
+        "7afcdcd6be",
+        "9b8c99cdc2",
+        "ce52651f99",
+        "dd810188d9"
+      ],
+      "calibration": [
+        "23b817e892",
+        "47c605ad6f",
+        "8bd1c0ff16"
+      ],
+      "test": [
+        "2327817653",
+        "3589743749",
+        "87aa3b3887",
+        "f1b6a408bf"
+      ]
+    },
+    {
+      "split": "DEV",
+      "contract": "B",
+      "fold": 4,
+      "method": "full",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "c4cee2aef84de44d24a57c5ad4bb7c2eea4d0b13f4fdca95ec8d62c8b1e7a2c6",
+      "train": [
+        "0816388460",
+        "13b8b5f76d",
+        "2132c5d085",
+        "2327817653",
+        "2e45fde443",
+        "32cbfe3221",
+        "3589743749",
+        "6a7fc66366",
+        "7afcdcd6be",
+        "87aa3b3887",
+        "ce52651f99",
+        "dd810188d9",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "2be40c4380",
+        "54c854b839",
+        "9b8c99cdc2"
+      ],
+      "test": [
+        "23b817e892",
+        "47c605ad6f",
+        "8bd1c0ff16"
+      ]
+    },
+    {
+      "split": "DEV",
+      "contract": "B",
+      "fold": 4,
+      "method": "class_model",
+      "identity": "same-spec fold refit; original score vectors unavailable",
+      "model_sha256": "e2101c98aa3825ae5d063687be50a5f3ebc5f09a95e3fca0109cd672ed560a26",
+      "train": [
+        "0816388460",
+        "13b8b5f76d",
+        "2132c5d085",
+        "2327817653",
+        "2e45fde443",
+        "32cbfe3221",
+        "3589743749",
+        "6a7fc66366",
+        "7afcdcd6be",
+        "87aa3b3887",
+        "ce52651f99",
+        "dd810188d9",
+        "f1b6a408bf"
+      ],
+      "calibration": [
+        "2be40c4380",
+        "54c854b839",
+        "9b8c99cdc2"
+      ],
+      "test": [
+        "23b817e892",
+        "47c605ad6f",
+        "8bd1c0ff16"
+      ]
+    }
+  ],
+  "canonical_max_abs_risk_difference": 0.0,
+  "scope": "canonical risk endpoints match; does not prove original per-block score identity, especially DEV refits"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETE",
+  "original_code_sha256": "003da3c84ea91311db683cf4e6c555afadf744a51f167a1a30672ed9201cd1d0",
+  "entry_sha256": "fa171b873346edd799d4816e056570fed4d5cac8adf2f140f9f97e825690f440",
+  "diagnosis_sha256": "3b159036ed1b37f8b13a7b91b4c48ba216c5ce988ef79654a21384cf817b3d31",
+  "python": "3.10.13",
+  "threads": {
+    "OMP_NUM_THREADS": "8",
+    "OPENBLAS_NUM_THREADS": "8",
+    "MKL_NUM_THREADS": "8"
+  },
+  "output": "/root/work/common-pose/experiments/upstream_substitution/paper_closing_v1_20261010/reproduction_attempt3_8threads/seed_results",
+  "identity": "unmodified sealed seed implementation; FINAL no fit; DEV separate same-spec refit",
+  "results_manifest_sha256": "44bdcce88ff0d8f3c65e6465a851cc0f5742c639a69a0a01b687d7cc3c1b1d23"
+}

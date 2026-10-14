@@ -1,0 +1,27 @@
+{
+  "status": "PASS_LENGTH_DEPENDENCE_REPRODUCED",
+  "upstream_pose_modules_sha256": "7e02d749d7db44d5370295872e9ab8f12e2e47a9e4b89386a2d9a5d101fd3b9b",
+  "raw_lengths": [
+    6000,
+    7000
+  ],
+  "native_feature_lengths": [
+    53,
+    66
+  ],
+  "rollout_lengths": [
+    105,
+    130
+  ],
+  "aligned_pose_lengths": [
+    4210,
+    5210
+  ],
+  "feature_shared_prefix_max_difference": 0.40310077519379917,
+  "pose_shared_prefix_max_difference": 0.5355086372360915,
+  "method": "NumPy explicit align-corners and half-pixel linear index algebra; synthetic ramps",
+  "trained_checkpoint_used": false,
+  "real_sensor_synchronization_verified": false,
+  "physical_alignment_verified": false,
+  "streaming_pipeline_verified": false
+}

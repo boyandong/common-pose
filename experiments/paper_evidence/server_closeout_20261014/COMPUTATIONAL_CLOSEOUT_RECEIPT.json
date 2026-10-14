@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE_ALL_PRESPECIFIED_EXISTING_DATA_COMPUTATIONS",
+  "new_models": 102,
+  "original_instances_reused": 36,
+  "core_checks": 1370496,
+  "field_checks": 2953908,
+  "field_local_summary_checks": 1393,
+  "paper_files_unchanged": 187,
+  "active_checklist_items": 17,
+  "external_evidence_not_certified": true,
+  "paper_edited": false,
+  "public_repo_published": false
+}

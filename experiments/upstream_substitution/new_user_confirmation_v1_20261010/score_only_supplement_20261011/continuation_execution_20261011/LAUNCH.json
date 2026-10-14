@@ -1,0 +1,15 @@
+{
+  "credential_channel": "RAM_TO_STDIN_ONLY",
+  "execution_code_seal_sha256": "6cd62d5bda5ac391d17d05f11d4a7c22327b426a8e94985a05e481a98ce23c8d",
+  "launcher_identity_sha256": "e1fd6032970a8458c3729fadaa6701066422ddec35e2c16591f7bfebec6cf160",
+  "launcher_pid": 30156,
+  "observed_local_time": "2026-10-11T05:37:36.338712+08:00",
+  "original_controller_exit": "UNKNOWN",
+  "original_incident_sha256": "48140f2c99fccb5b5ac1a511b3c65618ceb1cf4dc94402f0fb453c7dbb45cede",
+  "original_launch_sha256": "3a1a7c5bed113a7e9e55d5d85175fb24a8a7ad0b72c378b1fa7e262387fe84ab",
+  "pid": 8500,
+  "preflight_sha256": "c7849d5a69dce8e9cf5382da06adccb0ccc9d262b7f29fb822fb5e0614e4760a",
+  "runner_sha256": "906396e7371d783b4add895b92360c1c5995e8207fbe509e4d0072d32558415e",
+  "start_time": "2026-10-11T05:37:36.0879814+08:00",
+  "status": "SINGLE_HUMAN_AUTHORIZED_EXECUTION_ONLY_CONTINUATION"
+}

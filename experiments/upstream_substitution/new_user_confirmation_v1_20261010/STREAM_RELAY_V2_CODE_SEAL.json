@@ -1,0 +1,11 @@
+{
+  "status": "TRANSPORT_RECONNECT_IMPLEMENTATION_SEALED",
+  "runner_sha256": "e98825f2131b0b657ab343692114a4b6e23257895a1e80ab90c7d85442baf246",
+  "preserved_copy_and_hash_implementation_sha256": "c8c52f2b77110ba8652800911a648fea533f51c43e7d8d457a41cee4786c02a2",
+  "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+  "preserved_scientific_protocol_sha256": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a",
+  "prior_failed_progress_sha256": "b78b24977f180a88bd04b418d54d8d9ed6951fb5210ae06c66fdaee8784d216b",
+  "prior_failure_log_sha256": "b1ba3a5c59b2e8ab6e94c2398ad59a7b45490ee5c987d36e666901efccea0f41",
+  "amendment_sha256": "6b0a5a13ea3d035f951bd4026709b86e75794bf3f402ad435be91284e8764d3c",
+  "scientific_rules_changed": false
+}

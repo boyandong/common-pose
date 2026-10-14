@@ -1,0 +1,43 @@
+{
+  "FINAL_TEST_LOCKED_10_exact_reserved_bytes": 6465233144,
+  "all_official_session_sizes_available": false,
+  "basis": "frozen Gate4B candidate-order selected preflight session only; not a final cohort selection",
+  "eligible_identity_count": 164,
+  "headroom_is_operational_assumption_not_measured_need": true,
+  "per_candidate_session_archive_bytes_median": 645055988.0,
+  "per_candidate_session_archive_bytes_q25_q75": [
+    492968174.0,
+    697774484.0
+  ],
+  "per_candidate_session_recordings_median": 31.0,
+  "plans": [
+    {
+      "additional_identities_beyond_existing_FINAL_TEST_10": 5,
+      "approx_download_bytes_one_session_per_user": 9675839820,
+      "approx_raw_storage_bytes": 9675839820,
+      "approx_recordings_one_session_per_user": 465,
+      "downloads_if_all_selected_user_HDF5_absent": 15,
+      "n_users": 15,
+      "operational_storage_with_25pct_headroom_bytes": 12094799775
+    },
+    {
+      "additional_identities_beyond_existing_FINAL_TEST_10": 10,
+      "approx_download_bytes_one_session_per_user": 12901119760,
+      "approx_raw_storage_bytes": 12901119760,
+      "approx_recordings_one_session_per_user": 620,
+      "downloads_if_all_selected_user_HDF5_absent": 20,
+      "n_users": 20,
+      "operational_storage_with_25pct_headroom_bytes": 16126399700
+    },
+    {
+      "additional_identities_beyond_existing_FINAL_TEST_10": 20,
+      "approx_download_bytes_one_session_per_user": 19351679640,
+      "approx_raw_storage_bytes": 19351679640,
+      "approx_recordings_one_session_per_user": 930,
+      "downloads_if_all_selected_user_HDF5_absent": 30,
+      "n_users": 30,
+      "operational_storage_with_25pct_headroom_bytes": 24189599550
+    }
+  ],
+  "schema": "final-cohort-download-storage-v1"
+}

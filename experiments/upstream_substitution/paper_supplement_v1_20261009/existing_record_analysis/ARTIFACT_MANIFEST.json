@@ -1,0 +1,53 @@
+{
+  "status": "COMPLETE_ORIGINAL_RECORD_ANALYSIS",
+  "files": {
+    "CLASSWISE_ROWS.csv": {
+      "sha256": "07c4aca2cee4b5ea28e4b940711f7779dfae04750d26543bd16023fe8c7e21c1",
+      "bytes": 403419
+    },
+    "CLASSWISE_SUMMARY.csv": {
+      "sha256": "954c8691a61d58bd98a0b61742a81bee08d6c4d010eff81193b9cdb1783d3651",
+      "bytes": 7526
+    },
+    "DEPLOYMENT_USER_ROWS.csv": {
+      "sha256": "84a9f37bb13816c6e7ae61d160d7ef2bf1175a8edd59b6c241b3afadb0c48741",
+      "bytes": 37532
+    },
+    "INDEPENDENT_VERIFICATION.json": {
+      "sha256": "7c1718026b43f8b7211091d7300b2253544a16d8abdbe48f607c7b5b9fda5c07",
+      "bytes": 249
+    },
+    "ORIGINAL_RISK_COVERAGE.pdf": {
+      "sha256": "ddd408f9e47f8f94c0307313407e206f192cc624761c8c9b44e6f4486134b341",
+      "bytes": 19992
+    },
+    "ORIGINAL_RISK_COVERAGE.png": {
+      "sha256": "9bb78b46d60981ced94b32cf153d51fae00abb72530dc7feb576913c55989ade",
+      "bytes": 106331
+    },
+    "ORIGINAL_THRESHOLD_30.pdf": {
+      "sha256": "57877a0d4468d129f3c4405a7126d4d3728416ac0483099f942956c526b5c902",
+      "bytes": 18353
+    },
+    "ORIGINAL_THRESHOLD_30.png": {
+      "sha256": "8049b01ff0c7e8570994c2ac806f148a9dec18b9ec63876e6bfc0c354afbef9d",
+      "bytes": 73249
+    },
+    "REPORT.md": {
+      "sha256": "1ca0304785f1d736443b54fcc40e8edc12e9de8ba3758344752d1c78c6adeecb",
+      "bytes": 1576
+    },
+    "SPEC_AT_ANALYSIS.md": {
+      "sha256": "f3bdc79081202e43e50793af1c276979ffed3834b875c531f0bb2df15e3ff53e",
+      "bytes": 7461
+    },
+    "SUMMARY.json": {
+      "sha256": "06527db67dc0fb21d95e7b12139fe2e5e16ee3ee8e62d7a6f0837be506c104aa",
+      "bytes": 23223
+    },
+    "USER_EFFECTS.csv": {
+      "sha256": "1593cad04edbd90389179454241cfb00aca149026882d77fef672ef611448e87",
+      "bytes": 7661
+    }
+  }
+}

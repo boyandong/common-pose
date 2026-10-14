@@ -1,0 +1,14 @@
+{
+  "consumer": "KIN phase",
+  "users": 22,
+  "classes": 3,
+  "test_units": 1478,
+  "unit": "parent_phase",
+  "pooled_BA": 0.5616872657962092,
+  "archived_BA": 0.5616872657962092,
+  "prediction_mismatches": 0,
+  "fold_fit_seconds": 0.062000000005355105,
+  "wall_seconds": 0.2970000000059372,
+  "source_input_sha256": "323bba9f18be7fdd6192556982fa3b81f2fd155d63a568740db9217897f5b64b",
+  "status": "PASS_EXACT_OOF_REPRODUCTION"
+}

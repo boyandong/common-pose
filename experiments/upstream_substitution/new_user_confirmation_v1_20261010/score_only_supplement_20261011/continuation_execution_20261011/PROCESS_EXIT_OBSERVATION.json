@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "launch_sha256": "09aa7d129899ea20bf35dcfd252292da8daebd59a6003429060e69a1715c56d1",
+  "observed_epoch": 1791679567.254884,
+  "observer_identity_sha256": "e1fd6032970a8458c3729fadaa6701066422ddec35e2c16591f7bfebec6cf160",
+  "observer_pid": 30156,
+  "original_controller_exit": "UNKNOWN",
+  "pid": 8500,
+  "status": "ACTUAL_CHILD_PROCESS_WAIT_RETURNED"
+}

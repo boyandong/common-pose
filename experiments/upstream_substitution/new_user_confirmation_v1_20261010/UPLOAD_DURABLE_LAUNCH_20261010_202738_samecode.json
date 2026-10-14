@@ -1,0 +1,13 @@
+{
+  "attempt_id": "20261010_202738_samecode",
+  "code_changed": false,
+  "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+  "credential_transport": "stdin/RAM only",
+  "members_changed": false,
+  "observed_local_time": "2026-10-10T20:27:38.889456+08:00",
+  "pid": 28740,
+  "prior_pid_verified_absent": 28460,
+  "runner_sha256": "e98825f2131b0b657ab343692114a4b6e23257895a1e80ab90c7d85442baf246",
+  "start_time": "2026-10-10T20:27:38.9247771+08:00",
+  "status": "SAME_SEALED_UPLOADER_RESUMED_AFTER_VERIFIED_TERMINAL_NETWORK_FAILURE"
+}

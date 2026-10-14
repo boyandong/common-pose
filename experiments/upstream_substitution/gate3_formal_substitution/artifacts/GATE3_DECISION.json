@@ -1,0 +1,24 @@
+{
+  "artifact": "GATE3_DECISION.json",
+  "gate": "PHASE 1 / GATE 3",
+  "plan_sha256": "9869d9b94ba07d916fc8accd1646f51ec3ea9a0efe5427a530f37880edcfc381",
+  "categorical_labels_emitted": "NO",
+  "reason": "The plan declares no pass/fail threshold and no descriptive categorical criterion for this gate, because no threshold existed before the experiment. Per the plan, the result is the observed quantitative preservation profile and the numbers are reported without a verdict.",
+  "observed_profile": {
+    "n_analysis_samples": 86833,
+    "hard_agreement": 0.36453882740432786,
+    "balanced_preservation": 0.28680458366412726,
+    "cohen_kappa": 0.18945462267902435,
+    "median_tv": 0.4603986424786981,
+    "median_js": 0.20756858233600736,
+    "overall_pose_rmse_deg": 25.872438430786133,
+    "overall_pose_mae_deg": 19.909997940063477,
+    "gt_switch_rate": 0.0772553943988111,
+    "pred_switch_rate": 0.02001082911880926
+  },
+  "historical_reference": {
+    "value": 0.7646,
+    "status": "NOT USED FOR DESIGN — not for thresholds, alignment, checkpoint selection, smoothing, sample selection or pass/fail. Recorded here only as a non-comparable prior-stage reference from a different pipeline (4-DOF decoder, central-60% windows, different head)."
+  },
+  "next_allowed_step": "Design a frozen reliability/abstention gate and evaluate preservation-versus-coverage; do not execute until the Gate3 result is reviewed."
+}

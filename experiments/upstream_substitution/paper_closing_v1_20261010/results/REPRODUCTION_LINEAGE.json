@@ -1,0 +1,21 @@
+{
+  "FINAL_frozen_model": {
+    "max_aggregate_risk_drift": 0.001733574010921557,
+    "n_endpoints": 280,
+    "per_block_identity": "UNAVAILABLE"
+  },
+  "DEV_refit_and_tie_changes": {
+    "U": {
+      "max_abs_ordinary_drift_30": 0.030795660611459302,
+      "median_ordinary_drift_30": 0.0006687685105569996
+    },
+    "B": {
+      "max_abs_ordinary_drift_30": 0.00027491408934710027,
+      "median_ordinary_drift_30": -3.31840053094945e-05
+    }
+  },
+  "attribution": "refit/environment/features/ties cannot be separately attributed from existing records",
+  "original_confirmation": "historical final_joint_confirmation_v1",
+  "reconstructed_comparisons": "post-V1 20261009 supplement on already examined users",
+  "closing": "post-V1 20261010 reporting/robustness; not new confirmation"
+}

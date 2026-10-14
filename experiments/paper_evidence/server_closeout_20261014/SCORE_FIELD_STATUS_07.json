@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "stdout": "{\"SCORE_FIELD_STATE.json\": \"{\\n  \\\"stage\\\": \\\"close_score_fields.py\\\",\\n  \\\"status\\\": \\\"RUNNING\\\",\\n  \\\"pid\\\": 4765,\\n  \\\"elapsed_seconds\\\": 914.1900601927191\\n}\\n\", \"score_field_ablation/PROGRESS.json\": \"{\\n  \\\"stage\\\": \\\"evaluation\\\",\\n  \\\"cohort\\\": \\\"N80\\\",\\n  \\\"users_complete\\\": 80,\\n  \\\"users\\\": 80,\\n  \\\"pid\\\": 4892\\n}\\n\", \"score_field_ablation/INDEPENDENT_VERIFICATION.json\": \"ABSENT\"}\n",
+  "stderr": ""
+}

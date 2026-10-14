@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "stdout": "{\"LAUNCH.json\": {\"pid\": 2885, \"start_ticks\": \"907758190\", \"root\": \"/root/autodl-tmp/commonpose_paper_closeout_20261014\", \"stages\": [\"gpu_cost\", \"factorial_fit\", \"factorial_evaluation\", \"lag_window_sensitivity\", \"independent_verification\", \"report_package\"]}, \"PIPELINE_STATE.json\": {\"status\": \"RUNNING\", \"stage\": \"factorial_evaluation\", \"controller_pid\": 2885, \"completed\": [\"gpu_cost\", \"factorial_fit\"], \"elapsed_seconds\": 176.55646127276123}, \"PROGRESS.json\": {\"stage\": \"factorial_evaluation\", \"cohort\": \"A20\", \"completed_users\": 15, \"users\": 20, \"pid\": 2967}, \"controller_same_start\": true, \"log_tail\": [\"FACTORIAL_USER_COMPLETE A20 9 20\", \"FACTORIAL_USER_COMPLETE A20 10 20\", \"FACTORIAL_USER_COMPLETE A20 11 20\", \"FACTORIAL_USER_COMPLETE A20 12 20\", \"FACTORIAL_USER_COMPLETE A20 13 20\", \"FACTORIAL_USER_COMPLETE A20 14 20\", \"FACTORIAL_USER_COMPLETE A20 15 20\"], \"gpu\": \"0 %, 1 MiB\\n\"}\n",
+  "stderr": ""
+}

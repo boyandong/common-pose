@@ -1,0 +1,48 @@
+{
+  "external_dependencies": {
+    "/root/models/emg2pose/regression_vemg2pose.ckpt": "748b1d1ef0ce1985f6fc07225d97eebfb370243429af803b4997d28ecce2424e",
+    "/root/work/emg2pose_inference/predict_pose.py": "6cdd060ab639975eb5e2f96bfe43d01371f9f91ec6ecb812c2af2c314bbef818",
+    "/root/work/gate3_work/frozen_head/frozen_db9_trusted8_lda.joblib": "b0ef8caf8e390a480fa2a3b448f79ccf14f75c71265ef925ee299a5e9e660386"
+  },
+  "lane_files": {
+    "AUTHORIZATION.json": "85b628e837a6d25947305965fc8fedeba1cb412e3f218b90947d05b460f5553a",
+    "ENROLLMENT_MANIFEST.json": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+    "SCIENTIFIC_SPEC.md": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a",
+    "TRANSPORT_ROUTE_AMENDMENT.md": "73b537cde487f4c8da237fcafc7ee2268323ee8a8f9103a1a4e2d51086cb6b34",
+    "acquire_sources.py": "fb4747b5594110bb5464668feca887ab5ca874cc28ab4ead140bfffbb13c4dec",
+    "qualify_sources.py": "7282732232b6c6e12dd2f90f28abe331e84709d5ee15bd93fe2520c281548d1b",
+    "relay_sources.py": "55e50066d88abc9b20cd53fe1ae60946e6a9249aed9bf6550e1237c713ce5b57",
+    "runtime_common.py": "6250d9b347ba0df7662a753b30979890ee6ef3ad1a98d8ad4cd89723ec13fb13",
+    "seal_execution.py": "c24b13da683b64fb6c25b78de37a42a215be82a78345041598002362ad88ba15"
+  },
+  "local_relay_source_root": "D:/CommonPose_confirmation_N80_20261010/source",
+  "no_new_predictions_or_effects": true,
+  "numerical_versions": {
+    "joblib": "1.4.2",
+    "numpy": "1.26.4",
+    "scikit-learn": "1.5.2",
+    "scipy": "1.13.1",
+    "threadpoolctl": "3.7.0"
+  },
+  "parent_dependencies": {
+    "experiments/upstream_substitution/gate3b_continuous_representation/artifacts/FISHER_DB9_REFERENCE_SCALE.json": "d15997aa56e5264bdede56c10727a910f94b2c7e32ab8137a6e8e9e45c39c667",
+    "experiments/upstream_substitution/gate4c_upstream_substitution_reliability_v1/scripts/run_gate4c.py": "e3ca8e3b2a7d4a6059ac5fba9d01df264d329f52dc3497fdcc9cfdc0b4e98091",
+    "experiments/upstream_substitution/gate4d_task_aware_gate_benchmark_v1/analysis/gate4d_analysis.py": "fea112d6d62bac6dd6e915004137089b18b12a96011f11914c802ab400879f8c",
+    "experiments/upstream_substitution/gate4e_customer_flip_gate_v1/analysis/gate4e_flip_gate.py": "8ffdff86a6ccd065ab0b3e945b764eaa858d62d2233fbf494a9c4a3a824cff62",
+    "experiments/upstream_substitution/gate4e_customer_flip_gate_v1/artifacts/FINAL_GATE_MODEL.joblib": "ca06d630e40fc44687bec5ac12c83d9b20aa7c48fe200d89e48d583f9d09f035",
+    "experiments/upstream_substitution/gate4f_class_balanced_flip_gate_v1/analysis/gate4f_balanced_gate.py": "c246a09833ff1d86e7d37be742649e16bc2ac44e1fc9e490e702c3bce8db9a31",
+    "experiments/upstream_substitution/gate4f_class_balanced_flip_gate_v1/artifacts/FINAL_GATE_MODEL.joblib": "535828304087d511402c8224ea0276d55e58e0a0c1cba0562bafe7d2d1147b66",
+    "experiments/upstream_substitution/paper_supplement_v1_20261009/analyze_comparisons.py": "e6958be69a5678c2fedd25d8438f08ce14bae876a072c768f7eff1a79251411c",
+    "experiments/upstream_substitution/paper_supplement_v1_20261009/comparative_analysis/B_SUPPLEMENT_INSTANCE.json": "9285bb274f6e7cc6fca0b50ac6f8df5b73322df531d99d18860b7e43ac8395bd",
+    "experiments/upstream_substitution/paper_supplement_v1_20261009/comparative_analysis/B_class_model_DEV_ONLY.joblib": "39f0cb7963cec31c6df647664a91b37bc13a266e37f9a65c8e8ef0f766ef249f",
+    "experiments/upstream_substitution/paper_supplement_v1_20261009/comparative_analysis/B_no_tta_DEV_ONLY.joblib": "c1d521231b336060d2e89e042933d3495cd53fe3e293a86d977f19993e48f825",
+    "experiments/upstream_substitution/paper_supplement_v1_20261009/comparative_analysis/U_SUPPLEMENT_INSTANCE.json": "ed6b4619eae8f7168b5e078ebfc76697c27d14f9fa3705e085a39344a534d449",
+    "experiments/upstream_substitution/paper_supplement_v1_20261009/comparative_analysis/U_class_model_DEV_ONLY.joblib": "1d08ebfb338919488c2e4e8e5f72a29777a475ccd70d89e4ee12ebb84a56140e",
+    "experiments/upstream_substitution/paper_supplement_v1_20261009/comparative_analysis/U_no_tta_DEV_ONLY.joblib": "8e1dd08cf15f9ed76b92a89b3e1f40c45110489f633d5530ae8464a5b3cb23f2",
+    "src/common_pose/representation/canonical_hand.py": "24694cfda80604148490485d47bf5eddc8e20479d1b55d522ca5d0199b649193"
+  },
+  "scope": "acquisition and source qualification; inference/analysis code separately sealed before first prediction",
+  "selection_independently_rechecked": true,
+  "status": "FROZEN_BEFORE_SOURCE_DOWNLOAD",
+  "upstream_tree_sha256": "0fc2d40b69c46254c9cb4fdc72e7a3e2f37549803e60bb698b6ba09ffecb6b7b"
+}

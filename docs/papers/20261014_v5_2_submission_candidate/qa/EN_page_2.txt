@@ -1,0 +1,115 @@
+Measured reference EMG
+Frozen estimator
+Measured pose Estimated pose
+Same frozen classifier Same frozen classifier
+Reference decision: A Estimated decision: B
+Example: A ≠ B → flip Rank: retain / reject
+Development / evaluation Estimated features only
+Fig. 1. Evaluating input substitution without changing the downstream
+classiﬁer. Measured and EMG-estimated poses are passed through the same
+frozen consumer. Their decisions are compared ofﬂine to identify ﬂips, while
+the selection scorer ranks estimated-input decisions without access to the
+measured-pose reference.
+32 frames (nominally 0.808 s), whereas SHOW/KIN use
+approximately 0.8-s windows.
+B. Decision Fidelity, Coverage, and Reference-Class Support
+A ﬂip records a change in the same frozen consumer’s
+decision under pose substitution. Measured references identify
+ﬂips during development and ofﬂine evaluation; ranking uses
+estimated-input features only. For consumer i, participant u,
+and block t, measured pose qu,t and estimated pose ˆqu,t deﬁne
+F (i)
+u,t = 1[Ci( ˆqu,t ) ̸= Ci(qu,t )] . (1)
+We evaluate selection in two ways. Overall disagreement
+(U) is the proportion of retained, reference-valid blocks whose
+decisions differ. Coverage is the proportion of prediction-valid
+blocks retained.
+Let Vu contain prediction-valid blocks, Pu ⊆ Vu those also
+having valid measured references, and Au ⊆ Vu accepted blocks
+(consumer/method indices suppressed).
+U (i)
+u = ∑t∈Au∩Pu F (i)
+u,t
+|Au ∩ Pu| , γu = |Au ∩Vu|
+|Vu| . (2)
+Overall disagreement is undeﬁned if Au ∩ Pu = ∅. Missing-
+reference blocks contribute to coverage, but not to the observed
+disagreement denominator.
+The reference-class support set is
+R(i)
+u,k = {t ∈ Pu : Ci(qu,t ) = k} . (3)
+Class-balanced disagreement (B) ﬁrst calculates disagree-
+ment within each ﬁxed measured-pose reference class and
+then averages those class rates equally. B is reported only
+when all ﬁxed reference classes have at least 30 reference-
+valid blocks before selection and at least 30 retained blocks
+afterward. Otherwise B is undeﬁned; unsupported classes are
+never silently excluded.
+B(i)
+u = 1
+Ki
+Ki
+∑
+k=1
+∑t∈Au∩R(i)
+u,k
+F (i)
+u,t
+|Au ∩ R(i)
+u,k|
+. (4)
+C. Selective Scoring Methods
+Selection changes which estimated-input decisions are re-
+tained, not the classes predicted by the frozen consumer. We
+compare three ranking strategies. Boundary ranks inputs by
+their distance from the consumer’s nearest competing decision
+boundary. Score-only uses the consumer’s predicted class,
+discriminant scores, score gap, entropy, and boundary distance
+to learn ﬂip risk. Full adds estimated-pose information and
+descriptors of variation across ﬁxed EMG input views.
+For each consumer, the learned scorers are trained using
+paired development recordings with measured-pose ﬂip labels.
+The primary overall-risk conﬁguration uses histogram gradient
+boosting and is denoted Score-only/U or Full/U; /U marks the
+training objective, whereas U is the evaluated disagreement
+measure. A separate class-weighted conﬁguration uses logistic
+regression to study balanced-risk training. During evaluation,
+all ranking features come from the estimated-input pathway;
+measured pose is used only to score the retrospective outcome.
+Fisher coordinates are the source-ﬁtted LDA projection of
+standardized estimated pose. Full includes eight pose angles,
+these coordinates, and two descriptors from four ﬁxed EMG
+views: original, 0.97/1.03 amplitude scaling, and deterministic
+Gaussian noise at 0.005 times whole-record RMS. Fitting
+uses up to 5000 deterministically sampled paired blocks per
+participant, with equal participant and within-participant ﬂip-
+state weights for /U. Histogram gradient boosting uses 100
+iterations, depth 3, learning rate 0.1, L2 penalty 1, and seed
+0. The balanced conﬁguration uses reference-class/ﬂip-state
+weighting and standardized logistic regression ( C = 1, 300
+iterations, seed 0).
+D. Selection and Evaluation Protocols
+Our primary analysis compares methods at equal ofﬂine
+retention budgets. For each participant, inputs are ranked using
+estimated-input features and the top 10%, 30%, 50%, or 70%
+of prediction-valid blocks are retained, with deterministic tie
+handling. No Gate retains all prediction-valid blocks. Reten-
+tion is deﬁned on prediction-valid blocks, whereas disagree-
+ment requires valid paired references.
+Because each participant is ranked using their own full-
+record score distribution, this protocol measures retrospec-
+tive ranking rather than a deployable common threshold. A
+separate development-selected ﬁxed-threshold audit evaluates
+whether predeﬁned disagreement and coverage requirements
+can be met without choosing thresholds on the evaluation
+cohort.
+Nineteen development participants comprise 13 ﬁtting, three
+threshold-selection, and three diagnostic-validation partici-
+pants. V alidation affects neither ﬁtting nor threshold selection.
+Stable score ordering with ﬁxed ﬁle/block order resolves ties;
+a budget r retains ⌈r|Vu|⌉ blocks. Threshold feasibility requires
+disagreement ≤ 10% for every threshold-development partici-
+pant and median coverage ≥ 10%; the balanced objective also
+requires complete class support. Infeasible settings use the
+prespeciﬁed 30% diagnostic fallback without being counted
+as feasible.

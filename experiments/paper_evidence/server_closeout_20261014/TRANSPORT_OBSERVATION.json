@@ -1,0 +1,13 @@
+{
+  "event": "SSH stderr-channel read timeout after supplement launch; transport script exited",
+  "first_transport_session": 39440,
+  "remote_outcome_resolved_by": "one authenticated read-only reconnect; SCORE_FIELD_OBSERVED_LAUNCH.json",
+  "observed_controller_pid": 4765,
+  "observed_start_ticks": "908181708",
+  "duplicate_launch": false,
+  "second_transport_session": 31952,
+  "remote_host_or_training_crash_observed": false,
+  "consecutive_unknown_outcomes": 0,
+  "credential_persisted": false,
+  "final_transport_state": "CLOSED_AFTER_VERIFIED_DELIVERY"
+}

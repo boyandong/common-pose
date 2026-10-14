@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "stdout": "DEV_ABLATION_VERIFIED 130036\n{\"status\": \"PASS\", \"checks\": 130036, \"conditions\": 4, \"same_X_y_and_sampled_rows\": true, \"weights_exact\": true, \"no_target_test_use\": true}\n",
+  "stderr": ""
+}

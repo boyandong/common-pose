@@ -1,0 +1,16 @@
+{
+  "status": "SUCCESSOR_CREATED_AND_VERIFIED_ACTIVE",
+  "date": "2026-10-10",
+  "source_thread_id": "01a11ff1-9aef-7eb2-b6a3-e1f589db0718",
+  "successor_thread_id": "01a123d4-c876-7ed3-9d94-f466f725a2ad",
+  "host_id": "local",
+  "requested_title": "COMMON-POSE-CLOSING-20261010-SEED-REPRODUCTION",
+  "project_id": "78673b98-224a-40dd-8426-fef715d15972",
+  "handover": "SESSION_HANDOVER.md",
+  "full_objective_preserved": true,
+  "score_only_decision": "DEFERRED_PER_USER_LIMITED_EMPIRICAL_POSITIONING",
+  "first_task": "Reverify cloned runtime and restore original numerical environment before canonical-score admission and seed robustness",
+  "objective_complete": false,
+  "authorization": "User explicitly requested creation of a new conversation continuing from the handover",
+  "execution_owner": "successor thread; source thread retained as forensic record"
+}

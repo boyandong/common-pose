@@ -1,0 +1,92 @@
+E. Cohorts and Statistical Analysis
+The two previously examined evaluation cohorts comprise
+A20 (20 participants; 1,650,789 valid measured–estimated
+pairs) and N80 (80 participants; 7,111,408 pairs). They are
+analyzed separately and are not treated as independent con-
+ﬁrmation after repeated examination. Participants used for
+selection-scorer development are separate from the reported
+evaluation participants; this separation does not certify the
+upstream estimator’s training membership.
+The exact training records associated with the released
+upstream checkpoint could not be established. Public training
+metadata contain train records for 70 of 80 N80 participants
+and 16 of 20 A20 participants, but metadata overlap does not
+by itself prove exposure of the actual checkpoint. We therefore
+make no veriﬁed upstream unseen-participant generalization
+claim.
+Participants, not blocks, are the statistical units. Method
+differences are calculated within each participant before tak-
+ing the median. Descriptive 95% intervals for paired me-
+dian effects use 10,000 participant-level bootstrap resamples.
+Consumers and retention budgets share participants and are
+dependent comparisons; the intervals are pointwise descriptive
+summaries rather than family-wise simultaneous conﬁdence
+statements. Balanced comparisons use only jointly evaluable
+participants and report their counts.
+III. RESULTS
+A. Decision Disagreement Under Pose Substitution
+Pose substitution changed decisions for every frozen con-
+sumer. Without rejection, N80 participant-median disagree-
+ment ranged from 16.43% for SHOW instruction to 43.05%
+for CeTI posture (Table I). The variation shows that different
+consumers can respond differently to the same paired target
+pose inputs.
+Reference-class support was already uneven before selec-
+tion. All ﬁxed classes met the predeﬁned minimum in 22/80
+participants for DB9 posture and 79/80 for KIN phase, versus
+80/80 for the other four consumers. These differences matter
+when interpreting class-balanced outcomes after rejection.
+B. Selective Ranking Across Frozen Consumers
+Full/U ranking reduced overall disagreement across all six
+consumers in N80 at 30% ofﬂine retention. Relative to Bound-
+ary, the median within-participant reduction ranged from 1.867
+percentage points for DB9 grasp (95% descriptive bootstrap
+interval: 1.431–2.371) to 4.651 points for DB9 posture (2.784–
+6.505). All six pointwise intervals were above zero (Table I).
+Across the four tested retention budgets, Full/U showed
+positive median paired improvements over Boundary in all
+24 consumer–budget comparisons within each of A20 and
+N80 (Fig. 2). These comparisons share participants and related
+experimental conditions, so the direction counts are descriptive
+rather than independent conﬁrmations.
+Direct paired comparisons favored Full/U over Score-only/U
+in 23/24 N80 and 22/24 A20 consumer–budget settings, with
+non-improving conditions retained in the analysis. For CeTI
+grasp at 30% retention in N80, the direct within-participant
+Full/U improvement over Score-only/U was 3.790 percent-
+age points (95% descriptive bootstrap interval: 2.774–4.691;
+n=80).
+TABLE I
+OVERALL DISAGREEMENT AND PAIRED GAINS AT 30% O FFLINE RETENTION (N80)
+Consumer No Gate U Boundary U Score-only/U U Full/U U Paired Boundary–Full/U (95% CI)
+DB9 posture 38.91 21.95 17.29 16.00 4.651 [2.784, 6.505]
+DB9 grasp 18.37 6.67 4.87 3.46 1.867 [1.431, 2.371]
+CeTI posture 43.05 24.73 21.87 20.77 3.973 [2.918, 5.312]
+CeTI grasp 41.10 31.59 29.60 25.65 4.261 [2.214, 6.446]
+SHOW instruction 16.43 6.93 6.29 4.10 2.591 [1.655, 3.006]
+KIN phase 22.32 5.95 3.81 3.66 2.107 [1.300, 3.302]
+No Gate retains all prediction-valid blocks; selective methods retain 30%. U: participant medians (%; lower is better). Paired effects: median within-participant
+Boundary–Full/U reductions (pp; higher is better), with pointwise 95% participant-bootstrap intervals (n=80). Intervals are pointwise descriptive participant-
+bootstrap summaries, not differences between method medians.
+10% 30% 50% 70% 10% 30% 50% 70%
+Offline retention budget (prediction-valid blocks)
+DB9 posture
+DB9 grasp
+CeTI posture
+CeTI grasp
+SHOW instruction
+KIN phase
+Score-only/U Full/U
++5.19 +3.56 +3.76 +3.15 +4.97 +4.65 +4.29 +3.08
++1.01 +0.92 +0.79 +0.87 +2.29 +1.87 +1.70 +1.39
++1.28 +2.66 +3.10 +2.83 +2.01 +3.97 +4.42 +3.38
++0.79 +0.88 +0.80 +1.10 +5.33 +4.26 +2.90 +1.58
++0.26 +0.80 +0.79 +0.60 +2.28 +2.59 +2.28 +1.89
++0.82 +2.22 +2.29 +2.81 +1.20 +2.11 +2.36 +2.61
+0
+2
+4
+Paired reduction (pp)
+Fig. 2. Median paired reductions in overall decision disagreement relative to Boundary across six frozen consumers and four matched ofﬂine retention budgets
+in N80. Positive values indicate lower disagreement under learned ranking. The comparisons share participants and should not be interpreted as independent
+replications. Differences between displayed method medians are not direct within-participant comparisons.

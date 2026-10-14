@@ -1,0 +1,116 @@
+{
+  "all80users_and20seeds_reviewed": true,
+  "all_seven_coverages_and_support_omissions_reviewed": true,
+  "independent_neural_rerun": false,
+  "integrated_report_deferral_updated_only_for_separate_authorized_lane": true,
+  "joint_primary_decision": "POSITIVE",
+  "missing_primary_pairs": {
+    "B": 0,
+    "U": 0
+  },
+  "missing_secondary_pairs": {
+    "B": 0,
+    "U": 0
+  },
+  "observed_local_time": "2026-10-11T13:14:46.048292+08:00",
+  "original_controller_exit": "UNKNOWN",
+  "original_primary": {
+    "B": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08123223438273713,
+        0.10949806621500058
+      ],
+      "enrolled": 80,
+      "formal_decision": "POSITIVE",
+      "median": 0.09143775150219588,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": 1.3400325923359048e-22,
+      "zero": 0
+    },
+    "U": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "POSITIVE",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": 1.201648635082027e-10,
+      "zero": 0
+    }
+  },
+  "original_primary_report_sha256": "b91fb9553cc8440129891c15d96780ee84731e431bc86d7a2b90ac4cc8017e6e",
+  "original_secondary_reports": {
+    "MANUSCRIPT_CONFIRMATION_WITH_SCORE_ONLY.md": {
+      "original_sha256": "293903f13dbd123bf64e7e18e5a5b419900498db948cfd571370183d79fb75ef",
+      "reviewed_sha256": "ba29f6748908025e167f8fda3b8520aff8de830e7028eb620cf65d4f8e28b2e8"
+    },
+    "SCORE_ONLY_N80_REPORT.md": {
+      "original_sha256": "513b8d84397eababd67fb8f77920f0638a36e83d9944b1f884b41c96dbc25a30",
+      "reviewed_sha256": "cb2179a3c52ee4136b6a285da885a4945e3721729845ec729486e466f599fc91"
+    }
+  },
+  "primary_report_historical_deferral_bytes_preserved": true,
+  "reviewed_build_manifest_sha256": "05e30f94d9f8316f0f74f96d8528a31d59f4c63f9e082cd9f4406f4c5cec0c29",
+  "scientific_interpretation": "Prespecified original joint primary POSITIVE. Descriptive full-versus-score-only differences are small and both CIs include zero; neither stable added-feature benefit nor equivalence is established. No causal pose-versus-TTA or independent gesture-accuracy claim.",
+  "score_only_sparse_original_classes": {
+    "B": {},
+    "U": {
+      "06d17ebbe4": [
+        3
+      ],
+      "880c49a2d1": [
+        2
+      ]
+    }
+  },
+  "secondary_canonical": {
+    "B": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.00030864318544909786,
+        0.0022027918538202185
+      ],
+      "descriptive_sign_p": 0.31430657986393706,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001030098968882176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 35,
+      "positive": 45,
+      "zero": 0
+    },
+    "U": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.003310113136702736,
+        0.006701261211725491
+      ],
+      "descriptive_sign_p": 0.7375543089843226,
+      "enrolled": 80,
+      "inferential_status": "SECONDARY_DESCRIPTIVE_NO_NEW_CONFIRMATORY_DECISION",
+      "median": 0.001152211220872952,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 38,
+      "positive": 42,
+      "zero": 0
+    }
+  },
+  "status": "PASS_FULL_REPORT_REVIEW_WITH_READABILITY_CORRECTION",
+  "upstream_membership": "UNRESOLVED"
+}

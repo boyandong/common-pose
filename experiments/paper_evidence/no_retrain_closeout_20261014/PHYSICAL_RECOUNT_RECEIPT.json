@@ -1,0 +1,14 @@
+{
+  "status": "PASS_DOCUMENTARY_AND_GEOMETRY_RECOUNT",
+  "interface_rows": 48,
+  "profiles_recomputed": 16,
+  "generic_rest_bend_degrees": [
+    0.8985276889697824,
+    5.152202294088217
+  ],
+  "trusted8_axis_cosine_min": 0.9742519528056719,
+  "rest_difference_does_not_measure_physical_calibration_error": true,
+  "anchor_decision_sha256": "7cbdb3fd06f94864a49d631f33c420d1f3622cec0384473a893487130ab9090c",
+  "anchor_status": "NO_INDEPENDENT_ANCHOR",
+  "no_new_physical_observation": true
+}

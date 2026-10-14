@@ -1,0 +1,9 @@
+{
+  "status": "FROZEN_BEFORE_NEW_FITS",
+  "files": {
+    "SCORE_FIELD_SPEC.md": "86aeba0165a29003a3bcd9d793a3bd06f7c93ecc10447f01120cd3f7f146dcf8",
+    "score_field_ablation.py": "e830057faa282fd05409c2ea68b2b3d209fd730aab1b5cf2d382a7054dc06de5",
+    "close_score_fields.py": "2fe6d11bc6a376fb7be71891813b5b022899e967379b8d8d11dae34677f12d9a",
+    "run_score_fields.py": "a743352485b4dccfeb2c7ab2e3c9b6a15cf459034e5032bfd71001f4b198d299"
+  }
+}

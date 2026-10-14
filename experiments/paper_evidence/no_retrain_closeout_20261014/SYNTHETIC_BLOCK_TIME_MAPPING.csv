@@ -1,0 +1,11 @@
+input_rows,post_crop_rows,complete_blocks,dropped_tail_rows,max_runtime_blocks_after_first_exclusion,first_possible_raw_block_start,nominal_block_period_ms,nominal_start_to_end_span_ms,label_time,model_run
+1791,1,0,1,0,,20,19.5,raw block last timestamp,False
+1830,40,1,0,0,,20,19.5,raw block last timestamp,False
+1831,41,1,1,0,,20,19.5,raw block last timestamp,False
+1869,79,1,39,0,,20,19.5,raw block last timestamp,False
+1870,80,2,0,1,1830,20,19.5,raw block last timestamp,False
+1871,81,2,1,1,1830,20,19.5,raw block last timestamp,False
+6000,4210,105,10,104,1830,20,19.5,raw block last timestamp,False
+7000,5210,130,10,129,1830,20,19.5,raw block last timestamp,False
+11790,10000,250,0,249,1830,20,19.5,raw block last timestamp,False
+200001,198211,4955,11,4954,1830,20,19.5,raw block last timestamp,False

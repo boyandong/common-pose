@@ -1,0 +1,6652 @@
+{
+  "status": "COMPLETE",
+  "new_models": 42,
+  "models": [
+    {
+      "consumer": "db9_scoreonly_v3_20261011__C1_primary",
+      "removed_group": "predicted_class",
+      "columns": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/db9_scoreonly_v3_20261011__C1_primary__predicted_class.joblib",
+      "model_sha256": "93a471bab41bdf33ec4cfa9df22214bddd5cba363d05e1f9107fdd9e12ee9ab3",
+      "training_npz_sha256": "3477131cee73ef402a2514b64f3a32939d0abeda3a72e4dc8645986365259899",
+      "rows": 65000,
+      "fit_seconds": 1.2797012142837048,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.342210520758991,
+          "goal_user_risks": [
+            0.2488135844579564,
+            0.15332807674617255,
+            0.44486470759383184
+          ],
+          "median_coverage": 0.3000034544700843,
+          "median_goal_risk": 0.2488135844579564,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.22718331377093567,
+            "goal_user_risks": [
+              0.14001301236174366,
+              0.07293729372937294,
+              0.49320967207684663
+            ],
+            "median_coverage": 0.10000690894016857,
+            "median_goal_risk": 0.14001301236174366,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.2879591544915274,
+            "goal_user_risks": [
+              0.2017447570627997,
+              0.1250127929587555,
+              0.44832338079926504
+            ],
+            "median_coverage": 0.20000518170512643,
+            "median_goal_risk": 0.2017447570627997,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.342210520758991,
+            "goal_user_risks": [
+              0.2488135844579564,
+              0.15332807674617255,
+              0.44486470759383184
+            ],
+            "median_coverage": 0.3000034544700843,
+            "median_goal_risk": 0.2488135844579564,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.4613717690864706,
+            "goal_user_risks": [
+              0.30151761638401714,
+              0.20239493290722524,
+              0.46007881515791044
+            ],
+            "median_coverage": 0.5,
+            "median_goal_risk": 0.30151761638401714,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5841859020501928,
+            "goal_user_risks": [
+              0.34704103143808623,
+              0.254524114965745,
+              0.46935954118017437
+            ],
+            "median_coverage": 0.6999965455299157,
+            "median_goal_risk": 0.34704103143808623,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.4540413543191072,
+              0.3513423139390465,
+              0.5021350049968202
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.4540413543191072,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "db9_scoreonly_v3_20261011__C1_primary",
+      "removed_group": "discriminant_scores",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/db9_scoreonly_v3_20261011__C1_primary__discriminant_scores.joblib",
+      "model_sha256": "e584724b108a6f9d5760816e17cf6f3d23951965126c8d760eedda52e93de7d4",
+      "training_npz_sha256": "3477131cee73ef402a2514b64f3a32939d0abeda3a72e4dc8645986365259899",
+      "rows": 65000,
+      "fit_seconds": 1.2874781042337418,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.33730880362496146,
+          "goal_user_risks": [
+            0.24831937507041724,
+            0.15644222229531923,
+            0.44213580963435867
+          ],
+          "median_coverage": 0.300012090645295,
+          "median_goal_risk": 0.24831937507041724,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.23889632022136456,
+            "goal_user_risks": [
+              0.16540936321278013,
+              0.09402875432889075,
+              0.4649134948096886
+            ],
+            "median_coverage": 0.10002418129059003,
+            "median_goal_risk": 0.16540936321278013,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.28926807940837124,
+            "goal_user_risks": [
+              0.21553541915997038,
+              0.13209468058030033,
+              0.4442972419607371
+            ],
+            "median_coverage": 0.20000518170512643,
+            "median_goal_risk": 0.21553541915997038,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.33730880362496146,
+            "goal_user_risks": [
+              0.24831937507041724,
+              0.15644222229531923,
+              0.44213580963435867
+            ],
+            "median_coverage": 0.300012090645295,
+            "median_goal_risk": 0.24831937507041724,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.4357159733060036,
+            "goal_user_risks": [
+              0.2927322739775853,
+              0.19323764569887295,
+              0.4509840709957035
+            ],
+            "median_coverage": 0.5,
+            "median_goal_risk": 0.2927322739775853,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5546073101795069,
+            "goal_user_risks": [
+              0.33604289443654156,
+              0.23046736612617522,
+              0.4640314027959507
+            ],
+            "median_coverage": 0.7000656349316015,
+            "median_goal_risk": 0.33604289443654156,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.4540413543191072,
+              0.3513423139390465,
+              0.5021350049968202
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.4540413543191072,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "db9_scoreonly_v3_20261011__C1_primary",
+      "removed_group": "score_gap",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/db9_scoreonly_v3_20261011__C1_primary__score_gap.joblib",
+      "model_sha256": "970056c450e78ff6f702e168d9a159966ba7dfd2dd9daf0bf743d49ba851744c",
+      "training_npz_sha256": "3477131cee73ef402a2514b64f3a32939d0abeda3a72e4dc8645986365259899",
+      "rows": 65000,
+      "fit_seconds": 1.3470113761723042,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.3394333599487167,
+          "goal_user_risks": [
+            0.2528020392098062,
+            0.151856720341768,
+            0.4425145707078029
+          ],
+          "median_coverage": 0.300012090645295,
+          "median_goal_risk": 0.2528020392098062,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.23267741165338626,
+            "goal_user_risks": [
+              0.14703122905776705,
+              0.07587928788536691,
+              0.480715483510341
+            ],
+            "median_coverage": 0.1000155451153793,
+            "median_goal_risk": 0.14703122905776705,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.2900470854153974,
+            "goal_user_risks": [
+              0.20963899578523,
+              0.12152194923444733,
+              0.4485381105289843
+            ],
+            "median_coverage": 0.20001381788033715,
+            "median_goal_risk": 0.20963899578523,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.3394333599487167,
+            "goal_user_risks": [
+              0.2528020392098062,
+              0.151856720341768,
+              0.4425145707078029
+            ],
+            "median_coverage": 0.300012090645295,
+            "median_goal_risk": 0.2528020392098062,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.43745726701998944,
+            "goal_user_risks": [
+              0.29480556593611923,
+              0.19706587400517786,
+              0.45325448174857713
+            ],
+            "median_coverage": 0.5,
+            "median_goal_risk": 0.29480556593611923,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5597961762583918,
+            "goal_user_risks": [
+              0.3366572729243442,
+              0.23473092981191607,
+              0.462283537921964
+            ],
+            "median_coverage": 0.6999965455299157,
+            "median_goal_risk": 0.3366572729243442,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.4540413543191072,
+              0.3513423139390465,
+              0.5021350049968202
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.4540413543191072,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "db9_scoreonly_v3_20261011__C1_primary",
+      "removed_group": "entropy",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/db9_scoreonly_v3_20261011__C1_primary__entropy.joblib",
+      "model_sha256": "d75b075af64e40f961b8d81b09ee770a31e33aaa47a4401ff31d5bad3b4c620c",
+      "training_npz_sha256": "3477131cee73ef402a2514b64f3a32939d0abeda3a72e4dc8645986365259899",
+      "rows": 65000,
+      "fit_seconds": 1.3576509580016136,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.34502387791432526,
+          "goal_user_risks": [
+            0.25116158049288184,
+            0.1528924260860986,
+            0.43740095087163233
+          ],
+          "median_coverage": 0.3000293629957165,
+          "median_goal_risk": 0.25116158049288184,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.23474628541849674,
+            "goal_user_risks": [
+              0.15741313218746136,
+              0.07491646006252022,
+              0.48637137989778534
+            ],
+            "median_coverage": 0.10002418129059003,
+            "median_goal_risk": 0.15741313218746136,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.29163708042726216,
+            "goal_user_risks": [
+              0.2107157856842863,
+              0.12279539198695076,
+              0.4489493306219285
+            ],
+            "median_coverage": 0.20005699875639077,
+            "median_goal_risk": 0.2107157856842863,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.34502387791432526,
+            "goal_user_risks": [
+              0.25116158049288184,
+              0.1528924260860986,
+              0.43740095087163233
+            ],
+            "median_coverage": 0.3000293629957165,
+            "median_goal_risk": 0.25116158049288184,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.4386276056401276,
+            "goal_user_risks": [
+              0.29807138106849923,
+              0.19375840215095064,
+              0.44993247867991193
+            ],
+            "median_coverage": 0.5,
+            "median_goal_risk": 0.29807138106849923,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5535206882664127,
+            "goal_user_risks": [
+              0.3340611013208989,
+              0.23238633277201368,
+              0.4614999582881455
+            ],
+            "median_coverage": 0.6999965455299157,
+            "median_goal_risk": 0.3340611013208989,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.4540413543191072,
+              0.3513423139390465,
+              0.5021350049968202
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.4540413543191072,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "db9_scoreonly_v3_20261011__C1_primary",
+      "removed_group": "boundary_distance",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/db9_scoreonly_v3_20261011__C1_primary__boundary_distance.joblib",
+      "model_sha256": "4d07363c146674a5ed029a49af2c64f95131d8526b7eaaed55df31e01a7dbc1c",
+      "training_npz_sha256": "3477131cee73ef402a2514b64f3a32939d0abeda3a72e4dc8645986365259899",
+      "rows": 65000,
+      "fit_seconds": 1.3428369108587503,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.33978634477619446,
+          "goal_user_risks": [
+            0.2485021189536753,
+            0.15666611869143515,
+            0.4400679319488723
+          ],
+          "median_coverage": 0.3000034544700843,
+          "median_goal_risk": 0.2485021189536753,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.23674763734493717,
+            "goal_user_risks": [
+              0.1626930371173124,
+              0.08156768031617082,
+              0.4829555138912562
+            ],
+            "median_coverage": 0.1000155451153793,
+            "median_goal_risk": 0.1626930371173124,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.28923280445439953,
+            "goal_user_risks": [
+              0.207094418362024,
+              0.1291030680483945,
+              0.4471775059025542
+            ],
+            "median_coverage": 0.20000518170512643,
+            "median_goal_risk": 0.207094418362024,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.33978634477619446,
+            "goal_user_risks": [
+              0.2485021189536753,
+              0.15666611869143515,
+              0.4400679319488723
+            ],
+            "median_coverage": 0.3000034544700843,
+            "median_goal_risk": 0.2485021189536753,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.4440250723339582,
+            "goal_user_risks": [
+              0.3071871342494256,
+              0.2026429175963684,
+              0.4486043176050899
+            ],
+            "median_coverage": 0.5,
+            "median_goal_risk": 0.3071871342494256,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5553140538700156,
+            "goal_user_risks": [
+              0.33699346814742875,
+              0.23715630756635056,
+              0.46422631220177235
+            ],
+            "median_coverage": 0.6999965455299157,
+            "median_goal_risk": 0.33699346814742875,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.4540413543191072,
+              0.3513423139390465,
+              0.5021350049968202
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.4540413543191072,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "db9_scoreonly_v3_20261011__C1_primary",
+      "removed_group": "TTA_dispersion",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        35
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/db9_scoreonly_v3_20261011__C1_primary__TTA_dispersion.joblib",
+      "model_sha256": "1dce90452502232c1d1e3003166c6801cf592b2de9c039d29458116c03870ac5",
+      "training_npz_sha256": "3477131cee73ef402a2514b64f3a32939d0abeda3a72e4dc8645986365259899",
+      "rows": 65000,
+      "fit_seconds": 1.3560906928032637,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.33706131989819405,
+          "goal_user_risks": [
+            0.24407207207207207,
+            0.1549950544015826,
+            0.4434262725596469
+          ],
+          "median_coverage": 0.3000034544700843,
+          "median_goal_risk": 0.24407207207207207,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.23446968501751866,
+            "goal_user_risks": [
+              0.15422457262329356,
+              0.09282525179109127,
+              0.46890722479372104
+            ],
+            "median_coverage": 0.1000155451153793,
+            "median_goal_risk": 0.15422457262329356,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.2857239205020065,
+            "goal_user_risks": [
+              0.20006930807439066,
+              0.12635032811711258,
+              0.44330391021288496
+            ],
+            "median_coverage": 0.20000518170512643,
+            "median_goal_risk": 0.20006930807439066,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.33706131989819405,
+            "goal_user_risks": [
+              0.24407207207207207,
+              0.1549950544015826,
+              0.4434262725596469
+            ],
+            "median_coverage": 0.3000034544700843,
+            "median_goal_risk": 0.24407207207207207,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.438876158953566,
+            "goal_user_risks": [
+              0.29073482428115016,
+              0.20320249125370035,
+              0.4548504741064916
+            ],
+            "median_coverage": 0.5,
+            "median_goal_risk": 0.29073482428115016,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5614850855767723,
+            "goal_user_risks": [
+              0.33213075325243246,
+              0.23767054274121074,
+              0.4629063857187872
+            ],
+            "median_coverage": 0.6999965455299157,
+            "median_goal_risk": 0.33213075325243246,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.4540413543191072,
+              0.3513423139390465,
+              0.5021350049968202
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.4540413543191072,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "db9_scoreonly_v3_20261011__C1_primary",
+      "removed_group": "TTA_plane_sd",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/db9_scoreonly_v3_20261011__C1_primary__TTA_plane_sd.joblib",
+      "model_sha256": "7689e1957b55ced06d255e93fa563abfc9d8b442a72c14783c68cf948066caa0",
+      "training_npz_sha256": "3477131cee73ef402a2514b64f3a32939d0abeda3a72e4dc8645986365259899",
+      "rows": 65000,
+      "fit_seconds": 1.3419150803238153,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.34188382099487385,
+          "goal_user_risks": [
+            0.2571386517515455,
+            0.15348179336206047,
+            0.44756901818597083
+          ],
+          "median_coverage": 0.30002072682050573,
+          "median_goal_risk": 0.2571386517515455,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.2353763693189923,
+            "goal_user_risks": [
+              0.15533854166666666,
+              0.0774255729278218,
+              0.5037796069208802
+            ],
+            "median_coverage": 0.10037826447422965,
+            "median_goal_risk": 0.15533854166666666,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.29152283030789095,
+            "goal_user_risks": [
+              0.2021688613477924,
+              0.1226126034112961,
+              0.4564306572432181
+            ],
+            "median_coverage": 0.2000224540555479,
+            "median_goal_risk": 0.2021688613477924,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.34188382099487385,
+            "goal_user_risks": [
+              0.2571386517515455,
+              0.15348179336206047,
+              0.44756901818597083
+            ],
+            "median_coverage": 0.30002072682050573,
+            "median_goal_risk": 0.2571386517515455,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.44032252818348344,
+            "goal_user_risks": [
+              0.30028918196556104,
+              0.19951188577358417,
+              0.4556646609324818
+            ],
+            "median_coverage": 0.5000259085256322,
+            "median_goal_risk": 0.30028918196556104,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5584279253361396,
+            "goal_user_risks": [
+              0.33810919353088026,
+              0.23599635190504062,
+              0.4622601454535494
+            ],
+            "median_coverage": 0.7000051817051265,
+            "median_goal_risk": 0.33810919353088026,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.4540413543191072,
+              0.3513423139390465,
+              0.5021350049968202
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.4540413543191072,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "db9_scoreonly_v3_20261011__C2_primary",
+      "removed_group": "predicted_class",
+      "columns": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/db9_scoreonly_v3_20261011__C2_primary__predicted_class.joblib",
+      "model_sha256": "83d7ba7b02d448f1f528b195488cd327001e85f75216c09e6dddd1414d073058",
+      "training_npz_sha256": "34733a83558766aa9627126b04ab67c9c7c7ad169acd4fd003b7cbe9c181f005",
+      "rows": 65000,
+      "fit_seconds": 0.9745302703231573,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.22383918366451802,
+          "goal_user_risks": [
+            0.02878435662518802,
+            0.021975338786472957,
+            0.0905700007242703
+          ],
+          "median_coverage": 0.3000243268025225,
+          "median_goal_risk": 0.02878435662518802,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.11353799673393623,
+            "goal_user_risks": [
+              0.019611934070519508,
+              0.016404825969967885,
+              0.08647058823529412
+            ],
+            "median_coverage": 0.10000187129250174,
+            "median_goal_risk": 0.019611934070519508,
+            "feasible": true
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.1777933558009194,
+            "goal_user_risks": [
+              0.025759064811462267,
+              0.017544587308170885,
+              0.08226280315686388
+            ],
+            "median_coverage": 0.2000130990475121,
+            "median_goal_risk": 0.025759064811462267,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.22383918366451802,
+            "goal_user_risks": [
+              0.02878435662518802,
+              0.021975338786472957,
+              0.0905700007242703
+            ],
+            "median_coverage": 0.3000243268025225,
+            "median_goal_risk": 0.02878435662518802,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.3963132496535194,
+            "goal_user_risks": [
+              0.0468257998984256,
+              0.04847386493704693,
+              0.12206928859838936
+            ],
+            "median_coverage": 0.5000093564625087,
+            "median_goal_risk": 0.04847386493704693,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.6242195746023628,
+            "goal_user_risks": [
+              0.08707146757090721,
+              0.10445487150446296,
+              0.18816439019958206
+            ],
+            "median_coverage": 0.6999943861224948,
+            "median_goal_risk": 0.10445487150446296,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.1910223098288684,
+              0.2011751218114073,
+              0.30333222292884326
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.2011751218114073,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "db9_scoreonly_v3_20261011__C2_primary",
+      "removed_group": "discriminant_scores",
+      "columns": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/db9_scoreonly_v3_20261011__C2_primary__discriminant_scores.joblib",
+      "model_sha256": "36cf1d56649c425f6ddc864da492bf994ed45209d42b9062012fc7bde51be21f",
+      "training_npz_sha256": "34733a83558766aa9627126b04ab67c9c7c7ad169acd4fd003b7cbe9c181f005",
+      "rows": 65000,
+      "fit_seconds": 0.9706976898014545,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.22835471256381312,
+          "goal_user_risks": [
+            0.029234796206275282,
+            0.025340905814858594,
+            0.09618945868945869
+          ],
+          "median_coverage": 0.30114710230356107,
+          "median_goal_risk": 0.029234796206275282,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.11864625897173828,
+            "goal_user_risks": [
+              0.01941848390446521,
+              0.024293079206374003,
+              0.09807592303692148
+            ],
+            "median_coverage": 0.10000187129250174,
+            "median_goal_risk": 0.024293079206374003,
+            "feasible": true
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.18119357744594686,
+            "goal_user_risks": [
+              0.025610635885808513,
+              0.022458391818728694,
+              0.08863662424033941
+            ],
+            "median_coverage": 0.20000374258500347,
+            "median_goal_risk": 0.025610635885808513,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.22835471256381312,
+            "goal_user_risks": [
+              0.029234796206275282,
+              0.025340905814858594,
+              0.09618945868945869
+            ],
+            "median_coverage": 0.30114710230356107,
+            "median_goal_risk": 0.029234796206275282,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.3803013541798676,
+            "goal_user_risks": [
+              0.04607564050427003,
+              0.047424366312346686,
+              0.1289931703018286
+            ],
+            "median_coverage": 0.5,
+            "median_goal_risk": 0.047424366312346686,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.6094704622724462,
+            "goal_user_risks": [
+              0.08944531037737198,
+              0.08867324516507663,
+              0.18668845909379825
+            ],
+            "median_coverage": 0.6999965455299157,
+            "median_goal_risk": 0.08944531037737198,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.1910223098288684,
+              0.2011751218114073,
+              0.30333222292884326
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.2011751218114073,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "db9_scoreonly_v3_20261011__C2_primary",
+      "removed_group": "score_gap",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/db9_scoreonly_v3_20261011__C2_primary__score_gap.joblib",
+      "model_sha256": "06caf8bbc01df5d7045e8f8837cd9a18ee909333b6b6ba5f320c3976fdf86335",
+      "training_npz_sha256": "34733a83558766aa9627126b04ab67c9c7c7ad169acd4fd003b7cbe9c181f005",
+      "rows": 65000,
+      "fit_seconds": 0.9835846051573753,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.22875346111448153,
+          "goal_user_risks": [
+            0.028499266186559267,
+            0.025947646974681732,
+            0.09729068470478178
+          ],
+          "median_coverage": 0.3000056138775052,
+          "median_goal_risk": 0.028499266186559267,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.11808373334502797,
+            "goal_user_risks": [
+              0.018132835975546574,
+              0.025139445360986723,
+              0.1074495242515665
+            ],
+            "median_coverage": 0.1000299406800277,
+            "median_goal_risk": 0.025139445360986723,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.17940200348087157,
+            "goal_user_risks": [
+              0.025078528726314723,
+              0.023287451984635082,
+              0.09121290694324402
+            ],
+            "median_coverage": 0.20296038473773836,
+            "median_goal_risk": 0.025078528726314723,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.22875346111448153,
+            "goal_user_risks": [
+              0.028499266186559267,
+              0.025947646974681732,
+              0.09729068470478178
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.028499266186559267,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.3816538147619194,
+            "goal_user_risks": [
+              0.04640913152977496,
+              0.0479983660130719,
+              0.12894430151505157
+            ],
+            "median_coverage": 0.5000093564625087,
+            "median_goal_risk": 0.0479983660130719,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.6092964121416077,
+            "goal_user_risks": [
+              0.09046875,
+              0.08777729209922412,
+              0.18632995614698322
+            ],
+            "median_coverage": 0.6999965455299157,
+            "median_goal_risk": 0.09046875,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.1910223098288684,
+              0.2011751218114073,
+              0.30333222292884326
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.2011751218114073,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "db9_scoreonly_v3_20261011__C2_primary",
+      "removed_group": "entropy",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/db9_scoreonly_v3_20261011__C2_primary__entropy.joblib",
+      "model_sha256": "1485065e377e0f4270bc80e9e95de003e8178f72e8d7cf50135220ed619311d5",
+      "training_npz_sha256": "34733a83558766aa9627126b04ab67c9c7c7ad169acd4fd003b7cbe9c181f005",
+      "rows": 65000,
+      "fit_seconds": 0.9987106919288635,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.22734681273538423,
+          "goal_user_risks": [
+            0.030244002460529013,
+            0.023948257778813656,
+            0.09394800087393489
+          ],
+          "median_coverage": 0.3000711091150658,
+          "median_goal_risk": 0.030244002460529013,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.1188293717649696,
+            "goal_user_risks": [
+              0.020074890784272936,
+              0.022206854157061626,
+              0.09104622346729878
+            ],
+            "median_coverage": 0.10008607945507962,
+            "median_goal_risk": 0.022206854157061626,
+            "feasible": true
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.1800658313915362,
+            "goal_user_risks": [
+              0.026481971888368303,
+              0.021759129634814606,
+              0.08367437230394868
+            ],
+            "median_coverage": 0.20280132487509123,
+            "median_goal_risk": 0.026481971888368303,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.22734681273538423,
+            "goal_user_risks": [
+              0.030244002460529013,
+              0.023948257778813656,
+              0.09394800087393489
+            ],
+            "median_coverage": 0.3000711091150658,
+            "median_goal_risk": 0.030244002460529013,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.39018088993449584,
+            "goal_user_risks": [
+              0.046650960640155975,
+              0.04802916720921148,
+              0.1306794451893698
+            ],
+            "median_coverage": 0.5,
+            "median_goal_risk": 0.04802916720921148,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.6052415691543206,
+            "goal_user_risks": [
+              0.08762834781359949,
+              0.09300812126306655,
+              0.1877622112836047
+            ],
+            "median_coverage": 0.7000318119725294,
+            "median_goal_risk": 0.09300812126306655,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.1910223098288684,
+              0.2011751218114073,
+              0.30333222292884326
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.2011751218114073,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "db9_scoreonly_v3_20261011__C2_primary",
+      "removed_group": "boundary_distance",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/db9_scoreonly_v3_20261011__C2_primary__boundary_distance.joblib",
+      "model_sha256": "ab09eb73eaf7b59af97ea470be14a36ae937166c9d6f886dd7ae923ab59d4bbc",
+      "training_npz_sha256": "34733a83558766aa9627126b04ab67c9c7c7ad169acd4fd003b7cbe9c181f005",
+      "rows": 65000,
+      "fit_seconds": 1.0447598025202751,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.22973660103859742,
+          "goal_user_risks": [
+            0.02783930214331959,
+            0.025807185084129148,
+            0.09928238249013276
+          ],
+          "median_coverage": 0.3000056138775052,
+          "median_goal_risk": 0.02783930214331959,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.1136184523469376,
+            "goal_user_risks": [
+              0.018328673501087293,
+              0.02360497792051385,
+              0.09828321235165341
+            ],
+            "median_coverage": 0.1004229121053912,
+            "median_goal_risk": 0.02360497792051385,
+            "feasible": true
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.180119723519781,
+            "goal_user_risks": [
+              0.024634570172748647,
+              0.02302119040199439,
+              0.09183673469387756
+            ],
+            "median_coverage": 0.20122008271112857,
+            "median_goal_risk": 0.024634570172748647,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.22973660103859742,
+            "goal_user_risks": [
+              0.02783930214331959,
+              0.025807185084129148,
+              0.09928238249013276
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.02783930214331959,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.38235133046990644,
+            "goal_user_risks": [
+              0.045884790380240494,
+              0.046779255716634285,
+              0.12884619602166808
+            ],
+            "median_coverage": 0.5000093564625087,
+            "median_goal_risk": 0.046779255716634285,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.6054153511843634,
+            "goal_user_risks": [
+              0.08853254471848172,
+              0.08853398853398853,
+              0.1872720087548638
+            ],
+            "median_coverage": 0.6999965455299157,
+            "median_goal_risk": 0.08853398853398853,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.1910223098288684,
+              0.2011751218114073,
+              0.30333222292884326
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.2011751218114073,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "db9_scoreonly_v3_20261011__C2_primary",
+      "removed_group": "TTA_dispersion",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/db9_scoreonly_v3_20261011__C2_primary__TTA_dispersion.joblib",
+      "model_sha256": "a616819ccc0c406a2b92e24ade10ff0e5ca26e40a8858e70e07074fd1adcb41d",
+      "training_npz_sha256": "34733a83558766aa9627126b04ab67c9c7c7ad169acd4fd003b7cbe9c181f005",
+      "rows": 65000,
+      "fit_seconds": 1.0405267924070358,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 1,
+          "retention": 0.2,
+          "threshold": 0.17810845380150772,
+          "goal_user_risks": [
+            0.024203100056645555,
+            0.025136924711845008,
+            0.09112406511218654
+          ],
+          "median_coverage": 0.20000374258500347,
+          "median_goal_risk": 0.025136924711845008,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.11751920196918594,
+            "goal_user_risks": [
+              0.02063983488132095,
+              0.023725553061878808,
+              0.11583206879109763
+            ],
+            "median_coverage": 0.10003929714253634,
+            "median_goal_risk": 0.023725553061878808,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.17810845380150772,
+            "goal_user_risks": [
+              0.024203100056645555,
+              0.025136924711845008,
+              0.09112406511218654
+            ],
+            "median_coverage": 0.20000374258500347,
+            "median_goal_risk": 0.025136924711845008,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.22776773991835939,
+            "goal_user_risks": [
+              0.028944943168242483,
+              0.025821663743278604,
+              0.10076976906927922
+            ],
+            "median_coverage": 0.30001497034001384,
+            "median_goal_risk": 0.028944943168242483,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.3814909084439909,
+            "goal_user_risks": [
+              0.047193021695370166,
+              0.04835579215881994,
+              0.13089096791116553
+            ],
+            "median_coverage": 0.5,
+            "median_goal_risk": 0.04835579215881994,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.6059165561094834,
+            "goal_user_risks": [
+              0.08861031518624642,
+              0.0880613930878156,
+              0.18822156904336232
+            ],
+            "median_coverage": 0.6999965455299157,
+            "median_goal_risk": 0.08861031518624642,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.1910223098288684,
+              0.2011751218114073,
+              0.30333222292884326
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.2011751218114073,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "db9_scoreonly_v3_20261011__C2_primary",
+      "removed_group": "TTA_plane_sd",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/db9_scoreonly_v3_20261011__C2_primary__TTA_plane_sd.joblib",
+      "model_sha256": "fb69530ef8f96018e685f2bed5cc17a235a483b176741734ceed48cc142fc3f9",
+      "training_npz_sha256": "34733a83558766aa9627126b04ab67c9c7c7ad169acd4fd003b7cbe9c181f005",
+      "rows": 65000,
+      "fit_seconds": 1.0239930599927902,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.2260848663186851,
+          "goal_user_risks": [
+            0.029248148527354016,
+            0.025135909276904192,
+            0.09729374383696723
+          ],
+          "median_coverage": 0.3000056138775052,
+          "median_goal_risk": 0.029248148527354016,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.11512202119341951,
+            "goal_user_risks": [
+              0.01816483288353747,
+              0.022965350523771154,
+              0.10081901026646672
+            ],
+            "median_coverage": 0.10000187129250174,
+            "median_goal_risk": 0.022965350523771154,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.17793104263132467,
+            "goal_user_risks": [
+              0.025444244141127993,
+              0.02245786630110475,
+              0.09037627476263041
+            ],
+            "median_coverage": 0.2000130990475121,
+            "median_goal_risk": 0.025444244141127993,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.2260848663186851,
+            "goal_user_risks": [
+              0.029248148527354016,
+              0.025135909276904192,
+              0.09729374383696723
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.029248148527354016,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.3790023517131254,
+            "goal_user_risks": [
+              0.04558566611140454,
+              0.04819705244258248,
+              0.12821251329315844
+            ],
+            "median_coverage": 0.5000935646250866,
+            "median_goal_risk": 0.04819705244258248,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.6077366965818578,
+            "goal_user_risks": [
+              0.08972928113553114,
+              0.08895927478258495,
+              0.18819832402234637
+            ],
+            "median_coverage": 0.6999965455299157,
+            "median_goal_risk": 0.08972928113553114,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.1910223098288684,
+              0.2011751218114073,
+              0.30333222292884326
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.2011751218114073,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "ceti_age_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "predicted_class",
+      "columns": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/ceti_age_scoreonly_v3_20261012__C1_primary__predicted_class.joblib",
+      "model_sha256": "b750ad71579f44f290da829e97741121f892803a0764228cb3cb7b8f5eca60c0",
+      "training_npz_sha256": "ee996b8b54d433229996eaf2bdf688626f7939db99cc6386c1d33365b02c452e",
+      "rows": 65000,
+      "fit_seconds": 1.2673032600432634,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.33263474946663757,
+          "goal_user_risks": [
+            0.2801635300875089,
+            0.15889259312943904,
+            0.414994126959808
+          ],
+          "median_coverage": 0.3000056138775052,
+          "median_goal_risk": 0.2801635300875089,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.20265209335329426,
+            "goal_user_risks": [
+              0.2105439330543933,
+              0.10899156441717792,
+              0.27034080442124653
+            ],
+            "median_coverage": 0.10002418129059003,
+            "median_goal_risk": 0.2105439330543933,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.26054339589250103,
+            "goal_user_risks": [
+              0.24091623169310292,
+              0.13232752580690363,
+              0.35769163610965604
+            ],
+            "median_coverage": 0.20005052489754674,
+            "median_goal_risk": 0.24091623169310292,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.33263474946663757,
+            "goal_user_risks": [
+              0.2801635300875089,
+              0.15889259312943904,
+              0.414994126959808
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.2801635300875089,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.4799889212344,
+            "goal_user_risks": [
+              0.3389676481279535,
+              0.21612507133839476,
+              0.47692378731558654
+            ],
+            "median_coverage": 0.5000093564625087,
+            "median_goal_risk": 0.3389676481279535,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5966819836101979,
+            "goal_user_risks": [
+              0.39008243099635237,
+              0.2744762719110731,
+              0.5140698201601934
+            ],
+            "median_coverage": 0.6999943861224948,
+            "median_goal_risk": 0.39008243099635237,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.4691037242779918,
+              0.37880959205120857,
+              0.5851730716816571
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.4691037242779918,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "ceti_age_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "discriminant_scores",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/ceti_age_scoreonly_v3_20261012__C1_primary__discriminant_scores.joblib",
+      "model_sha256": "be8471ceadf5a796968f98115f97346c3ef90872cdf566d36f25945890f9a77e",
+      "training_npz_sha256": "ee996b8b54d433229996eaf2bdf688626f7939db99cc6386c1d33365b02c452e",
+      "rows": 65000,
+      "fit_seconds": 1.3733661156147718,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.30715032270221654,
+          "goal_user_risks": [
+            0.26155362240043495,
+            0.1511953281829795,
+            0.39645003031806403
+          ],
+          "median_coverage": 0.3000056138775052,
+          "median_goal_risk": 0.26155362240043495,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.22058693076638244,
+            "goal_user_risks": [
+              0.21245221190606225,
+              0.11828778903114848,
+              0.2959128798063996
+            ],
+            "median_coverage": 0.10010190686748653,
+            "median_goal_risk": 0.21245221190606225,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.25784721669544547,
+            "goal_user_risks": [
+              0.22397706288269026,
+              0.13168426635806935,
+              0.35366297036902383
+            ],
+            "median_coverage": 0.20023835843581594,
+            "median_goal_risk": 0.22397706288269026,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.30715032270221654,
+            "goal_user_risks": [
+              0.26155362240043495,
+              0.1511953281829795,
+              0.39645003031806403
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.26155362240043495,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.4477732599645591,
+            "goal_user_risks": [
+              0.34079848139098123,
+              0.20946707179679766,
+              0.4675859729055086
+            ],
+            "median_coverage": 0.5,
+            "median_goal_risk": 0.34079848139098123,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5887748281510591,
+            "goal_user_risks": [
+              0.37681492438712644,
+              0.2523067818039975,
+              0.5073978047227958
+            ],
+            "median_coverage": 0.6999943861224948,
+            "median_goal_risk": 0.37681492438712644,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.4691037242779918,
+              0.37880959205120857,
+              0.5851730716816571
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.4691037242779918,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "ceti_age_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "score_gap",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/ceti_age_scoreonly_v3_20261012__C1_primary__score_gap.joblib",
+      "model_sha256": "ea6f4ed9794fe1ed854bd40bafbca5d823261a30a368cf0f8a1c3e66534df77d",
+      "training_npz_sha256": "ee996b8b54d433229996eaf2bdf688626f7939db99cc6386c1d33365b02c452e",
+      "rows": 65000,
+      "fit_seconds": 1.400596110150218,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.31286289740614553,
+          "goal_user_risks": [
+            0.2643939908911699,
+            0.157524893314367,
+            0.4049288179465056
+          ],
+          "median_coverage": 0.3000523961900485,
+          "median_goal_risk": 0.2643939908911699,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.2200361040777479,
+            "goal_user_risks": [
+              0.22167133146741302,
+              0.11516500532275235,
+              0.28942087155963303
+            ],
+            "median_coverage": 0.10000690894016857,
+            "median_goal_risk": 0.22167133146741302,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.2592487524653306,
+            "goal_user_risks": [
+              0.23302640898512597,
+              0.1418850927212612,
+              0.35708443151867675
+            ],
+            "median_coverage": 0.20002245551002076,
+            "median_goal_risk": 0.23302640898512597,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.31286289740614553,
+            "goal_user_risks": [
+              0.2643939908911699,
+              0.157524893314367,
+              0.4049288179465056
+            ],
+            "median_coverage": 0.3000523961900485,
+            "median_goal_risk": 0.2643939908911699,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.4494919539694643,
+            "goal_user_risks": [
+              0.33681060973637394,
+              0.21200213134407886,
+              0.4584961627195254
+            ],
+            "median_coverage": 0.5,
+            "median_goal_risk": 0.33681060973637394,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.593814673534574,
+            "goal_user_risks": [
+              0.3783481181638102,
+              0.2553896294713221,
+              0.5138608408298145
+            ],
+            "median_coverage": 0.6999943861224948,
+            "median_goal_risk": 0.3783481181638102,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.4691037242779918,
+              0.37880959205120857,
+              0.5851730716816571
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.4691037242779918,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "ceti_age_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "entropy",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/ceti_age_scoreonly_v3_20261012__C1_primary__entropy.joblib",
+      "model_sha256": "cd739ba39b06ef40b6bda9b562d41d11b9e6f07d52fd79e12aff178bb3e9feae",
+      "training_npz_sha256": "ee996b8b54d433229996eaf2bdf688626f7939db99cc6386c1d33365b02c452e",
+      "rows": 65000,
+      "fit_seconds": 1.4027009960263968,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.31903358894313816,
+          "goal_user_risks": [
+            0.26444625517756504,
+            0.15965313613874554,
+            0.41503428011753185
+          ],
+          "median_coverage": 0.3000056138775052,
+          "median_goal_risk": 0.26444625517756504,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.21514850646111286,
+            "goal_user_risks": [
+              0.218313836224284,
+              0.11334209044848939,
+              0.2851485148514851
+            ],
+            "median_coverage": 0.10000690894016857,
+            "median_goal_risk": 0.218313836224284,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.26153433420921496,
+            "goal_user_risks": [
+              0.23066047263179157,
+              0.1433640880056778,
+              0.36673243544651285
+            ],
+            "median_coverage": 0.20001381788033715,
+            "median_goal_risk": 0.23066047263179157,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.31903358894313816,
+            "goal_user_risks": [
+              0.26444625517756504,
+              0.15965313613874554,
+              0.41503428011753185
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.26444625517756504,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.45029221791594704,
+            "goal_user_risks": [
+              0.33460629205310055,
+              0.2140878968711879,
+              0.471906950567489
+            ],
+            "median_coverage": 0.5001029210875952,
+            "median_goal_risk": 0.33460629205310055,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5933940940729536,
+            "goal_user_risks": [
+              0.3771004635010834,
+              0.2576041957855783,
+              0.5074298902905562
+            ],
+            "median_coverage": 0.7000130990475121,
+            "median_goal_risk": 0.3771004635010834,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.4691037242779918,
+              0.37880959205120857,
+              0.5851730716816571
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.4691037242779918,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "ceti_age_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "boundary_distance",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/ceti_age_scoreonly_v3_20261012__C1_primary__boundary_distance.joblib",
+      "model_sha256": "53370da33022bc587048a18cd7b86e9aaae51cda7697dd963a00352e3e658d4e",
+      "training_npz_sha256": "ee996b8b54d433229996eaf2bdf688626f7939db99cc6386c1d33365b02c452e",
+      "rows": 65000,
+      "fit_seconds": 1.4072011150419712,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.3102708495359704,
+          "goal_user_risks": [
+            0.25647395106679827,
+            0.15821557996460375,
+            0.4117196280780627
+          ],
+          "median_coverage": 0.3000056138775052,
+          "median_goal_risk": 0.25647395106679827,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.2148885963013607,
+            "goal_user_risks": [
+              0.22156017248137985,
+              0.1238553761918248,
+              0.31268087345435414
+            ],
+            "median_coverage": 0.10015372391875087,
+            "median_goal_risk": 0.22156017248137985,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.25407063982542394,
+            "goal_user_risks": [
+              0.22373481781376517,
+              0.1451872925557136,
+              0.372211816788694
+            ],
+            "median_coverage": 0.20000374258500347,
+            "median_goal_risk": 0.22373481781376517,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.3102708495359704,
+            "goal_user_risks": [
+              0.25647395106679827,
+              0.15821557996460375,
+              0.4117196280780627
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.25647395106679827,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.4559022489898348,
+            "goal_user_risks": [
+              0.3367774025921508,
+              0.21129241301385795,
+              0.46020629362300197
+            ],
+            "median_coverage": 0.5000374258500346,
+            "median_goal_risk": 0.3367774025921508,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5952414251868139,
+            "goal_user_risks": [
+              0.3795474775318,
+              0.25855937151653485,
+              0.5117132594096517
+            ],
+            "median_coverage": 0.7000318119725294,
+            "median_goal_risk": 0.3795474775318,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.4691037242779918,
+              0.37880959205120857,
+              0.5851730716816571
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.4691037242779918,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "ceti_age_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "TTA_dispersion",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        35
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/ceti_age_scoreonly_v3_20261012__C1_primary__TTA_dispersion.joblib",
+      "model_sha256": "ea8eb741604614b17abf123550b18bb8f75f604920facac949442cf79015d23f",
+      "training_npz_sha256": "ee996b8b54d433229996eaf2bdf688626f7939db99cc6386c1d33365b02c452e",
+      "rows": 65000,
+      "fit_seconds": 1.4087983164936304,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.30854720482640224,
+          "goal_user_risks": [
+            0.26670298985221,
+            0.1548808940864706,
+            0.4129197347119954
+          ],
+          "median_coverage": 0.3000056138775052,
+          "median_goal_risk": 0.26670298985221,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.21167561749260358,
+            "goal_user_risks": [
+              0.2168379446640316,
+              0.1179980750721848,
+              0.2945612762871646
+            ],
+            "median_coverage": 0.1000155451153793,
+            "median_goal_risk": 0.2168379446640316,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.2536365632867744,
+            "goal_user_risks": [
+              0.23619616377347033,
+              0.14089280526774475,
+              0.37417689980423563
+            ],
+            "median_coverage": 0.20000374258500347,
+            "median_goal_risk": 0.23619616377347033,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.30854720482640224,
+            "goal_user_risks": [
+              0.26670298985221,
+              0.1548808940864706,
+              0.4129197347119954
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.26670298985221,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.45042819057914,
+            "goal_user_risks": [
+              0.3379580940053394,
+              0.20952713139668144,
+              0.4635662537976163
+            ],
+            "median_coverage": 0.5,
+            "median_goal_risk": 0.3379580940053394,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5956477919282123,
+            "goal_user_risks": [
+              0.37795456503633074,
+              0.2561885632956012,
+              0.512678808604186
+            ],
+            "median_coverage": 0.6999943861224948,
+            "median_goal_risk": 0.37795456503633074,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.4691037242779918,
+              0.37880959205120857,
+              0.5851730716816571
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.4691037242779918,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "ceti_age_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "TTA_plane_sd",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/ceti_age_scoreonly_v3_20261012__C1_primary__TTA_plane_sd.joblib",
+      "model_sha256": "00592effa23e3efa4085852fb2dc42559bbf251890876ae8d1e9e5d60467fcf6",
+      "training_npz_sha256": "ee996b8b54d433229996eaf2bdf688626f7939db99cc6386c1d33365b02c452e",
+      "rows": 65000,
+      "fit_seconds": 1.4226823151111603,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.3111449421904381,
+          "goal_user_risks": [
+            0.2644515557976442,
+            0.1534345875043148,
+            0.4080831653760475
+          ],
+          "median_coverage": 0.30001497034001384,
+          "median_goal_risk": 0.2644515557976442,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.21346185442392404,
+            "goal_user_risks": [
+              0.21436071399725384,
+              0.1146749929037752,
+              0.2884275618374558
+            ],
+            "median_coverage": 0.10004145364101147,
+            "median_goal_risk": 0.21436071399725384,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.2582011942005449,
+            "goal_user_risks": [
+              0.23615740510422367,
+              0.1351441505837503,
+              0.36329951477723865
+            ],
+            "median_coverage": 0.20000518170512643,
+            "median_goal_risk": 0.23615740510422367,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.3111449421904381,
+            "goal_user_risks": [
+              0.2644515557976442,
+              0.1534345875043148,
+              0.4080831653760475
+            ],
+            "median_coverage": 0.30001497034001384,
+            "median_goal_risk": 0.2644515557976442,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.45096641378727076,
+            "goal_user_risks": [
+              0.33549026348249855,
+              0.20981483019181268,
+              0.4587389510901591
+            ],
+            "median_coverage": 0.5,
+            "median_goal_risk": 0.33549026348249855,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5929148973889742,
+            "goal_user_risks": [
+              0.3783939006705242,
+              0.2546853053307471,
+              0.5073417564337379
+            ],
+            "median_coverage": 0.6999943861224948,
+            "median_goal_risk": 0.3783939006705242,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.4691037242779918,
+              0.37880959205120857,
+              0.5851730716816571
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.4691037242779918,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "ceti_age_scoreonly_v3_20261012__C2_primary",
+      "removed_group": "predicted_class",
+      "columns": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/ceti_age_scoreonly_v3_20261012__C2_primary__predicted_class.joblib",
+      "model_sha256": "29ece47f95f0523e13efb240f6a553742116dbd2ea62fbfbdb36ab2875406dc4",
+      "training_npz_sha256": "73584fdb5e34ad80faa9ea499c0607ee6caaf26fe1ba3cdc4f5c9847c17f2ab6",
+      "rows": 65000,
+      "fit_seconds": 1.0127017982304096,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.433726900067488,
+          "goal_user_risks": [
+            0.26919078439920857,
+            0.22577822933423644,
+            0.3472373065435786
+          ],
+          "median_coverage": 0.3000144307085478,
+          "median_goal_risk": 0.26919078439920857,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.2759679723642439,
+            "goal_user_risks": [
+              0.17836925216009533,
+              0.21277389277389278,
+              0.21763579803780808
+            ],
+            "median_coverage": 0.10001122775501038,
+            "median_goal_risk": 0.21277389277389278,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.3795613953426257,
+            "goal_user_risks": [
+              0.2421682506159803,
+              0.22094555637921093,
+              0.30197160077638163
+            ],
+            "median_coverage": 0.20002886141709558,
+            "median_goal_risk": 0.2421682506159803,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.433726900067488,
+            "goal_user_risks": [
+              0.26919078439920857,
+              0.22577822933423644,
+              0.3472373065435786
+            ],
+            "median_coverage": 0.3000144307085478,
+            "median_goal_risk": 0.26919078439920857,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.5033477208964571,
+            "goal_user_risks": [
+              0.31631471461355454,
+              0.24876967579548442,
+              0.3975724497484879
+            ],
+            "median_coverage": 0.5000048102361826,
+            "median_goal_risk": 0.31631471461355454,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5801865664723652,
+            "goal_user_risks": [
+              0.3528284075230557,
+              0.288684203323023,
+              0.4360701734890892
+            ],
+            "median_coverage": 0.7000051817051265,
+            "median_goal_risk": 0.3528284075230557,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.39919760276359145,
+              0.3704690933409764,
+              0.4838940876008197
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.39919760276359145,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "ceti_age_scoreonly_v3_20261012__C2_primary",
+      "removed_group": "discriminant_scores",
+      "columns": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/ceti_age_scoreonly_v3_20261012__C2_primary__discriminant_scores.joblib",
+      "model_sha256": "62c82c1cd7f69c1b80f39743fbd3b25022beaeb4868971199706214a9c4dba03",
+      "training_npz_sha256": "73584fdb5e34ad80faa9ea499c0607ee6caaf26fe1ba3cdc4f5c9847c17f2ab6",
+      "rows": 65000,
+      "fit_seconds": 1.0351142268627882,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.42312042291526736,
+          "goal_user_risks": [
+            0.2959041423260754,
+            0.2224944433218832,
+            0.35013262599469497
+          ],
+          "median_coverage": 0.3000056138775052,
+          "median_goal_risk": 0.2959041423260754,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.2758900890988456,
+            "goal_user_risks": [
+              0.181058495821727,
+              0.22554601852638737,
+              0.22200584225900682
+            ],
+            "median_coverage": 0.10000187129250174,
+            "median_goal_risk": 0.22200584225900682,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.3729199517885578,
+            "goal_user_risks": [
+              0.2527701863354037,
+              0.21966104330249553,
+              0.3012111361610654
+            ],
+            "median_coverage": 0.2000130990475121,
+            "median_goal_risk": 0.2527701863354037,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.42312042291526736,
+            "goal_user_risks": [
+              0.2959041423260754,
+              0.2224944433218832,
+              0.35013262599469497
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.2959041423260754,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.4906628242977357,
+            "goal_user_risks": [
+              0.3266187647962786,
+              0.24952274200045538,
+              0.3989218877135883
+            ],
+            "median_coverage": 0.5000336716532782,
+            "median_goal_risk": 0.3266187647962786,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5687551907861962,
+            "goal_user_risks": [
+              0.3549434173834782,
+              0.28486622531049954,
+              0.4352490202248477
+            ],
+            "median_coverage": 0.6999965455299157,
+            "median_goal_risk": 0.3549434173834782,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.39919760276359145,
+              0.3704690933409764,
+              0.4838940876008197
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.39919760276359145,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "ceti_age_scoreonly_v3_20261012__C2_primary",
+      "removed_group": "score_gap",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/ceti_age_scoreonly_v3_20261012__C2_primary__score_gap.joblib",
+      "model_sha256": "352df1a87a513f84f6ab2188f702211e679dddb684c9c1b360c29f40dc9eea04",
+      "training_npz_sha256": "73584fdb5e34ad80faa9ea499c0607ee6caaf26fe1ba3cdc4f5c9847c17f2ab6",
+      "rows": 65000,
+      "fit_seconds": 1.052295807749033,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.417272873286585,
+          "goal_user_risks": [
+            0.28557714588367705,
+            0.23076525870081585,
+            0.36196086537136557
+          ],
+          "median_coverage": 0.3000430397275398,
+          "median_goal_risk": 0.28557714588367705,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.2699291254942638,
+            "goal_user_risks": [
+              0.16797457037846428,
+              0.20810117626249225,
+              0.2305461575640406
+            ],
+            "median_coverage": 0.10000187129250174,
+            "median_goal_risk": 0.20810117626249225,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.3650124300173289,
+            "goal_user_risks": [
+              0.24176371056036627,
+              0.22028040686486275,
+              0.31523137900859627
+            ],
+            "median_coverage": 0.20000374258500347,
+            "median_goal_risk": 0.24176371056036627,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.417272873286585,
+            "goal_user_risks": [
+              0.28557714588367705,
+              0.23076525870081585,
+              0.36196086537136557
+            ],
+            "median_coverage": 0.3000430397275398,
+            "median_goal_risk": 0.28557714588367705,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.4920394850384003,
+            "goal_user_risks": [
+              0.3242829587386783,
+              0.24895727454347902,
+              0.3996627661303429
+            ],
+            "median_coverage": 0.5000144307085478,
+            "median_goal_risk": 0.3242829587386783,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5710439357598693,
+            "goal_user_risks": [
+              0.35745692749461594,
+              0.28500006829947955,
+              0.42949900602108093
+            ],
+            "median_coverage": 0.7001001796324444,
+            "median_goal_risk": 0.35745692749461594,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.39919760276359145,
+              0.3704690933409764,
+              0.4838940876008197
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.39919760276359145,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "ceti_age_scoreonly_v3_20261012__C2_primary",
+      "removed_group": "entropy",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/ceti_age_scoreonly_v3_20261012__C2_primary__entropy.joblib",
+      "model_sha256": "9f1328ddc0d2170c6e350cd3d8127b4e4aece9975b7de1bff630894652b0fba8",
+      "training_npz_sha256": "73584fdb5e34ad80faa9ea499c0607ee6caaf26fe1ba3cdc4f5c9847c17f2ab6",
+      "rows": 65000,
+      "fit_seconds": 1.0415068715810776,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.41891075444390485,
+          "goal_user_risks": [
+            0.2890319155994957,
+            0.2233885771905784,
+            0.35452998723947254
+          ],
+          "median_coverage": 0.3000056138775052,
+          "median_goal_risk": 0.2890319155994957,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.2650810109663787,
+            "goal_user_risks": [
+              0.1721735668789809,
+              0.2192662145713789,
+              0.2222222222222222
+            ],
+            "median_coverage": 0.10000187129250174,
+            "median_goal_risk": 0.2192662145713789,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.3662464698873758,
+            "goal_user_risks": [
+              0.2461699164345404,
+              0.22060146259434515,
+              0.31103347585775365
+            ],
+            "median_coverage": 0.2000130990475121,
+            "median_goal_risk": 0.2461699164345404,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.41891075444390485,
+            "goal_user_risks": [
+              0.2890319155994957,
+              0.2233885771905784,
+              0.35452998723947254
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.2890319155994957,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.49858944747220985,
+            "goal_user_risks": [
+              0.33491117109132656,
+              0.25398758275306144,
+              0.4009265279583875
+            ],
+            "median_coverage": 0.5004184905478859,
+            "median_goal_risk": 0.33491117109132656,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5722794673212597,
+            "goal_user_risks": [
+              0.35818076356767853,
+              0.28831509130114363,
+              0.4316448801742919
+            ],
+            "median_coverage": 0.6999965455299157,
+            "median_goal_risk": 0.35818076356767853,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.39919760276359145,
+              0.3704690933409764,
+              0.4838940876008197
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.39919760276359145,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "ceti_age_scoreonly_v3_20261012__C2_primary",
+      "removed_group": "boundary_distance",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/ceti_age_scoreonly_v3_20261012__C2_primary__boundary_distance.joblib",
+      "model_sha256": "256badbc8323e7ffbccd6be112c472af01c95688f844d98a8c7534578c4305d5",
+      "training_npz_sha256": "73584fdb5e34ad80faa9ea499c0607ee6caaf26fe1ba3cdc4f5c9847c17f2ab6",
+      "rows": 65000,
+      "fit_seconds": 1.04097031801939,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.42049364366646214,
+          "goal_user_risks": [
+            0.28563387742939444,
+            0.22596302003081664,
+            0.3554158271381922
+          ],
+          "median_coverage": 0.3000056138775052,
+          "median_goal_risk": 0.28563387742939444,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.27624273124555415,
+            "goal_user_risks": [
+              0.18294018114860158,
+              0.2224155069582505,
+              0.21991029155245453
+            ],
+            "median_coverage": 0.10000187129250174,
+            "median_goal_risk": 0.21991029155245453,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.37042275046206485,
+            "goal_user_risks": [
+              0.2480885711448714,
+              0.2194033800899845,
+              0.3084634260951287
+            ],
+            "median_coverage": 0.20000374258500347,
+            "median_goal_risk": 0.2480885711448714,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.42049364366646214,
+            "goal_user_risks": [
+              0.28563387742939444,
+              0.22596302003081664,
+              0.3554158271381922
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.28563387742939444,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.49339155828812353,
+            "goal_user_risks": [
+              0.3287090638438637,
+              0.25282537686247797,
+              0.4026222177050513
+            ],
+            "median_coverage": 0.5000048102361826,
+            "median_goal_risk": 0.3287090638438637,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5667344194449954,
+            "goal_user_risks": [
+              0.3589900649884216,
+              0.2883677067530444,
+              0.43424080028581635
+            ],
+            "median_coverage": 0.7000051817051265,
+            "median_goal_risk": 0.3589900649884216,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.39919760276359145,
+              0.3704690933409764,
+              0.4838940876008197
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.39919760276359145,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "ceti_age_scoreonly_v3_20261012__C2_primary",
+      "removed_group": "TTA_dispersion",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/ceti_age_scoreonly_v3_20261012__C2_primary__TTA_dispersion.joblib",
+      "model_sha256": "7cf7d5be21d75e0189fc5ec2f9b200c987f53e6fd27858e11792d244c6d8e209",
+      "training_npz_sha256": "73584fdb5e34ad80faa9ea499c0607ee6caaf26fe1ba3cdc4f5c9847c17f2ab6",
+      "rows": 65000,
+      "fit_seconds": 1.043067755177617,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.41298857288741797,
+          "goal_user_risks": [
+            0.284109362054681,
+            0.21969638788623505,
+            0.3586255014826443
+          ],
+          "median_coverage": 0.3000056138775052,
+          "median_goal_risk": 0.284109362054681,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.2761781430943405,
+            "goal_user_risks": [
+              0.18339443178440504,
+              0.21481911715897775,
+              0.234627410109432
+            ],
+            "median_coverage": 0.10011414884260558,
+            "median_goal_risk": 0.21481911715897775,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.36492061969242673,
+            "goal_user_risks": [
+              0.24768817738888335,
+              0.2136110250851657,
+              0.3066971951917573
+            ],
+            "median_coverage": 0.20000374258500347,
+            "median_goal_risk": 0.24768817738888335,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.41298857288741797,
+            "goal_user_risks": [
+              0.284109362054681,
+              0.21969638788623505,
+              0.3586255014826443
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.284109362054681,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.4830103408075902,
+            "goal_user_risks": [
+              0.3213415817041364,
+              0.24796151920463486,
+              0.40425661790139783
+            ],
+            "median_coverage": 0.5000144307085478,
+            "median_goal_risk": 0.3213415817041364,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5670288132314626,
+            "goal_user_risks": [
+              0.3544275290514368,
+              0.28380832730202515,
+              0.4376465303028176
+            ],
+            "median_coverage": 0.6999965455299157,
+            "median_goal_risk": 0.3544275290514368,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.39919760276359145,
+              0.3704690933409764,
+              0.4838940876008197
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.39919760276359145,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "ceti_age_scoreonly_v3_20261012__C2_primary",
+      "removed_group": "TTA_plane_sd",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/ceti_age_scoreonly_v3_20261012__C2_primary__TTA_plane_sd.joblib",
+      "model_sha256": "5fb779088cd947e8c58639e054f5a3cfc099879ac2532c7f3021234263af75d0",
+      "training_npz_sha256": "73584fdb5e34ad80faa9ea499c0607ee6caaf26fe1ba3cdc4f5c9847c17f2ab6",
+      "rows": 65000,
+      "fit_seconds": 1.0642910990864038,
+      "selection": {
+        "status": "NO_FEASIBLE_THRESHOLD_DIAGNOSTIC_ONLY",
+        "chosen": {
+          "index": 2,
+          "retention": 0.3,
+          "threshold": 0.41826348538616337,
+          "goal_user_risks": [
+            0.28385985826875954,
+            0.22136454815529544,
+            0.3567917474383827
+          ],
+          "median_coverage": 0.3000056138775052,
+          "median_goal_risk": 0.28385985826875954,
+          "feasible": false
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.27362085896334,
+            "goal_user_risks": [
+              0.18238743663651724,
+              0.23249691484985602,
+              0.22329615861214375
+            ],
+            "median_coverage": 0.10000187129250174,
+            "median_goal_risk": 0.22329615861214375,
+            "feasible": false
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.3676662316201477,
+            "goal_user_risks": [
+              0.2476039131946169,
+              0.21822685984535695,
+              0.30402010050251255
+            ],
+            "median_coverage": 0.20000374258500347,
+            "median_goal_risk": 0.2476039131946169,
+            "feasible": false
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.41826348538616337,
+            "goal_user_risks": [
+              0.28385985826875954,
+              0.22136454815529544,
+              0.3567917474383827
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.28385985826875954,
+            "feasible": false
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.4961389212169802,
+            "goal_user_risks": [
+              0.3278510790631073,
+              0.25407440517122815,
+              0.3997194095400756
+            ],
+            "median_coverage": 0.5000048102361826,
+            "median_goal_risk": 0.3278510790631073,
+            "feasible": false
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5716124132674447,
+            "goal_user_risks": [
+              0.35761886933732684,
+              0.2879529739092484,
+              0.42956784353203425
+            ],
+            "median_coverage": 0.7000569987563908,
+            "median_goal_risk": 0.35761886933732684,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.39919760276359145,
+              0.3704690933409764,
+              0.4838940876008197
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.39919760276359145,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "show3d_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "predicted_class",
+      "columns": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/show3d_scoreonly_v3_20261012__C1_primary__predicted_class.joblib",
+      "model_sha256": "520408b498d3aec8f57e64fcf2b2f5b88bbee65252dea69bc6409c216e2118e6",
+      "training_npz_sha256": "92865eb6607559e2ff2ce6a9edb25f9d5c340c6b06bcec33799c3902db909966",
+      "rows": 65000,
+      "fit_seconds": 1.0136828608810902,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 3,
+          "retention": 0.5,
+          "threshold": 0.33977190643185384,
+          "goal_user_risks": [
+            0.0748345562508747,
+            0.04183704824260761,
+            0.08240276473760962
+          ],
+          "median_coverage": 0.5000048102361826,
+          "median_goal_risk": 0.0748345562508747,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.14995289475801243,
+            "goal_user_risks": [
+              0.04984265556796264,
+              0.03049988989209425,
+              0.03853433265197971
+            ],
+            "median_coverage": 0.10000187129250174,
+            "median_goal_risk": 0.03853433265197971,
+            "feasible": true
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.18553411569619407,
+            "goal_user_risks": [
+              0.05479382231510271,
+              0.03159883221707024,
+              0.053269355888093686
+            ],
+            "median_coverage": 0.20000374258500347,
+            "median_goal_risk": 0.053269355888093686,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.2210909000570862,
+            "goal_user_risks": [
+              0.05977306497365933,
+              0.033544329315002216,
+              0.05981528543978181
+            ],
+            "median_coverage": 0.30001497034001384,
+            "median_goal_risk": 0.05977306497365933,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.33977190643185384,
+            "goal_user_risks": [
+              0.0748345562508747,
+              0.04183704824260761,
+              0.08240276473760962
+            ],
+            "median_coverage": 0.5000048102361826,
+            "median_goal_risk": 0.0748345562508747,
+            "feasible": true
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5658612973937539,
+            "goal_user_risks": [
+              0.10824973798472826,
+              0.08788769660443922,
+              0.12392720801400729
+            ],
+            "median_coverage": 0.7000913944874694,
+            "median_goal_risk": 0.10824973798472826,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.19410845304582425,
+              0.22475398872647367,
+              0.23015656703310014
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.22475398872647367,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "show3d_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "discriminant_scores",
+      "columns": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/show3d_scoreonly_v3_20261012__C1_primary__discriminant_scores.joblib",
+      "model_sha256": "0678ec868a8598dff72ec3001a48590e65e31d7a05cadedf64fd4c7fa15907af",
+      "training_npz_sha256": "92865eb6607559e2ff2ce6a9edb25f9d5c340c6b06bcec33799c3902db909966",
+      "rows": 65000,
+      "fit_seconds": 1.0219093728810549,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 3,
+          "retention": 0.5,
+          "threshold": 0.3374569303172769,
+          "goal_user_risks": [
+            0.07584407728080457,
+            0.04069136231380553,
+            0.08025419156291841
+          ],
+          "median_coverage": 0.5000048102361826,
+          "median_goal_risk": 0.07584407728080457,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.15470955782507093,
+            "goal_user_risks": [
+              0.04678007290400972,
+              0.03246537396121884,
+              0.040711312902005296
+            ],
+            "median_coverage": 0.10007672299257096,
+            "median_goal_risk": 0.040711312902005296,
+            "feasible": true
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.18527838183562423,
+            "goal_user_risks": [
+              0.04955251049198564,
+              0.029013314727600444,
+              0.05188360027069704
+            ],
+            "median_coverage": 0.20000374258500347,
+            "median_goal_risk": 0.04955251049198564,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.21954740814949705,
+            "goal_user_risks": [
+              0.057982740021574976,
+              0.03173797626483448,
+              0.060001300136514335
+            ],
+            "median_coverage": 0.3000898220400831,
+            "median_goal_risk": 0.057982740021574976,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.3374569303172769,
+            "goal_user_risks": [
+              0.07584407728080457,
+              0.04069136231380553,
+              0.08025419156291841
+            ],
+            "median_coverage": 0.5000048102361826,
+            "median_goal_risk": 0.07584407728080457,
+            "feasible": true
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5498810332651091,
+            "goal_user_risks": [
+              0.10634053605376603,
+              0.0806138724835108,
+              0.11526864428682193
+            ],
+            "median_coverage": 0.7000048102361826,
+            "median_goal_risk": 0.10634053605376603,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.19410845304582425,
+              0.22475398872647367,
+              0.23015656703310014
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.22475398872647367,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "show3d_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "score_gap",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/show3d_scoreonly_v3_20261012__C1_primary__score_gap.joblib",
+      "model_sha256": "9767c0f90cf92a0381795c55323dab02ed4f466c6de24835a0037b97b5ab3c33",
+      "training_npz_sha256": "92865eb6607559e2ff2ce6a9edb25f9d5c340c6b06bcec33799c3902db909966",
+      "rows": 65000,
+      "fit_seconds": 1.039812320843339,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 3,
+          "retention": 0.5,
+          "threshold": 0.33422925473365594,
+          "goal_user_risks": [
+            0.07506836652158841,
+            0.0412430504795446,
+            0.08206225136437238
+          ],
+          "median_coverage": 0.5000048102361826,
+          "median_goal_risk": 0.07506836652158841,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.15349423178345753,
+            "goal_user_risks": [
+              0.047136340598074,
+              0.03140888035250254,
+              0.04247159090909091
+            ],
+            "median_coverage": 0.10001122775501038,
+            "median_goal_risk": 0.04247159090909091,
+            "feasible": true
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.18624233419540637,
+            "goal_user_risks": [
+              0.05227077977720651,
+              0.031208229209042832,
+              0.05145235192736138
+            ],
+            "median_coverage": 0.20000374258500347,
+            "median_goal_risk": 0.05145235192736138,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.21899057620800877,
+            "goal_user_risks": [
+              0.05837743098857393,
+              0.03228240152477763,
+              0.06132507661685255
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.05837743098857393,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.33422925473365594,
+            "goal_user_risks": [
+              0.07506836652158841,
+              0.0412430504795446,
+              0.08206225136437238
+            ],
+            "median_coverage": 0.5000048102361826,
+            "median_goal_risk": 0.07506836652158841,
+            "feasible": true
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5562261122978785,
+            "goal_user_risks": [
+              0.1061200444509901,
+              0.08140262103078716,
+              0.11542824323354153
+            ],
+            "median_coverage": 0.6999951897638174,
+            "median_goal_risk": 0.1061200444509901,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.19410845304582425,
+              0.22475398872647367,
+              0.23015656703310014
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.22475398872647367,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "show3d_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "entropy",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/show3d_scoreonly_v3_20261012__C1_primary__entropy.joblib",
+      "model_sha256": "0d811771e7e784da72f7381a0da4bcaa66d8750bab173e606e2fdd9b563cfba6",
+      "training_npz_sha256": "92865eb6607559e2ff2ce6a9edb25f9d5c340c6b06bcec33799c3902db909966",
+      "rows": 65000,
+      "fit_seconds": 1.0536240302026272,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 3,
+          "retention": 0.5,
+          "threshold": 0.33529422679467524,
+          "goal_user_risks": [
+            0.07457575526976638,
+            0.04092672413793103,
+            0.08282735479747544
+          ],
+          "median_coverage": 0.500024051180913,
+          "median_goal_risk": 0.07457575526976638,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.15159660451218884,
+            "goal_user_risks": [
+              0.046100347739692,
+              0.03375427829576301,
+              0.040530794749747585
+            ],
+            "median_coverage": 0.10118078556859222,
+            "median_goal_risk": 0.040530794749747585,
+            "feasible": true
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.1873687606536279,
+            "goal_user_risks": [
+              0.05369363929146538,
+              0.031928919461163656,
+              0.05259068416963154
+            ],
+            "median_coverage": 0.2002657235352458,
+            "median_goal_risk": 0.05259068416963154,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.22077418327887754,
+            "goal_user_risks": [
+              0.05957833759935336,
+              0.034434348555161254,
+              0.06052872042095976
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.05957833759935336,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.33529422679467524,
+            "goal_user_risks": [
+              0.07457575526976638,
+              0.04092672413793103,
+              0.08282735479747544
+            ],
+            "median_coverage": 0.500024051180913,
+            "median_goal_risk": 0.07457575526976638,
+            "feasible": true
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5503777172155001,
+            "goal_user_risks": [
+              0.10532526921374834,
+              0.08080534231329015,
+              0.11422376658434323
+            ],
+            "median_coverage": 0.6999951897638174,
+            "median_goal_risk": 0.10532526921374834,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.19410845304582425,
+              0.22475398872647367,
+              0.23015656703310014
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.22475398872647367,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "show3d_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "boundary_distance",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/show3d_scoreonly_v3_20261012__C1_primary__boundary_distance.joblib",
+      "model_sha256": "dd41f8099c79583aab8a2c0373d5726a16629e0eb6d1bb5e2dd73e808e378943",
+      "training_npz_sha256": "92865eb6607559e2ff2ce6a9edb25f9d5c340c6b06bcec33799c3902db909966",
+      "rows": 65000,
+      "fit_seconds": 1.0441894810646772,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 3,
+          "retention": 0.5,
+          "threshold": 0.3292343625982421,
+          "goal_user_risks": [
+            0.07404486168289023,
+            0.04085886545487146,
+            0.08178438661710037
+          ],
+          "median_coverage": 0.5001394968492953,
+          "median_goal_risk": 0.07404486168289023,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.15246966564714368,
+            "goal_user_risks": [
+              0.04452913449002106,
+              0.03952991452991453,
+              0.043928847641144624
+            ],
+            "median_coverage": 0.1009375175433672,
+            "median_goal_risk": 0.043928847641144624,
+            "feasible": true
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.18449600323008808,
+            "goal_user_risks": [
+              0.056226930272538805,
+              0.03314224292368327,
+              0.05463243774294135
+            ],
+            "median_coverage": 0.20009730721009,
+            "median_goal_risk": 0.05463243774294135,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.21838755177936742,
+            "goal_user_risks": [
+              0.05884333131353935,
+              0.03466017868538609,
+              0.06256490952006294
+            ],
+            "median_coverage": 0.30025823836523885,
+            "median_goal_risk": 0.05884333131353935,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.3292343625982421,
+            "goal_user_risks": [
+              0.07404486168289023,
+              0.04085886545487146,
+              0.08178438661710037
+            ],
+            "median_coverage": 0.5001394968492953,
+            "median_goal_risk": 0.07404486168289023,
+            "feasible": true
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5483228148562687,
+            "goal_user_risks": [
+              0.10465428748018166,
+              0.08077426029976002,
+              0.11386699966986752
+            ],
+            "median_coverage": 0.7000048102361826,
+            "median_goal_risk": 0.10465428748018166,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.19410845304582425,
+              0.22475398872647367,
+              0.23015656703310014
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.22475398872647367,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "show3d_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "TTA_dispersion",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/show3d_scoreonly_v3_20261012__C1_primary__TTA_dispersion.joblib",
+      "model_sha256": "3a3fc6a9bd423a432550026dc2ffc9c65bac7dc01325726c5035146bede3d4fe",
+      "training_npz_sha256": "92865eb6607559e2ff2ce6a9edb25f9d5c340c6b06bcec33799c3902db909966",
+      "rows": 65000,
+      "fit_seconds": 1.0434081200510263,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 3,
+          "retention": 0.5,
+          "threshold": 0.33798749488276414,
+          "goal_user_risks": [
+            0.0771607863954348,
+            0.03853703219052604,
+            0.08480063955231339
+          ],
+          "median_coverage": 0.5000048102361826,
+          "median_goal_risk": 0.0771607863954348,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.1583435240799216,
+            "goal_user_risks": [
+              0.05489163459590845,
+              0.037744129910028526,
+              0.047885075818036714
+            ],
+            "median_coverage": 0.10002058421751904,
+            "median_goal_risk": 0.047885075818036714,
+            "feasible": true
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.18918932779837638,
+            "goal_user_risks": [
+              0.057595319749848696,
+              0.033978372225384176,
+              0.05333115210011861
+            ],
+            "median_coverage": 0.2000130990475121,
+            "median_goal_risk": 0.05333115210011861,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.2227505535460776,
+            "goal_user_risks": [
+              0.06156338598622924,
+              0.03580392156862745,
+              0.06257676440021415
+            ],
+            "median_coverage": 0.30018338666516964,
+            "median_goal_risk": 0.06156338598622924,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.33798749488276414,
+            "goal_user_risks": [
+              0.0771607863954348,
+              0.03853703219052604,
+              0.08480063955231339
+            ],
+            "median_coverage": 0.5000048102361826,
+            "median_goal_risk": 0.0771607863954348,
+            "feasible": true
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5555216265190557,
+            "goal_user_risks": [
+              0.10735881041686132,
+              0.08028269560251285,
+              0.11613856839446644
+            ],
+            "median_coverage": 0.7002838039347732,
+            "median_goal_risk": 0.10735881041686132,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.19410845304582425,
+              0.22475398872647367,
+              0.23015656703310014
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.22475398872647367,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "show3d_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "TTA_plane_sd",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/show3d_scoreonly_v3_20261012__C1_primary__TTA_plane_sd.joblib",
+      "model_sha256": "170e4752c43b5b79bcb7968f8c6781fd6f6c8429b19c79c3295dcaf7504334ae",
+      "training_npz_sha256": "92865eb6607559e2ff2ce6a9edb25f9d5c340c6b06bcec33799c3902db909966",
+      "rows": 65000,
+      "fit_seconds": 1.0149340443313122,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 3,
+          "retention": 0.5,
+          "threshold": 0.333702953702645,
+          "goal_user_risks": [
+            0.0745477765282199,
+            0.03791918212664698,
+            0.08028554860125177
+          ],
+          "median_coverage": 0.5000048102361826,
+          "median_goal_risk": 0.0745477765282199,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.15384007630938093,
+            "goal_user_risks": [
+              0.04792299898682877,
+              0.03284795123603115,
+              0.043422346622286105
+            ],
+            "median_coverage": 0.10000187129250174,
+            "median_goal_risk": 0.043422346622286105,
+            "feasible": true
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.18526670808328108,
+            "goal_user_risks": [
+              0.05709946848899013,
+              0.031114750263188676,
+              0.05496157701303041
+            ],
+            "median_coverage": 0.20000374258500347,
+            "median_goal_risk": 0.05496157701303041,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.21974665440180954,
+            "goal_user_risks": [
+              0.05977912121314465,
+              0.03291199618411639,
+              0.061656364324460707
+            ],
+            "median_coverage": 0.30001497034001384,
+            "median_goal_risk": 0.05977912121314465,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.333702953702645,
+            "goal_user_risks": [
+              0.0745477765282199,
+              0.03791918212664698,
+              0.08028554860125177
+            ],
+            "median_coverage": 0.5000048102361826,
+            "median_goal_risk": 0.0745477765282199,
+            "feasible": true
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5464398594981574,
+            "goal_user_risks": [
+              0.10494730482647513,
+              0.07998900096965136,
+              0.11477669150264869
+            ],
+            "median_coverage": 0.7000048102361826,
+            "median_goal_risk": 0.10494730482647513,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.19410845304582425,
+              0.22475398872647367,
+              0.23015656703310014
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.22475398872647367,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "kinmus_uji_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "predicted_class",
+      "columns": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/kinmus_uji_scoreonly_v3_20261012__C1_primary__predicted_class.joblib",
+      "model_sha256": "a9231efbd6ef43229b46013beb5dc4e8e893590d6dd65a88297de3cae7d971c6",
+      "training_npz_sha256": "7553d20a16c1a0e2c4ee470e4c83d2a1e773a6de848651b4448d424460b76f45",
+      "rows": 65000,
+      "fit_seconds": 0.9679119903594255,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 3,
+          "retention": 0.5,
+          "threshold": 0.3010008775073075,
+          "goal_user_risks": [
+            0.06596774193548387,
+            0.03219184652278177,
+            0.055694312864237934
+          ],
+          "median_coverage": 0.5,
+          "median_goal_risk": 0.055694312864237934,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.11591280185071202,
+            "goal_user_risks": [
+              0.04940976885558776,
+              0.016166281755196306,
+              0.017270929466051417
+            ],
+            "median_coverage": 0.10000690894016857,
+            "median_goal_risk": 0.017270929466051417,
+            "feasible": true
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.148609164722574,
+            "goal_user_risks": [
+              0.048313405268785845,
+              0.019787644787644786,
+              0.024791940429259744
+            ],
+            "median_coverage": 0.2000224540555479,
+            "median_goal_risk": 0.024791940429259744,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.19201210793949278,
+            "goal_user_risks": [
+              0.05217773569592858,
+              0.021663645023507358,
+              0.027961006362734225
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.027961006362734225,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.3010008775073075,
+            "goal_user_risks": [
+              0.06596774193548387,
+              0.03219184652278177,
+              0.055694312864237934
+            ],
+            "median_coverage": 0.5,
+            "median_goal_risk": 0.055694312864237934,
+            "feasible": true
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.507408750965786,
+            "goal_user_risks": [
+              0.10785077806354403,
+              0.06594821743256066,
+              0.13549450881916922
+            ],
+            "median_coverage": 0.6999965455299157,
+            "median_goal_risk": 0.10785077806354403,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.1922667224163506,
+              0.24484570555077864,
+              0.26178290582760466
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.24484570555077864,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "kinmus_uji_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "discriminant_scores",
+      "columns": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/kinmus_uji_scoreonly_v3_20261012__C1_primary__discriminant_scores.joblib",
+      "model_sha256": "4b7e79485552be923888c25f6af27189770ee3f1780eff92c1e64a2213635a7c",
+      "training_npz_sha256": "7553d20a16c1a0e2c4ee470e4c83d2a1e773a6de848651b4448d424460b76f45",
+      "rows": 65000,
+      "fit_seconds": 0.9644586481153965,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 3,
+          "retention": 0.5,
+          "threshold": 0.29921765167699516,
+          "goal_user_risks": [
+            0.06353245284542995,
+            0.031449173341450885,
+            0.05474452554744526
+          ],
+          "median_coverage": 0.5,
+          "median_goal_risk": 0.05474452554744526,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.11203768869147294,
+            "goal_user_risks": [
+              0.044180118946474084,
+              0.018099099990109783,
+              0.01938610662358643
+            ],
+            "median_coverage": 0.10000690894016857,
+            "median_goal_risk": 0.01938610662358643,
+            "feasible": true
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.14458136389687617,
+            "goal_user_risks": [
+              0.047130459797669846,
+              0.017223181730953753,
+              0.02741098260632001
+            ],
+            "median_coverage": 0.20001381788033715,
+            "median_goal_risk": 0.02741098260632001,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.18921125302330732,
+            "goal_user_risks": [
+              0.05391280892814997,
+              0.020536436617088805,
+              0.02853032845840326
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.02853032845840326,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.29921765167699516,
+            "goal_user_risks": [
+              0.06353245284542995,
+              0.031449173341450885,
+              0.05474452554744526
+            ],
+            "median_coverage": 0.5,
+            "median_goal_risk": 0.05474452554744526,
+            "feasible": true
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.49847936922529756,
+            "goal_user_risks": [
+              0.10525013994298137,
+              0.06426606312765121,
+              0.1334325999756898
+            ],
+            "median_coverage": 0.7000051817051265,
+            "median_goal_risk": 0.10525013994298137,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.1922667224163506,
+              0.24484570555077864,
+              0.26178290582760466
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.24484570555077864,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "kinmus_uji_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "score_gap",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/kinmus_uji_scoreonly_v3_20261012__C1_primary__score_gap.joblib",
+      "model_sha256": "f6c9bdf0988be9a084e112f8aff33d59b50bfd4e439a4fb4d020f0103147483f",
+      "training_npz_sha256": "7553d20a16c1a0e2c4ee470e4c83d2a1e773a6de848651b4448d424460b76f45",
+      "rows": 65000,
+      "fit_seconds": 0.9799897875636816,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 3,
+          "retention": 0.5,
+          "threshold": 0.2986146506146152,
+          "goal_user_risks": [
+            0.06431119483746843,
+            0.03252390900205071,
+            0.05457616070634944
+          ],
+          "median_coverage": 0.5000086361752107,
+          "median_goal_risk": 0.05457616070634944,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.11726923968411211,
+            "goal_user_risks": [
+              0.04813331426119296,
+              0.020983866178362863,
+              0.019947361130350463
+            ],
+            "median_coverage": 0.10000690894016857,
+            "median_goal_risk": 0.020983866178362863,
+            "feasible": true
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.1480496054280998,
+            "goal_user_risks": [
+              0.048788520348153376,
+              0.02065437699063797,
+              0.025825720309205904
+            ],
+            "median_coverage": 0.20001381788033715,
+            "median_goal_risk": 0.025825720309205904,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.18670902919439547,
+            "goal_user_risks": [
+              0.05345619053955159,
+              0.02188183807439825,
+              0.02945560789457993
+            ],
+            "median_coverage": 0.3000034544700843,
+            "median_goal_risk": 0.02945560789457993,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.2986146506146152,
+            "goal_user_risks": [
+              0.06431119483746843,
+              0.03252390900205071,
+              0.05457616070634944
+            ],
+            "median_coverage": 0.5000086361752107,
+            "median_goal_risk": 0.05457616070634944,
+            "feasible": true
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.4993234466475269,
+            "goal_user_risks": [
+              0.10649616235875797,
+              0.06260338983050848,
+              0.13409857386990912
+            ],
+            "median_coverage": 0.7000310902307586,
+            "median_goal_risk": 0.10649616235875797,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.1922667224163506,
+              0.24484570555077864,
+              0.26178290582760466
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.24484570555077864,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "kinmus_uji_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "entropy",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/kinmus_uji_scoreonly_v3_20261012__C1_primary__entropy.joblib",
+      "model_sha256": "7c91042396621ea9ae248c34512aa27967c8d9a8ead01ed1fda332dcf4834fd7",
+      "training_npz_sha256": "7553d20a16c1a0e2c4ee470e4c83d2a1e773a6de848651b4448d424460b76f45",
+      "rows": 65000,
+      "fit_seconds": 0.9811633750796318,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 3,
+          "retention": 0.5,
+          "threshold": 0.29934876428756957,
+          "goal_user_risks": [
+            0.06382678182258456,
+            0.03032967032967033,
+            0.05921052631578947
+          ],
+          "median_coverage": 0.5,
+          "median_goal_risk": 0.05921052631578947,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.11620410565506772,
+            "goal_user_risks": [
+              0.04307823978318237,
+              0.021429273567285953,
+              0.019408121128699243
+            ],
+            "median_coverage": 0.10004145364101147,
+            "median_goal_risk": 0.021429273567285953,
+            "feasible": true
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.14771561676138212,
+            "goal_user_risks": [
+              0.04848629320619786,
+              0.0204947678063365,
+              0.028163862472567667
+            ],
+            "median_coverage": 0.20016063285891944,
+            "median_goal_risk": 0.028163862472567667,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.18813084255568605,
+            "goal_user_risks": [
+              0.05356419603078169,
+              0.021608980355472405,
+              0.029731865993798262
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.029731865993798262,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.29934876428756957,
+            "goal_user_risks": [
+              0.06382678182258456,
+              0.03032967032967033,
+              0.05921052631578947
+            ],
+            "median_coverage": 0.5,
+            "median_goal_risk": 0.05921052631578947,
+            "feasible": true
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5024231360538866,
+            "goal_user_risks": [
+              0.10709072354058209,
+              0.062300059643225075,
+              0.13491489682181051
+            ],
+            "median_coverage": 0.6999965455299157,
+            "median_goal_risk": 0.10709072354058209,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.1922667224163506,
+              0.24484570555077864,
+              0.26178290582760466
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.24484570555077864,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "kinmus_uji_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "boundary_distance",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/kinmus_uji_scoreonly_v3_20261012__C1_primary__boundary_distance.joblib",
+      "model_sha256": "ece4cd49ac643d14f2a638e8594a3a23bc3ebd9845cae69ef4db054f91796e60",
+      "training_npz_sha256": "7553d20a16c1a0e2c4ee470e4c83d2a1e773a6de848651b4448d424460b76f45",
+      "rows": 65000,
+      "fit_seconds": 0.9835991393774748,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 3,
+          "retention": 0.5,
+          "threshold": 0.3055973564489448,
+          "goal_user_risks": [
+            0.06584810377265075,
+            0.03296199338849292,
+            0.05125891427739776
+          ],
+          "median_coverage": 0.5,
+          "median_goal_risk": 0.05125891427739776,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.1244842602554189,
+            "goal_user_risks": [
+              0.04850644012058098,
+              0.0212828560219694,
+              0.019852941176470587
+            ],
+            "median_coverage": 0.10069780295702639,
+            "median_goal_risk": 0.0212828560219694,
+            "feasible": true
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.1550841839664682,
+            "goal_user_risks": [
+              0.045092497430626925,
+              0.020589791696733535,
+              0.025657733974097905
+            ],
+            "median_coverage": 0.20008290728202294,
+            "median_goal_risk": 0.025657733974097905,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.19146153648013323,
+            "goal_user_risks": [
+              0.053367908823152774,
+              0.021499920723006185,
+              0.030214256993509103
+            ],
+            "median_coverage": 0.3000034544700843,
+            "median_goal_risk": 0.030214256993509103,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.3055973564489448,
+            "goal_user_risks": [
+              0.06584810377265075,
+              0.03296199338849292,
+              0.05125891427739776
+            ],
+            "median_coverage": 0.5,
+            "median_goal_risk": 0.05125891427739776,
+            "feasible": true
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.4929300312144213,
+            "goal_user_risks": [
+              0.10585154203963569,
+              0.06305671172331512,
+              0.13551707859350967
+            ],
+            "median_coverage": 0.7000051817051265,
+            "median_goal_risk": 0.10585154203963569,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.1922667224163506,
+              0.24484570555077864,
+              0.26178290582760466
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.24484570555077864,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "kinmus_uji_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "TTA_dispersion",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/kinmus_uji_scoreonly_v3_20261012__C1_primary__TTA_dispersion.joblib",
+      "model_sha256": "f31571111bcea3726c70f2036870fcf6e9720da6a90283ca7c72901c5be7f0af",
+      "training_npz_sha256": "7553d20a16c1a0e2c4ee470e4c83d2a1e773a6de848651b4448d424460b76f45",
+      "rows": 65000,
+      "fit_seconds": 0.9845644142478704,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 3,
+          "retention": 0.5,
+          "threshold": 0.3040372854445286,
+          "goal_user_risks": [
+            0.0651301594983163,
+            0.030798881414859043,
+            0.05607174360482211
+          ],
+          "median_coverage": 0.5000187129250173,
+          "median_goal_risk": 0.05607174360482211,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.11638688654604754,
+            "goal_user_risks": [
+              0.04466990770097935,
+              0.021015585721468076,
+              0.019348934501241994
+            ],
+            "median_coverage": 0.10002418129059003,
+            "median_goal_risk": 0.021015585721468076,
+            "feasible": true
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.14932653039512384,
+            "goal_user_risks": [
+              0.046511627906976744,
+              0.018062079318192825,
+              0.030355294929285962
+            ],
+            "median_coverage": 0.20001381788033715,
+            "median_goal_risk": 0.030355294929285962,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.1883866115938473,
+            "goal_user_risks": [
+              0.05403854592095048,
+              0.020397326169800712,
+              0.03128903694009875
+            ],
+            "median_coverage": 0.3000056138775052,
+            "median_goal_risk": 0.03128903694009875,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.3040372854445286,
+            "goal_user_risks": [
+              0.0651301594983163,
+              0.030798881414859043,
+              0.05607174360482211
+            ],
+            "median_coverage": 0.5000187129250173,
+            "median_goal_risk": 0.05607174360482211,
+            "feasible": true
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5028716260388543,
+            "goal_user_risks": [
+              0.10634774847030516,
+              0.06207579953304013,
+              0.13497403477082862
+            ],
+            "median_coverage": 0.7000224540555479,
+            "median_goal_risk": 0.10634774847030516,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.1922667224163506,
+              0.24484570555077864,
+              0.26178290582760466
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.24484570555077864,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    },
+    {
+      "consumer": "kinmus_uji_scoreonly_v3_20261012__C1_primary",
+      "removed_group": "TTA_plane_sd",
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "model_path": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/models/kinmus_uji_scoreonly_v3_20261012__C1_primary__TTA_plane_sd.joblib",
+      "model_sha256": "076366100500a440267988dbe1220e933ba9b13232f3d4a0f77c001990d2cc4b",
+      "training_npz_sha256": "7553d20a16c1a0e2c4ee470e4c83d2a1e773a6de848651b4448d424460b76f45",
+      "rows": 65000,
+      "fit_seconds": 0.9815771076828241,
+      "selection": {
+        "status": "FEASIBLE_PAIRED_FLIP_RESEARCH_CRITERION",
+        "chosen": {
+          "index": 3,
+          "retention": 0.5,
+          "threshold": 0.30003794372674647,
+          "goal_user_risks": [
+            0.06445831655255739,
+            0.03171866919496639,
+            0.05459183673469388
+          ],
+          "median_coverage": 0.5000086361752107,
+          "median_goal_risk": 0.05459183673469388,
+          "feasible": true
+        },
+        "candidates": [
+          {
+            "index": 0,
+            "retention": 0.1,
+            "threshold": 0.11353374910046628,
+            "goal_user_risks": [
+              0.044093592205390796,
+              0.02360408608549043,
+              0.017789991321955453
+            ],
+            "median_coverage": 0.1000155451153793,
+            "median_goal_risk": 0.02360408608549043,
+            "feasible": true
+          },
+          {
+            "index": 1,
+            "retention": 0.2,
+            "threshold": 0.14840411641259033,
+            "goal_user_risks": [
+              0.05051317220829589,
+              0.021127779653658772,
+              0.024797074302024796
+            ],
+            "median_coverage": 0.20000518170512643,
+            "median_goal_risk": 0.024797074302024796,
+            "feasible": true
+          },
+          {
+            "index": 2,
+            "retention": 0.3,
+            "threshold": 0.1900190601836651,
+            "goal_user_risks": [
+              0.05390999257809864,
+              0.022242297747733716,
+              0.028686342934879046
+            ],
+            "median_coverage": 0.3002395254402216,
+            "median_goal_risk": 0.028686342934879046,
+            "feasible": true
+          },
+          {
+            "index": 3,
+            "retention": 0.5,
+            "threshold": 0.30003794372674647,
+            "goal_user_risks": [
+              0.06445831655255739,
+              0.03171866919496639,
+              0.05459183673469388
+            ],
+            "median_coverage": 0.5000086361752107,
+            "median_goal_risk": 0.05459183673469388,
+            "feasible": true
+          },
+          {
+            "index": 4,
+            "retention": 0.7,
+            "threshold": 0.5000517830305954,
+            "goal_user_risks": [
+              0.10676442394880696,
+              0.06275413391162916,
+              0.13636019789097842
+            ],
+            "median_coverage": 0.7000138178803371,
+            "median_goal_risk": 0.10676442394880696,
+            "feasible": false
+          },
+          {
+            "index": 5,
+            "retention": 1.0,
+            "threshold": null,
+            "goal_user_risks": [
+              0.1922667224163506,
+              0.24484570555077864,
+              0.26178290582760466
+            ],
+            "median_coverage": 1.0,
+            "median_goal_risk": 0.24484570555077864,
+            "feasible": false
+          }
+        ],
+        "goal": "U"
+      }
+    }
+  ],
+  "definitions": {
+    "db9_scoreonly_v3_20261011__C1_primary": {
+      "predicted_class": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "discriminant_scores": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "score_gap": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "entropy": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "boundary_distance": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "TTA_dispersion": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        35
+      ],
+      "TTA_plane_sd": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    "db9_scoreonly_v3_20261011__C2_primary": {
+      "predicted_class": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "discriminant_scores": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "score_gap": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "entropy": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "boundary_distance": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "TTA_dispersion": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20
+      ],
+      "TTA_plane_sd": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "ceti_age_scoreonly_v3_20261012__C1_primary": {
+      "predicted_class": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "discriminant_scores": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "score_gap": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "entropy": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "boundary_distance": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "TTA_dispersion": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        35
+      ],
+      "TTA_plane_sd": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    "ceti_age_scoreonly_v3_20261012__C2_primary": {
+      "predicted_class": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "discriminant_scores": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "score_gap": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "entropy": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "boundary_distance": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "TTA_dispersion": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20
+      ],
+      "TTA_plane_sd": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "show3d_scoreonly_v3_20261012__C1_primary": {
+      "predicted_class": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "discriminant_scores": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "score_gap": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "entropy": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "boundary_distance": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "TTA_dispersion": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20
+      ],
+      "TTA_plane_sd": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "kinmus_uji_scoreonly_v3_20261012__C1_primary": {
+      "predicted_class": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "discriminant_scores": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "score_gap": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "entropy": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "boundary_distance": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "TTA_dispersion": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20
+      ],
+      "TTA_plane_sd": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    }
+  }
+}

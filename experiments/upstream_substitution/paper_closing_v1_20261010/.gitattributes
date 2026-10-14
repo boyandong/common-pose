@@ -1,0 +1,2 @@
+# Keep sealed byte hashes invariant across Windows/Linux checkouts.
+* -text

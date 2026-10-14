@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE_EXPLORATORY_LOCAL_ANALYSIS",
+  "bootstrap_replicates": 10000,
+  "seed": 20261014,
+  "numpy": "1.26.4",
+  "python": "3.11.13",
+  "interval_rows": 384,
+  "paired_rows": 16310,
+  "missing_bound_rows": 30000,
+  "fixed_threshold_rows": 120,
+  "source_tables": {
+    "A20_USER_COVERAGE_SERVICE.csv": "20726874a18e645b7552533229e5e503f2ff9c2bde72cf0bc765de9d8330dd00",
+    "N80_USER_COVERAGE_SERVICE.csv": "301c1cbababf8755719fa4289ba5f7d3aa1ca5b8362500fe9dbdd9028c4d5fd5"
+  },
+  "no_refit_no_new_inference": true,
+  "no_independent_confirmation_claim": true
+}

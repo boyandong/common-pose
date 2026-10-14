@@ -1,0 +1,77 @@
+{
+  "runtime": {
+    "cuda": "12.8",
+    "device": "NVIDIA GeForce RTX 5090",
+    "numpy": "1.26.4",
+    "python": "3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]",
+    "runner_sha256": "4d1d9d40620df008ff266892c463c7d6ae2bbb76e4f404683464ab467f4358e1",
+    "sklearn": "1.5.2",
+    "source": "reconstructed; original caches unavailable",
+    "spec_sha256": "50b1641484b9d717439a645f5b85c68376a66f08dd4d7526cad6882be47e4dff",
+    "torch": "2.8.0+cu128",
+    "upstream_tree_sha256": "0fc2d40b69c46254c9cb4fdc72e7a3e2f37549803e60bb698b6ba09ffecb6b7b"
+  },
+  "cache_sizes": {
+    "features": {
+      "files": 39,
+      "bytes": 382113110
+    },
+    "reconstructed/base": {
+      "files": 1356,
+      "bytes": 642980761
+    },
+    "reconstructed/tta": {
+      "files": 1356,
+      "bytes": 368201947
+    }
+  },
+  "logs": [
+    [
+      "acquisition.log",
+      0
+    ],
+    [
+      "acquisition_active.log",
+      28244
+    ],
+    [
+      "acquisition_recovery.log",
+      55993
+    ],
+    [
+      "environment.log",
+      148
+    ],
+    [
+      "environment_install.log",
+      35131
+    ],
+    [
+      "pipeline.log",
+      0
+    ],
+    [
+      "pipeline_finalized.log",
+      0
+    ],
+    [
+      "pipeline_recovery.log",
+      0
+    ],
+    [
+      "pipeline_relay.log",
+      21790
+    ],
+    [
+      "recovery_probe.log",
+      519
+    ],
+    [
+      "relay_lease.log",
+      30
+    ]
+  ],
+  "checkpoint_sha256": "748b1d1ef0ce1985f6fc07225d97eebfb370243429af803b4997d28ecce2424e",
+  "head_sha256": "b0ef8caf8e390a480fa2a3b448f79ccf14f75c71265ef925ee299a5e9e660386",
+  "root_disk_free": 24899223552
+}

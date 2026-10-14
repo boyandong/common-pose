@@ -1,0 +1,67 @@
+{
+  "all_local_sha256_recomputed": true,
+  "blocker": "incident execution requires a human-authorized clean successor under AGENTS.md; no such response has arrived",
+  "files": {
+    "CODE_SEAL.json": {
+      "bytes": 3967,
+      "sha256": "aebe0573e0e332c923e9c27fb0ee4611b5e10a32ef89bd796d208b51c1f7eec3"
+    },
+    "CODE_SEAL.json.sha256": {
+      "bytes": 82,
+      "sha256": "6de0f1e2b9af1fa2c742423ec76f0e4c86e4b96daf64b66643daf5335f8d2fa3"
+    },
+    "EXECUTION_OBSERVATION_incident_controller_lost_20261011_052200.json": {
+      "bytes": 3442,
+      "sha256": "c6039b207b6062c9e8c5c17591975cf77d22e60e98e8e0530a0c4c7d397c1a7d"
+    },
+    "EXECUTION_OBSERVATION_incident_controller_lost_20261011_052200.json.sha256": {
+      "bytes": 135,
+      "sha256": "1464804c7e36dca4ace65d329573a4ec12e5a3e5aae465ab90937c63ff60f4a4"
+    },
+    "INCIDENT_CONTROLLER_LOST_20261011.json": {
+      "bytes": 7437,
+      "sha256": "48140f2c99fccb5b5ac1a511b3c65618ceb1cf4dc94402f0fb453c7dbb45cede"
+    },
+    "INCIDENT_CONTROLLER_LOST_20261011.json.sha256": {
+      "bytes": 106,
+      "sha256": "35a4a53427e0905be93eaef630365685ab56647837163a40597a6eab0caf01c6"
+    },
+    "INTEGRATED_CONTROLLER_LAUNCH_20261011.json": {
+      "bytes": 554,
+      "sha256": "3a1a7c5bed113a7e9e55d5d85175fb24a8a7ad0b72c378b1fa7e262387fe84ab"
+    },
+    "INTEGRATED_CONTROLLER_LAUNCH_20261011.json.sha256": {
+      "bytes": 110,
+      "sha256": "1ecf28e9a2e7a6c4b3023e2f737abd3d560eab61aa659c084482133872b70da5"
+    },
+    "LAST_PARENT_PROGRESS_SNAPSHOT_AT_INCIDENT.json": {
+      "bytes": 1240,
+      "sha256": "fd01771d3fc5cf574e6ec60f1fc59fec96eb0a7120b56f6e74f90836b60445bf"
+    },
+    "SESSION_HANDOVER_INCIDENT_CONTROLLER_LOST_20261011.md": {
+      "bytes": 11095,
+      "sha256": "cf910c8da2b78036af839f3274b7b47d42592cb2cd9d7a14229fc207a7c86290"
+    },
+    "integrated_controller.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "integrated_controller.stdout.log": {
+      "bytes": 9928,
+      "sha256": "8554c39dcc27086d6cf1508f3c53c930a90dd15502263bec88d27e4eca7d0d65"
+    },
+    "successor_dispatch.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "successor_dispatch.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "local_D_root": "D:\\CommonPose_confirmation_N80_20261010\\successor_incident_20261011_controller_lost",
+  "observed_local_time": "2026-10-11T05:26:25.208088+08:00",
+  "scientific_job_restarts_attempted": false,
+  "scoped_credentials_or_original_user_records_copied": false,
+  "status": "PASS_INCIDENT_FORENSIC_BACKUP_ONLY_NOT_SCIENTIFIC_COMPLETION"
+}

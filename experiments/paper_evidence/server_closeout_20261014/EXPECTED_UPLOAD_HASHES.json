@@ -1,0 +1,11 @@
+{
+  "SCIENTIFIC_SPEC.md": "6518399a052c95189c5a2052a4ebcf8848978803f0e6717c5ce349f9f329465e",
+  "EXPECTED_CODE_HASHES.json": "5bc4ce3408c5a795bb2ef80a0c7b2fceee02b13f3b645a1c5f4aed5bb9e51da6",
+  "server_common.py": "330a0e77a6f7196eda91bd20b2a87a0f0864dec82f1609d5345f2ad94ea477a8",
+  "factorial_experiment.py": "d0e25c8b567c22711d7ae48213a5da3ad83fc6024d5bbeeba3ba9e0d1c91d7b1",
+  "time_window_sensitivity.py": "fc13d90b6b33c011cce0fc1e9f887975893ee898d3d145954d80eb531a41843c",
+  "gpu_cost_profile.py": "8a4318f529d60b60128dec31890e5d36292af030af2a80e87507b38682d74de9",
+  "verify_server.py": "5a512b470333965b481eb41552dd3e08e67321efb4eb3ad610b14d4b2d090910",
+  "summarize_server.py": "b012791820a5af52ae4b3165c6f5cd44677a963d3ecbbc268d8aec75bd17d38c",
+  "run_pipeline.py": "8746675440f4a5435f1697871b4048afaf2acc1cd6f5b8fd81de114271928b25"
+}

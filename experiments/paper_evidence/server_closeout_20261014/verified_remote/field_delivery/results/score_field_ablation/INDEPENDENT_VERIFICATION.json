@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "checks": 2953908,
+  "models_verified": 42,
+  "rows_verified": 24720,
+  "original_baseline_exact": true
+}

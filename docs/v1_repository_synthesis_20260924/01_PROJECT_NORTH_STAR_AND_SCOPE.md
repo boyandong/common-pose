@@ -1,0 +1,7 @@
+# Project north star and V1 scope
+
+The original question was whether a downstream task trained on physical hand pose could consume an independent biosignal-to-pose estimator without task-specific EMG retraining (`README.md`, `docs/architecture.md`). The intended boundary is sensing → estimator → source adapter → Common Pose API → pose-only customer. Physical meaning requires named DOFs, units, sign, zero, validity, handedness, calibration provenance, and time; matching joint names alone is insufficient.
+
+The repository implemented a worked path: official emg2pose EMG and frozen VEMG2Pose checkpoint → predicted joint angles → name-based canonical16/trusted-8 selection → DB9-trained, frozen eight-class LDA customer → customer outputs and deployment-visible reliability scores. The GT path applies that same customer to measured pose. Gate4E and Gate4F rank blocks for serve/abstain under two separately frozen customer contracts. The consumer is independently trained on DB9; no customer retraining on emg2pose outcomes is evidenced in the V1 chain.
+
+The broad architectural vision remains larger than V1 evidence. A universal, frozen, interoperable API across sensing backbones, independent cross-source physical calibration equality, online deployment latency, semantic gesture recognition, and upstream-unseen end-to-end generalization are not established by this repository. The frozen final result concerns customer-output Flip and selective service on one official data family and one customer. See `08_V1_FINAL_SCIENTIFIC_STATE.md`.

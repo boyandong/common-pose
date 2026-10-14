@@ -1,0 +1,214 @@
+{
+  "schema": "gate4e-fisher-mechanistic-v1",
+  "users": [
+    {
+      "fisher_median_split": 1.921668123694743,
+      "quadrants": {
+        "large_fisher_flip": 14008,
+        "large_fisher_no_flip": 33115,
+        "small_fisher_flip": 10928,
+        "small_fisher_no_flip": 36196
+      },
+      "spearman_fisher_error_vs_flip": 0.11786031379169912,
+      "user": "0816388460"
+    },
+    {
+      "fisher_median_split": 2.2946773628623633,
+      "quadrants": {
+        "large_fisher_flip": 33850,
+        "large_fisher_no_flip": 18538,
+        "small_fisher_flip": 15218,
+        "small_fisher_no_flip": 37170
+      },
+      "spearman_fisher_error_vs_flip": 0.4365551348449363,
+      "user": "13b8b5f76d"
+    },
+    {
+      "fisher_median_split": 2.012030867249344,
+      "quadrants": {
+        "large_fisher_flip": 29263,
+        "large_fisher_no_flip": 24438,
+        "small_fisher_flip": 17437,
+        "small_fisher_no_flip": 36264
+      },
+      "spearman_fisher_error_vs_flip": 0.24677011018614103,
+      "user": "2132c5d085"
+    },
+    {
+      "fisher_median_split": 2.2877770408594493,
+      "quadrants": {
+        "large_fisher_flip": 27463,
+        "large_fisher_no_flip": 28588,
+        "small_fisher_flip": 15334,
+        "small_fisher_no_flip": 40718
+      },
+      "spearman_fisher_error_vs_flip": 0.2897015865060167,
+      "user": "2327817653"
+    },
+    {
+      "fisher_median_split": 2.0104324656576047,
+      "quadrants": {
+        "large_fisher_flip": 27121,
+        "large_fisher_no_flip": 23646,
+        "small_fisher_flip": 16021,
+        "small_fisher_no_flip": 34746
+      },
+      "spearman_fisher_error_vs_flip": 0.259072643762553,
+      "user": "23b817e892"
+    },
+    {
+      "fisher_median_split": 2.8827318047987327,
+      "quadrants": {
+        "large_fisher_flip": 31022,
+        "large_fisher_no_flip": 18372,
+        "small_fisher_flip": 20261,
+        "small_fisher_no_flip": 29133
+      },
+      "spearman_fisher_error_vs_flip": 0.26519694824159923,
+      "user": "2be40c4380"
+    },
+    {
+      "fisher_median_split": 2.6649467053920812,
+      "quadrants": {
+        "large_fisher_flip": 27241,
+        "large_fisher_no_flip": 16682,
+        "small_fisher_flip": 18625,
+        "small_fisher_no_flip": 25298
+      },
+      "spearman_fisher_error_vs_flip": 0.22880141849002894,
+      "user": "2e45fde443"
+    },
+    {
+      "fisher_median_split": 1.7506706233234102,
+      "quadrants": {
+        "large_fisher_flip": 23153,
+        "large_fisher_no_flip": 26799,
+        "small_fisher_flip": 10224,
+        "small_fisher_no_flip": 39728
+      },
+      "spearman_fisher_error_vs_flip": 0.3202609675949463,
+      "user": "32cbfe3221"
+    },
+    {
+      "fisher_median_split": 1.6784885971166206,
+      "quadrants": {
+        "large_fisher_flip": 11282,
+        "large_fisher_no_flip": 19952,
+        "small_fisher_flip": 3193,
+        "small_fisher_no_flip": 28042
+      },
+      "spearman_fisher_error_vs_flip": 0.35856473542087125,
+      "user": "3589743749"
+    },
+    {
+      "fisher_median_split": 1.4390510093353475,
+      "quadrants": {
+        "large_fisher_flip": 11374,
+        "large_fisher_no_flip": 25000,
+        "small_fisher_flip": 3733,
+        "small_fisher_no_flip": 32642
+      },
+      "spearman_fisher_error_vs_flip": 0.2983097608584055,
+      "user": "47c605ad6f"
+    },
+    {
+      "fisher_median_split": 2.107616672152669,
+      "quadrants": {
+        "large_fisher_flip": 28563,
+        "large_fisher_no_flip": 16301,
+        "small_fisher_flip": 21267,
+        "small_fisher_no_flip": 23597
+      },
+      "spearman_fisher_error_vs_flip": 0.18969462705078718,
+      "user": "54c854b839"
+    },
+    {
+      "fisher_median_split": 1.862377096326747,
+      "quadrants": {
+        "large_fisher_flip": 22483,
+        "large_fisher_no_flip": 22974,
+        "small_fisher_flip": 14194,
+        "small_fisher_no_flip": 31264
+      },
+      "spearman_fisher_error_vs_flip": 0.21854295021219172,
+      "user": "6a7fc66366"
+    },
+    {
+      "fisher_median_split": 1.714972833523368,
+      "quadrants": {
+        "large_fisher_flip": 17100,
+        "large_fisher_no_flip": 32838,
+        "small_fisher_flip": 6261,
+        "small_fisher_no_flip": 43677
+      },
+      "spearman_fisher_error_vs_flip": 0.31086005792887444,
+      "user": "7afcdcd6be"
+    },
+    {
+      "fisher_median_split": 1.8086625315061053,
+      "quadrants": {
+        "large_fisher_flip": 29730,
+        "large_fisher_no_flip": 20494,
+        "small_fisher_flip": 15883,
+        "small_fisher_no_flip": 34342
+      },
+      "spearman_fisher_error_vs_flip": 0.32176525791607696,
+      "user": "87aa3b3887"
+    },
+    {
+      "fisher_median_split": 1.7465477772538966,
+      "quadrants": {
+        "large_fisher_flip": 25666,
+        "large_fisher_no_flip": 26669,
+        "small_fisher_flip": 11110,
+        "small_fisher_no_flip": 41225
+      },
+      "spearman_fisher_error_vs_flip": 0.30502066768116415,
+      "user": "8bd1c0ff16"
+    },
+    {
+      "fisher_median_split": 2.1293713152365057,
+      "quadrants": {
+        "large_fisher_flip": 30052,
+        "large_fisher_no_flip": 19479,
+        "small_fisher_flip": 19693,
+        "small_fisher_no_flip": 29839
+      },
+      "spearman_fisher_error_vs_flip": 0.25622149268800554,
+      "user": "9b8c99cdc2"
+    },
+    {
+      "fisher_median_split": 2.3639870558591185,
+      "quadrants": {
+        "large_fisher_flip": 20507,
+        "large_fisher_no_flip": 26493,
+        "small_fisher_flip": 13600,
+        "small_fisher_no_flip": 33401
+      },
+      "spearman_fisher_error_vs_flip": 0.20260876610879913,
+      "user": "ce52651f99"
+    },
+    {
+      "fisher_median_split": 2.0125850746248837,
+      "quadrants": {
+        "large_fisher_flip": 25246,
+        "large_fisher_no_flip": 22676,
+        "small_fisher_flip": 20083,
+        "small_fisher_no_flip": 27840
+      },
+      "spearman_fisher_error_vs_flip": 0.09912101767298878,
+      "user": "dd810188d9"
+    },
+    {
+      "fisher_median_split": 2.129220563558654,
+      "quadrants": {
+        "large_fisher_flip": 15450,
+        "large_fisher_no_flip": 16606,
+        "small_fisher_flip": 3638,
+        "small_fisher_no_flip": 28418
+      },
+      "spearman_fisher_error_vs_flip": 0.4765134539202011,
+      "user": "f1b6a408bf"
+    }
+  ]
+}

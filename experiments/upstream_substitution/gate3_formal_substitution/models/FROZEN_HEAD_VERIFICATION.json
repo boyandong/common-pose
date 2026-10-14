@@ -1,0 +1,159 @@
+{
+  "artifact": "frozen_db9_trusted8_lda.joblib",
+  "role": "frozen downstream head for GATE 3 (aggregate, all 77 DB9 participants)",
+  "protocol": {
+    "representation": "TRUSTED_DB9_POSE_v1",
+    "frozen_subset_sha256": "e51dde6e63941fd080c84f3896a98cf50fba9e17d5f9cebe909253d5465782d1",
+    "db9_columns": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      9,
+      13,
+      15
+    ],
+    "task": "NinaPro DB9 Exercise-B movement ids 1-8",
+    "segmentation": "restimulus x rerepetition",
+    "window": "central 60%",
+    "segment_cap": 200,
+    "cap_method": "np.linspace(0, n-1, 200).astype(int)",
+    "units": "np.deg2rad",
+    "standardisation": "DB9 train-fold z-score (sd>0 guard)",
+    "classifier": "sklearn LinearDiscriminantAnalysis() all defaults",
+    "random_seed": null,
+    "tuning_performed": false
+  },
+  "train_frames": 123200,
+  "train_subjects": 77,
+  "standardisation_mu": [
+    0.1350029575445456,
+    0.32844886209013036,
+    0.3048925328601227,
+    0.5231169247209726,
+    0.6895555497364936,
+    0.8326600094703641,
+    1.3157549769092232,
+    0.40983422298111705
+  ],
+  "standardisation_sd": [
+    0.26043012437382623,
+    0.5662106236760754,
+    0.523391072761239,
+    0.9006800415999144,
+    0.8575853440290025,
+    0.7113871222010373,
+    1.0969436577673886,
+    0.5368564194900199
+  ],
+  "class_priors": {
+    "1": 0.125,
+    "2": 0.125,
+    "3": 0.125,
+    "4": 0.125,
+    "5": 0.125,
+    "6": 0.125,
+    "7": 0.125,
+    "8": 0.125
+  },
+  "classes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "lda_solver": "svd",
+  "lda_shrinkage": null,
+  "replication_check": {
+    "against": "FINAL_VALIDATION.json .Q4_posture8.results.B_TRUSTED_DB9_POSE_v1",
+    "scalar_quantities": {
+      "n_frames": {
+        "reconstructed": 123200,
+        "frozen": 123200,
+        "match": true
+      },
+      "n_subjects": {
+        "reconstructed": 77,
+        "frozen": 77,
+        "match": true
+      },
+      "accuracy": {
+        "reconstructed": 0.747914,
+        "frozen": 0.747914,
+        "match": true
+      },
+      "balanced_accuracy": {
+        "reconstructed": 0.747914,
+        "frozen": 0.747914,
+        "match": true
+      },
+      "macro_f1": {
+        "reconstructed": 0.74598,
+        "frozen": 0.74598,
+        "match": true
+      }
+    },
+    "per_class_recall": {
+      "1": {
+        "reconstructed": 0.86026,
+        "frozen": 0.86026,
+        "match": true
+      },
+      "2": {
+        "reconstructed": 0.691364,
+        "frozen": 0.691364,
+        "match": true
+      },
+      "3": {
+        "reconstructed": 0.875584,
+        "frozen": 0.875584,
+        "match": true
+      },
+      "4": {
+        "reconstructed": 0.49474,
+        "frozen": 0.49474,
+        "match": true
+      },
+      "5": {
+        "reconstructed": 0.902857,
+        "frozen": 0.902857,
+        "match": true
+      },
+      "6": {
+        "reconstructed": 0.750974,
+        "frozen": 0.750974,
+        "match": true
+      },
+      "7": {
+        "reconstructed": 0.829026,
+        "frozen": 0.829026,
+        "match": true
+      },
+      "8": {
+        "reconstructed": 0.578506,
+        "frozen": 0.578506,
+        "match": true
+      }
+    },
+    "scalar_exact": true,
+    "per_class_recall_exact": true,
+    "exact": true,
+    "n_quantities_checked": 13
+  },
+  "gate2a_cross_check": {
+    "train_frames": [
+      123200,
+      123200,
+      true
+    ],
+    "mu": true,
+    "sd": true,
+    "priors": true
+  },
+  "downstream_head_accessed_for_outcome": "NO — this is the head itself; no GT-vs-PRED output was computed here"
+}

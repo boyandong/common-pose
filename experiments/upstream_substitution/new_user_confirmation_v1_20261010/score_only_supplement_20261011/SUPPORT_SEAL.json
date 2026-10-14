@@ -1,0 +1,3424 @@
+{
+  "diagnostics": {
+    "B": {
+      "03c48f96aa": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "03d49b393e": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "055bb1b487": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "06d17ebbe4": {
+        "original_common_classes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "0adf4a785f": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "1223558697": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "1407610453": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "1b89ab145b": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "20059f07ed": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "21cfae42e1": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "22808ee66c": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "2668760727": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "26a8454b40": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "2772dd6ee3": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "2ae025bda1": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "2af4aec870": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "2bbe806971": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "2e17a57d54": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "3175245a1b": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "31b6cc13eb": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "32473f0e96": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "342248118e": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "3669295621": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "3714261337": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "3875521008": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "456bd13d28": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "4cf27a8135": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "5058b0b5f2": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "518feaea99": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "5359e252a0": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "5e30de9ee8": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "5ef3a0537e": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "5f75b1e7f6": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "6076c7a1a2": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "65228c03b3": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "66cb44c2dc": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "7016fd5330": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "7411c05095": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "751c72b291": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "79d6b65fef": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "7b3e63f24d": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "7e08fa55fd": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "7e11a60f88": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "805d5c474a": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "827c91d800": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "82f6fe243f": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "84a77feea6": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "880c49a2d1": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "8d653d8587": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "8db8aaea3b": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "915e7ab7da": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "947f4aad09": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "969483f088": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "9ea3bd3394": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "9f2bac1c05": {
+        "original_common_classes": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "9fcad1a5cc": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "a485d3c03a": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "a49cf31c6c": {
+        "original_common_classes": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "a91351ec22": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "a993d16f6e": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "ada8b78af8": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "adc5269c79": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "b1284f4935": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "b12a8b6064": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "b5064e141f": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "b7e608b482": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "b99b939f3f": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "be762396f6": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "c2991a87f6": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "cab34d1c74": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "d29fdc12bb": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "d89102dc16": {
+        "original_common_classes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "e03cea741b": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "e5ecebd9aa": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "e627a3984a": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "eab042e9de": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "effb699d16": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "f3d1d06b13": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "fd5ce7691e": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "fd7b487e8d": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    "U": {
+      "03c48f96aa": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "03d49b393e": {
+        "original_common_classes": [
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "055bb1b487": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "06d17ebbe4": {
+        "original_common_classes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [
+          3
+        ],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "0adf4a785f": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "1223558697": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "1407610453": {
+        "original_common_classes": [
+          1,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "1b89ab145b": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "20059f07ed": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "21cfae42e1": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "22808ee66c": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "2668760727": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "26a8454b40": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "2772dd6ee3": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "2ae025bda1": {
+        "original_common_classes": [
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "2af4aec870": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "2bbe806971": {
+        "original_common_classes": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "2e17a57d54": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "3175245a1b": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "31b6cc13eb": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "32473f0e96": {
+        "original_common_classes": [
+          4,
+          5,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "342248118e": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "3669295621": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "3714261337": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "3875521008": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "456bd13d28": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "4cf27a8135": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "5058b0b5f2": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "518feaea99": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "5359e252a0": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "5e30de9ee8": {
+        "original_common_classes": [
+          1,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "5ef3a0537e": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "5f75b1e7f6": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "6076c7a1a2": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "65228c03b3": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "66cb44c2dc": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "7016fd5330": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "7411c05095": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "751c72b291": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "79d6b65fef": {
+        "original_common_classes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "7b3e63f24d": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "7e08fa55fd": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "7e11a60f88": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "805d5c474a": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "827c91d800": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "82f6fe243f": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "84a77feea6": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "880c49a2d1": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [
+          2
+        ],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "8d653d8587": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "8db8aaea3b": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "915e7ab7da": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "947f4aad09": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "969483f088": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "9ea3bd3394": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "9f2bac1c05": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "9fcad1a5cc": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "a485d3c03a": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "a49cf31c6c": {
+        "original_common_classes": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "a91351ec22": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "a993d16f6e": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "ada8b78af8": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "adc5269c79": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "b1284f4935": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "b12a8b6064": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "b5064e141f": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "b7e608b482": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "b99b939f3f": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "be762396f6": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "c2991a87f6": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "cab34d1c74": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "d29fdc12bb": {
+        "original_common_classes": [
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "d89102dc16": {
+        "original_common_classes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "e03cea741b": {
+        "original_common_classes": [
+          1,
+          4,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          4,
+          6,
+          7,
+          8
+        ]
+      },
+      "e5ecebd9aa": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "e627a3984a": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "eab042e9de": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "effb699d16": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "f3d1d06b13": {
+        "original_common_classes": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "fd5ce7691e": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "fd7b487e8d": {
+        "original_common_classes": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "score_only_missing_common_classes": [],
+        "score_only_sparse_common_classes": [],
+        "two_method_supported_intersection_diagnostic_only": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    }
+  },
+  "flip_read": false,
+  "original_common_sets_sha256": "1e1c76a662a422a6daf13677a41a6eb3155f69a75b0d4276a9e3a1a8b79e75fc",
+  "original_sets_changed": false,
+  "runner_sha256": "0b5e40a30a4fbaba584507037bbf58cd29356f79ef1ce87c78656f7c8cbc821e",
+  "score_manifest_sha256": "80199243ec84866bd3b0528eefc767d50424669e64fd659ed8a0a3df05065489",
+  "status": "FROZEN_WITHOUT_FLIP",
+  "support_rows_sha256": "4efbf73702d03858774e2cc4b74129d097d07feb0adc374e636484ec99433e0f"
+}

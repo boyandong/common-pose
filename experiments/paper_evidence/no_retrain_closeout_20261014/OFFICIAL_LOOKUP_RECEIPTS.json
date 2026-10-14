@@ -1,0 +1,52 @@
+[
+  {
+    "name": "commits",
+    "url": "https://api.github.com/repos/facebookresearch/emg2pose/commits?per_page=100",
+    "observed_at_utc": "2026-10-14T07:18:56.775561+00:00",
+    "scope": "first page only",
+    "status": "NOT_AUDITED_NETWORK_ERROR",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+  },
+  {
+    "name": "releases",
+    "url": "https://api.github.com/repos/facebookresearch/emg2pose/releases?per_page=100",
+    "observed_at_utc": "2026-10-14T07:19:03.646786+00:00",
+    "scope": "first page only",
+    "status": "NOT_AUDITED_NETWORK_ERROR",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+  },
+  {
+    "name": "issues",
+    "url": "https://api.github.com/repos/facebookresearch/emg2pose/issues?state=all&per_page=100",
+    "observed_at_utc": "2026-10-14T07:19:10.772587+00:00",
+    "scope": "first page only",
+    "status": "RETRIEVED",
+    "http_status": 200,
+    "headers": {
+      "ETag": "W/\"8178db76ffd72d13e6a30b6908bbfbc733c78305472d887c5905a9592844b70a\"",
+      "Last-Modified": null,
+      "Link": null
+    },
+    "sha256": "4c439ae60cbd20fc827964293fc57ebfbacf9f087f3d3d054b1774542bbdc37c",
+    "bytes": 21149,
+    "items": 6,
+    "complete_pagination": true
+  },
+  {
+    "name": "tags",
+    "url": "https://api.github.com/repos/facebookresearch/emg2pose/tags?per_page=100",
+    "observed_at_utc": "2026-10-14T07:19:20.403518+00:00",
+    "scope": "first page only",
+    "status": "RETRIEVED",
+    "http_status": 200,
+    "headers": {
+      "ETag": "\"74d1db57f0fec3481bb6b4d9bcdc020d656635ec6c53ee589d27a8831cbbe280\"",
+      "Last-Modified": "Tue, 13 Oct 2026 10:19:59 GMT",
+      "Link": null
+    },
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "bytes": 2,
+    "items": 0,
+    "complete_pagination": true
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "frozen_dependencies": "PASS",
+  "numeric_environment": "PASS",
+  "users": 80,
+  "disk": {
+    "total": 214748364800,
+    "used": 26748792832,
+    "free": 187999571968
+  }
+}

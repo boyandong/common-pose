@@ -1,0 +1,75 @@
+{
+  "status": "VERIFIED_WAIT_ON_THREE_LIVE_PROCESSES",
+  "observed_local_time": "2026-10-10T17:02:40.262490+08:00",
+  "previous_goal_turn": "PROGRESS: goal requirements re-audited; archives and125 release files rehashed; N80 selection rederived; prospective reporting format sealed and committed",
+  "handles": [
+    {
+      "launch_receipt": "DURABLE_DOWNLOAD_LAUNCH_RECEIPT.json",
+      "pid": 20892,
+      "creation_time": "2026-10-10T16:43:20.7943028+08:00",
+      "state": "LIVE"
+    },
+    {
+      "launch_receipt": "STREAM_RELAY_V2_LAUNCH.json",
+      "pid": 28460,
+      "creation_time": "2026-10-10T16:15:23.8582245+08:00",
+      "state": "LIVE"
+    },
+    {
+      "launch_receipt": "PIPELINE_SUPERVISOR_LAUNCH.json",
+      "pid": 15872,
+      "creation_time": "2026-10-10T16:49:58.0604238+08:00",
+      "state": "LIVE"
+    }
+  ],
+  "progress": {
+    "PROGRESS.json": {
+      "completed_bytes": 10718764712,
+      "completed_files": 600,
+      "elapsed_seconds": 1060.1090000000004,
+      "observed_epoch": 1791622861.0599818,
+      "pid": 20892,
+      "required_files": 2768,
+      "stage": "ACQUISITION_RUNNING"
+    },
+    "STREAM_RELAY_V2_PROGRESS.json": {
+      "active_files": 3,
+      "completed_files": 605,
+      "elapsed_seconds": 2832.922,
+      "observed_epoch": 1791622957.077964,
+      "pid": 28460,
+      "remaining_files": 2160,
+      "remotely_verified_bytes": 10798403336,
+      "required_files": 2768,
+      "stage": "STREAM_RELAY_V2_RUNNING"
+    },
+    "PIPELINE_SUPERVISOR_PROGRESS.json": {
+      "actual_local_handle_evidence": [
+        {
+          "creation_time": "2026-10-10T16:43:20.7943028+08:00",
+          "pid": 20892,
+          "state": "LIVE"
+        },
+        {
+          "creation_time": "2026-10-10T16:15:23.8582245+08:00",
+          "pid": 28460,
+          "state": "LIVE"
+        }
+      ],
+      "observed_epoch": 1791622959.3987541,
+      "pid": 15872,
+      "stage": "WAITING_FOR_COMPLETE_FIXED_TRANSFERS"
+    }
+  },
+  "git_head": "2b622fceff19abecfbdced3477636d77f3daa006",
+  "goal_cumulative_tokens_at_turn_start": 854919,
+  "current_context_tokens": "NOT_MEASURED",
+  "new_outcome_values_read": false,
+  "reporting_seal_reverified": true,
+  "goal_complete": false,
+  "full_experiment_receipts_missing": [
+    "PIPELINE_EXECUTION_COMPLETE.json",
+    "INDEPENDENT_RESULT_VERIFICATION.json",
+    "OFFHOST_BACKUP_VERIFICATION.json"
+  ]
+}

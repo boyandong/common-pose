@@ -1,0 +1,19 @@
+{
+  "status": "VERIFIED_FINAL_V5_2_PRIVATE_APPEND",
+  "repository": "boyandong/common-pose",
+  "branch": "codex/progress-20261014",
+  "url": "https://github.com/boyandong/common-pose/tree/codex/progress-20261014",
+  "commit": "ed946a5634655b5fc1672823ecb7f40063699a85",
+  "parent": "2bbeb010396ab6f8d55fc76494e2e2840a1b56a5",
+  "tree": "325053ca30ff2e1e2c308b228b9cc9ca5f8e5d44",
+  "verified_final_files": 95,
+  "total_snapshot_files": 1183,
+  "remote_main_sha_unchanged": "05574b6f104017de001c88ecf1a07b7600bcb882",
+  "local_history_unchanged": true,
+  "visibility": "PRIVATE",
+  "release_created": false,
+  "credential_file_excluded": true,
+  "all_uploaded_file_hashes_match": true,
+  "AI_disclosure": "NOT_ADOPTED_PER_USER",
+  "new_experiments": false
+}

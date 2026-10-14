@@ -1,0 +1,36 @@
+{
+  "status": "EXISTING_LOGS_CONSOLIDATED",
+  "ledger_rows": 692,
+  "old_log_rows": 590,
+  "old_unique_model_hashes": 336,
+  "old_logged_rows_not_summed_as_total": true,
+  "new_fit_batches": [
+    {
+      "batch": "new_factorial_60",
+      "fits": 60,
+      "sum_logged_stage_seconds": 12.415869880467653,
+      "median_logged_stage_seconds": 0.18308240361511707,
+      "min_logged_stage_seconds": 0.046613967046141624,
+      "max_logged_stage_seconds": 0.4673389922827482,
+      "scope": "fit plus serialization, before threshold selection; excludes shared input and test evaluation/package phases"
+    },
+    {
+      "batch": "new_field_removals_42",
+      "fits": 42,
+      "sum_logged_stage_seconds": 47.39690804667771,
+      "median_logged_stage_seconds": 1.0422873133793473,
+      "min_logged_stage_seconds": 0.9644586481153965,
+      "max_logged_stage_seconds": 1.4226823151111603,
+      "scope": "fit plus serialization/hash and DEV threshold evaluation/selection; excludes shared input and test evaluation/package phases"
+    }
+  ],
+  "shared_cache_stage_wall_seconds": 6642.505813285708,
+  "cache_wall_is_pure_GPU_time": false,
+  "main_controller_wall_seconds": 2772.3257266115397,
+  "field_controller_wall_seconds": 1122.4053803849965,
+  "controller_wall_is_independent_experiment_latency": false,
+  "history_acquisition_and_development_total": "UNKNOWN_NO_COMPLETE_RECORDS",
+  "online_causal_latency": "UNMEASURED_SEPARATE_BRANCH",
+  "source_LOSO_replay_log": "<PROJECT_ROOT>\\experiments\\paper_evidence\\local_closeout_20261014\\results\\source_replay\\SOURCE_LOSO_FOLDS.csv",
+  "no_new_timing_run": true
+}

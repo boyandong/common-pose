@@ -1,0 +1,57 @@
+{
+  "artifact": "GATE3B_DECISION.json",
+  "gate": "PHASE 1 / GATE 3B",
+  "plan_sha256": "4aa731b8d7b15f802586e07c34dc198510e0dadc89a13831c09526cacd2cfc77",
+  "evidence_status": "POST-HOC MOTIVATED, PROSPECTIVELY FROZEN BEFORE CONTINUOUS-REPRESENTATION OUTCOME INSPECTION",
+  "no_arbitrary_thresholds": true,
+  "MECHANISM": "REPRESENTATION_PARTIALLY_PRESERVED",
+  "mechanism_reason": "median Fisher cosine 0.676020 in [0.50, 0.90); real but incomplete representation degradation",
+  "mechanism_label_thresholds_are_description_bands_only": true,
+  "mechanism_rule_declared": {
+    "median_fisher_cosine >= 0.90 AND min component r >= 0.50": "REPRESENTATION_LARGELY_PRESERVED_BOUNDARY_FRAGILE",
+    "0.50 <= median_fisher_cosine < 0.90": "REPRESENTATION_PARTIALLY_PRESERVED",
+    "median_fisher_cosine < 0.50 AND flip-group cosine >= 0.80": "MIXED_OR_AMBIGUOUS",
+    "otherwise": "REPRESENTATION_SUBSTANTIALLY_DEGRADED"
+  },
+  "hard_agreement_alone_did_not_drive_the_label": true,
+  "joint_evidence": {
+    "fisher_cosine_median": 0.6760202195769145,
+    "fisher_cosine_iqr": 0.3264772138414685,
+    "fisher_distance_norm_median": 2.896258541072017,
+    "fisher_distance_norm_iqr": 1.651727426826168,
+    "component_pearson_mean": 0.4059720872624311,
+    "component_pearson_min": 0.1723782595712581,
+    "db9_weighted_component_correlation": 0.5624955075638894,
+    "score_cosine_median": 0.9117631998675376,
+    "score_distance_norm_median": 1.2128515689919812,
+    "tv_median": 0.4603986424786981,
+    "js_median": 0.20756858233600736,
+    "hard_agreement": 0.36453882740432786,
+    "flip_fraction": 0.6354611725956721,
+    "fisher_cosine_median_flip_group": 0.6109726717234946,
+    "fisher_cosine_median_same_group": 0.771734098261595,
+    "spearman_pose_rmse_vs_fisher_distance": 0.8133039598924106,
+    "spearman_fisher_distance_vs_flip": 0.16685450585987105
+  },
+  "reading": {
+    "high_flip_similarity_supports": "BOUNDARY_FRAGILITY",
+    "low_flip_similarity_supports": "REPRESENTATION_LOSS"
+  },
+  "firewall": {
+    "NEW_INFERENCE_RUN": "NO",
+    "MODEL_RETRAINED": "NO",
+    "CALIBRATION_FITTED": "NO",
+    "SMOOTHING_APPLIED": "NO",
+    "GATE_CREATED": "NO",
+    "UNKNOWN_CLASS": "NO",
+    "HUMAN_LABELS_USED": "NO",
+    "LAG_SEARCH_PERFORMED": "NO",
+    "DOF_INTERVENTION_PERFORMED": "NO",
+    "SAMPLE_FILTERING_APPLIED": "NO",
+    "COMPONENT_SELECTION_ON_OUTCOME": "NO",
+    "POPULATION_CHANGED": "NO",
+    "GATE3_ARTIFACTS_MODIFIED": "NO",
+    "SCALING_FROM_EMG2POSE": "NO"
+  },
+  "next_allowed_step": "Decide the reliability-gate direction from the mechanism reading. Do not design a gate in this gate."
+}

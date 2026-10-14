@@ -1,0 +1,123 @@
+{
+  "status": "FULL_GOAL_NOT_COMPLETE",
+  "observed_local_time": "2026-10-10T16:59:54.965710+08:00",
+  "previous_goal_turn": "PROGRESS: preserved failures, resumed known-terminal sealed controller, committed durable pipeline and verified bytes",
+  "requirements": [
+    {
+      "requirement": "old manuscript closing and fixed reproducible Git release",
+      "state": "VERIFIED",
+      "evidence": [
+        "paper_closing_v1_20261010/RELEASE_CONTENT_MANIFEST.json",
+        "paper_closing_v1_20261010/manuscript_closing/BUILD_MANIFEST.json"
+      ],
+      "release_files_rehashed": 125,
+      "git_anchor": "1fc75512698c92d4bd11cf52e660c8814b1ac127"
+    },
+    {
+      "requirement": "restored old cache and local private cache/report/seed backup",
+      "state": "VERIFIED",
+      "evidence": [
+        {
+          "receipt": "LOCAL_BACKUP_VERIFICATION.json",
+          "archive": "private_cache_backup_20261010.tar.gz",
+          "bytes": 384382955,
+          "sha256": "79241d7fdf9006b2c6cb95c6a88ac9f85ba1951931ce9e0097b53dcce25283cc"
+        },
+        {
+          "receipt": "REPORTING_SEED_BACKUP_MANIFEST.json",
+          "archive": "private_reporting_and_seed_backup_20261010.tar.gz",
+          "bytes": 17428285,
+          "sha256": "413f782643ed4e01f2738881787369018c45167e3c73f14626a7ff005ca30f5a"
+        }
+      ],
+      "scope": "archive bytes rehashed against preserved prior member verification; raw private source/models not redistributed"
+    },
+    {
+      "requirement": "canonical numerical diagnosis and all20 prescribed seeds independently verified",
+      "state": "VERIFIED",
+      "evidence": "paper_closing_v1_20261010/reproduction_attempt3_8threads/INDEPENDENT_VERIFICATION.json",
+      "counts": {
+        "canonical_checks": 702,
+        "canonical_max_abs_difference": 0.0,
+        "user_risks": 4680,
+        "class_support_rows": 37440,
+        "paired_effects": 3120,
+        "summary_groups": 160
+      }
+    },
+    {
+      "requirement": "score-only deferred under limited empirical claim",
+      "state": "VERIFIED_IN_FROZEN_SPEC_AND_MANUSCRIPT",
+      "evidence": [
+        "new_user_confirmation_v1_20261010/SCIENTIFIC_SPEC.md",
+        "paper_closing_v1_20261010/manuscript_closing/MANUSCRIPT_CLOSING.md"
+      ]
+    },
+    {
+      "requirement": "scoped history/protected-cohort/upstream exposure audit and resource planning",
+      "state": "COMPLETED_WITH_PRESERVED_LIMITS",
+      "artifact_hashes_reverified": 8,
+      "candidate_count": 127,
+      "exposure_limit": "local fingers provenance, including hidden/ignored manifests and processed filenames; outside-root, unsaved and private remote history not certified absent",
+      "upstream_training_membership": "UNRESOLVED"
+    },
+    {
+      "requirement": "prospective frozen strong-baseline protocol and outcome-independent N80 selection",
+      "state": "VERIFIED",
+      "enrollment_rule_rederived": true,
+      "users": 80,
+      "protocol_sha256": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a",
+      "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+      "valid_nonzero_pairs_assumed": false
+    },
+    {
+      "requirement": "complete sources, remote transfers and full source validity",
+      "state": "INCOMPLETE",
+      "required_receipts": [
+        "ACQUISITION_COMPLETE.json",
+        "LOCAL_RELAY_COMPLETE.json",
+        "SOURCE_QUALIFICATION.json"
+      ],
+      "currently_present": []
+    },
+    {
+      "requirement": "new frozen inference, support-first class sets, primary comparisons and20 conditional seeds",
+      "state": "INCOMPLETE",
+      "required_receipts": [
+        "FEATURE_CACHE_MANIFEST.json",
+        "COMMON_CLASS_SETS.json",
+        "PRIMARY_RESULT.json",
+        "RESULT_MANIFEST.json"
+      ],
+      "currently_present": []
+    },
+    {
+      "requirement": "independent complete new-result verification",
+      "state": "INCOMPLETE",
+      "required_receipts": [
+        "INDEPENDENT_RESULT_VERIFICATION.json"
+      ],
+      "currently_present": []
+    },
+    {
+      "requirement": "complete new source/cache/dependency/result off-host backup",
+      "state": "INCOMPLETE",
+      "required_receipts": [
+        "OFFHOST_BACKUP_MANIFEST.json",
+        "OFFHOST_BACKUP_VERIFICATION.json"
+      ],
+      "currently_present": []
+    },
+    {
+      "requirement": "prospective manuscript reports positive/negative/missing results and updated final audit",
+      "state": "INCOMPLETE",
+      "reporting_plan": "REPORTING_PLAN_BEFORE_OUTCOMES_20261010.md",
+      "required_outputs": [
+        "manuscript_confirmation/MANUSCRIPT_CONFIRMATION.md",
+        "manuscript_confirmation/BUILD_MANIFEST.json"
+      ],
+      "reporting_preparation_is_not_confirmation": true
+    }
+  ],
+  "private_source_or_new_effect_values_read_by_audit": false
+}

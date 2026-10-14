@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "stdout": "{\"state\": {\"status\": \"COMPLETE_PENDING_LOCAL_DELIVERY\", \"completed\": [\"gpu_cost\", \"factorial_fit\", \"factorial_evaluation\", \"lag_window_sensitivity\", \"independent_verification\", \"report_package\"], \"controller_pid\": 2885, \"elapsed_seconds\": 2772.3257266115397}, \"INDEPENDENT_VERIFICATION.json\": {\"status\": \"PASS\", \"checks\": 1370496, \"models_verified\": 96, \"all_weights_exact\": true, \"threshold_candidates_reconstructed\": true, \"support_denominators_and_saved_scores_recounted\": true, \"failed_models_preserved\": [], \"original_implementations_hash_verified\": true}, \"FINAL_DELIVERY.json\": {\"status\": \"REMOTE_VERIFIED_LOCAL_DELIVERY_PENDING\", \"package\": \"/root/autodl-tmp/commonpose_paper_closeout_20261014/verified_paper_closeout_results.tar.gz\", \"package_sha256\": \"1091477be69562e95fc8c00bd6b85574975bf4fb7b4d89175542c74118ab637d\", \"bytes\": 5639417, \"files\": 107, \"new_models\": 60, \"independent_checks\": 1370496, \"large_training_and_decision_arrays_retained_remote\": true}, \"tail\": []}\n",
+  "stderr": ""
+}

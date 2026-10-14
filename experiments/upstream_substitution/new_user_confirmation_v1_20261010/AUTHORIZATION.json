@@ -1,0 +1,10 @@
+{
+  "source": "direct human reply to the review approval question",
+  "answer": "确认，按草案封存并执行",
+  "recorded_utc": "2026-10-10T06:56:07.402890+00:00",
+  "approved_draft_sha256": "c95d5d5ecb1aabc85cf620bb8182a2a1f53f7213b2dfdc91c9d39b05d635b571",
+  "review_packet_sha256": "2553e87e30682e9e51270545c18573ba22ad5c5506081e54c8c18f3cf0209f60",
+  "enrollment": 80,
+  "replacement_allowed": false,
+  "effect_dependent_addition_allowed": false
+}

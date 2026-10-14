@@ -1,0 +1,158 @@
+{
+  "date": "2026-10-14 Asia/Shanghai",
+  "status": "PASS_EXISTING_EVIDENCE_RECOUNT",
+  "identity": {
+    "metadata_sha256": "0e7ad04a79a0f162385d22ec8d6f43af9b8360978ca11ef9d601bbf9594b09e6",
+    "enrollment_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+    "checkpoint_current_hash_matches_archived_inspection": true,
+    "checkpoint_reinspected": false,
+    "N80_users": 80,
+    "public_train_identity_intersection": 70,
+    "evaluation_files": 2768,
+    "public_split_counts": {
+      "test": 647,
+      "train": 1969,
+      "val": 152
+    },
+    "evaluation_sessions": 80,
+    "public_train_session_intersection": 70,
+    "records_sharing_public_train_session": 2386,
+    "same_session_side_time_overlap_records": 1969,
+    "nonidentical_time_overlap_records": 0,
+    "actual_checkpoint_training_membership": "UNKNOWN for all 80; public recipe is conditional evidence only",
+    "temporal_scope": "Public metadata half-open intervals, same session and hand side; no raw-signal duplicate audit or checkpoint training manifest"
+  },
+  "provenance_entries_verified": 51,
+  "source_evaluation_tables_hash_verified": true,
+  "participant_rows": {
+    "N80": 24000,
+    "A20": 6000
+  },
+  "positive_cells": {
+    "N80": {
+      "Full_vs_Boundary": 24,
+      "Full_vs_Score_only": 23,
+      "cells": 24
+    },
+    "A20": {
+      "Full_vs_Boundary": 24,
+      "Full_vs_Score_only": 22,
+      "cells": 24
+    }
+  },
+  "N80_offline30_recount": [
+    {
+      "consumer": "DB9 posture",
+      "delta_U_pp": 4.651087480423411,
+      "U_users": 80,
+      "delta_B_pp": -0.9408015347136534,
+      "B_users": 3,
+      "no_gate_B_evaluable": 22,
+      "Full30_B_evaluable": 3,
+      "Score_only_minus_Full_pp": 0.8670060529150182
+    },
+    {
+      "consumer": "DB9 grasp",
+      "delta_U_pp": 1.8667733259023527,
+      "U_users": 80,
+      "delta_B_pp": -18.297085056616467,
+      "B_users": 74,
+      "no_gate_B_evaluable": 80,
+      "Full30_B_evaluable": 74,
+      "Score_only_minus_Full_pp": 0.9645670503763693
+    },
+    {
+      "consumer": "CeTI posture",
+      "delta_U_pp": 3.972919517554362,
+      "U_users": 80,
+      "delta_B_pp": -5.715963633052462,
+      "B_users": 52,
+      "no_gate_B_evaluable": 80,
+      "Full30_B_evaluable": 62,
+      "Score_only_minus_Full_pp": 1.2816930491797982
+    },
+    {
+      "consumer": "CeTI grasp",
+      "delta_U_pp": 4.260593984852743,
+      "U_users": 80,
+      "delta_B_pp": 18.30553523598738,
+      "B_users": 80,
+      "no_gate_B_evaluable": 80,
+      "Full30_B_evaluable": 80,
+      "Score_only_minus_Full_pp": 3.7897564181585257
+    },
+    {
+      "consumer": "SHOW instruction",
+      "delta_U_pp": 2.5912983987735005,
+      "U_users": 80,
+      "delta_B_pp": -20.880309577822537,
+      "B_users": 79,
+      "no_gate_B_evaluable": 80,
+      "Full30_B_evaluable": 79,
+      "Score_only_minus_Full_pp": 1.3451931682604183
+    },
+    {
+      "consumer": "KIN phase",
+      "delta_U_pp": 2.106802123068833,
+      "U_users": 80,
+      "delta_B_pp": 0.7942067502810068,
+      "B_users": 60,
+      "no_gate_B_evaluable": 79,
+      "Full30_B_evaluable": 64,
+      "Score_only_minus_Full_pp": 0.02406584941706969
+    }
+  ],
+  "threshold_audit": {
+    "configurations": 24,
+    "feasible": 4,
+    "balanced_targeted": 12,
+    "balanced_feasible": 0,
+    "scope": "Score-only auxiliary grid"
+  },
+  "TTA_ablation": {
+    "existing_A20_contrasts": 36,
+    "scope": "Fixed thresholds; Full minus its final two TTA features; not isolated ablations of every feature"
+  },
+  "existing_N80_CI_contrasts": {
+    "count": 144,
+    "scope": "Fixed-threshold outcomes; not substitutes for the main matched offline budget intervals"
+  },
+  "existing_cost": {
+    "shared_four_view_files": 2768,
+    "shared_wall_seconds": 6642.505813285708,
+    "includes": "Read/hash/store/inference; no certified streaming per-input latency"
+  },
+  "main_supplement_dependencies": [
+    {
+      "line": 29,
+      "text": "The released VEMG2Pose estimator \\cite{salter2024emg2pose} uses a fixed adapter retaining eight joint-flexion angles in radians. Source-domain validation (Table~S5), adapter, and scoring details are given in the Supplementary Methods. Cross-source calibration and temporal alignment remain unverified. Fig.~\\ref{fig:substitution} separates the paired reference and estimated-input pathways."
+    },
+    {
+      "line": 82,
+      "text": "Feature and training details are given in the Supplementary Methods."
+    },
+    {
+      "line": 97,
+      "text": "The auxiliary fixed-threshold audit crosses two Score-only training configurations with two threshold objectives. Its disjoint development split and candidate threshold grid are detailed in the Supplementary Methods."
+    },
+    {
+      "line": 107,
+      "text": "Historical N80 DB9 used paired-block budgets and a balanced endpoint on fixed common supported classes; the expansion uses prediction-valid budgets and requires every fixed reference class. Historical A20 tested frozen Boundary in two DB9 consumers. These protocols remain separate (Supplementary Tables~S1/S2)."
+    },
+    {
+      "line": 130,
+      "text": "Across N80 and A20, Full/U achieved positive median paired reductions relative to Boundary in all 24 consumer--budget comparisons within each cohort (Fig.~\\ref{fig:ranking}). Direct comparisons with the learned Score-only/U control also favored Full/U in 23 of 24 N80 and 22 of 24 A20 comparisons (Supplementary Table~S3). At 30\\% retention, the direct paired improvement reached 3.79 percentage points for CeTI grasp in N80."
+    },
+    {
+      "line": 136,
+      "text": "Aggregate improvements did not describe how decision preservation was distributed across reference classes. At 30\\% retention, Full/U achieved positive median paired overall reductions for all six consumers, while class-balanced changes varied in both direction and magnitude (Fig.~\\ref{fig:fidelity}; Supplementary Table~S4)."
+    },
+    {
+      "line": 151,
+      "text": "Earlier frozen DB9 comparisons provide complementary evidence for selective retention and the role of decision geometry. Historical N80 Full selection at a 30\\% paired-block budget reduced overall disagreement relative to Boundary by a median paired 3.47 percentage points (95\\% participant-bootstrap interval: 1.87--4.76), and its fixed-common-class balanced endpoint improved by 9.14 percentage points (8.12--10.95) relative to the historical class-only learned selection baseline (\\emph{class\\_model}); both comparisons met their original prespecified sign-test criteria. Historical A20 Boundary comparisons and matched N80 feature-set contrasts remain separately reported in Supplementary Tables~S1 and S2."
+    }
+  ],
+  "paper_files_unchanged": true,
+  "paper_files_hashed": 187,
+  "no_training_no_inference_no_remote_access": true
+}

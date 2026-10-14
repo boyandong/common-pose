@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETE",
+  "rows": 49440,
+  "failed_fits_preserved": [],
+  "cohorts": [
+    "validation",
+    "A20",
+    "N80"
+  ]
+}

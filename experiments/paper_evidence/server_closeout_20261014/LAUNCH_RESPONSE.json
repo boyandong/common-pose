@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "stdout": "{\"status\": \"LAUNCHED_ONCE\", \"launch\": {\"pid\": 2885, \"start_ticks\": \"907758190\", \"root\": \"/root/autodl-tmp/commonpose_paper_closeout_20261014\", \"stages\": [\"gpu_cost\", \"factorial_fit\", \"factorial_evaluation\", \"lag_window_sensitivity\", \"independent_verification\", \"report_package\"]}}\n",
+  "stderr": ""
+}

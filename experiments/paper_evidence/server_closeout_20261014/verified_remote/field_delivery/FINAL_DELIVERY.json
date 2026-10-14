@@ -1,0 +1,9 @@
+{
+  "status": "VERIFIED_REMOTE",
+  "package": "/root/autodl-tmp/commonpose_paper_closeout_20261014/score_field_ablation/verified_score_fields.tar.gz",
+  "package_sha256": "9a02f709ea4e1c8f888f0e86919d71f90e490513aba0e096e5ac98f6a01e88e8",
+  "bytes": 4090783,
+  "files": 53,
+  "checks": 2953908,
+  "models": 42
+}

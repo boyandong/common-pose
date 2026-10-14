@@ -1,0 +1,120 @@
+==============================================================================
+GATE 3B — CONTINUOUS DOWNSTREAM REPRESENTATION PRESERVATION
+==============================================================================
+plan sha256        : 4aa731b8d7b15f802586e07c34dc198510e0dadc89a13831c09526cacd2cfc77
+gate3 plan sha256  : 9869d9b94ba07d916fc8accd1646f51ec3ea9a0efe5427a530f37880edcfc381
+epsilon (cosine)   : 1e-12
+expected population: 86833
+
+[1] frozen head + DB9 reference
+    head sha256          : b0ef8caf8e390a480fa2a3b448f79ccf14f75c71265ef925ee299a5e9e660386
+    solver/shrinkage     : svd / None
+    classes              : [1, 2, 3, 4, 5, 6, 7, 8]
+    Fisher dimension     : 7
+    evr                  : [0.45635195, 0.29560768, 0.17173923, 0.06415877, 0.00904045, 0.0024689, 0.00063303]
+    sigma_DB9            : [2.52839938, 2.11972473, 1.74052774, 1.32594168, 1.052031, 1.01445103, 1.00370104]
+    tau_DB9 (score)      : [8.46058536, 6.5200128, 9.35685055, 11.06796022, 11.11574723, 9.00570995, 6.66914283, 10.46107455]
+
+[2] Gate3 population reuse
+    records            : 30
+    n samples          : 86833
+    expected           : 86833
+    identity match     : True
+    rate               : 50.0 Hz
+
+[3] L1 PRIMARY — Fisher discriminant embedding
+    z_GT (86833, 7)  z_PRED (86833, 7)  dim 7 (expected 7)
+    valid cosine frames: 86833 / 86833  (invalid 0, neither silent-1 nor dropped)
+    cosine median 0.676020 mean 0.626964 IQR [0.491917, 0.818394] p05 0.146851 p95 0.922707
+    frac <0 0.023113  >0.5 0.741250  >0.8 0.284316  >0.9 0.092949
+    d_norm median 2.896259 mean 3.012777 IQR [2.097313, 3.749041] p05 1.283626 p95 5.201622
+    d_raw  median 3.594475
+
+    per-component preservation (DB9 weight, Pearson, Spearman, MAE, RMSE):
+      c1  w 0.456352  r +0.809049  rho +0.806598  MAE 0.739720  RMSE 0.936527  slope 0.665807  inter 0.758655
+      c2  w 0.295608  r +0.333366  rho +0.343404  MAE 1.102937  RMSE 1.469582  slope 0.400822  inter 1.363184
+      c3  w 0.171739  r +0.377827  rho +0.386064  MAE 1.254680  RMSE 1.678815  slope 0.336482  inter -0.524330
+      c4  w 0.064159  r +0.421823  rho +0.401440  MAE 0.856770  RMSE 1.079756  slope 0.359072  inter 0.790085
+      c5  w 0.009040  r +0.172378  rho +0.173275  MAE 1.980808  RMSE 2.403414  slope 0.227812  inter 1.538659
+      c6  w 0.002469  r +0.418648  rho +0.402805  MAE 1.061830  RMSE 1.317214  slope 0.575100  inter 0.027877
+      c7  w 0.000633  r +0.308713  rho +0.273293  MAE 0.954213  RMSE 1.199937  slope 0.265942  inter 0.244985
+    DB9_WEIGHTED_COMPONENT_CORRELATION = 0.562496
+    8-class affinity score argmax == head.predict : True
+
+[4] L2/L3/L4 (secondary/tertiary)
+    score cosine median 0.911763  valid 86833/86833
+    score dist (DB9-norm) median 1.212852
+    score row-Pearson median 0.911763 (valid 86833)
+    TV median 0.460399   JS median 0.207569
+    hard agreement 0.364539  (Gate3 0.364539, match True)
+    Gate3 TV match True  JS match True
+
+[5] REPRESENTATION BY HARD OUTCOME
+    SAME: n 31654 (0.3645)  cos 0.771734  d_norm 2.543869  score_cos 0.926147  TV 0.206473  JS 0.064848  poseRMSE 24.1082
+    FLIP: n 55179 (0.6355)  cos 0.610973  d_norm 3.057431  score_cos 0.902245  TV 0.612754  JS 0.342724  poseRMSE 26.8322
+
+[6] FISHER-DISTANCE DECILES (primary view)
+    dec        n    medDist    medCos    agree   balPres  medPoseErr
+    1       8684     1.2836    0.9143   0.5949    0.3982     12.1222
+    2       8684     1.7565    0.8514   0.4680    0.3458     15.5343
+    3       8684     2.0974    0.8086   0.4253    0.3376     18.4761
+    4       8683     2.4159    0.7603   0.3754    0.2948     20.5128
+    5       8683     2.7292    0.6900   0.3007    0.2702     22.5476
+    6       8683     3.0575    0.6339   0.3118    0.2690     24.0617
+    7       8683     3.3846    0.5825   0.2789    0.2507     25.8972
+    8       8683     3.7491    0.5473   0.2463    0.2331     28.2473
+    9       8683     4.2619    0.4947   0.2862    0.2441     31.3783
+    10      8683     5.2020    0.4165   0.3578    0.2723     35.9176
+
+[7] FISHER-COSINE DECILES (inverse view)
+    1       8684     1.3589    0.9227   0.6392    0.5218     13.1838
+    2       8684     1.8815    0.8700   0.5199    0.3775     16.2588
+    3       8684     2.2297    0.8184   0.5033    0.4077     19.3285
+    4       8683     2.5950    0.7634   0.4144    0.3379     21.0302
+    5       8683     2.9343    0.7071   0.3794    0.3056     23.1234
+    6       8683     3.3000    0.6430   0.3496    0.2831     25.1972
+    7       8683     3.5343    0.5733   0.2891    0.2612     26.7746
+    8       8683     3.7176    0.4919   0.2548    0.2286     28.2097
+    9       8683     3.8843    0.3803   0.2232    0.2224     29.8039
+    10      8683     3.9021    0.1468   0.0724    0.1648     31.5263
+
+[8] POSE -> FISHER -> HARD (descriptive, no causal claim)
+    Spearman(pose RMSE, Fisher d_norm) = +0.813304
+    Spearman(Fisher d_norm, flip)      = +0.166855
+    Spearman(pose RMSE, flip)          = +0.162137 (Gate3 recorded +0.162137)
+
+[9] TEMPORAL FISHER PRESERVATION (zero-lag only, no lag search)
+    c1  zero-lag r +0.809049  rho +0.806598   derivative r +0.671204  rho +0.629415
+    c2  zero-lag r +0.333366  rho +0.343404   derivative r +0.533798  rho +0.446935
+    c3  zero-lag r +0.377827  rho +0.386064   derivative r +0.403533  rho +0.422688
+    c4  zero-lag r +0.421823  rho +0.401440   derivative r +0.309482  rho +0.368374
+    c5  zero-lag r +0.172378  rho +0.173275   derivative r +0.127523  rho +0.195826
+    c6  zero-lag r +0.418648  rho +0.402805   derivative r +0.327301  rho +0.296944
+    c7  zero-lag r +0.308713  rho +0.273293   derivative r +0.432350  rho +0.423980
+
+[10] SIDE / STAGE (secondary, descriptive)
+    left  : n   43535  cos 0.612371  d_norm 3.177032  scoreCos 0.898300  agree 0.301757
+    right : n   43298  cos 0.726423  d_norm 2.580199  scoreCos 0.926852  agree 0.427664
+    CountingUpDownFaceSideAway             n    5530 cos 0.6443 d 3.0555 agree 0.3566
+    FingerAbductionSeries                  n    5601 cos 0.8434 d 1.9305 agree 0.4081
+    FingerFreeform                         n    4356 cos 0.5435 d 3.3475 agree 0.1325
+    FingerPinchesSingleFingerPinchesMultip n    5179 cos 0.7012 d 2.5804 agree 0.6111
+    FingerWigglingSpreading                n    5647 cos 0.7020 d 2.5581 agree 0.2137
+    HandClawGraspFlicks                    n    4813 cos 0.7970 d 2.3275 agree 0.3193
+    HookEmHornsOKScissors                  n    5430 cos 0.6780 d 2.7613 agree 0.4378
+    IndividualFingerPointingSnap           n    5735 cos 0.7237 d 2.3503 agree 0.4964
+    OneHandedFreeStyle                     n    3586 cos 0.6027 d 3.0717 agree 0.1726
+    ShakaVulcanPeace                       n    5087 cos 0.5858 d 3.2341 agree 0.2072
+    ThumbsSwipesWholeHand                  n    5530 cos 0.6603 d 3.3262 agree 0.5984
+    ThumbsUpDownThumbRotationsCWCCWP       n    3780 cos 0.8264 d 2.4165 agree 0.5389
+    TwoHandedFreeStyle                     n   18478 cos 0.5493 d 3.7368 agree 0.3505
+    WristFlexionAbduction                  n    5134 cos 0.7462 d 2.8334 agree 0.1535
+    unconstrained                          n    2947 cos 0.8923 d 1.4778 agree 0.4761
+
+[11] LINEAR CKA (DETERMINISTIC_FIRST_N, n=40000) = 0.233746
+
+[12] writing artifacts
+
+[13] MECHANISM DECISION: REPRESENTATION_PARTIALLY_PRESERVED
+     median Fisher cosine 0.676020 in [0.50, 0.90); real but incomplete representation degradation
+elapsed 6.2s

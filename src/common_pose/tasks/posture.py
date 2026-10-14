@@ -38,14 +38,23 @@ from typing import Mapping, Sequence
 
 from ..api.dof import get_registry, load_trusted_db9_subset
 
-#: Exercise-B hand-shape movement ids (the task the trusted subset was validated on).
-HANDSHAPE_MOVEMENTS: tuple[int, ...] = (1, 2, 3, 4, 5, 6, 7, 8, 17)
+#: Exercise-B hand-configuration movement ids — the task the trusted subset was validated
+#: on. IDs 1-8 only. **Movement 17 is NOT here**: the official protocol defines it as
+#: "Wrist extension with closed hand", i.e. a wrist movement, and an earlier public
+#: revision wrongly counted it as a ninth hand-shape class.
+HANDSHAPE_MOVEMENTS: tuple[int, ...] = (1, 2, 3, 4, 5, 6, 7, 8)
 
-#: Exercise-B wrist movement ids, excluded from the hand-shape task.
-WRIST_MOVEMENTS: tuple[int, ...] = (9, 10, 11, 12, 13, 14, 15, 16)
+#: Exercise-B movement ids excluded from the hand-configuration task: 9-12 are
+#: supination/pronation and 13-17 are wrist flexion/extension/deviation. Kept for
+#: completeness; note that ``TRUSTED_DB9_POSE_v1`` has no wrist channel by construction,
+#: which is why none of these can be scored fairly against it.
+EXCLUDED_FROM_HANDSHAPE_TASK: tuple[int, ...] = (9, 10, 11, 12, 13, 14, 15, 16, 17)
 
 #: Movement id the DB9 zero/reference posture was taken from, confirmed from the data.
 REFERENCE_MOVEMENT = 11
+
+#: The movement that is an unambiguous fist, used as the physical anchor.
+FIST_MOVEMENT = 6
 
 
 def posture_representation_names(arm: str = "trusted") -> tuple[str, ...]:
@@ -179,18 +188,32 @@ class PostureTask:
 
     include_wrist_movements: bool = False
     """Must stay ``False`` while the evaluated representation carries no wrist channel.
-    Setting it ``True`` reproduces the mixed 17-class task, which is a legitimate but
-    different question and understates a wristless subset."""
+    Setting it ``True`` reproduces the mixed 17-class Exercise-B task, which is a
+    legitimate but different question and understates a wristless subset. **It is not the
+    official posture baseline**, which is the eight hand configurations only."""
 
     central_fraction: float = 0.60
     """Fraction of each segment retained, centred. The frozen utility protocol uses the
     central 60 percent of every segment."""
 
+    frame_cap_per_segment: int | None = 200
+    """Fixed per-segment frame cap used by the frozen 77-participant baseline.
+
+    Declared because it is a real deviation from an uncapped evaluation. DB2 recordings
+    are roughly 20x longer than DB1/DB5, so an uncapped pooled frame set would be
+    dominated by DB2 purely by frame count. The cap keeps every participant, movement and
+    segment while removing that duration weighting. ``None`` reproduces the uncapped set
+    (11 843 312 frames over 77 participants)."""
+
     unit_of_analysis: str = "frame"
     """Frames within a ``(subject, movement, repetition)`` segment. Note that frames are
     temporally correlated, so this is not an independent-sample count."""
 
-    split: str = "subject-held-out"
+    split: str = "leave-one-subject-out"
+
+    identity_key: str = "archive slot parsed from the filename (DB9-global 1..77)"
+    """The in-file ``subject`` field MUST NOT be used: it is source-database-local and
+    collides across source databases, merging distinct people."""
 
     normalization: str = "train-fold-only z-score"
     """Standardisation statistics are computed on the training fold only. Computing them
@@ -201,7 +224,9 @@ class PostureTask:
     @property
     def movement_ids(self) -> tuple[int, ...]:
         if self.include_wrist_movements:
-            return tuple(sorted(set(HANDSHAPE_MOVEMENTS) | set(WRIST_MOVEMENTS)))
+            return tuple(
+                sorted(set(HANDSHAPE_MOVEMENTS) | set(EXCLUDED_FROM_HANDSHAPE_TASK))
+            )
         return HANDSHAPE_MOVEMENTS
 
     @property
@@ -215,13 +240,15 @@ class PostureTask:
     def describe(self) -> str:
         return "\n".join(
             [
-                "PostureTask — DB9 Exercise B hand-shape identification",
+                "PostureTask — DB9 Exercise B hand-configuration identification",
                 f"  movements        {list(self.movement_ids)}",
                 f"  classes          {self.n_classes} "
                 f"(chance BA {self.chance_balanced_accuracy:.4f})",
                 f"  wrist included   {self.include_wrist_movements}",
                 f"  central fraction {self.central_fraction}",
+                f"  frame cap        {self.frame_cap_per_segment}",
                 f"  split            {self.split}",
+                f"  identity key     {self.identity_key}",
                 f"  normalization    {self.normalization}",
                 f"  model            {self.model}",
                 f"  unit of analysis {self.unit_of_analysis}",
@@ -241,10 +268,12 @@ class PostureTask:
 
 
 __all__ = [
+    "EXCLUDED_FROM_HANDSHAPE_TASK",
+    "FIST_MOVEMENT",
     "FROZEN_HANDSHAPE_UTILITY",
     "HANDSHAPE_MOVEMENTS",
+    "HISTORICAL_MIXED_TASK_UTILITY",
     "REFERENCE_MOVEMENT",
-    "WRIST_MOVEMENTS",
     "ArmResult",
     "PostureTask",
     "posture_representation_names",

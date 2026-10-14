@@ -1,0 +1,8 @@
+{
+  "completed_files": 21,
+  "error_type": "EOFError",
+  "observed_epoch": 1791619573.3086436,
+  "pid": 18452,
+  "remotely_verified_bytes": 470419408,
+  "stage": "STREAM_RELAY_FAILED"
+}

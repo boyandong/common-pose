@@ -1,0 +1,56 @@
+[
+  {
+    "consumer": "DB9 posture",
+    "classes": 8,
+    "source_users": 77,
+    "pooled_BA": 0.7479139610389611,
+    "test_units": 123200,
+    "unit": "sample",
+    "source_receipt": "experiments/multi_consumer/db9_no_calibration_v2_20261011/remote_results/source_results/C1_legacy_6_summary.json"
+  },
+  {
+    "consumer": "DB9 grasp",
+    "classes": 3,
+    "source_users": 22,
+    "pooled_BA": 0.8549630755305787,
+    "test_units": 77205,
+    "unit": "sample",
+    "source_receipt": "experiments/multi_consumer/consumer2_db9c_source_v1_20261011/RESULTS.json"
+  },
+  {
+    "consumer": "CeTI posture",
+    "classes": 8,
+    "source_users": 57,
+    "pooled_BA": 0.5856481481481481,
+    "test_units": 8208,
+    "unit": "block",
+    "source_receipt": "experiments/multi_consumer/ceti_age_scoreonly_v3_20261012/verified_source/source_results/C1_budget6_receipt.json"
+  },
+  {
+    "consumer": "CeTI grasp",
+    "classes": 3,
+    "source_users": 55,
+    "pooled_BA": 0.7225108225108224,
+    "test_units": 6930,
+    "unit": "block",
+    "source_receipt": "experiments/multi_consumer/ceti_age_scoreonly_v3_20261012/verified_source/source_results/C2_budget6_receipt.json"
+  },
+  {
+    "consumer": "SHOW instruction",
+    "classes": 3,
+    "source_users": 16,
+    "pooled_BA": 1.0,
+    "test_units": 60,
+    "unit": "recording",
+    "source_receipt": "experiments/multi_consumer/show3d_scoreonly_v3_20261012/verified_remote/source_results/C1_all_receipt.json"
+  },
+  {
+    "consumer": "KIN phase",
+    "classes": 3,
+    "source_users": 22,
+    "pooled_BA": 0.5616872657962092,
+    "test_units": 1478,
+    "unit": "parent/phase",
+    "source_receipt": "experiments/multi_consumer/kinmus_uji_scoreonly_v3_20261012/verified_remote/source_results/C1_all_receipt.json"
+  }
+]

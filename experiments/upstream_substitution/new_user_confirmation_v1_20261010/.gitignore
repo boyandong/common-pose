@@ -1,0 +1,13 @@
+__pycache__/
+jobs/
+*.log
+*.partial
+PROGRESS.json
+STREAM_RELAY_PROGRESS.json
+STREAM_RELAY_V2_PROGRESS.json
+PIPELINE_SUPERVISOR_PROGRESS.json
+PIPELINE_SUPERVISOR.lock
+acquisition_events.jsonl
+*.npz
+*.joblib
+*.ckpt

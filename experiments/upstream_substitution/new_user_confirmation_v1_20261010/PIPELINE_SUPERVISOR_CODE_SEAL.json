@@ -1,0 +1,12 @@
+{
+  "status": "GATE_CHECKED_PIPELINE_CONTROLLER_SEALED_BEFORE_FIRST_NEW_INFERENCE",
+  "runner_sha256": "66b070cd27868d9de59157e809741d0ef408d0e63463cf32ee17b8f179590115",
+  "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+  "scientific_protocol_sha256": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a",
+  "analysis_seal_sha256": "98f6e32909af8b2bf97527422389a657a755b080cbfb981a04dee14714cc7679",
+  "remote_stage_controller_sha256": "f16b0c27e1532aa664cf0eceba3a09a75458dcec4caf68781eb8f615b717c01e",
+  "no_automatic_job_relaunch_after_observation_timeout": true,
+  "full_transfer_and_qualification_before_inference": true,
+  "preserves_negative_and_missing_outcomes": true,
+  "goal_completion_or_manuscript_publication_automatic": false
+}

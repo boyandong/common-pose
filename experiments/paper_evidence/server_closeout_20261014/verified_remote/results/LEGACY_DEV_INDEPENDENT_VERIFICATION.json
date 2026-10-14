@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checks": 130036,
+  "conditions": 4,
+  "same_X_y_and_sampled_rows": true,
+  "weights_exact": true,
+  "no_target_test_use": true
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "cache_files": 39,
+  "training_instances_checked": 12,
+  "model_prediction_vectors_checked": 156,
+  "risk_rows": 156,
+  "dense_curve_rows": 15600,
+  "class_rows": 1248,
+  "paired_user_effects": 78,
+  "seed_user_effects": 1560,
+  "original_fixed_sets_preserved": true,
+  "spec_sha256": "6371cd6e30a313fc269a5ea6d627696a3491b168863b47d08a8f6461fe12dd24",
+  "runner_sha256": "d646f41193efad8a990a20fd2dbac02bbc5bcf93099e47864882c9329f93a0f6",
+  "verifier_sha256": "3681955fc7a492988ed11dad5f01706be92bacc1cfb89d4042267887598f6618",
+  "run_manifest_sha256": "54f0f46044798086b8f621c1ad24c4fa31b0109969acaabb223b8a2bb9aaa427",
+  "scope": "independent scoring and arithmetic, train/cal/test separation, matched samples/weights/parameters and calibration; no model refit"
+}

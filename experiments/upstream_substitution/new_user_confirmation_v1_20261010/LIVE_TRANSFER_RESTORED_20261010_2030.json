@@ -1,0 +1,72 @@
+{
+  "full_goal_complete": false,
+  "local_inventory": {
+    "bytes": 21827522272,
+    "files": 1175,
+    "scope": "filename/size observation; not new independent rehash"
+  },
+  "new_effects_read": false,
+  "observed_local_time": "2026-10-10T20:32:55.300803+08:00",
+  "processes": [
+    {
+      "identity": "LIVE_IDENTITY_MATCH",
+      "pid": 2060,
+      "progress": {
+        "completed_bytes": 21736912896,
+        "completed_files": 1170,
+        "elapsed_seconds": 417.641,
+        "observed_epoch": 1791635513.5436192,
+        "pid": 2060,
+        "required_files": 2768,
+        "stage": "ACQUISITION_RUNNING",
+        "supplemental_attempt": "20261010_202455_human_resume"
+      },
+      "progress_age_seconds": 62.0,
+      "role": "download",
+      "start_time": "2026-10-10T20:24:55.8070883+08:00"
+    },
+    {
+      "identity": "LIVE_IDENTITY_MATCH",
+      "pid": 28740,
+      "progress": {
+        "active_files": 3,
+        "completed_files": 716,
+        "elapsed_seconds": 316.188,
+        "observed_epoch": 1791635575.4098637,
+        "pid": 28740,
+        "remaining_files": 2049,
+        "remotely_verified_bytes": 12623057272,
+        "required_files": 2768,
+        "stage": "STREAM_RELAY_V2_RUNNING"
+      },
+      "progress_age_seconds": 0.3,
+      "role": "upload",
+      "start_time": "2026-10-10T20:27:38.9247771+08:00"
+    },
+    {
+      "identity": "LIVE_IDENTITY_MATCH",
+      "pid": 7344,
+      "progress": {
+        "actual_local_handle_evidence": [
+          {
+            "creation_time": "2026-10-10T20:24:55.8070883+08:00",
+            "pid": 2060,
+            "state": "LIVE"
+          },
+          {
+            "creation_time": "2026-10-10T20:27:38.9247771+08:00",
+            "pid": 28740,
+            "state": "LIVE"
+          }
+        ],
+        "observed_epoch": 1791635546.7366629,
+        "pid": 7344,
+        "stage": "WAITING_FOR_COMPLETE_FIXED_TRANSFERS"
+      },
+      "progress_age_seconds": 29.2,
+      "role": "controller",
+      "start_time": "2026-10-10T20:28:22.0852468+08:00"
+    }
+  ],
+  "state": "LIVE_FIXED_TRANSFER_WITH_SEALED_CONTROLLER_WAITING"
+}

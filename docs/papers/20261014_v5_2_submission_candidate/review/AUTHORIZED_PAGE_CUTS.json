@@ -1,0 +1,10 @@
+{
+  "authorization": "V5.2 attachment: auxiliary repetition first, then repeated Introduction/Discussion; preserve direct comparison and all principal negative results",
+  "exact_sentence_omissions": [
+    "Such a shared pose interface could connect sensing and task-specific models without training a new EMG-to-task decoder for every task.",
+    "The learned Score-only/U control also improved disagreement relative to Boundary.",
+    "This contrast was calculated from paired participant differences, not by subtracting the displayed method medians."
+  ],
+  "auxiliary_paragraphs_compacted_with_all_values_retained": true,
+  "direct_comparison_clarification": "Direct within-participant result and CI retained; duplicate subtraction warning retained in Figure 2 caption."
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "stage": "four_candidates",
+    "path": "experiments\\multi_consumer\\v3_ub_four_candidates_20261012\\verified_ub_results.tar.gz",
+    "sha256": "4c9fa3007694b78ef0c328d4e41e5ebf4e37907de764db9cea015ffd62ed2b14",
+    "instances": 59
+  },
+  {
+    "stage": "five_candidates",
+    "path": "experiments\\multi_consumer\\v3_full_tta_ablation_20261012\\verified_ub_results.tar.gz",
+    "sha256": "0d0ea56fecf852f0cf85b47f3de61167f334dc01e49405e275c18bdffdb82db4",
+    "instances": 59
+  }
+]

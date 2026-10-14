@@ -1,0 +1,15 @@
+{
+  "schema": "gate4e-methods-v1",
+  "selection_simplicity_order": ["margin", "entropy", "boundary_distance", "tta_dispersion", "boundary_safety", "gaussian_crossing", "logistic", "hist_gbdt"],
+  "score_orientation": "lower risk score means higher confidence and earlier acceptance",
+  "baselines": ["margin", "entropy", "boundary_distance", "tta_dispersion"],
+  "logistic": {"class": "sklearn.linear_model.LogisticRegression", "C": 1.0, "solver": "lbfgs", "max_iter": 300, "random_state": 0, "preprocessing": "training-only StandardScaler"},
+  "hist_gbdt": {"class": "sklearn.ensemble.HistGradientBoostingClassifier", "max_iter": 100, "max_depth": 3, "learning_rate": 0.1, "l2_regularization": 1.0, "random_state": 0},
+  "training_sampling": "at most 5000 evenly spaced paired blocks per training user",
+  "training_weights": "equal total weight per user; if both Flip classes occur within user, half user weight per class; normalize sum of weights to number of training rows",
+  "boundary_safety": "negative minimum over competing classes of boundary_distance/(four-view projected SD + 1e-6)",
+  "gaussian_crossing": {"variance": "a_ij + b_ij * TTA_projected_variance_ij", "fit": "user-weighted nonnegative least squares on squared paired unit-normal projected Fisher errors, training users only", "crossing": "1 - product over competitors of [1 - Phi(-boundary_distance_ij/sigma_ij)]", "adequacy": "pooled training standardized absolute error q95 in [1,3], absolute signed mean <=0.5, and absolute skew <=1.0 in every outer fold; otherwise UNSUPPORTED_GAUSSIAN"},
+  "outer_folds": "Gate4D lexicographic user index modulo 5, with three deterministic disjoint calibration users per fold",
+  "coverages": [1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.3],
+  "final_dev_calibration_allocation": "sorted DEV user indices divisible by 5; other 15 users train"
+}

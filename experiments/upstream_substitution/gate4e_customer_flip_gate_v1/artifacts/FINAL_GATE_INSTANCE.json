@@ -1,0 +1,47 @@
+{
+  "analysis_code_sha256": "8ffdff86a6ccd065ab0b3e945b764eaa858d62d2233fbf494a9c4a3a824cff62",
+  "calibration_users": [
+    "0816388460",
+    "2be40c4380",
+    "54c854b839",
+    "9b8c99cdc2"
+  ],
+  "failure_definition_sha256": "4f8039b9df6604164c3639724b87a1797be4779f66db1502c5abc04b1588d9f8",
+  "feature_manifest_sha256": "13f0174503f19c82e62f7ea6331e85449c102e3cd8df8bdef643f545880bf7f5",
+  "gaussian_coefficients": null,
+  "gaussian_training_diagnostic": null,
+  "method": "hist_gbdt",
+  "method_manifest_sha256": "62531ed09eaec831acabc443f0742f15bbca1e2b0b2781c4d0261cd060d7ce25",
+  "model_file": "FINAL_GATE_MODEL.joblib",
+  "model_sha256": "ca06d630e40fc44687bec5ac12c83d9b20aa7c48fe200d89e48d583f9d09f035",
+  "no_confirmation_users_opened": true,
+  "schema": "gate4e-db9-customer-instance-v1",
+  "score_orientation": "lower risk means higher confidence",
+  "thresholds_by_nominal_coverage": {
+    "0.3": 0.349550271481634,
+    "0.5": 0.43497956232944723,
+    "0.6": 0.4780041169096966,
+    "0.7": 0.5530408322756628,
+    "0.8": 0.6431664462306872,
+    "0.9": 0.7470038224546764,
+    "1.0": 0.9267830236965764
+  },
+  "trained_users": [
+    "13b8b5f76d",
+    "2132c5d085",
+    "2327817653",
+    "23b817e892",
+    "2e45fde443",
+    "32cbfe3221",
+    "3589743749",
+    "47c605ad6f",
+    "6a7fc66366",
+    "7afcdcd6be",
+    "87aa3b3887",
+    "8bd1c0ff16",
+    "ce52651f99",
+    "dd810188d9",
+    "f1b6a408bf"
+  ],
+  "user_count": 19
+}

@@ -1,0 +1,35 @@
+{
+  "artifact": "POSE_TO_FISHER_RELATION.json",
+  "plan_sha256": "4aa731b8d7b15f802586e07c34dc198510e0dadc89a13831c09526cacd2cfc77",
+  "chain": "physical pose error -> Fisher representation error -> hard flip",
+  "spearman_pose_rmse_vs_fisher_distance": 0.8133039598924106,
+  "spearman_fisher_distance_vs_flip": 0.16685450585987105,
+  "spearman_pose_rmse_vs_flip_recomputed": 0.1621370649628341,
+  "spearman_pose_rmse_vs_flip_gate3_recorded": 0.162137,
+  "pose_rmse_frame_deg": {
+    "n": 86833,
+    "median": 23.371662139892578,
+    "mean": 24.35202638220985,
+    "iqr": 12.545793533325195,
+    "p05": 11.088909149169922,
+    "p25": 17.865636825561523,
+    "p75": 30.41143035888672,
+    "p95": 39.950335693359364,
+    "min": 4.007898330688477,
+    "max": 69.36410522460938
+  },
+  "pose_mae_frame_deg": {
+    "n": 86833,
+    "median": 19.107622146606445,
+    "mean": 19.91000145528023,
+    "iqr": 10.870346069335938,
+    "p05": 8.947026634216309,
+    "p25": 14.296228408813477,
+    "p75": 25.166574478149414,
+    "p95": 32.9001739501953,
+    "min": 3.323970079421997,
+    "max": 55.838722229003906
+  },
+  "causal_claim": "NONE",
+  "inferential_caveat": "one participant, temporally correlated frames; no frame-level p-values; rank statistics are descriptive"
+}

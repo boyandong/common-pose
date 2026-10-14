@@ -1,0 +1,21 @@
+{
+  "effect_values_read_by_this_check": false,
+  "original_analysis_start_epoch": 1791668410.6687193,
+  "original_common_sets_sha256": "1e1c76a662a422a6daf13677a41a6eb3155f69a75b0d4276a9e3a1a8b79e75fc",
+  "original_support_terminal": {
+    "exit_code": 0,
+    "finished_epoch": 1791668343.824713,
+    "output_log_sha256": "62dfdb8f1e400df964935cf6e5f8ed8408bf7f1a6a18d2434aa98bde23bfbec3",
+    "stage": "support",
+    "started_epoch": 1791668258.8743916
+  },
+  "status": "PASS_BOTH_SUPPORT_SEALS_PRECEDE_EFFECTS",
+  "supplement_support_seal_sha256": "b7c66d425da6ecec7f5ceeeaebe638e74a2efa6d480955fc19ff3a422cab9c56",
+  "supplement_support_terminal": {
+    "exit_code": 0,
+    "finished_epoch": 1791668401.7255743,
+    "output_log_sha256": "de55d981cf16561eb670df4f54c0b99f4ea725ad60bdea1ff5a6549f970482d3",
+    "stage": "support",
+    "started_epoch": 1791668349.9432857
+  }
+}

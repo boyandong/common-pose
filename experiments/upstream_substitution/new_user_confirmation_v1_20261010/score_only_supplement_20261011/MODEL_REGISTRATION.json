@@ -1,0 +1,98 @@
+{
+  "N80_train_or_calibration_users": [],
+  "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+  "columns": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "human_request": "\u5b9e\u9a8c\u65f6\u52a0\u4e00\u4e2ascore-only\u57fa\u7ebf",
+  "models": {
+    "B": {
+      "calibration": [
+        "0816388460",
+        "2be40c4380",
+        "54c854b839",
+        "9b8c99cdc2"
+      ],
+      "instance": "frozen_models/B_FINAL_DEV_ONLY_score_only_INSTANCE.json",
+      "instance_sha256": "79fa2342ab7cd386675523e9d8ef2bf1fa972cd0c439daaf4fee51ae1a52a5cd",
+      "model": "frozen_models/B_FINAL_DEV_ONLY_score_only.joblib",
+      "model_sha256": "4c178a8c21c08509955d08c1682f12ae01966cfa94103a8ddb51f7a4dc45d7a3",
+      "source_manifest_key": "models/B_FINAL_DEV_ONLY_score_only.joblib",
+      "threshold_at_nominal_30": 0.5561667171415243,
+      "train": [
+        "13b8b5f76d",
+        "2132c5d085",
+        "2327817653",
+        "23b817e892",
+        "2e45fde443",
+        "32cbfe3221",
+        "3589743749",
+        "47c605ad6f",
+        "6a7fc66366",
+        "7afcdcd6be",
+        "87aa3b3887",
+        "8bd1c0ff16",
+        "ce52651f99",
+        "dd810188d9",
+        "f1b6a408bf"
+      ]
+    },
+    "U": {
+      "calibration": [
+        "0816388460",
+        "2be40c4380",
+        "54c854b839",
+        "9b8c99cdc2"
+      ],
+      "instance": "frozen_models/U_FINAL_DEV_ONLY_score_only_INSTANCE.json",
+      "instance_sha256": "6e1b6e9f7662cf57133b13bbbdc5ea2a29fea1f84ee197004a3a58f7b8d9547d",
+      "model": "frozen_models/U_FINAL_DEV_ONLY_score_only.joblib",
+      "model_sha256": "3317e96137dd968e27a91702a57fe3363b1142ef0101764ae303d8b71cc7895f",
+      "source_manifest_key": "models/U_FINAL_DEV_ONLY_score_only.joblib",
+      "threshold_at_nominal_30": 0.33640751827545107,
+      "train": [
+        "13b8b5f76d",
+        "2132c5d085",
+        "2327817653",
+        "23b817e892",
+        "2e45fde443",
+        "32cbfe3221",
+        "3589743749",
+        "47c605ad6f",
+        "6a7fc66366",
+        "7afcdcd6be",
+        "87aa3b3887",
+        "8bd1c0ff16",
+        "ce52651f99",
+        "dd810188d9",
+        "f1b6a408bf"
+      ]
+    }
+  },
+  "observed_local_time": "2026-10-11T02:16:55.330495+08:00",
+  "original_protocol_sha256": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a",
+  "refit_performed": false,
+  "source_control_manifest_sha256": "54f0f46044798086b8f621c1ad24c4fa31b0109969acaabb223b8a2bb9aaa427",
+  "source_control_spec_sha256": "6371cd6e30a313fc269a5ea6d627696a3491b168863b47d08a8f6461fe12dd24",
+  "source_control_verification_sha256": "796e0509e12d98599c12eb823e6bdaffc825ae2bd9284312db231f7a1ca69160",
+  "source_fit_runtime": "Windows Python3.11/joblib1.5.2; target scoring Linux Python3.10.13/joblib1.4.2 requires explicit old-DEV admission",
+  "status": "EXACT_EXISTING_DEV_ONLY_MODELS_REGISTERED_BEFORE_N80_INFERENCE"
+}

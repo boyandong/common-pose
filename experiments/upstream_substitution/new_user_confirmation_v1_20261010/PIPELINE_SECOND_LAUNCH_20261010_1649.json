@@ -1,0 +1,12 @@
+{
+  "status": "HIDDEN_SEALED_PIPELINE_RESUMED_AFTER_KNOWN_TRANSFER_DEADLINE",
+  "pid": 15872,
+  "start_time": "2026-10-10T16:49:58.0604238+08:00",
+  "previous_pid_verified_absent": 3232,
+  "previous_launch_snapshot": "PIPELINE_FIRST_LAUNCH_20261010_1630.json",
+  "previous_terminal_snapshot": "PIPELINE_TRANSFER_GATE_STOP_20261010_1630.json",
+  "controller_code_changed": false,
+  "scientific_protocol_and_members_changed": false,
+  "credential_transport": "stdin and process RAM only",
+  "goal_completion_automatic": false
+}

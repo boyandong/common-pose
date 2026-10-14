@@ -1,0 +1,5 @@
+{
+  "exit_code": 2,
+  "stdout": "drwxr-xr-x 20 root root 4096 Oct 12 14:44 /root/autodl-tmp\ndrwxr-xr-x  1 root root   79 May 19  2025 /root/miniconda3\nlrwxrwxrwx  1 root root   10 May 19  2025 /root/miniconda3/bin/python -> python3.12\nlrwxrwxrwx  1 root root   10 Oct  9 17:37 /root/miniconda3/envs/commonpose-supplement/bin/python -> python3.10\ndrwxr-xr-x  2 root root   47 Oct  9 17:35 /root/models/emg2pose\ndrwxr-xr-x  6 root root  102 Oct  9 17:35 /root/work/common-pose\n",
+  "stderr": "ls: cannot access '/usr/bin/python3': No such file or directory\n"
+}

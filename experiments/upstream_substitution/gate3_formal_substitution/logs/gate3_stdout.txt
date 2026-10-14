@@ -1,0 +1,147 @@
+==============================================================================
+GATE 3 — FORMAL UPSTREAM SUBSTITUTION BASELINE
+==============================================================================
+plan            : /root/work/common-pose/experiments/upstream_substitution/gate3_formal_substitution/GATE3_PLAN.md
+plan sha256     : 9869d9b94ba07d916fc8accd1646f51ec3ea9a0efe5427a530f37880edcfc381
+analysis rate   : 50.0 Hz (40 stored rows per block)
+trusted-8 emg2pose idx : [2, 3, 5, 6, 9, 13, 17, 18]
+
+[1] frozen head loaded
+    train frames : 123200
+    classes      : [1, 2, 3, 4, 5, 6, 7, 8]
+    replication  : True (13 quantities)
+    mu           : [0.135003, 0.328449, 0.304893, 0.523117, 0.689556, 0.83266, 1.315755, 0.409834]
+    sd           : [0.26043, 0.566211, 0.523391, 0.90068, 0.857585, 0.711387, 1.096944, 0.536856]
+
+[2] records     : 30
+    emg-pose-train@2-recording-10_left rows  119266 aligned  117476 blocks  2936 eligible  2259
+    mg-pose-train@2-recording-10_right rows  119266 aligned  117476 blocks  2936 eligible  2554
+    emg-pose-train@2-recording-11_left rows  117131 aligned  115341 blocks  2883 eligible  2437
+    mg-pose-train@2-recording-11_right rows  117131 aligned  115341 blocks  2883 eligible  2650
+    emg-pose-train@2-recording-12_left rows  114954 aligned  113164 blocks  2829 eligible  2730
+    mg-pose-train@2-recording-12_right rows  114938 aligned  113148 blocks  2828 eligible  2700
+    emg-pose-train@2-recording-13_left rows  473808 aligned  472018 blocks 11800 eligible  9658
+    mg-pose-train@2-recording-13_right rows  473792 aligned  472002 blocks 11800 eligible  8820
+    emg-pose-train@2-recording-14_left rows  105504 aligned  103714 blocks  2592 eligible  2188
+    mg-pose-train@2-recording-14_right rows  105496 aligned  103706 blocks  2592 eligible  1604
+    emg-pose-train@2-recording-15_left rows   91328 aligned   89538 blocks  2238 eligible  1343
+    mg-pose-train@2-recording-15_right rows   91328 aligned   89538 blocks  2238 eligible  1398
+    -emg-pose-train@2-recording-1_left rows  142674 aligned  140884 blocks  3522 eligible  1945
+    emg-pose-train@2-recording-1_right rows  142652 aligned  140862 blocks  3521 eligible  1835
+    -emg-pose-train@2-recording-2_left rows  119100 aligned  117310 blocks  2932 eligible  2705
+    emg-pose-train@2-recording-2_right rows  119116 aligned  117326 blocks  2933 eligible  2825
+    -emg-pose-train@2-recording-3_left rows  120994 aligned  119204 blocks  2980 eligible  2804
+    emg-pose-train@2-recording-3_right rows  121002 aligned  119212 blocks  2980 eligible  2726
+    -emg-pose-train@2-recording-4_left rows  117250 aligned  115460 blocks  2886 eligible  2799
+    emg-pose-train@2-recording-4_right rows  117250 aligned  115460 blocks  2886 eligible  2848
+    -emg-pose-train@2-recording-5_left rows  114196 aligned  112406 blocks  2810 eligible  2793
+    emg-pose-train@2-recording-5_right rows  114180 aligned  112390 blocks  2809 eligible  2808
+    -emg-pose-train@2-recording-6_left rows  118611 aligned  116821 blocks  2920 eligible  2418
+    emg-pose-train@2-recording-6_right rows  118611 aligned  116821 blocks  2920 eligible  2716
+    -emg-pose-train@2-recording-7_left rows  116427 aligned  114637 blocks  2865 eligible  2474
+    emg-pose-train@2-recording-7_right rows  116435 aligned  114645 blocks  2866 eligible  2705
+    -emg-pose-train@2-recording-8_left rows  116387 aligned  114597 blocks  2864 eligible  2144
+    emg-pose-train@2-recording-8_right rows  116371 aligned  114581 blocks  2864 eligible  2212
+    -emg-pose-train@2-recording-9_left rows  121795 aligned  120005 blocks  3000 eligible  2838
+    emg-pose-train@2-recording-9_right rows  121763 aligned  119973 blocks  2999 eligible  2897
+
+[3] analysis population (GT-valid AND pred-valid blocks): 86833 samples at 50.0 Hz
+    stored rows 4218756 | GT-valid rows 3512166 | pred-valid rows 4165056 | aligned rows 4165056
+
+[4] PRIMARY FUNCTIONAL PRESERVATION
+    agreement      : 0.364539  (disagreement 55179/86833)
+    balanced preservation (classes with support >= 30): 0.286805
+    sufficient classes : [1, 2, 4, 5, 6, 7, 8]
+    insufficient       : [3]
+      class 1: support    3512  preservation 0.125854
+      class 2: support    4136  preservation 0.103965
+      class 3: support      23  preservation 0.000000
+      class 4: support   17463  preservation 0.884556
+      class 5: support    6411  preservation 0.020434
+      class 6: support   13361  preservation 0.692388
+      class 7: support    2038  preservation 0.032875
+      class 8: support   39889  preservation 0.147559
+    Cohen kappa    : 0.189455  (p_o 0.364539, p_e 0.216008)
+
+[5] SOFT-OUTPUT PRESERVATION
+    TV  : median 0.460399 IQR [0.243671, 0.668958] p05 0.033239 p95 0.903007
+    JS  : median 0.207569 IQR [0.073406, 0.407105] p05 0.004907 p95 0.769991
+    P_PRED[Y_GT] : median 0.243370 mean 0.367968
+
+[6] TEMPORAL PRESERVATION
+    GT   : switch rate 0.077255/sample median dwell 6.0 frames (0.1200 s)
+    PRED : switch rate 0.020011/sample median dwell 12.0 frames (0.2400 s)
+    transition events (GT) : 6706
+    same destination within +-1 frame (20 ms): 240/6706 = 0.035789
+    same destination at exact frame : 97/6706 = 0.014465
+
+[7] POSE-LEVEL ERROR (degrees, predicted vs GT, trusted-8)
+    overall: RMSE 25.872438 deg | MAE 19.909998 deg
+    DOF                          MAE     medAE      RMSE       p90       p95
+    thumb_mcp_flexion        20.6033   18.0874   25.2098   40.9442   47.3455
+    thumb_ip_flexion         20.3894   17.3595   25.3473   42.3031   48.6822
+    index_mcp_flexion        13.3165   10.7387   17.1567   27.8909   34.5135
+    index_pip_flexion        22.0120   16.2510   29.9236   50.7429   63.8387
+    middle_mcp_flexion       20.8857   16.2916   27.0862   46.2456   55.9371
+    ring_mcp_flexion         21.7209   17.7795   27.8041   47.1397   55.5841
+    pinky_mcp_flexion        18.3697   15.1950   23.4537   37.5167   46.2903
+    pinky_pip_flexion        21.9827   17.2571   28.8178   46.3700   58.5649
+    frame-level trusted-8 RMSE: median 23.3717 deg, mean 24.3520 deg
+
+[8] ERROR -> FUNCTIONAL FAILURE CURVE (pre-declared deciles)
+    decile         n  med pose err    disagree      rate
+    1           8684       11.0889        4151    0.4780
+    2           8684       15.2494        4141    0.4769
+    3           8684       17.8666        5034    0.5797
+    4           8683       20.1918        5457    0.6285
+    5           8683       22.3082        6086    0.7009
+    6           8683       24.4776        6043    0.6960
+    7           8683       27.1393        6210    0.7152
+    8           8683       30.4117        5807    0.6688
+    9           8683       34.1569        5712    0.6578
+    10          8683       39.9512        6538    0.7530
+    Spearman(frame pose error, disagreement) = 0.162137 (DESCRIPTIVE ONLY; one participant, temporally correlated)
+
+    per-DOF descriptive association with disagreement:
+      thumb_mcp_flexion      medAE|D=1 19.4766  medAE|D=0 13.7829  rho +0.1426
+      thumb_ip_flexion       medAE|D=1 20.0243  medAE|D=0 13.4162  rho +0.2006
+      index_mcp_flexion      medAE|D=1 11.2096  medAE|D=0 9.8574  rho +0.0648
+      index_pip_flexion      medAE|D=1 16.7857  medAE|D=0 15.4249  rho +0.0400
+      middle_mcp_flexion     medAE|D=1 17.6378  medAE|D=0 14.0035  rho +0.0646
+      ring_mcp_flexion       medAE|D=1 19.8517  medAE|D=0 14.3181  rho +0.1224
+      pinky_mcp_flexion      medAE|D=1 16.4999  medAE|D=0 13.3759  rho +0.1062
+      pinky_pip_flexion      medAE|D=1 15.4017  medAE|D=0 20.9010  rho -0.1242
+
+[9] CLASS-CONDITIONAL (reference class = Y_GT)
+    class 1: support    3512 (0.0404)  pres 0.125854  main err -> 6 (1955)  medPoseErr 27.1885 deg  medTV 0.616976
+    class 2: support    4136 (0.0476)  pres 0.103965  main err -> 4 (2847)  medPoseErr 28.3714 deg  medTV 0.794741
+    class 3: support      23 (0.0003)  pres 0.000000  main err -> 4 (23)  medPoseErr 45.7362 deg  medTV 0.999238
+    class 4: support   17463 (0.2011)  pres 0.884556  main err -> 8 (1299)  medPoseErr 22.4518 deg  medTV 0.285676
+    class 5: support    6411 (0.0738)  pres 0.020434  main err -> 4 (5577)  medPoseErr 23.0939 deg  medTV 0.619688
+    class 6: support   13361 (0.1539)  pres 0.692388  main err -> 4 (3157)  medPoseErr 25.2613 deg  medTV 0.213314
+    class 7: support    2038 (0.0235)  pres 0.032875  main err -> 4 (1202)  medPoseErr 26.1490 deg  medTV 0.865193
+    class 8: support   39889 (0.4594)  pres 0.147559  main err -> 4 (32357)  medPoseErr 22.3184 deg  medTV 0.518488
+
+[10] HAND-SIDE STRATIFICATION (descriptive)
+    left  : n   43535  agree 0.301757  balPres 0.265431  kappa 0.146997  medTV 0.532742  poseMAE 20.4106 deg
+    right : n   43298  agree 0.427664  balPres 0.308193  kappa 0.243558  medTV 0.377781  poseMAE 19.4066 deg
+
+[11] STAGE STRATIFICATION (stage = activity label, NOT ground truth)
+    CountingUpDownFaceSideAway               n    5530 agree 0.3566 MAE 24.1401 domGT 2 domPRED 4
+    FingerAbductionSeries                    n    5601 agree 0.4081 MAE 13.7753 domGT 8 domPRED 4
+    FingerFreeform                           n    4356 agree 0.1325 MAE 21.9532 domGT 8 domPRED 4
+    FingerPinchesSingleFingerPinchesMultiple n    5179 agree 0.6111 MAE 16.6069 domGT 4 domPRED 4
+    FingerWigglingSpreading                  n    5647 agree 0.2137 MAE 15.3666 domGT 8 domPRED 4
+    HandClawGraspFlicks                      n    4813 agree 0.3193 MAE 17.0784 domGT 8 domPRED 4
+    HookEmHornsOKScissors                    n    5430 agree 0.4378 MAE 20.6940 domGT 8 domPRED 4
+    IndividualFingerPointingSnap             n    5735 agree 0.4964 MAE 16.7060 domGT 6 domPRED 6
+    OneHandedFreeStyle                       n    3586 agree 0.1726 MAE 20.1480 domGT 8 domPRED 4
+    ShakaVulcanPeace                         n    5087 agree 0.2072 MAE 20.0678 domGT 8 domPRED 4
+    ThumbsSwipesWholeHand                    n    5530 agree 0.5984 MAE 20.5884 domGT 6 domPRED 6
+    ThumbsUpDownThumbRotationsCWCCWP         n    3780 agree 0.5389 MAE 18.4196 domGT 6 domPRED 6
+    TwoHandedFreeStyle                       n   18478 agree 0.3505 MAE 25.4117 domGT 8 domPRED 4
+    WristFlexionAbduction                    n    5134 agree 0.1535 MAE 20.0761 domGT 8 domPRED 4
+    unconstrained                            n    2947 agree 0.4761 MAE  9.8284 domGT 8 domPRED 4
+
+[12] writing artifacts
+elapsed 5.7s

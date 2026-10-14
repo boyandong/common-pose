@@ -1,0 +1,173 @@
+{
+  "D_content_manifest": {
+    "path": "D:\\CommonPose_confirmation_N80_20261010\\git_release_20261011\\RELEASE_CONTENT_246a698c8d20.json",
+    "sha256": "4dec15980aadbb497c48e0500ccee16979d03b0878ceba3320c22067c942e543"
+  },
+  "D_release_tree": "D:\\CommonPose_confirmation_N80_20261010\\git_release_20261011\\tracked_release_246a698c8d20",
+  "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+  "figure_visual_review_sha256": "2abde3bc99d0bac7ab59007b13feedf02726f11e2a61ea87a3f2dac70ed693ce",
+  "final_receipt_is_a_subsequent_bookkeeping_commit_not_a_change_to_science": true,
+  "final_release_does_not_repeat_50GB_source_hashing": true,
+  "flip_definition": "one frozen consumer output preservation; not independently labelled gesture accuracy",
+  "fresh_unchanged_code_seals": {
+    "ANALYSIS_CODE_SEAL.json": {
+      "sha256": "98f6e32909af8b2bf97527422389a657a755b080cbfb981a04dee14714cc7679",
+      "unchanged_children": 6
+    },
+    "score_only_supplement_20261011/CODE_SEAL.json": {
+      "sha256": "aebe0573e0e332c923e9c27fb0ee4611b5e10a32ef89bd796d208b51c1f7eec3",
+      "unchanged_children": 28
+    },
+    "score_only_supplement_20261011/continuation_execution_20261011/EXECUTION_CODE_SEAL.json": {
+      "sha256": "6cd62d5bda5ac391d17d05f11d4a7c22327b426a8e94985a05e481a98ce23c8d",
+      "unchanged_children": 9
+    }
+  },
+  "full_goal_audit": {
+    "requirements_verified": 13,
+    "sha256": "a35e00b5de02d6bce37435bf594e96a232995b2e557b488599df60262b95999c",
+    "status": "FULL_ORIGINAL_GOAL_PLUS_SCORE_ONLY_COMPLETION_AUDIT_PASS"
+  },
+  "genuine_successor_exit_gate": {
+    "actual_process_exit_sha256": "3a20056243dc18da94ef86412ecac45c5ba4b1e31df7bf59d6427b0fa99ab99d",
+    "launch_sha256": "09aa7d129899ea20bf35dcfd252292da8daebd59a6003429060e69a1715c56d1",
+    "original_controller_exit": "UNKNOWN",
+    "status": "PASS_REAL_CONTINUATION_EXIT_ZERO_ORIGINAL_EXIT_UNKNOWN",
+    "terminal_sha256": "eec145b28a04c922d40bd550e9163d616c976612ea1e65fa97d8dc46bd87c5bd"
+  },
+  "history_audit_scope": "bounded saved-local provenance; unsaved/outside-root/private remote history not certified absent",
+  "independent_verifiers": {
+    "INDEPENDENT_RESULT_VERIFICATION.json": "3321ae832ddb14ccd3b7849e52e71c27a6da47d740caccea65dfe9313ac115fb",
+    "INDEPENDENT_VERIFICATION.json": "1ed4c0dcde506fa180a2179ea5000d954d30bef23aef4532e2c1acfd1ae2a445"
+  },
+  "late_metadata_D_sha256_freshly_rechecked": {
+    "OFFHOST_BACKUP_MANIFEST.json": {
+      "bytes": 7337738,
+      "sha256": "678eadcc9c922be65bc58ba1e3b84376ec5b7f46efc0af616f71e56f3a9c0fbe"
+    },
+    "OFFHOST_BACKUP_VERIFICATION.json": {
+      "bytes": 493,
+      "sha256": "d70fc34cdea1d54f7d42fce5883eafcd0492f3356637584feb9db309342febc0"
+    },
+    "PIPELINE_EXECUTION_COMPLETE.json": {
+      "bytes": 684,
+      "sha256": "c92a5a1396a012fce425efb5719516de2c3ee5bdb6c873c020b7c34e9ea8bb66"
+    },
+    "score_only_supplement_20261011/EXECUTION_COMPLETE.json": {
+      "bytes": 652,
+      "sha256": "7a018ecb24dd4b7ac521d18bbacb75465f80f0f97416c751af420b437b78ca7c"
+    },
+    "score_only_supplement_20261011/EXPORT_EXECUTION_BACKUP_VERIFICATION.json": {
+      "bytes": 807,
+      "sha256": "552c6c0ea3f89e8a09eee9c55100ef7fe47ae9f2e1181504cdf816617df97592"
+    },
+    "score_only_supplement_20261011/FIGURE_VISUAL_REVIEW_20261011.json": {
+      "bytes": 747,
+      "sha256": "2abde3bc99d0bac7ab59007b13feedf02726f11e2a61ea87a3f2dac70ed693ce"
+    },
+    "score_only_supplement_20261011/FINAL_SCIENTIFIC_VERDICT_20261011.md": {
+      "bytes": 4335,
+      "sha256": "e9ee5ed52def231df61450d5b2fabaccc38a4daa5c626f679d708446cd73d40f"
+    },
+    "score_only_supplement_20261011/FULL_GOAL_COMPLETION_AUDIT_20261011.json": {
+      "bytes": 8493,
+      "sha256": "a35e00b5de02d6bce37435bf594e96a232995b2e557b488599df60262b95999c"
+    },
+    "score_only_supplement_20261011/LOCAL_EXECUTION_SOURCE_BACKUP_VERIFICATION_20261011.json": {
+      "bytes": 18561,
+      "sha256": "57a586c201b2d01b3f4cb902bcb021d866e15aec40c80aa1c22e637ff008f97c"
+    },
+    "score_only_supplement_20261011/OFFHOST_BACKUP_VERIFICATION.json": {
+      "bytes": 317,
+      "sha256": "76f4ab40e9e98129af41bad3dbf82aa36b1fc04ad78ab6d865a2b301b9e39cc5"
+    },
+    "score_only_supplement_20261011/PRIMARY_REPORT_BACKUP_VERIFICATION_20261011.json": {
+      "bytes": 284,
+      "sha256": "31519445819aed5de815e56fc42b27ce40fb9f2b3ef9f6a86290a78d090783e7"
+    },
+    "score_only_supplement_20261011/REPORT_BACKUP_VERIFICATION.json": {
+      "bytes": 519,
+      "sha256": "853c421fd4159f9aaeb509f6537b40e808b2410bcba6af1347af19db2776d8e3"
+    },
+    "score_only_supplement_20261011/SESSION_HANDOVER_COMPLETED_SCIENTIFIC_GOAL_20261011.md": {
+      "bytes": 6817,
+      "sha256": "5d4d532f18472d916f544049668b7bbc0f41935603454d58c05fdfe32e74d188"
+    },
+    "score_only_supplement_20261011/continuation_execution_20261011/CONTROLLER_TERMINAL.json": {
+      "bytes": 403,
+      "sha256": "eec145b28a04c922d40bd550e9163d616c976612ea1e65fa97d8dc46bd87c5bd"
+    },
+    "score_only_supplement_20261011/continuation_execution_20261011/FINAL_METADATA_AND_RESULT_BACKUP_CLOSURE.json": {
+      "bytes": 3934,
+      "sha256": "c8e7ca919d5b013a4de35078edbb16cef1505e9600d9d178ff16b038cf954b75"
+    },
+    "score_only_supplement_20261011/continuation_execution_20261011/FINAL_METADATA_AND_RESULT_BACKUP_CLOSURE.json.sha256": {
+      "bytes": 113,
+      "sha256": "1dcdd44a8ef95cbab52980d69b13b43618a08e8aecf1f4193612dee330158c5c"
+    },
+    "score_only_supplement_20261011/continuation_execution_20261011/MANUSCRIPT_AND_FIGURE_REVIEW_20261011.json": {
+      "bytes": 3837,
+      "sha256": "4212c39f36acd17785ae13d9d3a41a02d32c0ebf6aa0bc02f794cc98b0d8b00a"
+    },
+    "score_only_supplement_20261011/continuation_execution_20261011/PROCESS_EXIT_OBSERVATION.json": {
+      "bytes": 386,
+      "sha256": "3a20056243dc18da94ef86412ecac45c5ba4b1e31df7bf59d6427b0fa99ab99d"
+    }
+  },
+  "no_unrelated_files_staged": true,
+  "observed_local_time": "2026-10-11T13:22:00.634094+08:00",
+  "original_controller_exit": "UNKNOWN",
+  "original_protocol_sha256": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a",
+  "primary_joint_decision": "POSITIVE",
+  "readable_report_manifest_sha256": "05e30f94d9f8316f0f74f96d8528a31d59f4c63f9e082cd9f4406f4c5cec0c29",
+  "recommended_next_session": "COMMON-POSE-DECISION-20261011-PRIMARY-POSITIVE-SCOREONLY-NULL",
+  "recoverable_full_git_history_bundle": {
+    "bytes": 10570273,
+    "list_heads": "246a698c8d200de801fb20abab54ff33a2406dd0 HEAD",
+    "path": "D:\\CommonPose_confirmation_N80_20261010\\git_release_20261011\\commonpose-246a698c8d20.bundle",
+    "sha256": "ec3b26ef9afb4e6d9944bd260fcbb635973fcd10d96fec82ebba19accf795974",
+    "verify_exit_code": 0,
+    "verify_stderr": "D:/CommonPose_confirmation_N80_20261010/git_release_20261011/commonpose-246a698c8d20.bundle is okay",
+    "verify_stdout": "The bundle contains this ref:\n246a698c8d200de801fb20abab54ff33a2406dd0 HEAD\nThe bundle records a complete history.\nThe bundle uses this hash algorithm: sha1"
+  },
+  "release_anchor_contains_reports_figures_tables_audits_verdict_and_completed_handover": true,
+  "report_review_sha256": "4212c39f36acd17785ae13d9d3a41a02d32c0ebf6aa0bc02f794cc98b0d8b00a",
+  "result_tables_D_sha256_freshly_rechecked": {
+    "CANONICAL_SUPPORT_ROWS.csv": "56fa91be3906e21dfac62340d3f50636a09c4307374063d93672391e55ad56a0",
+    "CLASSWISE_ROWS.csv": "cb62893c27d4ab0832aec12725b1a7d38bb5c83b2adcf8f8e6bb0719249de2af",
+    "DEPLOYMENT_ROWS.csv": "61f2522f20e3252567c661f986c2591818a68c5de29839721aa8158fa1f7b042",
+    "PRIMARY_USER_EFFECTS.csv": "44203e0c1b1c00bda9f40d8f331cc1337c1be0b0e1d2ec2efd0a3858e99434e3",
+    "RISK_COVERAGE_ROWS.csv": "8d27753b5b2c9c4b8b16af1e77ef5f97d4a34d2a74e25e10516a00f778398347",
+    "SEED_EFFECTS.csv": "b6b3d13fe41e29532e9e866a26793755539b67fb55d4f36dfb292f7df4e6c0ec",
+    "SEED_RISK_ROWS.csv": "21fdd14891b702a581d77118306d0eac739dd16678eb742d278997b02b81b90a",
+    "WITHIN_PREDICTED_CLASS_ROWS.csv": "c5982d5583c819ed79069b89d69d9e3f65c28ec4118f786fd56d9257fe46f6ef",
+    "score_only_supplement_20261011/CANONICAL_SUPPORT_ROWS.csv": "4efbf73702d03858774e2cc4b74129d097d07feb0adc374e636484ec99433e0f",
+    "score_only_supplement_20261011/CLASSWISE_ROWS.csv": "3a41234b4a501bdce09a5789146c0f98b5b3145c09a8a73f0b673fd69a0b45c2",
+    "score_only_supplement_20261011/DEPLOYMENT_ROWS.csv": "a58c3caa44985c37db85b6d2d30f4c6953b8d8672cfb719a137c7bec3dce740b",
+    "score_only_supplement_20261011/RISK_COVERAGE_ROWS.csv": "c58290bc337c2c7b914f0eacbb339fec8e4d2e83eda866e7dba58fef5e22df6d",
+    "score_only_supplement_20261011/SCORE_ONLY_USER_EFFECTS.csv": "da17243dc391c2e96cdd013b5ade3aafd451090b7c170301fe405ff44a0f262d",
+    "score_only_supplement_20261011/SEED_EFFECTS.csv": "4d919fdfbd945d53073c9f010666105ce6626862dcef14851f88ee51dfee8113",
+    "score_only_supplement_20261011/SEED_RISK_ROWS.csv": "6dab16d775514fdac509e0a7fbe160086a3e6e99e198ec4be2789e695122238d",
+    "score_only_supplement_20261011/WITHIN_PREDICTED_CLASS_ROWS.csv": "0e59fe1db785db494062e49650bcf20530f9a28f910c68db0a1d736f3b682b58"
+  },
+  "scientific_release_commit": "246a698c8d200de801fb20abab54ff33a2406dd0",
+  "score_only_secondary_interpretation": "no stable incremental full-method benefit established; no registered equivalence claim",
+  "source_and_runtime_backup_previously_fully_rehashed": {
+    "additional_backup_bytes": 3333538048,
+    "all_local_file_sha256_recomputed": true,
+    "cache_dependency_result_files": 17573,
+    "elapsed_seconds": 7200.485000000001,
+    "local_root": "D:\\CommonPose_confirmation_N80_20261010",
+    "manifest_sha256": "678eadcc9c922be65bc58ba1e3b84376ec5b7f46efc0af616f71e56f3a9c0fbe",
+    "runner_sha256": "23080469d792f552abd90312f1c8a957f3aebbefd6079bacda714f2eb1563511",
+    "source_bytes": 50213536592,
+    "source_files": 2768,
+    "status": "PASS"
+  },
+  "source_backup_verification_sha256": "d70fc34cdea1d54f7d42fce5883eafcd0492f3356637584feb9db309342febc0",
+  "status": "PASS_FINAL_SCIENTIFIC_RELEASE_GIT_AND_BACKUP_CLOSURE",
+  "tracked_bytes": 25431439,
+  "tracked_current_lane_files": 321,
+  "upstream_checkpoint_training_membership": "UNRESOLVED",
+  "worktree_git_blobs_and_D_tree_all_sha256_recomputed_and_equal": true
+}

@@ -1,0 +1,6 @@
+{
+  "host": "connect.westd.seetacloud.com",
+  "port": 29596,
+  "host_key_sha256": "962677eaf342b0d70d757796b387fe83964884f33f66284ff37e2fc6cf1496a7",
+  "trust": "first observation on user-authorized clone"
+}

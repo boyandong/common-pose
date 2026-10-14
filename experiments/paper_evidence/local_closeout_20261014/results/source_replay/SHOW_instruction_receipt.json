@@ -1,0 +1,14 @@
+{
+  "consumer": "SHOW instruction",
+  "users": 16,
+  "classes": 3,
+  "test_units": 60,
+  "unit": "recording",
+  "pooled_BA": 1.0,
+  "archived_BA": 1.0,
+  "prediction_mismatches": 0,
+  "fold_fit_seconds": 0.031000000002677552,
+  "wall_seconds": 0.04700000000593718,
+  "source_input_sha256": "6c55f6a4386b56272e5ab3794e8631095fc37d4c96f708451e9eefa195c4943c",
+  "status": "PASS_EXACT_OOF_REPRODUCTION"
+}

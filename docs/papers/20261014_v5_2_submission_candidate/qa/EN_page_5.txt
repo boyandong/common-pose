@@ -1,0 +1,50 @@
+REFERENCES
+[1] S. Salter, R. Warren, C. Schlager, A. Spurr, S. Han, R. Bhasin,
+Y . Cai, P . Walkington, A. Bolarinwa, R. Wang, N. Danielson, J. Merel,
+E. Pnevmatikakis, and J. Marshall, “emg2pose: A large and diverse
+benchmark for surface electromyographic hand pose estimation,” in Ad-
+vances in Neural Information Processing Systems , vol. 37, 2024, doi:
+10.52202/079017-1770.
+[2] W. Cui, C. Sandino, H. Pouransar, R. Liu, J. Minxha, E. L. Zippi,
+A. V erma, A. Sedlackova, E. Azemi, and B. Mahasseni, “CPEP:
+Contrastive Pose-EMG pre-training enhances gesture generalization on
+EMG signals,” 2025, arXiv:2509.04699v3; NeurIPS 2025 Foundation
+Models for the Brain and Body Workshop. [Online]. Available:
+https://arxiv.org/abs/2509.04699v3
+[3] W. Cui, C. M. Sandino, H. Pouransari, R. Liu, J. Minxha, E. Zippi,
+E. Azemi, and B. Mahasseni, “EMBridge: Enhancing gesture generaliza-
+tion from EMG signals through cross-modal representation learning,”
+in International Conference on Learning Representations , 2026.
+[Online]. Available: https://proceedings.iclr.cc/paper_ﬁles/paper/2026/
+hash/f216728558e6f93f815ea1552315c22d-Abstract-Conference.html
+[4] E. J. Scheme, B. S. Hudgins, and K. B. Englehart, “Conﬁdence-based
+rejection for improved pattern recognition myoelectric control,” IEEE
+Transactions on Biomedical Engineering , vol. 60, no. 6, pp. 1563–1570,
+2013, doi: 10.1109/TBME.2013.2238939.
+[5] B. Ahkami, F. Just, and M. Ortiz-Catalan, “Probability-based rejection
+of decoding output improves the accuracy of locomotion detection
+during gait,” in 2023 45th Annual International Conference of the IEEE
+Engineering in Medicine and Biology Society (EMBC) , 2023, pp. 1–4,
+doi: 10.1109/EMBC40787.2023.10340993.
+[6] Y . Geifman and R. El-Y aniv, “SelectiveNet: A deep neural network with
+an integrated reject option,” in Proceedings of the 36th International
+Conference on Machine Learning , ser. Proceedings of Machine
+Learning Research, vol. 97, 2019, pp. 2151–2159. [Online]. Available:
+https://proceedings.mlr.press/v97/geifman19a.html
+[7] N. J. Jarque-Bou, M. Atzori, and H. Müller, “A large calibrated database
+of hand movements and grasps kinematics,” Scientiﬁc Data , vol. 7, Art.
+no. 12, 2020, doi: 10.1038/s41597-019-0349-2 .
+[8] E. Muschter, J. Schulz, M. Tömösközi, L. Herbst, L. Küssel, M. Sefunç,
+S. Holtzhausen, S. Speidel, F. H. P . Fitzek, and S.-C. Li, “Coming
+in handy: CeTI-Age — A comprehensive database of kinematic hand
+movements across the lifespan,” Scientiﬁc Data , vol. 10, Art. no. 826,
+2023, doi: 10.1038/s41597-023-02738-3 .
+[9] P . Rim, K. Harris, B. Copple, S. Han, X. Xie, I. Shugurov, S. An,
+H. Wen, A. Wong, T. Hodan, and K. He, “SHOW3D: Capturing scenes
+of 3D hands and objects in the wild,” in Proceedings of the IEEE/CVF
+Conference on Computer Vision and Pattern Recognition , 2026, pp.
+7111–7120. [Online]. Available: https://show3d-dataset.github.io/
+[10] N. J. Jarque-Bou, M. V ergara, J. L. Sancho-Bru, V . Gracia-Ibáñez, and
+A. Roda-Sales, “A calibrated database of kinematics and EMG of the
+forearm and hand during activities of daily living,” Scientiﬁc Data ,
+vol. 6, Art. no. 270, 2019, doi: 10.1038/s41597-019-0285-1 .

@@ -1,0 +1,68 @@
+==============================================================================
+GATE 1.5 - REFERENCE-ANCHOR AVAILABILITY & NUMERICAL-ZERO CHECK
+==============================================================================
+
+[1] LOCAL CORPUS INVENTORY (no pose values read)
+    files          : 30
+    sessions       : 1
+    participants   : 1
+    hand sides     : {'left': 15, 'right': 15}
+    total frames   : 4218756
+    split          : ['val']
+    held_out_user  : [True]
+    metadata.csv   : 25253 rows / 751 sessions / 193 users (FULL corpus - only 1 session(s) is local)
+
+    local stages (left):
+      - CountingUpDownFaceSideAway
+      - FingerAbductionSeries
+      - FingerFreeform
+      - FingerPinchesSingleFingerPinchesMultiple
+      - FingerWigglingSpreading
+      - HandClawGraspFlicks
+      - HookEmHornsOKScissors
+      - IndividualFingerPointingSnap
+      - OneHandedFreeStyle
+      - ShakaVulcanPeace
+      - ThumbsSwipesWholeHand
+      - ThumbsUpDownThumbRotationsCWCCWP
+      - TwoHandedFreeStyle
+      - WristFlexionAbduction
+      - unconstrained
+
+[2] CANDIDATE ANCHOR SOURCES
+    id  present  independent  verdict
+    A1  False    None         ABSENT
+    A2  True     True         PRESENT_BUT_DOES_NOT_DEFINE_A_POSTURE
+    A3  False    PARTIAL      ABSENT_LOCALLY
+    B   False    None         ABSENT
+    C   True     False        PRESENT_BUT_CIRCULAR
+    D   False    None         ABSENT
+
+[3] ANCHOR STATUS
+    ANCHOR_STATUS: NO_INDEPENDENT_ANCHOR
+
+    Reasoning: the only locally-present, pose-independent field is the `stage`
+    attribute (A2), which names a compound ACTIVITY and specifies no hand posture.
+    The single stage name that does encode a resting position (A3,
+    HandDeskSeparateClaspedChest - the closest analogue to DB9's documented
+    reference) is NOT in the local corpus. No per-frame label (A1), no annotation
+    (B) and no calibration marker (D) exist. The FK route (C) is present locally but
+    is CIRCULAR: in this model the extended configuration IS zero joint angle, so a
+    geometric 'is it extended?' test reduces to 'are the angles near zero'.
+
+[4] TOLERANCE AUDIT
+    pre-existing reference-anchor tolerance found: False
+    -> descriptive classes only; no ad-hoc threshold invented.
+
+[5] DB9 REFERENCE-ANCHOR COMPARATOR (authoritative artifact)
+    <PROJECT_ROOT>\audits\db9\coordinate_audit\artifacts\DB9_SOURCE_CALIBRATION_AUDIT.json
+    sha256 c186e817c1611a48c0626266268cfb41aabfec8c72f6850c7310bf04235f387e
+    trusted-8 anchor residual |median| range across DB1/DB2/DB5: 0.1342 - 4.9599 deg
+
+[6] TRUSTED-8 ZERO MEASUREMENT
+    NOT_MEASURED - no independent anchor exists, so no measurement was performed.
+    No reference frames were synthesised.
+
+[7] ZERO_GATE
+    ZERO_GATE: NOT_EVALUABLE_LOCALLY
+

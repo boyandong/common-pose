@@ -36,10 +36,13 @@ python -m pip install -r requirements.txt
 python -m pytest tests/ -q
 ```
 
-58 tests, no dataset, no GPU, no network. `tests/test_db9_adapter_synthetic.py` builds its
+60 tests, no dataset, no GPU, no network. `tests/test_db9_adapter_synthetic.py` builds its
 own minimal `.mat` in a temp directory, so the full adapter path — channel-order resolution,
 the segmentation-trap refusal, verdict-driven validity, utility-protocol segmentation — is
 exercised without touching any third-party release.
+
+Passing this suite checks software and research-contract invariants. It does **not**
+validate the Common Pose hypothesis, and it is not a substitute for the audits.
 
 ## 4. Running with DB9
 
@@ -111,10 +114,14 @@ Stated plainly, because a reproducibility section that only lists strengths is m
 4. **The full emg2pose corpus (431 GiB) was never downloaded.** It exceeds local free space
    by ~582 GiB and the measured network path would take ~685 days. A verified server runbook
    exists instead.
-5. **The trusted DB9 subset is frozen and revalidated across all 77 participants.** The
-   earlier utility arm covered only 37 Exercise-B subjects;
-   the final full-DB9 validation did not complete (`tools/final_validation.py` exists in the
-   port, its captured log is 0 bytes).
+5. **The trusted DB9 subset is frozen and revalidated across all 77 participants**, with no
+   change to the eight retained channels (see
+   [`db9_trusted_subset.md`](db9_trusted_subset.md)). What remains limited is *scope*, not
+   coverage: the frozen downstream baseline is a single-dataset, posture-only task, and
+   `TRUSTED_DB9_POSE_v1.json` still records `n_subjects: 37` because it is the frozen
+   artifact of the run that produced it. The revalidation is the addendum
+   `audits/db9/channel_forensic/FINAL_VALIDATION.md`, and its driver is
+   `audits/db9/channel_forensic/tools/final_validation.py`.
 6. **The human-annotation lane's pre-registered endpoint is not recoverable.** Its formal
    round was interrupted by a diagnostic model-unblinding at 200 of 396 items. See
    [`../audits/human_semantic_validation/README.md`](../audits/human_semantic_validation/README.md) §4.

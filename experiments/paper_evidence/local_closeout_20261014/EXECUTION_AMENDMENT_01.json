@@ -1,0 +1,7 @@
+{
+  "status": "SEALED_BEFORE_KIN_CORRECTION_RUN",
+  "original_spec_unchanged": true,
+  "reason": "Implementation grouped KIN parent/trial without phase; original contract is user/parent/phase. First attempt known exit1; first five exact source passes preserved. No scientific parameters or outcomes selected.",
+  "script_sha256": "af5f7cfede40316e34cad760c8bf7d0570e9145e145cc877d0e0e428ebf2b791",
+  "original_contract_sha256": "49840dd8130c3a4c303d4ca7194a123a5dd2cb5fc10e0d9db0f47be5557ac016"
+}

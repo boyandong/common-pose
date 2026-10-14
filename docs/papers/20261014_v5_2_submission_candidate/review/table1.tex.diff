@@ -1,0 +1,10 @@
+--- V5.1/table1.tex
++++ V5.2/table1.tex
+@@ -16,6 +16,6 @@
+ \end{tabular}
+ \par\smallskip
+ \begin{minipage}{\linewidth}\footnotesize
+-No Gate retains all prediction-valid blocks; selective methods retain 30\%. $U$: participant medians (\%; lower is better). Paired effects: percentage points (higher is better). Intervals are pointwise descriptive participant-bootstrap summaries, not differences between method medians.
++No Gate retains all prediction-valid blocks; selective methods retain 30\%. $U$: participant medians (\%; lower is better). Paired effects: median within-participant Boundary--Full/U reductions (pp; higher is better), with pointwise 95\% participant-bootstrap intervals (n=80). Intervals are pointwise descriptive participant-bootstrap summaries, not differences between method medians.
+ \end{minipage}
+ \endgroup

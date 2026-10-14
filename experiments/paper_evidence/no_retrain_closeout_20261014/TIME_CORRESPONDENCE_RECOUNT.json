@@ -1,0 +1,16 @@
+{
+  "status": "PASS_INDEX_ALGEBRA_AND_FROZEN_CODE_BINDING",
+  "checks": 223348,
+  "source_sha256": "f661c5c77e48b9ee50ef60ca3353891f83573459e8f34dbd566a5e216cadd3dc",
+  "critical_upstream_files": 10,
+  "startup_history_ms": 895,
+  "startup_history_is_fixed_inference_latency": false,
+  "author_reported_sensor_relative_latency_ms_upper_bound": 10,
+  "author_report_is_our_measurement": false,
+  "raw_sensor_synchronization_independently_measured": false,
+  "whole_record_prefix_causality_verified": false,
+  "references": [
+    "https://arxiv.org/html/2412.02725v1#S3.SS2",
+    "https://arxiv.org/html/2412.02725v1#A2.SS2"
+  ]
+}

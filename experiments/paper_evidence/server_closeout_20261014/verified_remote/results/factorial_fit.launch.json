@@ -1,0 +1,9 @@
+{
+  "pid": 2899,
+  "start_ticks": "907759733",
+  "argv": [
+    "factorial_experiment.py",
+    "fit"
+  ],
+  "controller_pid": 2885
+}

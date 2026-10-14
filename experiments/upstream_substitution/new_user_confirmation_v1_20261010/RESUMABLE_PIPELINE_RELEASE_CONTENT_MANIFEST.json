@@ -1,0 +1,24 @@
+{
+  "status": "TRANSPORT_AND_DURABLE_CONTINUATION_RELEASE_CONTENT_SEALED",
+  "scientific_protocol_changed": false,
+  "files": {
+    "experiments/upstream_substitution/new_user_confirmation_v1_20261010/.gitignore": "b8a327ba4b0fca8905d57949f998cdb516678d94ba4dc51284ec6d0eda776557",
+    "experiments/upstream_substitution/new_user_confirmation_v1_20261010/DOWNLOAD_DEADLINE_FAILURE_20261010_1630.json": "aa427a1d8188c95d6984eb3ad10b937fd4b9462f2939840a1933b2606ef2c69a",
+    "experiments/upstream_substitution/new_user_confirmation_v1_20261010/DOWNLOAD_FIRST_DURABLE_LAUNCH_20261010_1541.json": "a9acce5135edfe82b30286aaef0962d0e3744e7c224b48d47f9b7db2fca37221",
+    "experiments/upstream_substitution/new_user_confirmation_v1_20261010/DURABLE_DOWNLOAD_LAUNCH_RECEIPT.json": "dd448bf7fa6e3aeb449bc8a05f433012d86c8adb7680c2d4ab2aa836c1ffa5fd",
+    "experiments/upstream_substitution/new_user_confirmation_v1_20261010/LIVE_TRANSFER_OBSERVATION_20261010_1651.json": "e2462faaf90bfd343d24963177060cfa2310fce802cc0a2d5c33b83dbf8d98f1",
+    "experiments/upstream_substitution/new_user_confirmation_v1_20261010/PIPELINE_CONTROLLER_SAFETY_CHECK.json": "5097bf386b99701a8bc395550bedd81bab14f9a5a336ab82dbaee52a1334ebc3",
+    "experiments/upstream_substitution/new_user_confirmation_v1_20261010/PIPELINE_FIRST_LAUNCH_20261010_1630.json": "7adafb609f1233f54ed4c5ce89bf2fb87096996aaeaafa8950f542935a12403f",
+    "experiments/upstream_substitution/new_user_confirmation_v1_20261010/PIPELINE_SUPERVISOR_CODE_SEAL.json": "e84137924af51e1cba80ef63793dee0f2ebf1a8b61d04222a0650a54fd1ac5f9",
+    "experiments/upstream_substitution/new_user_confirmation_v1_20261010/PIPELINE_SUPERVISOR_LAUNCH.json": "dcb3c75ae1b4f2f868a38da694374aeb6ffbd58d76e56fa0fefd55c288881c5e",
+    "experiments/upstream_substitution/new_user_confirmation_v1_20261010/PIPELINE_TRANSFER_GATE_STOP_20261010_1630.json": "fe389ba5ced491197edc5ff997b48f6ada02b0b22fb01ce504dfbd7b8863454c",
+    "experiments/upstream_substitution/new_user_confirmation_v1_20261010/SESSION_HANDOVER_RESUMABLE_PIPELINE_20261010.md": "ac2104fa031d2df47cbfcb21adb8f0e183977986aa5ee2ed2938022f9b0dfb7b",
+    "experiments/upstream_substitution/new_user_confirmation_v1_20261010/STREAM_RELAY_V1_TERMINAL_FAILURE_20261010.json": "b78b24977f180a88bd04b418d54d8d9ed6951fb5210ae06c66fdaee8784d216b",
+    "experiments/upstream_substitution/new_user_confirmation_v1_20261010/STREAM_RELAY_V2_CODE_SEAL.json": "bf2b741e2187a483bfe5990c75e8e0f6e57e6df8b2a2be8f4b6bc6938382fa85",
+    "experiments/upstream_substitution/new_user_confirmation_v1_20261010/STREAM_RELAY_V2_LAUNCH.json": "a003a643af8dd3accb4af2fad8912fb38531ce60d1a5c7788b3b3bc9d2a0f709",
+    "experiments/upstream_substitution/new_user_confirmation_v1_20261010/TRANSPORT_RECONNECT_AMENDMENT_20261010.md": "6b0a5a13ea3d035f951bd4026709b86e75794bf3f402ad435be91284e8764d3c",
+    "experiments/upstream_substitution/new_user_confirmation_v1_20261010/pipeline_supervisor.py": "66b070cd27868d9de59157e809741d0ef408d0e63463cf32ee17b8f179590115",
+    "experiments/upstream_substitution/new_user_confirmation_v1_20261010/relay_completed_sources_v2.py": "e98825f2131b0b657ab343692114a4b6e23257895a1e80ab90c7d85442baf246"
+  },
+  "self_excluded": true
+}

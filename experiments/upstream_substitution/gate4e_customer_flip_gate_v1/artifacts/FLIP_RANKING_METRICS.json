@@ -1,0 +1,1069 @@
+{
+  "rows": [
+    {
+      "auprc": 0.38838281872536384,
+      "auroc": 0.6230510381279947,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.18802813876581126,
+      "user": "0816388460"
+    },
+    {
+      "auprc": 0.43590838857536957,
+      "auroc": 0.6514886144773062,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.23148217729582188,
+      "user": "0816388460"
+    },
+    {
+      "auprc": 0.43585804638118797,
+      "auroc": 0.6722455794056746,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.26319985754691116,
+      "user": "0816388460"
+    },
+    {
+      "auprc": 0.22059558712044622,
+      "auroc": 0.44027538563531987,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": -0.09126219695778244,
+      "user": "0816388460"
+    },
+    {
+      "auprc": 0.6390510894537995,
+      "auroc": 0.7751757008220799,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.42048222953904596,
+      "user": "0816388460"
+    },
+    {
+      "auprc": 0.6472639514960669,
+      "auroc": 0.7695004748072887,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": 0.4118108331071499,
+      "user": "0816388460"
+    },
+    {
+      "auprc": 0.3131464554671488,
+      "auroc": 0.5844973861541346,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": 0.1291162308814637,
+      "user": "0816388460"
+    },
+    {
+      "auprc": 0.45922394765466407,
+      "auroc": 0.6894307111131854,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.2894595980461946,
+      "user": "0816388460"
+    },
+    {
+      "auprc": 0.5589789911235415,
+      "auroc": 0.5962210629469273,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.16632476576851507,
+      "user": "13b8b5f76d"
+    },
+    {
+      "auprc": 0.5434273482848412,
+      "auroc": 0.5881591960815795,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.1523892710133227,
+      "user": "13b8b5f76d"
+    },
+    {
+      "auprc": 0.5696273391515285,
+      "auroc": 0.6054567572523768,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.1822893024823817,
+      "user": "13b8b5f76d"
+    },
+    {
+      "auprc": 0.35716246880079106,
+      "auroc": 0.32308334338498856,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": -0.3058126835313686,
+      "user": "13b8b5f76d"
+    },
+    {
+      "auprc": 0.8203821706892759,
+      "auroc": 0.8113740090149344,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.5382315215575807,
+      "user": "13b8b5f76d"
+    },
+    {
+      "auprc": 0.7831750635297338,
+      "auroc": 0.7616049054058905,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": 0.4522023059833455,
+      "user": "13b8b5f76d"
+    },
+    {
+      "auprc": 0.43803643264177794,
+      "auroc": 0.4455097252756923,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": -0.09419021056939925,
+      "user": "13b8b5f76d"
+    },
+    {
+      "auprc": 0.5406976006537533,
+      "auroc": 0.5660252752873115,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.11412925726065781,
+      "user": "13b8b5f76d"
+    },
+    {
+      "auprc": 0.5090109253968099,
+      "auroc": 0.5982836946201956,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.16877948938051485,
+      "user": "2132c5d085"
+    },
+    {
+      "auprc": 0.571076854132992,
+      "auroc": 0.6351903503456384,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.23215812540100791,
+      "user": "2132c5d085"
+    },
+    {
+      "auprc": 0.5307158196091925,
+      "auroc": 0.6228241614509242,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.21092205918169865,
+      "user": "2132c5d085"
+    },
+    {
+      "auprc": 0.5020126475600074,
+      "auroc": 0.5847400058854585,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": 0.14552133981856438,
+      "user": "2132c5d085"
+    },
+    {
+      "auprc": 0.7203787952873858,
+      "auroc": 0.7887367676839084,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.4958385457871931,
+      "user": "2132c5d085"
+    },
+    {
+      "auprc": 0.698650842418467,
+      "auroc": 0.7905840751360403,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": 0.49901088036781494,
+      "user": "2132c5d085"
+    },
+    {
+      "auprc": 0.5101799837118131,
+      "auroc": 0.6063516313098207,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": 0.1826343026340393,
+      "user": "2132c5d085"
+    },
+    {
+      "auprc": 0.5823464248426192,
+      "auroc": 0.6445475707244511,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.24822698487622386,
+      "user": "2132c5d085"
+    },
+    {
+      "auprc": 0.4997260369274156,
+      "auroc": 0.6502517789350589,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.2528628864875413,
+      "user": "2327817653"
+    },
+    {
+      "auprc": 0.5462302763317668,
+      "auroc": 0.6677819626445032,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.2823649189083543,
+      "user": "2327817653"
+    },
+    {
+      "auprc": 0.5054320742225031,
+      "auroc": 0.6523562465516163,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.2564045534136431,
+      "user": "2327817653"
+    },
+    {
+      "auprc": 0.5304768607068465,
+      "auroc": 0.6133373868329006,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": 0.19073863207908578,
+      "user": "2327817653"
+    },
+    {
+      "auprc": 0.7749141100072456,
+      "auroc": 0.806735440573355,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.5162135812377284,
+      "user": "2327817653"
+    },
+    {
+      "auprc": 0.7774296741467843,
+      "auroc": 0.8103356551740717,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": 0.5222724962524888,
+      "user": "2327817653"
+    },
+    {
+      "auprc": 0.526964703767641,
+      "auroc": 0.6642605614271002,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": 0.27643865512216576,
+      "user": "2327817653"
+    },
+    {
+      "auprc": 0.5297984558402402,
+      "auroc": 0.665229037462135,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.2780685303053324,
+      "user": "2327817653"
+    },
+    {
+      "auprc": 0.5272365420353883,
+      "auroc": 0.6297966723716438,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.22226419056191055,
+      "user": "23b817e892"
+    },
+    {
+      "auprc": 0.5676211486309203,
+      "auroc": 0.6568556193218851,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.268600008202386,
+      "user": "23b817e892"
+    },
+    {
+      "auprc": 0.5467872146357957,
+      "auroc": 0.6458823260945612,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.24980930970137832,
+      "user": "23b817e892"
+    },
+    {
+      "auprc": 0.41882898434764715,
+      "auroc": 0.5048330791298942,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": 0.008276178434311436,
+      "user": "23b817e892"
+    },
+    {
+      "auprc": 0.5809723477789346,
+      "auroc": 0.687840823609616,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.3216591600632968,
+      "user": "23b817e892"
+    },
+    {
+      "auprc": 0.5824395338744355,
+      "auroc": 0.6856099450548128,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": 0.317839017592105,
+      "user": "23b817e892"
+    },
+    {
+      "auprc": 0.5055167309248239,
+      "auroc": 0.6086229580387155,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": 0.1860062619770973,
+      "user": "23b817e892"
+    },
+    {
+      "auprc": 0.5687835136121044,
+      "auroc": 0.6624790320350192,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.2782295561102212,
+      "user": "23b817e892"
+    },
+    {
+      "auprc": 0.6180525363223066,
+      "auroc": 0.6031439748014172,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.17851991289126176,
+      "user": "2be40c4380"
+    },
+    {
+      "auprc": 0.6272902191884986,
+      "auroc": 0.6121114551928941,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.19404068200475313,
+      "user": "2be40c4380"
+    },
+    {
+      "auprc": 0.6665011305678123,
+      "auroc": 0.6755063336033051,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.3037635057893489,
+      "user": "2be40c4380"
+    },
+    {
+      "auprc": 0.5823234584457442,
+      "auroc": 0.5487401996482705,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": 0.08435874429179359,
+      "user": "2be40c4380"
+    },
+    {
+      "auprc": 0.7108117298940453,
+      "auroc": 0.7144299672262189,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.37113189737162167,
+      "user": "2be40c4380"
+    },
+    {
+      "auprc": 0.724431943100814,
+      "auroc": 0.7123290416948568,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": 0.3674956936958743,
+      "user": "2be40c4380"
+    },
+    {
+      "auprc": 0.6601974031113791,
+      "auroc": 0.646799989236511,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": 0.25407903216252664,
+      "user": "2be40c4380"
+    },
+    {
+      "auprc": 0.6760064109101525,
+      "auroc": 0.681333936559938,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.31384982614093454,
+      "user": "2be40c4380"
+    },
+    {
+      "auprc": 0.6061587381877129,
+      "auroc": 0.6059956674752791,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.18341016288201964,
+      "user": "2e45fde443"
+    },
+    {
+      "auprc": 0.6238703065274005,
+      "auroc": 0.6075827185919536,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.18615632516152264,
+      "user": "2e45fde443"
+    },
+    {
+      "auprc": 0.6232624273852709,
+      "auroc": 0.6351742908848939,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.23389954796446816,
+      "user": "2e45fde443"
+    },
+    {
+      "auprc": 0.5055679396155731,
+      "auroc": 0.5041213849811309,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": 0.0071314602633641075,
+      "user": "2e45fde443"
+    },
+    {
+      "auprc": 0.6938457287295818,
+      "auroc": 0.68326433889371,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.31711241645608107,
+      "user": "2e45fde443"
+    },
+    {
+      "auprc": 0.712735406326774,
+      "auroc": 0.6878356503306533,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": 0.32502244568461586,
+      "user": "2e45fde443"
+    },
+    {
+      "auprc": 0.5911270587579079,
+      "auroc": 0.5940240089161694,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": 0.16269494028288514,
+      "user": "2e45fde443"
+    },
+    {
+      "auprc": 0.6458308748575635,
+      "auroc": 0.6414901814256154,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.24482828251004674,
+      "user": "2e45fde443"
+    },
+    {
+      "auprc": 0.45414140607655984,
+      "auroc": 0.5993459676096143,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.16232320506304843,
+      "user": "32cbfe3221"
+    },
+    {
+      "auprc": 0.4928690764516149,
+      "auroc": 0.6190814636370779,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.19456939527859302,
+      "user": "32cbfe3221"
+    },
+    {
+      "auprc": 0.5101150065809668,
+      "auroc": 0.6722022884219818,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.28136448864928476,
+      "user": "32cbfe3221"
+    },
+    {
+      "auprc": 0.2523825189406759,
+      "auroc": 0.3594249368491945,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": -0.22968818314041842,
+      "user": "32cbfe3221"
+    },
+    {
+      "auprc": 0.6190264520665575,
+      "auroc": 0.7632009451087441,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.4300488687528793,
+      "user": "32cbfe3221"
+    },
+    {
+      "auprc": 0.6731727315549336,
+      "auroc": 0.8033155062816724,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": 0.49559291279789425,
+      "user": "32cbfe3221"
+    },
+    {
+      "auprc": 0.347425775139803,
+      "auroc": 0.47933835953239373,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": -0.03375943466313025,
+      "user": "32cbfe3221"
+    },
+    {
+      "auprc": 0.5217686588031635,
+      "auroc": 0.6717354087901429,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.2806016454253249,
+      "user": "32cbfe3221"
+    },
+    {
+      "auprc": 0.38402380238440686,
+      "auroc": 0.6325361726634943,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.19371500140513825,
+      "user": "3589743749"
+    },
+    {
+      "auprc": 0.42991620791658325,
+      "auroc": 0.667260972388388,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.2444688031206885,
+      "user": "3589743749"
+    },
+    {
+      "auprc": 0.43792057441946897,
+      "auroc": 0.7197101163264291,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.32112852391594926,
+      "user": "3589743749"
+    },
+    {
+      "auprc": 0.18910174974706423,
+      "auroc": 0.4206890253912712,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": -0.11592099914323666,
+      "user": "3589743749"
+    },
+    {
+      "auprc": 0.48087453443734157,
+      "auroc": 0.7263394222493125,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.3308179240273211,
+      "user": "3589743749"
+    },
+    {
+      "auprc": 0.481938083094682,
+      "auroc": 0.7355865467639413,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": 0.34433372224956516,
+      "user": "3589743749"
+    },
+    {
+      "auprc": 0.3087926712461517,
+      "auroc": 0.5724664316488035,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": 0.10591700836506733,
+      "user": "3589743749"
+    },
+    {
+      "auprc": 0.4663696256670292,
+      "auroc": 0.7317228585639988,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.33868635988378476,
+      "user": "3589743749"
+    },
+    {
+      "auprc": 0.3233857184955792,
+      "auroc": 0.6169209262972624,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.1642912665371196,
+      "user": "47c605ad6f"
+    },
+    {
+      "auprc": 0.32528082007041725,
+      "auroc": 0.6150806894534564,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.16170546045969872,
+      "user": "47c605ad6f"
+    },
+    {
+      "auprc": 0.3734496230044994,
+      "auroc": 0.7005757125948475,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.2818386656894316,
+      "user": "47c605ad6f"
+    },
+    {
+      "auprc": 0.15658017342007727,
+      "auroc": 0.38328659147781347,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": -0.1639996732426097,
+      "user": "47c605ad6f"
+    },
+    {
+      "auprc": 0.5187296458915418,
+      "auroc": 0.7531862458055614,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.35576427856394877,
+      "user": "47c605ad6f"
+    },
+    {
+      "auprc": 0.4937260363720298,
+      "auroc": 0.7488803317846178,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": 0.3497141788721344,
+      "user": "47c605ad6f"
+    },
+    {
+      "auprc": 0.2531154340274415,
+      "auroc": 0.5605451878929757,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": 0.08507498115756693,
+      "user": "47c605ad6f"
+    },
+    {
+      "auprc": 0.3975829592524236,
+      "auroc": 0.6911693555770946,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.268621337047868,
+      "user": "47c605ad6f"
+    },
+    {
+      "auprc": 0.6145050962890259,
+      "auroc": 0.5929936771237054,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.16007999526853917,
+      "user": "54c854b839"
+    },
+    {
+      "auprc": 0.6555608642198781,
+      "auroc": 0.6313462594717876,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.22610041074958487,
+      "user": "54c854b839"
+    },
+    {
+      "auprc": 0.6160950936737464,
+      "auroc": 0.5929228679228763,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.1599581037928572,
+      "user": "54c854b839"
+    },
+    {
+      "auprc": 0.5505536922399727,
+      "auroc": 0.5039239303651967,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": 0.0067546824012472036,
+      "user": "54c854b839"
+    },
+    {
+      "auprc": 0.6890020152992151,
+      "auroc": 0.6544570161034862,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.26588343607649284,
+      "user": "54c854b839"
+    },
+    {
+      "auprc": 0.6755820308169561,
+      "auroc": 0.6433370869347178,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": 0.24674151064823155,
+      "user": "54c854b839"
+    },
+    {
+      "auprc": 0.6015465103945168,
+      "auroc": 0.5619557233980969,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": 0.10665103494329999,
+      "user": "54c854b839"
+    },
+    {
+      "auprc": 0.6405569414188423,
+      "auroc": 0.6175510098413004,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.20235316723926502,
+      "user": "54c854b839"
+    },
+    {
+      "auprc": 0.532176957810782,
+      "auroc": 0.6615304024241697,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.27450995022428964,
+      "user": "6a7fc66366"
+    },
+    {
+      "auprc": 0.5599108338137756,
+      "auroc": 0.6824759891398402,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.31010555254092764,
+      "user": "6a7fc66366"
+    },
+    {
+      "auprc": 0.5429652900271065,
+      "auroc": 0.6748940323660446,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.2972205318553982,
+      "user": "6a7fc66366"
+    },
+    {
+      "auprc": 0.4147306302353171,
+      "auroc": 0.508616023185383,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": 0.014642346333911711,
+      "user": "6a7fc66366"
+    },
+    {
+      "auprc": 0.6248242617348732,
+      "auroc": 0.728844546898254,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.3889057678020128,
+      "user": "6a7fc66366"
+    },
+    {
+      "auprc": 0.6364647223847115,
+      "auroc": 0.7344568428077185,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": 0.39844349061550405,
+      "user": "6a7fc66366"
+    },
+    {
+      "auprc": 0.502410318418022,
+      "auroc": 0.6361586185623362,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": 0.23139232641794158,
+      "user": "6a7fc66366"
+    },
+    {
+      "auprc": 0.5517195114934114,
+      "auroc": 0.680002812223498,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.30590255631227853,
+      "user": "6a7fc66366"
+    },
+    {
+      "auprc": 0.39164029211905566,
+      "auroc": 0.6849637751197202,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.2712284044587133,
+      "user": "7afcdcd6be"
+    },
+    {
+      "auprc": 0.39698259059941204,
+      "auroc": 0.6901202090221625,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.27878973012451463,
+      "user": "7afcdcd6be"
+    },
+    {
+      "auprc": 0.42822546911470805,
+      "auroc": 0.7081480324909958,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.3052254891922029,
+      "user": "7afcdcd6be"
+    },
+    {
+      "auprc": 0.2294039906136301,
+      "auroc": 0.5213471232277326,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": 0.031303135811830335,
+      "user": "7afcdcd6be"
+    },
+    {
+      "auprc": 0.4492592888782227,
+      "auroc": 0.7162562726370798,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.3171153040295515,
+      "user": "7afcdcd6be"
+    },
+    {
+      "auprc": 0.4745172236604863,
+      "auroc": 0.7079744723554785,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": 0.30497109369247205,
+      "user": "7afcdcd6be"
+    },
+    {
+      "auprc": 0.34177625723855387,
+      "auroc": 0.6743802595081879,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": 0.2557088788055318,
+      "user": "7afcdcd6be"
+    },
+    {
+      "auprc": 0.44552764395612343,
+      "auroc": 0.7473585176819904,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.36272321992094575,
+      "user": "7afcdcd6be"
+    },
+    {
+      "auprc": 0.5498876003870781,
+      "auroc": 0.6066716944826622,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.18398033351303983,
+      "user": "87aa3b3887"
+    },
+    {
+      "auprc": 0.573578454084883,
+      "auroc": 0.6083773750394359,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.18692217932531338,
+      "user": "87aa3b3887"
+    },
+    {
+      "auprc": 0.5793099282631922,
+      "auroc": 0.653282304759923,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.2643712532002731,
+      "user": "87aa3b3887"
+    },
+    {
+      "auprc": 0.47609621955243886,
+      "auroc": 0.5178317784960254,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": 0.03075508053697072,
+      "user": "87aa3b3887"
+    },
+    {
+      "auprc": 0.6976095765189463,
+      "auroc": 0.7110318807584896,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.36397392946768536,
+      "user": "87aa3b3887"
+    },
+    {
+      "auprc": 0.702788159406482,
+      "auroc": 0.7179635333971417,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": 0.37592919348229914,
+      "user": "87aa3b3887"
+    },
+    {
+      "auprc": 0.5477037071763246,
+      "auroc": 0.6193226591982179,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": 0.20579988666552076,
+      "user": "87aa3b3887"
+    },
+    {
+      "auprc": 0.6116148670177025,
+      "auroc": 0.6656795303686021,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.28575317380426113,
+      "user": "87aa3b3887"
+    },
+    {
+      "auprc": 0.47199867413829544,
+      "auroc": 0.6275427241510121,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.21092207297825086,
+      "user": "8bd1c0ff16"
+    },
+    {
+      "auprc": 0.4933366200679432,
+      "auroc": 0.6287016196067935,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.21283858082709609,
+      "user": "8bd1c0ff16"
+    },
+    {
+      "auprc": 0.5065833665865199,
+      "auroc": 0.678125342769182,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.2945724014986022,
+      "user": "8bd1c0ff16"
+    },
+    {
+      "auprc": 0.47327531501925535,
+      "auroc": 0.5857404510245048,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": 0.14179212329482974,
+      "user": "8bd1c0ff16"
+    },
+    {
+      "auprc": 0.5932925036423141,
+      "auroc": 0.7252783912143075,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.37255112424811804,
+      "user": "8bd1c0ff16"
+    },
+    {
+      "auprc": 0.5788978952568246,
+      "auroc": 0.71978095325905,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": 0.36345982070634264,
+      "user": "8bd1c0ff16"
+    },
+    {
+      "auprc": 0.5348132468627973,
+      "auroc": 0.6952520639779117,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": 0.3228954874661615,
+      "user": "8bd1c0ff16"
+    },
+    {
+      "auprc": 0.5408773776993006,
+      "auroc": 0.694828828844185,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.32219556802852134,
+      "user": "8bd1c0ff16"
+    },
+    {
+      "auprc": 0.5508602085608258,
+      "auroc": 0.5721190770117265,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.12491274516457375,
+      "user": "9b8c99cdc2"
+    },
+    {
+      "auprc": 0.5844236561380085,
+      "auroc": 0.5941116503446134,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.16300464570009263,
+      "user": "9b8c99cdc2"
+    },
+    {
+      "auprc": 0.5580016855679574,
+      "auroc": 0.5667983698899344,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.1156970957089978,
+      "user": "9b8c99cdc2"
+    },
+    {
+      "auprc": 0.5589000624519241,
+      "auroc": 0.535332631230093,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": 0.06119734394438856,
+      "user": "9b8c99cdc2"
+    },
+    {
+      "auprc": 0.5650740458436445,
+      "auroc": 0.5752258355481482,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.13029375880795147,
+      "user": "9b8c99cdc2"
+    },
+    {
+      "auprc": 0.5631305233663625,
+      "auroc": 0.5743355205795063,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": 0.1287517167848574,
+      "user": "9b8c99cdc2"
+    },
+    {
+      "auprc": 0.5930535694524254,
+      "auroc": 0.6237684448279803,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": 0.21437124334937466,
+      "user": "9b8c99cdc2"
+    },
+    {
+      "auprc": 0.5828662484065606,
+      "auroc": 0.5906232308313499,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.15696258199458285,
+      "user": "9b8c99cdc2"
+    },
+    {
+      "auprc": 0.5029986988104042,
+      "auroc": 0.6589355769914247,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.2647236193488078,
+      "user": "ce52651f99"
+    },
+    {
+      "auprc": 0.5554076613268369,
+      "auroc": 0.6789586657580453,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.29807414180060754,
+      "user": "ce52651f99"
+    },
+    {
+      "auprc": 0.5475081039375111,
+      "auroc": 0.7135197025774551,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.35563911830536604,
+      "user": "ce52651f99"
+    },
+    {
+      "auprc": 0.3693046674045267,
+      "auroc": 0.5081142300782829,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": 0.01351508828427951,
+      "user": "ce52651f99"
+    },
+    {
+      "auprc": 0.613288664773278,
+      "auroc": 0.7417700092203334,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.4026929218890652,
+      "user": "ce52651f99"
+    },
+    {
+      "auprc": 0.6190743534121284,
+      "auroc": 0.7371598351818522,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": 0.3950142296988009,
+      "user": "ce52651f99"
+    },
+    {
+      "auprc": 0.47914346350743503,
+      "auroc": 0.6501582869408163,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": 0.25010413619560096,
+      "user": "ce52651f99"
+    },
+    {
+      "auprc": 0.5812978424975068,
+      "auroc": 0.7245268357910706,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.37397263555883753,
+      "user": "ce52651f99"
+    },
+    {
+      "auprc": 0.5788987774153447,
+      "auroc": 0.6428682614142952,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.2470924454001529,
+      "user": "dd810188d9"
+    },
+    {
+      "auprc": 0.6037271591677366,
+      "auroc": 0.6414834640805023,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.24469742108752243,
+      "user": "dd810188d9"
+    },
+    {
+      "auprc": 0.579301710287083,
+      "auroc": 0.6311623493144999,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.22684692398241804,
+      "user": "dd810188d9"
+    },
+    {
+      "auprc": 0.46933754046626425,
+      "auroc": 0.5053439215234101,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": 0.009242379127277605,
+      "user": "dd810188d9"
+    },
+    {
+      "auprc": 0.6469527402965577,
+      "auroc": 0.6566358614427485,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.2709036818822493,
+      "user": "dd810188d9"
+    },
+    {
+      "auprc": 0.6481235123973675,
+      "auroc": 0.6536813662827108,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": 0.2657938523463513,
+      "user": "dd810188d9"
+    },
+    {
+      "auprc": 0.5523676944226579,
+      "auroc": 0.6035733454928334,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": 0.17913139673398715,
+      "user": "dd810188d9"
+    },
+    {
+      "auprc": 0.607621119197948,
+      "auroc": 0.6423545197898834,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.24620392283381723,
+      "user": "dd810188d9"
+    },
+    {
+      "auprc": 0.41361690998562667,
+      "auroc": 0.6436892849658724,
+      "method": "margin",
+      "spearman_score_vs_flip": 0.2276029740719758,
+      "user": "f1b6a408bf"
+    },
+    {
+      "auprc": 0.4875858259823774,
+      "auroc": 0.679361804048179,
+      "method": "entropy",
+      "spearman_score_vs_flip": 0.28410803245333455,
+      "user": "f1b6a408bf"
+    },
+    {
+      "auprc": 0.4516687530946792,
+      "auroc": 0.6772506674841873,
+      "method": "boundary_distance",
+      "spearman_score_vs_flip": 0.2807640046731786,
+      "user": "f1b6a408bf"
+    },
+    {
+      "auprc": 0.2993201016256445,
+      "auroc": 0.5328355088239053,
+      "method": "tta_dispersion",
+      "spearman_score_vs_flip": 0.05201125097993537,
+      "user": "f1b6a408bf"
+    },
+    {
+      "auprc": 0.3063306655442335,
+      "auroc": 0.5292866390044152,
+      "method": "logistic",
+      "spearman_score_vs_flip": 0.046389862261200523,
+      "user": "f1b6a408bf"
+    },
+    {
+      "auprc": 0.26378693195574754,
+      "auroc": 0.46002315285158896,
+      "method": "hist_gbdt",
+      "spearman_score_vs_flip": -0.06332317748880305,
+      "user": "f1b6a408bf"
+    },
+    {
+      "auprc": 0.36442785347517703,
+      "auroc": 0.6059750635090175,
+      "method": "boundary_safety",
+      "spearman_score_vs_flip": 0.1678638712541977,
+      "user": "f1b6a408bf"
+    },
+    {
+      "auprc": 0.4950674060557631,
+      "auroc": 0.7068157774640895,
+      "method": "gaussian_crossing",
+      "spearman_score_vs_flip": 0.3275949633058216,
+      "user": "f1b6a408bf"
+    }
+  ],
+  "schema": "gate4e-flip-ranking-v1"
+}

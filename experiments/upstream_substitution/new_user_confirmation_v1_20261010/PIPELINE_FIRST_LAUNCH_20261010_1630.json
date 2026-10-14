@@ -1,0 +1,9 @@
+{
+  "status": "HIDDEN_GATE_CHECKED_PIPELINE_SUPERVISOR_LAUNCHED",
+  "pid": 3232,
+  "start_time": "2026-10-10T16:30:56.2077277+08:00",
+  "credential_transport": "stdin and process RAM only",
+  "goal_completion_automatic": false,
+  "gates": "all local sources and remotely verified transfers -> qualification -> frozen reconstruction -> support seal -> analysis -> independent verification -> backup",
+  "scientific_protocol_and_members_changed": false
+}

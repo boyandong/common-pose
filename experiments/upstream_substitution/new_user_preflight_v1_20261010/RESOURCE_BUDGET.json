@@ -1,0 +1,152 @@
+{
+  "status": "FULL_RETENTION_CAPACITY_PASS_PREFLIGHT_CONFIRMATION_PENDING",
+  "user_selected_storage_scheme": "expanded_remote_full_source_and_cache_retention",
+  "monetary_budget_requested": false,
+  "user_waived_currency_budget": true,
+  "planned_enrolled_users": 80,
+  "valid_nonzero_pairs_assumed": false,
+  "metadata_candidates_after_history_exclusions": 127,
+  "source_bytes_range": [
+    43993673616,
+    55081420880
+  ],
+  "source_files_range": [
+    2349,
+    2956
+  ],
+  "projected_cache_bytes": {
+    "reconstructed/base": [
+      1125135210.8278127,
+      1408703593.05423
+    ],
+    "reconstructed/tta": [
+      644306953.47828,
+      806691952.8070656
+    ],
+    "features": [
+      668649733.6425298,
+      837169855.8646706
+    ]
+  },
+  "projected_cache_total_bytes": [
+    2438091897.9486227,
+    3052565401.7259665
+  ],
+  "report_and_score_allowance_bytes": 1000000000,
+  "model_runtime_artifact_allowance_bytes": 500000000,
+  "working_safety_space_bytes": 10000000000,
+  "remote_additional_working_bytes_range": [
+    57931765513.94862,
+    69633986281.72597
+  ],
+  "local_D_backup_bytes_range": [
+    57931765513.94862,
+    69633986281.72597
+  ],
+  "local_disk_observations": {
+    "C": {
+      "total": 322123591680,
+      "free": 43928002560
+    },
+    "D": {
+      "total": 187597582336,
+      "free": 110829969408
+    }
+  },
+  "remote_data_disk_free_bytes_observed": 187999571968,
+  "remote_data_disk_total_bytes": 214748364800,
+  "capacity_receipt_sha256": "11494d416c2485f57757580cb2f80f265a2e3990a22fc4d267ccb99b1a0bf50e",
+  "remote_fits_full_retention_without_changes": true,
+  "local_D_fits_one_off_host_verified_backup": true,
+  "recommended_full_retention_remote_data_total_quota_bytes": 120000000000,
+  "recommended_local_D_reservation_bytes": 70000000000,
+  "old_complete_run_source_bytes": 25141054576,
+  "old_reconstruction_elapsed_seconds": 3758.6,
+  "linear_projection_reconstruction_hours": [
+    1.8269655001636183,
+    2.287416516431883
+  ],
+  "conservative_reconstruction_reservation_hours": [
+    4,
+    10
+  ],
+  "CPU_scoring_table_bootstrap_verification_reservation_hours": 2,
+  "network_scenarios": [
+    {
+      "MiB_per_second": 0.5,
+      "download_source_hours": [
+        23.308687006632486,
+        29.18318689134386
+      ],
+      "off_host_source_plus_cache_backup_hours": [
+        24.60043457558347,
+        30.80049423733074
+      ]
+    },
+    {
+      "MiB_per_second": 1,
+      "download_source_hours": [
+        11.654343503316243,
+        14.59159344567193
+      ],
+      "off_host_source_plus_cache_backup_hours": [
+        12.300217287791735,
+        15.40024711866537
+      ]
+    },
+    {
+      "MiB_per_second": 2,
+      "download_source_hours": [
+        5.827171751658121,
+        7.295796722835965
+      ],
+      "off_host_source_plus_cache_backup_hours": [
+        6.150108643895868,
+        7.700123559332685
+      ]
+    },
+    {
+      "MiB_per_second": 5,
+      "download_source_hours": [
+        2.330868700663249,
+        2.9183186891343857
+      ],
+      "off_host_source_plus_cache_backup_hours": [
+        2.460043457558347,
+        3.0800494237330738
+      ]
+    },
+    {
+      "MiB_per_second": 10,
+      "download_source_hours": [
+        1.1654343503316245,
+        1.4591593445671929
+      ],
+      "off_host_source_plus_cache_backup_hours": [
+        1.2300217287791735,
+        1.5400247118665369
+      ]
+    }
+  ],
+  "GPU": "NVIDIA GeForce RTX 5090 D, 32607 MiB, 32110 MiB, 595.91.07",
+  "CUDA_smoke": {
+    "torch": "2.8.0+cu128",
+    "cuda_version": "12.8",
+    "cuda_available": true,
+    "device": "NVIDIA GeForce RTX 5090 D",
+    "cuda_smoke_sum": 4,
+    "cgroup_memory_max": "98784247808"
+  },
+  "CPU_numerical_threads": 8,
+  "memory_limit_bytes": 98784247808,
+  "financial_unit_prices": {
+    "GPU_hourly": "UNKNOWN",
+    "disk_capacity_monthly": "UNKNOWN",
+    "transfer": "UNKNOWN"
+  },
+  "financial_formula": "GPU price/hour * actual billed instance-hours (including acquisition/backup idle time if billed) + capacity GB-month price * added capacity * retention months + applicable transfer charges",
+  "limits": "source subset range, not chosen roster; cache ratio and 1.8-2.3h linear timing are estimates from old users/earlier GPU runtime; 4-10h is a resource allowance, not measured N80 time; network scenarios are not measured throughput; no price quote or purchase",
+  "source_manifest_sha256": "6d19d5dbe252aae260fc00453e0f23b75ed1e06c7235d17da4eef74a46bf873d",
+  "history_adjudication_sha256": "2a1e178b77f627e80045ba1c8fbdd01e3f7501960b28fe6d6d28b4268e842b0f",
+  "code_sha256": "179840b83e9591886a3afbf5927cfb2a543781086398414e34f0ee2c301d8b30"
+}

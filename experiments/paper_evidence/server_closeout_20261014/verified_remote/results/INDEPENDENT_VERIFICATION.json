@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": 1370496,
+  "models_verified": 96,
+  "all_weights_exact": true,
+  "threshold_candidates_reconstructed": true,
+  "support_denominators_and_saved_scores_recounted": true,
+  "failed_models_preserved": [],
+  "original_implementations_hash_verified": true
+}

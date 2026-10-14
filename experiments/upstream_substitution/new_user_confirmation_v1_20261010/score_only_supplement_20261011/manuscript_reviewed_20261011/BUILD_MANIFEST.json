@@ -1,0 +1,28 @@
+{
+  "files": {
+    "MANUSCRIPT_CONFIRMATION_WITH_SCORE_ONLY.md": {
+      "original_sha256": "293903f13dbd123bf64e7e18e5a5b419900498db948cfd571370183d79fb75ef",
+      "reviewed_sha256": "ba29f6748908025e167f8fda3b8520aff8de830e7028eb620cf65d4f8e28b2e8"
+    },
+    "SCORE_ONLY_N80_REPORT.md": {
+      "original_sha256": "513b8d84397eababd67fb8f77920f0638a36e83d9944b1f884b41c96dbc25a30",
+      "reviewed_sha256": "cb2179a3c52ee4136b6a285da885a4945e3721729845ec729486e466f599fc91"
+    }
+  },
+  "formatting_changes": {
+    "MANUSCRIPT_CONFIRMATION_WITH_SCORE_ONLY.md": {
+      "all_scientific_values_unchanged": true,
+      "conditional_subset_p_null_label": "not applicable; full cohort complete",
+      "support_rows_pipe_escaped": 160
+    },
+    "SCORE_ONLY_N80_REPORT.md": {
+      "all_scientific_values_unchanged": true,
+      "conditional_subset_p_null_label": "not applicable; full cohort complete",
+      "support_rows_pipe_escaped": 160
+    }
+  },
+  "new_statistics_or_scientific_changes": false,
+  "sealed_renderer_unchanged": true,
+  "source_reports_preserved": true,
+  "status": "PASS_PRESENTATION_ONLY_READABLE_COPIES"
+}

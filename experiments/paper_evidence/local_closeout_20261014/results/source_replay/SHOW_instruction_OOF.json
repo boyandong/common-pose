@@ -1,0 +1,362 @@
+[
+  {
+    "user": "AZH822",
+    "trial": "none_finger-guns_7c9c",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "AZH822",
+    "trial": "none_pinch-and-zoom_7a27",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "AZH822",
+    "trial": "none_thumbs-up-down_b457",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "ERI327",
+    "trial": "none_finger-guns_6a33",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "ERI327",
+    "trial": "none_pinch-and-zoom_412b",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "ERI327",
+    "trial": "none_thumbs-up-down_3ce1",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "HBA217",
+    "trial": "none_finger-guns_0ef2",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "HBA217",
+    "trial": "none_pinch-and-zoom_0ef8",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "HBA217",
+    "trial": "none_thumbs-up-down_2ab6",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "HLU829",
+    "trial": "none_finger-guns_9307",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "HLU829",
+    "trial": "none_pinch-and-zoom_7b68",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "HLU829",
+    "trial": "none_thumbs-up-down_ebc4",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "ISH822",
+    "trial": "none_finger-guns_960a",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "ISH822",
+    "trial": "none_pinch-and-zoom_a81a",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "ISH822",
+    "trial": "none_thumbs-up-down_72b3",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "KHA829",
+    "trial": "none_finger-guns_3637",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "KHA829",
+    "trial": "none_finger-guns_3ff8",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "KHA829",
+    "trial": "none_pinch-and-zoom_07e4",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "KHA829",
+    "trial": "none_pinch-and-zoom_f55c",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "KHA829",
+    "trial": "none_thumbs-up-down_2e58",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "KHA829",
+    "trial": "none_thumbs-up-down_4937",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "LSU826",
+    "trial": "none_finger-guns_005a",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "LSU826",
+    "trial": "none_pinch-and-zoom_fef6",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "LSU826",
+    "trial": "none_thumbs-up-down_c328",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "MHE822",
+    "trial": "none_finger-guns_e2a8",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "MHE822",
+    "trial": "none_finger-guns_ff3a",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "MHE822",
+    "trial": "none_pinch-and-zoom_2562",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "MHE822",
+    "trial": "none_pinch-and-zoom_47a9",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "MHE822",
+    "trial": "none_pinch-and-zoom_78ba",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "MHE822",
+    "trial": "none_thumbs-up-down_2396",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "MHE822",
+    "trial": "none_thumbs-up-down_91cf",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "PGR724",
+    "trial": "none_finger-guns_684f",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "PGR724",
+    "trial": "none_pinch-and-zoom_1bf3",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "PGR724",
+    "trial": "none_thumbs-up-down_b586",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "SAN822",
+    "trial": "none_finger-guns_4790",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "SAN822",
+    "trial": "none_pinch-and-zoom_f3fe",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "SAN822",
+    "trial": "none_thumbs-up-down_6dbb",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "SCH724",
+    "trial": "none_finger-guns_0f5b",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "SCH724",
+    "trial": "none_finger-guns_5291",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "SCH724",
+    "trial": "none_pinch-and-zoom_1539",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "SCH724",
+    "trial": "none_thumbs-up-down_be7d",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "SCH724",
+    "trial": "none_thumbs-up-down_d71f",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "TLI724",
+    "trial": "none_finger-guns_10c8",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "TLI724",
+    "trial": "none_finger-guns_176a",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "TLI724",
+    "trial": "none_pinch-and-zoom_5ff7",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "TLI724",
+    "trial": "none_pinch-and-zoom_7ff6",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "TLI724",
+    "trial": "none_thumbs-up-down_36e3",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "TLI724",
+    "trial": "none_thumbs-up-down_d7fd",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "XME827",
+    "trial": "none_finger-guns_a4f7",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "XME827",
+    "trial": "none_pinch-and-zoom_7b63",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "XME827",
+    "trial": "none_thumbs-up-down_21d8",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "XYA827",
+    "trial": "none_finger-guns_a83b",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "XYA827",
+    "trial": "none_pinch-and-zoom_5eba",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "XYA827",
+    "trial": "none_thumbs-up-down_0ab5",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "YQB827",
+    "trial": "none_finger-guns_59b2",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "YQB827",
+    "trial": "none_pinch-and-zoom_f412",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "YQB827",
+    "trial": "none_thumbs-up-down_d765",
+    "y": 2,
+    "pred": 2
+  },
+  {
+    "user": "YTC826",
+    "trial": "none_finger-guns_fa1f",
+    "y": 1,
+    "pred": 1
+  },
+  {
+    "user": "YTC826",
+    "trial": "none_pinch-and-zoom_c67b",
+    "y": 3,
+    "pred": 3
+  },
+  {
+    "user": "YTC826",
+    "trial": "none_thumbs-up-down_9ba1",
+    "y": 2,
+    "pred": 2
+  }
+]

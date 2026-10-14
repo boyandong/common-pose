@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "original_user_files": 20,
+  "paired_rows_verified": 40,
+  "source_hashes_verified": 21,
+  "fixed_common_support_and_effect_rederived": true,
+  "initial_protocol_hash_matched": true,
+  "new_comparisons_run": false
+}

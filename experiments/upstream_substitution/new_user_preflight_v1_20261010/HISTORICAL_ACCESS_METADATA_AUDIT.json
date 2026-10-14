@@ -1,0 +1,2330 @@
+{
+  "status": "CANDIDATE_CONTACT_REVIEW_REQUIRED",
+  "scope_root": "<USER_HOME>\\Desktop\\fingers",
+  "provenance_files": 81,
+  "processed_artifact_filenames": 161,
+  "metadata_candidates": 134,
+  "candidate_contact_review_users": [
+    "01aff754c1",
+    "0219627c14",
+    "03c48f96aa",
+    "03d49b393e",
+    "055bb1b487",
+    "057e6195fe",
+    "059f336bce",
+    "06d17ebbe4",
+    "0adf4a785f",
+    "0dc695684d",
+    "0e0e34d703",
+    "1066cc94fc",
+    "1223558697",
+    "1407610453",
+    "195b39dad8",
+    "1b89ab145b",
+    "1c0b9963d7",
+    "1f6de69ab3",
+    "20059f07ed",
+    "2038d88aa3",
+    "21cfae42e1",
+    "2251681168",
+    "22808ee66c",
+    "232751bf39",
+    "2478d8eb54",
+    "2668760727",
+    "26a8454b40",
+    "2772dd6ee3",
+    "2ae025bda1",
+    "2af4aec870",
+    "2bbe806971",
+    "2cc385c3cd",
+    "2d0838950a",
+    "2e17a57d54",
+    "2f97e4c26e",
+    "3108329190",
+    "3175245a1b",
+    "31b6cc13eb",
+    "323f919c83",
+    "32473f0e96",
+    "342248118e",
+    "34269a8572",
+    "3669295621",
+    "3714261337",
+    "374b365235",
+    "3875521008",
+    "38a974a38e",
+    "3916480018",
+    "3976352430",
+    "3b8495fc25",
+    "3f79dccf7a",
+    "456bd13d28",
+    "4cf27a8135",
+    "5058b0b5f2",
+    "518feaea99",
+    "5359e252a0",
+    "5c3e677177",
+    "5e30de9ee8",
+    "5ef3a0537e",
+    "5f75b1e7f6",
+    "6076c7a1a2",
+    "65228c03b3",
+    "65546ad185",
+    "66cb44c2dc",
+    "7016fd5330",
+    "70ad60b9a1",
+    "722aa7faff",
+    "7411c05095",
+    "751c72b291",
+    "7539cfcc1f",
+    "75ad09e541",
+    "77202ba0fc",
+    "786ba539e1",
+    "79d6b65fef",
+    "7b3e63f24d",
+    "7b5690f286",
+    "7e08fa55fd",
+    "7e11a60f88",
+    "805d5c474a",
+    "827c91d800",
+    "82f6fe243f",
+    "84a77feea6",
+    "880c49a2d1",
+    "8d653d8587",
+    "8db8aaea3b",
+    "915e7ab7da",
+    "937c4a3e64",
+    "947f4aad09",
+    "969483f088",
+    "97a2aa29dd",
+    "9c1a1875e7",
+    "9ea3bd3394",
+    "9f2bac1c05",
+    "9fcad1a5cc",
+    "a3bb314215",
+    "a485d3c03a",
+    "a49cf31c6c",
+    "a7f8802c08",
+    "a91351ec22",
+    "a993d16f6e",
+    "ada8b78af8",
+    "adc5269c79",
+    "ae1ab56df2",
+    "b1284f4935",
+    "b12a8b6064",
+    "b5064e141f",
+    "b7e608b482",
+    "b99b939f3f",
+    "bd64911c18",
+    "bd84652be9",
+    "be762396f6",
+    "c2991a87f6",
+    "c664b157c0",
+    "cab34d1c74",
+    "d29fdc12bb",
+    "d89102dc16",
+    "d8b3b209f4",
+    "d9a33cf983",
+    "e03cea741b",
+    "e51f6d97cf",
+    "e5ecebd9aa",
+    "e5ffa40c92",
+    "e627a3984a",
+    "e666e9de6e",
+    "eab042e9de",
+    "ef59709d32",
+    "effb699d16",
+    "f0ff207f52",
+    "f1bc3d19f7",
+    "f3a4630adf",
+    "f3d1d06b13",
+    "f6a246de38",
+    "fd5ce7691e",
+    "fd7b487e8d"
+  ],
+  "candidate_hits": [
+    {
+      "user": "e5ffa40c92",
+      "source": "HumanEngine-EMG\\humanengine\\experiments\\real_teacher_v01\\PREREGISTRATION_PROVENANCE_V01.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "7ed4b73c4c6f54cd43d1ee2167e26e50c1fbd8be284ac56839f680d2dd3a654c"
+    },
+    {
+      "user": "01aff754c1",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "0219627c14",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "03c48f96aa",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "03d49b393e",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "055bb1b487",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "057e6195fe",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "059f336bce",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "06d17ebbe4",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "0adf4a785f",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "0dc695684d",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "0e0e34d703",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "1066cc94fc",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "1223558697",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "1407610453",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "195b39dad8",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "1b89ab145b",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "1c0b9963d7",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "1f6de69ab3",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "20059f07ed",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "2038d88aa3",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "21cfae42e1",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "2251681168",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "22808ee66c",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "232751bf39",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "2478d8eb54",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "2668760727",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "26a8454b40",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "2772dd6ee3",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "2ae025bda1",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "2af4aec870",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "2bbe806971",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "2cc385c3cd",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "2d0838950a",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "2e17a57d54",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "2f97e4c26e",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "3108329190",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "3175245a1b",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "31b6cc13eb",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "323f919c83",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "32473f0e96",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "342248118e",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "34269a8572",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "3669295621",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "3714261337",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "374b365235",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "3875521008",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "38a974a38e",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "3916480018",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "3976352430",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "3b8495fc25",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "3f79dccf7a",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "456bd13d28",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "4cf27a8135",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "5058b0b5f2",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "518feaea99",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "5359e252a0",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "5c3e677177",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "5e30de9ee8",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "5ef3a0537e",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "5f75b1e7f6",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "6076c7a1a2",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "65228c03b3",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "65546ad185",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "66cb44c2dc",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "7016fd5330",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "70ad60b9a1",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "722aa7faff",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "7411c05095",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "751c72b291",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "7539cfcc1f",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "75ad09e541",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "77202ba0fc",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "786ba539e1",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "79d6b65fef",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "7b3e63f24d",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "7b5690f286",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "7e08fa55fd",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "7e11a60f88",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "805d5c474a",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "827c91d800",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "82f6fe243f",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "84a77feea6",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "880c49a2d1",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "8d653d8587",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "8db8aaea3b",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "915e7ab7da",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "937c4a3e64",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "947f4aad09",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "969483f088",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "97a2aa29dd",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "9c1a1875e7",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "9ea3bd3394",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "9f2bac1c05",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "9fcad1a5cc",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "a3bb314215",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "a485d3c03a",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "a49cf31c6c",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "a7f8802c08",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "a91351ec22",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "a993d16f6e",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "ada8b78af8",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "adc5269c79",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "ae1ab56df2",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "b1284f4935",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "b12a8b6064",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "b5064e141f",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "b7e608b482",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "b99b939f3f",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "bd64911c18",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "bd84652be9",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "be762396f6",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "c2991a87f6",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "c664b157c0",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "cab34d1c74",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "d29fdc12bb",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "d89102dc16",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "d8b3b209f4",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "d9a33cf983",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "e03cea741b",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "e51f6d97cf",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "e5ecebd9aa",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "e5ffa40c92",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "e627a3984a",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "e666e9de6e",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "eab042e9de",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "ef59709d32",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "effb699d16",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "f0ff207f52",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "f1bc3d19f7",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "f3a4630adf",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "f3d1d06b13",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "f6a246de38",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "fd5ce7691e",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "fd7b487e8d",
+      "source": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "classification": "KNOWN_METADATA_ONLY",
+      "source_sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8"
+    },
+    {
+      "user": "01aff754c1",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "0219627c14",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "03c48f96aa",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "03d49b393e",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "055bb1b487",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "057e6195fe",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "059f336bce",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "06d17ebbe4",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "0adf4a785f",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "0dc695684d",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "0e0e34d703",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "1066cc94fc",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "1223558697",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "1407610453",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "195b39dad8",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "1b89ab145b",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "1c0b9963d7",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "1f6de69ab3",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "20059f07ed",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "2038d88aa3",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "21cfae42e1",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "2251681168",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "22808ee66c",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "232751bf39",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "2478d8eb54",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "2668760727",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "26a8454b40",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "2772dd6ee3",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "2ae025bda1",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "2af4aec870",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "2bbe806971",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "2cc385c3cd",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "2d0838950a",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "2e17a57d54",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "2f97e4c26e",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "3108329190",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "3175245a1b",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "31b6cc13eb",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "323f919c83",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "32473f0e96",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "342248118e",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "34269a8572",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "3669295621",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "3714261337",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "374b365235",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "3875521008",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "38a974a38e",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "3916480018",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "3976352430",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "3b8495fc25",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "3f79dccf7a",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "456bd13d28",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "4cf27a8135",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "5058b0b5f2",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "518feaea99",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "5359e252a0",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "5c3e677177",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "5e30de9ee8",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "5ef3a0537e",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "5f75b1e7f6",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "6076c7a1a2",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "65228c03b3",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "65546ad185",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "66cb44c2dc",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "7016fd5330",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "70ad60b9a1",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "722aa7faff",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "7411c05095",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "751c72b291",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "7539cfcc1f",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "75ad09e541",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "77202ba0fc",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "786ba539e1",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "79d6b65fef",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "7b3e63f24d",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "7b5690f286",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "7e08fa55fd",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "7e11a60f88",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "805d5c474a",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "827c91d800",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "82f6fe243f",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "84a77feea6",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "880c49a2d1",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "8d653d8587",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "8db8aaea3b",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "915e7ab7da",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "937c4a3e64",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "947f4aad09",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "969483f088",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "97a2aa29dd",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "9c1a1875e7",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "9ea3bd3394",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "9f2bac1c05",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "9fcad1a5cc",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "a3bb314215",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "a485d3c03a",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "a49cf31c6c",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "a7f8802c08",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "a91351ec22",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "a993d16f6e",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "ada8b78af8",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "adc5269c79",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "ae1ab56df2",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "b1284f4935",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "b12a8b6064",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "b5064e141f",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "b7e608b482",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "b99b939f3f",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "bd64911c18",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "bd84652be9",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "be762396f6",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "c2991a87f6",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "c664b157c0",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "cab34d1c74",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "d29fdc12bb",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "d89102dc16",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "d8b3b209f4",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "d9a33cf983",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "e03cea741b",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "e51f6d97cf",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "e5ecebd9aa",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "e5ffa40c92",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "e627a3984a",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "e666e9de6e",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "eab042e9de",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "ef59709d32",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "effb699d16",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "f0ff207f52",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "f1bc3d19f7",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "f3a4630adf",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "f3d1d06b13",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "f6a246de38",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "fd5ce7691e",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    },
+    {
+      "user": "fd7b487e8d",
+      "source": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "classification": "PROVENANCE_CONTACT_REVIEW",
+      "source_sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f"
+    }
+  ],
+  "inventory": [
+    {
+      "path": "_audit_s4\\s4_drift_provenance.json",
+      "sha256": "b63d47396e509e05b9cc502f043c3d9235bd3861c3f6d33deddb2ffee6e9024b",
+      "bytes": 35148,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "_audit_s5\\s11_provenance.json",
+      "sha256": "59e80f2d3d0e63f6416d8bd1d7a6d46adceff76096c376e14b5a6d97fc0a9d6e",
+      "bytes": 1885,
+      "official_identifiers": 1,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "HumanEngine-EMG\\humanengine_design\\EVIDENCE_MANIFEST.json",
+      "sha256": "c7665333eb66f5fd74a2bea1f8bb59088b844377e6e2a7699ff40498e1043c97",
+      "bytes": 67241,
+      "official_identifiers": 1,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\docs\\CONFIRMATORY_RUN_MANIFEST.json",
+      "sha256": "1c65d71579dfac980b2e7e5957b558b417c539fd7e62742449f602329bf0fa2a",
+      "bytes": 54240,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\docs\\CONFIRMATORY_COHORTS.json",
+      "sha256": "55a7d511198d3749ad289a3cee5b0e3b31e5cc42a10c9575108133eaf8f924fc",
+      "bytes": 2817,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\humanengine_design\\EVIDENCE_MANIFEST.json",
+      "sha256": "c7665333eb66f5fd74a2bea1f8bb59088b844377e6e2a7699ff40498e1043c97",
+      "bytes": 67241,
+      "official_identifiers": 1,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\db9_distributional_open_set\\DB9_DISTRIBUTIONAL_MODEL_MANIFEST.json",
+      "sha256": "3e1126d549fde27d600f24eeafac5e78dcf14346f490609b5249a1f9cb412a00",
+      "bytes": 43165,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\db9_distributional_open_set\\DB9_DATA_PROVENANCE_AUDIT.json",
+      "sha256": "ae2e7bb9d9c5a0258ea6cbb219c0eeb44cb12123e93bdc78cbdaf3b0047b6506",
+      "bytes": 26631,
+      "official_identifiers": 1,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\db9_distributional_open_set\\ARTIFACT_MANIFEST.json",
+      "sha256": "d8cfd04985f6cc202367b20a1659808599c01f8dcb5c6e96273ce4ae6cfdd6fe",
+      "bytes": 7438,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\human_semantic_validation\\corpus_integrity_manifest.json",
+      "sha256": "c277dd643e98d3c68081b20aef8f84aa1da38dbf79394043cb326d5184ca5129",
+      "bytes": 58481,
+      "official_identifiers": 1,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\human_semantic_validation\\logs\\staged_site_manifest.json",
+      "sha256": "a64c53eedb111e2e5b6d74eca65c4061b90f802e79a8f6c95ae432ca28e3eab2",
+      "bytes": 8526,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\human_semantic_validation\\hidden\\hidden_sample_manifest.json",
+      "sha256": "d622187cf5d7da229c1eed69fd8b55480dc372d646f3812dec4eb5531f3c7559",
+      "bytes": 767075,
+      "official_identifiers": 1,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\kinmus_task_observability\\KINMUS_OBSERVABILITY_SOURCE_PROVENANCE.json",
+      "sha256": "de50d96e5a4a3111c628d8ce3f53bb16d8581309dc6f84c127c63d2c50496ff1",
+      "bytes": 5358,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\kinmus_task_observability\\ARTIFACT_MANIFEST.json",
+      "sha256": "793915a6b0bb712c9316500a44681cb3f7896b3f558cd08aa63747d12c370647",
+      "bytes": 16733,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\pose_coordinate_audit\\ARTIFACT_MANIFEST.json",
+      "sha256": "8063b6a5ddc8601df078761e172041de027f5df3283d87a79a7956cc072ade16",
+      "bytes": 10375,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\db9_channel_validity\\DB9_SOURCE_PROVENANCE.json",
+      "sha256": "a4479820900a1731beb470241612ddc6c774e3e56bf34fe28eeb917ab6b2b7ea",
+      "bytes": 110332,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\db9_channel_validity\\DB9_CLEAN_REPRESENTATION_MANIFEST.json",
+      "sha256": "40c899f5780c287ec6fc8cd4a065a03f24778ed6f4e6b8845ddb66bd88c4d90a",
+      "bytes": 10088,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\db9_channel_validity\\DB9_CLEAN_MODEL_MANIFEST.json",
+      "sha256": "939ca9569d66736451844d5f90a370e587abc2c928e6524b08505dd0b40cee57",
+      "bytes": 155365,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\db9_channel_validity\\ARTIFACT_MANIFEST.json",
+      "sha256": "9b7e10dad080ddb2758d7618062b8ef2a868cee2d9a2c393d005199c001d2f49",
+      "bytes": 14077,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\human_semantic_validation\\s6_selective_head\\DEVELOPMENT_LABEL_MANIFEST.json",
+      "sha256": "2be4735d2ca188d4953e0d4e184ad6627ebbec3537f902d6b9c980a5f79042c8",
+      "bytes": 115138,
+      "official_identifiers": 1,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\human_semantic_validation\\s6_selective_head\\stagei_c2c7_head\\STAGEI_LABEL_PROVENANCE_AUDIT.json",
+      "sha256": "d3c69fdcbedc0b628adaac8053e5f021449d2679ceb1b7ff6eb88d0bea36ffaa",
+      "bytes": 8244,
+      "official_identifiers": 1,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\human_semantic_validation\\s6_interim_unblind\\HUMAN_COHORT_FREEZE.json",
+      "sha256": "be0f320972a52fa3c2f597391fc2f6a62270a1b309ef1dc58b866d8cfbd32128",
+      "bytes": 4284,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\human_semantic_validation\\s6_interim_unblind\\HUMAN_ANCHOR_MANIFEST.json",
+      "sha256": "74baf37e4f5996f54bd229982daa13bb4342bc40d3457f51aef3cfc90bec3802",
+      "bytes": 30272,
+      "official_identifiers": 1,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\data\\priority_pose_subset\\raw\\tar_index.provenance.json",
+      "sha256": "cb8a6f030e1a7e385fb065b9580b5a44e117821ee7370effee97080e9f039277",
+      "bytes": 274,
+      "official_identifiers": 0,
+      "classification": "KNOWN_METADATA_ONLY"
+    },
+    {
+      "path": "HumanEngine-EMG\\humanengine\\experiments\\real_teacher_v01\\TEACHER_HEALTH_ATTEMPT_02\\EVALUATION_PROVENANCE.json",
+      "sha256": "d8a025b7c6a95b3e1eeb5dc3523f8b960c062eb2a001a654df984144da3022f5",
+      "bytes": 5119,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "HumanEngine-EMG\\humanengine\\experiments\\real_teacher_v01\\PREREGISTRATION_PROVENANCE_V01.json",
+      "sha256": "7ed4b73c4c6f54cd43d1ee2167e26e50c1fbd8be284ac56839f680d2dd3a654c",
+      "bytes": 34519,
+      "official_identifiers": 2,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\human_semantic_validation\\s6_holdout_cue_replication\\HOLDOUT_C_MANIFEST.json",
+      "sha256": "746b5bfef7abb0327bcd232ba9abbc90f9a59be9433c79236ff9891b9a990f91",
+      "bytes": 5846,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\human_semantic_validation\\s6_holdout_cue_replication\\HOLDOUT_A_MANIFEST.json",
+      "sha256": "9f50342f7443dfe818747f73d80a933e49fb618ae88b7487325bfa880bdbf7a9",
+      "bytes": 5865,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\human_semantic_validation\\s6_selective_head\\PROSPECTIVE_UNTOUCHED_TEST_MANIFEST.json",
+      "sha256": "7f6604eb0f2115bd48892583161dac4af58f1a160ad7ef6d0f043bee0e0cee35",
+      "bytes": 50490,
+      "official_identifiers": 1,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\human_semantic_validation\\pilot2_external\\packages\\annotator_D\\package_manifest.json",
+      "sha256": "234aaf2d12cea07dc0f7f88605e9f70f53715689fead5bed57d9e61fe8bb2610",
+      "bytes": 1940,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\human_semantic_validation\\pilot2_external\\packages\\annotator_F\\package_manifest.json",
+      "sha256": "7a743894b553226fd2dd6edfe1ce97cefa3dcd859b51e3788efb378d4510f7dd",
+      "bytes": 1940,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\human_semantic_validation\\pilot2_external\\packages\\annotator_E\\package_manifest.json",
+      "sha256": "10129db206190c5cf9e72b53a9859f34b287f3ba0de8f7a971aa92620e51b2db",
+      "bytes": 1940,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\human_semantic_validation\\pilot2_external\\packages\\annotator_C\\package_manifest.json",
+      "sha256": "bb903e7ee238dfd045a22c8b7378a6fdbc536f40025382f49c311a9dbcf8845f",
+      "bytes": 1940,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\pose_api_dataset_admission\\ARTIFACT_MANIFEST.json",
+      "sha256": "3931275e599f99f04c39205c3caffd8d59170ad2663faeec8df9260986b096a5",
+      "bytes": 39447,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\data\\ninapro_db9\\raw\\manifest.json",
+      "sha256": "8d6048de5b297494ad3415c2ea1af1b502ef59bd2db1700d36d3a1a4414d3eda",
+      "bytes": 12779,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "bootstrap_manifest.json",
+      "sha256": "79f522ab470e6d5bbd597236ad43f73a34850c4b84c929eb563f23e3156cf7ab",
+      "bytes": 6296,
+      "official_identifiers": 1,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\human_semantic_validation\\pilot3\\evaluator\\pilot3_sample_manifest.json",
+      "sha256": "b31619f785880e6d5cb863431c86bb5076038799226805861e4033789c25734d",
+      "bytes": 43456,
+      "official_identifiers": 1,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\human_semantic_validation\\pilot2\\evaluator\\pilot2_sample_manifest.json",
+      "sha256": "5369367843a044b324ebb19bc6fbcebdef700357ce0ef34896c165886aecdadd",
+      "bytes": 42491,
+      "official_identifiers": 1,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\data\\db9_posture16\\subject_manifest.json",
+      "sha256": "ae17e85f853f7c6faf10d5d1ba8e144ee84c03298af2fd9c8df4eb0aa7925996",
+      "bytes": 72861,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\human_semantic_validation\\pilot\\evaluator\\pilot_sample_manifest.json",
+      "sha256": "3d89213e0c5cd9c2ebe70a445bbcbde6a495a8776ad1208b022de255bf2bcaa7",
+      "bytes": 40488,
+      "official_identifiers": 1,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "HumanEngine-EMG\\data\\priority_pose_subset\\raw\\tar_index.provenance.json",
+      "sha256": "cb8a6f030e1a7e385fb065b9580b5a44e117821ee7370effee97080e9f039277",
+      "bytes": 274,
+      "official_identifiers": 0,
+      "classification": "KNOWN_METADATA_ONLY"
+    },
+    {
+      "path": "emg2pose_handstate\\data\\ninapro_db9\\extracted\\unpack_manifest.json",
+      "sha256": "e776771ee2356ce521763e8870482cd45f231def724f34c156a154d1f083ca77",
+      "bytes": 16631,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\dataset_admission_audit_v1\\artifacts\\SHARED10_PROVENANCE.json",
+      "sha256": "7c88e4551f7617bbf47a5f42b285371122f704fd4c4ab26957e8fa1bdbc86ab8",
+      "bytes": 28363,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\dataset_admission_audit_v1\\artifacts\\ARTIFACT_MANIFEST.json",
+      "sha256": "a6a5214e73110f7181245e51c1befc73d3fe3d0ffc80bf82e08b0c54739a53d2",
+      "bytes": 14792,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "emg2pose_handstate\\data\\ninapro_db9\\extracted\\member_fetch_manifest.json",
+      "sha256": "1903f7fb51e3eebf54035e51cd8559a00d92c291532bd1ec9b7a1fd021407a05",
+      "bytes": 91574,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\provenance\\CURATION_MANIFEST.json",
+      "sha256": "8b5c05296fb705c5ddd743eb61101e995c8e049232af47fc42fd4c1172096af3",
+      "bytes": 101313,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\docs\\v1_repository_synthesis_20260924\\EXPERIMENT_REGISTRY.json",
+      "sha256": "b411b1075b6dbb6d46f674a0b539b2cedcc2433ddbbdb7398569f97eb2f79589",
+      "bytes": 17108,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\docs\\CONFIRMATORY_RUN_MANIFEST.json",
+      "sha256": "97c19489a120c60ca2bf32d9f05c985bc378cfade8dc16d2963865f690f218a0",
+      "bytes": 50264,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\docs\\CONFIRMATORY_COHORTS.json",
+      "sha256": "55a7d511198d3749ad289a3cee5b0e3b31e5cc42a10c9575108133eaf8f924fc",
+      "bytes": 2817,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\gate4d_task_aware_gate_benchmark_v1\\COHORT_MANIFEST.json",
+      "sha256": "159a51fecca2caa7f14f1cf3d0db2b9c4acbfcb7a6ab038e3897cd02e99034be",
+      "bytes": 370028,
+      "official_identifiers": 19,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\gate4c_upstream_substitution_reliability_v1\\COHORT_MANIFEST.json",
+      "sha256": "db61d9c75510d78e17b3858943bc3dd052dab61aa041dc260c84e064e619bead",
+      "bytes": 534694,
+      "official_identifiers": 28,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\TOUCHED_USER_REGISTRY.json",
+      "sha256": "6b48d897527c3355b64eddded41585ce4be532847374ed68793c6642fe2cda18",
+      "bytes": 27781,
+      "official_identifiers": 29,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\LOCKED_COHORT_STATUS.json",
+      "sha256": "1e77b52e50805b02738d6d6f9ad2d5b305f046e6776771911339036ddecd052c",
+      "bytes": 1641,
+      "official_identifiers": 20,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\final_untouched_cohort_audit_v1\\ELIGIBLE_USER_REGISTRY.json",
+      "sha256": "a175a1496b63eb746c73dcae5e8378af7a937b826db082e100b5637ec07c0de8",
+      "bytes": 194143,
+      "official_identifiers": 164,
+      "classification": "KNOWN_METADATA_ONLY"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\final_joint_confirmation_v1\\FINAL_COHORT_MANIFEST.json",
+      "sha256": "8820158c3942c56432a900bb809e1e17ad6b4332183b273ea0b01b0bf38d8afe",
+      "bytes": 365042,
+      "official_identifiers": 20,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\audits\\dataset_admission\\artifacts\\SHARED10_PROVENANCE.json",
+      "sha256": "a6c470906772256ee702f577c2cb3c18cd78fab2efc5f7d1c46e3885294f41d2",
+      "bytes": 28365,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\audits\\dataset_admission\\artifacts\\ARTIFACT_MANIFEST.json",
+      "sha256": "54d56730eaa464a2f25d0e15e7c2c66d575e125774927daebc7fe51d4f2037ec",
+      "bytes": 14785,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\DATA_ACQUISITION_MANIFEST.json",
+      "sha256": "46d66364f5bba93550b37df0d656474d84d3ee11d3b2f47bbfde95234b9df7d8",
+      "bytes": 1020790,
+      "official_identifiers": 28,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\COHORT_MANIFEST.json",
+      "sha256": "def6c5e70773241389101d1789df5e389146ed748b1d5e0b87b336a3e82af96f",
+      "bytes": 127453,
+      "official_identifiers": 193,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\artifacts\\UPSTREAM_CHECKPOINT_PROVENANCE.json",
+      "sha256": "c6ff0c6c9bb701f4917714a12bbbb91b118b69995991ea2f19106e5653099bd0",
+      "bytes": 1419,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\gate4b_multiuser_reliability\\artifacts\\DATA_MANIFEST.json",
+      "sha256": "7123357b984aea9e39c79bae32289279af5c1db8775fda6fc6a85f543b8dd880",
+      "bytes": 748015,
+      "official_identifiers": 28,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\gate4e_customer_flip_gate_v1\\METHOD_MANIFEST.json",
+      "sha256": "62531ed09eaec831acabc443f0742f15bbca1e2b0b2781c4d0261cd060d7ce25",
+      "bytes": 1845,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\gate4e_customer_flip_gate_v1\\FEATURE_MANIFEST.json",
+      "sha256": "13f0174503f19c82e62f7ea6331e85449c102e3cd8df8bdef643f545880bf7f5",
+      "bytes": 1462,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\gate4e_customer_flip_gate_v1\\COHORT_MANIFEST.json",
+      "sha256": "b447726e789b47e557b9fa65f8b30d64b2fca4a613143a5ec07748c5e37a6b98",
+      "bytes": 370028,
+      "official_identifiers": 19,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\gate4f_class_balanced_flip_gate_v1\\METHOD_MANIFEST.json",
+      "sha256": "8c8d991bc2ff2be7c5874466bc1af5e89f7f969b810f9012462de8eea1d99acc",
+      "bytes": 2434,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\gate4f_class_balanced_flip_gate_v1\\FEATURE_MANIFEST.json",
+      "sha256": "13f0174503f19c82e62f7ea6331e85449c102e3cd8df8bdef643f545880bf7f5",
+      "bytes": 1462,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\gate4f_class_balanced_flip_gate_v1\\COHORT_MANIFEST.json",
+      "sha256": "b447726e789b47e557b9fa65f8b30d64b2fca4a613143a5ec07748c5e37a6b98",
+      "bytes": 370028,
+      "official_identifiers": 19,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\observability\\kinmus_phase\\KINMUS_OBSERVABILITY_SOURCE_PROVENANCE.json",
+      "sha256": "420dae3894cd41b895b63e4ece2288aaa1e2085826e0743c71a35f94df98f67c",
+      "bytes": 5360,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\observability\\kinmus_phase\\ARTIFACT_MANIFEST.json",
+      "sha256": "793915a6b0bb712c9316500a44681cb3f7896b3f558cd08aa63747d12c370647",
+      "bytes": 16733,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\paper_supplement_v1_20261009\\LOCAL_INPUT_MANIFEST.json",
+      "sha256": "322744642e503728b9ab6fbf03d762212699880a8bf759a6e367232ec80b4369",
+      "bytes": 72286,
+      "official_identifiers": 20,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\gate3_formal_substitution\\artifacts\\GATE3_DATA_MANIFEST.json",
+      "sha256": "af14671bd9ae99b137598127cdfe402f30b59263ad3e8877de59bb04bd01f530",
+      "bytes": 25136,
+      "official_identifiers": 1,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\paper_closing_v1_20261010\\SOURCE_TRANSFER_MANIFEST.json",
+      "sha256": "1b55ec13894297996c752585f6f1e31f25bc65d510fe944ec7ce4dc75b56c14c",
+      "bytes": 4046,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\paper_supplement_v1_20261009\\RESULT_TRANSFER_MANIFEST.json",
+      "sha256": "1b55ec13894297996c752585f6f1e31f25bc65d510fe944ec7ce4dc75b56c14c",
+      "bytes": 4046,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\paper_closing_v1_20261010\\results\\RUN_MANIFEST.json",
+      "sha256": "817030f4f65c7281cd56757e5a0248d60f2f634fa7a56d4ec840ad78c2382a0e",
+      "bytes": 2551,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\paper_supplement_v1_20261009\\existing_record_analysis\\ARTIFACT_MANIFEST.json",
+      "sha256": "9462656b91b88ffe4946b388196a83d30c657c8b88dd2d6490707289cdb66ac6",
+      "bytes": 1832,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\paper_closing_v1_20261010\\CACHE_BACKUP_MANIFEST.json",
+      "sha256": "dd3b845b4ca00e27f8a3db34706f7326a9f7d2321badbb33322ad96562c6dba6",
+      "bytes": 207,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\paper_closing_v1_20261010\\INPUT_MANIFEST.json",
+      "sha256": "b79f502996f2cff8af45ddabf3e26cf286aecd0d8be4e24549e2c14040997249",
+      "bytes": 3689,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\paper_closing_v1_20261010\\RELEASE_CONTENT_MANIFEST.json",
+      "sha256": "94bc8ccced15b00a290b141122e4d20664109504c245b85f1b473a7b081254bc",
+      "bytes": 22539,
+      "official_identifiers": 0,
+      "classification": "KNOWN_METADATA_ONLY"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\paper_closing_v1_20261010\\manuscript_closing\\BUILD_MANIFEST.json",
+      "sha256": "989b72c9dfe492786c690f282bd1d3e1a53b6c13cd7edc2ce42815c46b529e3f",
+      "bytes": 2785,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\paper_closing_v1_20261010\\REPORTING_SEED_BACKUP_MANIFEST.json",
+      "sha256": "b594bb4550a59c668ac5700c0ac7c39b81790873a397b4bfc99d24977a0d653f",
+      "bytes": 9070,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    },
+    {
+      "path": "common-pose\\experiments\\upstream_substitution\\paper_closing_v1_20261010\\reproduction_attempt3_8threads\\seed_results\\RUN_MANIFEST.json",
+      "sha256": "44bdcce88ff0d8f3c65e6465a851cc0f5742c639a69a0a01b687d7cc3c1b1d23",
+      "bytes": 2973,
+      "official_identifiers": 0,
+      "classification": "PROVENANCE_CONTACT_REVIEW"
+    }
+  ],
+  "code_sha256": "fbdac450f2677603fd742b7a0a4d5d28df1649011d5c551e2929a4958e35a848",
+  "limitations": "rg default ignore rules exclude private raw/cache directories; complete remote/private/outside-root and unsaved interactive history is not established by this inventory; no candidate outcome values read"
+}

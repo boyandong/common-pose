@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETE_DIAGNOSTIC",
+  "initial_backend_flags": {
+    "matmul_tf32": false,
+    "cudnn_tf32": true,
+    "precision": "highest",
+    "cudnn_deterministic": false,
+    "cudnn_benchmark": false
+  },
+  "failures": [],
+  "records": 3,
+  "policies": 3,
+  "original_caches_replaced": false,
+  "main_experiment_inputs_changed": false,
+  "scope": "bounded_audit_not_exhaustive_hardware_equivalence"
+}

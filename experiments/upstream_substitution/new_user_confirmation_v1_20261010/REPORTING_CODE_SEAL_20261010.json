@@ -1,0 +1,11 @@
+{
+  "status": "REPORTING_FORMAT_SEALED_DURING_SOURCE_TRANSFER",
+  "scientific_methods_or_protocol_changed": false,
+  "old_manuscript_anchor": "1fc75512698c92d4bd11cf52e660c8814b1ac127",
+  "files": {
+    "REPORTING_PLAN_BEFORE_OUTCOMES_20261010.md": "b13a60f73c32cf9f237eea656aa9307e95b2c10a7521eb341e1c3bf0fb3a2d46",
+    "build_confirmation_report.py": "307c3af1bc064b7fdc8c1ff256f8324cd605043ad1d45ed2699acc8be607cccb"
+  },
+  "effects_read_before_format_seal": false,
+  "required_gate": "independent experiment verification and complete off-host backup before rendering"
+}

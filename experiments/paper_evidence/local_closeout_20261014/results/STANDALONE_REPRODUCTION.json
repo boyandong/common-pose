@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "deterministic_csv_comparisons": {
+    "EXISTING_MATCHED_FEATURE_CONTRASTS.csv": true,
+    "FIXED_THRESHOLD_EVALUATION.csv": true,
+    "JOINT_SUPPORT_SENSITIVITY.csv": true,
+    "MAIN_FIGURE_DATA.csv": true,
+    "MISSING_REFERENCE_BOUNDS.csv": true,
+    "MISSING_REFERENCE_BOUND_SUMMARY.csv": true,
+    "PAIRED_INTERVALS_ALL_BUDGETS.csv": true,
+    "PARTICIPANT_PAIRED_DIFFERENCES.csv": true,
+    "PRIMARY_PAIRED_INTERVALS.csv": true,
+    "REFERENCE_SUPPORT.csv": true
+  },
+  "clean_directory": "experiments\\paper_evidence\\local_closeout_20261014\\reproduction_bundle",
+  "execution_stdout": "COHORT_ANALYSIS_COMPLETE N80\nCOHORT_ANALYSIS_COMPLETE A20\n",
+  "scope": "participant-table numerical reproduction; not independent human execution"
+}

@@ -1,0 +1,14 @@
+{
+  "consumer": "CeTI posture",
+  "users": 57,
+  "classes": 8,
+  "test_units": 8208,
+  "unit": "block",
+  "pooled_BA": 0.5856481481481481,
+  "archived_BA": 0.5856481481481481,
+  "prediction_mismatches": 0,
+  "fold_fit_seconds": 0.235000000015134,
+  "wall_seconds": 0.3600000000005821,
+  "source_input_sha256": "8796d93e0c940aa7d2386fb62d09b9434fc87afa56f9090348c6cde91c07e418",
+  "status": "PASS_EXACT_OOF_REPRODUCTION"
+}

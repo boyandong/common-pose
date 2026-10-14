@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-14 Asia/Shanghai",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "inputs": {
+    "docs\\papers\\20261014_v4_5_independent_review\\evidence\\A20_USER_COVERAGE_SERVICE.csv": "20726874a18e645b7552533229e5e503f2ff9c2bde72cf0bc765de9d8330dd00",
+    "docs\\papers\\20261014_v4_5_independent_review\\evidence\\N80_USER_COVERAGE_SERVICE.csv": "301c1cbababf8755719fa4289ba5f7d3aa1ca5b8362500fe9dbdd9028c4d5fd5",
+    "experiments\\multi_consumer\\db9_no_calibration_v2_20261011\\source\\C1_legacy.npz": "39ffcaf5ff67e8ad3a271e70bcbbea06c9e5102ee1b4ef083097b15ebda77412",
+    "experiments\\multi_consumer\\db9_no_calibration_v2_20261011\\remote_results\\source_results\\C1_legacy_6_oof.npz": "db3ee3563ffa25c0c61f220bb4bf03d877f2b9c566257949b31a4aa6666b09d4",
+    "experiments\\multi_consumer\\db9_no_calibration_v2_20261011\\remote_results\\source_results\\C1_legacy_6_summary.json": "90fc27d63b60bde8ee36e0abe74bade383df16bfb6870279deb536c21e12364e",
+    "experiments\\multi_consumer\\consumer2_db9c_source_v1_20261011\\source_arrays.npz": "5c9a0b18f90c09523e4924cf6098e638d0b623a671b3d16cb9e39b8725fbb5d2",
+    "experiments\\multi_consumer\\consumer2_db9c_source_v1_20261011\\source_predictions.npz": "48ecf8e54cdc1a7d96650303a07c020d576bbd3d6f34a559fc2d50011c787fa5",
+    "experiments\\multi_consumer\\consumer2_db9c_source_v1_20261011\\RESULTS.json": "fdad1fbf226730cb0853b936b04045581482f14cc2b882df4df7b80ec1f6f522",
+    "experiments\\multi_consumer\\ceti_age_scoreonly_v3_20261012\\prepared_source\\C1_source_blocks.npz": "8796d93e0c940aa7d2386fb62d09b9434fc87afa56f9090348c6cde91c07e418",
+    "experiments\\multi_consumer\\ceti_age_scoreonly_v3_20261012\\verified_source\\source_results\\C1_full_trial_6_OOF.npz": "03feda8a3bb96dc82555625cd243875e7428320c5a042129bce042b22296e1bb",
+    "experiments\\multi_consumer\\ceti_age_scoreonly_v3_20261012\\verified_source\\source_results\\C1_budget6_receipt.json": "ac98fdc08ee7633a038c671df979e1cb14e2b2e62c6f34ab512da0ea1bb15f9e",
+    "experiments\\multi_consumer\\ceti_age_scoreonly_v3_20261012\\prepared_source\\C2_source_blocks.npz": "e97e3177d200df43c0dadcd16780de16b86dd0135a1447cd7c276a08abca647a",
+    "experiments\\multi_consumer\\ceti_age_scoreonly_v3_20261012\\verified_source\\source_results\\C2_full_trial_6_OOF.npz": "ad393a10c37b1bed26c131cc95eec207c9bcf2eb9a515b39d924175c7a564459",
+    "experiments\\multi_consumer\\ceti_age_scoreonly_v3_20261012\\verified_source\\source_results\\C2_budget6_receipt.json": "4be9991effc78514b62fec201011bde542167844ac77fedb47adcd2f127925b4",
+    "experiments\\multi_consumer\\show3d_scoreonly_v3_20261012\\prepared_source\\C1_source_blocks.npz": "6c55f6a4386b56272e5ab3794e8631095fc37d4c96f708451e9eefa195c4943c",
+    "experiments\\multi_consumer\\show3d_scoreonly_v3_20261012\\verified_remote\\source_results\\C1_all_OOF.json": "74e9c9fb4caf0f372c723bace9ef3345a4d7e1c12e3c269db9267c416a479aa1",
+    "experiments\\multi_consumer\\show3d_scoreonly_v3_20261012\\verified_remote\\source_results\\C1_all_receipt.json": "0ec2e17f3569c47c3c0f81cd1766e2290cd2cb7173f34273062cf4b6143f02ac",
+    "experiments\\multi_consumer\\kinmus_uji_scoreonly_v3_20261012\\prepared_source\\C1_source_blocks.npz": "323bba9f18be7fdd6192556982fa3b81f2fd155d63a568740db9217897f5b64b",
+    "experiments\\multi_consumer\\kinmus_uji_scoreonly_v3_20261012\\verified_remote\\source_results\\C1_all_OOF.json": "643163303eede97bb29280e37e7e7ca8588d6a9559573ec0f7da0845b4326ac2",
+    "experiments\\multi_consumer\\kinmus_uji_scoreonly_v3_20261012\\verified_remote\\source_results\\C1_all_receipt.json": "ab5cec55a508a0b3b0ede4ebb0c45335610c53102f28d6fe46b4e3479541d645",
+    "experiments/multi_consumer/v3_ub_four_candidates_20261012/verified_ub_results.tar.gz": "4c9fa3007694b78ef0c328d4e41e5ebf4e37907de764db9cea015ffd62ed2b14",
+    "experiments/multi_consumer/v3_full_tta_ablation_20261012/verified_ub_results.tar.gz": "0d0ea56fecf852f0cf85b47f3de61167f334dc01e49405e275c18bdffdb82db4",
+    "experiments/multi_consumer/n80_serialization_repair_20261012/verified_local_results/evaluation/FROZEN_REGISTRY.json": "0229b47263d7a28feb880081e93e2aae399cf2789b56dca26924ae6dd3722f83",
+    "experiments/multi_consumer/n80_serialization_repair_20261012/CACHE_EXECUTION.json": "35dda4e13ea2195bf2f61187dc957ca3bb2955c254bf3be25bfc63069c997f1b"
+  },
+  "analysis_code": {
+    "analyze_local.py": "57ecacfe7aff60ad40a8076e660cc5eaf9b49d4b76bf24850ce187b860c686c1",
+    "archive_and_time_audit.py": "c114cb06dd873a8aeae9650f80d90277943ae2b4fb5f2ac1a3a7ff5a85a03b8e",
+    "replay_source_loso.py": "83a82c7b48302ef3c77012c821c249adea65820da9db78f395f89087663b6074",
+    "verify_local.py": "43c5ae1f61e8a82ca53348664188313a3b28801ff3dae1c62de46a853c014b48"
+  },
+  "spec_sha256": "0b43ac63a036ca3bfcb27f072992539fa45d18b7bd98fbbf0b3ce488eba04fab",
+  "versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.2",
+    "joblib": "1.5.2"
+  },
+  "python": "3.11.13",
+  "bootstrap_replicates": 10000,
+  "master_seed": 20261014,
+  "no_remote": true
+}

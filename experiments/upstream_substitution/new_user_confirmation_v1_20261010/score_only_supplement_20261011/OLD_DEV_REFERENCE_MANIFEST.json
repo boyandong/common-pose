@@ -1,0 +1,141 @@
+{
+  "N80_features_or_effects_read": false,
+  "features": {
+    "0816388460": {
+      "path": "paper_supplement_v1_20261009/features/DEV/0816388460.npz",
+      "rows": 94247,
+      "sha256": "faab79586bd5704e2797a654c6d5325dea6ac421fd1686da3927c8dbe9bdbb58"
+    },
+    "13b8b5f76d": {
+      "path": "paper_supplement_v1_20261009/features/DEV/13b8b5f76d.npz",
+      "rows": 104776,
+      "sha256": "53932a0093f69e1aa544e17d6423c633366a25dd294aaf7b90d8a3ea6acf164d"
+    },
+    "2132c5d085": {
+      "path": "paper_supplement_v1_20261009/features/DEV/2132c5d085.npz",
+      "rows": 107402,
+      "sha256": "b20b6304a58592ad3b342af97c12f90cfd45fd1e734901095a601df30120a7a9"
+    },
+    "2327817653": {
+      "path": "paper_supplement_v1_20261009/features/DEV/2327817653.npz",
+      "rows": 112103,
+      "sha256": "10e3497e2b1726d2a0b9d8dd771b121c6c5fe844e394aa67f2a8eba8c001a066"
+    },
+    "23b817e892": {
+      "path": "paper_supplement_v1_20261009/features/DEV/23b817e892.npz",
+      "rows": 101534,
+      "sha256": "755829fc2d1407f30e5b674bd52cdee58df59c1098fa1c8f9e30865b47ddad9a"
+    },
+    "2be40c4380": {
+      "path": "paper_supplement_v1_20261009/features/DEV/2be40c4380.npz",
+      "rows": 98788,
+      "sha256": "e2889b4bad62facf0ee0356d961f4120ba6c9d159f1c3e03fa8a4b3085ef0ffb"
+    },
+    "2e45fde443": {
+      "path": "paper_supplement_v1_20261009/features/DEV/2e45fde443.npz",
+      "rows": 87846,
+      "sha256": "4d3acf305b3683fb2e5e755e9ba5d4b349d6eea0e2156e95db1abce9d6dff7df"
+    },
+    "32cbfe3221": {
+      "path": "paper_supplement_v1_20261009/features/DEV/32cbfe3221.npz",
+      "rows": 99904,
+      "sha256": "4e5e6d74be45a925bf59b2060540eaa33883632e3abd8cccdb1d3a27bbceadb4"
+    },
+    "3589743749": {
+      "path": "paper_supplement_v1_20261009/features/DEV/3589743749.npz",
+      "rows": 62469,
+      "sha256": "929ff294f8be11cf0273cfa6d53e8bab23cbe183e669a22681fc1c37b5ec6e70"
+    },
+    "47c605ad6f": {
+      "path": "paper_supplement_v1_20261009/features/DEV/47c605ad6f.npz",
+      "rows": 72749,
+      "sha256": "05f234c0d294b2d21bcacef57c762e4e2091511c661d695c239ff931f0dba8cd"
+    },
+    "54c854b839": {
+      "path": "paper_supplement_v1_20261009/features/DEV/54c854b839.npz",
+      "rows": 89728,
+      "sha256": "10379773d24606453ae60518c366b790a4e3fbc3ca92dd980b5b3387180daadc"
+    },
+    "6a7fc66366": {
+      "path": "paper_supplement_v1_20261009/features/DEV/6a7fc66366.npz",
+      "rows": 90915,
+      "sha256": "6155d64f0bada6f7c7ebc519782d72b9b802a3c6585d1839abbc28730af178b8"
+    },
+    "7afcdcd6be": {
+      "path": "paper_supplement_v1_20261009/features/DEV/7afcdcd6be.npz",
+      "rows": 99876,
+      "sha256": "372024b722a8f0bed6e5628a471bd21268d890646376be3b8229f7f247e544e9"
+    },
+    "87aa3b3887": {
+      "path": "paper_supplement_v1_20261009/features/DEV/87aa3b3887.npz",
+      "rows": 100449,
+      "sha256": "bb992e27ed33ea219c9c0484088e8f94198fdea5a6ead05c10d8ecc212267560"
+    },
+    "8bd1c0ff16": {
+      "path": "paper_supplement_v1_20261009/features/DEV/8bd1c0ff16.npz",
+      "rows": 104670,
+      "sha256": "a743aed9873b51bc6de1b78993797ba0edade81df4322af6adc942dae173272e"
+    },
+    "9b8c99cdc2": {
+      "path": "paper_supplement_v1_20261009/features/DEV/9b8c99cdc2.npz",
+      "rows": 99063,
+      "sha256": "5f69b9a02c164e78d4093d63f16f1b9f513547dff59df57ae46bc9cfc1221277"
+    },
+    "ce52651f99": {
+      "path": "paper_supplement_v1_20261009/features/DEV/ce52651f99.npz",
+      "rows": 94001,
+      "sha256": "5302dc082dadc566ec0428b7fea7b244d22e24a3a0b4656a3e088c2f6f94edee"
+    },
+    "dd810188d9": {
+      "path": "paper_supplement_v1_20261009/features/DEV/dd810188d9.npz",
+      "rows": 95845,
+      "sha256": "67a65a46c075b401d00d409037c0cf025403826e9107cd7457455fdae7d456d2"
+    },
+    "f1b6a408bf": {
+      "path": "paper_supplement_v1_20261009/features/DEV/f1b6a408bf.npz",
+      "rows": 64112,
+      "sha256": "cacf9d866d2af22b525756bded638cd49a42034556ec819b7ce82c424a262546"
+    }
+  },
+  "model_registration_sha256": "d8bed63d657d197327fd17bbb09068f16331b26c0db02579e74c4fb6c52a4601",
+  "old_DEV_Flip_read": false,
+  "reference_path": "private_admission/OLD_DEV_REFERENCE_SCORES.npz",
+  "reference_sha256": "bdcf3a1d83b08048b01354db7bf3d35369aeba54d4da8850bcfdebc38dc5db37",
+  "runtime": {
+    "joblib": "1.5.2",
+    "numpy": "1.26.4",
+    "python": "3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]",
+    "sklearn": "1.5.2",
+    "threadpools": [
+      {
+        "architecture": "Prescott",
+        "filepath": "<PROJECT_ROOT>\\.venv-score-only-20261010\\Lib\\site-packages\\numpy.libs\\libopenblas64__v0.3.23-293-gc2f4bdbb-gcc_10_3_0-2bde3a66a51006b2b53eb373ff767a3f.dll",
+        "internal_api": "openblas",
+        "num_threads": 8,
+        "prefix": "libopenblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.23.dev"
+      },
+      {
+        "filepath": "<PROJECT_ROOT>\\.venv-score-only-20261010\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+        "internal_api": "openmp",
+        "num_threads": 8,
+        "prefix": "vcomp",
+        "user_api": "openmp",
+        "version": null
+      },
+      {
+        "architecture": "Haswell",
+        "filepath": "<PROJECT_ROOT>\\.venv-score-only-20261010\\Lib\\site-packages\\scipy.libs\\libopenblas_v0.3.27--3aa239bc726cfb0bd8e5330d8d4c15c6.dll",
+        "internal_api": "openblas",
+        "num_threads": 8,
+        "prefix": "libopenblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.27"
+      }
+    ]
+  },
+  "status": "ALL19_OLD_DEV_REFERENCE_VECTORS"
+}

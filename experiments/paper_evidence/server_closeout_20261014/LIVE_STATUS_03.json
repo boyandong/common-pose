@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "stdout": "{\"PIPELINE_STATE.json\": {\"status\": \"RUNNING\", \"stage\": \"independent_verification\", \"controller_pid\": 2885, \"completed\": [\"gpu_cost\", \"factorial_fit\", \"factorial_evaluation\", \"lag_window_sensitivity\"], \"elapsed_seconds\": 2205.667126439512}, \"PROGRESS.json\": {\"stage\": \"lag_and_window_sensitivity\", \"cohort\": \"N80\", \"completed_users\": 80, \"users\": 80, \"pid\": 3470}}\n",
+  "stderr": ""
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS_ISOLATED_PORTABLE_ENGLISH_COMPILE",
+  "files_required": [
+    "CommonPose_EMBC2027_V5_2_EN.tex",
+    "IEEEtran.cls",
+    "figures/fig1_compact.pdf",
+    "figures/fig2_N80_ranking.pdf",
+    "figures/fig3_class_fidelity.pdf"
+  ],
+  "full_English_source_has_external_text_or_bib_dependency": false,
+  "engine": "Tectonic 0.17.0+20260731",
+  "build_ps1_tested": true,
+  "compiled_pdf_pages": 5,
+  "compiled_pdf_sha256": "6b1af78c40bb8180c654c723e5c5bc07312e1fd124556ec5d56a48a0011a7796",
+  "all_five_page_texts_and_content_streams_identical_to_delivered_pdf": true,
+  "binary_pdf_hash_match_expected": false,
+  "reason": "Compilation generates a new PDF creation timestamp; bytewise PDF equality is not a content criterion. Sources, all five page texts and page content streams match exactly.",
+  "local_Chinese_font_required_for_English": false
+}

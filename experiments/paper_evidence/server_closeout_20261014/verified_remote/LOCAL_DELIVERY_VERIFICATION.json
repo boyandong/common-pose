@@ -1,0 +1,8 @@
+{
+  "status": "PASS_COMPLETE_VERIFIED_LOCAL_DELIVERY",
+  "package_sha256": "1091477be69562e95fc8c00bd6b85574975bf4fb7b4d89175542c74118ab637d",
+  "contained_files_verified": 107,
+  "regular_safe_members_only": true,
+  "new_models": 60,
+  "remote_independent_checks": 1370496
+}

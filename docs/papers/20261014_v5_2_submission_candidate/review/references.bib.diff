@@ -1,0 +1,18 @@
+--- V5.1/references.bib
++++ V5.2/references.bib
+@@ -12,12 +12,12 @@
+ }
+ @misc{cui2025cpep,
+   title = {{CPEP}: Contrastive {Pose-EMG} Pre-training Enhances Gesture Generalization on {EMG} Signals},
+-  author = {Cui, Wenhui and Sandino, Christopher M. and Pouransari, Hadi and Liu, Ran and Minxha, Juri and Zippi, Ellen L. and Verma, Aman and Sedlackova, Anna and Azemi, Erdrin and Mahasseni, Behrooz},
++  author = {Cui, Wenhui and Sandino, Christopher and Pouransar, Hadi and Liu, Ran and Minxha, Juri and Zippi, Ellen L. and Verma, Aman and Sedlackova, Anna and Azemi, Erdrin and Mahasseni, Behrooz},
+   year = {2025},
+   eprint = {2509.04699},
+   archivePrefix = {arXiv},
+-  note = {arXiv:2509.04699},
+-  url = {https://arxiv.org/abs/2509.04699}
++  note = {arXiv:2509.04699v3; NeurIPS 2025 Foundation Models for the Brain and Body Workshop},
++  url = {https://arxiv.org/abs/2509.04699v3}
+ }
+ @inproceedings{cui2026embridge,
+   title = {{EMBridge}: Enhancing Gesture Generalization from {EMG} Signals Through Cross-modal Representation Learning},

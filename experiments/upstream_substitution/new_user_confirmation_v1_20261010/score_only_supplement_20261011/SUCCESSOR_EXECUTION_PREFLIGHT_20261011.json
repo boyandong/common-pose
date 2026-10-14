@@ -1,0 +1,128 @@
+{
+  "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+  "effect_values_read": false,
+  "git_head": "c27b8d56db2adaf4c483d3f41e2edbde02e9097c",
+  "local_handles": [
+    {
+      "Id": 10548,
+      "start_time": "2026-10-11T02:43:30.6872806+08:00"
+    }
+  ],
+  "local_source_bytes_rehashed": 50213536592,
+  "local_source_files_rehashed": 2768,
+  "observed_local_time": "2026-10-11T02:44:01.446502+08:00",
+  "original_protocol_sha256": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a",
+  "primary_stages": {
+    "analysis": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    },
+    "qualification": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    },
+    "reconstruction": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    },
+    "support": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    },
+    "verification": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    }
+  },
+  "remote_preflight": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5090 D",
+    "gpu_state": "NVIDIA GeForce RTX 5090 D, 4 MiB, 32607 MiB, 0 %\n",
+    "python": "3.10.13",
+    "remaining_bytes": 137765736448,
+    "scientific_processes": [],
+    "source_files": 2768,
+    "status": "PASS",
+    "supplement_existing_files_verified": [
+      "MODEL_REGISTRATION.json",
+      "MODEL_REGISTRATION.json.sha256",
+      "OLD_DEV_REFERENCE_MANIFEST.json",
+      "OLD_DEV_REFERENCE_MANIFEST.json.sha256",
+      "RUNTIME_ADMISSION.json",
+      "SCIENTIFIC_SPEC.md",
+      "TIMING_AND_RUNTIME_PREFLIGHT.json",
+      "TIMING_AND_RUNTIME_PREFLIGHT.json.sha256",
+      "analyze_score_only.py",
+      "frozen_models/B_FINAL_DEV_ONLY_score_only.joblib",
+      "frozen_models/B_FINAL_DEV_ONLY_score_only_INSTANCE.json",
+      "frozen_models/U_FINAL_DEV_ONLY_score_only.joblib",
+      "frozen_models/U_FINAL_DEV_ONLY_score_only_INSTANCE.json",
+      "prepare_runtime_admission.py",
+      "private_admission/OLD_DEV_REFERENCE_SCORES.npz",
+      "source_provenance/INDEPENDENT_VERIFICATION.json",
+      "source_provenance/SCIENTIFIC_SPEC.md",
+      "source_provenance/results/RUN_MANIFEST.json",
+      "verify_runtime_admission.py"
+    ],
+    "supplement_files_pending_immutable_sync": [
+      "EXECUTION_AMENDMENT.md",
+      "GOAL_SCOPE_AMENDMENT.json",
+      "GOAL_SCOPE_AMENDMENT.json.sha256",
+      "build_score_only_report.py",
+      "export_integrated_backup_manifest.py",
+      "run_integrated_pipeline.py",
+      "run_supplement_job.py",
+      "test_supplement_contracts.py",
+      "verify_score_only.py"
+    ],
+    "supplement_stages": {
+      "analysis": {
+        "directory_exists": false,
+        "dispatch_exists": false
+      },
+      "backup_export": {
+        "directory_exists": false,
+        "dispatch_exists": false
+      },
+      "support": {
+        "directory_exists": false,
+        "dispatch_exists": false
+      },
+      "verification": {
+        "directory_exists": false,
+        "dispatch_exists": false
+      }
+    },
+    "threadpools": [
+      {
+        "architecture": "SapphireRapids",
+        "filepath": "/root/miniconda3/envs/commonpose-supplement/lib/python3.10/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+        "internal_api": "openblas",
+        "num_threads": 8,
+        "prefix": "libopenblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.23.dev"
+      },
+      {
+        "filepath": "/root/miniconda3/envs/commonpose-supplement/lib/python3.10/site-packages/torch/lib/libgomp.so.1",
+        "internal_api": "openmp",
+        "num_threads": 8,
+        "prefix": "libgomp",
+        "user_api": "openmp",
+        "version": null
+      }
+    ],
+    "torch": "2.8.0+cu128",
+    "versions": {
+      "joblib": "1.4.2",
+      "numpy": "1.26.4",
+      "scikit-learn": "1.5.2",
+      "scipy": "1.13.1",
+      "threadpoolctl": "3.7.0"
+    }
+  },
+  "status": "PASS_READY_FOR_SINGLE_INTEGRATED_LAUNCH",
+  "supplement_code_seal_sha256": "aebe0573e0e332c923e9c27fb0ee4611b5e10a32ef89bd796d208b51c1f7eec3",
+  "supplement_sealed_files_checked": 28
+}

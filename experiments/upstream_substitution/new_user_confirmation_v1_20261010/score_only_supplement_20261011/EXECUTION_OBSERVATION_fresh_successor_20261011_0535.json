@@ -1,0 +1,105 @@
+{
+  "effect_values_read": false,
+  "local_python_handles": {
+    "Id": 28524,
+    "start_time": "2026-10-11T05:33:28.9212239+08:00"
+  },
+  "local_terminal_receipt_present": false,
+  "observed_local_time": "2026-10-11T05:33:29.966130+08:00",
+  "source_qualification": {
+    "bad_users": [],
+    "effects_read": false,
+    "files": 2768,
+    "minimum_user_valid_blocks": 38865,
+    "status": "PASS",
+    "users": 80,
+    "valid_block_total": 7111408
+  },
+  "stages": {
+    "analysis": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "qualification": {
+      "LAUNCH.json": {
+        "child_pid": 30680,
+        "code_seal_sha256": "98f6e32909af8b2bf97527422389a657a755b080cbfb981a04dee14714cc7679",
+        "command": [
+          "/root/miniconda3/envs/commonpose-supplement/bin/python",
+          "-u",
+          "/root/work/common-pose/experiments/upstream_substitution/new_user_confirmation_v1_20261010/qualify_sources.py"
+        ],
+        "parent_pid": 30679,
+        "stage": "qualification",
+        "started_epoch": 1791658283.3416677
+      },
+      "TERMINAL.json": {
+        "exit_code": 0,
+        "finished_epoch": 1791658434.0944428,
+        "output_log_sha256": "820baf3ee71d7ee651cddac6b8554250be772bbb9be630349057a49243386149",
+        "stage": "qualification",
+        "started_epoch": 1791658283.3416677
+      },
+      "actual_handles": [],
+      "dispatch": {
+        "dispatched_epoch": 1791658283.2938507,
+        "pid": 30679,
+        "stage": "qualification"
+      },
+      "state": "TERMINAL"
+    },
+    "reconstruction": {
+      "LAUNCH.json": {
+        "child_pid": 30785,
+        "code_seal_sha256": "98f6e32909af8b2bf97527422389a657a755b080cbfb981a04dee14714cc7679",
+        "command": [
+          "/root/miniconda3/envs/commonpose-supplement/bin/python",
+          "-u",
+          "/root/work/common-pose/experiments/upstream_substitution/new_user_confirmation_v1_20261010/reconstruct_users.py"
+        ],
+        "parent_pid": 30784,
+        "stage": "reconstruction",
+        "started_epoch": 1791658435.9861102
+      },
+      "TERMINAL.json": {
+        "exit_code": 0,
+        "finished_epoch": 1791667906.0506678,
+        "output_log_sha256": "336c729a054e9496505a72a6fa18a8b52987276ef76127c65886af61ff9bbc5f",
+        "stage": "reconstruction",
+        "started_epoch": 1791658435.9861102
+      },
+      "actual_handles": [],
+      "dispatch": {
+        "dispatched_epoch": 1791658435.9592578,
+        "pid": 30784,
+        "stage": "reconstruction"
+      },
+      "state": "TERMINAL"
+    },
+    "score_only_supplement_20261011/analysis": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "score_only_supplement_20261011/backup_export": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "score_only_supplement_20261011/support": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "score_only_supplement_20261011/verification": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "support": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    },
+    "verification": {
+      "actual_handles": [],
+      "state": "NOT_DISPATCHED"
+    }
+  },
+  "supplement_partial_files": []
+}

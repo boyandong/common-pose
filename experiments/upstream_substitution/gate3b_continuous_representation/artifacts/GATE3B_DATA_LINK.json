@@ -1,0 +1,47 @@
+{
+  "artifact": "GATE3B_DATA_LINK.json",
+  "gate": "PHASE 1 / GATE 3B — continuous downstream representation preservation",
+  "plan_sha256": "4aa731b8d7b15f802586e07c34dc198510e0dadc89a13831c09526cacd2cfc77",
+  "evidence_status": "POST-HOC MOTIVATED, PROSPECTIVELY FROZEN BEFORE CONTINUOUS-REPRESENTATION OUTCOME INSPECTION",
+  "gate3_plan_sha256": "9869d9b94ba07d916fc8accd1646f51ec3ea9a0efe5427a530f37880edcfc381",
+  "gate3_artifacts_modified": "NO",
+  "reuses_gate3_population": "YES",
+  "new_inference_run": "NO — Gate3 predicted stream persisted and reused",
+  "predicted_stream": {
+    "dir": "/root/work/gate3_work/pred_pose",
+    "files": 30
+  },
+  "gt_stream": {
+    "dir": "/root/data/emg2pose_dataset_mini",
+    "field": "emg2pose/timeseries/joint_angles"
+  },
+  "frozen_head": {
+    "path": "/root/work/gate3_work/frozen_head/frozen_db9_trusted8_lda.joblib",
+    "sha256": "b0ef8caf8e390a480fa2a3b448f79ccf14f75c71265ef925ee299a5e9e660386"
+  },
+  "trusted_subset_sha256": "e51dde6e63941fd080c84f3896a98cf50fba9e17d5f9cebe909253d5465782d1",
+  "checkpoint_sha256": "748b1d1ef0ce1985f6fc07225d97eebfb370243429af803b4997d28ecce2424e",
+  "population": {
+    "n": 86833,
+    "expected_n": 86833,
+    "identity_match": true,
+    "rate_hz": 50.0,
+    "pose_stride": 40,
+    "participant": [
+      "2022"
+    ],
+    "sides": {
+      "left": 43535,
+      "right": 43298
+    },
+    "n_stages": 15,
+    "n_records": 30
+  },
+  "alignment_rule": {
+    "rule": "prediction[i] <-> GT[1790+i]",
+    "verified": "np.array_equal(GT.time[1790:], pred.time) asserted per record",
+    "lag_search_performed": "NO"
+  },
+  "scaling_source": "DB9 training corpus only; no emg2pose-derived scaling",
+  "filtering_applied": "NONE beyond the frozen Gate3 eligibility rule"
+}

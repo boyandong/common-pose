@@ -1,0 +1,30 @@
+{
+  "status": "PASS_CANDIDATE_CONTENT_DATA_BILINGUAL_PDF_CHECKS",
+  "pages": {
+    "EN": {
+      "pages": 5,
+      "pdf_sha256": "3f552c31b86555798fa3b0a8253f853f243a561fdf3643906f18e13cc0849587",
+      "full_tex_sha256": "bdd761f2f2063adaf7297fa41ad08b02506b4834b5835fa5146959719dcff00d"
+    },
+    "ZH": {
+      "pages": 5,
+      "pdf_sha256": "3f64e81a74b5b510ae3cba00cdc729d93c6e38ba9bf24c69159e1265638a2fc0",
+      "full_tex_sha256": "c580865650bef2409f74ac21e08f15ca60111eecd3696a05fe192a94470ed45d"
+    }
+  },
+  "all_four_original_equations_exact": true,
+  "all_24_table_medians_and_six_CIs_unchanged": true,
+  "figure2_all_48_values_unchanged": true,
+  "source_data_hashes_unchanged": true,
+  "v5_1_files_unchanged": 130,
+  "bilingual_paragraphs_checked": 39,
+  "decimal_numbers_and_reference_entries_match": true,
+  "direct_score_only_CI_from_frozen_source": true,
+  "vector_color_and_grayscale_pdfs_checked": 6,
+  "AI_disclosure": "NOT_ADOPTED_PER_USER",
+  "authors": "USER_CONFIRMED_CURRENT_FIELDS",
+  "new_experiments": false,
+  "conference_submission_performed": false,
+  "candidate_release": "READY_FOR_SUPERVISOR_REVIEW",
+  "private_github": "verified progress branch, no public availability claim"
+}

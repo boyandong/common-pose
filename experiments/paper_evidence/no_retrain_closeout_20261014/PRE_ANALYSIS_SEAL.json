@@ -1,0 +1,15 @@
+{
+  "status": "FROZEN_BEFORE_NEW_SUBGROUP_OUTCOMES",
+  "spec_sha256": "a876360cf84cba50151d21a8ac59973f653b3db462f51daefd450ab21438e14d",
+  "inputs": {
+    "docs\\reviews\\20261014_embc_no_supplement_audit\\ALL_27_REVISION_GOALS_AND_FINDINGS.md": "e50916157176f53047d3f908a16dc7ca080f0d7ebc5b671c574cfec33ea83a87",
+    "docs\\reviews\\20261011_identity_runtime_causality_audit\\USER_IDENTITY_INTERSECTION.csv": "12833910e745aacfeec4701d735932ac5921de3251097aa0e1ae89000520258b",
+    "experiments\\paper_evidence\\local_closeout_20261014\\results\\PARTICIPANT_PAIRED_DIFFERENCES.csv": "2ccc27db20778fa48398943258acf04d828084323db062d6b5f6bcdeb75dcb56",
+    "experiments\\paper_evidence\\local_closeout_20261014\\reproduction_bundle\\input\\A20_USER_COVERAGE_SERVICE.csv": "20726874a18e645b7552533229e5e503f2ff9c2bde72cf0bc765de9d8330dd00",
+    "experiments\\paper_evidence\\local_closeout_20261014\\reproduction_bundle\\input\\N80_USER_COVERAGE_SERVICE.csv": "301c1cbababf8755719fa4289ba5f7d3aa1ca5b8362500fe9dbdd9028c4d5fd5"
+  },
+  "code": {
+    "fetch_official.py": "76c2c6866a17eef7a20f309a6d400b4493389e4ed50ac01d3e5e2c9df15f8d71",
+    "public_recipe_subgroups.py": "22b716f7d9b44141f0f86475c57e9c44d2312b30b75bd4dd80e49355c6049a0e"
+  }
+}

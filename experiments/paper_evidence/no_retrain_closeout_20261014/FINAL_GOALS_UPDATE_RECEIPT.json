@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETE_SINGLE_FINAL_27_GOALS_UPDATE",
+  "before_sha256": "e50916157176f53047d3f908a16dc7ca080f0d7ebc5b671c574cfec33ea83a87",
+  "after_sha256": "c7b5d47494cec39fa58358b3ec71181a40a7ad973aa80d26bf590249a7988a26",
+  "goal_count": 27,
+  "independent_checks": 19749,
+  "source_report_sha256": "ad10aa43d68ce86c883a4ca2d7b9bd1dcdfde13d1c4e211936c8e1e6788ea811",
+  "models_fitted": 0,
+  "inference_rerun": false,
+  "paper_edited": false,
+  "external_evidence_gaps_preserved": true
+}

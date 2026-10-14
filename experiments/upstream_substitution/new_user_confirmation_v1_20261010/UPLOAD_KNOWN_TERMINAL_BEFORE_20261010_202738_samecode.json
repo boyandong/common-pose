@@ -1,0 +1,24 @@
+{
+  "observed_local_time": "2026-10-10T20:27:38.889456+08:00",
+  "pid_verified_absent": 28460,
+  "prior_launch": {
+    "credential_transport": "stdin only; no secret file or argument",
+    "download_process_untouched": true,
+    "original_pid_verified_absent": 18452,
+    "pid": 28460,
+    "scientific_members_and_protocol_changed": false,
+    "start_time": "2026-10-10T16:15:23.8582245+08:00",
+    "status": "V2_HIDDEN_STREAM_RELAY_LAUNCHED_AFTER_V1_TERMINAL_FAILURE"
+  },
+  "prior_progress": {
+    "completed_files": 1057,
+    "error_type": "TimeoutError",
+    "observed_epoch": 1791627919.6054277,
+    "pid": 28460,
+    "remotely_verified_bytes": 19631833168,
+    "stage": "STREAM_RELAY_V2_FAILED"
+  },
+  "prior_stderr_sha256": "abfba4f39be8c0973740cda8d441273af672dea69803c403088a741ba76ac7e7",
+  "prior_stdout_sha256": "8e691046216cbfef83f1f2e0ceced569c189afaba43236e41a08265bd0265c78",
+  "restart_basis": "original full execution authorization and active goal continuation; same sealed member/hash implementation"
+}

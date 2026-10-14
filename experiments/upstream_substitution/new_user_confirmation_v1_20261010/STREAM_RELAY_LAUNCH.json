@@ -1,0 +1,9 @@
+{
+  "status": "HIDDEN_STREAM_RELAY_LAUNCHED",
+  "pid": 18452,
+  "start_time": "2026-10-10T15:59:36.8297135+08:00",
+  "credential_transport": "stdin only; never saved in arguments or files",
+  "source_root": "D:/CommonPose_confirmation_N80_20261010/source",
+  "remote_root": "/root/autodl-tmp/common_pose_confirmation_N80_20261010/source",
+  "download_process_untouched": true
+}

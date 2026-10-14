@@ -1,0 +1,14 @@
+{
+  "consumer": "CeTI grasp",
+  "users": 55,
+  "classes": 3,
+  "test_units": 6930,
+  "unit": "block",
+  "pooled_BA": 0.7225108225108224,
+  "archived_BA": 0.7225108225108224,
+  "prediction_mismatches": 0,
+  "fold_fit_seconds": 0.15700000000651926,
+  "wall_seconds": 0.28100000000267755,
+  "source_input_sha256": "e97e3177d200df43c0dadcd16780de16b86dd0135a1447cd7c276a08abca647a",
+  "status": "PASS_EXACT_OOF_REPRODUCTION"
+}

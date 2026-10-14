@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "consumers": 6,
+  "folds": 249,
+  "original_heads_replaced": false,
+  "new_independent_test_cohort": false,
+  "KIN_scored_unit": "user,parent_recording,phase",
+  "implementation_correction": "Original probe grouped KIN by user/trial only and stopped; source contract requires phase too. Five successful source fits were retained, not rerun."
+}

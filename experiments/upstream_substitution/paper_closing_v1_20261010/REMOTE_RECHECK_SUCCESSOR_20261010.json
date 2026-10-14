@@ -1,0 +1,10 @@
+{
+  "status": "BACKUP_AND_PROCESS_RECHECK_PASS",
+  "archive": "/root/work/common-pose/experiments/upstream_substitution/paper_closing_v1_20261010/private_cache_backup_20261010.tar.gz",
+  "bytes": 384382955,
+  "sha256": "79241d7fdf9006b2c6cb95c6a88ac9f85ba1951931ce9e0097b53dcce25283cc",
+  "matching_processes": [],
+  "host_key_sha256": "962677eaf342b0d70d757796b387fe83964884f33f66284ff37e2fc6cf1496a7",
+  "local_backup_complete": false,
+  "cache_scientific_recheck_complete": false
+}

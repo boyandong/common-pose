@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": 19749,
+  "subgroup_cells_verified": 384,
+  "subgroup_participant_differences_verified": 8142,
+  "all_subgroup_intervals_independently_recomputed": true,
+  "A20_public_recipe_groups": [
+    16,
+    4
+  ],
+  "N80_public_recipe_groups": [
+    70,
+    10
+  ],
+  "A20_not_legacy_FINAL": true,
+  "paper_files_unchanged": 187,
+  "models_fitted": 0,
+  "inference_rerun": false,
+  "actual_checkpoint_membership_certified": false
+}

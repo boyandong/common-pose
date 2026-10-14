@@ -1,0 +1,4137 @@
+{
+  "alpha_per_endpoint": 0.025,
+  "comparisons": {
+    "B": "full vs class_model fixed common-class risk",
+    "U": "full vs boundary_distance ordinary risk"
+  },
+  "conditional_seed_descriptions": {
+    "B|20261009|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261009|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261009|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08123223438273713,
+        0.10949806621500058
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.09143775150219588,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261009|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261009|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261009|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261010|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261010|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261010|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08100130473978018,
+        0.10884793744236393
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.09215795558070008,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261010|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261010|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261010|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261011|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261011|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261011|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.080349079322864,
+        0.10987669303199865
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.09241770865368812,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261011|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261011|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261011|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261012|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261012|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261012|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0796458465140849,
+        0.10833584924352518
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.09257522757197192,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261012|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261012|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261012|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261013|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261013|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261013|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08143869053791297,
+        0.10932240769390872
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.09146001697269887,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261013|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261013|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261013|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261014|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261014|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261014|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08142798080444025,
+        0.10892078139827255
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.09280629015464623,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261014|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261014|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261014|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261015|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261015|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261015|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.07976661045965794,
+        0.10849107843726624
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.09330834608924174,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261015|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261015|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261015|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261016|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261016|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261016|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.07986274985207592,
+        0.10864847147315099
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.09342985504128462,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261016|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261016|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261016|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261017|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261017|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261017|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.07888375831697203,
+        0.10839226080661626
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.09297949182425044,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261017|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261017|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261017|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261018|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261018|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261018|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08137665530442195,
+        0.10800247630396184
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.0918319827787705,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261018|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261018|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261018|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261019|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261019|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261019|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.07960965398154118,
+        0.10961648979798083
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.09235264237705751,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261019|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261019|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261019|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261020|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261020|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261020|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08015551038119206,
+        0.10872748551843692
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.09140445012598164,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261020|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261020|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261020|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261021|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261021|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261021|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08240816431796288,
+        0.10952214440692065
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.09260766133694723,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261021|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261021|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261021|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261022|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261022|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261022|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08201516976423043,
+        0.10905066301761646
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.09134751475629005,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261022|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261022|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261022|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261023|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261023|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261023|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08077495778388247,
+        0.1081566840278868
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.09249033367639589,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261023|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261023|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261023|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261024|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261024|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261024|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.07970202662955145,
+        0.10802964354913647
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.0934001900765207,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261024|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261024|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261024|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261025|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261025|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261025|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.07982953608655408,
+        0.10833749452778263
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.09213188193780655,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261025|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261025|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261025|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261026|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261026|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261026|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08197886716772479,
+        0.10950231261247134
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.09252305170547229,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261026|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261026|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261026|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261027|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261027|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261027|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08022699058883287,
+        0.10896416695789246
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.09402988476917937,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261027|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261027|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261027|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261028|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10621746713211688,
+        0.16751047416628262
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.13151831930023988,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261028|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.3305007998828904,
+        0.3916256040501121
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.35965396803814603,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 0,
+      "positive": 80,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261028|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08102889148393227,
+        0.10917985273069308
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.09307584607197569,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261028|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08049603429166757,
+        0.12644153350039727
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10331555868566994,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261028|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09001266861284693,
+        0.12984896875654972
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.10825018086895233,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "B|20261028|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.001236992569432216,
+        0.0010939599994309601
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -8.952903840220294e-05,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 40,
+      "positive": 40,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261009|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261009|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.1019797834798732,
+        0.12671440276441878
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11635613754472657,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261009|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.1019797834798732,
+        0.12671440276441878
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11635613754472657,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261009|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261009|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07664371479700122,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261009|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.0010040772814105606,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261010|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261010|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10227884442849451,
+        0.12954119567188538
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11735011075676721,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261010|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10227884442849451,
+        0.12954119567188538
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11735011075676721,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261010|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261010|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07664371479700122,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261010|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.0011121503387973367,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261011|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261011|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10379889265392292,
+        0.12911164160481006
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11704371802871161,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261011|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10379889265392292,
+        0.12911164160481006
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11704371802871161,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261011|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261011|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07664371479700122,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261011|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.0009680529289482834,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261012|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261012|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10188987016517356,
+        0.12736504866106513
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11655391423128059,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261012|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10188987016517356,
+        0.12736504866106513
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11655391423128059,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261012|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261012|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07664371479700122,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261012|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.0010761259863350872,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261013|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261013|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10305640289490998,
+        0.12944224075123453
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11761829070726573,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261013|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10305640289490998,
+        0.12944224075123453
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11761829070726573,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261013|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261013|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.0766138087021391,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261013|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.0010581138101039625,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261014|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261014|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10030504216759374,
+        0.12912253919791367
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.1187140658700608,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261014|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10030504216759374,
+        0.12912253919791367
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.1187140658700608,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261014|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261014|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07664371479700122,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261014|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.00104010163387281,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261015|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261015|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10026861089792785,
+        0.12893115860087667
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11813385327268477,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 2,
+      "positive": 78,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261015|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10026861089792785,
+        0.12893115860087667
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11813385327268477,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 2,
+      "positive": 78,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261015|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261015|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07664371479700122,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261015|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.0009500407527171587,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261016|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261016|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10406711195446151,
+        0.12854921649614628
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11764885683079593,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261016|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10406711195446151,
+        0.12854921649614628
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11764885683079593,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261016|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261016|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.0766138087021391,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261016|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.0010040772814105606,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261017|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261017|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10248444470687937,
+        0.12794968322468092
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11796283248858769,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261017|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10248444470687937,
+        0.12794968322468092
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11796283248858769,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261017|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261017|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.0766138087021391,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261017|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.0010220894576416853,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261018|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261018|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10264773599386032,
+        0.12746875298158572
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11806861470054328,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261018|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10264773599386032,
+        0.12746875298158572
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11806861470054328,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261018|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261018|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07664371479700122,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261018|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.0009680529289482834,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261019|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261019|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10370936200893738,
+        0.12715347881279093
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.1198830004516345,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261019|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10370936200893738,
+        0.12715347881279093
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.1198830004516345,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261019|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261019|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07664371479700122,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261019|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.001094138162566212,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261020|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261020|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10207214121258631,
+        0.12739876962629693
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11876134500666849,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 2,
+      "positive": 78,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261020|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10207214121258631,
+        0.12739876962629693
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11876134500666849,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 2,
+      "positive": 78,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261020|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261020|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07664371479700122,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261020|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.0010040772814105606,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261021|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261021|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10174053472097612,
+        0.12740514581941928
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11938608782314095,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 2,
+      "positive": 78,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261021|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10174053472097612,
+        0.12740514581941928
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11938608782314095,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 2,
+      "positive": 78,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261021|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261021|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07664371479700122,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261021|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.0010761259863350872,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261022|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261022|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.1014198004604758,
+        0.12785786429161694
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11709368683033436,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 2,
+      "positive": 78,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261022|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.1014198004604758,
+        0.12785786429161694
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11709368683033436,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 2,
+      "positive": 78,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261022|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261022|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.0766138087021391,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261022|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.001022089457641713,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261023|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261023|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09921690869003269,
+        0.1282106088133661
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11741050905514616,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261023|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.09921690869003269,
+        0.1282106088133661
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11741050905514616,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261023|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261023|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.0766138087021391,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261023|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.0010220894576416853,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261024|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261024|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10138142747505755,
+        0.1286042434866711
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11822169034831176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261024|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10138142747505755,
+        0.1286042434866711
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11822169034831176,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261024|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261024|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07664371479700122,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261024|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.0010401016338728378,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261025|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261025|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10261760631852013,
+        0.12918120805369127
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.116938582479828,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261025|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10261760631852013,
+        0.12918120805369127
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.116938582479828,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261025|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261025|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.0766138087021391,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261025|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.0011301625150284891,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261026|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261026|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10201606294050156,
+        0.12924370346621067
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11920301050601043,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261026|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10201606294050156,
+        0.12924370346621067
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11920301050601043,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261026|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261026|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07664371479700122,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261026|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.001094138162566212,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261027|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261027|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10250624550806095,
+        0.12935057532684976
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11803045906786622,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261027|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10250624550806095,
+        0.12935057532684976
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11803045906786622,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261027|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261027|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.0766138087021391,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261027|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.000986065105179408,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261028|boundary_distance": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261028|class_empirical": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10228882203298255,
+        0.12813662818433352
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11775550680331712,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261028|class_model": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.10228882203298255,
+        0.12813662818433352
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.11775550680331712,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 3,
+      "positive": 77,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261028|entropy": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.05796119685623835,
+        0.08464863778023529
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.07027245668698362,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 8,
+      "positive": 72,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261028|margin": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.0656999442275516,
+        0.09440113925948132
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": 0.0766138087021391,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 7,
+      "positive": 73,
+      "sign_p_two_sided": null,
+      "zero": 0
+    },
+    "U|20261028|no_tta": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        -0.004149992589298962,
+        0.0014152850788515803
+      ],
+      "enrolled": 80,
+      "formal_decision": "CONDITIONAL_DESCRIPTIVE_ONLY",
+      "median": -0.0010401016338728378,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 43,
+      "positive": 37,
+      "sign_p_two_sided": null,
+      "zero": 0
+    }
+  },
+  "enrolled_users": 80,
+  "joint_decision": "POSITIVE",
+  "no_replacement": true,
+  "primary": {
+    "B": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.08123223438273713,
+        0.10949806621500058
+      ],
+      "enrolled": 80,
+      "formal_decision": "POSITIVE",
+      "median": 0.09143775150219588,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 1,
+      "positive": 79,
+      "sign_p_two_sided": 1.3400325923359048e-22,
+      "zero": 0
+    },
+    "U": {
+      "complete_pairs": 80,
+      "conditional_subset_sign_p": null,
+      "descriptive_ci95": [
+        0.01867064973861088,
+        0.04758082152121722
+      ],
+      "enrolled": 80,
+      "formal_decision": "POSITIVE",
+      "median": 0.03472391944299928,
+      "missing_pairs": 0,
+      "n_nonzero": 80,
+      "negative": 12,
+      "positive": 68,
+      "sign_p_two_sided": 1.201648635082027e-10,
+      "zero": 0
+    }
+  },
+  "source_seals": {
+    "code": "5dc160d948d470cd9cfc205dc4c4a91de8a256e8076b0126243f4e1eaebf73cc",
+    "cohort": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+    "common_sets": "1e1c76a662a422a6daf13677a41a6eb3155f69a75b0d4276a9e3a1a8b79e75fc",
+    "protocol": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a",
+    "scores": "c9c9f527b055479c17350daa1ac33730f09ae010ced6425ac4431177c71f9fd3"
+  },
+  "status": "ANALYZED_PENDING_INDEPENDENT_VERIFICATION",
+  "upstream_membership": "UNRESOLVED"
+}

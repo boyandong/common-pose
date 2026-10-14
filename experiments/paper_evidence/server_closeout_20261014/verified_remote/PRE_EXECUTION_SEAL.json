@@ -1,0 +1,269 @@
+{
+  "status": "FROZEN_BEFORE_NEW_MODEL_FITTING",
+  "new_code_hashes": {
+    "SCIENTIFIC_SPEC.md": "6518399a052c95189c5a2052a4ebcf8848978803f0e6717c5ce349f9f329465e",
+    "EXPECTED_CODE_HASHES.json": "5bc4ce3408c5a795bb2ef80a0c7b2fceee02b13f3b645a1c5f4aed5bb9e51da6",
+    "server_common.py": "330a0e77a6f7196eda91bd20b2a87a0f0864dec82f1609d5345f2ad94ea477a8",
+    "factorial_experiment.py": "d0e25c8b567c22711d7ae48213a5da3ad83fc6024d5bbeeba3ba9e0d1c91d7b1",
+    "time_window_sensitivity.py": "fc13d90b6b33c011cce0fc1e9f887975893ee898d3d145954d80eb531a41843c",
+    "gpu_cost_profile.py": "8a4318f529d60b60128dec31890e5d36292af030af2a80e87507b38682d74de9",
+    "verify_server.py": "5a512b470333965b481eb41552dd3e08e67321efb4eb3ad610b14d4b2d090910",
+    "summarize_server.py": "b012791820a5af52ae4b3165c6f5cd44677a963d3ecbbc268d8aec75bd17d38c",
+    "run_pipeline.py": "8746675440f4a5435f1697871b4048afaf2acc1cd6f5b8fd81de114271928b25"
+  },
+  "old_primary_instances": {
+    "db9_scoreonly_v3_20261011__C1_primary": {
+      "consumer_sha256": "b0ef8caf8e390a480fa2a3b448f79ccf14f75c71265ef925ee299a5e9e660386",
+      "source_result_sha256": "7d0e0b88a7e85eb3dccb1946010d04da3e98f195aab9bcbf60a0d28dc9448b08",
+      "models": {
+        "U_score_only": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_v3_ub_four_candidates_20261012/db9_scoreonly_v3_20261011/models/C1_primary_U_score_only.joblib",
+          "sha256": "883a3d952a18c4d1983e1680ff356c423409084bf4aee3c713d3ece005ff3682"
+        },
+        "U_full": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_v3_ub_four_candidates_20261012/db9_scoreonly_v3_20261011/models/C1_primary_U_full.joblib",
+          "sha256": "d96cef54e92b2802f6e24cb271f393e6886e27f698f8a5dce9f7cc592a23e4ea"
+        },
+        "U_full_no_tta": {
+          "reused": false,
+          "path": "/root/autodl-tmp/common_pose_v3_full_tta_ablation_20261012/db9_scoreonly_v3_20261011/models/C1_primary_U_full_no_tta.joblib",
+          "sha256": "0cb7834a6e4125413a5eddced20008d4f49d2825c483d9f3b6ad3a49f526dbbe"
+        },
+        "B_score_only": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_db9_scoreonly_v3_20261011/results/models/C1_primary.joblib",
+          "sha256": "88255b4725fae9416efbe53b1202a60a8202533ce1cd31cc4483cb83746c87a0"
+        },
+        "B_full": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_v3_full_legacy_20261012/full_results/db9_scoreonly_v3_20261011/models/C1_primary.joblib",
+          "sha256": "0c16a5a323322667ec8214b5f4add24cdae9ed6ca671e7773a34f8dbf6d0efc5"
+        },
+        "B_full_no_tta": {
+          "reused": false,
+          "path": "/root/autodl-tmp/common_pose_v3_full_tta_ablation_20261012/db9_scoreonly_v3_20261011/models/C1_primary_B_full_no_tta.joblib",
+          "sha256": "d7e526ed7832a0a2bdd75465340bb1e12ec750680aeda830f39354bf5aa1f24a"
+        }
+      },
+      "sigma": [
+        1.296276546573555,
+        1.023990617932941,
+        1.4591220046304199,
+        0.8858161230116249,
+        1.3034867233506164,
+        1.4094668949837614,
+        0.9474963841369071
+      ]
+    },
+    "db9_scoreonly_v3_20261011__C2_primary": {
+      "consumer_sha256": "0b5bb71cb1d27107eb6d3d20b9bd9ca6c51498d29e71ef4d7a826e15d46f28ef",
+      "source_result_sha256": "7d0e0b88a7e85eb3dccb1946010d04da3e98f195aab9bcbf60a0d28dc9448b08",
+      "models": {
+        "U_score_only": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_v3_ub_four_candidates_20261012/db9_scoreonly_v3_20261011/models/C2_primary_U_score_only.joblib",
+          "sha256": "3e11c72ffa033289c1192dd54fa44549a91d195dd5d9c0a804d924f879cfdf3f"
+        },
+        "U_full": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_v3_ub_four_candidates_20261012/db9_scoreonly_v3_20261011/models/C2_primary_U_full.joblib",
+          "sha256": "52b475bc44ed9a43007405a22010709dc166fe1c386aaa77b49c6bef15a01a48"
+        },
+        "U_full_no_tta": {
+          "reused": false,
+          "path": "/root/autodl-tmp/common_pose_v3_full_tta_ablation_20261012/db9_scoreonly_v3_20261011/models/C2_primary_U_full_no_tta.joblib",
+          "sha256": "05a522b1a3857473d5ee2e9cfa6a34e981c9d2227f6edcb3196724caf3a334a8"
+        },
+        "B_score_only": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_db9_scoreonly_v3_20261011/results/models/C2_primary.joblib",
+          "sha256": "20a3f16dee4c541047e3f401c65c4600b2ce391b246e375f9121b9853ee88898"
+        },
+        "B_full": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_v3_full_legacy_20261012/full_results/db9_scoreonly_v3_20261011/models/C2_primary.joblib",
+          "sha256": "e71fa17ee43c159803eccfdd8727f8c37626a0175414bce3f76e24654fbf6da3"
+        },
+        "B_full_no_tta": {
+          "reused": false,
+          "path": "/root/autodl-tmp/common_pose_v3_full_tta_ablation_20261012/db9_scoreonly_v3_20261011/models/C2_primary_B_full_no_tta.joblib",
+          "sha256": "3ad6327b7aa67408d93651a35987fa37144ec8ccf23951138f4f76a2ce2f2fb7"
+        }
+      },
+      "sigma": [
+        1.7299793974914366,
+        1.2484678129654987
+      ]
+    },
+    "ceti_age_scoreonly_v3_20261012__C1_primary": {
+      "consumer_sha256": "58598d12211d5a0fcbef4f84a56fb9bc078885a72613c20fefafb05abd786fc5",
+      "source_result_sha256": "974b235f37fbbc8119d3e095137540a992dc37b5f3fd483fb4657ad9e9cbee24",
+      "models": {
+        "U_score_only": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_v3_ub_four_candidates_20261012/ceti_age_scoreonly_v3_20261012/models/C1_primary_U_score_only.joblib",
+          "sha256": "c1c8df75c71cb41ab91122ab8bb1d648b23f2c9f0663c052635b72fcefdbab53"
+        },
+        "U_full": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_v3_ub_four_candidates_20261012/ceti_age_scoreonly_v3_20261012/models/C1_primary_U_full.joblib",
+          "sha256": "faf3933ef948b3194ba6c157c33eef5e38d8cdaf4df0e20ac0e7e5295c6a90d4"
+        },
+        "U_full_no_tta": {
+          "reused": false,
+          "path": "/root/autodl-tmp/common_pose_v3_full_tta_ablation_20261012/ceti_age_scoreonly_v3_20261012/models/C1_primary_U_full_no_tta.joblib",
+          "sha256": "5e3e2290cbeca68e0ba91cb63d025ee18aa1edcbdc86d5da22fe9790fb3e5278"
+        },
+        "B_score_only": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_ceti_age_scoreonly_v3_20261012/results/models/C1_primary.joblib",
+          "sha256": "beec0deddb3f60ff873a0c42032ac044c279489d804e4c02098e65c5586f68e6"
+        },
+        "B_full": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_v3_full_legacy_20261012/full_results/ceti_age_scoreonly_v3_20261012/models/C1_primary.joblib",
+          "sha256": "82d53b48a665d8452d0b27928cd31236c3bb6a29dc21159abeb3b3a055b3aa98"
+        },
+        "B_full_no_tta": {
+          "reused": false,
+          "path": "/root/autodl-tmp/common_pose_v3_full_tta_ablation_20261012/ceti_age_scoreonly_v3_20261012/models/C1_primary_B_full_no_tta.joblib",
+          "sha256": "b0f1ea1200aae238a514ebdfd5b56f3451741d2955a772395acd844b642dcf38"
+        }
+      },
+      "sigma": [
+        1.9623783197364342,
+        1.5173559114747783,
+        2.0918026064889363,
+        2.0643963789361064,
+        2.5667615965645267,
+        2.7504358447192687,
+        1.7745295692226126
+      ]
+    },
+    "ceti_age_scoreonly_v3_20261012__C2_primary": {
+      "consumer_sha256": "0e1a29159adcad2c731bd2995c6c07e4b7e4c8632e7039aec8517c5efb89636c",
+      "source_result_sha256": "974b235f37fbbc8119d3e095137540a992dc37b5f3fd483fb4657ad9e9cbee24",
+      "models": {
+        "U_score_only": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_v3_ub_four_candidates_20261012/ceti_age_scoreonly_v3_20261012/models/C2_primary_U_score_only.joblib",
+          "sha256": "cd7e708f9cb0425483f00e882a268e38e45cc8d71d956f9f3daf9810ab4b0e24"
+        },
+        "U_full": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_v3_ub_four_candidates_20261012/ceti_age_scoreonly_v3_20261012/models/C2_primary_U_full.joblib",
+          "sha256": "4bcd5f369374ab10db7951e559c3b6b8095fad3eeb0ec6f18d120a9226140c38"
+        },
+        "U_full_no_tta": {
+          "reused": false,
+          "path": "/root/autodl-tmp/common_pose_v3_full_tta_ablation_20261012/ceti_age_scoreonly_v3_20261012/models/C2_primary_U_full_no_tta.joblib",
+          "sha256": "57746516f8536feb8ed9ec772e6836b92a38949380f8ac51d3830550589aebe0"
+        },
+        "B_score_only": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_ceti_age_scoreonly_v3_20261012/results/models/C2_primary.joblib",
+          "sha256": "62b166a242b8a0fbafc924f49f69584b61046bc1701f359b31852cd7c2e00f88"
+        },
+        "B_full": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_v3_full_legacy_20261012/full_results/ceti_age_scoreonly_v3_20261012/models/C2_primary.joblib",
+          "sha256": "f8e139396ec673cd9a5ce1bb95c170fcf3e00a5626b2dc3d61c471c509d5ecca"
+        },
+        "B_full_no_tta": {
+          "reused": false,
+          "path": "/root/autodl-tmp/common_pose_v3_full_tta_ablation_20261012/ceti_age_scoreonly_v3_20261012/models/C2_primary_B_full_no_tta.joblib",
+          "sha256": "1f3ef18b81c14e57910f36bc6bef435a256b39dd266bcee2d1ef319e45a60a51"
+        }
+      },
+      "sigma": [
+        2.0425140312674706,
+        4.05869250005712
+      ]
+    },
+    "show3d_scoreonly_v3_20261012__C1_primary": {
+      "consumer_sha256": "2c27150b8b5b583be2e88d58779110eaa11697f994f8d61f94ddc96b31dc9d7d",
+      "source_result_sha256": "8e46c4e813c5b6cca681ba8d50a37c4ed11ceb8b548d9f77d86c96c266af4b73",
+      "models": {
+        "U_score_only": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_v3_ub_four_candidates_20261012/show3d_scoreonly_v3_20261012/models/C1_primary_U_score_only.joblib",
+          "sha256": "34dafbb6ec9f1a4fc3ecd0ef415b5105676a250048891bb6f93ff1553ec52ee4"
+        },
+        "U_full": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_v3_ub_four_candidates_20261012/show3d_scoreonly_v3_20261012/models/C1_primary_U_full.joblib",
+          "sha256": "8e8e7030712e9b11e099de789daa0c7e17846c7a49a1e2c2c8b6b8562431fce1"
+        },
+        "U_full_no_tta": {
+          "reused": false,
+          "path": "/root/autodl-tmp/common_pose_v3_full_tta_ablation_20261012/show3d_scoreonly_v3_20261012/models/C1_primary_U_full_no_tta.joblib",
+          "sha256": "9e7a5dac881325f21093837daf12ee6338d289a9cdae8a9c660ce9c74422d7f2"
+        },
+        "B_score_only": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_show3d_scoreonly_v3_20261012/results/models/C1_primary.joblib",
+          "sha256": "0a8c625e70cd0f980089cb21dd1d632d607aae1888977cc7f277d6ffe77735ae"
+        },
+        "B_full": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_v3_full_legacy_20261012/full_results/show3d_scoreonly_v3_20261012/models/C1_primary.joblib",
+          "sha256": "aa921932b618bce4552c4151285bf89306285e6591359f70f648be6d4f7fed79"
+        },
+        "B_full_no_tta": {
+          "reused": false,
+          "path": "/root/autodl-tmp/common_pose_v3_full_tta_ablation_20261012/show3d_scoreonly_v3_20261012/models/C1_primary_B_full_no_tta.joblib",
+          "sha256": "c58145f7dc33909f189d3dce7b63bd28c865afcd1d6ce95b837a82326ce8cd73"
+        }
+      },
+      "sigma": [
+        1.7581854834270991,
+        1.5599930091667529
+      ]
+    },
+    "kinmus_uji_scoreonly_v3_20261012__C1_primary": {
+      "consumer_sha256": "fae331691ca062ed512b5f49c3f4ca3cbb31d94b6a28f2f7a7bc74e723d34dfb",
+      "source_result_sha256": "bbe2249600d98d2af020a742b76ed4bbb4504c69b0d046a8e905def88dd1f24a",
+      "models": {
+        "U_score_only": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_v3_ub_four_candidates_20261012/kinmus_uji_scoreonly_v3_20261012/models/C1_primary_U_score_only.joblib",
+          "sha256": "10a521bfaa98d0da7c3e31166d782ee6ce754fa638802935bf2cb706f931d50e"
+        },
+        "U_full": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_v3_ub_four_candidates_20261012/kinmus_uji_scoreonly_v3_20261012/models/C1_primary_U_full.joblib",
+          "sha256": "d5f59619620fe05dc42cdbf6f26344a7ad0600359da3c7ced8a3eb587821a56f"
+        },
+        "U_full_no_tta": {
+          "reused": false,
+          "path": "/root/autodl-tmp/common_pose_v3_full_tta_ablation_20261012/kinmus_uji_scoreonly_v3_20261012/models/C1_primary_U_full_no_tta.joblib",
+          "sha256": "bf517368d8013b3aa1a7266d67932cf9cdf2a8dc47b7464305957a467669ae42"
+        },
+        "B_score_only": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_kinmus_uji_scoreonly_v3_20261012/results/models/C1_primary.joblib",
+          "sha256": "80f09f3eb9b038ab471d3a83dd216ee47f99a6c25a33e807e22d347ef8007f5c"
+        },
+        "B_full": {
+          "reused": true,
+          "path": "/root/autodl-tmp/common_pose_v3_full_legacy_20261012/full_results/kinmus_uji_scoreonly_v3_20261012/models/C1_primary.joblib",
+          "sha256": "c12428e05665c44d2f7b2465e9b4cdf838a674e100d982b7847c4b03fd058d54"
+        },
+        "B_full_no_tta": {
+          "reused": false,
+          "path": "/root/autodl-tmp/common_pose_v3_full_tta_ablation_20261012/kinmus_uji_scoreonly_v3_20261012/models/C1_primary_B_full_no_tta.joblib",
+          "sha256": "cb81186d768efe96de2a56716fb4a1af3d6fddeadfce03ab2676f56d3040fed5"
+        }
+      },
+      "sigma": [
+        1.6734438706277095,
+        2.9727399339714524
+      ]
+    }
+  },
+  "source_root": "/root/work/common-pose-db9-no-calibration-20261011",
+  "six_original_code_hashes_match": true,
+  "date": "2026-10-14 Asia/Shanghai"
+}

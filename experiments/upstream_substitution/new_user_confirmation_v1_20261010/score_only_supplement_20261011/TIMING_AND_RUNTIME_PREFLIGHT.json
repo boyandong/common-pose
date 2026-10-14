@@ -1,0 +1,39 @@
+{
+  "observed_local_time": "2026-10-11T02:16:58.768088+08:00",
+  "parent_acquisition_complete_sha256": "62706f224e2d9d7a5fe0947996a2e2e85df4bee4960b4be49d19d856f2e46ed8",
+  "parent_relay_complete_sha256": "9b34bffe0cfe6cacf7297ad0f1092ab2c7b9d3d856c87a66389872df6511de42",
+  "remote": {
+    "N80_effects_read": false,
+    "cuda": "12.8",
+    "feature_directory_absent": true,
+    "gpu": "NVIDIA GeForce RTX 5090 D",
+    "remaining_bytes": 137766260736,
+    "source_bytes": 50213536592,
+    "source_files": 2768,
+    "source_inventory_scope": "names/sizes, full qualification and rehash pending",
+    "status": "FROZEN_REMOTE_RUNTIME_PASS_BEFORE_N80_INFERENCE",
+    "torch": "2.8.0+cu128"
+  },
+  "stages": {
+    "analysis": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    },
+    "qualification": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    },
+    "reconstruction": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    },
+    "support": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    },
+    "verification": {
+      "directory_exists": false,
+      "state": "NOT_DISPATCHED"
+    }
+  }
+}

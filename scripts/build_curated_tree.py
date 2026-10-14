@@ -52,10 +52,10 @@ WORKSPACE = REPO.parent / "emg2pose_handstate"
 # --------------------------------------------------------------------------- #
 
 RAW_RULES: list[tuple[str, str]] = [
-    (r"C:\Users\董伯言\Desktop\fingers\emg2pose_handstate", "<WORKSPACE_ROOT>"),
-    (r"C:\Users\董伯言\Desktop\fingers", "<FINGERS_ROOT>"),
-    (r"C:\Users\董伯言\AppData\Local\Programs\Microsoft VS Code", "<VSCODE_DIR>"),
-    (r"C:\Users\董伯言\.conda", "<CONDA_ROOT>"),
+    (r"<HISTORICAL_WORKSPACE>", "<WORKSPACE_ROOT>"),
+    (r"<USER_HOME>\Desktop\fingers", "<FINGERS_ROOT>"),
+    (r"<USER_HOME>\AppData\Local\Programs\Microsoft VS Code", "<VSCODE_DIR>"),
+    (r"<USER_HOME>\.conda", "<CONDA_ROOT>"),
     (r"D:\Anaconda3", "<ANACONDA_ROOT>"),
     (r"C:\Anaconda3", "<ANACONDA_ROOT>"),
     (r"C:\emg2pose-venv", "<EMG2POSE_VENV>"),
@@ -67,7 +67,7 @@ RAW_RULES: list[tuple[str, str]] = [
     (r"C:\emg2pose\checkpoints", "<CHECKPOINTS_ROOT>"),
     (r"C:\emg2pose\inference", "<INFERENCE_ROOT>"),
     (r"C:\emg2pose", "<PROJECT_ROOT>"),
-    (r"C:\Users\董伯言", "<USER_PROFILE>"),
+    (r"<USER_HOME>", "<USER_PROFILE>"),
     ("/root/emg2pose", "<PROJECT_ROOT>"),
     ("/root/", "<HOME>/"),
     ("/home/董伯言", "<USER_PROFILE>"),

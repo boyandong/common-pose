@@ -1,0 +1,11 @@
+{
+  "analysis_code_sha256": "5dc160d948d470cd9cfc205dc4c4a91de8a256e8076b0126243f4e1eaebf73cc",
+  "canonical_seven_method_risk_checks": 840,
+  "exhaustive_small_n_sign_cases": 90,
+  "independent_code_sha256": "395c0b4d047c5dd8e596cd8b41c7c4800dccef68499eaf5031429383b9fee336",
+  "new_user_features_read": false,
+  "old_FINAL_users_only": 20,
+  "status": "PASS",
+  "verifier_sha256": "cef80046b6fe95f5ca903cd3cda3f7c8c38fab19584ae0858b039fbc0033c5c1",
+  "zero_missing_negative_and_alpha_boundaries_checked": true
+}

@@ -1,0 +1,8 @@
+{
+  "torch": "2.8.0+cu128",
+  "cuda_version": "12.8",
+  "cuda_available": true,
+  "device": "NVIDIA GeForce RTX 5090 D",
+  "cuda_smoke_sum": 4,
+  "cgroup_memory_max": "98784247808"
+}

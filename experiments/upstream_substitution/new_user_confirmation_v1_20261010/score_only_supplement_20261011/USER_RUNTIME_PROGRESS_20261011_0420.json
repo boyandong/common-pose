@@ -1,0 +1,19 @@
+{
+  "base_cache_files": 1499,
+  "cpu_ticks_advanced_over_2seconds": 201,
+  "effect_values_read": false,
+  "feature_user_files": 43,
+  "gpu": "13 %, 2256 MiB, 32607 MiB\n",
+  "observed_epoch": 1791663666.6550362,
+  "observed_local_time": "2026-10-11T04:21:05.535722+08:00",
+  "process_start_ticks": "451958792",
+  "progress": {
+    "completed_files": 1495,
+    "elapsed_seconds": 5157.278901979327,
+    "observed_epoch": 1791663655.0763505,
+    "pid": 30785,
+    "required_files": 2768,
+    "stage": "RECONSTRUCTION_RUNNING"
+  },
+  "tta_cache_files": 1498
+}

@@ -1,0 +1,10 @@
+{
+  "status": "KNOWN_EXIT_BEFORE_ANY_OUTCOME_WRITTEN",
+  "cause": "A20 incorrectly aliased to legacy FINAL; participant ID lookup rejected alias",
+  "correction": "derive public membership directly from official metadata using actual frozen result IDs",
+  "actual_A20_public_train_overlap": 16,
+  "actual_A20_no_train_records": 4,
+  "A20_and_legacy_FINAL_disjoint": true,
+  "group_rule_or_statistical_method_changed": false,
+  "outcome_values_inspected_before_amendment": false
+}

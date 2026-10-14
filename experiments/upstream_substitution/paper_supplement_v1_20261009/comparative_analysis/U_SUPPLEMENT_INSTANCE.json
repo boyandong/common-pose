@@ -1,0 +1,54 @@
+{
+  "calibration": [
+    "0816388460",
+    "2be40c4380",
+    "54c854b839",
+    "9b8c99cdc2"
+  ],
+  "class_empirical_rates": [
+    0.7575572648611371,
+    0.6241178657871846,
+    0.8806706114398422,
+    0.2842960784832581,
+    0.6300793428374453,
+    0.3301116383584676,
+    0.6087939603538225,
+    0.7495242940697315
+  ],
+  "columns": {
+    "class_model": "0:8",
+    "no_tta": "0:34"
+  },
+  "contract": "U",
+  "hyperparameters": "unchanged original selected family",
+  "model_sha256": {
+    "class_model": "1d08ebfb338919488c2e4e8e5f72a29777a475ccd70d89e4ee12ebb84a56140e",
+    "no_tta": "8e1dd08cf15f9ed76b92a89b3e1f40c45110489f633d5530ae8464a5b3cb23f2"
+  },
+  "thresholds_at_nominal_30": {
+    "boundary_distance": -0.9921578466892242,
+    "class_empirical": 0.2842960784832581,
+    "class_model": 0.40532592945817186,
+    "entropy": 0.6226118087768555,
+    "full": 0.349550271481634,
+    "margin": -1.7520200967788697,
+    "no_tta": 0.33589278295639025
+  },
+  "train": [
+    "13b8b5f76d",
+    "2132c5d085",
+    "2327817653",
+    "23b817e892",
+    "2e45fde443",
+    "32cbfe3221",
+    "3589743749",
+    "47c605ad6f",
+    "6a7fc66366",
+    "7afcdcd6be",
+    "87aa3b3887",
+    "8bd1c0ff16",
+    "ce52651f99",
+    "dd810188d9",
+    "f1b6a408bf"
+  ]
+}

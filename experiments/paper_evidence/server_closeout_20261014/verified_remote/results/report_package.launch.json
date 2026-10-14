@@ -1,0 +1,8 @@
+{
+  "pid": 4163,
+  "start_ticks": "908033160",
+  "argv": [
+    "summarize_server.py"
+  ],
+  "controller_pid": 2885
+}

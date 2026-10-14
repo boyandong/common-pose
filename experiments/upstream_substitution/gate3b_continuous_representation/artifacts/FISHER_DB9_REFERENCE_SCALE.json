@@ -1,0 +1,222 @@
+{
+  "artifact": "FISHER_DB9_REFERENCE_SCALE.json",
+  "role": "DB9-only Fisher and score reference scales for GATE 3B",
+  "provenance": {
+    "source": "frozen DB9 training corpus, identical protocol to the frozen head",
+    "frozen_head_joblib": "/root/work/gate3_work/frozen_head/frozen_db9_trusted8_lda.joblib",
+    "frozen_subset": "/root/work/common-pose/audits/db9/trusted_pose/TRUSTED_DB9_POSE_v1.json",
+    "emg2pose_data_used": "NO",
+    "gate3b_outcome_inspected": "NO",
+    "db9_files": 77,
+    "db9_frames": 123200,
+    "db9_subjects": 77,
+    "db9_classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "frozen_head_geometry": {
+    "lda_solver": "svd",
+    "lda_shrinkage": null,
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "n_features_in": 8,
+    "fisher_dimension": 7,
+    "fisher_dimension_expected": 7,
+    "scalings_shape": [
+      8,
+      7
+    ],
+    "xbar_present": true,
+    "xbar": [
+      -1.6668524199792145e-14,
+      1.652150638520311e-14,
+      8.68749516769185e-15,
+      2.2794266474335245e-14,
+      6.591949208711867e-15,
+      -9.603429163007604e-15,
+      5.495603971894525e-14,
+      1.3711254354120683e-14
+    ],
+    "explained_variance_ratio": [
+      0.45635194526139355,
+      0.2956076756075055,
+      0.17173923217864343,
+      0.06415876517794991,
+      0.009040454195438937,
+      0.0024688987022264716,
+      0.0006330288768421504
+    ],
+    "explained_variance_ratio_sum": 0.9999999999999999,
+    "transform_is_x_minus_xbar_times_scalings": true
+  },
+  "db9_corpus_consistency": {
+    "frames_match_frozen_head": true,
+    "mu_matches": true,
+    "sd_matches": true
+  },
+  "fisher_component_sigma_db9": [
+    2.528399381180427,
+    2.119724733066495,
+    1.7405277408948499,
+    1.3259416751967066,
+    1.052031002806745,
+    1.0144510301637493,
+    1.003701043911956
+  ],
+  "fisher_component_sigma_db9_ddof1": [
+    2.52840964260402,
+    2.119733335897815,
+    1.7405348047679696,
+    1.325947056486265,
+    1.0520352724390796,
+    1.0144551472790329,
+    1.003705117398783
+  ],
+  "fisher_component_mean_db9": [
+    1.1287651909844805e-15,
+    -1.3706053788312962e-14,
+    -2.841866803210197e-16,
+    4.933194905967162e-15,
+    -8.704164733852172e-15,
+    -1.1603383748065792e-14,
+    -3.2468776494992907e-15
+  ],
+  "fisher_class_means_db9": {
+    "1": [
+      -2.488643,
+      1.704846,
+      -1.008016,
+      -1.249767,
+      0.130477,
+      0.259003,
+      0.001251
+    ],
+    "2": [
+      -1.208068,
+      -2.200545,
+      -0.186864,
+      1.16013,
+      0.232958,
+      0.115823,
+      0.139007
+    ],
+    "3": [
+      -1.295407,
+      -3.728529,
+      -0.489825,
+      -0.672796,
+      -0.169515,
+      -0.102114,
+      -0.101148
+    ],
+    "4": [
+      3.033989,
+      0.460712,
+      -0.310395,
+      0.517479,
+      0.564738,
+      0.022971,
+      -0.116949
+    ],
+    "5": [
+      2.955998,
+      0.330773,
+      -0.30876,
+      -1.126006,
+      0.027642,
+      -0.209697,
+      0.12578
+    ],
+    "6": [
+      -2.672477,
+      2.305815,
+      -1.136678,
+      0.92183,
+      -0.135111,
+      -0.251801,
+      -0.019757
+    ],
+    "7": [
+      -1.076436,
+      0.66863,
+      3.662266,
+      -0.106124,
+      -0.005694,
+      -0.019146,
+      -0.012482
+    ],
+    "8": [
+      2.751043,
+      0.458298,
+      -0.221727,
+      0.555254,
+      -0.645495,
+      0.184962,
+      -0.015703
+    ]
+  },
+  "score_centered_sigma_db9": [
+    8.460585358138312,
+    6.5200128033656695,
+    9.356850551302465,
+    11.067960218577936,
+    11.115747233866133,
+    9.005709954681524,
+    6.669142832573577,
+    10.461074548992347
+  ],
+  "score_centered_sigma_db9_ddof1": [
+    8.46061969513857,
+    6.5200392646176795,
+    9.356888525764774,
+    11.068005137521105,
+    11.115792346751293,
+    9.005746504051569,
+    6.669169899064779,
+    10.4611170049105
+  ],
+  "score_mean_db9": [
+    -17.368869675082728,
+    -15.372713179876444,
+    -19.648880274668365,
+    -16.545190841031367,
+    -16.62344444749631,
+    -18.82927407198247,
+    -19.002781509049136,
+    -15.781319928809914
+  ],
+  "score_construction": "score_k(x) = -0.5 * ||x @ scalings_ - class_means_[k]||^2 + log prior_k  (the frozen head's own 8-class log-likelihood geometry; decision_function exposes only n_classes-1 = 7 columns)",
+  "score_classes_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "score_argmax_matches_head_predict": true,
+  "normalization_rule": {
+    "fisher_distance": "d_norm = sqrt( sum_j ((z_PRED_j - z_GT_j) / sigma_DB9_j)^2 ), sigma from DB9 training only",
+    "score_distance": "normalized L2 using per-score DB9 centered-score sigma",
+    "epsilon_declared": 1e-12,
+    "emg2pose_derived_scaling": "NONE"
+  },
+  "sha256_of_this_file_note": "hash recorded separately in the plan"
+}

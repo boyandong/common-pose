@@ -1,0 +1,169 @@
+LOCAL_PREFLIGHT free=57484402688 missing=17820612952 reserve=10737418240
+RETRY file=2 attempt=1 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=14 attempt=1 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+LOCAL_COMPLETE 1/964 emg2pose_data/2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2-recording-17_right.hdf5
+LOCAL_COMPLETE 2/964 emg2pose_data/2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2-recording-10_left.hdf5
+LOCAL_COMPLETE 3/964 emg2pose_data/2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2-recording-17_left.hdf5
+RETRY file=13 attempt=1 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+LOCAL_COMPLETE 4/964 emg2pose_data/2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2-recording-16_left.hdf5
+LOCAL_COMPLETE 5/964 emg2pose_data/2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2-recording-16_right.hdf5
+LOCAL_COMPLETE 6/964 emg2pose_data/2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2-recording-11_right.hdf5
+LOCAL_COMPLETE 7/964 emg2pose_data/2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2-recording-19_left.hdf5
+LOCAL_COMPLETE 8/964 emg2pose_data/2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2-recording-2_right.hdf5
+RETRY file=24 attempt=1 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=27 attempt=1 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+LOCAL_COMPLETE 9/964 emg2pose_data/2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2-recording-19_right.hdf5
+RETRY file=29 attempt=1 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+LOCAL_COMPLETE 10/964 emg2pose_data/2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2-recording-3_left.hdf5
+RETRY file=25 attempt=1 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+LOCAL_COMPLETE 11/964 emg2pose_data/2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2-recording-4_right.hdf5
+RETRY file=29 attempt=2 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+LOCAL_COMPLETE 12/964 emg2pose_data/2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2-recording-2_left.hdf5
+LOCAL_COMPLETE 13/964 emg2pose_data/2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2-recording-4_left.hdf5
+LOCAL_COMPLETE 14/964 emg2pose_data/2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2-recording-6_left.hdf5
+RETRY file=2 attempt=2 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=17 attempt=1 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=24 attempt=2 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=23 attempt=1 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=21 attempt=1 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=3 attempt=1 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=18 attempt=1 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=28 attempt=1 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=22 attempt=1 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=32 attempt=1 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=31 attempt=1 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=34 attempt=1 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=18 attempt=2 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=23 attempt=2 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=28 attempt=2 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=24 attempt=3 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=3 attempt=2 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=32 attempt=2 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=22 attempt=2 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=17 attempt=2 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=21 attempt=2 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=31 attempt=2 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=2 attempt=3 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=34 attempt=2 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=18 attempt=3 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=23 attempt=3 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=3 attempt=3 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=24 attempt=4 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=32 attempt=3 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=28 attempt=3 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=31 attempt=3 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=34 attempt=3 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=21 attempt=3 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=2 attempt=4 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=17 attempt=3 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=22 attempt=3 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=3 attempt=4 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=23 attempt=4 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=28 attempt=4 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=31 attempt=4 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=3 attempt=5 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=34 attempt=4 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+RETRY file=28 attempt=5 reason=curl: (28) Operation too slow. Less than 50000 bytes/sec transferred the last 12 seconds
+
+
+STOPPED_PARTIAL: 14/964 files complete (215496128 bytes); 0/28 sessions complete; 0 active partial files; no acquisition process remains. Remaining 950 files are PENDING after repeated low-throughput range requests.

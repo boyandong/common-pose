@@ -1,0 +1,14 @@
+{
+  "shared_four_view_files": 2768,
+  "shared_stage_wall_seconds": 6642.505813285708,
+  "includes": [
+    "input_reading",
+    "hashing",
+    "storage",
+    "inference"
+  ],
+  "pure_GPU_time": "UNKNOWN",
+  "online_per_input_latency": "UNKNOWN",
+  "historic_data_collection_cost": "UNKNOWN",
+  "new_local_source_fold_costs": "See SOURCE_LOSO_REPRODUCTION.csv; reproduction CPU timing, not original development cost"
+}

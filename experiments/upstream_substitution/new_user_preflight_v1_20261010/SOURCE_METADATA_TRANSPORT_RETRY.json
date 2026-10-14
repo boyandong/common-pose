@@ -1,0 +1,74 @@
+{
+  "status": "SAMPLED_METADATA_PREFLIGHT_PASS",
+  "probe_records": 3,
+  "intended_full_hand_sample_records": 254,
+  "all_candidate_hand_samples_checked": false,
+  "candidate_users": 127,
+  "failed_probes": [],
+  "results": [
+    {
+      "status": "METADATA_SCHEMA_PASS",
+      "user": "3f79dccf7a",
+      "side": "left",
+      "source_member": "emg2pose_data/2022-07-12-1657612800-30646-cv-emg-pose-train@2-recording-10_left.hdf5",
+      "rows": 120160,
+      "emg_shape": [
+        120160,
+        16
+      ],
+      "joint_angle_shape": [
+        120160,
+        20
+      ],
+      "time_dtype": "float64",
+      "metadata_bytes_fetched": 53560,
+      "range_requests": 2,
+      "elapsed_seconds": 13.32799999999952,
+      "no_timeseries_array_reads": true
+    },
+    {
+      "status": "METADATA_SCHEMA_PASS",
+      "user": "65546ad185",
+      "side": "right",
+      "source_member": "emg2pose_data/2022-10-14-1665734400-1b672-cv-emg-pose-demonstration@2-recording-10_right.hdf5",
+      "rows": 89459,
+      "emg_shape": [
+        89459,
+        16
+      ],
+      "joint_angle_shape": [
+        89459,
+        20
+      ],
+      "time_dtype": "float64",
+      "metadata_bytes_fetched": 40064,
+      "range_requests": 2,
+      "elapsed_seconds": 13.438000000000102,
+      "no_timeseries_array_reads": true
+    },
+    {
+      "status": "METADATA_SCHEMA_PASS",
+      "user": "7e08fa55fd",
+      "side": "right",
+      "source_member": "emg2pose_data/2022-07-06-1657094400-84cd9-cv-emg-pose-demonstration@2-recording-10_right.hdf5",
+      "rows": 93050,
+      "emg_shape": [
+        93050,
+        16
+      ],
+      "joint_angle_shape": [
+        93050,
+        20
+      ],
+      "time_dtype": "float64",
+      "metadata_bytes_fetched": 61608,
+      "range_requests": 2,
+      "elapsed_seconds": 13.453000000001339,
+      "no_timeseries_array_reads": true
+    }
+  ],
+  "bytes_fetched": 155232,
+  "elapsed_seconds": 40.5,
+  "code_sha256": "5dded351a3548d02b81177350d9c34eddac3b3efdba4254285eb964010676903",
+  "scope": "one lexicographic source filename per available hand/user; HDF5 dtype and shape metadata only; no complete member hashes, timestamps, sample validity, predictions or outcomes"
+}

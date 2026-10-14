@@ -1,0 +1,15 @@
+{
+  "classification": "UPSTREAM_TRAIN_MEMBERSHIP_UNRESOLVED",
+  "checkpoint_path_remote": "/root/models/emg2pose/regression_vemg2pose.ckpt",
+  "checkpoint_sha256": "748b1d1ef0ce1985f6fc07225d97eebfb370243429af803b4997d28ecce2424e",
+  "official_repository_head": "5f6f62b1a0a08426adffe55900842e75a8adb38c",
+  "evidence": [
+    "The checkpoint top-level keys are callbacks, epoch, global_step, hparams_name, hyper_parameters, loops, lr_schedulers, optimizer_states, pytorch-lightning_version, and state_dict.",
+    "The checkpoint hyper_parameters keys are loss_weights, lr_scheduler_conf, network_conf, optimizer_conf, and provide_initial_pos. They contain no participant IDs, session IDs, dataset manifest, or split identity.",
+    "At official repository HEAD, config/base.yaml defaults to data_split: full_split; config/data_split/full_split.yaml points to metadata.csv; emg2pose/utils.py load_splits reads its split column.",
+    "The official repository worktree is dirty; the above source statements were checked at immutable Git HEAD. A repository default does not establish how this particular checkpoint was trained."
+  ],
+  "membership_ids_recovered": false,
+  "claim_limitation": "Gate4B can test reliability-score transfer across participants relative to a frozen upstream checkpoint; it cannot establish transfer to participants unseen by the upstream estimator.",
+  "scientific_outcome_inspected": false
+}

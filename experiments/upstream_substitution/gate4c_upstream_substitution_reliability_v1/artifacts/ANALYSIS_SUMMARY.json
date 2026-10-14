@@ -1,0 +1,58 @@
+{
+  "cohort_sha256": "db61d9c75510d78e17b3858943bc3dd052dab61aa041dc260c84e064e619bead",
+  "dev_users_descriptive_only": 19,
+  "plan_sha256": "f346608139d1386947f7200c3fd80b93abcdec4e1fe385c2b647bf756eaa2332",
+  "primary_unit": "VALIDATION_USER",
+  "result_integrity_sha256": "8fcdb1d44e7d2f78c7d03a962cff8c772bfe23047954c3e007ce8cad06694c96",
+  "schema": "gate4c-user-analysis-v1",
+  "semantic_balanced_accuracy": "NOT_IDENTIFIABLE",
+  "semantic_macro_f1": "NOT_IDENTIFIABLE",
+  "status": "DESCRIPTIVE_COMPLETE",
+  "task_performance_delta": "NOT_IDENTIFIABLE",
+  "unknown_ambiguous_flips": "NOT_APPLICABLE",
+  "validation_balanced_preservation": {
+    "maximum": 0.3689330970966684,
+    "median": 0.3330796977858139,
+    "minimum": 0.3172978434571803,
+    "q25": 0.3280451639622296,
+    "q75": 0.3389174839257495
+  },
+  "validation_cohen_kappa": {
+    "maximum": 0.4929269342336713,
+    "median": 0.369528560788449,
+    "minimum": 0.0026362907211316474,
+    "q25": 0.3309933024555198,
+    "q75": 0.47214266815512146
+  },
+  "validation_hard_output_preservation": {
+    "maximum": 0.7591955543794655,
+    "median": 0.6571356930749919,
+    "minimum": 0.1631814787154593,
+    "q25": 0.5533261988754034,
+    "q75": 0.7041948318237283
+  },
+  "validation_hard_output_preservation_bootstrap_ci95": [
+    0.4907873210633947,
+    0.7437589045073822
+  ],
+  "validation_insufficient_user_fraction": 0.0,
+  "validation_tv_median": {
+    "maximum": 0.5381482839584351,
+    "median": 0.2260015830397606,
+    "minimum": 0.18204525113105774,
+    "q25": 0.21477410569787025,
+    "q75": 0.2883501946926117
+  },
+  "validation_users": 8,
+  "validation_valid_coverage": {
+    "maximum": 1.0,
+    "median": 1.0,
+    "minimum": 1.0,
+    "q25": 1.0,
+    "q75": 1.0
+  },
+  "validation_valid_coverage_bootstrap_ci95": [
+    1.0,
+    1.0
+  ]
+}

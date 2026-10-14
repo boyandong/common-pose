@@ -232,18 +232,21 @@ _CANONICAL16: tuple[DofSpec, ...] = (
         positive_direction="flexion", zero_definition=_DB9_ZERO,
         handedness="right", emg2pose_index=10, db9_channel="PIP3", db9_index=8,
         calibration_provenance=_DB9_CALIB,
-        note="DROPped at the final 77-subject sample under the already-frozen rules: responds "
-             "to a fist in only 35 of 77 subjects, with a raw magnitude ~3 percent of the "
-             "flexion-channel median. At 37 subjects it was INCONCLUSIVE; the larger "
-             "sample made the rule strictly more conservative, not more permissive.",
+        note="Moved INCONCLUSIVE -> DROP at the final 77-participant sample under the "
+             "already-frozen rules: agreement 0.45 with magnitude ratio 0.03, below the "
+             "frozen responsiveness floor. The earlier 37-participant sample did not "
+             "settle it. The larger sample made the rule strictly more conservative, "
+             "never more permissive.",
     ),
     DofSpec(
         "middle_dip_flexion", "middle", "DIP", "FE",
         positive_direction="flexion", zero_definition=_DB9_ZERO,
         handedness="right", emg2pose_index=11, db9_channel="DIP3", db9_index=17,
         calibration_provenance=_DB9_CALIB,
-        note="DB9 DIP3 is DROPped: on an unambiguous fist the released angle decreases "
-             "in 71 of 77 subjects while every MCP and PIP channel increases.",
+        note="DB9 DIP3 is DROPped: on an unambiguous fist the raw gauge and the released "
+             "angle both decrease while every MCP and PIP channel in the same segments "
+             "increases. Directional inversion (77-participant ratio 0.06 / 0.92 "
+             "opposed), not noise.",
     ),
     DofSpec(
         "ring_mcp_flexion", "ring", "MCP", "FE",
@@ -256,15 +259,18 @@ _CANONICAL16: tuple[DofSpec, ...] = (
         positive_direction="flexion", zero_definition=_DB9_ZERO,
         handedness="right", emg2pose_index=14, db9_channel="PIP4", db9_index=11,
         calibration_provenance=_DB9_CALIB,
+        note="Held INCONCLUSIVE at the final 77-participant sample: agreement 0.77, above "
+             "the drop floor but not established.",
     ),
     DofSpec(
         "ring_dip_flexion", "ring", "DIP", "FE",
         positive_direction="flexion", zero_definition=_DB9_ZERO,
         handedness="right", emg2pose_index=15, db9_channel="DIP4", db9_index=18,
         calibration_provenance=_DB9_CALIB,
-        note="DROPped at the final 77-subject sample: inverted in 54 of 77 subjects and with a "
-             "raw response ~5 percent of the flexion-channel median, below the frozen "
-             "responsiveness floor.",
+        note="Moved INCONCLUSIVE -> DROP at the final 77-participant sample under the "
+             "already-frozen rules: agreement 0.29 with magnitude ratio 0.05, below the "
+             "frozen responsiveness floor. Inversion direction was already observed in "
+             "the earlier 37-participant sample but did not settle the verdict there.",
     ),
     DofSpec(
         "pinky_mcp_flexion", "pinky", "MCP", "FE",
@@ -283,7 +289,8 @@ _CANONICAL16: tuple[DofSpec, ...] = (
         positive_direction="flexion", zero_definition=_DB9_ZERO,
         handedness="right", emg2pose_index=19, db9_channel="DIP5", db9_index=19,
         calibration_provenance=_DB9_CALIB,
-        note="DB9 DIP5 is DROPped: the same inversion, coherent in 62 of 77 subjects.",
+        note="DB9 DIP5 is DROPped: the same directional inversion as DIP3 "
+             "(77-participant ratio 0.19 / 0.81 opposed).",
     ),
 )
 

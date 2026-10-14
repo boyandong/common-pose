@@ -1,0 +1,11 @@
+{
+  "analysis_seal_sha256": "98f6e32909af8b2bf97527422389a657a755b080cbfb981a04dee14714cc7679",
+  "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+  "cuda_version": "12.8",
+  "device": "NVIDIA GeForce RTX 5090 D",
+  "no_fitting": true,
+  "numpy": "1.26.4",
+  "python": "3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]",
+  "runner_sha256": "7e49417f253f660fe7a207d057f0a1c3cab08a5ad1a31340d03d70217de049ee",
+  "torch": "2.8.0+cu128"
+}

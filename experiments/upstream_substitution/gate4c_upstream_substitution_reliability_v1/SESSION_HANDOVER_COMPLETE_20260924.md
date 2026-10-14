@@ -1,0 +1,20 @@
+# Gate4C completed handover — 2026-09-24
+
+## Objective and frozen decisions
+
+Evaluate whether a frozen DB9 downstream consumer preserves its class output when measured GT hand kinematics are replaced by frozen VEMG2Pose predictions across users. This was an inference/substitution experiment, not training. The primary unit is the VALIDATION user; the exact 27-user, 926-file cohort, model, adapter, head, alignment, validity rule, feasibility floor, endpoints, bootstrap, and no-rescue rule are frozen in `GATE4C_PLAN.md` and `COHORT_MANIFEST.json`. The old Gate4B is closed for pre-outcome structural failure, preserved separately. No protected split or discovery participant entered Gate4C.
+
+## Verified scientific and runtime state
+
+- The remote runner on `root@connect.westd.seetacloud.com:47633`, host `autodl-container-jb0h2d8heu-e269f047`, reported `GATE4C_ACQUISITION_COMPLETE 926/926` and current status `GATE4C_PROGRESS 926/926` on 2026-09-24. Its lane is `/root/work/common-pose/experiments/upstream_substitution/gate4c_upstream_substitution_reliability_v1`. Reverify external runtime before any later remote action; a historical PID or log is not proof of a live process.
+- Independent integrity audit: `artifacts/RESULT_INTEGRITY.json` status `PASS`, 926 files, 27 users, 2,381,011 paired-valid 50-Hz blocks. All 27 users passed the predeclared 10,000-block feasibility floor. The remote integrity and summary hashes matched local copies on 2026-09-24.
+- Preregistered analysis: `artifacts/ANALYSIS_SUMMARY.json` status `DESCRIPTIVE_COMPLETE`. Among 8 VALIDATION users, hard output preservation user median 0.6571, IQR 0.5533–0.7042, range 0.1632–0.7592, user-bootstrap 95% CI 0.4908–0.7438; valid coverage 1.0000 for all 8. Full user and error-chain results are in `artifacts/USER_METRICS.json` and `artifacts/ERROR_CHAIN_DECILES.json`.
+- Decision: `GATE4C_DECISION.md`. The frozen substitution is feasible but cross-user preservation is heterogeneous; a uniform reliability claim is unsupported. These are behavioral comparisons to the GT path, not semantic accuracy against human task labels.
+- Frozen identities: plan SHA256 `f346608139d1386947f7200c3fd80b93abcdec4e1fe385c2b647bf756eaa2332`; cohort `db61d9c75510d78e17b3858943bc3dd052dab61aa041dc260c84e064e619bead`; checkpoint `748b1d1ef0ce1985f6fc07225d97eebfb370243429af803b4997d28ecce2424e`; adapter `24694cfda80604148490485d47bf5eddc8e20479d1b55d522ca5d0199b649193`; DB9 head `b0ef8caf8e390a480fa2a3b448f79ccf14f75c71265ef925ee299a5e9e660386`; repaired runner `e3ca8e3b2a7d4a6059ac5fba9d01df264d329f52dc3497fdcc9cfdc0b4e98091`. `IMPLEMENTATION_REPAIR_001.md` records the prospective-scope-preserving mechanical repair.
+- Result hashes: integrity `8fcdb1d44e7d2f78c7d03a962cff8c772bfe23047954c3e007ce8cad06694c96`; user metrics `87a02645698322d7f7e01b1afb19067104d8d175f4abbc4fc77ff6a0985ec8ef`; error deciles `4c03ff117484f7416d86c611cdb26f2c7996d11e4e08285e8bb98db456f22a7e`; summary `81dce686d7cf4ad07717fd01f48da761da2d25a8a94918c9455b6d5ac204e283`.
+
+## Unknowns, worktree, and next actions
+
+- Unknown: official upstream checkpoint training-user membership. This study cannot claim upstream-unseen evaluation. The cohort has no registered human task labels, so semantic balanced accuracy, macro-F1, and task-performance delta are not identifiable. Error-chain associations are descriptive, not causal.
+- Worktree: this Gate4C lane is untracked within a repository that also has unrelated pre-existing modifications. Do not stage or commit all repository changes indiscriminately. The old running handover is historical, not current runtime truth.
+- Next: archive this completed phase. If a new scientific question is chosen, write a new prospective plan and freeze cohort/identities before examining new outcomes. Do not retrain, calibrate, remap, exclude `ab228f34a5`, tune thresholds, or alter the current Gate4C results to improve them. Recommended new session name: `COMMON-POSE-GATE4C-20260924-RESULT-REVIEW`, or a new phase-specific name once the next question is selected.

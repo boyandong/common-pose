@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "user_risks": 4680,
+  "class_support_rows": 37440,
+  "paired_effects": 3120,
+  "support_intersections": 1560,
+  "summary_groups": 160,
+  "canonical_checks": 702,
+  "canonical_max_abs_difference": 0.0,
+  "cache_files_verified": 39,
+  "result_manifest_sha256": "44bdcce88ff0d8f3c65e6465a851cc0f5742c639a69a0a01b687d7cc3c1b1d23",
+  "verifier_sha256": "eb1d36b809e787acb17ede15c790c5c19c95225455639f1bf38ef09abe457b55",
+  "threadpools": [
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 8,
+      "prefix": "libgomp",
+      "filepath": "/root/miniconda3/envs/commonpose-supplement/lib/python3.10/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 8,
+      "prefix": "libopenblas",
+      "filepath": "/root/miniconda3/envs/commonpose-supplement/lib/python3.10/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+      "version": "0.3.23.dev",
+      "threading_layer": "pthreads",
+      "architecture": "SapphireRapids"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 8,
+      "prefix": "libopenblas",
+      "filepath": "/root/miniconda3/envs/commonpose-supplement/lib/python3.10/site-packages/scipy.libs/libopenblasp-r0-01191904.3.27.so",
+      "version": "0.3.27",
+      "threading_layer": "pthreads",
+      "architecture": "SapphireRapids"
+    }
+  ],
+  "scope": "independent raw-cache rescore, SHA256 tie sorting, all support/risk/effect rows, frozen sets, original canonical admission, 160 conditional user bootstraps; no fitting"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "REPORTING_AND_SEEDS_VERIFIED",
+  "code_sha256": "d9d44d4d2a61d6d68ca8e1694d86ae3308892dae06124e544b8d653c75d54c6a",
+  "inputs": {
+    "paper_closing_v1_20261010\\results\\RUN_MANIFEST.json": "817030f4f65c7281cd56757e5a0248d60f2f634fa7a56d4ec840ad78c2382a0e",
+    "paper_supplement_v1_20261009\\comparative_analysis\\SUMMARY.json": "2c78ea2c4eb1ad628d41c8d8dd653103be95aeb3340d19169f176d52755dc413",
+    "paper_closing_v1_20261010\\results\\TARGET_AREA_SUMMARY.json": "4169f4c253ef352cff0f12657bc22ec3ad1f03b78507f330bcd9c240c26d4511",
+    "paper_closing_v1_20261010\\results\\REPRODUCTION_LINEAGE.json": "bbbd4114c9bfac212017d6f30d2713e7078fb39b879afe7f017ac6577a31cf69",
+    "paper_supplement_v1_20261009\\comparative_analysis\\TTA_COST.json": "cd0324b4935d0341b098de76bc052a796f1c41bcbc8f14e0eedcaf5678e10440",
+    "paper_closing_v1_20261010\\results\\USER_EFFECTS_30.csv": "1e2db3e3364e47e8c5fb48e23084923605aa545fde63c3202fb2f2d9e499429b",
+    "paper_closing_v1_20261010\\results\\CLASSWISE_30_REFERENCE_DETAIL.csv": "69a610da26afe2879eac503c855c198364e15557ad1a00ead5b77bba0165b433",
+    "paper_closing_v1_20261010\\results\\ORIGINAL_DEPLOYMENT_USER_ROWS.csv": "84a9f37bb13816c6e7ae61d160d7ef2bf1175a8edd59b6c241b3afadb0c48741",
+    "paper_closing_v1_20261010\\results\\RECONSTRUCTED_DEPLOYMENT_30.csv": "bcf5e0ae40cbd7e4948371e12c530af6eb6ac55403c7c074115e4b519aefecc0",
+    "paper_closing_v1_20261010\\results\\TARGET_AREA_PAIRED_EFFECTS.csv": "8e6899400224ed36203437a28f5f37b0834a9c714db4b156de14c0a9d74d65c3",
+    "paper_closing_v1_20261010\\reproduction_attempt3_8threads\\INDEPENDENT_VERIFICATION.json": "06d763a6206e26ea5259377f512f727446ca60a4c73ce89c245a987e4ec3e02f",
+    "paper_closing_v1_20261010\\reproduction_attempt3_8threads\\seed_results\\SUMMARY.json": "5dc89a22ac2a431692693453259df96d31dbba8e4f553c02e94f12220d81c8a5",
+    "paper_closing_v1_20261010\\reproduction_attempt3_8threads\\seed_results\\SEED_USER_RISKS.csv": "f571a40ce530f68bf01613ad6730fcbcd8f1105e7f1a5580ac4ec2a3e82b973e",
+    "paper_closing_v1_20261010\\reproduction_attempt3_8threads\\canonical\\DIAGNOSIS.json": "3b159036ed1b37f8b13a7b91b4c48ba216c5ce988ef79654a21384cf817b3d31",
+    "paper_closing_v1_20261010\\reproduction_attempt3_8threads\\thread1_control\\DIAGNOSIS.json": "a62ded7513561376e3656977e016bb25518fa5675fe446d2ada11f45c86ab0c9",
+    "paper_closing_v1_20261010\\reproduction_attempt3_8threads\\score_order_control\\SCORE_ORDER_DIAGNOSIS.json": "c219d9e9615b1cf9a5aa57dc618634cdb657ec4fa01662f065e3cb3d0158cafa"
+  },
+  "outputs": {
+    "ABSOLUTE_RISKS_FINAL_30.csv": "ab01f8bce9121b84d46ee878703083c37fc7222ab12fec310af91a6696441da5",
+    "MANUSCRIPT_CLOSING.md": "ed07a402de253bc26c17faaae6cc0f63d8729535e3ab742eb5a9c98140102f99"
+  }
+}

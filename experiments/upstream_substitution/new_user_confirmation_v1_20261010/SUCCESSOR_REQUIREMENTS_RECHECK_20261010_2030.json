@@ -1,0 +1,251 @@
+{
+  "N80_selection_and_source_members_rederived": true,
+  "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+  "new_user_effect_values_read": false,
+  "observed_local_time": "2026-10-10T20:31:36.356041+08:00",
+  "old_20seed_current_manifest_and_files_pass": 27,
+  "old_20seed_verification": {
+    "cache_files_verified": 39,
+    "canonical_checks": 702,
+    "canonical_max_abs_difference": 0.0,
+    "class_support_rows": 37440,
+    "paired_effects": 3120,
+    "result_manifest_sha256": "44bdcce88ff0d8f3c65e6465a851cc0f5742c639a69a0a01b687d7cc3c1b1d23",
+    "scope": "independent raw-cache rescore, SHA256 tie sorting, all support/risk/effect rows, frozen sets, original canonical admission, 160 conditional user bootstraps; no fitting",
+    "status": "PASS",
+    "summary_groups": 160,
+    "support_intersections": 1560,
+    "threadpools": [
+      {
+        "filepath": "/root/miniconda3/envs/commonpose-supplement/lib/python3.10/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+        "internal_api": "openmp",
+        "num_threads": 8,
+        "prefix": "libgomp",
+        "user_api": "openmp",
+        "version": null
+      },
+      {
+        "architecture": "SapphireRapids",
+        "filepath": "/root/miniconda3/envs/commonpose-supplement/lib/python3.10/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+        "internal_api": "openblas",
+        "num_threads": 8,
+        "prefix": "libopenblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.23.dev"
+      },
+      {
+        "architecture": "SapphireRapids",
+        "filepath": "/root/miniconda3/envs/commonpose-supplement/lib/python3.10/site-packages/scipy.libs/libopenblasp-r0-01191904.3.27.so",
+        "internal_api": "openblas",
+        "num_threads": 8,
+        "prefix": "libopenblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.27"
+      }
+    ],
+    "user_risks": 4680,
+    "verifier_sha256": "eb1d36b809e787acb17ede15c790c5c19c95225455639f1bf38ef09abe457b55"
+  },
+  "old_backups": [
+    {
+      "archive": "private_cache_backup_20261010.tar.gz",
+      "bytes": 384382955,
+      "member_verification": "preserved prior verifier; this pass rehashes the immutable whole archive",
+      "sha256": "79241d7fdf9006b2c6cb95c6a88ac9f85ba1951931ce9e0097b53dcce25283cc",
+      "status": "CURRENT_ARCHIVE_REHASH_PASS"
+    },
+    {
+      "archive": "private_reporting_and_seed_backup_20261010.tar.gz",
+      "bytes": 17428285,
+      "member_verification": "preserved prior verifier; this pass rehashes the immutable whole archive",
+      "sha256": "413f782643ed4e01f2738881787369018c45167e3c73f14626a7ff005ca30f5a",
+      "status": "CURRENT_ARCHIVE_REHASH_PASS"
+    }
+  ],
+  "old_current_row_counts": {
+    "CANONICAL_SEED_ADMISSION.csv": {
+      "fields": [
+        "split",
+        "contract",
+        "user",
+        "method",
+        "metric",
+        "reference_risk",
+        "recovered_risk",
+        "difference"
+      ],
+      "rows": 702
+    },
+    "SEED_CLASS_SUPPORT.csv": {
+      "fields": [
+        "split",
+        "contract",
+        "user",
+        "seed",
+        "method",
+        "class",
+        "accepted_support",
+        "accepted_risk",
+        "in_frozen_common_set",
+        "supported"
+      ],
+      "rows": 37440
+    },
+    "SEED_PAIRED_EFFECTS.csv": {
+      "fields": [
+        "split",
+        "contract",
+        "user",
+        "seed",
+        "comparison",
+        "metric",
+        "effect"
+      ],
+      "rows": 3120
+    },
+    "SEED_USER_RISKS.csv": {
+      "fields": [
+        "split",
+        "contract",
+        "user",
+        "seed",
+        "method",
+        "accepted",
+        "ordinary_risk",
+        "fixed_common_risk",
+        "frozen_common_classes",
+        "sparse_frozen_classes",
+        "missing_frozen_classes",
+        "supported_classes_at_seed",
+        "baseline_set_risk_lower",
+        "baseline_set_risk_upper"
+      ],
+      "rows": 4680
+    }
+  },
+  "old_git_anchor": "1fc75512698c92d4bd11cf52e660c8814b1ac127",
+  "old_release_current_files_and_git_anchor_pass": 125,
+  "preflight_artifact_hashes_reverified": 8,
+  "protocol_sha256": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a",
+  "requirement_status_note": "Historical release/backup/20-seed and preflight seals reverified here; N80 source acquisition, qualification, inference, independent results, complete backup and prospective report remain incomplete. Transfer processes are observed separately.",
+  "requirements": [
+    {
+      "evidence": [
+        "paper_closing_v1_20261010/RELEASE_CONTENT_MANIFEST.json",
+        "paper_closing_v1_20261010/manuscript_closing/BUILD_MANIFEST.json"
+      ],
+      "git_anchor": "1fc75512698c92d4bd11cf52e660c8814b1ac127",
+      "release_files_rehashed": 125,
+      "requirement": "old manuscript closing and fixed reproducible Git release",
+      "state": "VERIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "archive": "private_cache_backup_20261010.tar.gz",
+          "bytes": 384382955,
+          "receipt": "LOCAL_BACKUP_VERIFICATION.json",
+          "sha256": "79241d7fdf9006b2c6cb95c6a88ac9f85ba1951931ce9e0097b53dcce25283cc"
+        },
+        {
+          "archive": "private_reporting_and_seed_backup_20261010.tar.gz",
+          "bytes": 17428285,
+          "receipt": "REPORTING_SEED_BACKUP_MANIFEST.json",
+          "sha256": "413f782643ed4e01f2738881787369018c45167e3c73f14626a7ff005ca30f5a"
+        }
+      ],
+      "requirement": "restored old cache and local private cache/report/seed backup",
+      "scope": "archive bytes rehashed against preserved prior member verification; raw private source/models not redistributed",
+      "state": "VERIFIED"
+    },
+    {
+      "counts": {
+        "canonical_checks": 702,
+        "canonical_max_abs_difference": 0.0,
+        "class_support_rows": 37440,
+        "paired_effects": 3120,
+        "summary_groups": 160,
+        "user_risks": 4680
+      },
+      "evidence": "paper_closing_v1_20261010/reproduction_attempt3_8threads/INDEPENDENT_VERIFICATION.json",
+      "requirement": "canonical numerical diagnosis and all20 prescribed seeds independently verified",
+      "state": "VERIFIED"
+    },
+    {
+      "evidence": [
+        "new_user_confirmation_v1_20261010/SCIENTIFIC_SPEC.md",
+        "paper_closing_v1_20261010/manuscript_closing/MANUSCRIPT_CLOSING.md"
+      ],
+      "requirement": "score-only deferred under limited empirical claim",
+      "state": "VERIFIED_IN_FROZEN_SPEC_AND_MANUSCRIPT"
+    },
+    {
+      "artifact_hashes_reverified": 8,
+      "candidate_count": 127,
+      "exposure_limit": "local fingers provenance, including hidden/ignored manifests and processed filenames; outside-root, unsaved and private remote history not certified absent",
+      "requirement": "scoped history/protected-cohort/upstream exposure audit and resource planning",
+      "state": "COMPLETED_WITH_PRESERVED_LIMITS",
+      "upstream_training_membership": "UNRESOLVED"
+    },
+    {
+      "cohort_sha256": "349efb4b38e6351427cb061d022ead447ca6a4fe9db0d1c9a285c70f8c3b3597",
+      "enrollment_rule_rederived": true,
+      "protocol_sha256": "43c381fbe211691d184cf18dee9dc689e38af288fb0df9e6cd3dc1677b14fd8a",
+      "requirement": "prospective frozen strong-baseline protocol and outcome-independent N80 selection",
+      "state": "VERIFIED",
+      "users": 80,
+      "valid_nonzero_pairs_assumed": false
+    },
+    {
+      "currently_present": [],
+      "required_receipts": [
+        "ACQUISITION_COMPLETE.json",
+        "LOCAL_RELAY_COMPLETE.json",
+        "SOURCE_QUALIFICATION.json"
+      ],
+      "requirement": "complete sources, remote transfers and full source validity",
+      "state": "INCOMPLETE"
+    },
+    {
+      "currently_present": [],
+      "required_receipts": [
+        "FEATURE_CACHE_MANIFEST.json",
+        "COMMON_CLASS_SETS.json",
+        "PRIMARY_RESULT.json",
+        "RESULT_MANIFEST.json"
+      ],
+      "requirement": "new frozen inference, support-first class sets, primary comparisons and20 conditional seeds",
+      "state": "INCOMPLETE"
+    },
+    {
+      "currently_present": [],
+      "required_receipts": [
+        "INDEPENDENT_RESULT_VERIFICATION.json"
+      ],
+      "requirement": "independent complete new-result verification",
+      "state": "INCOMPLETE"
+    },
+    {
+      "currently_present": [],
+      "required_receipts": [
+        "OFFHOST_BACKUP_MANIFEST.json",
+        "OFFHOST_BACKUP_VERIFICATION.json"
+      ],
+      "requirement": "complete new source/cache/dependency/result off-host backup",
+      "state": "INCOMPLETE"
+    },
+    {
+      "reporting_plan": "REPORTING_PLAN_BEFORE_OUTCOMES_20261010.md",
+      "reporting_preparation_is_not_confirmation": true,
+      "required_outputs": [
+        "manuscript_confirmation/MANUSCRIPT_CONFIRMATION.md",
+        "manuscript_confirmation/BUILD_MANIFEST.json"
+      ],
+      "requirement": "prospective manuscript reports positive/negative/missing results and updated final audit",
+      "state": "INCOMPLETE"
+    }
+  ],
+  "status": "FULL_GOAL_REMAINS_INCOMPLETE"
+}

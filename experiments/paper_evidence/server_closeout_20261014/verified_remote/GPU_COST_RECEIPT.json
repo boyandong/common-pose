@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETE_OFFLINE_COST_PROFILE",
+  "model_load_seconds": 2.0066748075187206,
+  "selected_files": [
+    "emg2pose_data/2022-10-26-1666771200-9a4a0-cv-emg-pose-train@2-recording-10_left.hdf5",
+    "emg2pose_data/2022-10-26-1666771200-9a4a0-cv-emg-pose-train@2-recording-10_right.hdf5",
+    "emg2pose_data/2022-10-26-1666771200-9a4a0-cv-emg-pose-train@2-recording-11_left.hdf5"
+  ],
+  "timed_passes": 6,
+  "warmups": 1,
+  "cuda_device": "NVIDIA GeForce RTX 4090",
+  "torch": "2.8.0+cu128",
+  "online_latency_verified": false,
+  "cached_predictions_replaced": false
+}

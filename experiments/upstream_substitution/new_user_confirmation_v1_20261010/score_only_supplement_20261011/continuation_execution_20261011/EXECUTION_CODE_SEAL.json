@@ -1,0 +1,20 @@
+{
+  "execution_chain": "original support; supplementary support; original analysis/verification; supplementary analysis/verification; integrated export; exact D backup and verifications; original and secondary/integrated reports and presentation figures; final audit",
+  "files": {
+    "../build_continuation_confirmation_figures_20261011.py": "b9c44b8b1b0a50c90782e8d5a6663c9fda48bef5892fca01ef1d57e550d96b5e",
+    "../finalize_continuation_verified_goal_20261011.py": "03ea8f8258787f75aabdf972a6bc8670e062827fbf75c9ef0ff9eb702b409c0c",
+    "EXECUTION_CONTINUATION_AMENDMENT.md": "169818e4fb781940350aed9135aaa571a731d9c57085dc4f177f137bb5511a21",
+    "execution_gate.py": "4f5e34854b1958ea8bbc64d2733d24b51bd24f30cd26e8fc48033fc310523fdc",
+    "launch_and_wait.py": "e166e8e02292a509ce41f5bb130f07547f1758b0f7e0dfa695d133e923dd54ab",
+    "preflight.py": "c07f6ce89c2240055f412375faaadfb0ff0c6b1d23090be4dfb05f304bf7921b",
+    "recheck_original_requirements.py": "83e89c48dfd12bd158799adf4da9a5cf261d74ff1735e923bfd3bac06d0c8de1",
+    "run_continuation.py": "906396e7371d783b4add895b92360c1c5995e8207fbe509e4d0072d32558415e",
+    "test_execution_gate.py": "c8680e6e4cbc72df7bc9f487b0f02b412ffd01cbe9f0048bf681f48688cea6c2"
+  },
+  "original_code_seal_sha256": "aebe0573e0e332c923e9c27fb0ee4611b5e10a32ef89bd796d208b51c1f7eec3",
+  "original_controller_exit": "UNKNOWN",
+  "qualification_reconstruction_redispatch": false,
+  "scientific_code_modified": false,
+  "status": "EXECUTION_ONLY_SEALED_BEFORE_SINGLE_CONTINUATION_LAUNCH",
+  "test_gate_controls": "7 PASS: genuine new exit and rejection of missing/nonzero/foreign/mismatched/invented-old success"
+}

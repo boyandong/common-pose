@@ -1,0 +1,8 @@
+{
+  "host": "connect.westc.seetacloud.com",
+  "host_key_sha256": "962677eaf342b0d70d757796b387fe83964884f33f66284ff37e2fc6cf1496a7",
+  "observed_epoch": 1791619177.9722443,
+  "pid": 18452,
+  "port": 47514,
+  "status": "PINNED_HOST_AUTHENTICATION_PASS"
+}

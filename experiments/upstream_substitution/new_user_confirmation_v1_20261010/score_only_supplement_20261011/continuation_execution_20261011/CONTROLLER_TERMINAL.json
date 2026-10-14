@@ -1,0 +1,10 @@
+{
+  "continuation_launch_sha256": "09aa7d129899ea20bf35dcfd252292da8daebd59a6003429060e69a1715c56d1",
+  "exit_code": 0,
+  "finished_epoch": 1791679567.218528,
+  "original_controller_exit": "UNKNOWN",
+  "original_launch_sha256": "3a1a7c5bed113a7e9e55d5d85175fb24a8a7ad0b72c378b1fa7e262387fe84ab",
+  "pid": 8500,
+  "started_epoch": 1791668256.4747329,
+  "status": "COMPLETE_REPORTING_PENDING"
+}

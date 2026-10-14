@@ -1,0 +1,36 @@
+{
+  "local_scope": [
+    {
+      "root": "<PROJECT_ROOT>\\experiments\\multi_consumer\\consumer2_target_A_v1_20261011\\checkpoint_provenance",
+      "exists": true,
+      "files_in_scope": 10,
+      "candidate_paths": [],
+      "interpretation": "candidate filenames are not checkpoint-run proof"
+    },
+    {
+      "root": "<HISTORICAL_WORKSPACE>\\baseline\\emg2pose\\config",
+      "exists": true,
+      "files_in_scope": 20,
+      "candidate_paths": [],
+      "interpretation": "candidate filenames are not checkpoint-run proof"
+    },
+    {
+      "root": "<HISTORICAL_WORKSPACE>\\checkpoints",
+      "exists": true,
+      "files_in_scope": 10,
+      "candidate_paths": [],
+      "interpretation": "candidate filenames are not checkpoint-run proof"
+    },
+    {
+      "root": "<USER_HOME>\\Desktop\\fingers\\_recon_emg2pose",
+      "exists": true,
+      "files_in_scope": 31,
+      "candidate_paths": [],
+      "interpretation": "candidate filenames are not checkpoint-run proof"
+    }
+  ],
+  "release_archive_receipt_sha256": "dd09e13b79cefb8a72e46a93e0c0461e40fc600ceba1cf65392bb53477b5b87f",
+  "no_sha_bound_run_manifest_established_in_examined_evidence": true,
+  "not_an_exhaustive_search_of_every_device_or_publisher_internal_system": true,
+  "no_contacts_sent": true
+}

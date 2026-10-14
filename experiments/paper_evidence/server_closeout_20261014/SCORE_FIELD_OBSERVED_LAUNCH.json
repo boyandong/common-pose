@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "stdout": "{\"SCORE_FIELD_LAUNCH.json\": \"{\\n  \\\"pid\\\": 4765,\\n  \\\"start_ticks\\\": \\\"908181708\\\",\\n  \\\"python\\\": \\\"/root/miniconda3/envs/commonpose-supplement/bin/python\\\",\\n  \\\"seal_sha256\\\": \\\"a4a0338fb432db05a71c99ebb2824c7fee96d59d87a5a630a8bc26f9bd8a4676\\\"\\n}\\n\", \"SCORE_FIELD_STATE.json\": \"{\\n  \\\"stage\\\": \\\"score_field_ablation.py\\\",\\n  \\\"status\\\": \\\"RUNNING\\\",\\n  \\\"pid\\\": 4765,\\n  \\\"elapsed_seconds\\\": 0.0002418477088212967\\n}\\n\", \"score_field_ablation/PROGRESS.json\": \"{\\n  \\\"stage\\\": \\\"evaluation\\\",\\n  \\\"cohort\\\": \\\"A20\\\",\\n  \\\"users_complete\\\": 3,\\n  \\\"users\\\": 20,\\n  \\\"pid\\\": 4892\\n}\\n\", \"score_field_controller.log\": \"\"}\n",
+  "stderr": ""
+}

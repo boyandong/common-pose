@@ -1,0 +1,5 @@
+phase,samples,records,participants,min_seconds,median_seconds,max_seconds,p95_seconds,scope
+four_view_inference_and_transfer,6,3,1,1.6939767897129059,1.7193413777276874,1.7299958113580942,1.7279723472893238,whole-record bounded profile; repeats not independent population samples
+block_aggregation,6,3,1,0.0036591291427612305,0.004442591220140457,0.0066955555230379105,0.006365098524838686,whole-record bounded profile; repeats not independent population samples
+CPU_feature_and_reference,36,3,1,0.008183352649211884,0.008464162237942219,0.010417759418487549,0.010230494663119316,whole-record bounded profile; repeats not independent population samples
+CPU_original_full_score,36,3,1,0.004377853125333786,0.0053005702793598175,0.00660979188978672,0.005786878522485495,whole-record bounded profile; repeats not independent population samples

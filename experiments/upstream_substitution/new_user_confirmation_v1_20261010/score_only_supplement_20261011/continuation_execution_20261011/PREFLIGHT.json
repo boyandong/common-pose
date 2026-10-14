@@ -1,0 +1,126 @@
+{
+  "effect_values_read": false,
+  "git_head": "db9cc05f417e835d1cf32816428927990f0e0be4",
+  "incident_D_files_rehashed": 14,
+  "incident_sha256": "48140f2c99fccb5b5ac1a511b3c65618ceb1cf4dc94402f0fb453c7dbb45cede",
+  "local_D_free_bytes": 60570599424,
+  "local_handles": [
+    {
+      "Id": 31548,
+      "start_time": "2026-10-11T05:34:56.4469753+08:00"
+    }
+  ],
+  "local_source_bytes": 50213536592,
+  "local_source_files_rehashed": 2768,
+  "observed_local_time": "2026-10-11T05:36:00.332117+08:00",
+  "original_controller_exit": "UNKNOWN",
+  "original_launch_sha256": "3a1a7c5bed113a7e9e55d5d85175fb24a8a7ad0b72c378b1fa7e262387fe84ab",
+  "remote": {
+    "cuda": "12.8",
+    "existing_cache_bytes_lower_bound": 2750791597,
+    "gpu": "NVIDIA GeForce RTX 5090 D",
+    "python": "3.10.13",
+    "remote_free_bytes": 123136122880,
+    "scientific_processes": [],
+    "source_files": 2768,
+    "stages": {
+      "analysis": {
+        "state": "NOT_DISPATCHED"
+      },
+      "qualification": {
+        "launch": {
+          "child_pid": 30680,
+          "code_seal_sha256": "98f6e32909af8b2bf97527422389a657a755b080cbfb981a04dee14714cc7679",
+          "command": [
+            "/root/miniconda3/envs/commonpose-supplement/bin/python",
+            "-u",
+            "/root/work/common-pose/experiments/upstream_substitution/new_user_confirmation_v1_20261010/qualify_sources.py"
+          ],
+          "parent_pid": 30679,
+          "stage": "qualification",
+          "started_epoch": 1791658283.3416677
+        },
+        "state": "TERMINAL",
+        "terminal": {
+          "exit_code": 0,
+          "finished_epoch": 1791658434.0944428,
+          "output_log_sha256": "820baf3ee71d7ee651cddac6b8554250be772bbb9be630349057a49243386149",
+          "stage": "qualification",
+          "started_epoch": 1791658283.3416677
+        }
+      },
+      "reconstruction": {
+        "launch": {
+          "child_pid": 30785,
+          "code_seal_sha256": "98f6e32909af8b2bf97527422389a657a755b080cbfb981a04dee14714cc7679",
+          "command": [
+            "/root/miniconda3/envs/commonpose-supplement/bin/python",
+            "-u",
+            "/root/work/common-pose/experiments/upstream_substitution/new_user_confirmation_v1_20261010/reconstruct_users.py"
+          ],
+          "parent_pid": 30784,
+          "stage": "reconstruction",
+          "started_epoch": 1791658435.9861102
+        },
+        "state": "TERMINAL",
+        "terminal": {
+          "exit_code": 0,
+          "finished_epoch": 1791667906.0506678,
+          "output_log_sha256": "336c729a054e9496505a72a6fa18a8b52987276ef76127c65886af61ff9bbc5f",
+          "stage": "reconstruction",
+          "started_epoch": 1791658435.9861102
+        }
+      },
+      "score_only_supplement_20261011/analysis": {
+        "state": "NOT_DISPATCHED"
+      },
+      "score_only_supplement_20261011/backup_export": {
+        "state": "NOT_DISPATCHED"
+      },
+      "score_only_supplement_20261011/support": {
+        "state": "NOT_DISPATCHED"
+      },
+      "score_only_supplement_20261011/verification": {
+        "state": "NOT_DISPATCHED"
+      },
+      "support": {
+        "state": "NOT_DISPATCHED"
+      },
+      "verification": {
+        "state": "NOT_DISPATCHED"
+      }
+    },
+    "status": "PASS",
+    "supplement_files_checked": 28,
+    "threadpools": [
+      {
+        "filepath": "/root/miniconda3/envs/commonpose-supplement/lib/python3.10/site-packages/torch/lib/libgomp.so.1",
+        "internal_api": "openmp",
+        "num_threads": 8,
+        "prefix": "libgomp",
+        "user_api": "openmp",
+        "version": null
+      },
+      {
+        "architecture": "SapphireRapids",
+        "filepath": "/root/miniconda3/envs/commonpose-supplement/lib/python3.10/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+        "internal_api": "openblas",
+        "num_threads": 8,
+        "prefix": "libopenblas",
+        "threading_layer": "pthreads",
+        "user_api": "blas",
+        "version": "0.3.23.dev"
+      }
+    ],
+    "torch": "2.8.0+cu128",
+    "versions": {
+      "joblib": "1.4.2",
+      "numpy": "1.26.4",
+      "scikit-learn": "1.5.2",
+      "scipy": "1.13.1",
+      "threadpoolctl": "3.7.0"
+    }
+  },
+  "status": "PASS_READY_FOR_EXECUTION_ONLY_CONTINUATION",
+  "supplement_seal_sha256": "aebe0573e0e332c923e9c27fb0ee4611b5e10a32ef89bd796d208b51c1f7eec3"
+}

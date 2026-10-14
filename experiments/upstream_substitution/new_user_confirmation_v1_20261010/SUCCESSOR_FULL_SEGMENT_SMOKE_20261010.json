@@ -1,0 +1,10 @@
+{
+  "begin": 442751514624,
+  "bytes": 4194304,
+  "elapsed_seconds": 3.1090000000003783,
+  "member": "emg2pose_data/2022-11-29-1669708800-076e4-cv-emg-pose-demonstration@2-recording-16_left.hdf5",
+  "runner_sha256": "520eab04ff901f44f4ff636d15aa9a03bccff2291b159c46ee4a48d7aa74d5c2",
+  "sha256": "0b4edd8c57ea36a407ae1dd19768ed23ecd73454b650900b13a237a086d8d225",
+  "status": "FULL_SEGMENT_EXACT_RANGE_PASS",
+  "writes_performed": false
+}

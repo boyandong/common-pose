@@ -1,0 +1,11 @@
+{
+  "bytes": 21098519600,
+  "elapsed_seconds": 3076.5470000000005,
+  "error_type": "TimeoutError",
+  "exit_code": 1,
+  "files": 1140,
+  "finished_local_time": "2026-10-10T18:23:01.534305+08:00",
+  "pid": 24788,
+  "reason": "same-segment finite retry budget exhausted; preserve partial",
+  "status": "FAILED_PRESERVE_AND_INSPECT"
+}

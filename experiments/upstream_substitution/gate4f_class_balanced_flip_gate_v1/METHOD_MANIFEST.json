@@ -1,0 +1,18 @@
+{
+  "schema": "gate4f-balanced-methods-v1",
+  "selection_simplicity_order": ["margin", "entropy", "boundary_distance", "tta_dispersion", "boundary_safety", "gaussian_crossing", "logistic", "hist_gbdt"],
+  "score_orientation": "lower risk score means higher confidence and earlier acceptance",
+  "baselines": ["margin", "entropy", "boundary_distance", "tta_dispersion"],
+  "logistic": {"class": "sklearn.linear_model.LogisticRegression", "C": 1.0, "solver": "lbfgs", "max_iter": 300, "random_state": 0, "preprocessing": "training-only StandardScaler"},
+  "hist_gbdt": {"class": "sklearn.ensemble.HistGradientBoostingClassifier", "max_iter": 100, "max_depth": 3, "learning_rate": 0.1, "l2_regularization": 1.0, "random_state": 0},
+  "training_sampling": "at most 5000 evenly spaced paired blocks per training user",
+  "training_weights": "equal total weight per user; equal weight per observed y_GT class within each sampled training user; within each user/class, equal weight per observed Flip state; normalize sum of weights to number of training rows",
+  "primary_metric": "unweighted mean Flip risk across y_GT classes with at least 30 accepted blocks per held-out user and coverage",
+  "selection": "median across users of per-user class-balanced Flip-risk AUC over fixed 30%-100% coverage; ties: lower 50% balanced risk, lower 30% balanced risk, higher 30% worst-supported-class preservation, simpler method",
+  "calibration": "per calibration user median of score quantiles across full y_GT classes with at least 30 blocks, then median across calibration users",
+  "boundary_safety": "negative minimum over competing classes of boundary_distance/(four-view projected SD + 1e-6)",
+  "gaussian_crossing": {"variance": "a_ij + b_ij * TTA_projected_variance_ij", "fit": "user-weighted nonnegative least squares on squared paired unit-normal projected Fisher errors, training users only", "crossing": "1 - product over competitors of [1 - Phi(-boundary_distance_ij/sigma_ij)]", "adequacy": "pooled training standardized absolute error q95 in [1,3], absolute signed mean <=0.5, and absolute skew <=1.0 in every outer fold; otherwise UNSUPPORTED_GAUSSIAN"},
+  "outer_folds": "Gate4D lexicographic user index modulo 5, with three deterministic disjoint calibration users per fold",
+  "coverages": [1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.3],
+  "final_dev_calibration_allocation": "sorted DEV user indices divisible by 5; other 15 users train"
+}

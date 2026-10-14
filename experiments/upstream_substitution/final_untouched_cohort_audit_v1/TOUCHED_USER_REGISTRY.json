@@ -1,0 +1,924 @@
+{
+  "classification_note": "metadata-only reservation is not scientific exposure; acquired structural failure is diagnostic exposure",
+  "metadata_sha256": "0e7ad04a79a0f162385d22ec8d6f43af9b8360978ca11ef9d601bbf9594b09e6",
+  "schema": "final-cohort-touched-v1",
+  "user_count": 29,
+  "users": [
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 40,
+          "role": "DEV",
+          "session_ids": [
+            "2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 142,
+      "official_session_count": 4,
+      "touched_file_count": 40,
+      "touched_session_ids": [
+        "2022-06-07-1654588800-7d330-cv-emg-pose-demonstration@2"
+      ],
+      "user_id": "0816388460"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 46,
+          "role": "DEV",
+          "session_ids": [
+            "2022-08-05-1659686400-20990-cv-emg-pose-demonstration@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 152,
+      "official_session_count": 4,
+      "touched_file_count": 46,
+      "touched_session_ids": [
+        "2022-08-05-1659686400-20990-cv-emg-pose-demonstration@2"
+      ],
+      "user_id": "13b8b5f76d"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 30,
+          "role": "DEV",
+          "session_ids": [
+            "2022-09-07-1662537600-44552-cv-emg-pose-train@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 124,
+      "official_session_count": 4,
+      "touched_file_count": 30,
+      "touched_session_ids": [
+        "2022-09-07-1662537600-44552-cv-emg-pose-train@2"
+      ],
+      "user_id": "2132c5d085"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 30,
+          "role": "DEV",
+          "session_ids": [
+            "2022-06-13-1655107200-7640c-cv-emg-pose-train@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 148,
+      "official_session_count": 4,
+      "touched_file_count": 30,
+      "touched_session_ids": [
+        "2022-06-13-1655107200-7640c-cv-emg-pose-train@2"
+      ],
+      "user_id": "2327817653"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 30,
+          "role": "DEV",
+          "session_ids": [
+            "2022-07-22-1658476800-247a3-cv-emg-pose-train@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 152,
+      "official_session_count": 4,
+      "touched_file_count": 30,
+      "touched_session_ids": [
+        "2022-07-22-1658476800-247a3-cv-emg-pose-train@2"
+      ],
+      "user_id": "23b817e892"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 38,
+          "role": "DEV",
+          "session_ids": [
+            "2022-04-07-1649318400-a9a00-cv-emg-pose-demonstration@2"
+          ]
+        }
+      ],
+      "ineligible_reason": "acquired for structural scientific development; Gate4C excluded after source defects",
+      "official_recording_count": 140,
+      "official_session_count": 4,
+      "touched_file_count": 38,
+      "touched_session_ids": [
+        "2022-04-07-1649318400-a9a00-cv-emg-pose-demonstration@2"
+      ],
+      "user_id": "29ddab35d7"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 30,
+          "role": "DEV",
+          "session_ids": [
+            "2022-11-21-1669017600-d8a8b-cv-emg-pose-train@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 110,
+      "official_session_count": 4,
+      "touched_file_count": 30,
+      "touched_session_ids": [
+        "2022-11-21-1669017600-d8a8b-cv-emg-pose-train@2"
+      ],
+      "user_id": "2be40c4380"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 30,
+          "role": "DEV",
+          "session_ids": [
+            "2022-10-03-1664784000-9635b-cv-emg-pose-train@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 92,
+      "official_session_count": 3,
+      "touched_file_count": 30,
+      "touched_session_ids": [
+        "2022-10-03-1664784000-9635b-cv-emg-pose-train@2"
+      ],
+      "user_id": "2e45fde443"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 46,
+          "role": "DEV",
+          "session_ids": [
+            "2022-09-02-1662105600-51cd5-cv-emg-pose-demonstration@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 152,
+      "official_session_count": 4,
+      "touched_file_count": 46,
+      "touched_session_ids": [
+        "2022-09-02-1662105600-51cd5-cv-emg-pose-demonstration@2"
+      ],
+      "user_id": "32cbfe3221"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 50,
+          "role": "DEV",
+          "session_ids": [
+            "2022-06-17-1655452800-74e32-cv-emg-pose-demonstration@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 156,
+      "official_session_count": 4,
+      "touched_file_count": 50,
+      "touched_session_ids": [
+        "2022-06-17-1655452800-74e32-cv-emg-pose-demonstration@2"
+      ],
+      "user_id": "3589743749"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 32,
+          "role": "DEV",
+          "session_ids": [
+            "2022-10-20-1666252800-2307d-cv-emg-pose-demonstration@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 124,
+      "official_session_count": 4,
+      "touched_file_count": 32,
+      "touched_session_ids": [
+        "2022-10-20-1666252800-2307d-cv-emg-pose-demonstration@2"
+      ],
+      "user_id": "47c605ad6f"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 30,
+          "role": "DEV",
+          "session_ids": [
+            "2022-11-14-1668412800-0d677-cv-emg-pose-train@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 124,
+      "official_session_count": 4,
+      "touched_file_count": 30,
+      "touched_session_ids": [
+        "2022-11-14-1668412800-0d677-cv-emg-pose-train@2"
+      ],
+      "user_id": "54c854b839"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 30,
+          "role": "DEV",
+          "session_ids": [
+            "2022-11-18-1668758400-d7f6d-cv-emg-pose-train@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 92,
+      "official_session_count": 3,
+      "touched_file_count": 30,
+      "touched_session_ids": [
+        "2022-11-18-1668758400-d7f6d-cv-emg-pose-train@2"
+      ],
+      "user_id": "6a7fc66366"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 32,
+          "role": "VALIDATION",
+          "session_ids": [
+            "2022-11-16-1668585600-aa2f5-cv-emg-pose-demonstration@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "VALIDATION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 124,
+      "official_session_count": 4,
+      "touched_file_count": 32,
+      "touched_session_ids": [
+        "2022-11-16-1668585600-aa2f5-cv-emg-pose-demonstration@2"
+      ],
+      "user_id": "737fb9d2eb"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 30,
+          "role": "VALIDATION",
+          "session_ids": [
+            "2022-07-05-1657008000-12581-cv-emg-pose-train@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "VALIDATION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 62,
+      "official_session_count": 2,
+      "touched_file_count": 30,
+      "touched_session_ids": [
+        "2022-07-05-1657008000-12581-cv-emg-pose-train@2"
+      ],
+      "user_id": "76932c8337"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 46,
+          "role": "DEV",
+          "session_ids": [
+            "2022-07-26-1658822400-40f70-cv-emg-pose-demonstration@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 152,
+      "official_session_count": 4,
+      "touched_file_count": 46,
+      "touched_session_ids": [
+        "2022-07-26-1658822400-40f70-cv-emg-pose-demonstration@2"
+      ],
+      "user_id": "7afcdcd6be"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 30,
+          "role": "DEV",
+          "session_ids": [
+            "2022-08-30-1661846400-02aab-cv-emg-pose-train@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 152,
+      "official_session_count": 4,
+      "touched_file_count": 30,
+      "touched_session_ids": [
+        "2022-08-30-1661846400-02aab-cv-emg-pose-train@2"
+      ],
+      "user_id": "87aa3b3887"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 32,
+          "role": "DEV",
+          "session_ids": [
+            "2022-08-30-1661846400-b0a7b-cv-emg-pose-train@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 146,
+      "official_session_count": 4,
+      "touched_file_count": 32,
+      "touched_session_ids": [
+        "2022-08-30-1661846400-b0a7b-cv-emg-pose-train@2"
+      ],
+      "user_id": "8bd1c0ff16"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 40,
+          "role": "VALIDATION",
+          "session_ids": [
+            "2022-06-08-1654675200-3234f-cv-emg-pose-train@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "VALIDATION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 174,
+      "official_session_count": 4,
+      "touched_file_count": 40,
+      "touched_session_ids": [
+        "2022-06-08-1654675200-3234f-cv-emg-pose-train@2"
+      ],
+      "user_id": "8e69533c16"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 32,
+          "role": "VALIDATION",
+          "session_ids": [
+            "2022-09-22-1663833600-778fb-cv-emg-pose-demonstration@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "VALIDATION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 124,
+      "official_session_count": 4,
+      "touched_file_count": 32,
+      "touched_session_ids": [
+        "2022-09-22-1663833600-778fb-cv-emg-pose-demonstration@2"
+      ],
+      "user_id": "92f25d4f36"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 30,
+          "role": "DEV",
+          "session_ids": [
+            "2022-08-22-1661155200-0a6e2-cv-emg-pose-train@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 152,
+      "official_session_count": 4,
+      "touched_file_count": 30,
+      "touched_session_ids": [
+        "2022-08-22-1661155200-0a6e2-cv-emg-pose-train@2"
+      ],
+      "user_id": "9b8c99cdc2"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 30,
+          "role": "VALIDATION",
+          "session_ids": [
+            "2022-07-20-1658304000-03bfa-cv-emg-pose-train@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "VALIDATION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 152,
+      "official_session_count": 4,
+      "touched_file_count": 30,
+      "touched_session_ids": [
+        "2022-07-20-1658304000-03bfa-cv-emg-pose-train@2"
+      ],
+      "user_id": "9e7c5def0b"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 46,
+          "role": "VALIDATION",
+          "session_ids": [
+            "2022-10-05-1664956800-5974f-cv-emg-pose-demonstration@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "VALIDATION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 106,
+      "official_session_count": 3,
+      "touched_file_count": 46,
+      "touched_session_ids": [
+        "2022-10-05-1664956800-5974f-cv-emg-pose-demonstration@2"
+      ],
+      "user_id": "ab228f34a5"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 32,
+          "role": "VALIDATION",
+          "session_ids": [
+            "2022-11-15-1668499200-06fb2-cv-emg-pose-demonstration@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "VALIDATION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 118,
+      "official_session_count": 4,
+      "touched_file_count": 32,
+      "touched_session_ids": [
+        "2022-11-15-1668499200-06fb2-cv-emg-pose-demonstration@2"
+      ],
+      "user_id": "b6fa6cd36f"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 30,
+          "role": "DEV",
+          "session_ids": [
+            "2022-09-06-1662451200-c4a49-cv-emg-pose-train@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 152,
+      "official_session_count": 4,
+      "touched_file_count": 30,
+      "touched_session_ids": [
+        "2022-09-06-1662451200-c4a49-cv-emg-pose-train@2"
+      ],
+      "user_id": "ce52651f99"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "bridge/early mini-emg2pose + Gate3",
+          "file_count": 30,
+          "role": "DIAGNOSTIC/MANUAL_INSPECTION",
+          "session_ids": [
+            "2022-12-06-1670313600-e3096-cv-emg-pose-train@2"
+          ]
+        }
+      ],
+      "ineligible_reason": "mini discovery user used in CommonPose bridge/upstream diagnostic",
+      "official_recording_count": 70,
+      "official_session_count": 2,
+      "touched_file_count": 30,
+      "touched_session_ids": [
+        "2022-12-06-1670313600-e3096-cv-emg-pose-train@2"
+      ],
+      "user_id": "d387095792"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 30,
+          "role": "DEV",
+          "session_ids": [
+            "2022-10-03-1664784000-7c163-cv-emg-pose-train@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 152,
+      "official_session_count": 4,
+      "touched_file_count": 30,
+      "touched_session_ids": [
+        "2022-10-03-1664784000-7c163-cv-emg-pose-train@2"
+      ],
+      "user_id": "dd810188d9"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 30,
+          "role": "VALIDATION",
+          "session_ids": [
+            "2022-09-13-1663056000-bf969-cv-emg-pose-train@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "VALIDATION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 152,
+      "official_session_count": 4,
+      "touched_file_count": 30,
+      "touched_session_ids": [
+        "2022-09-13-1663056000-bf969-cv-emg-pose-train@2"
+      ],
+      "user_id": "e86f1eaf2f"
+    },
+    {
+      "exposure_events": [
+        {
+          "branch": "Gate4B acquisition/structural qualification",
+          "file_count": 32,
+          "role": "DEV",
+          "session_ids": [
+            "2022-11-11-1668153600-0b654-cv-emg-pose-demonstration@2"
+          ]
+        },
+        {
+          "branch": "Gate4C upstream substitution",
+          "role": "DEV"
+        },
+        {
+          "branch": "Gate4D",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4E",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        },
+        {
+          "branch": "Gate4F",
+          "role": "DEV/TRAIN/CALIBRATION/METHOD_SELECTION"
+        }
+      ],
+      "ineligible_reason": "used in scientific development/validation",
+      "official_recording_count": 124,
+      "official_session_count": 4,
+      "touched_file_count": 32,
+      "touched_session_ids": [
+        "2022-11-11-1668153600-0b654-cv-emg-pose-demonstration@2"
+      ],
+      "user_id": "f1b6a408bf"
+    }
+  ]
+}
