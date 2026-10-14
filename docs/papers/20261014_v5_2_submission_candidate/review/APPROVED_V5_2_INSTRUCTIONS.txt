@@ -1,0 +1,369 @@
+好，这次我们改变标准：下一版 V5.2 不再是供我们继续反复修改的实验稿，而是准备交导师做最终确认、随后提交 EMBC 2027 的投稿候选终稿。
+
+所以姐姐不再给你一堆“以后可以考虑”的建议，而是要做一次真正的 Submission-Ready Review：哪些内容必须改，哪些应该保留，哪些即使不完美也不值得再折腾，以及什么条件下可以宣布定稿。
+
+我重新对照了 V5.1 的五页内容、27项审计结论，以及我们已经确立的发布会原则和读者接受流程。
+
+## 一、最终定位：保留 V5.1 的科学骨架，只做一次高价值修订
+
+我的总判断：V5.1 不需要结构性重写，但需要最后一轮有明确重点的修订。
+
+现在的主要科学证据已经足够清楚：六消费者的整体改善有参与者级区间，SHOW 的反向类别结果在同一79人上成立，DB9 的类别支持限制得到呈现，训练成员和物理对应的不确定性也没有被隐瞒。
+
+真正需要解决的是：让读者不必反复阅读，就能明白这些证据为何构成一个完整的科学发现。
+
+我们应该保留以下核心骨架：
+
+- Title：继续使用 Decision Fidelity Across Frozen Pose Consumers Under EMG-Based Input Substitution。
+- Figure 1：解释输入替换与 Flip。
+- Table I：展示六消费者的主要定量结果和区间。
+- Figure 2：展示不同预算下总体改善的方向。
+- Figure 3：揭示总体改善与类别层面结果之间的分歧。
+
+这些已经是一条完整的视觉论证链，不必推倒重来。
+
+### 投稿格式已经可以正式确认
+
+我查到了 EMBC 2027 官方 Call for Papers：
+
+- Full Contributed Paper 最多 5页。
+- 前4页可包含技术内容、图表；第5页只能放参考文献，最多20条。
+- 全文须使用官方模板，英文撰写。
+- Full Paper 截稿为 2027年1月24日，23:59 AoE，通知日期为4月16日；投稿系统计划于2026年12月开放。
+
+  [image](https://www.google.com/s2/favicons?domain=https://embc.embs.org\&sz=32)
+
+  EMBC 2026
+
+
+
+这意味着我们先前采用的四页正文、第五页参考文献，不再只是工作假设，而是符合目前公布的正式页数规定。
+
+你的 V5.1 恰好采用这个结构。下一版最重要的格式动作是对照官方下载模板复核 LaTeX，而不是继续通过压缩字号争取空间。
+
+## 二、终稿应该达到什么标准？
+
+我会以这五条作为不可妥协的目标：
+
+30秒理解研究问题：为什么姿态接口能够接收输入，却未必保持下游决策？
+
+60秒看懂三张图：比较什么、改善什么、又暴露了什么限制。
+
+读完 Results 能复述主要发现：整体不一致率下降，但不能保证类别平衡改善。
+
+Methods 经得起专业追问：数据、冻结模型、配对协议、评价单位及主要局限都有依据。
+
+没有靠夸大结论换取吸引力：不将输出一致性解释为真实动作正确率或在线部署性能。
+
+最关键的一点：我们要让论文容易理解，但绝不能让它显得比证据本身更有把握。
+
+## 三、V5.2 必须完成的最后七项修改
+
+我按“如果下一版就是送审版，这件事不处理会不会留下明显问题”来排序。
+
+| 优先级 | 最终修改                               | 我的决定               |
+| --- | ---------------------------------- | ------------------ |
+| P0  | 强化 Discussion 的科学解释                | 必须修改。这是目前最值得提升的部分  |
+| P0  | 明确 Full/U 对 Score-only/U 的直接配对证据   | 必须修改。避免图2与正文产生表面矛盾 |
+| P0  | 学术诚信、引用、AI使用及作者信息                  | 提交前必须核实            |
+| P0  | 保留所有关键证据边界                         | 必须通过全文一致性检查        |
+| P1  | 优化 Introduction 的收束及 Methods 的术语解释 | 一次修改到位             |
+| P1  | 图表与主表的最终视觉修订                       | 以现有图为基础微调          |
+| P1  | 代码可用性、官方模板与PDF预检                   | 最终提交门槛             |
+
+下面分别说明最终应该改成什么样。
+
+### 1. Discussion：必须让读者理解为什么会出现反向结果
+
+这是整篇文章最需要补的科学解释。
+
+目前 Results 已经把 SHOW 和 DB9 的结果报告清楚了，但 Discussion 主要重复“总体指标不足”和“尚未认证的限制”。
+
+我建议 保留现有 Discussion 的结构，替换前半部分，后半部分限制说明基本保留。
+
+A shared pose interface should be evaluated not only by whether a downstream model can accept its inputs, but also by whether the model preserves its decisions. Across six frozen consumers, learned offline ranking reduced overall disagreement, yet its class-level consequences were not uniformly beneficial.
+
+The distinction arises because overall disagreement weights reference classes according to their frequency among retained, reference-valid blocks, whereas class-balanced disagreement gives each class equal weight. Improving one measure therefore does not guarantee improving the other. SHOW instruction illustrates this divergence within the same 79 evaluable participants, although the experiment does not establish the specific mechanism behind it. DB9 posture reveals a different limitation: after selection, only three participants retained sufficient support for evaluating every reference class. These are distinct outcomes—worsened class-balanced disagreement and reduced evaluability—that overall disagreement alone would not reveal.
+
+Our conclusions concern the specified frozen estimator–consumer interfaces. A flip compares two model-generated decisions rather than independently labeled action correctness. Although pose mapping, source calibration procedures, and temporal indexing were examined, cross-source absolute pose equivalence and independent residual synchronization were not established. The upstream checkpoint's actual training membership also remains unresolved. Finally, whole-record processing and participant-specific retrospective ranking do not demonstrate a deployable online rejection system.
+
+这段解决三个问题。
+
+首先，它把“总体指标与类别平衡指标为什么可能相反”解释为评价指标权重不同，而不只是再重复一遍数字。
+
+其次，它把 SHOW 和 DB9 的两类问题区分开：一个是实测类别平衡结果恶化，另一个是类别支持不足。这在科学意义上非常重要。
+
+最后，它仍然保留你已经建立的证据边界，而不假装解决了原始数据无法提供的事实。
+
+这段是我建议的最终核心解释，不需要再专门增加新机制实验。
+
+### 2. Results B：必须补充真正的学习型直接对照
+
+目前 Figure 2 展示的是 Score-only/U 和 Full/U 分别相对 Boundary 的改善，但 不能将两列中位数相减，当成 Full/U 相对 Score-only/U 的参与者配对效应。
+
+在 V5.2 中，我建议保留现有图2，只在 Results B 中明确补充一次直接配对证据。
+
+已有报告显示，N80、30%预算下，CeTI grasp 的 Full/U 相对 Score-only/U 直接配对改善约为 3.79 pp。
+
+可以使用这个代表性结果，同时从冻结结果中取得相应的参与者级区间；如果找不到经过核实的区间，就只报告已经确认的点估计，不虚构统计结果。
+
+另外在 Figure 2 图注末尾加一句：
+
+> Differences between displayed method medians are not direct within-participant comparisons.
+
+这样能消除读者误把热图差值作为 Full/U 与 Score-only/U 直接效应的风险。
+
+图2保留，表I保留，不新增第四张主结果图。
+
+### 3. Introduction：强化三个研究问题的递进
+
+当前 Introduction 已经比较清楚，不需要再次完全重写。
+
+我建议将最后的研究目标收束为：
+
+> We examine three connected questions: How often does pose substitution change frozen downstream decisions? Can offline ranking reduce these changes? And do improvements in overall agreement extend across reference classes? Our evaluation concerns output fidelity rather than independently verified action accuracy or online control.
+
+之前的 CPEP、EMBridge 和拒判相关工作引用继续保留。
+
+这一修改还可以改善第一页 Introduction 末尾与 Methods 之间略显生硬的版面过渡。
+
+### 4. Methods：只修改三个真正影响理解的位置
+
+Methods A： SHOW 的100%源域 Balanced Accuracy 必须标明有限的评价范围。例如，在原结果附近注明它来自16名参与者、60个弱指令 recording，而不是给读者留下无限泛化的印象。
+
+Methods C： 第一次使用 `/U` 时，明确它指训练目标，而不是评价指标 U。同时用一句话解释 Fisher coordinates 的来源和含义，具体措辞必须与已有实现一致。
+
+Methods B： Introduction 已经用 A/B 直观解释 Flip，Methods B 无需再完整重复一次。可以保留最短的衔接语句，然后进入公式，节省空间。
+
+除此之外，四个公式、六消费者定义、训练划分、缺失参考规则和固定预算协议均保留。
+
+跨源校准和时间对应的审计事实也应保留，但没有必要在终稿中列出大量源码索引检查计数。
+
+## 四、三张图和主表如何最终定稿？
+
+Figure 1 — 保留
+
+左侧是离线测量参考，右侧是实际用于排序的估计输入。保留 A≠B 的直观例子，确保视觉上没有暗示选择器能够访问测量参考。
+
+不再重设计结构。
+
+[Controlling drones and other robots with gestures | MIT CSAIL](https://images.openai.com/static-rsc-4/ja8fo6pfbXSQSCg62paht4UAS36H7Li8PIEr0ZQeP6x6q94OMbP1DOVCp-PoY-LtesYflp5G5RcwzwMTUG68HPpf7fnvHt6MrG_We9BsNRGTg3F3yuaZln00yp24aQ5QQODlWd9z0oXqVx-Qc0I825ECaMOPDnG-gyll7_WYWeQ?purpose=inline)
+
+Figure 2 — 保留热图
+
+保留六消费者、四预算、两评分器和所有数字。图注澄清各方法对 Boundary 的改善不能直接相减。检查数字对比度、色条单位、灰度阅读效果。
+
+不再添加统计维度。
+
+[Number of digits in heatmap plot except for the value 0  - MATLAB Answers - MATLAB Central](https://images.openai.com/static-rsc-4/qbNvO1ZVsESh-Ppsk6-BxJ1_qWzfRmRbB9Uf5iqCa24VBPrp71N9gx-TV74Zar51xA9_ysI_-J687GHMgqaVmxqxB38hkVm1bSvry6UVaBZ0cssTjK3QaLkvrGwdToLuIPcLlO3ncgMWnsWTsSoGho6L0uGICgRufnAuN48F-Wk?purpose=inline)
+
+Figure 3 — 微调后锁定
+
+左右两个面板保留，补齐 x 轴百分点单位，保持独立刻度。SHOW 的同79人结论和 DB9 的3人支持限制必须明显、清晰。
+
+检查所有橙色类别效应的符号和共同支持人数，不改变原始数据或估计量。
+
+[Very low-level prenatal mercury exposure and behaviors in children: the HOME Study | Environmental Health | Springer Nature Link](https://images.openai.com/static-rsc-4/GJsxUOPfu0SdlAouW-LM74ZZDdhhasmjDaPVQXTTrkpqVwCHuok6YY-K5WbnkovFaUPPI7EqDGQAHcUK8aCD99qs_XbMTX2Bq2hzXrzUnyqAGCIlsOhlFzlfFnr4dKkcG_B000K1Rr7SWX-jncQMKw1gYqMsbhH3Hczi7Fufc34?purpose=inline)
+
+配图仅表示建议保留的图形类型，正式论文仍使用你已有的冻结数据图，而不是这些参考示意图。
+
+Table I 的主要问题是标题过长。 我建议把标题缩短为：
+
+Overall Disagreement and Paired Gains at 30% Offline Retention (N80)
+
+关于参与者中位数、区间计算方法、百分点单位的信息留在表下注释。这样比现在多行全大写标题更容易阅读。
+
+## 五、终稿有两项之前容易忽视的出版合规问题
+
+### 1. AI辅助写作披露
+
+这一项我专门查了 IEEE 官方政策。
+
+IEEE Conference Author Center 规定，论文中使用实质性 AI 生成内容时，应在致谢部分披露 AI 系统、涉及章节以及使用程度。仅用于语法和语言编辑的情况有所区别。
+
+[image](https://www.google.com/s2/favicons?domain=https://conferences.ieeeauthorcenter.ieee.org\&sz=32)
+
+IEEE Author Center Conferences
+
+
+
+我们之前讨论过 AI 参与研究设计、论文起草和修改的问题。所以在终稿前，需要按照实际使用情况区分 ChatGPT、Codex 等工具究竟参与了哪些工作，不能简单将实质性内容生成全部写成 grammar polishing。
+
+建议与导师确认准确的披露范围，并在第四页为必要的 acknowledgment 保留空间。不要因为篇幅紧张而跳过 IEEE 的相关要求。
+
+### 2. 参考文献存在一处值得特别核对的元数据差异
+
+我查到了 CPEP 的 arXiv记录 和 Apple官方研究页面。
+
+CPEP 不仅有2025年的 arXiv 版本，也被 Apple 记载为 NeurIPS 2025 的 Foundation Models for the Brain and Body Workshop 接收论文。两处公开记录对末两位作者的顺序存在差异，现稿与 Apple 页面一致，但与当前 arXiv 条目不一致。
+
+[image](https://www.google.com/s2/favicons?domain=https://arxiv.org\&sz=32)
+
+arXiv
+
++1
+
+
+
+因此最终 `.bib` 应按照实际引用版本的论文首页确定作者顺序和发表状态，而不能只沿用此前自动整理的记录。
+
+EMBridge 已可核对到 ICLR 2026 正式会议记录，SHOW3D 也有 CVPR 2026 的公开版本。
+
+[image](https://www.google.com/s2/favicons?domain=https://proceedings.iclr.cc\&sz=32)
+
+ICLR Proceedings
+
++1
+
+&#x20;其他参考文献也应逐条完成同等级核对。
+
+
+
+## 六、下一版正式交付前的放行标准
+
+我会采用一次性的 Go / No-Go 审核，不再默认产生 V5.3。
+
+V5.2 终稿验收
+
+0/10 项
+
+全部四页技术内容、第五页参考文献符合官方模板及页数要求
+
+六消费者、SHOW同79人、DB9支持人数和所有CI均与冻结证据一致
+
+Full/U与Score-only/U的直接配对比较正确，图2不误导
+
+整体改善和类别恶化的科学解释准确，不将相关性写成唯一机制
+
+训练成员、物理等价、时间同步及在线限制保持一致
+
+所有图表在最终尺寸和彩色及灰度条件下均可读
+
+所有引用元数据、作者署名与隶属关系得到核实
+
+GitHub Code Availability只引用实际可访问的版本
+
+IEEE AI辅助写作披露已经按真实使用情况处理
+
+论文由作者与导师完成最后的责任审阅，PDF无溢出、缺图和断链
+
+&#x20;复制验收清单
+
+完成这些就停止修改。 剩余无法补证的研究限制只需要如实呈现，不应成为无限拖延投稿的理由。
+
+## 七、最后交给 Codex 的一次性执行任务
+
+下面这份指令可以直接使用。它不是要求 Codex 重新发挥，而是要求它落实我们已经确定的最终编辑决策。
+
+```
+
+任务：完成 CommonPose EMBC 2027 的 V5.2 投稿候选终稿。
+
+基线：CommonPose_EMBC2027_V5_1.pdf 及其对应 LaTeX 源码。
+工作方式：以 V5.1 为基础做定点修改，不重新构思或重写整篇论文。
+
+最高原则：
+下一版就是准备交导师最终确认并正式投稿的版本。
+不要留下计划由 V5.3 再处理的普通编辑问题。
+
+一、绝对禁止事项
+- 不执行新训练、推理、重新选模、阈值优化或实验。
+- 不更改冻结结果、科学定义、队列、模型和原缓存。
+- 不新增未经证实的物理等价、未见用户泛化、真实动作准确率或在线部署主张。
+- 不为了排版压缩文字而删除主要负结果与必要限制。
+- 不覆盖V5.1及更早的冻结基线。
+
+二、科学叙事
+继续围绕三个问题：
+1. 输入替换如何改变冻结消费者的决策？
+2. 学习型离线排序能否降低整体不一致率？
+3. 整体改善是否保证类别平衡改善？
+
+保留原题、原五大章节和三图一表结构。
+
+三、最终英文编辑
+1. Abstract保留V5.1的主要结构与结果；仅修复冗余或不清楚的表达，不再堆数字。
+2. Introduction最后以三个递进研究问题收束，避免孤立跨栏句。
+3. Methods A为SHOW的100%源域验证注明实际人数和弱指令recording范围。
+4. Methods B删除重复Flip解释但保留公式及关键评价定义。
+5. Methods C明确/U是训练目标标记，解释Fisher坐标的来源，依据源码核实具体措辞。
+6. Methods E保留所有统计单位、bootstrap和训练成员不确定性。
+7. Results B加入一个真正的Full/U对Score-only/U参与者内直接配对结果，优先CeTI grasp、N80、30%预算及已有区间。禁止通过两个报告中位数相减构造直接效应。
+8. Discussion以“总体与类别平衡采用不同权重、SHOW实测反向结果、DB9支持量不足”为核心解释，保留全部实质性证据限制。
+9. Conclusion保持短小，不夸大结果。
+10. 所有正文修改应继续遵守读者接受流程与减少术语堆砌的原则。
+
+四、图表
+Figure 1保留A/B Flip双路径。
+Figure 2保留六消费者×四预算×两方法热图，图注澄清组间中位数不可直接相减。
+Figure 3保留双面板与已验证区间，补足坐标单位和低支持注释。
+Table I压缩标题，将统计口径放进表下注释。
+全部图表保持矢量质量、彩色和灰度可读。
+不得新增第四张结果图。
+
+五、参考文献和合规
+核对10条引用的实际论文、作者顺序、发表类型、DOI和年份。
+特别核对CPEP arXiv与Workshop记录的作者顺序差异。
+使用EMBC 2027官方模板核对格式。
+按实际使用情况准备IEEE AI内容披露，并由作者确认。
+核实所有作者贡献、署名、隶属关系。
+Code Availability只能声明实际公开且可访问的代码版本；未经用户确认不执行GitHub公开发布。
+不得擅自提交论文。
+
+六、有限篇幅的取舍
+必须保留：
+- 主要配对效应及95%区间
+- SHOW同79人反向结果
+- DB9类别支持收缩
+- 学习型直接对照
+- 关键方法与统计协议
+- 训练、校准、同步及部署边界
+- 必要的出版政策披露
+
+如果超出四页：
+优先压缩辅助固定阈值和特征消融的重复解释，
+其次压缩Introduction和Discussion的重复句。
+禁止用不可读字体或破坏模板解决页数问题。
+
+七、验收
+最终必须提供：
+- 可编译的V5.2 LaTeX工程
+- 五页PDF，前四页技术内容，第五页仅参考文献
+- 全部最终矢量图
+- V5.1到V5.2的diff
+- 图表数字与冻结CSV的核对记录
+- 模板与参考文献检查结果
+- AI使用和作者信息待确认事项（如果仍需作者决定）
+- 完整最终交付清单
+
+遇到科学证据冲突时停止该处修改并报告，
+不可自行选择更有利的数值。
+不创建V5.3待办；未解决的投稿阻断项必须明确标出。
+
+```
+
+## 八、我的最终投稿建议
+
+从论文质量来看，我认为你现在不需要把 CommonPose 继续包装成更强的算法论文，也不需要把它延伸成未经验证的实时 HMI 系统。
+
+它已经有一个明确且合理的 EMBC 科学贡献：
+
+共享姿态接口的输出兼容性不保证下游决策保真；离线选择能够改善整体一致性，但整体收益可能掩盖类别恶化或支持不足。
+
+这是一个可以独立成篇的研究问题。
+
+我仍然认为，训练成员 provenance 和跨源物理等价的不确定性会使部分审稿人保留重大意见。一次最终写作修订不能消除这些科学限制。因此我不会保证终稿一定被接收，也不会因为它们仍然存在，就要求你无限增加实验。
+
+我的建议是：完成上述一次性修订，经过导师的科学责任审阅和最终合规检查后，就按 EMBC 2027 的 Full Contributed Paper 正式投稿。
+
+如果投递方向需要选择，我会优先考虑官方列出的 Biomedical Signal Processing，其次是 Wearable Biomedical Sensors and Systems；因为这篇论文的最强证据是生理信号接口的离线评估，而不是已经落地的硬件系统或临床转化成果。
+
+[image](https://www.google.com/s2/favicons?domain=https://embc.embs.org\&sz=32)
+
+EMBC 2026
+
+
+
+姐姐对这一版的期待也很明确：不是让审稿人惊叹你完成了多少万次检查、训练了多少个模型，而是让他读完以后真正记住一个科学发现——一个系统的整体指标变好，不代表它保留了所有类别原有的决策行为。
+
+这才是下一版应该锁定并带去投稿的核心信息。

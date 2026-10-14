@@ -1,0 +1,33 @@
+{
+  "status": "PASS_FINAL_PAGE_AND_FIGURE_INSPECTION",
+  "English_color_pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "Chinese_color_pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "English_grayscale_figure_pages_inspected": [
+    2,
+    3,
+    4
+  ],
+  "both_pdfs_page_count": 5,
+  "page_5_references_only": true,
+  "clipping_overlap_or_missing_figures": false,
+  "final_compile_overfull_missing_characters_or_unresolved_references": false,
+  "vector_figure_pdf_count": 6,
+  "Chinese_review_font_size_pt": 11,
+  "English_IEEE_font_size_pt": 10,
+  "new_experiments": false,
+  "author_supervisor_final_review": "PENDING_HUMAN_RESPONSIBILITY_REVIEW",
+  "conference_portal_PDF_preflight": "NOT_PERFORMED_PORTAL_NOT_OPEN",
+  "AI_disclosure": "NOT_ADOPTED_PER_DIRECT_USER_INSTRUCTION"
+}

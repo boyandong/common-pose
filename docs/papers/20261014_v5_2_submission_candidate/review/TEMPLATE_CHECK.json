@@ -1,0 +1,17 @@
+{
+  "official_2027_rules_url": "https://embc.embs.org/2027/papers/",
+  "technical_pages_limit": 4,
+  "reference_page": 5,
+  "reference_limit": 20,
+  "actual_references": 10,
+  "class_matches_user_supplied_official_archive_exactly": true,
+  "class_sha256": "c972aca108fda004c3514d63658e02816da2e54d9a1451e870b9bd970e003f55",
+  "class_version": "IEEEtran 1.8b",
+  "English_body_font_pt": 10,
+  "paper_size": "US Letter",
+  "margins_class_unchanged": true,
+  "official_2027_template_link_target": "IEEE conference templates",
+  "live_template_download": "robots/403 prevented a new byte-level download; existing officially supplied archive used",
+  "PDF_Express_final_portal_validation": "not performed; submission portal not open",
+  "Chinese_version": "review translation, not conference submission"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "VERIFIED_PRIVATE_PROGRESS_SNAPSHOT",
+  "repository": "boyandong/common-pose",
+  "branch": "codex/progress-20261014",
+  "url": "https://github.com/boyandong/common-pose/tree/codex/progress-20261014",
+  "commit": "2bbeb010396ab6f8d55fc76494e2e2840a1b56a5",
+  "tree": "c6b091ea75ae3db56a6ec5b010f28dc882d9e5a1",
+  "verified_files": 1089,
+  "excluded_credential_files": [
+    "experiments/upstream_substitution/paper_closing_v1_20261010/ssh_transport.py"
+  ],
+  "remote_main_unchanged": true,
+  "local_history_unchanged": true,
+  "release_created": false,
+  "visibility_changed": false,
+  "api_contract_tests": "51 passed"
+}

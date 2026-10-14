@@ -1,0 +1,158 @@
+[
+  {
+    "line": 3,
+    "english": "Hand pose may provide a shared interface between electromyography (EMG) sensing and models trained on pose data. Yet an input that fits a model does not necessarily preserve its decisions. We investigate this gap using one frozen EMG-to-pose estimator and six frozen pose classifiers built from four public datasets. By comparing decisions on paired measured and estimated poses, we first quantify how often input substitution changes the outputs of unchanged classifiers. We then test whether learned offline ranking can preferentially retain decisions that match the measured-pose reference. Across 80 participants, full-feature ranking reduced median paired overall disagreement by 1.87--4.65 percentage points relative to boundary-based selection at 30\\% retention. However, this overall improvement did not always extend to individual reference classes. For SHOW instruction, overall disagreement improved by 2.61 points while class-balanced disagreement worsened by 20.88 points among the same 79 evaluable participants. Selection also reduced evaluable class support in some consumers. These findings show that lower overall disagreement does not guarantee class-balanced decision preservation, motivating joint evaluation of overall disagreement, class-balanced disagreement, and reference-class support. The results characterize retrospective agreement with model-generated reference decisions, not independent action accuracy or validated online rejection."
+  },
+  {
+    "line": 7,
+    "english": "Electromyography (EMG) is commonly used to decode movement or gestures directly. An alternative is to estimate hand pose from EMG and pass that estimate to models already trained on pose data. But the input may be compatible in format without preserving the downstream model's decision."
+  },
+  {
+    "line": 9,
+    "english": "A fixed gesture classifier may predict class A from measured hand pose but class B from the corresponding EMG-estimated pose. We call this change a decision flip: input substitution changed the model's output, regardless of whether either prediction matches an independently labeled action. This motivates evaluating downstream decisions as well as pose reconstruction error."
+  },
+  {
+    "line": 11,
+    "english": "Previous work has studied EMG-based pose estimation \\cite{salter2024emg2pose}, pose-guided EMG representations \\cite{cui2025cpep,cui2026embridge}, and rejection in myoelectric or selective prediction systems \\cite{scheme2013confidence,ahkami2023rejection,geifman2019selectivenet}. Here, we keep the upstream estimator and downstream classifiers fixed."
+  },
+  {
+    "line": 13,
+    "english": "We examine three connected questions: How often does pose substitution change frozen downstream decisions? Can offline ranking reduce these changes? And do improvements in overall agreement extend across reference classes? Our evaluation concerns output fidelity rather than independently verified action accuracy or online control."
+  },
+  {
+    "line": 19,
+    "english": "A frozen pose consumer is a pose-based classifier whose parameters and source-fitted preprocessing remain unchanged. We pass measured pose and EMG-estimated pose through the same consumer and compare the resulting decisions. The upstream EMG-to-pose estimator is also frozen. Our six linear discriminant analysis (LDA) consumers cover posture and grasp classification from DB9 \\cite{jarquebou2020db9} and CeTI-Age \\cite{muschter2023ceti}, instruction classification from SHOW3D \\cite{rim2026show3d}, and movement-phase classification from KIN-MUS UJI \\cite{jarquebou2019kinmus}."
+  },
+  {
+    "line": 21,
+    "english": "The released VEMG2Pose estimator \\cite{salter2024emg2pose} and each source consumer are connected using a fixed eight-joint pose adapter in radians. Joint selection, units, and available axis or topology information were audited. The paired target inputs use corresponding cached block indices after a common crop, with approximately 20-ms target blocks. These implementation checks do not independently establish identical physical joint zero positions or residual sensor synchronization across sources."
+  },
+  {
+    "line": 23,
+    "english": "The original EMG-to-pose dataset documents individual calibration and software timestamp alignment \\cite{salter2024emg2pose}. Cross-source physical equivalence remains a separate, unverified requirement."
+  },
+  {
+    "line": 25,
+    "english": "Six source-domain leave-one-subject-out evaluations were reproduced against the archived out-of-fold predictions. The corresponding balanced accuracies were 74.79\\%, 85.50\\%, 58.56\\%, 72.25\\%, 100\\%, and 56.17\\% for DB9 posture, DB9 grasp, CeTI posture, CeTI grasp, SHOW instruction, and KIN phase, respectively. The SHOW result covers 16 participants and 60 weak-instruction recordings. These tasks use different source labels and evaluation units, so their accuracies should not be interpreted as a common performance ranking."
+  },
+  {
+    "line": 27,
+    "english": "The eight angles are thumb MCP/IP, index MCP/PIP, middle MCP, ring MCP, and little-finger MCP/PIP (target native indices 2, 3, 5, 6, 9, 13, 17, 18). Source-fitted standardization is held fixed. Target pose and reference streams share a 1790-row crop and nonoverlapping 40-row means, time-stamped at the block end. Source aggregation differs: CeTI averages 32 frames (nominally 0.808 s), whereas SHOW/KIN use approximately 0.8-s windows."
+  },
+  {
+    "line": 37,
+    "english": "A flip records a change in the same frozen consumer's decision under pose substitution. Measured references identify flips during development and offline evaluation; ranking uses estimated-input features only. For consumer \\(i\\), participant \\(u\\), and block \\(t\\), measured pose \\(q_{u,t}\\) and estimated pose \\(\\hat q_{u,t}\\) define"
+  },
+  {
+    "line": 42,
+    "english": "We evaluate selection in two ways. Overall disagreement (U) is the proportion of retained, reference-valid blocks whose decisions differ. Coverage is the proportion of prediction-valid blocks retained."
+  },
+  {
+    "line": 44,
+    "english": "Let \\(V_u\\) contain prediction-valid blocks, \\(P_u\\subseteq V_u\\) those also having valid measured references, and \\(A_u\\subseteq V_u\\) accepted blocks (consumer/method indices suppressed)."
+  },
+  {
+    "line": 50,
+    "english": "Overall disagreement is undefined if \\(A_u\\cap P_u=\\varnothing\\). Missing-reference blocks contribute to coverage, but not to the observed disagreement denominator."
+  },
+  {
+    "line": 52,
+    "english": "The reference-class support set is"
+  },
+  {
+    "line": 57,
+    "english": "Class-balanced disagreement (B) first calculates disagreement within each fixed measured-pose reference class and then averages those class rates equally. B is reported only when all fixed reference classes have at least 30 reference-valid blocks before selection and at least 30 retained blocks afterward. Otherwise B is undefined; unsupported classes are never silently excluded."
+  },
+  {
+    "line": 66,
+    "english": "Selection changes which estimated-input decisions are retained, not the classes predicted by the frozen consumer. We compare three ranking strategies. Boundary ranks inputs by their distance from the consumer's nearest competing decision boundary. Score-only uses the consumer's predicted class, discriminant scores, score gap, entropy, and boundary distance to learn flip risk. Full adds estimated-pose information and descriptors of variation across fixed EMG input views."
+  },
+  {
+    "line": 68,
+    "english": "For each consumer, the learned scorers are trained using paired development recordings with measured-pose flip labels. The primary overall-risk configuration uses histogram gradient boosting and is denoted Score-only/U or Full/U; /U marks the training objective, whereas U is the evaluated disagreement measure. A separate class-weighted configuration uses logistic regression to study balanced-risk training. During evaluation, all ranking features come from the estimated-input pathway; measured pose is used only to score the retrospective outcome."
+  },
+  {
+    "line": 70,
+    "english": "Fisher coordinates are the source-fitted LDA projection of standardized estimated pose. Full includes eight pose angles, these coordinates, and two descriptors from four fixed EMG views: original, 0.97/1.03 amplitude scaling, and deterministic Gaussian noise at 0.005 times whole-record RMS. Fitting uses up to 5000 deterministically sampled paired blocks per participant, with equal participant and within-participant flip-state weights for /U. Histogram gradient boosting uses 100 iterations, depth 3, learning rate 0.1, L2 penalty 1, and seed 0. The balanced configuration uses reference-class/flip-state weighting and standardized logistic regression (\\(C=1\\), 300 iterations, seed 0)."
+  },
+  {
+    "line": 75,
+    "english": "Our primary analysis compares methods at equal offline retention budgets. For each participant, inputs are ranked using estimated-input features and the top 10\\%, 30\\%, 50\\%, or 70\\% of prediction-valid blocks are retained, with deterministic tie handling. No Gate retains all prediction-valid blocks. Retention is defined on prediction-valid blocks, whereas disagreement requires valid paired references."
+  },
+  {
+    "line": 77,
+    "english": "Because each participant is ranked using their own full-record score distribution, this protocol measures retrospective ranking rather than a deployable common threshold. A separate development-selected fixed-threshold audit evaluates whether predefined disagreement and coverage requirements can be met without choosing thresholds on the evaluation cohort."
+  },
+  {
+    "line": 79,
+    "english": "Nineteen development participants comprise 13 fitting, three threshold-selection, and three diagnostic-validation participants. Validation affects neither fitting nor threshold selection. Stable score ordering with fixed file/block order resolves ties; a budget \\(r\\) retains \\(\\lceil r|V_u|\\rceil\\) blocks. Threshold feasibility requires disagreement \\(\\leq10\\%\\) for every threshold-development participant and median coverage \\(\\geq10\\%\\); the balanced objective also requires complete class support. Infeasible settings use the prespecified 30\\% diagnostic fallback without being counted as feasible."
+  },
+  {
+    "line": 82,
+    "english": "The two previously examined evaluation cohorts comprise A20 (20 participants; 1,650,789 valid measured--estimated pairs) and N80 (80 participants; 7,111,408 pairs). They are analyzed separately and are not treated as independent confirmation after repeated examination. Participants used for selection-scorer development are separate from the reported evaluation participants; this separation does not certify the upstream estimator's training membership."
+  },
+  {
+    "line": 84,
+    "english": "The exact training records associated with the released upstream checkpoint could not be established. Public training metadata contain train records for 70 of 80 N80 participants and 16 of 20 A20 participants, but metadata overlap does not by itself prove exposure of the actual checkpoint. We therefore make no verified upstream unseen-participant generalization claim."
+  },
+  {
+    "line": 86,
+    "english": "Participants, not blocks, are the statistical units. Method differences are calculated within each participant before taking the median. Descriptive 95\\% intervals for paired median effects use 10,000 participant-level bootstrap resamples. Consumers and retention budgets share participants and are dependent comparisons; the intervals are pointwise descriptive summaries rather than family-wise simultaneous confidence statements. Balanced comparisons use only jointly evaluable participants and report their counts."
+  },
+  {
+    "line": 107,
+    "english": "Pose substitution changed decisions for every frozen consumer. Without rejection, N80 participant-median disagreement ranged from 16.43\\% for SHOW instruction to 43.05\\% for CeTI posture (Table~\\ref{tab:overall}). The variation shows that different consumers can respond differently to the same paired target pose inputs."
+  },
+  {
+    "line": 110,
+    "english": "Reference-class support was already uneven before selection. All fixed classes met the predefined minimum in 22/80 participants for DB9 posture and 79/80 for KIN phase, versus 80/80 for the other four consumers. These differences matter when interpreting class-balanced outcomes after rejection."
+  },
+  {
+    "line": 113,
+    "english": "Full/U ranking reduced overall disagreement across all six consumers in N80 at 30\\% offline retention. Relative to Boundary, the median within-participant reduction ranged from 1.867 percentage points for DB9 grasp (95\\% descriptive bootstrap interval: 1.431--2.371) to 4.651 points for DB9 posture (2.784--6.505). All six pointwise intervals were above zero (Table~\\ref{tab:overall})."
+  },
+  {
+    "line": 115,
+    "english": "Across the four tested retention budgets, Full/U showed positive median paired improvements over Boundary in all 24 consumer--budget comparisons within each of A20 and N80 (Fig.~\\ref{fig:ranking}). These comparisons share participants and related experimental conditions, so the direction counts are descriptive rather than independent confirmations."
+  },
+  {
+    "line": 117,
+    "english": "Direct paired comparisons favored Full/U over Score-only/U in 23/24 N80 and 22/24 A20 consumer--budget settings, with non-improving conditions retained in the analysis. For CeTI grasp at 30\\% retention in N80, the direct within-participant Full/U improvement over Score-only/U was 3.790 percentage points (95\\% descriptive bootstrap interval: 2.774--4.691; n=80)."
+  },
+  {
+    "line": 122,
+    "english": "Feature-group contributions depended on the consumer. At 30\\% retention, conditional gains from fixed-view augmentation ranged from 0.040 to 0.226 pp; four of six pointwise intervals included zero. These exploratory analyses used previously examined cohorts and did not change the original Full/U models."
+  },
+  {
+    "line": 124,
+    "english": "Fixed-threshold criteria were met by 4/24 auxiliary Score-only configurations (0/12 balanced-targeted) and by the original Full models for 3/6 overall-risk and 0/6 balanced-risk configurations."
+  },
+  {
+    "line": 136,
+    "english": "The next question is whether this overall improvement also preserves decisions across reference classes. At 30\\% offline retention, Full/U reduced overall disagreement relative to Boundary across all six consumers, but class-balanced outcomes varied (Fig.~\\ref{fig:fidelity})."
+  },
+  {
+    "line": 138,
+    "english": "SHOW instruction revealed a clear trade-off. Among the same 79 participants with complete reference-class support, Full/U reduced overall disagreement by a median of 2.608 percentage points (95\\% descriptive bootstrap interval: 1.708--2.960), while class-balanced disagreement increased by 20.880 points (12.280--27.156). Thus, an aggregate improvement coincided with substantially worse class-balanced performance within the same participants. In contrast, CeTI grasp improved both overall and class-balanced disagreement by 4.261 and 18.31 points, respectively, with all 80 participants evaluable."
+  },
+  {
+    "line": 140,
+    "english": "Selection also reduced the number of participants for whom class-balanced disagreement could be evaluated. For DB9 posture, complete reference-class support was available in 22 of 80 participants without rejection, but only three under Full/U at 30\\% retention. Its class-balanced comparison therefore describes only three jointly evaluable participants, not the full cohort. Together, these findings show why overall disagreement, class-balanced disagreement, and reference-class support must be interpreted jointly."
+  },
+  {
+    "line": 145,
+    "english": "A shared pose interface should be evaluated not only by whether a downstream model can accept its inputs, but also by whether the model preserves its decisions. Across six frozen consumers, learned offline ranking reduced overall disagreement, yet its class-level consequences were not uniformly beneficial."
+  },
+  {
+    "line": 147,
+    "english": "The distinction arises because overall disagreement weights reference classes according to their frequency among retained, reference-valid blocks, whereas class-balanced disagreement gives each class equal weight. Improving one measure therefore does not guarantee improving the other. SHOW instruction illustrates this divergence within the same 79 evaluable participants, although the experiment does not establish the specific mechanism behind it. DB9 posture reveals a different limitation: after selection, only three participants retained sufficient support for evaluating every reference class. These are distinct outcomes---worsened class-balanced disagreement and reduced evaluability---that overall disagreement alone would not reveal."
+  },
+  {
+    "line": 149,
+    "english": "Our conclusions concern the specified frozen estimator--consumer interfaces. A flip compares two model-generated decisions rather than independently labeled action correctness. Although pose mapping, source calibration procedures, and temporal indexing were examined, cross-source absolute pose equivalence and independent residual synchronization were not established. The upstream checkpoint's actual training membership also remains unresolved. Finally, whole-record processing and participant-specific retrospective ranking do not demonstrate a deployable online rejection system."
+  },
+  {
+    "line": 152,
+    "english": "Replacing measured hand pose with EMG-estimated pose changed the decisions of six frozen pose consumers. Learned offline ranking reduced overall disagreement relative to boundary-based selection, but these gains did not guarantee class-balanced improvement or sufficient reference-class support. The findings show that downstream decision fidelity should be assessed jointly through overall disagreement, class-balanced disagreement, and evaluable class support. This is evidence about specified frozen interfaces under retrospective evaluation, not a claim of target-task correctness or online deployment reliability."
+  }
+]

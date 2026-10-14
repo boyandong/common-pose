@@ -1,0 +1,6 @@
+{
+  "reason": "keep three research questions together and avoid isolated cross-column continuation",
+  "old": "Consider a fixed gesture classifier that predicts class A from measured hand pose. When the same classifier receives EMG-estimated pose for the corresponding input, it may instead predict class B. We call this change a decision flip. A flip does not necessarily mean that either prediction is the true or false action label; it means that substituting the input changed the classifier's output. This distinction motivates evaluating downstream decisions rather than pose reconstruction error alone.",
+  "new": "A fixed gesture classifier may predict class A from measured hand pose but class B from the corresponding EMG-estimated pose. We call this change a decision flip: input substitution changed the model's output, regardless of whether either prediction matches an independently labeled action. This motivates evaluating downstream decisions as well as pose reconstruction error.",
+  "definition_and_independent_action_boundary_preserved": true
+}

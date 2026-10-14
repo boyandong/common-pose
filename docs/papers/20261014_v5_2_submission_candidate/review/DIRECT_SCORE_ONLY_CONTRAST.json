@@ -1,0 +1,25 @@
+{
+  "source": "experiments/paper_evidence/local_closeout_20261014/results/PRIMARY_PAIRED_INTERVALS.csv",
+  "source_sha256": "47060350895b25c34e869fbe7a4fa01fbb30524843375b1634b61d2f71d09e5e",
+  "row": {
+    "cohort": "N80",
+    "consumer": "CeTI grasp",
+    "retention": "0.3",
+    "A": "score_only",
+    "B_method": "full",
+    "metric": "U",
+    "users": "80",
+    "median_reduction_pp": "3.7897564181585253",
+    "CI95_low_pp": "2.773887369383865",
+    "CI95_high_pp": "4.691233210852319",
+    "status": "DESCRIPTIVE_POINTWISE",
+    "primary_budget": "True",
+    "positive_favors": "full"
+  },
+  "reported_pp": [
+    3.79,
+    2.774,
+    4.691
+  ],
+  "new_bootstrap_or_experiment": false
+}

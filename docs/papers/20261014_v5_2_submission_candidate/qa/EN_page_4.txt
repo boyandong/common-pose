@@ -1,0 +1,105 @@
+0 2 4 6
+Paired reduction (pp)
+DB9 posture
+DB9 grasp
+CeTI posture
+CeTI grasp
+SHOW instruction
+KIN phase
+A  Overall disagreement (n=80)
+−30 −20 −10 0 10 20
+Paired reduction (pp)
+n=3 (low support)
+n=74
+n=52
+n=80
+n=79
+n=60
+B  Class-balanced disagreement
+DB9 posture · class support
+No Gate 22/80 → Full/U (30%) 3/80
+SHOW (n=79)
+Same participants
+Overall +2.608 [1.708, 2.960]
+Class-balanced −20.880 [−27.156, −12.280]
+Fig. 3. Overall improvements do not guarantee class-balanced improvements. Paired Boundary-Full/U disagreement reductions at 30% ofﬂine retention are
+shown for overall (A) and class-balanced (B) outcomes. Positive values indicate improvement; negative values indicate worsening. Overall effects use 80
+participants, whereas balanced effects require complete support under both methods and use the indicated participant counts. SHOW retains opposite effect
+directions when both measures are evaluated in the same 79 participants. DB9 posture has only three jointly evaluable participants for the balanced comparison.
+Feature-group contributions depended on the consumer. At
+30% retention, conditional gains from ﬁxed-view augmenta-
+tion ranged from 0.040 to 0.226 pp; four of six pointwise
+intervals included zero. These exploratory analyses used previ-
+ously examined cohorts and did not change the original Full/U
+models.
+Fixed-threshold criteria were met by 4/24 auxiliary Score-
+only conﬁgurations (0/12 balanced-targeted) and by the orig-
+inal Full models for 3/6 overall-risk and 0/6 balanced-risk
+conﬁgurations.
+C. Class-Conditional Disagreement and Reference Support
+The next question is whether this overall improvement
+also preserves decisions across reference classes. At 30%
+ofﬂine retention, Full/U reduced overall disagreement relative
+to Boundary across all six consumers, but class-balanced
+outcomes varied (Fig. 3).
+SHOW instruction revealed a clear trade-off. Among the
+same 79 participants with complete reference-class support,
+Full/U reduced overall disagreement by a median of 2.608
+percentage points (95% descriptive bootstrap interval: 1.708–
+2.960), while class-balanced disagreement increased by 20.880
+points (12.280–27.156). Thus, an aggregate improvement co-
+incided with substantially worse class-balanced performance
+within the same participants. In contrast, CeTI grasp improved
+both overall and class-balanced disagreement by 4.261 and
+18.31 points, respectively, with all 80 participants evaluable.
+Selection also reduced the number of participants for whom
+class-balanced disagreement could be evaluated. For DB9
+posture, complete reference-class support was available in
+22 of 80 participants without rejection, but only three under
+Full/U at 30% retention. Its class-balanced comparison there-
+fore describes only three jointly evaluable participants, not the
+full cohort. Together, these ﬁndings show why overall dis-
+agreement, class-balanced disagreement, and reference-class
+support must be interpreted jointly.
+IV. DISCUSSION
+A shared pose interface should be evaluated not only by
+whether a downstream model can accept its inputs, but also by
+whether the model preserves its decisions. Across six frozen
+consumers, learned ofﬂine ranking reduced overall disagree-
+ment, yet its class-level consequences were not uniformly
+beneﬁcial.
+The distinction arises because overall disagreement weights
+reference classes according to their frequency among retained,
+reference-valid blocks, whereas class-balanced disagreement
+gives each class equal weight. Improving one measure there-
+fore does not guarantee improving the other. SHOW instruc-
+tion illustrates this divergence within the same 79 evaluable
+participants, although the experiment does not establish the
+speciﬁc mechanism behind it. DB9 posture reveals a different
+limitation: after selection, only three participants retained suf-
+ﬁcient support for evaluating every reference class. These are
+distinct outcomes—worsened class-balanced disagreement and
+reduced evaluability—that overall disagreement alone would
+not reveal.
+Our conclusions concern the speciﬁed frozen estimator–
+consumer interfaces. A ﬂip compares two model-generated
+decisions rather than independently labeled action correctness.
+Although pose mapping, source calibration procedures, and
+temporal indexing were examined, cross-source absolute pose
+equivalence and independent residual synchronization were
+not established. The upstream checkpoint’s actual training
+membership also remains unresolved. Finally, whole-record
+processing and participant-speciﬁc retrospective ranking do
+not demonstrate a deployable online rejection system.
+V. CONCLUSION
+Replacing measured hand pose with EMG-estimated pose
+changed the decisions of six frozen pose consumers. Learned
+ofﬂine ranking reduced overall disagreement relative to
+boundary-based selection, but these gains did not guaran-
+tee class-balanced improvement or sufﬁcient reference-class
+support. The ﬁndings show that downstream decision ﬁdelity
+should be assessed jointly through overall disagreement, class-
+balanced disagreement, and evaluable class support. This is
+evidence about speciﬁed frozen interfaces under retrospective
+evaluation, not a claim of target-task correctness or online
+deployment reliability.
