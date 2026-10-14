@@ -8,7 +8,7 @@
   "excluded_credential_paths": [
     "experiments/upstream_substitution/paper_closing_v1_20261010/ssh_transport.py"
   ],
-  "transformations": "machine-local path strings in published copies only; no metrics or models changed",
+  "transformations": "machine-local path substitutions; current README/audit/licensing status updates; scientific numeric values and original local artifacts preserved",
   "files": {
     ".gitignore": {
       "source_sha256": "66dff485cd21a655fa47221bcccf2cf32c35c03e2f01cd6f31604ac13ebf6ce0",
@@ -22,13 +22,15 @@
     },
     "PUBLICATION_AUDIT.md": {
       "source_sha256": "b2fa8847bba2eadf1fa683fcf500e454c62868876c9a7911b33e67192d3ea372",
-      "public_sha256": "b2fa8847bba2eadf1fa683fcf500e454c62868876c9a7911b33e67192d3ea372",
-      "path_placeholder_roles": []
+      "public_sha256": "547aab1436ea9803e2339807a5682f0e517b35a77c39c45f1ea6d41029e0655c",
+      "path_placeholder_roles": [],
+      "public_facing_status_update": true
     },
     "README.md": {
       "source_sha256": "c42d4bea03a0312f910ddf0654b967773cf3872ff28a563cf2b6f15fac985118",
-      "public_sha256": "c42d4bea03a0312f910ddf0654b967773cf3872ff28a563cf2b6f15fac985118",
-      "path_placeholder_roles": []
+      "public_sha256": "e7dfcd7645d563823c898cdff6ee30874bb078c0ae055b47464ba7cbb9489016",
+      "path_placeholder_roles": [],
+      "public_facing_status_update": true
     },
     "audits/dataset_admission/ADMISSION_DECISION.md": {
       "source_sha256": "f7eb79763815ebb6d0b02b11c43eae6d4f8d550cf5c25b8e63b6bd8363ff8c73",
@@ -732,8 +734,9 @@
     },
     "docs/licensing.md": {
       "source_sha256": "b4a3e8186c01945786033c0b3e61a7d559f52e3624cd41254088a24e734c5f3c",
-      "public_sha256": "b4a3e8186c01945786033c0b3e61a7d559f52e3624cd41254088a24e734c5f3c",
-      "path_placeholder_roles": []
+      "public_sha256": "f413953b4363308ce0adfdaff68fe3742bfae64ac73bf7592eac8f909c936e39",
+      "path_placeholder_roles": [],
+      "public_facing_status_update": true
     },
     "docs/papers/20261014_v5_1_reader_revision/CommonPose_EMBC2027_V5_1.tex": {
       "source_sha256": "b4a6e4f84e2da5a60762eaaf4af48a464ef9fd5dd2dc9333d4496d6516cffba3",
@@ -837,8 +840,9 @@
     },
     "docs/papers/20261014_v5_2_submission_candidate/README.md": {
       "source_sha256": "362099b9bf16368e752c1a1e2bdbf297423a71ad2533c5c5740d5824fa625da8",
-      "public_sha256": "362099b9bf16368e752c1a1e2bdbf297423a71ad2533c5c5740d5824fa625da8",
-      "path_placeholder_roles": []
+      "public_sha256": "9a3a424eaf6f34fe020b29aa0f78d5a3e5749eb1c6227d3f220a4d1876b1c2f0",
+      "path_placeholder_roles": [],
+      "public_facing_status_update": true
     },
     "docs/papers/20261014_v5_2_submission_candidate/SESSION_HANDOVER_V5_2_20261014.md": {
       "source_sha256": "c2c9a89d20a3cb94554397e16c6b5cbedbcfde56f3f366ab9cee7e98b69a93ce",
@@ -7185,5 +7189,6 @@
       "public_sha256": "8bb942222f708c097bd424d3ac8a067a424badb9462477c95825b2b02b767476",
       "path_placeholder_roles": []
     }
-  }
+  },
+  "api_contract_tests_in_staged_copy": "51 passed"
 }
