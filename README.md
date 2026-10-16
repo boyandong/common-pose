@@ -1,17 +1,19 @@
 # Common Pose
 
-Current research code, frozen evaluation results, and the **CommonPose EMBC 2027 V5.2 submission candidate** (2026-10-14).
+Current research code, frozen evaluation results, and the **CommonPose EMBC 2027 aligned manuscript** (2026-10-16).
 
 Common Pose tests decision preservation when an EMG-estimated pose replaces a measured pose at the input of an unchanged downstream classifier. A **Flip** is a difference between the two model outputs; it is not independently labelled action error.
 
 ## Latest manuscript
 
-- [English five-page PDF](docs/papers/20261014_v5_2_submission_candidate/output/pdf/CommonPose_EMBC2027_V5_2_EN.pdf)
-- [Chinese review PDF](docs/papers/20261014_v5_2_submission_candidate/output/pdf/CommonPose_EMBC2027_V5_2_ZH.pdf)
-- [Complete English LaTeX](docs/papers/20261014_v5_2_submission_candidate/CommonPose_EMBC2027_V5_2_EN.tex): all prose, equations, Table I and ten references inline; vector figures and IEEE class included alongside it.
-- [Revision notes and build instructions](docs/papers/20261014_v5_2_submission_candidate/README.md)
+- [English five-page PDF](docs/papers/20261016_compliance_alignment/output/pdf/CommonPose_EMBC2027_20261016_Aligned.pdf)
+- [Complete English LaTeX](docs/papers/20261016_compliance_alignment/CommonPose_EMBC2027_20261016_Aligned.tex)
+- [Complete source package](docs/papers/20261016_compliance_alignment/output/CommonPose_EMBC2027_20261016_Aligned_Source.zip): includes figures, template files, and the matching PDF.
+- [Revision notes and build instructions](docs/papers/20261016_compliance_alignment/README.md)
+- [Current manuscript verification](docs/papers/20261016_compliance_alignment/review/VERIFICATION.json)
+- [Earlier V5.2 Chinese review PDF](docs/papers/20261014_v5_2_submission_candidate/output/pdf/CommonPose_EMBC2027_V5_2_ZH.pdf): historical translation, not an updated Chinese version of the current English manuscript.
 
-The candidate has four technical pages and a references-only fifth page. It has not been submitted or approved by the supervisor. The current author information is Boyan Dong, Southeast University.
+The manuscript has four technical pages and a references-only fifth page with ten references. This revision retains the default IEEEtran body typography and page dimensions, uses the approved Fig. 1, and includes practical Discussion guidance plus factual compliance and AI acknowledgments. It has not been submitted or officially certified by the conference. The current author information is Boyan Dong, Southeast University.
 
 ## Latest evidence
 
@@ -31,7 +33,7 @@ Actual upstream checkpoint training membership, common physical pose zeros, inde
 
 The repository includes analysis code, frozen configurations, aggregate and participant-level result tables, verification records, and manuscript plotting inputs. Download restricted datasets and the upstream estimator separately from official sources; raw signals, source pose arrays, model weights, credentials, runtime libraries and system fonts are not mirrored here.
 
-The older DB9 research record remains available under the preserved frozen lanes and [historical README](docs/archive/README_BEFORE_V5_2.md). Dated reports describe their state at creation; later closeout reports and V5.2 are the current writing/evidence entry points.
+The older DB9 research record remains available under the preserved frozen lanes and [historical README](docs/archive/README_BEFORE_V5_2.md). Dated reports describe their state at creation; later closeout reports and the [latest manuscript index](docs/papers/LATEST.md) are the current evidence/writing entry points.
 
 Core requirements: `python -m pip install -r requirements.txt`. The current API-contract checks passed 51 tests. Plotting additionally needs matplotlib; manuscript compilation needs a LaTeX engine. See the manuscript build instructions above.
 
