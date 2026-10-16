@@ -1,0 +1,24 @@
+{
+  "only_local_noindent_removed": true,
+  "all_wording_unchanged": true,
+  "pages_1_2_3_5_text_identical": true,
+  "code_and_compliance_start_x_equal": true,
+  "positions": {
+    "CodeAvailability:": {
+      "x": 249.94023000000004,
+      "y": -375.18484000000007
+    },
+    "Compliance:": {
+      "x": 249.94023000000004,
+      "y": -411.05033000000003
+    }
+  },
+  "default_template_unchanged": true,
+  "pages": 5,
+  "references_only_page": 5,
+  "reference_count": 10,
+  "page4_render_checked": true,
+  "no_overfull_or_undefined_references": true,
+  "source_sha256": "abdde23f511007f25e037599e711eed3d707e56817341b8168503f7ec21eb65e",
+  "pdf_sha256": "41626f35c8ebfaddf621cc7699e18ead114caa73052bc01d5d71964298a5d299"
+}

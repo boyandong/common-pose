@@ -1,5 +1,9 @@
 # Common Pose
 
+## Current manuscript — 2026-10-16
+
+The [latest manuscript index](docs/papers/LATEST.md) links to the aligned English PDF, LaTeX, complete source package, and verification record. All technical content occupies pages 1–4; page 5 contains ten references only. The older project overview below is retained as a historical snapshot; its status statements are not the current manuscript status.
+
 **A research framework for testing whether physical hand pose can decouple biosignal estimation from downstream hand tasks.**
 
 > **Status — active research.**

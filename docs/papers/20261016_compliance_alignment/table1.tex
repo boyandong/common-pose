@@ -1,0 +1,27 @@
+\begin{table*}[!t]
+\centering
+\caption{Overall Disagreement and Paired Gains at 30\% Offline Retention (N80)}
+\label{tab:overall}
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{tabular}{lrrrrl}
+\toprule
+Classifier (Task) & No Gate $U$ & Boundary $U$ & Score-only/U $U$ & Full/U $U$ & Paired Boundary--Full/U (95\% CI)\\
+\midrule
+DB9 posture ($K=8$) & 38.91 & 21.95 & 17.29 & 16.00 & 4.651 [2.784, 6.505]\\
+DB9 grasp ($K=3$) & 18.37 & 6.67 & 4.87 & 3.46 & 1.867 [1.431, 2.371]\\
+CeTI posture ($K=8$) & 43.05 & 24.73 & 21.87 & 20.77 & 3.973 [2.918, 5.312]\\
+CeTI grasp ($K=3$) & 41.10 & 31.59 & 29.60 & 25.65 & 4.261 [2.214, 6.446]\\
+SHOW instruction ($K=3$) & 16.43 & 6.93 & 6.29 & 4.10 & 2.591 [1.655, 3.006]\\
+KIN phase ($K=3$) & 22.32 & 5.95 & 3.81 & 3.66 & 2.107 [1.300, 3.302]\\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{\linewidth}\footnotesize
+No Gate retains 100\% of valid blocks; selective gates retain 30\%. Columns show participant median overall disagreement U (\%; lower is better) and within-participant Boundary-minus-Full/U reductions (pp; higher is better) with pointwise 95\% bootstrap intervals (n = 80).
+\end{minipage}
+\endgroup
+
+\end{table*}
